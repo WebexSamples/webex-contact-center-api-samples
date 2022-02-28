@@ -1,0 +1,31 @@
+{
+  "name": "call-recording-download-sample",
+  "version": "1.0.0",
+  "description": "Call Recording Downloader using Webhooks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiscoDevNet/webex-contact-center-api-samples.git"
+  },
+  "keywords": [
+    "Webex",
+    "Contact",
+    "Center",
+    "API",
+    "Samples",
+    "API",
+    "Webex",
+    "Contact",
+    "Center"
+  ],
+  "author": "Arunabh Bhattacharjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CiscoDevNet/webex-contact-center-api-samples/issues"
+  },
+  "homepage": "https://github.com/CiscoDevNet/webex-contact-center-api-samples#readme"
+}

@@ -1,17 +1,10 @@
-# Webex Contact Center API Samples
+## Basic Auth Sample
 
-This basic set of samples helps a developer understand the all new Webex Contact Center APIs available today on the **[Webex Contact Center Developer Portal](https://developer.webex-cx.com/)**
+- This basic auth app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
 
-## Getting Started
+- Webex Contact Center APIs use OAuth2. For more information, refer :
 
-To get started, created an App on the Developer Portal:
-
-- Sign into developer.webex-cx.com with a valid Webex Control Hub Account.
-- Create an Application Integration by going to your Profile > Manage My Apps.
-- Creating an Application Integration will give you a set of Client ID and Client Secret that you will need for this sample.
-- Note: While entering the Redirect URI, ensure it has http://localhost:5000/auth/webex/callback for example.
-
-## Using the API Samples
+- The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
 #### Pre-Requisites:
 
