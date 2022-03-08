@@ -1,0 +1,26 @@
+{
+  task(
+    filter: {
+      and: [
+        { channelType: { equals: telephony } }
+        { status: { equals: "parked" } }
+        { direction: { equals: "inbound" } }
+        { isActive: { equals: true } }
+      ]
+    }
+  ) {
+    tasks {
+      id
+      origin
+      destination
+      isActive
+      direction
+      owner {
+        id
+      }
+      lastEntryPoint {
+        name
+      }
+    }
+  }
+}

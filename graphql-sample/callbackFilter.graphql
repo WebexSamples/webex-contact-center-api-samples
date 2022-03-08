@@ -1,0 +1,21 @@
+{
+  task(
+    filter: {
+      and: [
+        { callbackData: { equals: { callbackNumber: "1234567890" } } }
+        { callbackData: { equals: { callbackStatus: "Success" } } }
+      ]
+    }
+  ) {
+    tasks {
+      callbackData {
+        callbackRequestTime
+        callbackConnectTime
+        callbackNumber
+        callbackStatus
+        callbackOrigin
+        callbackType
+      }
+    }
+  }
+}
