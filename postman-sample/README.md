@@ -20,5 +20,5 @@ Please follow the matrix below to ensure you are using the right datacenter for 
 | --- | ----------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
 | 1   | US                            | [https://developer.webex-cx.com](https://developer.webex-cx.com)   | [https://api.wxcc-us1.cisco.com](https://api.wxcc-us1.cisco.com)   |
 | 2   | UK                            | [https://devportal.wxcc-eu1.com](https://devportal.wxcc-eu1.com)   | [https://api.wxcc-eu1.cisco.com](https://api.wxcc-eu1.cisco.com)   |
-| 3   | Germany                       | [https://devportal.wxcc-eu2.com](https://devportal.wxcc-eu2.com)   | [https://api.wxcc-eu2.com](https://api.wxcc-eu2.com)               |
+| 3   | Germany                       | [https://devportal.wxcc-eu2.com](https://devportal.wxcc-eu2.com)   | [https://api.wxcc-eu2.cisco.com](https://api.wxcc-eu2.cisco.com)   |
 | 4   | Australia                     | [https://devportal.wxcc-anz1.com](https://devportal.wxcc-anz1.com) | [https://api.wxcc-anz1.cisco.com](https://api.wxcc-anz1.cisco.com) |
