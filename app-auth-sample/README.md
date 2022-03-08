@@ -6,6 +6,8 @@
 
 - The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
+## [Watch the Video: Understanding WebexCC OAuth2 - App Sample]()
+
 #### Pre-Requisites:
 
 - Node JS and NPM
