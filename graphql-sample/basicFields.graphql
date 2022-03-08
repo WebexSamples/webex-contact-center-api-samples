@@ -1,0 +1,30 @@
+{
+  task(from: 1635750000000, to: 1638345599000, pagination: { cursor: "0" }) {
+    tasks {
+      createdTime #ContactStartTime
+      channelType #ChannelType
+      entryPoint {
+        name #EntrypointName
+      }
+      lastQueue {
+        name #NameOfQueue
+      }
+      direction
+      terminationType #HandleType
+      owner {
+        name #AgentName
+      }
+      id #ContactSessionId
+      status #CurrentState
+      destination #DNIS
+      isActive #WhetherRealtimeOrHistorical
+      selfserviceDuration #IVR
+      ringingDuration #Ring
+      queueDuration #QueueTime
+      connectedDuration #HandleTime
+      totalDuration #QueueTime
+      holdDuration #HoldDuration
+      wrapupDuration #WrapUp
+    }
+  }
+}

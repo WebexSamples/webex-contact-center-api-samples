@@ -1,0 +1,26 @@
+{
+  task(
+    timeComparator: endedTime
+    filter: {}
+    pagination: { cursor: "0" }
+    aggregation: {
+      aggr: [
+        { field: totalDuration, type: sum, name: "toal" }
+        {
+          field: connectedDuration
+          type: sum
+          name: "Average Connected Duration"
+        }
+      ]
+    }
+  ) {
+    tasks {
+      id
+      totalDuration
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
