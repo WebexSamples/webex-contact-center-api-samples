@@ -15,7 +15,7 @@ function getBearerToken() {
     localStorage.setItem("token", accessToken);
     return JSON.parse(accessToken);
   } catch (error) {
-    location.href = "http://localhost:3000/index.html";
+    location.href = "http://localhost:5000/index.html";
   }
 }
 
@@ -97,7 +97,7 @@ function submitForm(e) {
     .catch(function (error) {
       console.log(error);
       // location.href = "https://oauth-webex.herokuapp.com/index.html";
-      location.href = "http://localhost:3000/index.html";
+      location.href = "http://localhost:5000/index.html";
     });
 
   {
