@@ -15,7 +15,14 @@ function getBearerToken() {
     localStorage.setItem("token", accessToken);
     return JSON.parse(accessToken);
   } catch (error) {
-    location.href = "http://localhost:5000/index.html";
+    //link for token
+    const link = "http://localhost:5000/index.html";
+
+    let noTokenMessage = document.getElementById("mainArticle");
+    noTokenMessage.innerHTML = `
+      <h2 id="message" class="noToken"> Oops... <br> Looks like we dont have an access token.<br> Lets get one... <a class="noToken" href="${link}">oAuth</a></h2>
+    `;
+    return;
   }
 }
 

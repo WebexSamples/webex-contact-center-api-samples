@@ -58,5 +58,5 @@ export function buildForm() {
   search.setAttribute("type", "text");
   search.setAttribute("name", "accessToken");
   search.setAttribute("placeholder", "Search...");
-  searchResult.append(search);
+  // searchResult.append(search);
 }
