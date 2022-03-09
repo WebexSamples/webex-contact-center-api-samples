@@ -13,6 +13,8 @@ const __dirname = dirname(__filename);
 const clientID = process.env.CLIENT_ID; // make sure to add your IDs in your own .env file
 const clientSecret = process.env.CLIENT_SECRET; // make sure to add your IDs in your own .env file
 
+const port = 5000;
+
 const app = express();
 app.use(cors());
 
@@ -74,6 +76,6 @@ app.get("/", (req, res) => {
 
 app.use(express.static(__dirname + "/src/public"));
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("listening on port 3000");
+app.listen(process.env.PORT || port, () => {
+  console.log(`listening on port ${port}`);
 });

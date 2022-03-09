@@ -20,7 +20,7 @@ How to run the program
 
 - Step 3:
   - Inside this project on your terminal type: `npm run start`
-  - this should run the app on your localhost:3000
+  - this should run the app on your localhost:5000
 
 ## Version History
 
