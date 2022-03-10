@@ -20,7 +20,7 @@ function getBearerToken() {
 
     let noTokenMessage = document.getElementById("mainArticle");
     noTokenMessage.innerHTML = `
-      <h2 id="message" class="noToken"> Oops... <br> Looks like we dont have an access token.<br> Lets get one... <a class="noToken" href="${link}">oAuth</a></h2>
+      <h2 id="message" class="noToken"> Oops... <br> Looks like we dont have an access token.<br> Let's get one... <a class="noToken" href="${link}">oAuth</a></h2>
     `;
     return;
   }
