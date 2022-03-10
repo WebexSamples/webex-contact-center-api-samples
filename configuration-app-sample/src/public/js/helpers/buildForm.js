@@ -50,7 +50,7 @@ export function buildForm() {
   authButton.textContent = "Access Token";
   authButton.setAttribute("type", "text");
   authButton.setAttribute("name", "accessToken");
-  authButton.setAttribute("placeholder", "access Token");
+  authButton.setAttribute("placeholder", "coming soon...");
   authDiv.append(authButton);
   const searchResult = document.getElementById("mainArticle");
   const search = document.createElement("input");
