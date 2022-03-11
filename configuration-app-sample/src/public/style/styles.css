@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
+
+/* Grid Layout */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav article"
+    "auth article"
+    "auth footer";
+  grid-template-rows: 40px 1fr 10px 80px;
+  grid-template-columns: 30% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+header,
+footer,
+article,
+nav,
+div {
+  padding: 1em;
+  background: rgb(242, 243, 240);
+}
+
+input[type="text"],
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline-color: #00853c;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #00853c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form {
+  width: 92%;
+}
+button {
+  margin-top: 20px;
+  background: #00853c;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  transition-duration: 0.8s;
+  opacity: 0.6;
+}
+button:hover {
+  background: #03612c;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1.5;
+}
+
+.comment {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.commenter {
+  float: left;
+}
+
+.commenter img {
+  width: 35px;
+  height: 35px;
+}
+
+.comment-text-area {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.apiBody {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  float: left;
+  width: 98.5%;
+  min-height: 150px;
+  outline: none;
+  resize: none;
+  border: 1px solid #ccc;
+  text-indent: 17px;
+}
+#submit {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+}
+
+select:focus {
+  outline-color: #4caf50;
+}
+
+.message {
+  margin-top: 10px;
+  margin-left: 40%;
+  color: white;
+  background: tomato;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#pageHeader {
+  grid-area: header;
+  color: #4caf50;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 10px;
+}
+#pageFooter {
+  grid-area: footer;
+  color: #4caf50;
+  font-weight: 500;
+}
+#mainArticle {
+  grid-area: article;
+  color: #4caf50;
+  font-weight: 500;
+}
+#mainNav {
+  grid-area: nav;
+  color: #4caf50;
+  font-weight: 500;
+}
+#auth {
+  grid-area: auth;
+  color: #4caf50;
+  font-weight: 500;
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "auth"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.start {
+  margin-top: 25%;
+  margin-left: 14%;
+  background: white;
+}
+
+a.btn {
+  background: #007aa3;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  transition-duration: 0.8s;
+  opacity: 0.6;
+  width: 200px;
+  display: block;
+}
+a.btn:hover {
+  background: #005e7d;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1.5;
+}
+
+h2.noToken {
+  color: tomato;
+}
+a.noToken {
+  text-decoration: none;
+  color: #00853c;
+}
