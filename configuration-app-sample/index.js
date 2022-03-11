@@ -10,8 +10,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // oauth info
-const clientID = "C1a249313d5f246a190324a8f95d7c3e6358e0d80736173ae90e2e45d0a9bc052"; // make sure to add your IDs in your own .env file
-const clientSecret = "4f6d119b0283eb97ed728622597048307d15096ef1f1d79c8a47092ad29bb5cc"; // same as above
+const clientID = process.env.CLIENT_ID; // make sure to add your IDs in your own .env file
+const clientSecret = process.env.CLIENT_SECRET; // same as above
 
 const app = express();
 app.use(cors());
