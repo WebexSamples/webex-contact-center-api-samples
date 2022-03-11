@@ -12,6 +12,8 @@ const __dirname = dirname(__filename);
 // oauth info
 const clientID = process.env.CLIENT_ID; // make sure to add your IDs in your own .env file
 const clientSecret = process.env.CLIENT_SECRET; // same as above
+export const port = process.env.PORT;
+const redirect = process.env.REDIRECT;
 
 const app = express();
 app.use(cors());
@@ -38,27 +40,7 @@ app.get("/oauth/redirect", (req, res) => {
         const accessToken = response.data.access_token;
         const refreshToken = response.data.refresh_token;
         // redirect the user to the welcome page, along with the access token
-        getRefreshToken(refreshToken);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
-  async function getRefreshToken(refreshToken) {
-    let data = {};
-    let config = {
-      method: "post",
-      url: `https://webexapis.com/v1/access_token?grant_type=refresh_token&client_id=${clientID}&client_secret=${clientSecret}&refresh_token=${refreshToken}&redirect_uri=http://localhost:5000/oauth/redirect`,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      data: data
-    };
-    axios(config)
-      .then(function (response) {
-        const accessToken = response.data.access_token;
-        console.log(`get from Refresh token ${JSON.stringify(response.data)}`);
-        // redirect the user to the welcome page, along with the access token
+        // getRefreshToken(refreshToken);
         res.redirect(`/app.html?access_token="${accessToken}"`);
       })
       .catch(function (error) {

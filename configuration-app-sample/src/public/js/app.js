@@ -1,9 +1,12 @@
+// import { port } from "../../../index.js";
 import { buildForm } from "./helpers/buildForm.js";
 import { formError } from "./helpers/formError.js";
 // console.log(port);
 
 //build form
 buildForm();
+
+// console.log(port);
 
 //get Access token
 const token = getBearerToken();
@@ -17,6 +20,7 @@ function getBearerToken() {
     return JSON.parse(accessToken);
   } catch (error) {
     //link for token
+
     const link = "http://localhost:5000/index.html";
 
     let noTokenMessage = document.getElementById("mainArticle");
