@@ -59,4 +59,5 @@ export function buildForm() {
   search.setAttribute("name", "accessToken");
   search.setAttribute("placeholder", "Search...");
   // searchResult.append(search);
+  // const authLink =
 }
