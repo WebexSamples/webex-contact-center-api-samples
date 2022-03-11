@@ -19,35 +19,33 @@ const app = express();
 app.use(cors());
 
 //Declare the redirect route
-app.get("/oauth/redirect", (req, res) => {
+app.get("/oauth/redirect", async (req, res) => {
   // The req.query object has the query params that
   // were sent to this route. We want the `code` param
-  const requestToken = req.query.code;
+  const code = req.query.code;
 
-  async function getAccessToken() {
-    // let data = stringify({});
-    let data = {};
-    let config = {
-      method: "post",
-      url: `https://webexapis.com/v1/access_token?grant_type=authorization_code&client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}&redirect_uri=http://localhost:5000/oauth/redirect`,
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      data: data
-    };
-    axios(config)
-      .then(function (response) {
-        const accessToken = response.data.access_token;
-        const refreshToken = response.data.refresh_token;
-        // redirect the user to the welcome page, along with the access token
-        // getRefreshToken(refreshToken);
-        res.redirect(`/app.html?access_token="${accessToken}"`);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
-  getAccessToken();
+  // Get access Token - submit required payload
+  const payload = {
+    grant_type: "authorization_code",
+    client_id: process.env.CLIENT_ID,
+    client_secret: process.env.CLIENT_SECRET,
+    code: code,
+    redirect_uri: process.env.REDIRECT_URI
+  };
+  // Parameterize
+  const data = Object.keys(payload)
+    .map((key, index) => `${key}=${encodeURIComponent(payload[key])}`)
+    .join("&");
+  console.log(`Params: ${data}`);
+
+  const response = await axios.post("https://webexapis.com/v1/access_token", data, {
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  });
+  const accessToken = response.data.access_token;
+  //send access token to URL...
+  res.redirect(`/app.html?access_token="${accessToken}"`);
 });
 
 app.get("/", (req, res) => {
