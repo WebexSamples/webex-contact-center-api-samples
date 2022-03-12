@@ -6,8 +6,6 @@ import { formError } from "./helpers/formError.js";
 //build form
 buildForm();
 
-// console.log(port);
-
 //get Access token
 const token = getBearerToken();
 
@@ -15,13 +13,14 @@ function getBearerToken() {
   try {
     const query = decodeURI(window.location.search.substring(1));
     const accessToken = query.split("access_token=")[1];
-    console.log(accessToken);
+    var host = decodeURI(window.location.origin);
+
+    // localStorage
     localStorage.setItem("token", accessToken);
     return JSON.parse(accessToken);
   } catch (error) {
     //link for token
-
-    const link = "http://localhost:5000/index.html";
+    const link = `${host}/index.html`;
 
     let noTokenMessage = document.getElementById("mainArticle");
     noTokenMessage.innerHTML = `
@@ -109,7 +108,7 @@ function submitForm(e) {
     .catch(function (error) {
       console.log(error);
       // location.href = "https://oauth-webex.herokuapp.com/index.html";
-      location.href = "http://localhost:5000/index.html";
+      location.href = `${host}/index.html`;
     });
 
   {

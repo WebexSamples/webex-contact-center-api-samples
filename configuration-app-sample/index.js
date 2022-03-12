@@ -12,7 +12,6 @@ const __dirname = dirname(__filename);
 // middleware
 const app = express();
 app.use(cors());
-app.use(express.static(__dirname + "/src/public"));
 
 // Declare the redirect route
 app.get(process.env.REDIRECT_URI_GET, async (req, res) => {
@@ -47,6 +46,9 @@ app.get(process.env.REDIRECT_URI_GET, async (req, res) => {
 app.get("/", (req, res) => {
   res.redirect("/app.html");
 });
+
+// least specific route...
+app.use(express.static(__dirname + "/src/public"));
 
 app.listen(process.env.PORT, () => {
   console.log(`listening on port ${process.env.PORT}`);
