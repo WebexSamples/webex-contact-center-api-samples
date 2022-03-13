@@ -5,6 +5,7 @@ export function buildForm() {
   form.id = "form";
   const method = document.createElement("select");
   method.id = "selectMethod";
+  method.classList.add("mandatory");
   method.add(new Option("Select Method", ""));
   method.add(new Option("GET", "get"));
   method.add(new Option("POST...(coming soon)", "post"));
@@ -12,11 +13,13 @@ export function buildForm() {
   method.add(new Option("DELETE...(coming soon)", "delete"));
   const orgInput = document.createElement("input");
   orgInput.id = "org";
+  orgInput.classList.add("mandatory");
   orgInput.setAttribute("type", "text");
   orgInput.setAttribute("name", "org");
   orgInput.setAttribute("placeholder", "organization ID");
   const endpointInput = document.createElement("select");
   endpointInput.id = "endpoint";
+  endpointInput.classList.add("mandatory");
   endpointInput.add(new Option("Select WxCC API", ""));
   endpointInput.add(new Option("Teams", "team"));
   endpointInput.add(new Option("SkillProfiles", "skill-profile"));

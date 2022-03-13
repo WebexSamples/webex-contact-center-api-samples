@@ -34,12 +34,14 @@ function submitForm(e) {
 
   //makes sure form is filled out
   if (formValues.selectMethod === "" || formValues.org === "" || formValues.endpoint === "") {
-    let selectMethod = select("#selectMethod");
-    selectMethod.style.borderColor = "red";
-    let org = select("#org");
-    org.style.borderColor = "red";
-    let endpoint = select("#endpoint");
-    endpoint.style.borderColor = "red";
+    let color = select("#form").childNodes;
+    color.forEach(element => {
+      console.log(element);
+      if (element.classList.contains("mandatory")) {
+        element.style.borderColor = "red";
+      }
+    });
+
     let formError = select("#pageFooter");
     formError.innerHTML = `
       <h2 id="message" class="message"> Please fill required Fields </h2>
