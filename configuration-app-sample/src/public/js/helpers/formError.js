@@ -5,4 +5,6 @@ export function formError() {
   org.style.borderColor = "#ccc";
   let endpoint = document.getElementById("endpoint");
   endpoint.style.borderColor = "#ccc";
+  let footer = document.getElementById("pageFooter");
+  footer.innerHTML = "";
 }
