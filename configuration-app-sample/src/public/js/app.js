@@ -107,7 +107,6 @@ function submitForm(e) {
     })
     .catch(function (error) {
       console.log(error);
-      // location.href = "https://oauth-webex.herokuapp.com/index.html";
       location.href = `${host}/index.html`;
     });
 
