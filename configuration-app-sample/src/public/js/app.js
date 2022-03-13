@@ -36,7 +36,6 @@ function submitForm(e) {
   if (formValues.selectMethod === "" || formValues.org === "" || formValues.endpoint === "") {
     let color = select("#form").childNodes;
     color.forEach(element => {
-      console.log(element);
       if (element.classList.contains("mandatory")) {
         element.style.borderColor = "red";
       }
