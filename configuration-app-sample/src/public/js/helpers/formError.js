@@ -1,10 +1,12 @@
+import { select } from "../sa-lib/select.js";
+
 export function formError() {
-  let selectMethod = document.getElementById("selectMethod");
+  let selectMethod = select("#selectMethod");
   selectMethod.style.borderColor = "#ccc";
-  let org = document.getElementById("org");
+  let org = select("#org");
   org.style.borderColor = "#ccc";
-  let endpoint = document.getElementById("endpoint");
+  let endpoint = select("#endpoint");
   endpoint.style.borderColor = "#ccc";
-  let footer = document.getElementById("pageFooter");
+  let footer = select("#pageFooter");
   footer.innerHTML = "";
 }
