@@ -1,5 +1,5 @@
 import { buildForm } from "./helpers/buildForm.js";
-import { formError } from "./helpers/formError.js";
+import { fixFormError } from "./helpers/fixFormError.js";
 import { getBearerToken } from "./helpers/getBearerToken.js";
 import { select } from "./sa-lib/select.js"; // use this in place DOM "getElementById", etc...
 
@@ -20,7 +20,7 @@ function submitForm(e) {
     let arr = areaMessage.childNodes;
     let newArr = Array.from(arr);
     newArr[1].remove();
-    formError();
+    FixFormError();
   });
 
   //Get form values
@@ -41,7 +41,7 @@ function submitForm(e) {
     `;
     return;
   } else {
-    formError();
+    fixFormError();
   }
 
   async function fetchApi() {
