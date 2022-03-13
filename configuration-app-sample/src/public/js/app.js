@@ -20,7 +20,7 @@ function submitForm(e) {
     let arr = areaMessage.childNodes;
     let newArr = Array.from(arr);
     newArr[1].remove();
-    FixFormError();
+    fixFormError();
   });
 
   //Get form values
