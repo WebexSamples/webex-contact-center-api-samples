@@ -20,7 +20,7 @@ function getBearerToken() {
     return JSON.parse(accessToken);
   } catch (error) {
     //link for token
-    const link = `${host}/index.html`;
+    const link = `${host}/index`;
 
     let noTokenMessage = document.getElementById("mainArticle");
     noTokenMessage.innerHTML = `

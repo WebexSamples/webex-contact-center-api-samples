@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 
 // Declare the redirect route
-app.get(process.env.REDIRECT_URI_GET, async (req, res) => {
+app.get(process.env.REDIRECT_PATH, async (req, res) => {
   // The req.query object has the query params that
   // were sent to this route. We want the `code` param
   const code = req.query.code;
@@ -43,13 +43,19 @@ app.get(process.env.REDIRECT_URI_GET, async (req, res) => {
   res.redirect(`/app.html?access_token="${accessToken}"`);
 });
 
+app.get("/index", (req, res) => {
+  res.redirect(`/index.html?clientID=${process.env.CLIENT_ID}?path=${process.env.REDIRECT_PATH}`);
+});
+
 app.get("/", (req, res) => {
   res.redirect("/app.html");
 });
 
 // least specific route...
+
 app.use(express.static(__dirname + "/src/public"));
 
+// run server
 app.listen(process.env.PORT, () => {
   console.log(`listening on port ${process.env.PORT}`);
 });
