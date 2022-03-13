@@ -1,8 +1,8 @@
 export function buildForm() {
   //build a form
   const divOptions = document.querySelector("#mainNav");
-  divOptions.classList.add("form");
   const form = document.createElement("form");
+  form.id = "form";
   const method = document.createElement("select");
   method.id = "selectMethod";
   method.add(new Option("Select Method", ""));
