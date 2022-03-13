@@ -1,17 +1,11 @@
-// import { port } from "../../../index.js";
 import { buildForm } from "./helpers/buildForm.js";
 import { formError } from "./helpers/formError.js";
 import { getBearerToken } from "./helpers/getBearerToken.js";
-// use this in place DOM "getElementById", etc...
-import { select } from "./sa-lib/select.js";
+import { select } from "./sa-lib/select.js"; // use this in place DOM "getElementById", etc...
 
-//build form
 buildForm();
 
-//get Access token
 const token = getBearerToken();
-
-//get Bearer
 getBearerToken();
 
 let getResults = select("#submit");
@@ -29,10 +23,10 @@ function submitForm(e) {
     formError();
   });
 
-  //form values
+  //Get form values
   const formValues = Array.from(select("#form").childNodes).reduce((options, input) => ({ ...options, [input.id]: input.value }), {});
 
-  //makes sure form is filled out
+  //Check to Make sure mandatory fields are filled out
   if (formValues.selectMethod === "" || formValues.org === "" || formValues.endpoint === "") {
     let color = select("#form").childNodes;
     color.forEach(element => {
@@ -84,7 +78,7 @@ function submitForm(e) {
   			`;
     } catch (error) {
       console.log(error);
-      //     location.href = `${host}/index.html`;
+      // location.href = `${host}/index.html`;
     }
   }
   fetchApi();
