@@ -30,15 +30,10 @@ function submitForm(e) {
   });
 
   //form values
-  let selectMethod = select("#selectMethod").value;
-  let org = select("#org").value;
-  let endpoint = select("#endpoint").value;
-  let page = select("#page").value;
-  let pageSize = select("#pagesize").value;
-  let body = select("#body").value;
+  const formValues = Array.from(select("#form").childNodes).reduce((options, input) => ({ ...options, [input.id]: input.value }), {});
 
   //makes sure form is filled out
-  if (selectMethod === "" || org === "" || endpoint === "") {
+  if (formValues.selectMethod === "" || formValues.org === "" || formValues.endpoint === "") {
     let selectMethod = select("#selectMethod");
     selectMethod.style.borderColor = "red";
     let org = select("#org");
@@ -55,10 +50,10 @@ function submitForm(e) {
   }
 
   async function fetchApi() {
-    const url = `https://api.wxcc-us1.cisco.com/organization/${org}/${endpoint}?page=${page}&pageSize=${pageSize}`;
+    const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pageSize}`;
     try {
       let response1 = await fetch(url, {
-        method: `${selectMethod}`,
+        method: `${formValues.selectMethod}`,
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -67,11 +62,11 @@ function submitForm(e) {
       let results = response2.map(el => {
         let email = el.email;
         let getElements = el.name;
-        if (endpoint === "team" || endpoint === "skill-profile" || endpoint === "contact-service-queue" || endpoint === "entry-point") {
+        if (formValues.endpoint === "team" || formValues.endpoint === "skill-profile" || formValues.endpoint === "contact-service-queue" || formValues.endpoint === "entry-point") {
           return `
   					<option>${getElements}</option>
   					`;
-        } else if (endpoint === "user") {
+        } else if (formValues.endpoint === "user") {
           return `
   					<option>${email}</option>
   					`;
@@ -81,7 +76,7 @@ function submitForm(e) {
       apiResult.innerHTML += `
   				<div class="card">
   					<select>
-  						<option>${endpoint} list</option>
+  						<option>${formValues.endpoint} list</option>
   						${results}
   					</select>
   				</div>
