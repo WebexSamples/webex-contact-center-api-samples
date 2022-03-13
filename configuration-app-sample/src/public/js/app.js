@@ -52,19 +52,17 @@ function submitForm(e) {
     formError();
   }
 
-  const url = `https://api.wxcc-us1.cisco.com/organization/${org}/${endpoint}?page=${page}&pageSize=${pageSize}`;
-
-  fetch(url, {
-    method: `${selectMethod}`,
-    headers: {
-      Authorization: `Bearer ${token}`
-    }
-  })
-    .then(response => response.json())
-    .then(result => {
-      // console.log(result);
-      let res = result;
-      let results = res.map(el => {
+  async function fetchApi() {
+    const url = `https://api.wxcc-us1.cisco.com/organization/${org}/${endpoint}?page=${page}&pageSize=${pageSize}`;
+    try {
+      let response1 = await fetch(url, {
+        method: `${selectMethod}`,
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      let response2 = await response1.json();
+      let results = response2.map(el => {
         let email = el.email;
         let getElements = el.name;
         if (endpoint === "team" || endpoint === "skill-profile" || endpoint === "contact-service-queue" || endpoint === "entry-point") {
@@ -86,12 +84,10 @@ function submitForm(e) {
   					</select>
   				</div>
   			`;
-    })
-    .catch(function (error) {
+    } catch (error) {
       console.log(error);
-      location.href = `${host}/index.html`;
-    });
-
-  {
+      //     location.href = `${host}/index.html`;
+    }
   }
+  fetchApi();
 }
