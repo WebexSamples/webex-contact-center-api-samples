@@ -12,13 +12,9 @@ How to run the program
 
 - Step 1:
 
-  - Rename the `copy.env` to `.env` and add your client and secret IDs
+  - Rename the `copy.env` to `.env` and add your client Id, secret Id, redirect URI, etc...
 
 - Step 2:
-
-  - Go to the `index.html` file in the `src` folder and replace the `Authorization URL` that you got from the [postman-sample app](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample)
-
-- Step 3:
   - Inside this project on your terminal type: `npm run start`
   - this should run the app on your localhost:5000
 
