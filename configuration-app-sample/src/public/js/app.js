@@ -41,16 +41,17 @@ function submitForm(e) {
     fixFormError();
   }
 
-  //
   const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pageSize}`;
 
   const method = `${formValues.selectMethod}`;
 
   async function useFetch() {
-    let response = await fetchApi(url, method);
-    let results = response.map(el => {
-      let email = el.email;
-      let getElements = el.name;
+    const response = await fetchApi(url, method);
+
+    // Traverse form
+    const results = response.map(el => {
+      const email = el.email;
+      const getElements = el.name;
       if (formValues.endpoint === "team" || formValues.endpoint === "skill-profile" || formValues.endpoint === "contact-service-queue" || formValues.endpoint === "entry-point") {
         return `
     					<option>${getElements}</option>
@@ -61,6 +62,8 @@ function submitForm(e) {
     					`;
       }
     });
+
+    // Render on Screen
     const apiResult = select("#mainArticle");
     apiResult.innerHTML += `
     				<div class="card">
