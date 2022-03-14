@@ -1,12 +1,9 @@
 import { buildForm } from "./helpers/buildForm.js";
 import { fixFormError } from "./helpers/fixFormError.js";
-import { getBearerToken } from "./helpers/getBearerToken.js";
+import { fetchApi } from "./helpers/fetchApi.js";
 import { select } from "./sa-lib/select.js"; // use this in place DOM "getElementById", etc...
 
 buildForm();
-
-const token = getBearerToken();
-getBearerToken();
 
 let getResults = select("#submit");
 getResults.addEventListener("click", submitForm);
@@ -44,42 +41,35 @@ function submitForm(e) {
     fixFormError();
   }
 
-  async function fetchApi() {
-    const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pageSize}`;
-    try {
-      let response1 = await fetch(url, {
-        method: `${formValues.selectMethod}`,
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
-      let response2 = await response1.json();
-      let results = response2.map(el => {
-        let email = el.email;
-        let getElements = el.name;
-        if (formValues.endpoint === "team" || formValues.endpoint === "skill-profile" || formValues.endpoint === "contact-service-queue" || formValues.endpoint === "entry-point") {
-          return `
-  					<option>${getElements}</option>
-  					`;
-        } else if (formValues.endpoint === "user") {
-          return `
-  					<option>${email}</option>
-  					`;
-        }
-      });
-      const apiResult = select("#mainArticle");
-      apiResult.innerHTML += `
-  				<div class="card">
-  					<select>
-  						<option>${formValues.endpoint} list</option>
-  						${results}
-  					</select>
-  				</div>
-  			`;
-    } catch (error) {
-      console.log(error);
-      // location.href = `${host}/index.html`;
-    }
+  //
+  const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pageSize}`;
+
+  const method = `${formValues.selectMethod}`;
+
+  async function useFetch() {
+    let response = await fetchApi(url, method);
+    let results = response.map(el => {
+      let email = el.email;
+      let getElements = el.name;
+      if (formValues.endpoint === "team" || formValues.endpoint === "skill-profile" || formValues.endpoint === "contact-service-queue" || formValues.endpoint === "entry-point") {
+        return `
+    					<option>${getElements}</option>
+    					`;
+      } else if (formValues.endpoint === "user") {
+        return `
+    					<option>${email}</option>
+    					`;
+      }
+    });
+    const apiResult = select("#mainArticle");
+    apiResult.innerHTML += `
+    				<div class="card">
+    					<select>
+    						<option>${formValues.endpoint} list</option>
+    						${results}
+    					</select>
+    				</div>
+    			`;
   }
-  fetchApi();
+  useFetch();
 }
