@@ -6,7 +6,8 @@ This basic set of samples helps a developer understand the all new Webex Contact
 
 ## Getting Started
 
-To get started, created an App on the Developer Portal:
+To get started, create an App Integration on the Developer Portal:
+( This will help you obtain your `Client ID` and `Client Secret` )
 
 - Sign into developer.webex-cx.com with a valid Webex Control Hub Account.
 - Create an Application Integration by going to your Profile > Manage My Apps.
