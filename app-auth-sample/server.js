@@ -77,10 +77,16 @@ app.get('/auth/webex/callback', async (req, res) => {
    */
 
   const code = req.query.code ? req.query.code : null;
+  const error = req.query.error
+    ? `${req.query.error} ${req.query.error_description}`
+    : null;
   //?code=_____
   if (!code) {
-    console.error(`Error occured during the OAuth flow: ${error}`);
-    res.code(500);
+    console.error(
+      `Error occured during the OAuth flow: missing CODE parameter`
+    );
+    console.error(`ERROR: ${error}`);
+    res.status(500);
     res.send({ error: 'An error occured while fetching the code' });
   }
 

@@ -2,6 +2,8 @@
 
 This basic set of samples helps a developer understand the all new Webex Contact Center APIs available today on the **[Webex Contact Center Developer Portal](https://developer.webex-cx.com/)**
 
+## [Watch Now: Welcome to the Webex Contact Center API Samples](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
+
 ## Getting Started
 
 To get started, created an App on the Developer Portal:
