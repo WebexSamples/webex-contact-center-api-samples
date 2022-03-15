@@ -1,7 +1,13 @@
 {
-  task(from: 1635750000000) {
+  task(
+    #Search all tasks in a 15 day window.
+    from: 1646095690000
+    to: 1647305290000
+  ) {
     tasks {
+      #Return the ID of the task
       id
+      #You can add more fields below
     }
   }
 }
