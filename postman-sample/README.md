@@ -22,3 +22,11 @@ Please follow the matrix below to ensure you are using the right datacenter for 
 | 2   | UK                            | [https://devportal.wxcc-eu1.com](https://devportal.wxcc-eu1.com)   | [https://api.wxcc-eu1.cisco.com](https://api.wxcc-eu1.cisco.com)   |
 | 3   | Germany                       | [https://devportal.wxcc-eu2.com](https://devportal.wxcc-eu2.com)   | [https://api.wxcc-eu2.cisco.com](https://api.wxcc-eu2.cisco.com)   |
 | 4   | Australia                     | [https://devportal.wxcc-anz1.com](https://devportal.wxcc-anz1.com) | [https://api.wxcc-anz1.cisco.com](https://api.wxcc-anz1.cisco.com) |
+
+## Support
+
+For Support and Assistance, use the Cisco Developer Community Page:
+
+Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+
+Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
