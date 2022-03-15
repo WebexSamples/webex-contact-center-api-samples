@@ -46,3 +46,11 @@ ORG_ID=<your-org-id>
 - Go to http://localhost:5000/tasks or http://localhost:5000/users to see the basic GET Tasks and GET Users examples.
 
 Expand / extend the sample app(s) as required.
+
+## Support
+
+For Support and Assistance, use the Cisco Developer Community Page:
+
+Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+
+Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**

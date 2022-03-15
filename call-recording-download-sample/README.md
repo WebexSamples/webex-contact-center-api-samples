@@ -2,7 +2,7 @@
 
 For an overview on this Sample Application, watch this video.
 
-**[Using Webhooks with Webex Contact Center to download Call Recordings - DEMO]()**
+## [Watch the Video: Using Webhooks with Webex Contact Center to download Call Recordings - DEMO]()
 
 - This sample app hosts a simple POST /webhook endpoint that can be used to showcase and demo WebexCC's webhook capabilities for agent state changes (logging only) and Call recording Downloads.
 
@@ -11,7 +11,6 @@ For an overview on this Sample Application, watch this video.
 - In production, you will need to build a simple scheduler service that does this every 10 hours. Refer to the sample application in the folder - token-manager-sample
 
 - Please follow the original instructions as in the README.md of the parent (Root) Folder.
-
 
 1. For the Call recording Downloader to work, please create a folder called 'recordings'
 
@@ -40,3 +39,11 @@ This will redirect port 5000 to 80 and 443 using HTTP and HTTPS reverse proxies.
    **Note:** During testing, you will register the ngrok address that is HTTPS URL generated. In production, you will register your production URL as the webhook.
 
 4. When you run the app, you should receive events on your local.
+
+## Support
+
+For Support and Assistance, use the Cisco Developer Community Page:
+
+Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+
+Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
