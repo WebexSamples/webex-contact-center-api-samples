@@ -1,27 +1,20 @@
 {
   task(
-    timeComparator: endedTime #When filtering tasks, use the end time of the task
+    #Check if Customer called in the last 7 days and who they were connected to
+    from: 1646699261000
+    to: 1647304061000
+    timeComparator: createdTime #Filter by created Time only
     filter: {
       #Filter the type of Task
       and: [
         { channelType: { equals: telephony } } #Telephony calls only
+        { origin: { equals: "+12345677890" } } #Customer ANI
         { status: { equals: "ended" } } #Final Disposition
         { direction: { equals: "inbound" } } #Inbound call only
         { isActive: { equals: false } } #Resolved call only
       ]
     }
-    aggregation: {
-      #Define custom formulas and Aggregations
-      aggr: [
-        { field: totalDuration, type: sum, name: "Total Duration" }
-        {
-          field: connectedDuration
-          type: sum
-          name: "Average Connected Duration"
-        }
-      ]
-    }
-    pagination: { cursor: "0" } #Show first page
+    pagination: { cursor: "0" } #Display first page only
   ) {
     tasks {
       #Task Metadata
@@ -34,10 +27,26 @@
       totalDuration
       selfserviceDuration
       captureRequested
-      #Aggregation Results - Print Total and Average Durations
-      aggregation {
+      #Treatment Details
+      lastEntryPoint {
+        #Entrypoint Details
+        id
         name
-        value
+      }
+      lastQueue {
+        #Queue Details
+        id
+        name
+      }
+      lastTeam {
+        #Team Details
+        id
+        name
+      }
+      owner {
+        #Agent Details
+        name
+        id
       }
     }
     #Pagination Information
