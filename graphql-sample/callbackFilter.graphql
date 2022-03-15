@@ -1,5 +1,10 @@
 {
+  #FILTER: Get the Task details using CallBack filters and logical operators to match a condition
   task(
+    #From and To timestamps in Epoch Time
+    from: 1635750000000
+    to: 1638345599000
+    #Add a filter that checks if a Callback was made and with a status
     filter: {
       and: [
         { callbackData: { equals: { callbackNumber: "1234567890" } } }

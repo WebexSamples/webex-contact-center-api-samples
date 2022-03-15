@@ -1,4 +1,5 @@
 {
+  #LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached
   task(
     #Check if Customer called in the last 7 days and who they were connected to
     from: 1646699261000

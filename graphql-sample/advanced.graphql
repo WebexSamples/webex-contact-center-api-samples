@@ -1,4 +1,5 @@
 {
+  #AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields
   task(
     timeComparator: endedTime #When filtering tasks, use the end time of the task
     filter: {
