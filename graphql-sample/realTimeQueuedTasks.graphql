@@ -1,6 +1,8 @@
 {
+  #FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.
   task(
     filter: {
+      #The main filter for active tasks is isActive: true
       and: [
         { channelType: { equals: telephony } }
         { status: { equals: "parked" } }
@@ -10,6 +12,7 @@
     }
   ) {
     tasks {
+      #Add more fields here as needed
       id
       origin
       destination
@@ -17,8 +20,10 @@
       direction
       owner {
         id
+        name
       }
       lastEntryPoint {
+        id
         name
       }
     }

@@ -1,5 +1,12 @@
 {
-  task(from: 1635750000000, to: 1638345599000, pagination: { cursor: "0" }) {
+  #BASIC: Basic query to request for certain fields
+  task(
+    #From and To timestamps in Epoch Time
+    from: 1635750000000
+    to: 1638345599000
+    #Start with Page 0
+    pagination: { cursor: "0" }
+  ) {
     tasks {
       createdTime #ContactStartTime
       channelType #ChannelType
@@ -25,6 +32,11 @@
       totalDuration #QueueTime
       holdDuration #HoldDuration
       wrapupDuration #WrapUp
+    }
+    #Pagination Information
+    pageInfo {
+      endCursor
+      hasNextPage
     }
   }
 }

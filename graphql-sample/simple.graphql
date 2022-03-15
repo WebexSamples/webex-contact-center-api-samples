@@ -1,4 +1,6 @@
 {
+  #SIMPLE: Simply retrieve all task IDs
+
   task(
     #Search all tasks in a 15 day window.
     from: 1646095690000
