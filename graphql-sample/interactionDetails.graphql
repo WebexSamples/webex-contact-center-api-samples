@@ -1,0 +1,52 @@
+{
+  #CurrentInteraction: Usage of filters, aggregates, pagination and custom fields to find out information about the current interaction
+  task(
+    #Check Interaction Details based on a Specific Interaction ID and get other information about this call
+    from: 1646699261000 #Set this to dateTime NOW so you're looking for a task active right now
+    timeComparator: createdTime #Filter by created Time only
+    filter: {
+      #Filter the type of Task
+      and: [
+        #Telephony call
+        { id: { equals: "85f0c70c-19d6-4392-ad04-1854bb757044" } }
+        # Optional filters - you can remove these
+        { channelType: { equals: telephony } } #Telephony call
+        { origin: { equals: "+12342343456" } } #Customer ANI
+        { destination: { equals: "+14563454567" } } #DNIS
+        { direction: { equals: "inbound" } } #Inbound call only
+      ]
+    }
+  ) {
+    tasks {
+      #Task Metadata
+      id
+      isActive
+      createdTime
+      endedTime
+      origin
+      destination
+      totalDuration
+      #Treatment Details
+      lastEntryPoint {
+        #Entrypoint Details
+        id
+        name
+      }
+      lastQueue {
+        #Queue Details
+        id
+        name
+      }
+      lastTeam {
+        #Team Details
+        id
+        name
+      }
+      owner {
+        #Agent Details
+        name
+        id
+      }
+    }
+  }
+}
