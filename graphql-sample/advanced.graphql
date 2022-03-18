@@ -12,7 +12,7 @@
       ]
     }
     aggregation: {
-      #Define custom formulas and Aggregations
+      #Define custom formulas and Aggregations - NOTE that the FIELDS you insert below has an effect on this.
       aggr: [
         { field: totalDuration, type: sum, name: "Total Duration" }
         {
@@ -25,16 +25,10 @@
     pagination: { cursor: "0" } #Show first page
   ) {
     tasks {
-      #Task Metadata
-      id
-      createdTime
-      endedTime
+      #Task Metadata - Note that since these are aggregates, you need to use the GROUPBY Fields HERE
       origin
       destination
       lastWrapupCodeName #Why the customer called
-      totalDuration
-      selfserviceDuration
-      captureRequested
       #Aggregation Results - Print Total and Average Durations
       aggregation {
         name
