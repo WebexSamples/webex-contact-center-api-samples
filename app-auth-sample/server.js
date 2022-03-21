@@ -3,11 +3,16 @@ const app = express();
 const dotenv = require('dotenv');
 const url = require('url');
 const { default: axios } = require('axios');
-
 // ENV Variables
 dotenv.config();
-
-// Simple inmemory, global scope
+// Initialize constants
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
+const redirectUri = process.env.REDIRECT_URI;
+const orgId = process.env.ORG_ID;
+const scopes = 'cjp:config cjp:config_read cjp:config_write';
+const apiRootUrl = 'https://api.wxcc-us1.cisco.com'; // Change this to your Datacenter
+// Simple inmemory, global scope - you can store this on local storage if you'd like.
 var loginDetails = null;
 
 // For production HTTPS redirects only
@@ -51,18 +56,16 @@ app.get('/login', (req, res) => {
 
   const authUrl = 'https://webexapis.com/v1/authorize';
 
-  console.log(
-    `Redirecting to Webex Login Page, using Client ID: ${process.env.CLIENT_ID}`
-  );
+  console.log(`Redirecting to Webex Login Page, using Client ID: ${clientId}`);
 
   res.redirect(
     url.format({
       pathname: authUrl,
       query: {
         response_type: 'code',
-        client_id: process.env.CLIENT_ID,
-        redirect_uri: process.env.REDIRECT_URI,
-        scope: 'cjp:config cjp:config_read cjp:config_write',
+        client_id: clientId,
+        redirect_uri: redirectUri,
+        scope: scopes,
         state: '',
       },
     })
@@ -95,10 +98,10 @@ app.get('/auth/webex/callback', async (req, res) => {
   // Get access Token - submit required payload
   const payload = {
     grant_type: 'authorization_code',
-    client_id: process.env.CLIENT_ID,
-    client_secret: process.env.CLIENT_SECRET,
+    client_id: clientId,
+    client_secret: clientSecret,
     code: code,
-    redirect_uri: process.env.REDIRECT_URI,
+    redirect_uri: redirectUri,
   };
   // Parameterize
   const data = Object.keys(payload)
@@ -144,15 +147,16 @@ app.get('/tasks', async (req, res) => {
 
   let from = new Date('2021-10-10').getTime();
   let to = new Date('2021-10-20').getTime();
+
   const options = {
     method: 'GET',
-    url: 'https://api.wxcc-us1.cisco.com/v1/tasks',
+    url: `${apiRootUrl}/v1/tasks`,
     params: {
       channelTypes: 'telephony',
       from: from,
       to: to,
       pageSize: '100',
-      orgId: process.env.ORG_ID,
+      orgId: orgId,
     },
     headers: {
       Accept: 'application/json',
@@ -176,7 +180,7 @@ app.get('/users', async (req, res) => {
 
   const options = {
     method: 'GET',
-    url: `https://api.wxcc-us1.cisco.com/organization/${process.env.ORG_ID}/user`,
+    url: `${apiRootUrl}/organization/${orgId}/user`,
     headers: {
       Accept: 'application/json',
       Authorization: `Bearer ${loginDetails.access_token}`,
@@ -199,11 +203,10 @@ app.get('/agents', async (req, res) => {
 
   let from = new Date('2021-11-15').getTime();
   let to = new Date('2021-11-18').getTime();
-  let orgId = process.env.ORG_ID;
 
   options = {
     method: 'GET',
-    url: 'https://api.wxcc-us1.cisco.com/v1/agents/statistics',
+    url: `${apiRootUrl}/v1/agents/statistics`,
     params: {
       from: from,
       to: to,
@@ -234,11 +237,10 @@ app.get('/queues', async (req, res) => {
 
   let from = new Date('2021-10-10').getTime();
   let to = new Date('2021-10-20').getTime();
-  let orgId = process.env.ORG_ID;
 
   options = {
     method: 'GET',
-    url: 'https://api.wxcc-us1.cisco.com/v1/queues/statistics',
+    url: `${apiRootUrl}/v1/queues/statistics`,
     params: {
       from: from,
       to: to,
@@ -267,11 +269,9 @@ app.get('/sites', async (req, res) => {
   // Simple "GET Sites" Sample. Change the DATES to fetch another range.
   // View the spec here :
 
-  let orgId = process.env.ORG_ID;
-
   const options = {
     method: 'GET',
-    url: `https://api.wxcc-us1.cisco.com/organization/${orgId}/site`,
+    url: `${apiRootUrl}/organization/${orgId}/site`,
     headers: {
       Accept: 'application/json',
       Authorization: `Bearer ${loginDetails.access_token}`,
