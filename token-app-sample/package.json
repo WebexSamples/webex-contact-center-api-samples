@@ -1,0 +1,32 @@
+{
+  "name": "token-app-sample",
+  "version": "1.0.0",
+  "description": "Simple Token Management Service sample",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/token-app-sample"
+  },
+  "keywords": [
+    "Webex",
+    "Contact",
+    "Center",
+    "WebexCC",
+    "APIs",
+    "APIs"
+  ],
+  "author": "Arunabh Bhattacharjee",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2",
+    "toad-scheduler": "^1.6.0"
+  }
+}
