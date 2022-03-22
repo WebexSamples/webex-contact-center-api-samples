@@ -44,8 +44,23 @@ REFRESH_TOKEN=<your-refresh-token-from-postman>
 
 `$ nodemon` OR `$ npm start`
 
-- Go to http://localhost:5000 to fetch an access token
-- Go to http://localhost:5000/tasks or http://localhost:5000/users to see the basic GET Tasks and GET Users examples.
+- In the console, you will see logs similar to the following indicating that the access token was successfully fetched.
+
+```
+Created new DB record: [{"id":1,"org_id":"---","cluster_id":"PF84","access_token":"---","expires_in":43199,"refresh_token":"---","refresh_token_expires_in":5086614,"token_type":"Bearer"},null]
+
+Trying request with params: {"grant_type":"refresh_token","client_id":"---","client_secret":"---","refresh_token":"---"}
+
+Storing in database: {"access_token":"---","expires_in":43199,"refresh_token":"---","refresh_token_expires_in":5086594,"token_type":"Bearer"}
+
+Executing (default): SELECT `id`, `org_id`, `cluster_id`, `access_token`, `expires_in`, `refresh_token`, `refresh_token_expires_in`, `token_type`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `tokens` AS `tokens` WHERE `tokens`.`id` = 1;
+
+Found existing token details in DB: {"id":1,"org_id":"---","cluster_id":"PF84","access_token":"---","expires_in":43199,"refresh_token":"---","refresh_token_expires_in":5086614,"token_type":"Bearer","createdAt":"2022-03-21T20:34:54.325Z","updatedAt":"2022-03-22T22:50:04.941Z"} updating with this data:-> {"access_token":"---","expires_in":43199,"refresh_token":"-----","refresh_token_expires_in":5086594,"token_type":"Bearer"}
+
+Executing (default): INSERT INTO `tokens` (`id`,`org_id`,`cluster_id`,`access_token`,`expires_in`,`refresh_token`,`refresh_token_expires_in`,`token_type`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10) ON CONFLICT (`id`) DO UPDATE SET `id`=EXCLUDED.`id`,`org_id`=EXCLUDED.`org_id`,`cluster_id`=EXCLUDED.`cluster_id`,`access_token`=EXCLUDED.`access_token`,`expires_in`=EXCLUDED.`expires_in`,`refresh_token`=EXCLUDED.`refresh_token`,`refresh_token_expires_in`=EXCLUDED.`refresh_token_expires_in`,`token_type`=EXCLUDED.`token_type`,`updated_at`=EXCLUDED.`updated_at`;
+
+Created new DB record: [{"id":1,"org_id":"---","cluster_id":"PF84","access_token":"NmNmNjliZTgtMzA2NS00MmQyLThlYzItY2QwZjRkMmEzZGQzMTkyYzk3MzQtYmI0","expires_in":43199,"refresh_token":"---","refresh_token_expires_in":5086594,"token_type":"Bearer"},null]
+```
 
 Expand / extend the sample app(s) as required.
 

@@ -16,12 +16,13 @@ const path = require('path');
 // Store the Token inside the Database
 const { db } = require('../db/db');
 const { getToken, updateToken } = require('../service/tokenService');
-// Global Constants
+
+// Global Constants - You may refactor this into another file if required.
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const refreshToken = process.env.REFRESH_TOKEN;
 const authUrl = 'https://webexapis.com/v1/access_token';
-// You can externalize this - interval in hours
+// You can externalize this property as well - interval in hours OR minutes OR seconds
 const INTERVAL = 20;
 
 // Connect to your database. Change the parameters inside of db.js to switch your database type.
@@ -93,15 +94,13 @@ const getRefreshToken = async () => {
 };
 
 const initializeScheduler = () => {
-  console.info('Initializing the Scheduler..');
-  // Initialize the Token first
+  // Initialize the Access Token upon startup.
   getRefreshToken();
+  console.info('Initializing the Scheduler..');
   const scheduler = new ToadScheduler();
   const task = new AsyncTask('Fetch Refresh Token', getRefreshToken);
-
   // Setup the Scheduler to get the refresh token every INTERVAL hours
-  // For minutes, use: const job = new SimpleIntervalJob({ minutes: INTERVAL }, task);
-
+  // E.g: For minutes, use: const job = new SimpleIntervalJob({ minutes: INTERVAL }, task);
   const job = new SimpleIntervalJob({ seconds: INTERVAL }, task);
   //const job = new SimpleIntervalJob({ hours: INTERVAL }, task);
   scheduler.addSimpleIntervalJob(job);
