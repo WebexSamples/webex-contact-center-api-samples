@@ -1,10 +1,11 @@
-/* Token Service maintains Bot access Token and refresh token details.
+/* Token Service maintains the database methods to insert/update/retrieve the access and refresh token details.
 Updates the specific details in the database.
-Retrieves a new access and refresh token every 10 hours.
+Retrieves a new access and refresh token as needed.
  */
 
 const { Token } = require('../models/Token');
 const getToken = () => {
+  // Gets the Access Token from the database. This is not per org (yet). Can be extended if needed.
   const token = Token.findOne({
     where: {
       id: 1,
@@ -15,6 +16,7 @@ const getToken = () => {
 };
 
 const updateToken = (token) => {
+  // Updates the existing Token in the Database
   let [accessToken, clusterId, orgId] = token.access_token.split('_');
 
   const record = Token.upsert(
@@ -34,6 +36,7 @@ const updateToken = (token) => {
 };
 
 const getAccessToken = async () => {
+  // Fetches the latest access Token if present in the database, else, it returns nothing.
   const token = await getToken();
   let access_token = (await token.access_token) ? token.access_token : '';
   console.log(`Returning Access Token: ${access_token}`);
