@@ -1,8 +1,9 @@
 /**
  * This file stores the logic to call the "Scheduler" to refresh the tokens every INTERVAL hours.
- * INTERVAL = 10; would refresh the token every 10 hours
- * To Store the Token, it depends on the "Token Service"
+ * INTERVAL = 10; would refresh the token every 10 hours based on the implementation.
+ * To Store the Token, it depends on the "Token Service" which is the backend database interface.
  */
+
 // Scheduler
 const {
   ToadScheduler,
