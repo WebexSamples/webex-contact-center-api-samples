@@ -2,7 +2,7 @@ import { fetchApi } from "./fetchApi.js";
 import { renderHTML } from "../../../views/render.js";
 
 export async function getFetch(formValues, method) {
-  const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pageSize}`;
+  const url = `https://api.wxcc-us1.cisco.com/organization/${formValues.org}/${formValues.endpoint}?page=${formValues.page}&pageSize=${formValues.pagesize}`;
   const response = await fetchApi(url, method);
   try {
     // Traverse form
