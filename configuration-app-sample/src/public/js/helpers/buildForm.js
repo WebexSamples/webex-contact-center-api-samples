@@ -32,9 +32,9 @@ export function buildForm() {
   pageInput.setAttribute("name", "page");
   pageInput.setAttribute("placeholder", "Page (optional)");
   const pageSizeInput = document.createElement("input");
-  pageSizeInput.id = "pagesize";
+  pageSizeInput.id = "pageSize";
   pageSizeInput.setAttribute("type", "text");
-  pageSizeInput.setAttribute("name", "pagesize");
+  pageSizeInput.setAttribute("name", "pageSize");
   pageSizeInput.setAttribute("placeholder", "Page Size (optional)");
   const pageBody = document.createElement("textarea");
   pageBody.id = "body";
@@ -55,12 +55,15 @@ export function buildForm() {
   authButton.setAttribute("name", "accessToken");
   authButton.setAttribute("placeholder", "coming soon...");
   authDiv.append(authButton);
-  const searchResult = document.getElementById("mainArticle");
+  const searchResult = document.getElementById("pageSearch");
   const search = document.createElement("input");
   search.id = "search";
+  search.style.width = "300px";
+  search.style.marginLeft = "18px";
+  // search.style.display = "block";
   search.setAttribute("type", "text");
-  search.setAttribute("name", "accessToken");
-  search.setAttribute("placeholder", "Search...");
-  // searchResult.append(search);
+  search.setAttribute("name", "search");
+  search.setAttribute("placeholder", "Type...");
+  searchResult.append(search);
   // const authLink =
 }
