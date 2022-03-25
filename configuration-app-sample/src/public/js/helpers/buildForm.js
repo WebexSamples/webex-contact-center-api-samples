@@ -32,9 +32,9 @@ export function buildForm() {
   pageInput.setAttribute("name", "page");
   pageInput.setAttribute("placeholder", "Page (optional)");
   const pageSizeInput = document.createElement("input");
-  pageSizeInput.id = "pagesize";
+  pageSizeInput.id = "pageSize";
   pageSizeInput.setAttribute("type", "text");
-  pageSizeInput.setAttribute("name", "pagesize");
+  pageSizeInput.setAttribute("name", "pageSize");
   pageSizeInput.setAttribute("placeholder", "Page Size (optional)");
   const pageBody = document.createElement("textarea");
   pageBody.id = "body";
