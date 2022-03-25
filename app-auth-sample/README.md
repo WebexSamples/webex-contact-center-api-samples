@@ -6,7 +6,7 @@
 
 - The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
-## [Watch the Video: Understanding WebexCC OAuth2 - App Sample]()
+## [Watch the Video: Understanding WebexCC OAuth2 - App Sample](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
 
 #### Pre-Requisites:
 
