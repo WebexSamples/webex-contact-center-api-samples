@@ -55,12 +55,15 @@ export function buildForm() {
   authButton.setAttribute("name", "accessToken");
   authButton.setAttribute("placeholder", "coming soon...");
   authDiv.append(authButton);
-  const searchResult = document.getElementById("mainArticle");
+  const searchResult = document.getElementById("pageSearch");
   const search = document.createElement("input");
   search.id = "search";
+  search.style.width = "300px";
+  search.style.marginLeft = "18px";
+  // search.style.display = "block";
   search.setAttribute("type", "text");
-  search.setAttribute("name", "accessToken");
-  search.setAttribute("placeholder", "Search...");
-  // searchResult.append(search);
+  search.setAttribute("name", "search");
+  search.setAttribute("placeholder", "Type...");
+  searchResult.append(search);
   // const authLink =
 }

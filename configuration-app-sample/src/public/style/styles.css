@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
 
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --green: hsl(147, 100%, 26%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
 /* Grid Layout */
 body {
   display: grid;
   grid-template-areas:
     "header header"
+    "nav search"
     "nav article"
     "auth article"
     "auth footer";
-  grid-template-rows: 40px 1fr 10px 80px;
+  /* grid-template-rows: 40px 1fr 10px 80px; */
   grid-template-columns: 30% 1fr;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
@@ -136,6 +151,11 @@ select:focus {
   font-weight: 500;
   padding-top: 10px;
 }
+#pageSearch {
+  grid-area: search;
+  color: #4caf50;
+  font-weight: 500;
+}
 #pageFooter {
   grid-area: footer;
   color: #4caf50;
@@ -164,6 +184,7 @@ select:focus {
       "header"
       "article"
       "auth"
+      "search"
       "nav"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;
@@ -201,4 +222,58 @@ h2.noToken {
 a.noToken {
   text-decoration: none;
   color: #00853c;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 45%;
+  /* padding-bottom: 20px; */
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 5px;
+  padding: 0 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-size: 1.2rem;
+  /* font-weight: var(--weight3); */
+}
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -50px var(--grayishBlue);
+  padding: 20px;
+  /* background: var(--veryLightGray); */
+  background: white;
+}
+.green {
+  border-top: 3px solid var(--green);
 }
