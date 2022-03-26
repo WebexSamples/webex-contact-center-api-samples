@@ -7,6 +7,9 @@ search();
 // Render on Screen
 export const renderHTML = (endpoint, results) => {
   const apiResult = select("#mainArticle");
+  const titleResult = select(".titleResult");
+  titleResult.style.display = "none";
+
   const htmlString = results
     .map(result => {
       return `
@@ -22,7 +25,7 @@ export const renderHTML = (endpoint, results) => {
     })
     .join("");
 
-  apiResult.innerHTML = htmlString;
+  apiResult.innerHTML += htmlString;
 };
 
 {
