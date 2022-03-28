@@ -1,5 +1,6 @@
 import { select } from "../js/sa-lib/select.js"; // use this in place DOM
 import { search } from "../js/helpers/search.js";
+import { findItemId } from "../js/helpers/api/deleteFetch.js";
 
 //search
 search();
@@ -15,9 +16,15 @@ export const renderHTML = (endpoint, results) => {
       return `
 			<div class="column">
 				<div class="row">
-    			<div class="box green">
-      			<p>${endpoint}:</p>
+    			<div class="box blue">
+      			<p>${endpoint}</p>
       			<h2>${result}</h2>
+						<img class="deleteItem" src="../img/delete_24.png" alt="delete">
+						<dialog>
+  						<p>Are you sure you want to delete?</p>
+							<button id="yes">Yes</button>
+							<button id="no">No</button>
+						</dialog>
     			</div>
     		</div>
     	</div>
@@ -26,15 +33,7 @@ export const renderHTML = (endpoint, results) => {
     .join("");
 
   apiResult.innerHTML += htmlString;
-};
 
-{
-  /* <div class="column">
-				<div class="row">
-    			<div class="card">
-      			<div class="title">${endpoint}:</div>
-      			<p class="result">${result}</p>
-    			</div>
-    		</div>
-    	</div> */
-}
+  //delete Items
+  findItemId();
+};
