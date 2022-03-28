@@ -110,6 +110,7 @@ dialog {
   border-top: none;
   border-left: none;
   border-right: none;
+  border-bottom: none;
   border-radius: 5px;
   position: relative;
   width: 100%;
