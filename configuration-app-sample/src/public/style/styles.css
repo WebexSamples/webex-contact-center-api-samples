@@ -166,8 +166,7 @@ select:focus {
 .message {
   margin-top: 10px;
   margin-left: 40%;
-  color: white;
-  background: var (--ciscoError);
+  color: var(--ciscoError);
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
