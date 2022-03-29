@@ -7,15 +7,23 @@ export async function getFetch(formValues, method) {
   try {
     // Traverse form
     const results = response.map(el => {
-      const email = el.email;
-      const getElements = el.name;
+      const elementInfo = {
+        elementEmail: el.email,
+        elementName: el.name,
+        elementId: el.id,
+        elementOrg: el.organizationId
+      };
+      const { elementEmail, elementName, elementId, elementOrg } = elementInfo;
+
       if (formValues.endpoint === "team" || formValues.endpoint === "skill-profile" || formValues.endpoint === "contact-service-queue" || formValues.endpoint === "entry-point") {
         return `
-    					<option class="result">${getElements}</option>
+    					<option class="result">${elementName}</option>
+    					<p data-id="${elementId}" class="result hideIDs"></p>
     					`;
       } else if (formValues.endpoint === "user") {
         return `
-    					<option class="result">${email}</option>
+    					<option class="result">${elementEmail}</option>
+    					<p data-id="${elementId}" class="result hideIDs"></p>
     					`;
       }
     });

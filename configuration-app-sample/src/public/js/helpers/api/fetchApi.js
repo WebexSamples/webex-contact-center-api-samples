@@ -13,7 +13,7 @@ export async function fetchApi(url, method) {
     let response2 = await response1.json();
     return response2;
   } catch (error) {
-    console.log(error);
+    return error;
     // location.href = `${host}/index.html`;
   }
 }
