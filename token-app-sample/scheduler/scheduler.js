@@ -24,7 +24,7 @@ const clientSecret = process.env.CLIENT_SECRET;
 const refreshToken = process.env.REFRESH_TOKEN;
 const authUrl = 'https://webexapis.com/v1/access_token';
 // You can externalize this property as well - interval in hours OR minutes OR seconds
-const INTERVAL = 5000;
+const INTERVAL = 50;
 
 // Connect to your database. Change the parameters inside of db.js to switch your database type.
 db.sync({
