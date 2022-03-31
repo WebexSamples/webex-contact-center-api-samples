@@ -2,7 +2,7 @@
 
 This sample intends to explain the Access Token and Refresh Token flows
 
-## [Watch: Getting Started with the /search API]()
+## [Watch: REFRESH Token Management and Calling WebexCC API from Flow Designer](https://app.vidcast.io/share/c5876929-2d94-40b6-96e5-ae541b42b413)
 
 For basics of the Webex Contact Center API, refer to the [WebexCC Postman tutorial](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample)
 

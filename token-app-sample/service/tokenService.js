@@ -40,7 +40,7 @@ const getAccessToken = async () => {
   const token = await getToken();
   let access_token = (await token.access_token) ? token.access_token : '';
   console.log(`Returning Access Token: ${access_token}`);
-  return access_token;
+  return { access_token: access_token };
 };
 
 module.exports = { getToken, updateToken, getAccessToken };
