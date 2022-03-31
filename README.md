@@ -30,6 +30,13 @@ The API samples are divided into several folders. It would be great to follow th
 | 4   | call-recording-download-sample | This is a sample application that shows you how to use Webhooks - the capture:created Webhook allows you to download a new call recording on the system, to a local file.                                                             | [Call Recording Download Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/call-recording-download-sample) |
 | 5   | token-app-sample               | This is a sample application that shows you how to build a scheduler service that obtains a new access token every 10 hours from Webex and persist this onto your local datastore. The example uses a simple SQLite DB as an example. | [Token Management Service Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/token-app-sample)              |
 
+## Disclaimer
+
+> These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
+> When building a production grade solution, please consider the overall architecture and design with a security first approach.
+> Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
+> These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
+
 ## Support
 
 For Support and Assistance, use the Cisco Developer Community Page:
