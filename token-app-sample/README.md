@@ -6,7 +6,7 @@ This sample intends to explain the Access Token and Refresh Token flows
 
 For basics of the Webex Contact Center API, refer to the [WebexCC Postman tutorial](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample)
 
-For an introduction to OAuth2, refer : **[OAuth2 - Specification](https://oauth.net/2/)**
+For an introduction to OAuth2 and to understand Access tokens and Refresh tokens, refer : **[OAuth2 - Specification](https://oauth.net/2/)**
 
 #### Pre-Requisites:
 
@@ -28,14 +28,19 @@ $ npm -v
 
 `$ cat .env`
 
+**Note** `There is a copy.env file that you can use as a template. Please rename that to .env and proceed`
+
 ```
 PORT=5000
-CLIENT_ID=<your-client-id>
-CLIENT_SECRET=<your-client-secret>
-REDIRECT_URI=<your-redirect uri - ex: http://localhost:5000/auth/webex/callback>
-ORG_ID=<your-org-id>
-ACCESS_TOKEN=<your-access-token-from-postman>
-REFRESH_TOKEN=<your-refresh-token-from-postman>
+CLIENT_ID=<your-client-id-here>
+CLIENT_SECRET=<your-client-secret-here>
+REDIRECT_URI=http://localhost:5000/auth/webex/callback
+ORG_ID=<your-org-id-here>
+ACCESS_TOKEN=<your-access-token-here>
+REFRESH_TOKEN=<your-refresh-token-here>
+PASSPHRASE=<your-random-passphrase-here>
+SOURCE_IP=127.0.0.1
+FROM=admin@webexcc.com
 ```
 
 - Run `$ npm install`
