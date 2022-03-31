@@ -47,6 +47,13 @@ ORG_ID=<your-org-id>
 
 Expand / extend the sample app(s) as required.
 
+## Disclaimer
+
+> These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
+> When building a production grade solution, please consider the overall architecture and design with a security first approach.
+> Also, please consider how you would extend this app for multiple orgs, manage tokens for those orgs, etc.
+> These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
+
 ## Support
 
 For Support and Assistance, use the Cisco Developer Community Page:

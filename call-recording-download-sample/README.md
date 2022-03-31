@@ -40,6 +40,13 @@ This will redirect port 5000 to 80 and 443 using HTTP and HTTPS reverse proxies.
 
 4. When you run the app, you should receive events on your local.
 
+## Disclaimer
+
+> These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
+> When building a production grade solution, please consider the overall architecture and design with a security first approach.
+> Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
+> These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
+
 ## Support
 
 For Support and Assistance, use the Cisco Developer Community Page:
