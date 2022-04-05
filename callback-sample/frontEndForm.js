@@ -7,7 +7,7 @@ function primaryCallback() {
   //variables
   const modifiers = {
     url: "https://examplecallback1.loca.lt", // Localtunnel URL or your public Server
-    formTitle: "Macy's",
+    formTitle: "Customer Name",
     formSubTitle: "Schedule a Call-Back",
     formButtonColor: "#FD832F",
     reasons: [" ", "Billing", "Orders", "Support", "Other"],
