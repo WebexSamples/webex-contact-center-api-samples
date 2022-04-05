@@ -6,7 +6,7 @@ document.onload(primaryCallback());
 function primaryCallback() {
   //variables
   const modifiers = {
-    url: "https://nikocallback1.loca.lt", // Localtunnel URL or your public Server
+    url: "https://examplecallback1.loca.lt", // Localtunnel URL or your public Server
     formTitle: "Macy's",
     formSubTitle: "Schedule a Call-Back",
     formButtonColor: "#FD832F",
