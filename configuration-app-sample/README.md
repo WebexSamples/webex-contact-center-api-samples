@@ -21,6 +21,21 @@ How to run the app:
   - Inside this project on your terminal type: `npm run start`
   - this should run the app on your localhost:5000
 
+## Disclaimer
+
+> These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
+> When building a production grade solution, please consider the overall architecture and design with a security first approach.
+> Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
+> These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
+
+## Support
+
+For Support and Assistance, use the Cisco Developer Community Page:
+
+Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+
+Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
+
 ## Version History
 
 - 1.0.0
