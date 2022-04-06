@@ -1,20 +1,23 @@
-## Configuration API - Callback
+## Webcallback API - Configure Callbacks from your website using Webex Contact Center
 
-Simple example of using the Callback Task API, Postman example as well as NodeJS backend and a simple HTML/CSS form that can be rendered on any webpage using a Javascript injector.
+Here is a sample of using the Web Callback Task API, the overview using Postman as well as a sample NodeJS backend for your webpage, using a simple HTML/CSS form that can be rendered on any webpage.
+The example uses a Javascript injector called Scripty to inject the Callback form into any website of your choice.
 
-## [Watch Now: Configuration Callback API Overview and Demo](https://app.vidcast.io/share/b26ca3a0-309a-4244-8455-56306b302573)
+## [Watch Now: Webcallback API Overview and Demo](https://app.vidcast.io/share/b26ca3a0-309a-4244-8455-56306b302573)
 
 ## Getting Started
 
-This app is assuming you already have done through the Oauth samples. If you don't please go to [postman-sample app](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample). For ease this app just requires you to paste in your Bearer token.
+This app is assuming you already have done through the OAuth2 samples and have a Client ID and Client Secret to use the APIs. If you don't please go to [postman-sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample). For ease of use, this app only requires you to paste in your Bearer token.
 
-### Executing program
+In production, before actually deploying this you will still need to "maintain" API access via OAuth2 Access Tokens and Refresh Tokens. To understand how refresh tokens work, please refer the `token-app-sample`.
 
-How to run the app:
+### Executing the Sample
+
+How to run the app shown in the demo above:
 
 - Step 1:
 
-  - On the **server.js** file, line 89, please paste in your access token.
+  - On the **server.js** file, line 89, please paste in your access token manually. You can do this by visiting the developer portal at developer.webex-cx.com and copying out your access token after Signing in.
 
 - Step 2:
 
@@ -35,4 +38,4 @@ How to run the app:
 
 ## Version History
 
-- 1.0.0
+- 1.0.0: Basic Webcallback API Sample
