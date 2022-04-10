@@ -2,17 +2,17 @@
 
 Pre-requisites:
 
-- Download Postman Here:
-- Ensure you have access to the [Developer Portal]().
+- Download Postman Here: [https://www.postman.com/](https://www.postman.com/)
+- Ensure you have access to the **[Developer Portal](https://developer.webex-cx.com/)**.
 - Keep your Administrator UserID / Password handy for the developer portal login.
 
 ## [Watch the Video : Getting Started with Postman](https://app.vidcast.io/share/e2fc878b-9294-4830-86a5-38c77fcc5093)
 
-- To download the postman collection, download the file : attached to the repository.
-- Import this file into postman to begin using the collection.
-- Change the Client ID, Client Secret, and Redirect URIs as needed.
+- To download the postman collection, download the file : `New_WebexCC_OAuth2_APIs.postman_collection.json` attached to the repository.
+- `Import` this file into postman to begin using the collection.
+- Setup all the variables like the Authorization URLs, Client ID, Client Secret, and Redirect URIs as needed.
 
-## Important - Geo-URLs for Different Datacenters
+## IMPORTANT - Geo-URLs for Different Datacenters on Webex Contact Center
 
 Please follow the matrix below to ensure you are using the right datacenter for both, the Developer Portal as well as the API Root Endpoint, when drafting your requests.
 
