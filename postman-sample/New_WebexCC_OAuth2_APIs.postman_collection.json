@@ -1,0 +1,461 @@
+{
+  "info": {
+    "_postman_id": "5fb69314-91ac-41da-8726-100d5ffd5de1",
+    "name": "New WebexCC OAuth2 APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "Tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/tasks?from=1646420205000&channelTypes=telephony",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "tasks"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "1646420205000"
+                },
+                {
+                  "key": "channelTypes",
+                  "value": "telephony"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Callback",
+      "item": [
+        {
+          "name": "callback",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"destination\": \"your mobile number\",\n  \"entryPointId\": \"entry point id\",\n  \"attributes\": {\"channel\":\"sales\"},\n  \"outboundType\": \"CALLBACK\",\n  \"mediaType\": \"telephony\",\n  \"callback\": {\n    \"callbackOrigin\": \"web\",\n    \"callbackType\": \"immediate\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/tasks",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "tasks"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Agent",
+      "item": [
+        {
+          "name": "Agent Activities",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/agents/activities?from=1646420205000",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "agents", "activities"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "1646420205000",
+                  "description": "[from,to]: should not be more than 1 days before"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "EntryPoints",
+      "item": [
+        {
+          "name": "All EntryPoints",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/entry-point",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "entry-point"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "AddressBook",
+      "item": [
+        {
+          "name": "All AddressBook",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "address-book"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Captures",
+      "item": [
+        {
+          "name": "Captures",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"query\": {\n          \"orgId\": \"{{org_id}}\",\n          \"urlExpiration\": 0,\n          \"taskIds\": [\n               \"e939907a-1c76-4fad-b171-a8b293f415fd\"\n          ],\n          \"includeSegments\": false\n     }\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/captures/query",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "captures", "query"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Register Subscription",
+      "item": [
+        {
+          "name": "Subscribe",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Capture Recordings Event\",\n  \"description\": \"Send Event when recording is available\",\n  \"eventTypes\": [\n    \"capture:available\"\n  ],\n  \"destinationUrl\": \"https://nikowebhook1.loca.lt/webhook\",\n  \"secret\": \"my-32-plus-character-long-secret\",\n  \"orgId\": \"{{org_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "subscriptions",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"description\": \"Capture Recordings\",\n  \"eventTypes\": [\"capture:available\"],\n  \"destinationUrl\": \"https://nikowebhook1.loca.lt/webhook\",\n  \"status\": \"active\",\n  \"secret\": \"my-32-plus-character-long-secret\",\n  \"orgId\": \"{{org_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions", "<id>"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "{{scope}}",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "{{client_secret}}",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "{{client_id}}",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "{{accessToken_url}}",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "{{auth_url}}",
+        "type": "string"
+      },
+      {
+        "key": "tokenType",
+        "value": "",
+        "type": "string"
+      },
+      {
+        "key": "accessToken",
+        "value": "",
+        "type": "string"
+      },
+      {
+        "key": "tokenName",
+        "value": "Token",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "body",
+        "type": "string"
+      },
+      {
+        "key": "state",
+        "value": "new",
+        "type": "string"
+      },
+      {
+        "key": "challengeAlgorithm",
+        "value": "S256",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "https://www.getpostman.com/oauth2/callback",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// // Get values from Environment ",
+          "// const envValues = {",
+          "//     refresh_token: pm.environment.get(\"refresh_token\"),",
+          "//     client_id: pm.environment.get(\"client_id\"),",
+          "//     grant_type: pm.environment.get(\"grant_type\"),",
+          "//     client_secret: pm.environment.get(\"client_secret\")",
+          "// }",
+          "",
+          "// //Set timers for the token on the Environment",
+          "// function setTokeTimer(){",
+          "//     var startTimer = pm.environment.set(\"startTimer\", new Date().getTime());",
+          "//     var setCountDown = pm.environment.get(\"startTimer\");",
+          "//     var expires = pm.environment.set(\"expires\", new Date(new Date(setCountDown).getTime() + 60 * 60 * 10 * 1000).getTime());",
+          "//     return setCountDown",
+          "// }",
+          "",
+          "// function subtractHours(numOfHours, date = new Date()) {",
+          "//   date.setHours(date.getHours() - numOfHours);",
+          "//   return date;",
+          "// }",
+          "",
+          "// // Send Post",
+          "// const echoPostRequest = {",
+          "// url: 'https://webexapis.com/v1/access_token',",
+          "// method: 'POST',",
+          "// header: 'Content-Type:application/json',",
+          "// body: {",
+          "// mode: 'application/json',",
+          "// raw: JSON.stringify(",
+          "//     {",
+          "//         'grant_type': envValues.grant_type,",
+          "//         'client_id': envValues.client_id,",
+          "//         'client_secret': envValues.client_secret,",
+          "//         'refresh_token': envValues.refresh_token",
+          "//     })",
+          "// }",
+          "// };",
+          "",
+          "// // Make a logical decision to renew Access_Token every 10 hours",
+          "// if (pm.environment.get('expires') <= (new Date()).getTime()) {",
+          "//     console.log('Token is expired') ",
+          "//     pm.sendRequest(echoPostRequest,",
+          "//     function (err, response) {",
+          "//         let token = response.json(); ",
+          "//         pm.environment.set(\"access_token\", token.access_token);",
+          "//         pm.environment.set(\"refresh_token\", token.refresh_token);",
+          "//         setTokeTimer()",
+          "//         const timeLeft = pm.environment.get(\"expires\");",
+          "//         const remainTime =  new Date(timeLeft).getHours();",
+          "//         console.log(`new token stored, expires in ${remainTime} hours`);",
+          "//     }",
+          "//   );",
+          "// } else {",
+          "//     console.log(`All good.  Looks like we still have some left until token expires.`);",
+          "    ",
+          "   ",
+          "// }"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ]
+}
