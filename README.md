@@ -12,8 +12,8 @@ To get started, create an App Integration on the Developer Portal:
 - Sign into developer.webex-cx.com with a valid Webex Control Hub Account.
 - Create an Application Integration by going to your Profile > Manage My Apps.
 - Creating an Application Integration will give you a set of Client ID and Client Secret that you will need for this sample.
-- Note: While entering the Redirect URI, ensure it has the right URL. For example, for postman, it is :
-- For your local app, it will be in the format: http://localhost:{port}/{path}
+- Note: While entering the Redirect URI, ensure it has the right URL. For example, for postman, it is : `https://oauth.pstmn.io/v1/callback`
+- For your local app, it will be in the format: `http://localhost:{port}/{path}`
 
 ## Using the API Samples
 
