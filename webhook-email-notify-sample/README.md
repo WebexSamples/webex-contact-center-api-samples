@@ -1,15 +1,15 @@
-## Webhook - Subscribe and configure.
+## Webhooks - Understanding, Subscribing and configuring Webhooks for Webex Contact Center
 
-Simple webhook listening for a few events and action taken on those events is to send an email.
+The following example covers a simple webhook listening for a few events and action taken on those events is to send an email.
 Watch the demo below to understand what this app does and how to set it up and extend on it.
 
-## [Watch Now: Configuration App Sample Overview and Demo](https://app.vidcast.io/video/4ccbc68b-eb8a-4095-8eae-f39cf83069d3)
+## [Watch Now: Getting Started with WebexCC Webhooks and Configuring Email Notifications](https://app.vidcast.io/share/09d59095-c849-44e0-ac61-eb7bbb469473)
 
 ## Getting Started
 
 This app is assuming you already have a Client ID and Secret. If you don't please go to [postman-sample app](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample) and obtain your Client ID and Client Secret.
 
-### Executing program
+### Executing sample
 
 How to run the app:
 
@@ -20,7 +20,7 @@ How to run the app:
 - Step 2:
 
   - In the index.js file, **line 19**, add your own unique subdomain name. ie: `mywebhook12345`
-  - this publicly generated URL will be needed for the webhook subscription.
+  - This publicly generated URL will be needed for the webhook subscription.
 
 - Step 3:
 
@@ -32,7 +32,7 @@ How to run the app:
   - this should run the app on your localhost:5000 as well as your own public URL.
 
 - Step 5:
-  - From here on watch the video to guide you along.
+  - From here on please watch the video that will help guide you along.
 
 ## Version History
 
