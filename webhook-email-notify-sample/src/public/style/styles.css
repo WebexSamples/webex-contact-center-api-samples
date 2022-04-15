@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --green: hsl(147, 100%, 26%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --ciscoBackGround: hsl(0, 0%, 96.9%);
+  --ciscoText: hsl(194.9, 100%, 24.5%);
+  --ciscoButton: hsl(195.1, 100%, 32%);
+  --ciscoButtonHover: hsl(194.9, 100%, 24.5%);
+  --ciscoActive: hsl(196.3, 87.1%, 18.2%);
+  --ciscoError: hsl(9, 91.5%, 62.9%);
+  --ciscoToken: hsl(148.1, 100%, 33.5%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+/* Grid Layout */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav search"
+    "nav article"
+    "auth article"
+    "auth footer";
+  /* grid-template-rows: 40px 1fr 10px 80px; */
+  grid-template-columns: 30% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+header,
+footer,
+article,
+nav,
+div {
+  padding: 1em;
+  background: var(--ciscoBackGround);
+}
+
+input[type="text"],
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline-color: var(--ciscoText);
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--ciscoText);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form {
+  width: 92%;
+}
+button {
+  margin-top: 20px;
+  background: var(--ciscoButton);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  transition-duration: 0.8s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+button:hover {
+  background: var (--ciscoButtonHover);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1.5;
+}
+button#yes {
+  float: right;
+  background: var(--ciscoError);
+}
+button#no {
+  margin-right: 10px;
+  padding: 10px 13px;
+  float: right;
+}
+
+dialog {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-left: -20px;
+}
+
+.comment {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.commenter {
+  float: left;
+}
+
+.commenter img {
+  width: 35px;
+  height: 35px;
+}
+
+.comment-text-area {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.apiBody {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  float: left;
+  width: 98.5%;
+  min-height: 150px;
+  outline: none;
+  resize: none;
+  border: 1px solid #ccc;
+  text-indent: 17px;
+}
+#submit {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+}
+
+select:focus {
+  outline-color: var(--ciscoText);
+}
+
+.message {
+  margin-top: 10px;
+  margin-left: 40%;
+  color: var(--ciscoError);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#pageHeader {
+  grid-area: header;
+  color: var(--ciscoText);
+  text-align: center;
+  font-weight: 500;
+  padding-top: 10px;
+}
+#pageSearch {
+  grid-area: search;
+  color: var(--ciscoText);
+  font-weight: 500;
+}
+#pageFooter {
+  grid-area: footer;
+  color: var(--ciscoText);
+  font-weight: 500;
+}
+#mainArticle {
+  grid-area: article;
+  color: var(--ciscoText);
+  font-weight: 500;
+}
+#mainNav {
+  grid-area: nav;
+  color: var(--ciscoText);
+  font-weight: 500;
+}
+#auth {
+  grid-area: auth;
+  color: var(--ciscoText);
+  font-weight: 500;
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "auth"
+      "search"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.start {
+  margin-top: 25%;
+  margin-left: 14%;
+  background: white;
+}
+
+a.btn {
+  background: var(--ciscoButton);
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  transition-duration: 0.8s;
+  opacity: 0.6;
+  width: 200px;
+  display: block;
+}
+a.btn:hover {
+  background: var(--ciscoButtonHover);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1.5;
+}
+
+h2.noToken {
+  color: var(--ciscoError);
+}
+a.noToken {
+  text-decoration: none;
+  color: var(--ciscoText);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 45%;
+  /* padding-bottom: 20px; */
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 5px;
+  padding: 0 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  color: var(--varyDarkBlue);
+  font-size: 1.2rem;
+  /* font-weight: var(--weight3); */
+}
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -50px var(--grayishBlue);
+  padding: 10px 20px 30px;
+  /* background: var(--veryLightGray); */
+  background: white;
+}
+.blue {
+  border-top: 3px solid var(--ciscoButtonHover);
+}
+
+.titleHide {
+  display: none;
+}
+.hideIDs {
+  display: none;
+}
+
+p.fs {
+  font-size: 0.8rem;
+}
