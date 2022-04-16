@@ -1,5 +1,7 @@
 ## Call Recording Download Sample - Using Webhooks
 
+> **Note:** The samples assumes that you understand Webhooks. To get a better understanding of how to use Webhooks, and subscribe to them, refer to the [Getting Started With Webex Contact Center Webhooks example](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/webhook-email-notify-sample).
+
 For an overview on this Sample Application, watch this video.
 
 ## [Watch the Video: Using Webhooks with Webex Contact Center to download Call Recordings - DEMO](https://app.vidcast.io/share/829d129e-935e-42cd-9f2b-4d018388baa3)
