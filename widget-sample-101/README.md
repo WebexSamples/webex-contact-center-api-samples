@@ -1,8 +1,12 @@
-## Desktop Widget 101 - Sample Widget T
+## Desktop Widget 101 - Sample Widget & working with the STORE
 
 This is a tutorial on how to use the Agent Desktop Layout along with a Vanilla JS Web Component desktop widget, and shows the ability to pass data into the widget.
 This will help developers understand how data is handled and injected into widgets inside of Webex Contact Center desktop.
 Watch the demo below to understand what this widget does and how to set it up and extend on it.
+
+## Watch [Part 1 of 2: Sample web component Widget](https://app.vidcast.io/share/7ca5247d-462b-4b49-859c-62bee86477a3)
+
+## Watch [Part 2 of 2: Sample web component Widget](https://app.vidcast.io/share/6e211cd5-e0c6-4c38-a1dc-df647b60a0b3)
 
 ## Getting Started
 
