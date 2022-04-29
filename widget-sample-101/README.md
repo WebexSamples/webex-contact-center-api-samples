@@ -1,17 +1,20 @@
-## Desktop Widget 101 - Sample Widget
+## Desktop Widget 101 - Sample Widget T
 
-Simple vanilla JS Web Component desktop widget showing ability to pass data into the widget.
-Watch the demo below to understand what this app does and how to set it up and extend on it.
-
-## [Watch Now: Configuration Widget Sample Overview and Demo](https://app.vidcast.io/share/25878069-6460-4a18-aaef-8e639efc48d3)
+This is a tutorial on how to use the Agent Desktop Layout along with a Vanilla JS Web Component desktop widget, and shows the ability to pass data into the widget.
+This will help developers understand how data is handled and injected into widgets inside of Webex Contact Center desktop.
+Watch the demo below to understand what this widget does and how to set it up and extend on it.
 
 ## Getting Started
 
-This app is assuming you already have a Client ID and Secret. If you don't please go to [postman-sample app](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample) and obtain your Client ID and Client Secret.
+The widget can be hosted locally and the demo covers how this is done by building and hosting the widget on localhost.
 
-### Executing program
+To understand how to interact with our Desktop Layout, please watch the video and supplemental detailed documentation @ [Desktop Layout - Administration Guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495).
 
-How to run the app:
+Also look at the helpful links section below for additional references.
+
+### Executing the sample
+
+How to run the sample widget:
 
 - **Step 1:**
 
@@ -20,12 +23,14 @@ How to run the app:
 
 - **Step 2:**
 
-  - Upload the **_widgetStoreSample.json_** file onto your Tenant Portal **[WebexCC Portal](https://portal-v2.wxcc-us1.cisco.com/portal/home.html#)**
-    - _link above is referencing US portal please change if you are in different geo_
-  - Log in to your agent to view the new layout.
+  - Upload the **_widgetStoreSample.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
+    - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
+    - Note that Layouts are configured per Agent Team.
+  - Log in to your agent and select the right Team to view the new layout.
 
 - **Step 3:**
   - The CAD variables used in this demo are specific to a different tenant than what you will have. You will have to modify the some if this information.
+  - To learn more about CAD variables please refer to the links below
 
 ## Useful Links
 
