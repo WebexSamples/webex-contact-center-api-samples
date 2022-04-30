@@ -22,19 +22,30 @@ How to run the sample widget:
 
 - **Step 1:**
 
-  - Inside this project on your terminal type: `npm run dev`
-  - this should run the app on your localhost:5000
+**To Run the Sample:**
+
+- To use the Existing widget-store-sample.js on your localhost
+- Inside this project on your terminal type: `npm run dev`
+- this should run the app on your localhost:5000
 
 - **Step 2:**
 
-  - Upload the **_widgetStoreSample.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
-    - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
-    - Note that Layouts are configured per Agent Team.
-  - Log in to your agent and select the right Team to view the new layout.
+**To wire up the Widget to the Layout:**
+
+- Upload the **_widgetStoreSample.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
+  - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
+  - Note that Layouts are configured per Agent Team.
+- Log in to your agent and select the right Team to view the new layout.
 
 - **Step 3:**
   - The CAD variables used in this demo are specific to a different tenant than what you will have. You will have to modify the some if this information.
   - To learn more about CAD variables please refer to the links below
+
+**Additional Improvements:**
+
+- You can modify the widget as required.
+- To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`
+- You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
 
 ## Useful Links
 
