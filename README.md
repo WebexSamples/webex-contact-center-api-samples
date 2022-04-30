@@ -2,6 +2,8 @@
 
 This basic set of samples helps a developer understand the all new Webex Contact Center APIs available today on the **[Webex Contact Center Developer Portal](https://developer.webex-cx.com/)**
 
+`Scroll down to the Index to view the description of each of the samples`
+
 ## [Watch Now: Welcome to the Webex Contact Center API Samples](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
 
 ## Getting Started
@@ -31,6 +33,7 @@ The API samples are divided into several folders. It would be great to follow th
 | 5   | call-recording-download-sample | This is a sample application that shows you how to use Webhooks - the capture:created Webhook allows you to download a new call recording on the system, to a local file.                                                                                                              | [Call Recording Download Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/call-recording-download-sample)       |
 | 6   | token-app-sample               | This is a sample application that shows you how to build a scheduler service that obtains a new access token every 10 hours from Webex and persist this onto your local datastore. The example uses a simple SQLite DB as an example.                                                  | [Token Management Service Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/token-app-sample)                    |
 | 7   | callback-sample                | This is a sample application that shows you how to build a front end Form to Leverage our brand new Webcallback API that injects a callback call into Webex Contact Center. The example uses a simple javaScript injection technique to inject the form in any webpage of your choice. | [Web Callback API Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/callback-sample)                             |
+| 7   | widget-sample-101              | This is a sample web component widget that shows you how to build a web component widget from scratch. It also covers how you can read the Desktop STORE to retrieve information and pass these values into the widget via the layout.                                                 | [Web component Widget Sample & 101](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)                 |
 
 ## Disclaimer
 
