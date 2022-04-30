@@ -1,7 +1,7 @@
 ## Desktop Widget 101 - Sample Widget & working with the STORE
 
 This is a tutorial on how to use the Agent Desktop Layout along with a Vanilla JS Web Component desktop widget, and shows the ability to pass data into the widget.
-This will help developers understand how data is handled and injected into widgets inside of Webex Contact Center desktop.
+This will help developers understand how data is handled in the Desktop STORE and injected into widgets inside of Webex Contact Center desktop.
 Watch the demo below to understand what this widget does and how to set it up and extend on it.
 
 ## Watch [Part 1 of 2: Sample web component Widget](https://app.vidcast.io/share/7ca5247d-462b-4b49-859c-62bee86477a3)
@@ -12,9 +12,9 @@ Watch the demo below to understand what this widget does and how to set it up an
 
 The widget can be hosted locally and the demo covers how this is done by building and hosting the widget on localhost.
 
-To understand how to interact with our Desktop Layout, please watch the video and supplemental detailed documentation @ [Desktop Layout - Administration Guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495).
+To understand how to interact with our Desktop Layout, please watch the video and supplemental detailed documentation @ **[Desktop Layout - Administration Guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)**
 
-Also look at the helpful links section below for additional references.
+To understand more about the Desktop STORE, please also look at the **useful links** below for additional references.
 
 ### Executing the sample
 
@@ -38,8 +38,9 @@ How to run the sample widget:
 
 ## Useful Links
 
-**[Desktop Guide](https://developer.webex-cx.com/documentation/guides/desktop)**
 **[Desktop Layout](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)**
+
+**[Desktop Guide - Working with the STORE](https://developer.webex-cx.com/documentation/guides/desktop)**
 
 ## Disclaimer
 
