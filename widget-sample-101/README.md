@@ -34,7 +34,7 @@ How to run the sample widget:
 
 - **Step 3:**
   - The CAD variables used in this demo are specific to a tenant. You will have to modify the **_widget-store-sample.js_** file to reflect your custom variables.
-  - To learn more about CAD variables please refer to the links below
+  - To learn more about CAD variables please refer to the links below.
 
 ## Useful Links
 
