@@ -44,7 +44,7 @@ How to run the sample widget:
 **Additional Improvements:**
 
 - You can modify the widget as required.
-- To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`
+- To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
 - You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
 
 ## Useful Links
