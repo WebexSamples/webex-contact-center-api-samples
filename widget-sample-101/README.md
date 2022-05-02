@@ -38,8 +38,8 @@ How to run the sample widget:
 - Log in to your agent and select the right Team to view the new layout.
 
 - **Step 3:**
-  - The CAD variables used in this demo are specific to a different tenant than what you will have. You will have to modify the some if this information.
-  - To learn more about CAD variables please refer to the links below
+  - The CAD variables used in this demo are specific to a tenant. You will have to modify the **_widget-store-sample.js_** file to reflect your custom variables.
+  - To learn more about CAD variables please refer to the links below.
 
 **Additional Improvements:**
 
