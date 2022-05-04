@@ -7,7 +7,6 @@ import localtunnel from "localtunnel";
 // Localtunnel Wrapper used for Local dev testing on APIs that need public HTTPS access...
 (async () => {
   const tunnel = await localtunnel({
-    port: 5000,
     // Give a unique subdomain. Or you can delete this object to get a random assigned
     subdomain: "examplecallback1"
   });
