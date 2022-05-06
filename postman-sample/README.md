@@ -58,3 +58,12 @@ For Support and Assistance, use the Cisco Developer Community Page:
 Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
 
 Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
+
+## Change Log
+
+The following change log shows the version updates to the files and what enhacements were added:
+
+| #   | Date       | File name                                          | Version | Comment                      |
+| --- | ---------- | -------------------------------------------------- | ------- | ---------------------------- |
+| 1   | March 2022 | New WebexCC OAuth2 APIs.postman_collection.json    | 0.0.0   | Initial Collection with GETs |
+| 2   | May 2022   | New WebexCC OAuth2 APIs_v1.postman_collection.json | 1.0.0   | Updates to Collection        |
