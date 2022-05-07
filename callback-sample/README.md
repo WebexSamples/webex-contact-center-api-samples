@@ -34,7 +34,11 @@ How to run the app shown in the demo above:
   - On file **frontEndForm.js** paste in unique subdomain in line 9.
 
 - Step 5:
+
   - Copy all the content of the file _**frontEndForm.js**_ into your Javascript Injector.
+
+- _Informational:_
+  - Purpose of the localtunnel library(_reverse proxy_) is to help with local Dev. Cisco's security on company laptops might make this feature inconsistent. You can decide to install Ngrok or other similar libraries. These samples are made to help/compliment the Cisco documentation. They are not intended to be production ready apps.
 
 ## Disclaimer
 
