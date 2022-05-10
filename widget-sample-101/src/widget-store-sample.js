@@ -20,7 +20,12 @@ export default class InfoCard extends HTMLElement {
   myFunc() {
     let info = this.cad;
     for (const iterator of info) {
-      return iterator[1].interaction.callAssociatedData.customerID.value;
+      // change variable change_Me to your own from your Tenant/Flow editor... ie myVar
+      try {
+        return iterator[1].interaction.callAssociatedData.change_Me.value;
+      } catch (error) {
+        return "change me to your own var from Flow Editor...";
+      }
     }
   }
 
