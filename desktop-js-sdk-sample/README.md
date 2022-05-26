@@ -1,6 +1,6 @@
 ## Desktop JS SDK Sample - Sample Widget working with the SDK library
 
-This is a tutorial on how to use the Desktop JS SDK Library along with a Vanilla JS Web Component desktop widget. In this tutorial we are using a few methods like StateChange, Pause/Resume, addEventListeners and performing a few action on these events.
+This is a tutorial on how to use the Desktop JS SDK Library along with a Vanilla JS Web Component desktop widget. In this tutorial we are using a few methods like StateChange, Pause/Resume Recording, addEventListeners and performing a few action on these events.
 
 Watch the demo below to understand what this widget does and how to set it up and extend on it.
 
