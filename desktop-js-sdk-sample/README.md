@@ -26,6 +26,10 @@ How to run the sample widget:
 
 **Step 2:**
 
+- In the **_sa-ds-sdk.js_** file, line 360. Change the **vteamId** to your own queue that you want to transfer to.
+
+**Step 3:**
+
 _To wire up the Widget to the Layout:_
 
 - Upload the **_widget-sdk.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
