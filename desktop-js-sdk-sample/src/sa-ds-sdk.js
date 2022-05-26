@@ -306,7 +306,7 @@ class DesktopSDKSample extends HTMLElement {
     // Get DialOut form input fields
     this.shadowRoot.querySelector("#makeCallButton").addEventListener("click", () => this.makeCall(this.inputElement("entryPointId").value, this.inputElement("destination").value));
     this.shadowRoot.getElementById("transfer").addEventListener("click", () => this.transferToEP());
-    // pause recording
+    // pause recording resume it initiated when you go out of focus...
     this.shadowRoot.getElementById("credit").addEventListener("focus", () => this.pauseRecord());
 
     // Get the outDial ANI
