@@ -100,7 +100,7 @@ template.innerHTML = `
     border-bottom: 1px solid #ddd;
     padding: 4px;
   }
-  #info tr:hover {background-color: #ddd;}
+  
   #info th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -168,6 +168,21 @@ template.innerHTML = `
     white-space: nowrap;
     overflow: scroll;
   }
+
+  #credit{
+    letter-spacing: 3px;
+    margin-left: 25px;
+    width: 190px;
+  }
+
+  ::placeholder {
+    color: #899499;
+    opacity: 0.5; /* Firefox */
+  }
+  .icon{
+    font-size: 18px;
+    margin-left: 25px;
+  }
   
   -webkit-box-shadow: 0px 10px 25px -7px rgba(28,27,28,1);
   -moz-box-shadow: 0px 10px 25px -7px rgba(28,27,28,1);
@@ -228,6 +243,10 @@ template.innerHTML = `
                   <td class="atr">DNIS:</td>
                   <td class="val" id="dnis"></td>
                 </tr>
+                <tr>
+                  <td class="atr">Pause Recording / Enter Credit Card / click elsewhere to resume</td>
+                  <td class="val"><input class="val" type="tel" id="credit" placeholder=" 0000 0000 0000 0000"></input><span class="icon">&#128179;</span></td>
+                </tr>
                 
                 <fieldset id="userfieldset" class="outline">
                   <legend> <b>Make a Call </b></legend>
@@ -287,6 +306,8 @@ class DesktopSDKSample extends HTMLElement {
     // Get DialOut form input fields
     this.shadowRoot.querySelector("#makeCallButton").addEventListener("click", () => this.makeCall(this.inputElement("entryPointId").value, this.inputElement("destination").value));
     this.shadowRoot.getElementById("transfer").addEventListener("click", () => this.transferToEP());
+    // pause recording
+    this.shadowRoot.getElementById("credit").addEventListener("focus", () => this.pauseRecord());
 
     // Get the outDial ANI
     let outDialOrigin = await Desktop.agentStateInfo.mockOutdialAniList();
@@ -342,6 +363,14 @@ class DesktopSDKSample extends HTMLElement {
     });
 
     logger.info("myTransfer" + JSON.stringify(response));
+  }
+
+  // Pause Recording
+  async pauseRecord() {
+    let interactionId = await this.getInfo();
+    await Desktop.agentContact.pauseRecording({
+      interactionId
+    });
   }
 
   // Get DialOut form input fields
