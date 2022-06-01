@@ -1,5 +1,5 @@
 {
-  #AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields
+  #ADVANCED: This Example shows you a combination of comparators, filters, aggregations that can be built
   task(
     timeComparator: endedTime #When filtering tasks, use the end time of the task
     filter: {
@@ -22,7 +22,7 @@
         }
       ]
     }
-    pagination: { cursor: "0" } #Show first page
+    pagination: { cursor: "0" } #Show first page. This goes from 0 to N-1 pages. Use pageInfo object to traverse
   ) {
     tasks {
       #Task Metadata - Note that since these are aggregates, you need to use the GROUPBY Fields HERE
