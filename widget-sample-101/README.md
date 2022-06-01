@@ -47,11 +47,15 @@ How to run the sample widget:
 - To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
 - You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
 
-## Useful Links
+## Useful Links - Supplemental Resources
 
-**[Desktop Layout](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)**
+[Desktop JS SDK Official Guide](https://developer.webex-cx.com/documentation/guides/desktop)
 
-**[Desktop Guide - Working with the STORE](https://developer.webex-cx.com/documentation/guides/desktop)**
+[Administration Guide for Desktop Layouts](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)
+
+[Desktop Widgets Starter Pack & Widgets - GitHub Repo](https://github.com/CiscoDevNet/webex-contact-center-widget-starter)
+
+[Desktop Widgets Live Demo](https://ciscodevnet.github.io/webex-contact-center-widget-starter/)
 
 ## Disclaimer
 
