@@ -5,8 +5,6 @@ In this tutorial we are using API described at [Getting Started](https://develop
 
 Watch the demo below to understand what this project does, how to set it up and leverage it to build your own code.
 
-## Watch [configuration-extraction-sample](xxxx https://app.vidcast.io/share/e98497f6-8740-4323-8805-e988af3662a3)
-
 ## Getting Started
 
 The code can be executed on localhost and is intended to bootstrap your knowledge of the WebexCC APIs.
