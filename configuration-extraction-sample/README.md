@@ -1,6 +1,7 @@
-## configuration-extraction-sample - Sample Java code using the WebexCC 2.0 APIs
+## Configuration Extraction Sample - Sample Java code that uses the new WebexCC APIs
 
-This is a tutorial on how to use the WebexCC 2.0 APIs to extract configuration data and export to CSV or JSON. In this tutorial we are using API described at [Getting Started](https://developer.webex-cx.com/documentation/getting-started).
+This is a tutorial on how to use the new WebexCC APIs to extract configuration data and export to CSV or JSON. 
+In this tutorial we are using API described at [Getting Started](https://developer.webex-cx.com/documentation/getting-started).
 
 Watch the demo below to understand what this project does, how to set it up and leverage it to build your own code.
 
