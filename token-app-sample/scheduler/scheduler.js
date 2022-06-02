@@ -24,7 +24,7 @@ const clientSecret = process.env.CLIENT_SECRET;
 const refreshToken = process.env.REFRESH_TOKEN;
 const authUrl = 'https://webexapis.com/v1/access_token';
 // You can externalize this property as well - interval in hours OR minutes OR seconds
-const INTERVAL = 50;
+const INTERVAL = 10;
 
 // Connect to your database. Change the parameters inside of db.js to switch your database type.
 db.sync({
@@ -102,8 +102,8 @@ const initializeScheduler = () => {
   const task = new AsyncTask('Fetch Refresh Token', getRefreshToken);
   // Setup the Scheduler to get the refresh token every INTERVAL hours
   // E.g: For minutes, use: const job = new SimpleIntervalJob({ minutes: INTERVAL }, task);
-  const job = new SimpleIntervalJob({ seconds: INTERVAL }, task);
-  //const job = new SimpleIntervalJob({ hours: INTERVAL }, task);
+  //const job = new SimpleIntervalJob({ seconds: INTERVAL }, task);
+  const job = new SimpleIntervalJob({ hours: INTERVAL }, task);
   scheduler.addSimpleIntervalJob(job);
   console.info(`Scheduler initialized with Interval:${INTERVAL}`);
   return;

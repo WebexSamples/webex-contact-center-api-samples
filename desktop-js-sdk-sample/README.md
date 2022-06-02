@@ -4,7 +4,10 @@ This is a tutorial on how to use the Desktop JS SDK Library along with a Vanilla
 
 Watch the demo below to understand what this widget does and how to set it up and extend on it.
 
-## Watch [Desktop JS SDK Sample](https://app.vidcast.io/share/e98497f6-8740-4323-8805-e988af3662a3)
+## Watch [Desktop JS SDK Widget Sample - Build Powerful Widgets](https://app.vidcast.io/share/e98497f6-8740-4323-8805-e988af3662a3)
+
+> **Note:** This is a sample that assumes you know the basics of layouts.
+> We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)**
 
 ## Getting Started
 
@@ -43,11 +46,15 @@ _To wire up the Widget to the Layout:_
 - To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
 - You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
 
-## Useful Links
+## Useful Links - Supplemental Resources
 
-**[Desktop Layout](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)**
+[Desktop JS SDK Official Guide](https://developer.webex-cx.com/documentation/guides/desktop)
 
-**[Desktop Guide](https://developer.webex-cx.com/documentation/guides/desktop)**
+[Administration Guide for Desktop Layouts](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)
+
+[Desktop Widgets Starter Pack & Widgets - GitHub Repo](https://github.com/CiscoDevNet/webex-contact-center-widget-starter)
+
+[Desktop Widgets Live Demo](https://ciscodevnet.github.io/webex-contact-center-widget-starter/)
 
 ## Disclaimer
 
