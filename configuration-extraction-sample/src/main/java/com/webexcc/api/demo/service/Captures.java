@@ -1,3 +1,23 @@
+/**
+ * Copyright (c) 2022
+ * All rights reserved.
+ *
+ * Permission is hereby granted, free  of charge, to any person obtaining
+ * a  copy  of this  software  and  associated  documentation files  (the
+ * "Software"), to  deal in  the Software without  restriction, including
+ * without limitation  the rights to  use, copy, modify,  merge, publish,
+ * distribute,  sublicense, and/or sell  copies of  the Software,  and to
+ * permit persons to whom the Software  is furnished to do so.
+ *
+ * THE  SOFTWARE IS  PROVIDED  "AS  IS", WITHOUT  WARRANTY  OF ANY  KIND,
+ * EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF
+ * MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
 package com.webexcc.api.demo.service;
 
 import java.util.Arrays;
@@ -13,12 +33,26 @@ import org.springframework.http.ResponseEntity;
 
 import com.fasterxml.jackson.databind.MapperFeature;
 
+/**
+ * The <code>Captures</code> is a class that implements the rest API to extract
+ * data from the WebexCC platform.
+ * 
+ * @author jiwyatt
+ * @since 2.0
+ * @see captures
+ */
+
 public class Captures extends ApiService {
 	static Logger logger = LoggerFactory.getLogger(Captures.class);
 
 	public Captures() {
 	}
 
+	/**
+	 * 
+	 * @param taskIds
+	 * @throws Exception
+	 */
 	void getCapturesByTaskIds(String taskIds) throws Exception {
 		try {
 			HttpHeaders headers = new HttpHeaders();
@@ -28,7 +62,7 @@ public class Captures extends ApiService {
 
 			payload.append("{");
 			payload.append("\"query\": {");
-			payload.append("	\"orgId\": \"" + orginzationId + "\",");
+			payload.append("	\"orgId\": \"" + organizationId + "\",");
 			payload.append("	\"urlExpiration\": 30,");
 			payload.append("	\"taskIds\": [" + taskIds + "],");
 			payload.append("	\"includeSegments\": false");
@@ -54,6 +88,12 @@ public class Captures extends ApiService {
 			throw e;
 		}
 	}
+
+	/**
+	 * Entry point of the Java <code>Captures</code> program
+	 * 
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		try {

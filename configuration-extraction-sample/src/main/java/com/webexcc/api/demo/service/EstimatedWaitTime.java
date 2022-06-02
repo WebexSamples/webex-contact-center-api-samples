@@ -1,3 +1,23 @@
+/**
+ * Copyright (c) 2022
+ * All rights reserved.
+ *
+ * Permission is hereby granted, free  of charge, to any person obtaining
+ * a  copy  of this  software  and  associated  documentation files  (the
+ * "Software"), to  deal in  the Software without  restriction, including
+ * without limitation  the rights to  use, copy, modify,  merge, publish,
+ * distribute,  sublicense, and/or sell  copies of  the Software,  and to
+ * permit persons to whom the Software  is furnished to do so.
+ *
+ * THE  SOFTWARE IS  PROVIDED  "AS  IS", WITHOUT  WARRANTY  OF ANY  KIND,
+ * EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF
+ * MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
 package com.webexcc.api.demo.service;
 
 import org.json.JSONObject;
@@ -8,12 +28,29 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 
+/**
+ * The <code>EstimatedWaitTime</code> is a class that implements the rest API to
+ * extract data from the WebexCC platform.
+ * 
+ * @author jiwyatt
+ * @since 2.0
+ * @see https://developer.webex-cx.com/documentation/estimated-wait-time
+ */
+
 public class EstimatedWaitTime extends ApiService {
 	static Logger logger = LoggerFactory.getLogger(EstimatedWaitTime.class);
 
 	public EstimatedWaitTime() {
 	}
 
+	/**
+	 * 
+	 * @param queueId
+	 * @param lookbackMinutes
+	 * @param maxCV
+	 * @param minValidSamples
+	 * @throws Exception
+	 */
 	void getEstimatedWaitTimeByQueueId(String queueId, String lookbackMinutes, String maxCV, String minValidSamples) throws Exception {
 		try {
 			HttpHeaders headers = new HttpHeaders();
@@ -21,7 +58,7 @@ public class EstimatedWaitTime extends ApiService {
 			headers.add("Authorization", "Bearer " + access_token);
 			HttpEntity<?> entity = new HttpEntity<String>(null, headers);
 			ResponseEntity<String> response1 = restTemplate.exchange(
-					baseURL2 + "/ewt?orgId=" + orginzationId + "&queueId=" + queueId + "&lookbackMinutes=" + lookbackMinutes + "&maxCV=" + maxCV + "&minValidSamples=" + minValidSamples, HttpMethod.GET, entity,
+					baseURL2 + "/ewt?orgId=" + organizationId + "&queueId=" + queueId + "&lookbackMinutes=" + lookbackMinutes + "&maxCV=" + maxCV + "&minValidSamples=" + minValidSamples, HttpMethod.GET, entity,
 					String.class);
 
 			if (response1.getStatusCode().value() == 204) {
@@ -43,6 +80,12 @@ public class EstimatedWaitTime extends ApiService {
 			throw e;
 		}
 	}
+
+	/**
+	 * Entry point of the Java <code>EstimatedWaitTime</code> program
+	 * 
+	 * @param args
+	 */
 
 	public static void main(String[] args) {
 		try {
