@@ -15,7 +15,7 @@ To understand additional features [Getting Started](https://developer.webex-cx.c
 
 ### Executing the sample
 
-[Code Video]([https://developer.webex-cx.com/documentation/getting-started](https://app.vidcast.io/share/33d1fee2-e721-41ae-848d-d02e700f9473)).
+[Code Video](https://developer.webex-cx.com/documentation/getting-started](https://app.vidcast.io/share/33d1fee2-e721-41ae-848d-d02e700f9473).
 
 How to run the sample code:
 
