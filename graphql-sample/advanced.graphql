@@ -17,7 +17,7 @@
         { field: totalDuration, type: sum, name: "Total Duration" }
         {
           field: connectedDuration
-          type: sum
+          type: average
           name: "Average Connected Duration"
         }
       ]

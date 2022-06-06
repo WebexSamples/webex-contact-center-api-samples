@@ -1,0 +1,32 @@
+{
+  #TOTAL CALLS BY Entry Point
+
+  task(
+    from: 1654557726452 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    timeComparator: createdTime
+    filter: {
+      and: [
+        { direction: { equals: "inbound" } }
+        { isActive: { equals: true } }
+        { status: { equals: "connected" } }
+        { channelType: { equals: telephony } }
+      ]
+    }
+    aggregations: {
+      field: "id"
+      type: count
+      name: "Total Connected Contacts RealTime"
+    }
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
