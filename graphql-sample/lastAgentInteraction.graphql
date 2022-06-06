@@ -13,6 +13,7 @@
         { status: { equals: "ended" } } #Final Disposition
         { direction: { equals: "inbound" } } #Inbound call only
         { isActive: { equals: false } } #Resolved call only
+        { owner: { notequals: { id: null } } } #Only calls that had an Owner
       ]
     }
     pagination: { cursor: "0" } #Display first page only
