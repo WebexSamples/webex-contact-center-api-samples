@@ -17,14 +17,14 @@ GraphQL Documentation & /search: **https://developer.webex-cx.com/documentation/
 
 ### Samples
 
-| #   | Metric                                      | Type                   | API          | Link                                           |
-| --- | ------------------------------------------- | ---------------------- | ------------ | ---------------------------------------------- |
-| 1   | Call Count by Entry Point                   | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 2   | Call Statistics by Queue                    | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 3   | Call Counts by Teams                        | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 4   | Call Counts by Agents                       | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 5   | Total Active Calls in the System            | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 6   | Total Connected Calls in the System         | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 7   | Total Queued Calls in the system (Realtime) | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 8   | Total Logged in Agent Sessions              | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 9   | Call Details for all Calls Today (Grid)     | Historical + Real-time | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
+| #   | Metric                                      | Type                   | API          | Link                                                                                                                                                               |
+| --- | ------------------------------------------- | ---------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Call Count by Entry Point                   | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/wallboard-query-samples/callCountByEntryPoint.graphql)      |
+| 2   | Call Statistics by Queue                    | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/wallboard-query-samples/callStatsByQueue.graphql)           |
+| 3   | Call Counts by Teams                        | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/wallboard-query-samples/callCountByTeam.graphql)            |
+| 4   | Call Counts by Agents                       | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/)                                                                                                                     |
+| 5   | Total Active Calls in the System            | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/)                                                                                                                     |
+| 6   | Total Connected Calls in the System         | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/)                                                                                                                     |
+| 7   | Total Queued Calls in the system (Realtime) | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/)                                                                                                                     |
+| 8   | Total Logged in Agent Sessions              | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/wallboard-query-samples/totalAgentSessionsRealTime.graphql) |
+| 9   | Call Details for all Calls Today (Grid)     | Historical + Real-time | POST /search | [View Sample](https://github.com/CiscoDevNet/)                                                                                                                     |
