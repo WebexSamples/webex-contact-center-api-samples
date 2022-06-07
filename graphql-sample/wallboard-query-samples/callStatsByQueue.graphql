@@ -1,5 +1,5 @@
 {
-  #TOTAL CALLS BY Queue
+  #TOTAL CALLS BY Queue and Average Handle Time by Queue
 
   task(
     from: 1653952506445 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
@@ -11,7 +11,16 @@
         { channelType: { equals: telephony } }
       ]
     }
-    aggregations: { field: "id", type: count, name: "Total Contacts by Queue" }
+    aggregations: [
+      { field: "id", type: count, name: "Total Contacts by Queue" }
+      { field: "queueDuration", type: average, name: "Average Queue Time" }
+      { field: "queueDuration", type: max, name: "Maximum Queue Time" }
+      {
+        field: "totalDuration"
+        type: average
+        name: "Average Handle Time by Queue"
+      }
+    ]
   ) {
     tasks {
       lastQueue {

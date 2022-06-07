@@ -20,7 +20,7 @@ GraphQL Documentation & /search: **https://developer.webex-cx.com/documentation/
 | #   | Metric                                      | Type                   | API          | Link                                           |
 | --- | ------------------------------------------- | ---------------------- | ------------ | ---------------------------------------------- |
 | 1   | Call Count by Entry Point                   | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
-| 2   | Call Count by Queues                        | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
+| 2   | Call Statistics by Queue                    | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
 | 3   | Call Counts by Teams                        | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
 | 4   | Call Counts by Agents                       | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
 | 5   | Total Active Calls in the System            | Real-time              | POST /search | [View Sample](https://github.com/CiscoDevNet/) |
