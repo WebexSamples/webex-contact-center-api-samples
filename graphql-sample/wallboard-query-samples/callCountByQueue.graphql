@@ -8,7 +8,6 @@
     filter: {
       and: [
         { direction: { equals: "inbound" } }
-        { status: { equals: "ended" } }
         { channelType: { equals: telephony } }
       ]
     }

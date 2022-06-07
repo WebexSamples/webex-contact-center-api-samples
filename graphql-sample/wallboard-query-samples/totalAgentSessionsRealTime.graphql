@@ -1,17 +1,10 @@
 {
-  #TOTAL Agent Sessions
+  #TOTAL Agent Sessions Logged in - Currently
 
   task(
     from: 1654557726452 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
     timeComparator: createdTime
-    filter: {
-      and: [
-        { direction: { equals: "inbound" } }
-        { isActive: { equals: true } }
-        { status: { notequals: "ended" } }
-        { channelType: { equals: telephony } }
-      ]
-    }
+    filter: { and: [{ isActive: { equals: true } }] }
     aggregations: { field: "id", type: count, name: "Total Contacts RealTime" }
   ) {
     tasks {
