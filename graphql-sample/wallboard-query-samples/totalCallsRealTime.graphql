@@ -1,5 +1,5 @@
 {
-  #TOTAL CALLS BY Entry Point
+  #TOTAL CALLS in the Contact Center - Realtime
 
   task(
     from: 1654557726452 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
