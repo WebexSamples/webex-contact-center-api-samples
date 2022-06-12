@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@babel/core": "^7.18.2",
     "@wxcc-desktop/sdk": "^1.2.9"
   },
   "devDependencies": {
