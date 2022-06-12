@@ -51,6 +51,10 @@ In the collection, the following variables need to be setup correctly.
 
 `startTimer` - This needs to be an epoch timestamp
 
+`expires` - leave this blank, the script will auto-populate this value.
+
+`datacenter` - One of us1,eu1,eu2,anz1 and so on.
+
 ## Support
 
 For Support and Assistance, use the Cisco Developer Community Page:
