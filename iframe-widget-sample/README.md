@@ -2,9 +2,18 @@
 
 **Pre-requisites:**
 
-- Create an Analyzer Report
-- Copy the URL to your custom Report.
-- Change the SRC for the iFrame element inside the desktop layout JSON.
+- Before you begin, you must create an Analyzer Report on WebexCC Analyzer.
+- The URL is in the format: https://analyzer.wxcc-_____.cisco.com where \_\_ is the datacenter (us1,eu1,eu2,etc.)
+- Once the report is created, click on run. It will be in the format:
+  `https://analyzer-v2.wxcc-us1.cisco.com/analyzer/view/visualization?tId=_____&rId=__` where tId is the org ID and rId is the report ID.
+
+- Copy the URL of your custom report, and into the Desktop Layout. In the attached JSON, the desktop layout has an iFrame Navigation tab widget seen in lines 102-128.
+
+- Change the source ("src") tag for the iFrame element inside the Desktop Layout JSON and point it to the Analyzer Report.
+
+- Attached is the desktop layout file: `Analyzer_iFrame_Widget.json`
+
+- Upload the Desktop layout on portal and login to the right team to display.
 
 ## Support
 

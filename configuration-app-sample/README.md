@@ -40,5 +40,3 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 
 - 1.0.0
   - a few GET methods & updated readme
-    <!-- * See [commit change]() or See [release history]() -->
-    <!-- * See [commit change]() or See [release history]() -->
