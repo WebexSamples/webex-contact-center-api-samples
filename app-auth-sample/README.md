@@ -1,6 +1,6 @@
-## Basic Auth Sample
+## Basic Authorization Sample
 
-- This basic auth app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
+- This basic authorization app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
 
 - Webex Contact Center APIs use OAuth2. For more information, refer :
 

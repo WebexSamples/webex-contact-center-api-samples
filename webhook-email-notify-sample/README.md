@@ -34,9 +34,7 @@ How to run the app:
 - Step 5:
   - From here on please watch the video that will help guide you along.
 
-## Version History
+## Change Log
 
 - 1.0.0
   - a few GET methods & updated readme
-    <!-- * See [commit change]() or See [release history]() -->
-    <!-- * See [commit change]() or See [release history]() -->

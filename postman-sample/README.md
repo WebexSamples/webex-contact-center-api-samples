@@ -69,5 +69,5 @@ The following change log shows the version updates to the files and what enhacem
 
 | #   | Date       | File name                                          | Version | Comment                      |
 | --- | ---------- | -------------------------------------------------- | ------- | ---------------------------- |
-| 1   | March 2022 | New WebexCC OAuth2 APIs.postman_collection.json    | 0.0.0   | Initial Collection with GETs |
+| 1   | March 2022 | New WebexCC OAuth2 APIs.postman_collection.json    | 0.0.1   | Initial Collection with GETs |
 | 2   | May 2022   | New WebexCC OAuth2 APIs_v1.postman_collection.json | 1.0.0   | Updates to Collection        |

@@ -1,7 +1,7 @@
 {
   "version": "0.0.6",
-  "appTitle": "Contact Center Desktop",
-  "logo": "",
+  "appTitle": "Contact Center iFrame Example",
+  "logo": "https://h5p.org/sites/default/files/styles/medium-logo/public/logos/iframe_embeddor_icon-color_0.png?itok=u_tRLMln",
   "dragDropEnabled": false,
   "notificationTimer": 8,
   "maximumNotificationCount": 3,
