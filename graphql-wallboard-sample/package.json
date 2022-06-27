@@ -1,0 +1,23 @@
+{
+  "name": "graphql-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Niko Theologitis",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "js-base64": "^3.7.2",
+    "mongoose": "^6.4.0",
+    "node-fetch": "^3.2.6"
+  }
+}

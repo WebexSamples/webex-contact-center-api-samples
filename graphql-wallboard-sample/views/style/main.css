@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oxygen:wght@300&family=Shadows+Into+Light&family=Source+Code+Pro:wght@200&display=swap");
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background: #000;
+}
+
+.wrapper {
+  margin-top: 8%;
+  /* position: absolute; */
+  width: 340px;
+  height: 540px;
+  display: grid;
+  /* grid-template-columns: 100% 0%; */
+  grid-template-columns: repeat(4, 340px);
+  grid-template-rows: repeat(1, 540px);
+  gap: 20px;
+}
+
+.col {
+  padding: 10px;
+}
+
+.canvas {
+  background: #656565;
+  border-radius: 25px;
+}
+.circle {
+  background: #656565;
+  border-radius: 50%;
+}
+.cir {
+  position: fixed;
+  z-index: 9;
+  height: 125px;
+  width: 125px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-left: 60px;
+  font-family: "Montserrat", sans-serif;
+}
+footer {
+  color: #47a0d1;
+  text-align: center;
+  margin-left: 60px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  margin-top: -100px;
+}
+
+@media screen and (min-width: 1500px) and (max-width: 3000px) {
+  .col {
+    width: 100%;
+    margin-left: 150px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .col {
+    width: 100%;
+  }
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Source Code Pro', monospace; */
