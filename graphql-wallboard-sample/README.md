@@ -1,18 +1,20 @@
 ## Graphql Wallboard Sample
 
-Here is a sample of using the `Search` API to construct a query that will fetch data and display it as a simple visual charts / wallboard.
+Here is a sample of using the `Search` API (powered by GraphQL) to construct GraphQL queries that will fetch data from Webex Contact Center and display it as a simple visual charts on a Wallboard. The application can be extended to add more queries and API calls.
 
-## [Watch Now: Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
+## [Watch Now: GraphQL Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
+
+> **Note:**
 
 ## Getting Started
 
-There is another graphQL sample that focuses on the query structure, if you have viewed it, we recommend that you do. [graphql-sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/graphql-sample)
+To understand how these backend API calls were built, refer the **[graphql-sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/graphql-sample)** that contains a`wallboard-query-samples` folder with some sample queries. You can extend on those queries depending on what you want to retrieve from Webex Contact Center.
 
-### Executing the Sample
+Follow the video embedded in the ReadMe for more information on the sample.
 
-How to run the app shown in the demo above:
+### Executing the Sample Application
 
-How to run the app:
+Follow the steps to run the application as shown in the demo above:
 
 - Step 1:
 
@@ -20,11 +22,11 @@ How to run the app:
 
 - Step 2:
 
-  - Still in the `.env` file, add your tenant's org_id` in the **ORG_ID** field.
+  - Open the `.env` file and add your tenant's `org_id` in the **ORG_ID** field.
 
 - Step 3:
 
-  - Still in the `.env` file, add your access_token` in the **DEV_TOKEN** field.
+  - Still in the `.env` file, add your `access_token` in the **DEV_TOKEN** field. To get an access token, login to [developer.webex-cx.com](https://developer.webex-cx.com) and Sign in with a WebexCC Admin user.
 
 - Step 3:
 
@@ -33,10 +35,10 @@ How to run the app:
 - Step 4:
 
   - Inside this project on your terminal type: `npm run dev`
-  - this should run the app on your localhost:5000 as well as your own public URL.
+  - This should run the app on your [http://localhost:5000](http://localhost:5000) as well as your own public URL.
 
 - Step 5:
-  - From here on please watch the video that will help guide you along.
+  - From here on please follow the video that will help guide you along.
 
 ## Disclaimer
 
