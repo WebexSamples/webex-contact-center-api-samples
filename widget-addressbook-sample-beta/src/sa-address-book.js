@@ -59,6 +59,7 @@ customElements.define(
       Desktop.config.init();
       await this.fetchAPI("https://randomuser.me/api/?results=100");
       await this.click2call();
+      await this.click2callRealNum();
       await this.searchInput();
     }
 
@@ -68,13 +69,29 @@ customElements.define(
       this.render();
     }
 
-    // Listen for click on the phone number event
-    async click2call() {
+    // Listen for click on the phone number used to call your working number...
+    async click2callRealNum() {
       this.shadowRoot.querySelector(".phone").addEventListener("click", e => {
         let phone = e.target.textContent;
         let destination = phone.replace(/[\W_]/g, "");
         console.log(destination);
         this.makeCall(destination);
+      });
+    }
+
+    // Listen for click on the phone number event
+    async click2call() {
+      let mainCard = this.shadowRoot.querySelector("[data-user-cards-container]");
+      mainCard.addEventListener("click", e => {
+        const selectPhone = e.target.classList.contains("phone");
+        if (!selectPhone) {
+          return;
+        } else {
+          let phone = e.target.textContent;
+          let destination = phone.replace(/[\W_]/g, "");
+          console.log(destination);
+          this.makeCall(destination);
+        }
       });
     }
 
@@ -217,7 +234,7 @@ customElements.define(
             <div class="card">
               <div class="header">Niko</div>
               <div class="email">email@gmail.com</div>
-              <div class="phone">1-631-463-8679</div>
+              <div class="phone">1-222-333-4444</div>
             </div>
               
                 ${this.users.results
