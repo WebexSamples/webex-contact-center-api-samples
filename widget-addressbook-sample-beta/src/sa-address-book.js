@@ -19,12 +19,12 @@ customElements.define(
       try {
         const outDial = await Desktop.dialer.startOutdial({
           data: {
-            //outDial entrypoint
-            entryPointId: "AXZtgp2swb-tZrANor5u",
+            // your outDial entrypoint
+            entryPointId: "AXZtgp2smb-tZiANor5u",
             destination,
             direction: "OUTBOUND",
-            // outDial Number
-            origin: "+19782768450",
+            // your outDial Number
+            origin: "+19782738550",
             attributes: {},
             mediaType: "telephony",
             outboundType: "OUTDIAL"
