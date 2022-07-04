@@ -1,5 +1,5 @@
 {
-  "name": "star-wars",
+  "name": "widget-address-book",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,7 +10,7 @@
   },
   "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "Niko Theologitis",
   "license": "ISC",
   "dependencies": {
     "@wxcc-desktop/sdk": "^1.2.10"
