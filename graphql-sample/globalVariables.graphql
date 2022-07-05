@@ -1,19 +1,22 @@
 {
-  taskDetails {
+  #Global CAD Variables: Usage of taskDetails Object to retrieve the Value of Global Variables
+  taskDetails(from: 1656676800000, to: 1657195200000) {
     tasks {
-      id
+      id #TaskId-SessionId-CallId
       createdTime
       endedTime
-      isActive
-      status
-      totalDuration
-      origin
-      destination
+      isActive #Realtime-vs-Historical
+      status #Status
+      totalDuration #CallTime
+      origin #ANI
+      destination #DNIS
       owner {
+        #Agent
         id
         name
       }
       stringGlobalVariables(name: "VIPCustomer") {
+        #GlobalCADVariable
         name
         value
       }
