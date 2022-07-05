@@ -1,0 +1,22 @@
+{
+  taskDetails {
+    tasks {
+      id
+      createdTime
+      endedTime
+      isActive
+      status
+      totalDuration
+      origin
+      destination
+      owner {
+        id
+        name
+      }
+      stringGlobalVariables(name: "VIPCustomer") {
+        name
+        value
+      }
+    }
+  }
+}
