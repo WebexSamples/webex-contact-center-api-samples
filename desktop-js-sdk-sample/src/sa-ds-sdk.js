@@ -1,6 +1,6 @@
-import { Desktop } from "@wxcc-desktop/sdk";
+import { Desktop } from '@wxcc-desktop/sdk';
 
-const template = document.createElement("template");
+const template = document.createElement('template');
 
 // Roughly, 170 lines of Style. 50 lines of HTML.  145 lines of widget logic
 template.innerHTML = `
@@ -203,6 +203,7 @@ template.innerHTML = `
                   <a id="transfer">Transfer</a>
                   <a id="ready">Ready</a>
                   <a id="not">Not Ready</a>
+                   <a id="cad">Update CAD Variable</a>
                 </div>
           </div>
           <div class="card results">
@@ -263,16 +264,16 @@ template.innerHTML = `
 `;
 
 //Creating a custom logger
-const logger = Desktop.logger.createLogger("Niko-logger");
+const logger = Desktop.logger.createLogger('sdk-widget-logger');
 
 class DesktopSDKSample extends HTMLElement {
   state = {
-    defaultAuxCode: 0
+    defaultAuxCode: 0,
   };
 
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     this.interactionId = null;
   }
@@ -292,22 +293,49 @@ class DesktopSDKSample extends HTMLElement {
     // Initiating desktop config
     Desktop.config.init();
     // Traverse Shadow DOM and map to corresponding fields:
-    this.shadowRoot.querySelector("#userState").innerHTML = Desktop.agentStateInfo.latestData.subStatus;
-    this.shadowRoot.querySelector("#teamName").innerHTML = Desktop.agentStateInfo.latestData.teamName;
-    this.shadowRoot.querySelector("#profileId").innerHTML = Desktop.agentStateInfo.latestData.agentProfileID;
-    this.shadowRoot.querySelector("#sessionId").innerHTML = Desktop.agentStateInfo.latestData.agentSessionId;
-    this.shadowRoot.querySelector("#userId").innerHTML = Desktop.agentStateInfo.latestData.agentName;
-    this.shadowRoot.querySelector("#locale").innerHTML = Desktop.config.clientLocale;
-    this.shadowRoot.querySelector("#accessToken").innerHTML = this.accessToken;
+    this.shadowRoot.querySelector('#userState').innerHTML =
+      Desktop.agentStateInfo.latestData.subStatus;
+    this.shadowRoot.querySelector('#teamName').innerHTML =
+      Desktop.agentStateInfo.latestData.teamName;
+    this.shadowRoot.querySelector('#profileId').innerHTML =
+      Desktop.agentStateInfo.latestData.agentProfileID;
+    this.shadowRoot.querySelector('#sessionId').innerHTML =
+      Desktop.agentStateInfo.latestData.agentSessionId;
+    this.shadowRoot.querySelector('#userId').innerHTML =
+      Desktop.agentStateInfo.latestData.agentName;
+    this.shadowRoot.querySelector('#locale').innerHTML =
+      Desktop.config.clientLocale;
+    this.shadowRoot.querySelector('#accessToken').innerHTML = this.accessToken;
 
     // Event listeners: Click operation of buttons
-    this.shadowRoot.getElementById("ready").addEventListener("click", e => this.changeState("Available"));
-    this.shadowRoot.getElementById("not").addEventListener("click", e => this.changeState("Idle"));
+    // Ready (Available) Handler
+    this.shadowRoot
+      .getElementById('ready')
+      .addEventListener('click', (e) => this.changeState('Available'));
+    // Not Ready (Idle) Handler
+    this.shadowRoot
+      .getElementById('not')
+      .addEventListener('click', (e) => this.changeState('Idle'));
+    // Handler to Update CAD Variables
+    this.shadowRoot
+      .getElementById('cad')
+      .addEventListener('click', (e) => this.updateCadVariable());
     // Get DialOut form input fields
-    this.shadowRoot.querySelector("#makeCallButton").addEventListener("click", () => this.makeCall(this.inputElement("entryPointId").value, this.inputElement("destination").value));
-    this.shadowRoot.getElementById("transfer").addEventListener("click", () => this.transferToEP());
+    this.shadowRoot
+      .querySelector('#makeCallButton')
+      .addEventListener('click', () =>
+        this.makeCall(
+          this.inputElement('entryPointId').value,
+          this.inputElement('destination').value
+        )
+      );
+    this.shadowRoot
+      .getElementById('transfer')
+      .addEventListener('click', () => this.transferToEP());
     // pause recording resume it initiated when you go out of focus
-    this.shadowRoot.getElementById("credit").addEventListener("focus", () => this.pauseRecord());
+    this.shadowRoot
+      .getElementById('credit')
+      .addEventListener('focus', () => this.pauseRecord());
 
     // Get the outDial ANI
     let outDialOrigin = await Desktop.agentStateInfo.mockOutdialAniList();
@@ -315,13 +343,18 @@ class DesktopSDKSample extends HTMLElement {
 
     // Searching for default unavailable code in list of unavailable codes.
     let i = 0;
+    logger.info('Collecting Idle Code length..');
     const auxCount = Desktop.agentStateInfo.latestData.idleCodes.length;
     while (i <= auxCount - 1) {
-      logger.info("AuxCode list ", Desktop.agentStateInfo.latestData.idleCodes[i].id);
+      logger.info(
+        'AuxCode list ',
+        Desktop.agentStateInfo.latestData.idleCodes[i].id
+      );
 
       if (Desktop.agentStateInfo.latestData.idleCodes[i].isDefault == true) {
-        this.state.defaultAuxCode = Desktop.agentStateInfo.latestData.idleCodes[i].id;
-        logger.info(" default aux found ", this.state.defaultAuxCode);
+        this.state.defaultAuxCode =
+          Desktop.agentStateInfo.latestData.idleCodes[i].id;
+        logger.info(' default aux found ', this.state.defaultAuxCode);
         break;
       }
       i++;
@@ -331,12 +364,15 @@ class DesktopSDKSample extends HTMLElement {
   // Sample function to print latest data of agent
   getAgentInfo() {
     const latestData = Desktop.agentStateInfo.latestData;
-    logger.info("myLatestData", latestData);
+    logger.info('myLatestData', latestData);
   }
 
   // Get interactionID, but more info can be obtained from this method
   async getInfo() {
+    logger.info('Getting Task Information..');
     const currentTaskMap = await Desktop.actions.getTaskMap();
+
+    logger.info('Fetched: ' + JSON.stringify(currentTaskMap));
     for (const iterator of currentTaskMap) {
       const interId = iterator[1].interactionId;
       return interId;
@@ -344,7 +380,9 @@ class DesktopSDKSample extends HTMLElement {
   }
   // Get interactionID, but more info can be obtained from this method
   async getMap() {
+    logger.info('Getting Task Map Information..');
     const currentTaskMap = await Desktop.actions.getTaskMap();
+
     for (const iterator of currentTaskMap) {
       const interId = iterator[1];
       return interId;
@@ -357,19 +395,19 @@ class DesktopSDKSample extends HTMLElement {
     let response = await Desktop.agentContact.vteamTransfer({
       interactionId,
       data: {
-        vteamId: "AXr39XRQDntNus7_q4r8", // replace with your onw Queue
-        vteamType: "inboundqueue"
-      }
+        vteamId: 'AXr39XRQDntNus7_q4r8', // replace with your onw Queue
+        vteamType: 'inboundqueue',
+      },
     });
 
-    logger.info("myTransfer" + JSON.stringify(response));
+    logger.info('myTransfer' + JSON.stringify(response));
   }
 
   // Pause Recording
   async pauseRecord() {
     let interactionId = await this.getInfo();
     await Desktop.agentContact.pauseRecording({
-      interactionId
+      interactionId,
     });
   }
 
@@ -385,99 +423,129 @@ class DesktopSDKSample extends HTMLElement {
         data: {
           entryPointId,
           destination,
-          direction: "OUTBOUND",
+          direction: 'OUTBOUND',
           origin: this.outDialOrigin,
           attributes: {},
-          mediaType: "telephony",
-          outboundType: "OUTDIAL"
-        }
+          mediaType: 'telephony',
+          outboundType: 'OUTDIAL',
+        },
       });
-      logger.info("myOutDial" + JSON.stringify(outDial));
+      logger.info('myOutDial' + JSON.stringify(outDial));
     } catch (error) {
-      Desktop.dialer.addEventListener("eOutdialFailed", msg => logger.info(msg));
+      Desktop.dialer.addEventListener('eOutdialFailed', (msg) =>
+        logger.info(msg)
+      );
+    }
+  }
+
+  // Function to update CAD variable. accountId is Local, PrimaryNumber is Global.
+  // The payload to update the variables such as accountId and PrimaryNumber need to be defined inside of the flow.
+  async updateCadVariable() {
+    try {
+      let interactionId = await this.getInfo();
+      logger.info('Got Interaction: ' + interactionId);
+
+      const cadVarsUpdated = await Desktop.dialer.updateCadVariables({
+        interactionId: interactionId,
+        data: {
+          attributes: {
+            accountId: '16910000',
+            PrimaryNumber: '2894420000',
+          },
+        },
+      });
+      logger.info('CadVarsUpdated: ' + JSON.stringify(cadVarsUpdated));
+    } catch (error) {
+      logger.error('Error While Updating CAD Variables: ' + error);
     }
   }
 
   // Function to change the state on button click
   async changeState(state) {
     switch (state) {
-      case "Available":
+      case 'Available':
         const agentState = await Desktop.agentStateInfo.stateChange({
           state,
-          auxCodeIdArray: "0"
+          auxCodeIdArray: '0',
         });
-        this.shadowRoot.querySelector("#userState").style.color = "#00AB50";
-        logger.info("State Changed", agentState);
+        this.shadowRoot.querySelector('#userState').style.color = '#00AB50';
+        logger.info('State Changed', agentState);
         break;
-      case "Idle":
+      case 'Idle':
         const agentState1 = await Desktop.agentStateInfo.stateChange({
           state,
-          auxCodeIdArray: this.state.defaultAuxCode
+          auxCodeIdArray: this.state.defaultAuxCode,
         });
-        this.shadowRoot.querySelector("#userState").style.color = "#FC9D03";
-        logger.info("State Changed to Idle", this.state.defaultAuxCode);
+        this.shadowRoot.querySelector('#userState').style.color = '#FC9D03';
+        logger.info('State Changed to Idle', this.state.defaultAuxCode);
         break;
       default:
     }
-    this.shadowRoot.querySelector("#userState").innerHTML = Desktop.agentStateInfo.latestData.subStatus;
+    this.shadowRoot.querySelector('#userState').innerHTML =
+      Desktop.agentStateInfo.latestData.subStatus;
   }
 
   // Subscribing to Agent contact event
   subscribeAgentContactDataEvents() {
-    Desktop.agentContact.addEventListener("eAgentWrapup", msg => {
-      logger.info("myAgentWrapup", JSON.stringify(msg));
+    Desktop.agentContact.addEventListener('eAgentWrapup', (msg) => {
+      logger.info('myAgentWrapup', JSON.stringify(msg));
       this.dnis = msg.data.interaction.callProcessingDetails.dnis;
       // another event thats just dipping into data...
-      this.shadowRoot.querySelector("#dnis").innerHTML = this.dnis;
+      this.shadowRoot.querySelector('#dnis').innerHTML = this.dnis;
       // You can pull the ani from a few places including interaction/callAssociatedDetails/ani.  Below is using the Participants object.
       let participant = msg.data.interaction.participants;
-      this.shadowRoot.querySelector("#destination").value = Object.entries(participant)[0][0];
+      this.shadowRoot.querySelector('#destination').value =
+        Object.entries(participant)[0][0];
       // Get outDial EP from $STORE
-      this.shadowRoot.querySelector("#entryPointId").value = this.outdialEp;
+      this.shadowRoot.querySelector('#entryPointId').value = this.outdialEp;
     });
-    Desktop.agentContact.addEventListener("eAgentContactHeld", msg => logger.info("myAgentContactHeld", msg));
-    Desktop.agentContact.addEventListener("eAgentContactUnHeld", msg => logger.info("myAgentContactUnHeld", msg));
+    Desktop.agentContact.addEventListener('eAgentContactHeld', (msg) =>
+      logger.info('myAgentContactHeld', msg)
+    );
+    Desktop.agentContact.addEventListener('eAgentContactUnHeld', (msg) =>
+      logger.info('myAgentContactUnHeld', msg)
+    );
   }
   // Dealing with DarkMode
   attributeChangedCallback(attrName, oldVal, newVal) {
-    if (attrName === "darkmode") {
-      const darkMode = this.getAttribute("darkmode");
-      if (darkMode === "true") {
-        const dark = this.shadowRoot.querySelector(".card.results");
-        dark.style.background = "#000";
-        dark.style.color = "#fff";
-        Array.from(this.shadowRoot.querySelectorAll("input")).forEach(e => {
-          e.style.background = "#000";
+    if (attrName === 'darkmode') {
+      const darkMode = this.getAttribute('darkmode');
+      if (darkMode === 'true') {
+        const dark = this.shadowRoot.querySelector('.card.results');
+        dark.style.background = '#000';
+        dark.style.color = '#fff';
+        Array.from(this.shadowRoot.querySelectorAll('input')).forEach((e) => {
+          e.style.background = '#000';
         });
-        Array.from(this.shadowRoot.querySelectorAll(".val")).forEach(e => {
-          e.style.color = "#fff";
+        Array.from(this.shadowRoot.querySelectorAll('.val')).forEach((e) => {
+          e.style.color = '#fff';
         });
-        const cardDark = this.shadowRoot.querySelector(".card");
-        cardDark.style.background = "#000";
-        cardDark.style.color = "#fff";
-        let h3Dark = this.shadowRoot.querySelector("h3");
-        h3Dark.style.color = "#fff";
+        const cardDark = this.shadowRoot.querySelector('.card');
+        cardDark.style.background = '#000';
+        cardDark.style.color = '#fff';
+        let h3Dark = this.shadowRoot.querySelector('h3');
+        h3Dark.style.color = '#fff';
       } else {
-        Array.from(this.shadowRoot.querySelectorAll("input")).forEach(e => {
-          e.style.background = "#fff";
+        Array.from(this.shadowRoot.querySelectorAll('input')).forEach((e) => {
+          e.style.background = '#fff';
         });
-        Array.from(this.shadowRoot.querySelectorAll(".val")).forEach(e => {
-          e.style.color = "#005E7D";
+        Array.from(this.shadowRoot.querySelectorAll('.val')).forEach((e) => {
+          e.style.color = '#005E7D';
         });
-        const light = this.shadowRoot.querySelector(".card.results");
-        light.style.background = "#fff";
-        light.style.color = "#000";
-        const cardLight = this.shadowRoot.querySelector(".card");
-        cardLight.style.background = "#EDEDED";
-        cardLight.style.color = "#000";
-        const h3Light = this.shadowRoot.querySelector("h3");
-        h3Light.style.color = "#000";
+        const light = this.shadowRoot.querySelector('.card.results');
+        light.style.background = '#fff';
+        light.style.color = '#000';
+        const cardLight = this.shadowRoot.querySelector('.card');
+        cardLight.style.background = '#EDEDED';
+        cardLight.style.color = '#000';
+        const h3Light = this.shadowRoot.querySelector('h3');
+        h3Light.style.color = '#000';
       }
     }
   }
   static get observedAttributes() {
-    return ["darkmode"];
+    return ['darkmode'];
   }
 }
 
-customElements.define("sa-ds-sdk", DesktopSDKSample);
+customElements.define('sa-ds-sdk', DesktopSDKSample);
