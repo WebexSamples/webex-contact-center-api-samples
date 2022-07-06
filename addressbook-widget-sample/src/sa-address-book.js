@@ -1,14 +1,15 @@
-import { Desktop } from "@wxcc-desktop/sdk";
+import { Desktop } from '@wxcc-desktop/sdk';
 
 customElements.define(
-  "sa-address-book",
+  'sa-address-book',
   class extends HTMLElement {
     constructor() {
       super();
-      this.attachShadow({ mode: "open" });
-      const font = document.createElement("link");
-      font.href = "https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Darker+Grotesque:wght@300&family=Poppins:wght@200;400&display=swap";
-      font.rel = "stylesheet";
+      this.attachShadow({ mode: 'open' });
+      const font = document.createElement('link');
+      font.href =
+        'https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Darker+Grotesque:wght@300&family=Poppins:wght@200;400&display=swap';
+      font.rel = 'stylesheet';
       document.head.appendChild(font);
     }
 
@@ -19,16 +20,16 @@ customElements.define(
       try {
         const outDial = await Desktop.dialer.startOutdial({
           data: {
-            // your outDial entrypoint
-            entryPointId: "AXZtgp2smb-tZiANor5u",
+            // your outDial entrypoint ID from Portal
+            entryPointId: 'AXZtgp2smb-tZiANor5u',
             destination,
-            direction: "OUTBOUND",
-            // your outDial Number
-            origin: "+19782738550",
+            direction: 'OUTBOUND',
+            // your outDial ANI Number - This is the phone number mask
+            origin: '+19782738550',
             attributes: {},
-            mediaType: "telephony",
-            outboundType: "OUTDIAL"
-          }
+            mediaType: 'telephony',
+            outboundType: 'OUTDIAL',
+          },
         });
       } catch (error) {
         console.log(error);
@@ -36,13 +37,13 @@ customElements.define(
     }
 
     static get observedAttributes() {
-      return ["loading"];
+      return ['loading'];
     }
     get loading() {
-      return JSON.parse(this.getAttribute("loading"));
+      return JSON.parse(this.getAttribute('loading'));
     }
     set loading(v) {
-      this.setAttribute("loading", JSON.stringify(v));
+      this.setAttribute('loading', JSON.stringify(v));
     }
 
     // using free API
@@ -54,10 +55,11 @@ customElements.define(
       console.log(json);
       this.loading = false;
     }
-    // Free APi with pulling down 100 users
+    // Free APi with pulling down 100 users. Replace this line with YOUR-ADDRESS-BOOK-API
+    // The API requires an object with phone,email,name.first.
     async connectedCallback() {
       Desktop.config.init();
-      await this.fetchAPI("https://randomuser.me/api/?results=100");
+      await this.fetchAPI('https://randomuser.me/api/?results=100');
       await this.click2call();
       await this.click2callRealNum();
       await this.searchInput();
@@ -71,9 +73,9 @@ customElements.define(
 
     // Listen for click on the phone number used to call your working number...
     async click2callRealNum() {
-      this.shadowRoot.querySelector(".phone").addEventListener("click", e => {
+      this.shadowRoot.querySelector('.phone').addEventListener('click', (e) => {
         let phone = e.target.textContent;
-        let destination = phone.replace(/[\W_]/g, "");
+        let destination = phone.replace(/[\W_]/g, '');
         console.log(destination);
         this.makeCall(destination);
       });
@@ -81,14 +83,16 @@ customElements.define(
 
     // Listen for click on the phone number event
     async click2call() {
-      let mainCard = this.shadowRoot.querySelector("[data-user-cards-container]");
-      mainCard.addEventListener("click", e => {
-        const selectPhone = e.target.classList.contains("phone");
+      let mainCard = this.shadowRoot.querySelector(
+        '[data-user-cards-container]'
+      );
+      mainCard.addEventListener('click', (e) => {
+        const selectPhone = e.target.classList.contains('phone');
         if (!selectPhone) {
           return;
         } else {
           let phone = e.target.textContent;
-          let destination = phone.replace(/[\W_]/g, "");
+          let destination = phone.replace(/[\W_]/g, '');
           console.log(destination);
           this.makeCall(destination);
         }
@@ -97,25 +101,39 @@ customElements.define(
 
     // Search Bar
     async searchInput() {
-      const userCardTemplate = this.shadowRoot.querySelector("[data-user-template]");
-      const userCardContainer = this.shadowRoot.querySelector("[data-user-cards-container]");
-      const searchInput = this.shadowRoot.querySelector("[data-search]");
-      let users = this.users.results.map(user => {
+      const userCardTemplate = this.shadowRoot.querySelector(
+        '[data-user-template]'
+      );
+      const userCardContainer = this.shadowRoot.querySelector(
+        '[data-user-cards-container]'
+      );
+      const searchInput = this.shadowRoot.querySelector('[data-search]');
+
+      // Modify these lines based on how the data is returned from your API.
+      // This is a simple example of using name,email and phone to build a contact card.
+      let users = this.users.results.map((user) => {
         const card = userCardTemplate.content.cloneNode(true).children[0];
-        const header = card.querySelector("[data-header]");
-        const email = card.querySelector("[data-email]");
-        const phone = card.querySelector("[data-phone]");
+        const header = card.querySelector('[data-header]');
+        const email = card.querySelector('[data-email]');
+        const phone = card.querySelector('[data-phone]');
         header.textContent = user.name.first;
         email.textContent = user.email;
         phone.textContent = user.phone;
         userCardContainer.append(card);
-        return { name: user.name.first, email: user.email, phone: user.phone, element: card };
+        return {
+          name: user.name.first,
+          email: user.email,
+          phone: user.phone,
+          element: card,
+        };
       });
-      searchInput.addEventListener("input", function (e) {
+      searchInput.addEventListener('input', function (e) {
         const value = e.target.value.toLowerCase();
-        users.forEach(user => {
-          const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value);
-          user.element.classList.toggle("hide", !isVisible);
+        users.forEach((user) => {
+          const isVisible =
+            user.name.toLowerCase().includes(value) ||
+            user.email.toLowerCase().includes(value);
+          user.element.classList.toggle('hide', !isVisible);
         });
       });
     }
@@ -238,7 +256,7 @@ customElements.define(
             </div>
               
                 ${this.users.results
-                  .map(user => {
+                  .map((user) => {
                     return `
                         <template data-user-template>
                           <div class="card">
@@ -249,7 +267,7 @@ customElements.define(
                         </template>    
                       `;
                   })
-                  .join("")}
+                  .join('')}
           </div>
                    `;
       }
