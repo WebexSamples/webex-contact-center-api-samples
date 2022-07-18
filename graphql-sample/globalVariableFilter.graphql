@@ -1,0 +1,36 @@
+{
+  #Filtering using Global CAD Variables: Usage of a filter to extract all "VIP Customer" callers
+  #This is a global variable that is defined on portal
+  taskDetails(
+    from: 1656676800000
+    to: 1657195200000
+    filter: {
+      stringGlobalVariables: {
+        #Modify the value of your Global Variable with the filter below
+        name: { equals: "VIPCustomer" }
+        value: { equals: "YES" }
+      }
+    }
+  ) {
+    tasks {
+      id #TaskId-SessionId-CallId
+      createdTime
+      endedTime
+      isActive #Realtime-vs-Historical
+      status #Status
+      totalDuration #CallTime
+      origin #ANI
+      destination #DNIS
+      owner {
+        #Agent
+        id
+        name
+      }
+      stringGlobalVariables(name: "VIPCustomer") {
+        #GlobalCADVariable
+        name
+        value
+      }
+    }
+  }
+}
