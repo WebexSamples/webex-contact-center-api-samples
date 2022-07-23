@@ -65,7 +65,7 @@ app.get('/login', (req, res) => {
         client_id: clientId,
         redirect_uri: redirectUri,
         scope: scopes,
-        state: 'AudioConnector',
+        state: 'new',
       },
     })
   );
