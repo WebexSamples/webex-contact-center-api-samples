@@ -1,9 +1,9 @@
 {
   #BASIC: Basic query to request for certain fields for the last 30 days of data - 1 Month lookback
   task(
-    #From and To timestamps in Epoch Time
-    from: 1655578037802 #30 days from today or Date.now() - (30*24*60*60*1000)
-    to: 1658170000035 #Today's date or date.Now()
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
     #Start with Page 0
     pagination: { cursor: "0" }
   ) {

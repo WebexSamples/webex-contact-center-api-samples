@@ -1,9 +1,9 @@
 {
   #FILTER: Get the Task details using CallBack filters and logical operators to match a condition
   task(
-    #From and To timestamps in Epoch Time
-    from: 1635750000000
-    to: 1638345599000
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
     #Add a filter that checks if a Callback was made and with a status
     filter: {
       and: [
