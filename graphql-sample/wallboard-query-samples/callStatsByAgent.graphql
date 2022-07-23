@@ -2,8 +2,9 @@
   #Call Statistics By Agent
 
   task(
-    from: 1653952506445 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
-    to: 1654557391185 #This can be set to Date.now() in millis
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
     timeComparator: createdTime
     filter: {
       and: [

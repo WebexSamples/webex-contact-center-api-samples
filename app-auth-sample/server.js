@@ -10,7 +10,7 @@ const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const redirectUri = process.env.REDIRECT_URI;
 const orgId = process.env.ORG_ID;
-const scopes = 'cjp:config cjp:config_read cjp:config_write';
+const scopes = 'cjp:config cjp:config_read';
 const apiRootUrl = 'https://api.wxcc-us1.cisco.com'; // Change this to your Datacenter
 // Simple inmemory, global scope - you can store this on local storage if you'd like.
 var loginDetails = null;
@@ -57,7 +57,18 @@ app.get('/login', (req, res) => {
   const authUrl = 'https://webexapis.com/v1/authorize';
 
   console.log(`Redirecting to Webex Login Page, using Client ID: ${clientId}`);
-
+  console.log(
+    url.format({
+      pathname: authUrl,
+      query: {
+        response_type: 'code',
+        client_id: clientId,
+        redirect_uri: redirectUri,
+        scope: scopes,
+        state: 'AudioConnector',
+      },
+    })
+  );
   res.redirect(
     url.format({
       pathname: authUrl,
@@ -66,7 +77,7 @@ app.get('/login', (req, res) => {
         client_id: clientId,
         redirect_uri: redirectUri,
         scope: scopes,
-        state: '',
+        state: 'AudioConnector',
       },
     })
   );
