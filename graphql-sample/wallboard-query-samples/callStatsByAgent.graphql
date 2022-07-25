@@ -1,5 +1,5 @@
 {
-  #Call Statistics By Agent
+  #Call Statistics by Agent
 
   task(
     # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
@@ -10,25 +10,24 @@
       and: [
         { direction: { equals: "inbound" } }
         { channelType: { equals: telephony } }
+        {owner: {notequals : {id: null}}}
       ]
     }
-    aggregations: { field: "id", type: count, name: "Total Contacts by Agent" },
-     { field: "queueDuration", type: average, name: "Average Queue Time for Agent" },
+    aggregations: [
+      { field: "id", type: count, name: "Total Contacts Handled" }
+      { field: "connectedDuration", type: average, name: "Average Talk Time" }
+      { field: "holdDuration", type: max, name: "Maximum Hold Time" }
       {
         field: "totalDuration"
         type: average
-        name: "Average Handle Time for Agent"
-      },
-        {
-        field: "wrapupDuration"
-        type: average
-        name: "Average Wrap up Duration for Agent"
+        name: "Average Handle Time by Agent"
       }
+    ]
   ) {
     tasks {
       owner {
-        id
         name
+        id
       }
       aggregation {
         name
