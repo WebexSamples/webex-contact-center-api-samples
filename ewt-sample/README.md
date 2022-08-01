@@ -4,7 +4,7 @@ This video shows you how to generate some activity for the EWT API in a tenant t
 
 Watch the demo below.
 
-## Watch [Estimated Wait Time](https://app.vidcast.io/video/22dd4bad-46bb-4ab5-a026-09a254851223)
+## Watch [Estimated Wait Time](https://app.vidcast.io/share/85acd64a-b413-481c-9070-848d2fadb573)
 
 ## Getting Started
 
