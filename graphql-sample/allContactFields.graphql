@@ -1,0 +1,85 @@
+{
+  # The following sample aims to pull a complete data set of all Contact fields from the GraphQL API
+
+  taskDetails(from: 1658965592151, to: 1659570373205) {
+    tasks {
+      id
+      status
+      destination
+      origin
+      createdTime
+      owner {
+        id
+        name
+      }
+      lastSite {
+        id
+        name
+      }
+      channelType
+      channelSubType
+      lastEntryPoint {
+        id
+        name
+      }
+      direction
+      isActive
+      endedTime
+      totalDuration
+      blindTransferCount
+      conferenceCount
+      conferenceDuration
+      consultCount
+      consultDuration
+      holdCount
+      holdDuration
+      selfserviceCount
+      selfserviceDuration
+      captureRequested
+      connectedCount
+      connectedDuration
+      terminationType
+      transferCount
+      lastWrapupCodeName
+      wrapupDuration
+      queueCount
+      queueDuration
+      ringingDuration
+      lastTeam {
+        id
+        name
+      }
+      consultToQueueCount
+      consultToQueueDuration
+      callbackData {
+        callbackRequestTime
+        callbackConnectTime
+        callbackNumber
+        callbackStatus
+        callbackType
+        callbackOrigin
+      }
+      contactReason
+      csatScore
+      customer {
+        phoneNumber
+        email
+        name
+      }
+      recordingLocation
+      integerGlobalVariables(name: "AccountId") {
+        name
+        value
+      }
+
+      stringGlobalVariables(name: "CustomerId") {
+        name
+        value
+      }
+      booleanGlobalVariables(name: "VIPCustomer") {
+        name
+        value
+      }
+    }
+  }
+}

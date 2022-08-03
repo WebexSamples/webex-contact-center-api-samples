@@ -8,15 +8,17 @@ For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/le
 
 This repository is oragnized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
 
-| #   | File Name                                                                                                                                             | Comments                                                                                                                                                                |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [simple.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/simple.graphql)                             | SIMPLE: Simply retrieve all task IDs                                                                                                                                    |
-| 2   | [basicFields.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/basicFields.graphql)                   | BASIC: Basic query to request for certain fields                                                                                                                        |
-| 3   | [advanced.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/advanced.graphql)                         | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields                                                                                         |
-| 4   | [callback.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/callbackFilter.graphql)                   | FILTER: Get the Task details using CallBack filters and logical operators to match a condition                                                                          |
-| 5   | [realTimeQueuedTasks.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/realTimeQueuedTasks.graphql)   | FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.                                                                                            |
-| 6   | [lastAgentInteraction.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/lastAgentInteraction.graphql) | LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached        |
-| 7   | [interactionDetails.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/interactionDetails.graphql)     | INTERACTION DETAILS: Usage of filters, aggregates, pagination and custom fields to find out information about a specific interaction using INTERACTION ID/TaskID/CSR ID |
+| #   | File Name                                                                                                                                             | Comments                                                                                                                                                                 |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | [simple.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/simple.graphql)                             | SIMPLE: Simply retrieve all task IDs.                                                                                                                                    |
+| 2   | [basicFields.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/basicFields.graphql)                   | BASIC: Basic query to request for certain fields.                                                                                                                        |
+| 3   | [advanced.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/advanced.graphql)                         | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields.                                                                                         |
+| 4   | [callback.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/callbackFilter.graphql)                   | FILTER: Get the Task details using CallBack filters and logical operators to match a condition.                                                                          |
+| 5   | [realTimeQueuedTasks.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/realTimeQueuedTasks.graphql)   | FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.                                                                                             |
+| 6   | [lastAgentInteraction.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/lastAgentInteraction.graphql) | LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached.        |
+| 7   | [interactionDetails.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/interactionDetails.graphql)     | INTERACTION DETAILS: Usage of filters, aggregates, pagination and custom fields to find out information about a specific interaction using INTERACTION ID/TaskID/CSR ID. |
+| 8   | [globalVariables.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/globalVariables.graphql)           | GLOBAL VARIABLES: Usage of the Global Variables field to extract a specific global variable or a combination of two global variables.                                    |
+| 9   | [globalVariableFilter.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/globalVariableFilter.graphql) | GLOBAL VARIABLES: Usage of the Global Variables as a FILTER to extract a specific tasks for a specific global variable.                                                  |
 
 ## Support
 
@@ -29,6 +31,8 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 ## Version History
 
 - 0.0.1
-  - initial examples
+  - Initial examples
 - 1.0.0
-  - added wallboard-query-samples
+  - Added wallboard-query-samples
+- 2.0.0
+  - Added several additional example calls
