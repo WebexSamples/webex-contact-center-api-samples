@@ -4,7 +4,7 @@ This is a sample web application to convert the Webexcc qraphql search API strin
 
 The application can be modified, enhanced or extended to fit the use cases required.
 
-Watch the demo below to understand what this widget does and how to set it up and extend on it.
+Watch the demo below to understand what this application does and how to set it up and extend on it.
 
 ## Watch [graphql sample java](https://app.vidcast.io/share/6fd7cd09-7930-488c-9f02-0baa13f1d0e3)
 
@@ -16,7 +16,7 @@ The application can be hosted on any Java VM environment and covers how this is 
 
 ### Executing the sample
 
-How to run the sample widget:
+How to run the sample application:
 
 **Step 1:**
 
