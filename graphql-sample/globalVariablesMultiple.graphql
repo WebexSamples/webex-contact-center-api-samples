@@ -1,0 +1,34 @@
+{
+  #Global CAD Variables: Usage of taskDetails Object to retrieve the Value of Global Variables
+  taskDetails(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+  ) {
+    tasks {
+      id #TaskId-SessionId-CallId
+      createdTime
+      endedTime
+      isActive #Realtime-vs-Historical
+      status #Status
+      totalDuration #CallTime
+      origin #ANI
+      destination #DNIS
+      owner {
+        #Agent
+        id
+        name
+      }
+      stringGlobalVariables(name: "Global_FeedbackSurveyOptIn") {
+        #GlobalCADVariable
+        name
+        value
+      }
+      # Use an alias name (any string of your coice) to add multiple string fields, in this ex we are using <str2> ...
+      str2: stringGlobalVariables(name: "Global_Language") {
+        name
+        value
+      }
+    }
+  }
+}
