@@ -24,7 +24,7 @@
         name
         value
       }
-      # Use an alias name (any string of your coice) to add multiple string fields, in this ex we are using <str2>...
+      # Use an alias name (any string of your coice) to add multiple string fields, in this ex we are using <str2> ...
       str2: stringGlobalVariables(name: "Global_Language") {
         name
         value
