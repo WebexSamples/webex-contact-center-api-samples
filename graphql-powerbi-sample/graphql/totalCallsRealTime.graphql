@@ -2,7 +2,9 @@
   #TOTAL CALLS in the Contact Center - Realtime
 
   task(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
     from: {from} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: {to} #This can be set to Date.now() in millis
     timeComparator: createdTime
     filter: {
       and: [

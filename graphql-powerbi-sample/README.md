@@ -1,14 +1,18 @@
-## Java GraphQL Sample - Sample Spring Boot Application to Execute the GraphQL Search String API
+## Integrating Webex Contact Center with Microsoft Power BI -
 
-This is a sample web application to convert the Webexcc qraphql search API string into a spring boot web application for external Power BI.
+### Sample Spring Boot Application to Execute GraphQL Search API calls
+
+This is a sample web application to convert the Webexcc qraphql search API string into a spring boot web application for external reporting sources such as Microsoft's Power BI.
 
 The application can be modified, enhanced or extended to fit the use cases required.
 
 Watch the demo below to understand what this application does and how to set it up and extend on it.
 
-## Watch [graphql sample java](https://app.vidcast.io/share/6fd7cd09-7930-488c-9f02-0baa13f1d0e3)
+## [Watch Now: Integrating Webex Contact Center with Power BI - Sample Spring Boot Application](https://app.vidcast.io/share/6fd7cd09-7930-488c-9f02-0baa13f1d0e3)
 
 > **Note:** This is a sample that assumes you know the basics of GraphQL Search String API as well as Java/Spring Boot.
+
+> This demo goes over the Java sample code that is used to connect Webex Contact Center with Microsoft Power BI. The code exports the Webex Contact Center reporting data available on the GraphQL "Search" API to a Web interface consumable by Microsoft Power BI. It leverages the power of Spring Boot to make this consumable by any external data lake.
 
 ## Getting Started
 
@@ -20,21 +24,23 @@ How to run the sample application:
 
 **Step 1:**
 
-- Download [graphql-sample-java](https://github.com/CiscoDevNet/webex-contact-center-api-samples/graphql-sample-java)
+- Download / Clone the repository and go to [graphql-powerbi-sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/graphql-powerbi-sample)
 
 **Step 2:**
 
-- Modify java/src/main/resources/application.properties
+- Modify the property file under
+  `/src/main/resources/application.properties`
+
+- Add the details such as the client_id, client_secret, redirect_uri. For more information on how to configure these parameters, refer to the basic samples in the repository.
 
 **Step 3:**
 
-- mvn clean install
+- Install the dependencies using: `mvn clean install`
 
 **Step 4:**
 
-- `java -jar graphql-sample-java-0.0.1-SNAPSHOT.jar`
-- This should run the app on your localhost:8080
-
+- Run the application locally using: `java -jar graphql-sample-java-0.0.1-SNAPSHOT.jar`
+- This should run the app on `http://localhost:8080`
 
 **Additional Improvements:**
 
@@ -42,9 +48,11 @@ How to run the sample application:
 
 ## Useful Links - Supplemental Resources
 
-[GraphQL APIs Search Tasks](https://developer.webex-cx.com/documentation/search/v1/search-tasks) 
+- [Getting Started with GraphQL /search API](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/graphql-sample)
 
-[My Apps](https://developer.webex-cx.com/my-apps)
+- [GraphQL APIs Search Tasks](https://developer.webex-cx.com/documentation/search/v1/search-tasks)
+
+- [My Apps](https://developer.webex-cx.com/my-apps)
 
 ## Disclaimer
 
@@ -65,4 +73,4 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 
 - 0.0.1
 
-  - Beta version with basic free REST API GraphQL APIs Search Tasks
+  - Beta version with basic REST API GraphQL queries to Search Tasks
