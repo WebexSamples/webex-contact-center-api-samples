@@ -1,0 +1,31 @@
+{
+  #TOTAL CALLS BY Team
+
+  task(
+    from: {from} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: {to} #This can be set to Date.now() in millis
+    timeComparator: createdTime
+    filter: {
+      and: [
+        { direction: { equals: "inbound" } }
+        { channelType: { equals: telephony } }
+      ]
+    }
+    aggregations: { field: "id", type: count, name: "Total Contacts by Team" }
+  ) {
+    tasks {
+      lastTeam {
+        id
+        name
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
