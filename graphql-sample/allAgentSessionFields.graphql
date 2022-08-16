@@ -1,16 +1,11 @@
 {
   # Agent Session "All Fields" example - Gets all the Agent Session fields - All fields in the ASR
-  agentSession(to: 1658965592151, from: 1659570373205) {
+  agentSession(from: 1658965592151, to: 1659570373205) {
     agentSessions {
       agentId
       userLoginId
       agentName
       agentSessionId
-      agentPhoneNumber
-      conferenceCount
-      conferenceDuration
-      consultCount
-      consultDuration
       state
       isActive
       startTime
