@@ -8,6 +8,10 @@ Watch the demo below to understand what this widget does and how to set it up an
 
 ## Watch [Part 2 of 2: Sample web component Widget](https://app.vidcast.io/share/6e211cd5-e0c6-4c38-a1dc-df647b60a0b3)
 
+## Developer Documentation
+
+**https://developer.webex-cx.com/documentation/guides/desktop**
+
 ## Getting Started
 
 The widget can be hosted locally and the demo covers how this is done by building and hosting the widget on localhost.
