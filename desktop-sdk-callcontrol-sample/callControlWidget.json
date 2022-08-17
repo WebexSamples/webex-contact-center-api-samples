@@ -1,0 +1,135 @@
+{
+  "version": "0.0.6",
+  "appTitle": "CallControl Widget Sample",
+  "logo": "",
+  "dragDropEnabled": true,
+  "notificationTimer": 8,
+  "maximumNotificationCount": 3,
+  "browserNotificationTimer": 8,
+  "wxmConfigured": true,
+  "desktopChatApp": {
+    "webexConfigured": false
+  },
+  "area": {
+    "headless": {
+      "id": "dw-headless",
+      "widgets": { "comp1": { "comp": "div" } },
+      "layout": { "areas": [["comp1"]], "size": { "cols": [1], "rows": [1] } }
+    },
+    "panel": {
+      "comp": "md-tabs",
+      "attributes": { "class": "widget-tabs" },
+      "children": [
+        {
+          "comp": "md-tab",
+          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "children": [{ "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT_TAB" } }],
+          "visibility": "IVR_TRANSCRIPT"
+        },
+        {
+          "comp": "md-tab-panel",
+          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "children": [{ "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT" } }],
+          "visibility": "IVR_TRANSCRIPT"
+        },
+        {
+          "comp": "md-tab",
+          "attributes": { "slot": "tab" },
+          "children": [{ "comp": "slot", "attributes": { "name": "WXM_JOURNEY_TAB" } }],
+          "visibility": "WXM_JOURNEY"
+        },
+        {
+          "comp": "md-tab-panel",
+          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "children": [
+            {
+              "comp": "agentx-wc-cloudcherry-widget",
+              "properties": {
+                "userModel": "$STORE.app.userModel",
+                "spaceId": "",
+                "metricsId": "",
+                "teamId": "$STORE.agent.teamName",
+                "ani": "$STORE.agentContact.taskSelected.ani",
+                "isDarkMode": "$STORE.app.darkMode"
+              },
+              "wrapper": {
+                "title": "Customer Experience Journey",
+                "maximizeAreaName": "app-maximize-area"
+              }
+            }
+          ],
+          "visibility": "WXM_JOURNEY"
+        },
+        {
+          "comp": "md-tab",
+          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "children": [{ "comp": "slot", "attributes": { "name": "CONTACT_HISTORY_TAB" } }]
+        },
+        {
+          "comp": "md-tab-panel",
+          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "children": [{ "comp": "slot", "attributes": { "name": "CONTACT_HISTORY" } }]
+        },
+        {
+          "comp": "md-tab",
+          "attributes": { "slot": "tab", "class": "widget-pane-tab" },
+          "children": [{ "comp": "slot", "attributes": { "name": "SCREEN_POP_TAB" } }],
+          "visibility": "SCREEN_POP"
+        },
+        {
+          "comp": "md-tab-panel",
+          "attributes": { "slot": "panel", "class": "widget-pane" },
+          "children": [{ "comp": "slot", "attributes": { "name": "SCREEN_POP" } }],
+          "visibility": "SCREEN_POP"
+        }
+      ]
+    },
+    "navigation": [
+      {
+        "nav": {
+          "label": "Voice SDK",
+          "icon": "call-voicemail",
+          "iconType": "momentum",
+          "navigateTo": "voice-sdk",
+          "align": "top"
+        },
+        "page": {
+          "id": "voice-sdk",
+          "widgets": {
+            "comp2": {
+              "comp": "div",
+              "style": {
+                "height": "100%",
+                "overflow": "scroll"
+              },
+              "children": [
+                {
+                  "comp": "sa-ds-voice-sdk",
+                  "script": "http://localhost:5000/build/bundle.js",
+                  "wrapper": {
+                    "title": "CallControl SDK Methods",
+                    "maximizeAreaName": "app-maximize-area"
+                  },
+                  "attributes": {
+                    "darkmode": "$STORE.app.darkMode"
+                  },
+                  "properties": {
+                    "accessToken": "$STORE.auth.accessToken",
+                    "outdialEp": "$STORE.agent.outDialEp"
+                  }
+                }
+              ]
+            }
+          },
+          "layout": {
+            "areas": [["comp2"]],
+            "size": {
+              "cols": [1],
+              "rows": [1]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
