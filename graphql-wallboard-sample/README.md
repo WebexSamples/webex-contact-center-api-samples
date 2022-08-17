@@ -4,6 +4,10 @@ Here is a sample of using the `Search` API (powered by GraphQL) to construct Gra
 
 ## [Watch Now: GraphQL powered Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
 
+## Developer Documentation 
+
+**https://developer.webex-cx.com/documentation/search**
+
 ## Getting Started
 
 To understand how these backend API calls were built, refer the **[graphql-sample](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/graphql-sample)** that contains a`wallboard-query-samples` folder with some sample queries. You can extend on those queries depending on what you want to retrieve from Webex Contact Center.
