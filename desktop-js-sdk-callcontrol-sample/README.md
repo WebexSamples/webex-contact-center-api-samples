@@ -1,14 +1,16 @@
-## Desktop SDK callControl Widget 101
+## Desktop JS SDK Call Control Widget - 101
 
-This is a collection of a few voice / call-control methods. The focus of this widget is more along the lines of a having a few common call-control methods in their basic minimal configuration, needed to successfully call these methods.
+This is a collection of a few telephony call-control methods. The focus of this widget is on understanding common call-control methods in their basic minimal configuration, needed to successfully call these methods.
+
+## [Watch: Desktop JS SDK - Call Controls - Getting Started](https://app.vidcast.io/share/26f9237a-1401-46d3-9ca4-a4260bd01533)
+
+This sample covers Outdial, Transfer, Blind/Consult Transfer, Pause, Resume, Hold and Unhold.
 
 You can copy the legend/name of the card and paste in the JS file and it will take you to the parts that are associated with that method.
 
-Tenant agnostic - meaning you can just enter in your tenants queue / entry point IDs straight into the card to call the methods, as well as your mobile for the DN related methods. No need to modify the JS unless you're adding new method, etc
+This is tenant agnostic - meaning you can enter in your tenants queue / entry point IDs straight into the card to call the methods, as well as your mobile for the DN related methods. No need to modify the JS unless you're adding a new method.
 
 Watch the demo below to understand what this widget does and how to set it up and extend on it.
-
-## Watch [Desktop SDK callControl](https://app.vidcast.io/share/26f9237a-1401-46d3-9ca4-a4260bd01533)
 
 ## Getting Started
 
@@ -67,5 +69,4 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 
 - 1.0.0
   - a few GET methods & updated readme
-    <!-- * See [commit change]() or See [release history]() -->
     <!-- * See [commit change]() or See [release history]() -->
