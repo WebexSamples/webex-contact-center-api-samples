@@ -159,7 +159,17 @@
                     "darkmode": "$STORE.app.darkMode"
                   },
                   "properties": {
-                    "darkmode": "$STORE.app.darkMode"
+                    "darkmode": "$STORE.app.darkMode",
+                    "myOutdialEPID":"YOUR OUTDIAL EP ID FROM WXCC ADMIN PORTAL",
+                    "realName1":"Dufus Name1",
+                    "realEmail1":"dufus1@cisco.com",
+                    "realNumber1":"(303) 123-4567",
+                    "realName2":"Dufas Name2",
+                    "realEmail2":"dufas2@cisco.com",
+                    "realNumber2":"(714) 123-4567",
+                    "realName3":"Dufas Name3",
+                    "realEmail3":"dufas3@cisco.com",
+                    "realNumber3":"(720) 123-4567"
                   }
                 }
               ]

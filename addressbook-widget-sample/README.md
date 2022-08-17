@@ -1,4 +1,4 @@
-## Address Book Widget Sample - Sample Desktop Widget that uses an existing Address Book API
+## Address Book Widget Sample - Widget that uses an existing Address Book API
 
 This is a sample Address book Widget that shows you how a custom widget can be built to perform a click to call by listing and searching contacts.
 
@@ -10,6 +10,10 @@ Watch the demo below to understand what this widget does and how to set it up an
 
 > **Note:** This is a sample that assumes you know the basics of layouts as well as Desktop JS SDK.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)** and **[Desktop JS SDK deep dive](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/desktop-js-sdk-sample)**
+
+## Developer Documentation
+
+**https://developer.webex-cx.com/documentation/guides/desktop**
 
 ## Getting Started
 

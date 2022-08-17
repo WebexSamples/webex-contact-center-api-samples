@@ -2,7 +2,7 @@
   "name": "widget-address-book",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
@@ -10,10 +10,13 @@
   },
   "type": "module",
   "keywords": [],
-  "author": "Niko Theologitis",
+  "author": "Niko Theologitis / Rue Green",
   "license": "ISC",
   "dependencies": {
-    "@wxcc-desktop/sdk": "^1.2.10"
+    "@babel/core": "^7.18.10",
+    "@wxcc-desktop/sdk": "^1.2.10",
+    "nodemon": "^2.0.19",
+    "serve": "^14.0.1"
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
