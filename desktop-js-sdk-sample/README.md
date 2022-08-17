@@ -1,4 +1,4 @@
-## Desktop JS SDK Sample - Sample Widget working with the SDK library
+## Desktop JS SDK Sample Widget - working with the JS SDK
 
 This is a tutorial on how to use the Desktop JS SDK Library along with a Vanilla JS Web Component desktop widget. In this tutorial we are using a few methods like StateChange, Pause/Resume Recording, addEventListeners and performing a few action on these events.
 
@@ -8,6 +8,10 @@ Watch the demo below to understand what this widget does and how to set it up an
 
 > **Note:** This is a sample that assumes you know the basics of layouts.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)**
+
+## Developer Documentation
+
+**https://developer.webex-cx.com/documentation/guides/desktop**
 
 ## Getting Started
 
