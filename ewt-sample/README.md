@@ -4,6 +4,10 @@ This video shows you how to generate some activity for the Estimated Wait Time (
 
 ## [Watch: Estimated Wait Time(EWT) API - Showing customers their wait times on WebexCC](https://app.vidcast.io/share/85acd64a-b413-481c-9070-848d2fadb573)
 
+## Documentation
+
+**https://developer.webex-cx.com/documentation/estimated-wait-time**
+
 ## Getting Started
 
 This video doesn't necessarily need any additional setup as it is demonstrated using Postman and using the sample script in the video.
