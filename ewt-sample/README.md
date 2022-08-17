@@ -1,22 +1,21 @@
-## Estimated Wait Time - Video on using the EWT API
+## Estimated Wait Time (EWT) - Using the EWT API to show the current wait time for the Contact Center
 
-This video shows you how to generate some activity for the EWT API in a tenant that my not have a lot of traffic.
+This video shows you how to generate some activity for the Estimated Wait Time (EWT) API in a demo, to help derive the wait time for customers and display it on your web site.
 
-Watch the demo below.
-
-## Watch [Estimated Wait Time](https://app.vidcast.io/share/85acd64a-b413-481c-9070-848d2fadb573)
+## [Watch: Estimated Wait Time(EWT) API - Showing customers their wait times on WebexCC](https://app.vidcast.io/share/85acd64a-b413-481c-9070-848d2fadb573)
 
 ## Getting Started
 
-This video doesn't necessarily need any additional setup as it is demonstrated using Postman.
+This video doesn't necessarily need any additional setup as it is demonstrated using Postman and using the sample script in the video.
 
 Keep in mind that you still need to have your Postman setup with your authorization or at least using an unexpired Access Token to run this API.
 
-### If you want to use the frontEnd javascript code:
+### If you want to use the front-end JavaScript code:
 
 **Step 1:**
 
 - Copy all the content of the file _**ewt_frontend_form.js**_ into your Javascript Injector of choice.
+- These injectors can be installed on your web browser for demos using the Extensions plugin marketplace on your browser.
 
 ## Disclaimer
 
