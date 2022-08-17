@@ -1,8 +1,8 @@
-## Graphql Wallboard Sample
+## Wallboard Sample using WebexCC Reporting APIs
 
-Here is a sample of using the `Search` API (powered by GraphQL) to construct GraphQL queries that will fetch data from Webex Contact Center and display it as a simple visual charts on a Wallboard. The application can be extended to add more queries and API calls.
+Here is a sample of using the `Search` API (powered by GraphQL) to construct GraphQL queries that will fetch data from Webex Contact Center and display it as a simple visual charts on a Contact Center Wallboard. The application can be extended to add more queries and API calls.
 
-## [Watch Now: GraphQL Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
+## [Watch Now: GraphQL powered Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
 
 ## Getting Started
 
