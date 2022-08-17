@@ -1,4 +1,4 @@
-## Desktop JS SDK Call Control Widget - 101
+## Desktop JS SDK Call Control Widget
 
 This is a collection of a few telephony call-control methods. The focus of this widget is on understanding common call-control methods in their basic minimal configuration, needed to successfully call these methods.
 
@@ -10,7 +10,9 @@ You can copy the legend/name of the card and paste in the JS file and it will ta
 
 This is tenant agnostic - meaning you can enter in your tenants queue / entry point IDs straight into the card to call the methods, as well as your mobile for the DN related methods. No need to modify the JS unless you're adding a new method.
 
-Watch the demo below to understand what this widget does and how to set it up and extend on it.
+## Developer Documentation
+
+**https://developer.webex-cx.com/documentation/guides/desktop**
 
 ## Getting Started
 
