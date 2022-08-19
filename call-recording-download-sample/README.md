@@ -20,6 +20,9 @@ REST API: https://developer.webex-cx.com/documentation/captures/v1/list-captures
 
 Webhook: https://developer.webex-cx.com/documentation/captures/v1/capture-available
 
+
+## Steps 
+
 1. For the Call recording Downloader to work, please create a folder called 'recordings'
 
 `Example of file system:`
