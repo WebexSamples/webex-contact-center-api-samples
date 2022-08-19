@@ -14,6 +14,12 @@ For an overview on this Sample Application, watch this video.
 
 - Please follow the original instructions as in the README.md of the parent (Root) Folder.
 
+## Developer Documentation
+
+REST API: https://developer.webex-cx.com/documentation/captures/v1/list-captures
+
+Webhook: https://developer.webex-cx.com/documentation/captures/v1/capture-available
+
 1. For the Call recording Downloader to work, please create a folder called 'recordings'
 
 `Example of file system:`
