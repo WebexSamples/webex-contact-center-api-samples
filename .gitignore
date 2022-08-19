@@ -112,3 +112,4 @@ dist
 call-recording-extractor-sample/mvnw
 call-recording-extractor-sample/mvnw.cmd
 call-recording-extractor-sample/HELP.md
+*.jim
