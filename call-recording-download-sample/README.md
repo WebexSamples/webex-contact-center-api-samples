@@ -10,7 +10,7 @@ For an overview on this Sample Application, watch this video.
 
 - Note to make this work correctly, you must launch http://localhost once and login so that your access_token and refresh_token can be stored in memory.
 
-- In production, you will need to build a simple scheduler service that does this every 10 hours. Refer to the sample application in the folder - token-manager-sample
+- In production, you will need to build a simple scheduler service that does this every 10 hours. Refer to the sample application in the folder - token-manager-sample - **[Persisting Access Tokens - Token Management](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/token-app-sample)**
 
 - Please follow the original instructions as in the README.md of the parent (Root) Folder.
 
