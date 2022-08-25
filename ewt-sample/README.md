@@ -12,6 +12,21 @@ This video shows you how to generate some activity for the Estimated Wait Time (
 
 This video doesn't necessarily need any additional setup as it is demonstrated using Postman and using the sample script in the video.
 
+Import the following CURL command into Postman.
+
+```bash
+curl --location -g --request GET 'https://api.wxcc-{{datacenter}}.cisco.com/v1/ewt?queueId={{queueId}}&lookbackMinutes=5&maxCV=1&minValidSamples=1&orgId={{orgId}}' \
+--header 'Authorization: Bearer {{token}}'
+```
+
+Remember to configure the following environment or local variables
+
+datacenter - Your Datacenter e.g us1
+queueId - Your Queue ID
+orgId - Your Org ID
+token - Your Token
+
+
 Keep in mind that you still need to have your Postman setup with your authorization or at least using an unexpired Access Token to run this API.
 
 ### If you want to use the front-end JavaScript code:
