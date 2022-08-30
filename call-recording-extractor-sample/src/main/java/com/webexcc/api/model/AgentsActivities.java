@@ -14,16 +14,20 @@ Root root = om.readValue(myJsonString), AgentsActivities.class); */
 @JsonInclude(Include.NON_NULL)
 public class AgentsActivities {
 	private Organization meta;
-	private List<AgentActivity> data = new ArrayList<AgentActivity>();
+	private List<AgentActivity> data = new ArrayList<>();
+
 	public Organization getMeta() {
 		return meta;
 	}
+
 	public void setMeta(Organization meta) {
 		this.meta = meta;
 	}
+
 	public List<AgentActivity> getData() {
 		return data;
 	}
+
 	public void setData(List<AgentActivity> data) {
 		this.data = data;
 	}

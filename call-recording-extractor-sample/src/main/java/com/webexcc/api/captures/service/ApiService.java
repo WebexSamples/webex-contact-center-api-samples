@@ -1,8 +1,5 @@
 package com.webexcc.api.captures.service;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -40,16 +37,6 @@ public class ApiService {
 
 	public ApiService() {
 		super();
-		new File("data").mkdirs();
-		// cache Authentication
-		try {
-			FileInputStream fi = new FileInputStream(new File("data/Authentication.obj"));
-			ObjectInputStream oi = new ObjectInputStream(fi);
-			Authentication oAuthentication = (Authentication) oi.readObject();
-			setAuthentication(oAuthentication);
-		} catch (Exception e) {
-			logger.warn("FileInputStream:{}", e.getMessage());
-		}
 	}
 
 	public Organization getOrginzation() throws Exception {
@@ -66,8 +53,6 @@ public class ApiService {
 			return oOrganization;
 		} catch (Exception e) {
 			logger.error("Exception:{}", e.getMessage());
-//			return new Organization();
-			new File("data/Authentication.obj").delete();
 			throw e;
 		}
 	}
@@ -143,7 +128,7 @@ public class ApiService {
 			headers.add("Content-Type", "application/json");
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			StringBuffer payload = new StringBuffer();
-			HttpEntity<?> entity = new HttpEntity<String>(payload.toString(), headers);
+			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
 //		 url = "https://api.wxcc-us1.cisco.com/v1/agents/activities?channelTypes=email" + "&channelTypes=chat" + "&channelTypes=telephony" + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.orginzationId;
 			url = "https://api.wxcc-us1.cisco.com/v1/agents/activities?channelTypes=" + channelTypes + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.getOrginzationId();
 			ResponseEntity<String> response1 = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
@@ -186,7 +171,7 @@ public class ApiService {
 			payload.append("	\"includeSegments\": false");
 			payload.append("  }");
 			payload.append("}");
-			HttpEntity<?> entity = new HttpEntity<String>(payload.toString(), headers);
+			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
 			ResponseEntity<String> response1 = restTemplate.exchange("https://api.wxcc-us1.cisco.com/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
 //			logger.info("÷:{}", response1.getBody());
 			ObjectMapper om = new ObjectMapper();
@@ -218,7 +203,7 @@ public class ApiService {
 			payload.append("	\"includeSegments\": false");
 			payload.append("  }");
 			payload.append("}");
-			HttpEntity<?> entity = new HttpEntity<String>(payload.toString(), headers);
+			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
 			ResponseEntity<String> response1 = restTemplate.exchange("https://api.wxcc-us1.cisco.com/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
 //			logger.info("response1.getBody:{}", response1.getBody());
 			ObjectMapper om = new ObjectMapper();

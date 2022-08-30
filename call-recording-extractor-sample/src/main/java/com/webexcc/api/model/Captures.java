@@ -9,16 +9,20 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @JsonInclude(Include.NON_NULL)
 public class Captures {
 	private Organization meta;
-	private List<Capture> data = new ArrayList<Capture>();
+	private List<Capture> data = new ArrayList<>();
+
 	public Organization getMeta() {
 		return meta;
 	}
+
 	public void setMeta(Organization meta) {
 		this.meta = meta;
 	}
+
 	public List<Capture> getData() {
 		return data;
 	}
+
 	public void setData(List<Capture> data) {
 		this.data = data;
 	}

@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class Organization implements Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 3777596416222355052L;
 	private String orgId;
@@ -40,7 +40,7 @@ public class Organization implements Serializable {
 
 	public Organization() {
 		super();
-		
+
 	}
 
 	public String getOrgId() {

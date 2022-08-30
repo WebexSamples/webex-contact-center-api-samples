@@ -1,17 +1,11 @@
 package com.webexcc.api.captures.controller;
 
-import java.io.File;
-import java.io.InputStream;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,6 +14,7 @@ import org.apache.commons.text.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,13 +22,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.webexcc.api.captures.interfaces.FileSystemInterfaceAWSs3Impl;
+import com.webexcc.api.captures.interfaces.FileSystemInterfaceGCPCloudStorageImpl;
+import com.webexcc.api.captures.interfaces.FileSystemInterfaceLocalhostImpl;
 import com.webexcc.api.captures.service.ApiService;
 import com.webexcc.api.captures.service.AuthService;
 import com.webexcc.api.captures.service.ScheduledTasks;
 import com.webexcc.api.captures.util.HtmlRender;
 import com.webexcc.api.model.AgentsActivities;
 import com.webexcc.api.model.Capture;
-import com.webexcc.api.model.CaptureAttributes;
 import com.webexcc.api.model.Captures;
 import com.webexcc.api.model.Recording;
 
@@ -57,15 +54,25 @@ public class WebRestController {
 	@Autowired
 	ApiService apiService;
 
+	@Autowired
+	FileSystemInterfaceAWSs3Impl fileSystemInterfaceAWSs3Impl;
+
+	@Autowired
+	FileSystemInterfaceLocalhostImpl fileSystemInterfaceLocalhostImpl;
+
+	@Autowired
+	FileSystemInterfaceGCPCloudStorageImpl fileSystemGCPCloudStorage;
+
+	@Value("${fileSystemInterface.type}")
+	private List fileSystemType;
+
 	public WebRestController() {
 		super();
-		new File("data").mkdirs();
-		new File("data/Authentication.obj").delete();
 	}
 
 	/**
 	 * force all traffic to index.html
-	 * 
+	 *
 	 * @param request
 	 * @param response
 	 */
@@ -171,7 +178,7 @@ public class WebRestController {
 				logger.info("oCaptures.data.size :{}", oCaptures.getData().size());
 
 				try {
-					search = (String) request.getParameter("search").toLowerCase();
+					search = request.getParameter("search").toLowerCase();
 					logger.info("search :{}", search);
 				} catch (Exception e) {
 				}
@@ -195,8 +202,7 @@ public class WebRestController {
 	private void processCaptures(StringBuffer sb, Captures oCaptures, String search) {
 		search = search.trim();
 		List<Capture> data = oCaptures.getData();
-		for (Iterator<Capture> iterator = data.iterator(); iterator.hasNext();) {
-			Capture capture2 = iterator.next();
+		for (Capture capture2 : data) {
 			List<Recording> recording = capture2.getRecording();
 			for (Recording record : recording) {
 				if (search.length() > 0) {
@@ -210,39 +216,44 @@ public class WebRestController {
 //					htmlRender.printCaptureRecording2(record, sb, fileName);
 					htmlRender.printCaptureAttributes(record, sb);
 				}
-				
+
 			}
 		}
 	}
 
 	private String writeFileToDisk(Recording record) {
-		try {
-//			CaptureAttributes attributes = record.getAttributes();
-//			String fileName = record.getId() + ".wav";
-//			InputStream in = new URL(attributes.getFilePath()).openStream();
-//				Files.copy(in, Paths.get(fileName), StandardCopyOption.REPLACE_EXISTING);
-//		      return fileName;
-			/**
-			 * 
-			 */
-			CaptureAttributes attributes = record.getAttributes();
-			String fileName = record.getId() + "";
-			InputStream in = new URL(attributes.getFilePath()).openStream();
-			File file = File.createTempFile(fileName, ".wav");
-			logger.info("file: {}", file.getAbsolutePath());
-			file.deleteOnExit();
-			Files.copy(in, Paths.get(file.getAbsolutePath()), StandardCopyOption.REPLACE_EXISTING);
-			return file.getAbsolutePath();
-		} catch (Exception e) {
-			logger.error("Exception:{}", e.getMessage());
-			return e.getMessage();
+		if (fileSystemType.contains("localhost")) {
+			try {
+				fileSystemInterfaceLocalhostImpl.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
 		}
+		if (fileSystemType.contains("fileSystemAWSS3")) {
+			try {
+				fileSystemInterfaceAWSs3Impl.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
+		}
+
+		if (fileSystemType.contains("fileSystemGCPCloudStorage")) {
+			try {
+				fileSystemGCPCloudStorage.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
+		}
+		return "No fileSystemType defined in application.yml";
 	}
 
 	private void processTasks(Captures oCaptures, Calendar c, int days) throws Exception {
 		for (int i = 1; i <= days; i++) {
 			logger.info("c.getTime: PROCESSing... DATE :{}", c.getTime());
-			Map<String, String> taskMap = new HashMap<String, String>();
+			Map<String, String> taskMap = new HashMap<>();
 			AgentsActivities oAgentsActivities = apiService.getAgentsActivitiesForAGivenDay("telephony", c);
 
 			// remove duplicates and null tasks
@@ -281,4 +292,8 @@ public class WebRestController {
 		logger.info("DONE: PROCESSing...");
 	}
 
+	@PostConstruct
+	private void postConstruct() {
+		logger.info("postConstruct: fileSystemType:{}", fileSystemType);
+	}
 }

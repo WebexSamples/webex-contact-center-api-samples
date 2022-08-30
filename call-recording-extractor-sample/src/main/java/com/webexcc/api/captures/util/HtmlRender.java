@@ -27,8 +27,7 @@ public class HtmlRender {
 	public void printOrginizationForm(HttpServletRequest request, StringBuffer sb) {
 		sb.append("	<a href='/' >(HOME)</a> <br>\n");
 	}
- 
- 
+
 	public void printCapturesQueryForm(HttpServletRequest request, StringBuffer sb) {
 		sb.append("	<a href='/' >(HOME)</a> <br>\n");
 
@@ -41,23 +40,23 @@ public class HtmlRender {
 		try {
 
 			Field[] fields = capture.getClass().getDeclaredFields();
-			for (int x = 0; x < fields.length; x++) {
-				if (fields[x].get(capture) instanceof String) {
-					if ("createdTime".equals(fields[x].getName())) {
+			for (Field field : fields) {
+				if (field.get(capture) instanceof String) {
+					if ("createdTime".equals(field.getName())) {
 						try {
-							Date d = new Date(Long.parseLong((String) fields[x].get(capture)));
+							Date d = new Date(Long.parseLong((String) field.get(capture)));
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
 							sb.append("<td nowrap>" + d + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
 							logger.error("Exception:{}", e.getMessage());
 						}
-					} else if ("lastUpdatedTime".equals(fields[x].getName())) {
+					} else if ("lastUpdatedTime".equals(field.getName())) {
 						try {
-							Date d = new Date(Long.parseLong((String) fields[x].get(capture)));
+							Date d = new Date(Long.parseLong((String) field.get(capture)));
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
 							sb.append("<td nowrap>" + d + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
@@ -65,34 +64,34 @@ public class HtmlRender {
 						}
 					}
 					//
-					else if ("skillId".equals(fields[x].getName())) {
+					else if ("skillId".equals(field.getName())) {
 						try {
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
-							sb.append("<td style='background-color:green'>todo:8 " + fields[x].get(capture) + "</td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
+							sb.append("<td style='background-color:green'>todo:8 " + field.get(capture) + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
 							logger.error("Exception:{}", e.getMessage());
 						}
 					} else {
 						sb.append("<tr>");
-						sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
-						sb.append("<td nowrap>" + fields[x].get(capture) + "</td>");
+						sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
+						sb.append("<td nowrap>" + field.get(capture) + "</td>");
 						sb.append("</tr>");
 					}
-				} else if (fields[x].get(capture) instanceof java.lang.Boolean) {
+				} else if (field.get(capture) instanceof java.lang.Boolean) {
 					sb.append("<tr>");
-					sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
-					sb.append("<td nowrap>" + fields[x].get(capture) + "</td>");
+					sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
+					sb.append("<td nowrap>" + field.get(capture) + "</td>");
 					sb.append("</tr>");
-				} else if (fields[x].get(capture) instanceof java.lang.Integer) {
+				} else if (field.get(capture) instanceof java.lang.Integer) {
 					sb.append("<tr>");
-					sb.append("<td nowrap style='text-align:right;font-size:10px;' width='200px' >Capture.<b>" + fields[x].getName() + "</b>-></td>");
-					sb.append("<td nowrap>" + fields[x].get(capture) + "</td>");
+					sb.append("<td nowrap style='text-align:right;font-size:10px;' width='200px' >Capture.<b>" + field.getName() + "</b>-></td>");
+					sb.append("<td nowrap>" + field.get(capture) + "</td>");
 					sb.append("</tr>");
-				} else if (fields[x].get(capture) instanceof java.util.ArrayList) {
+				} else if (field.get(capture) instanceof java.util.ArrayList) {
 				} else {
-					logger.warn("fields[x].get(oAgentProfile):{}", fields[x].get(capture).getClass());
+					logger.warn("fields[x].get(oAgentProfile):{}", field.get(capture).getClass());
 				}
 			}
 
@@ -106,23 +105,23 @@ public class HtmlRender {
 		try {
 
 			Field[] fields = record.getClass().getDeclaredFields();
-			for (int x = 0; x < fields.length; x++) {
-				if (fields[x].get(record) instanceof String) {
-					if ("createdTime".equals(fields[x].getName())) {
+			for (Field field : fields) {
+				if (field.get(record) instanceof String) {
+					if ("createdTime".equals(field.getName())) {
 						try {
-							Date d = new Date(Long.parseLong((String) fields[x].get(record)));
+							Date d = new Date(Long.parseLong((String) field.get(record)));
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
 							sb.append("<td nowrap>" + d + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
 							logger.error("Exception:{}", e.getMessage());
 						}
-					} else if ("lastUpdatedTime".equals(fields[x].getName())) {
+					} else if ("lastUpdatedTime".equals(field.getName())) {
 						try {
-							Date d = new Date(Long.parseLong((String) fields[x].get(record)));
+							Date d = new Date(Long.parseLong((String) field.get(record)));
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
 							sb.append("<td nowrap>" + d + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
@@ -130,34 +129,34 @@ public class HtmlRender {
 						}
 					}
 					//
-					else if ("skillId".equals(fields[x].getName())) {
+					else if ("skillId".equals(field.getName())) {
 						try {
 							sb.append("<tr>");
-							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
-							sb.append("<td style='background-color:green'>todo:8 " + fields[x].get(record) + "</td>");
+							sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
+							sb.append("<td style='background-color:green'>todo:8 " + field.get(record) + "</td>");
 							sb.append("</tr>");
 						} catch (Exception e) {
 							logger.error("Exception:{}", e.getMessage());
 						}
 					} else {
 						sb.append("<tr>");
-						sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
-						sb.append("<td nowrap>" + fields[x].get(record) + "</td>");
+						sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
+						sb.append("<td nowrap>" + field.get(record) + "</td>");
 						sb.append("</tr>");
 					}
-				} else if (fields[x].get(record) instanceof java.lang.Boolean) {
+				} else if (field.get(record) instanceof java.lang.Boolean) {
 					sb.append("<tr>");
-					sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
-					sb.append("<td nowrap>" + fields[x].get(record) + "</td>");
+					sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
+					sb.append("<td nowrap>" + field.get(record) + "</td>");
 					sb.append("</tr>");
-				} else if (fields[x].get(record) instanceof java.lang.Integer) {
+				} else if (field.get(record) instanceof java.lang.Integer) {
 					sb.append("<tr>");
-					sb.append("<td nowrap style='text-align:right;font-size:10px;' width='200px' >Recording.<b>" + fields[x].getName() + "</b>-></td>");
-					sb.append("<td nowrap>" + fields[x].get(record) + "</td>");
+					sb.append("<td nowrap style='text-align:right;font-size:10px;' width='200px' >Recording.<b>" + field.getName() + "</b>-></td>");
+					sb.append("<td nowrap>" + field.get(record) + "</td>");
 					sb.append("</tr>");
-				} else if (fields[x].get(record) instanceof java.util.ArrayList) {
+				} else if (field.get(record) instanceof java.util.ArrayList) {
 				} else {
-					logger.warn("fields[x].get(oAgentProfile):{}", fields[x].get(record).getClass());
+					logger.warn("fields[x].get(oAgentProfile):{}", field.get(record).getClass());
 				}
 			}
 
@@ -170,10 +169,10 @@ public class HtmlRender {
 	public void printCaptureRecording(Recording record, StringBuffer sb) {
 		try {
 			CaptureAttributes attributes = record.getAttributes();
-			
-			Date d1 = new Date(Long.parseLong((String) attributes.getStartTime()));
-			Date d2 = new Date(Long.parseLong((String) attributes.getStopTime()));
-			
+
+			Date d1 = new Date(Long.parseLong(attributes.getStartTime()));
+			Date d2 = new Date(Long.parseLong(attributes.getStopTime()));
+
 //			sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >attributes.<b>" + fields[x].getName() + "</b>-></td>");
 			sb.append("<td nowrap>" + record.getId() + "</td>");
 			sb.append("<td nowrap>" + d1 + "</td>");
@@ -187,14 +186,13 @@ public class HtmlRender {
 
 	}
 
-
 	public void printCaptureRecording2(Recording record, StringBuffer sb, String fileName) {
 		try {
 			CaptureAttributes attributes = record.getAttributes();
-			
-			Date d1 = new Date(Long.parseLong((String) attributes.getStartTime()));
-			Date d2 = new Date(Long.parseLong((String) attributes.getStopTime()));
-			
+
+			Date d1 = new Date(Long.parseLong(attributes.getStartTime()));
+			Date d2 = new Date(Long.parseLong(attributes.getStopTime()));
+
 //			sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >attributes.<b>" + fields[x].getName() + "</b>-></td>");
 			sb.append("<td nowrap>" + record.getId() + "</td>");
 			sb.append("<td nowrap>" + d1 + "</td>");
@@ -207,13 +205,12 @@ public class HtmlRender {
 		}
 
 	}
-	
 
 	public void printCaptureAttributes(Recording record, StringBuffer sb) {
 		try {
-			Date d1 = new Date(Long.parseLong((String) record.getAttributes().getStartTime()));
-			Date d2 = new Date(Long.parseLong((String) record.getAttributes().getStopTime()));
-			
+			Date d1 = new Date(Long.parseLong(record.getAttributes().getStartTime()));
+			Date d2 = new Date(Long.parseLong(record.getAttributes().getStopTime()));
+
 //			sb.append("<td nowrap style='text-align:right;font-size:10px' width='200px' >attributes.<b>" + fields[x].getName() + "</b>-></td>");
 			sb.append("<td nowrap>" + record.getId() + "</td>");
 			sb.append("<td nowrap>" + d1 + "</td>");
@@ -225,8 +222,7 @@ public class HtmlRender {
 			logger.error("Exception:{}", e.getMessage());
 		}
 
-	}	
-
+	}
 
 	public void footer(StringBuffer sb) {
 		sb.append("</table>\n");
@@ -235,7 +231,6 @@ public class HtmlRender {
 	}
 
 	public void form(HttpServletRequest request, StringBuffer sb) {
-
 
 		sb.append("<span> &nbsp; &nbsp; &nbsp;<span/>");
 		sb.append("\n<script>");
@@ -246,7 +241,7 @@ public class HtmlRender {
 		sb.append("\n");
 		sb.append("\n</script>");
 		sb.append("\n");
-		
+
 		sb.append("<form id='main' action='/captures'>");
 		sb.append("<label for=\"meeting-time\">Choose end time: (working backwards) </label>");
 		sb.append("</br>");
@@ -255,7 +250,8 @@ public class HtmlRender {
 		} catch (Exception e) {
 			DecimalFormat mFormat = new DecimalFormat("00");
 			Calendar c = Calendar.getInstance();
-			sb.append("<input type=\"date\" id=\"meeting-time\" name=\"date\" value=\"" + c.get(Calendar.YEAR) + "-" + (mFormat.format(Double.valueOf(c.get(Calendar.MONTH) + 1))) + "-" + mFormat.format(Double.valueOf(c.get(Calendar.DAY_OF_MONTH))) + "\"> \n");
+			sb.append("<input type=\"date\" id=\"meeting-time\" name=\"date\" value=\"" + c.get(Calendar.YEAR) + "-" + (mFormat.format(Double.valueOf(c.get(Calendar.MONTH) + 1))) + "-"
+					+ mFormat.format(Double.valueOf(c.get(Calendar.DAY_OF_MONTH))) + "\"> \n");
 		}
 		String sDay = "1";
 		try {
@@ -274,30 +270,28 @@ public class HtmlRender {
 			}
 		}
 		sb.append("</select>");
-		
-		
+
 //		sb.append("</br>");
 		try {
-			String search = (String) request.getParameter("search").toString();
+			String search = request.getParameter("search").toString();
 			sb.append(" &nbsp; &nbsp;Search: <input  type='text' id='search' name='search' size=\"50\" value='" + search + "'>");
 		} catch (Exception e) {
 			sb.append(" &nbsp; &nbsp;Search: <input type='text' id='search' name='search' size=\"50\" value=''>");
 		}
-		
+
 		sb.append("</br>");
 		sb.append("<button type='button' onClick='javaScript:submit2();'>Submit</button>");
-		
+
 		sb.append("</form>");
-		sb.append("<table id='tableWait' width='50%' border='0' style=\"border:0px solid black;;margin-left:auto;margin-right:auto;display:none\">"); 
+		sb.append("<table id='tableWait' width='50%' border='0' style=\"border:0px solid black;;margin-left:auto;margin-right:auto;display:none\">");
 		sb.append("<tr><td > <img src='wait.gif' /></td></tr>");
 		sb.append("</table>");
 		sb.append("</br>");
 		sb.append("<table width='50%' border='1' style=\"border:1px solid black;margin-left:auto;margin-right:auto;\">");
 		sb.append("<tr style='text-align: center;vertical-align: middle;' >\n");
- 
+
 		sb.append("</tr>");
-		
-		
+
 	}
 
 	public void header(StringBuffer sb) {
@@ -317,19 +311,11 @@ public class HtmlRender {
 		}
 		sb.append("</tr>\n");
 		sb.append("</table>\n");
-		
+
 		sb.append("<br>\n");
 		sb.append("<br>\n");
 
 		sb.append("<b>Captures</b>\n<br>\n");
 	}
-
-
- 
- 
-
-
-
-
 
 }

@@ -1,0 +1,7 @@
+response_type=code
+client_id=Cxxxxxxxexdaxxxxxeaxaxxxxxxxafxxxxfxxxxefexexxxxaxfxxbxxexxdfdxax
+client_secret=xxexxaxcxxxxxxxdxdxabxxxdxxxxxxxbbcfxbxxcxxxxxxfxxfxxbfxxfxxxdxx
+redirect_uri=http://localhost:8080/
+scope=cjp:config_read
+state=test
+grant_type=authorization_code

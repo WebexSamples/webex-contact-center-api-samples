@@ -104,8 +104,8 @@ public class AuthService {
 
 	/**
 	 * @see https://developer.webex-cx.com/documentation/authentication
-	 * 
-	 * these valuse are stored in src/main/resources/application.properties
+	 *
+	 *      these valuse are stored in src/main/resources/application.properties
 	 */
 	@Value("${response_type}")
 	private String response_type;
@@ -206,7 +206,7 @@ public class AuthService {
 		String orginzationId = t[t.length - 1];
 		oAuthentication.setOrginzationId(orginzationId);
 		setAuthentication(oAuthentication);
-		logger.info("authentication:after:{}", authentication);		
+		logger.info("authentication:after:{}", authentication);
 		return oAuthentication;
 	}
 

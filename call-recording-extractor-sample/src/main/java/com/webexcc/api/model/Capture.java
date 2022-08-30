@@ -10,15 +10,19 @@ public class Capture {
 
 	private String taskId;
 	private List<Recording> recording;
+
 	public String getTaskId() {
 		return taskId;
 	}
+
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
+
 	public List<Recording> getRecording() {
 		return recording;
 	}
+
 	public void setRecording(List<Recording> recording) {
 		this.recording = recording;
 	}
