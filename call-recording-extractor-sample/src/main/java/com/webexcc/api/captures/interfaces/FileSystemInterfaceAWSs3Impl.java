@@ -112,6 +112,7 @@ public class FileSystemInterfaceAWSs3Impl implements FileSystemInterface {
 		} else {
 			try {
 				s3Client.createBucket(bucketName);
+				s3Client.deleteBucketPolicy(bucketName);				
 			} catch (AmazonS3Exception e) {
 				logger.error(e.getErrorMessage());
 			}
@@ -126,12 +127,9 @@ public class FileSystemInterfaceAWSs3Impl implements FileSystemInterface {
 		logger.info("postConstruct: secretKey:{}", secretKey);
 		logger.info("postConstruct: bucketName:{}", bucketName);
 		logger.info("postConstruct: region:{}", region);
-
 		try {
 			s3Client = new AmazonS3Client(new BasicAWSCredentials(accessKey, secretKey));
 			this.createBucket();
-			s3Client.deleteBucketPolicy(bucketName);
-
 		} catch (Exception e) {
 			logger.warn("postConstruct: s3Client:not connected");
 			logger.error("Exception: {}", e.getMessage());
