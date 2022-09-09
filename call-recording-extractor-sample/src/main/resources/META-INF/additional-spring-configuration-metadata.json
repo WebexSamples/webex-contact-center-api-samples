@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "fileSystemInterface.type",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemInterface.type'"
+  },
+  {
+    "name": "localhost.data-directory",
+    "type": "java.lang.String",
+    "description": "A description for 'localhost.data-directory'"
+  },
+  {
+    "name": "fileSystemAWSS3.user",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemAWSS3.user'"
+  },
+  {
+    "name": "fileSystemAWSS3.accessKey",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemAWSS3.accessKey'"
+  },
+  {
+    "name": "fileSystemAWSS3.secretKey",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemAWSS3.secretKey'"
+  },
+  {
+    "name": "fileSystemAWSS3.bucketName",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemAWSS3.bucketName'"
+  },
+  {
+    "name": "fileSystemAWSS3.region",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemAWSS3.region'"
+  },
+  {
+    "name": "fileSystemGCPCloudStorage.project-id",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemGCPCloudStorage.project-id'"
+  },
+  {
+    "name": "fileSystemGCPCloudStorage.bucketName",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemGCPCloudStorage.bucketName'"
+  },
+  {
+    "name": "fileSystemGCPCloudStorage.region",
+    "type": "java.lang.String",
+    "description": "A description for 'fileSystemGCPCloudStorage.region'"
+  }
+]}

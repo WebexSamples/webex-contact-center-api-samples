@@ -1,0 +1,33 @@
+#list of filesystems to persist the file
+fileSystemInterface:
+  type: localhost #,fileSystemAWSS3,fileSystemGCPCloudStorage
+  
+localhost:
+  dataDirectory: /tmp/data
+
+fileSystemAWSS3:
+  user : gcp-webexcontactcen-nprd-xxxxx
+  accessKey : AKIAWRBVTTFCWxAxxAZx
+  secretKey : blxaxhd+xrjCn+JOOVrZSyifZmxVyxxrGrShBoxB
+  bucketName : jiwyatt-poc
+  region : us-east-2
+
+#https://cloud.google.com/storage/docs/reference/libraries#linux-or-macos
+fileSystemGCPCloudStorage:
+  projectId : gcp-webexcontactcen-nprd-xxxxx
+  bucketName : jiwyatt-poc
+  region : US-SOUTH1
+  
+  
+  
+#  GOOGLE_APPLICATION_CREDENTIALS : 
+#  Replace KEY_PATH with the path of the JSON file that contains your service account key.
+### for unix 
+####export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
+### For command prompt
+####set GOOGLE_APPLICATION_CREDENTIALS=KEY_PATH
+###For PowerShell
+####$env:GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
+  
+
+
