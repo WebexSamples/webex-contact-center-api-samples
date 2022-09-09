@@ -250,8 +250,7 @@ public class HtmlRender {
 		} catch (Exception e) {
 			DecimalFormat mFormat = new DecimalFormat("00");
 			Calendar c = Calendar.getInstance();
-			sb.append("<input type=\"date\" id=\"meeting-time\" name=\"date\" value=\"" + c.get(Calendar.YEAR) + "-" + (mFormat.format(Double.valueOf(c.get(Calendar.MONTH) + 1))) + "-"
-					+ mFormat.format(Double.valueOf(c.get(Calendar.DAY_OF_MONTH))) + "\"> \n");
+			sb.append("<input type=\"date\" id=\"meeting-time\" name=\"date\" value=\"" + c.get(Calendar.YEAR) + "-" + (mFormat.format(Double.valueOf(c.get(Calendar.MONTH) + 1))) + "-" + mFormat.format(Double.valueOf(c.get(Calendar.DAY_OF_MONTH))) + "\"> \n");
 		}
 		String sDay = "1";
 		try {
@@ -270,8 +269,6 @@ public class HtmlRender {
 			}
 		}
 		sb.append("</select>");
-
-//		sb.append("</br>");
 		try {
 			String search = request.getParameter("search").toString();
 			sb.append(" &nbsp; &nbsp;Search: <input  type='text' id='search' name='search' size=\"50\" value='" + search + "'>");

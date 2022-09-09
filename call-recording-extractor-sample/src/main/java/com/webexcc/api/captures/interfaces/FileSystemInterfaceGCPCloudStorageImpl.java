@@ -41,14 +41,8 @@ import com.webexcc.api.model.Recording;
 @Component(value = "fileSystemGCPCloudStorage")
 public class FileSystemInterfaceGCPCloudStorageImpl implements FileSystemInterface {
 	Logger logger = LoggerFactory.getLogger(FileSystemInterfaceGCPCloudStorageImpl.class);
-//
-//	@Value("${fileSystemGCPCloudStorage.accessKey}")
-//	protected String accessKey;
-//
-//	@Value("${fileSystemGCPCloudStorage.secretKey}")
-//	protected String secretKey;
-//
-//	protected AmazonS3 s3Client = null;
+
+
 //
 	@Value("${fileSystemGCPCloudStorage.bucketName}")
 	protected String bucketName;
@@ -68,11 +62,11 @@ public class FileSystemInterfaceGCPCloudStorageImpl implements FileSystemInterfa
 	@Override
 	public String copyFile(Recording record) throws Exception {
 		try {
-			logger.info("bucketName:" + record);
+			logger.debug("bucketName:" + record);
 			File oFile = copyFile2TmpDir(record);
 			String absolutePath = oFile.getAbsolutePath();
-			logger.info("bucketName:" + bucketName);
-			logger.info("putFile:" + oFile.getAbsolutePath());
+			logger.debug("bucketName:" + bucketName);
+			logger.debug("putFile:" + oFile.getAbsolutePath());
 
 			String blobName = new File(absolutePath).getName();
 			BlobId blobId = BlobId.of(bucketName, blobName);
@@ -82,7 +76,7 @@ public class FileSystemInterfaceGCPCloudStorageImpl implements FileSystemInterfa
 			Path file = Paths.get(absolutePath);
 			Blob oBlob = storage.createFrom(blobInfo, file, largeBufferSize);
 
-			logger.info("oBlob.getBlobId():" + oBlob.getBlobId());
+			logger.debug("oBlob.getBlobId():" + oBlob.getBlobId());
 			return blobName;
 		} catch (Exception e) {
 			logger.error("Exception:{}", e.getMessage());
@@ -96,7 +90,7 @@ public class FileSystemInterfaceGCPCloudStorageImpl implements FileSystemInterfa
 			String fileName = record.getId() + "";
 			InputStream in = new URL(attributes.getFilePath()).openStream();
 			File file = File.createTempFile(fileName, ".wav");
-			logger.info("file: {}", file.getAbsolutePath());
+			logger.debug("file: {}", file.getAbsolutePath());
 			file.deleteOnExit();
 			Files.copy(in, Paths.get(file.getAbsolutePath()), StandardCopyOption.REPLACE_EXISTING);
 			return file;
@@ -112,21 +106,22 @@ public class FileSystemInterfaceGCPCloudStorageImpl implements FileSystemInterfa
 		return storage.list(bucketName);
 	}
 
-	public void createBucket() throws Exception {
+	public void createBucket() {
 		// https://googleapis.dev/java/google-cloud-clients/latest/com/google/cloud/storage/StorageClass.html
 		StorageClass storageClass = StorageClass.COLDLINE;
 		try {
 			// check to see if bucket exists
 //			storage.list(bucketName);
 			this.listBucket();
-			logger.info("Bucket exists");
+			logger.info("Bucket %s already exists.\n", bucketName);
 		} catch (Exception e) {
 			try {
 				// create bucket
 				Bucket bucket = storage.create(BucketInfo.newBuilder(bucketName).setStorageClass(storageClass).build());
 				logger.info("Created bucket " + bucket.getName() + " in " + bucket.getLocation() + " with storage class " + bucket.getStorageClass());
 			} catch (Exception e1) {
-				throw e1;
+				logger.warn("postConstruct: s3Client:not connected");
+				logger.error("Exception: {}", e.getMessage());
 			}
 		}
 	}

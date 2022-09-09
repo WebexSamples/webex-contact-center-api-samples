@@ -40,7 +40,7 @@ import com.webexcc.api.model.Recording;
 public class WebRestController {
 	static Logger logger = LoggerFactory.getLogger(WebRestController.class);
 
-	String baseURL = "https://webexapis.com/v1";// new
+	String baseURL = "https://webexapis.com/v1";
 
 	@Autowired
 	HtmlRender htmlRender;
@@ -64,15 +64,15 @@ public class WebRestController {
 	FileSystemInterfaceGCPCloudStorageImpl fileSystemGCPCloudStorage;
 
 	@Value("${fileSystemInterface.type}")
-	private List fileSystemType;
+	private List<String> fileSystemType;
 
 	public WebRestController() {
 		super();
 	}
 
 	/**
-	 * force all traffic to index.html
-	 *
+	 * force all traffic to / this is where all of the OAuth login magic happens
+	 * 
 	 * @param request
 	 * @param response
 	 */
@@ -136,12 +136,19 @@ public class WebRestController {
 
 	}
 
+	/**
+	 * renders web page
+	 */
 	@RequestMapping(value = "/homePage", method = RequestMethod.GET)
 	@ResponseBody
 	public Object homePage(HttpServletRequest request, HttpServletResponse response) {
 		return this.getCaptures(request, response);
 	}
 
+	/**
+	 * /captures end-point request.getParameter("date"); == Calendar
+	 * request.getParameter("days"); == number of days to export call recordings.
+	 */
 	@RequestMapping(value = "/captures", method = RequestMethod.GET)
 	public Object getCaptures(HttpServletRequest request, HttpServletResponse response) {
 		StringBuffer sb = new StringBuffer("<html>\n");
@@ -199,6 +206,9 @@ public class WebRestController {
 		return sb.toString();
 	}
 
+	/**
+	 * loop thru all call recordings, render results via HTML & call write file method
+	 */
 	private void processCaptures(StringBuffer sb, Captures oCaptures, String search) {
 		search = search.trim();
 		List<Capture> data = oCaptures.getData();
@@ -212,44 +222,17 @@ public class WebRestController {
 						writeFileToDisk(record);
 					}
 				} else {
-					String fileName = writeFileToDisk(record);
-//					htmlRender.printCaptureRecording2(record, sb, fileName);
 					htmlRender.printCaptureAttributes(record, sb);
+					writeFileToDisk(record);
 				}
 
 			}
 		}
 	}
 
-	private String writeFileToDisk(Recording record) {
-		if (fileSystemType.contains("localhost")) {
-			try {
-				fileSystemInterfaceLocalhostImpl.copyFile(record);
-			} catch (Exception e) {
-				logger.error("Exception:{}", e.getMessage());
-				return e.getMessage();
-			}
-		}
-		if (fileSystemType.contains("fileSystemAWSS3")) {
-			try {
-				fileSystemInterfaceAWSs3Impl.copyFile(record);
-			} catch (Exception e) {
-				logger.error("Exception:{}", e.getMessage());
-				return e.getMessage();
-			}
-		}
-
-		if (fileSystemType.contains("fileSystemGCPCloudStorage")) {
-			try {
-				fileSystemGCPCloudStorage.copyFile(record);
-			} catch (Exception e) {
-				logger.error("Exception:{}", e.getMessage());
-				return e.getMessage();
-			}
-		}
-		return "No fileSystemType defined in application.yml";
-	}
-
+	/**
+	 * find all telephony tasks
+	 */
 	private void processTasks(Captures oCaptures, Calendar c, int days) throws Exception {
 		for (int i = 1; i <= days; i++) {
 			logger.info("c.getTime: PROCESSing... DATE :{}", c.getTime());
@@ -290,6 +273,39 @@ public class WebRestController {
 			c.set(Calendar.MILLISECOND, 0);
 		}
 		logger.info("DONE: PROCESSing...");
+	}
+
+
+	/**
+	 * persist file to the correct file system
+	 */
+	private String writeFileToDisk(Recording record) {
+		if (fileSystemType.contains("localhost")) {
+			try {
+				fileSystemInterfaceLocalhostImpl.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
+		}
+		if (fileSystemType.contains("fileSystemAWSS3")) {
+			try {
+				fileSystemInterfaceAWSs3Impl.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
+		}
+
+		if (fileSystemType.contains("fileSystemGCPCloudStorage")) {
+			try {
+				fileSystemGCPCloudStorage.copyFile(record);
+			} catch (Exception e) {
+				logger.error("Exception:{}", e.getMessage());
+				return e.getMessage();
+			}
+		}
+		return "No fileSystemType defined in application.yml";
 	}
 
 	@PostConstruct

@@ -81,7 +81,7 @@ public class FileSystemInterfaceAWSs3Impl implements FileSystemInterface {
 			String fileName = record.getId() + "";
 			InputStream in = new URL(attributes.getFilePath()).openStream();
 			File file = File.createTempFile(fileName, ".wav");
-			logger.info("file: {}", file.getAbsolutePath());
+			logger.debug("file: {}", file.getAbsolutePath());
 			file.deleteOnExit();
 			Files.copy(in, Paths.get(file.getAbsolutePath()), StandardCopyOption.REPLACE_EXISTING);
 			return file;
@@ -91,19 +91,6 @@ public class FileSystemInterfaceAWSs3Impl implements FileSystemInterface {
 		}
 	}
 
-//	public List<String> listBucket() {
-//		List<String> returnThis = new ArrayList<String>();
-//		try {
-//			List<S3ObjectSummary> fileList = s3Client.listObjects(bucketName).getObjectSummaries();
-//			for (S3ObjectSummary file : fileList) {
-//				logger.info("listBucket:file:" + bucketName + ":" + file.getKey());
-//				returnThis.add(file.getKey());
-//			}
-//		} catch (Exception e) {
-//			logger.error("Exception: {}", e.getMessage());
-//		}
-//		return returnThis;
-//	}
 
 	// Create a bucket by using a S3Waiter object
 	public void createBucket() {
@@ -123,10 +110,10 @@ public class FileSystemInterfaceAWSs3Impl implements FileSystemInterface {
 	@SuppressWarnings("deprecation")
 	@PostConstruct
 	private void postConstruct() {
-		logger.info("postConstruct: accessKey:{}", accessKey);
-		logger.info("postConstruct: secretKey:{}", secretKey);
-		logger.info("postConstruct: bucketName:{}", bucketName);
-		logger.info("postConstruct: region:{}", region);
+		logger.debug("postConstruct: accessKey:{}", accessKey);
+		logger.debug("postConstruct: secretKey:{}", secretKey);
+		logger.debug("postConstruct: bucketName:{}", bucketName);
+		logger.debug("postConstruct: region:{}", region);
 		try {
 			s3Client = new AmazonS3Client(new BasicAWSCredentials(accessKey, secretKey));
 			this.createBucket();

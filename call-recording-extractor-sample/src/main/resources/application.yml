@@ -1,14 +1,9 @@
+#list of filesystems to persist the file
 fileSystemInterface:
-  type: fileSystemGCPCloudStorage # localhost,fileSystemAWSS3,fileSystemGCPCloudStorage list of filesystems to persist the file
+  type: localhost #,fileSystemAWSS3,fileSystemGCPCloudStorage
   
 localhost:
   dataDirectory: /tmp/data
-
-#filesystem:
-#  dataDirectory: data
-##  fileSystemInterface : fileSystemAWSS3
-#  fileSystemInterface : fileSystemLocalhost
-#
 
 fileSystemAWSS3:
   user : gcp-webexcontactcen-nprd-xxxxx

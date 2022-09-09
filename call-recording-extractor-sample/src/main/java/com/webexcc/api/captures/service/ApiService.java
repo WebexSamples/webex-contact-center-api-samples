@@ -31,7 +31,7 @@ public class ApiService {
 	@Autowired
 	private RestTemplate restTemplate;
 	DateFormat oDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-	String baseURL = "https://api.wxcc-us1.cisco.com/organization";// new
+	String baseURL = "https://api.wxcc-us1.cisco.com/organization";
 
 	Authentication authentication;
 
@@ -46,7 +46,7 @@ public class ApiService {
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			HttpEntity<?> entity = new HttpEntity<String>(null, headers);
 			ResponseEntity<String> response1 = restTemplate.exchange(baseURL + "/" + authentication.getOrginzationId(), HttpMethod.GET, entity, String.class);
-//			logger.info("getOrginzation:response1.getBody:{}", response1.getBody());
+
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
 			Organization oOrganization = om.readValue(response1.getBody(), Organization.class);
@@ -57,11 +57,6 @@ public class ApiService {
 		}
 	}
 
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
-
-		return restTemplateBuilder.setConnectTimeout(Duration.ofSeconds(10)).setReadTimeout(Duration.ofSeconds(10)).build();
-	}
 
 	public Authentication getAuthentication() {
 		return authentication;
@@ -80,26 +75,21 @@ public class ApiService {
 			c.add(Calendar.HOUR, 1);
 			long to = c.getTimeInMillis();
 
-			// break the request down by hour, the response does have a limit on the
-			// response.
+			// break the request down by hour, the response does have a limit on the response.
 			// assume there are < 1000 records per hour
 			for (int i = 0; i < 24; i++) {
-//				logger.info("i:{}", i);
 				AgentsActivities oAgentsActivities = getAgentsActivitiesByFromTo(channelTypes, from, to);
 				if (oAgentsActivities.getData().size() > 0) {
 					returnThis.getData().addAll(oAgentsActivities.getData());
 				}
-//				Thread.sleep(500);
 				from = c.getTimeInMillis();
 				c.add(Calendar.HOUR, 1);
 				to = c.getTimeInMillis();
 			}
-//			c.add(Calendar.SECOND, -10);
 			return returnThis;
 
 		} catch (Exception e) {
-//			logger.error("Exception:{}", e.getMessage());
-
+			// this error will only happen if you are searching for today's date
 			if (e.getMessage().contains("timestamp should not be more than")) {
 				return returnThis;
 			}
@@ -108,6 +98,9 @@ public class ApiService {
 		}
 	}
 
+	/**
+	 * https://developer.webex-cx.com/documentation/agents/v1/get-agent-activities
+	 */
 	private AgentsActivities getAgentsActivitiesByFromTo(String channelTypes, long from, long to) throws Exception {
 		String url = "";
 		try {
@@ -116,34 +109,18 @@ public class ApiService {
 			c1.setTimeInMillis(from);
 			Calendar c2 = Calendar.getInstance();
 			c2.setTimeInMillis(to);
-//			logger.info("Calendar.from: {}", c1.getTime());
-//			logger.info("Calendar.to  : {}", c2.getTime());
-//			logger.info("Calendar  : {} {}", c1.getTime(), c2.getTime());
-//			logger.info("");
-			// do request
-			/**
-			 * keep start
-			 */
+
 			HttpHeaders headers = new HttpHeaders();
 			headers.add("Content-Type", "application/json");
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			StringBuffer payload = new StringBuffer();
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
-//		 url = "https://api.wxcc-us1.cisco.com/v1/agents/activities?channelTypes=email" + "&channelTypes=chat" + "&channelTypes=telephony" + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.orginzationId;
 			url = "https://api.wxcc-us1.cisco.com/v1/agents/activities?channelTypes=" + channelTypes + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.getOrginzationId();
 			ResponseEntity<String> response1 = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
-//			logger.info("response1.getBody:{}", response1.getBody());
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
 			AgentsActivities oAgentsActivities = om.readValue(response1.getBody(), AgentsActivities.class);
-//			logger.info("oAgentsActivities.data.size():{}", oAgentsActivities.data.size());
 			return oAgentsActivities;
-
-			/**
-			 * keep stop
-			 */
-//			return new AgentsActivities();
-
 		} catch (Exception e) {
 			if (e.getMessage().contains("Too Many Requests")) {
 				logger.warn("Too Many Requests... will try again in 60 seconds");
@@ -156,38 +133,10 @@ public class ApiService {
 		}
 	}
 
-	public Captures capturesQuery() {
-		try {
-			HttpHeaders headers = new HttpHeaders();
-			headers.add("Content-Type", "application/json");
-			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
-			StringBuffer payload = new StringBuffer();
 
-			payload.append("{");
-			payload.append("\"query\": {");
-			payload.append("	\"orgId\": \"" + authentication.getOrginzationId() + "\",");
-			payload.append("	\"urlExpiration\": 30,");
-			payload.append("	\"taskIds\": [\"425cc6cf-89f7-4149-9b38-d6305227f4bc\",\"4ccbf863-4177-4b92-be0b-d0ba7a38ab45\",\"595b85db-86f4-473c-acee-cbebb52cc7bc\"],");
-			payload.append("	\"includeSegments\": false");
-			payload.append("  }");
-			payload.append("}");
-			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
-			ResponseEntity<String> response1 = restTemplate.exchange("https://api.wxcc-us1.cisco.com/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
-//			logger.info("÷:{}", response1.getBody());
-			ObjectMapper om = new ObjectMapper();
-			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
-
-			Captures oCaptures = om.readValue(response1.getBody(), Captures.class);
-//			logger.info("oCaptures.data.size():{}", oCaptures.data.size());
-			return oCaptures;
-		} catch (Exception e) {
-			logger.error("Exception:{}", e.getMessage());
-//			return new ArrayList<UserProfile>();
-		}
-		return new Captures();
-
-	}
-
+	/**
+	 * https://developer.webex-cx.com/documentation/captures
+	 */
 	public Captures captures(StringBuffer taskIds) throws Exception {
 		try {
 			StringBuffer payload = new StringBuffer();
@@ -199,18 +148,18 @@ public class ApiService {
 			payload.append("	\"orgId\": \"" + authentication.getOrginzationId() + "\",");
 			payload.append("	\"urlExpiration\": 30,");
 			payload.append("	\"taskIds\": [" + taskIds.toString() + "],");
-//			payload.append("	\"taskIds\": [\"425cc6cf-89f7-4149-9b38-d6305227f4bc\",\"4ccbf863-4177-4b92-be0b-d0ba7a38ab45\",\"595b85db-86f4-473c-acee-cbebb52cc7bc\"],");
+//	example:payload.append("	\"taskIds\": [\"425cc6cf-89f7-4149-9b38-d6305227f4bc\",\"4ccbf863-4177-4b92-be0b-d0ba7a38ab45\",\"595b85db-86f4-473c-acee-cbebb52cc7bc\"],");
 			payload.append("	\"includeSegments\": false");
 			payload.append("  }");
 			payload.append("}");
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
 			ResponseEntity<String> response1 = restTemplate.exchange("https://api.wxcc-us1.cisco.com/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
-//			logger.info("response1.getBody:{}", response1.getBody());
+
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
 
 			Captures oCaptures = om.readValue(response1.getBody(), Captures.class);
-//			logger.info("oCaptures.data.size():{}", oCaptures.data.size());
+
 			return oCaptures;
 		} catch (Exception e) {
 			if (e.getMessage().contains("Too Many Requests")) {
@@ -223,6 +172,12 @@ public class ApiService {
 			}
 		}
 
+	}
+
+	@Bean
+	public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
+
+		return restTemplateBuilder.setConnectTimeout(Duration.ofSeconds(10)).setReadTimeout(Duration.ofSeconds(10)).build();
 	}
 
 }
