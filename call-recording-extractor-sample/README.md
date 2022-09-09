@@ -8,7 +8,7 @@ The application can be modified, enhanced or extended to fit the use cases requi
 
 Watch the demo below to understand what this application does and how to set it up and extend on it.
 
-## [Watch Now: Extract Webexcc call recordings](https://app.vidcast.io)
+## [Watch Now: Extract Webexcc call recordings](https://app.vidcast.io/share/014d7798-55f8-4465-b10f-18adee7182c3)
 
 > **Note:** This is a sample that assumes you know the basics of rest API calls as well as Java/Spring Boot.
 
