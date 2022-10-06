@@ -3,6 +3,7 @@ import { agentStatus } from "../desktop.js";
 
 // Wrap up
 export async function wrapUp(taskId, token) {
+  // add your own wrap-up if not programmatically fetching
   let auxCodeId = "AXsC77QbCsCfPjzFZ-4S";
   let wrapUpReason = "Account";
   let raw = JSON.stringify({
