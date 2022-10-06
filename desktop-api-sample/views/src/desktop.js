@@ -9,17 +9,8 @@ import { endCall } from "./2_tasks/endCall.js";
 import { wrapUp } from "./2_tasks/wrapUp.js";
 import { stationLogout } from "./optional/stationLogout.js";
 
-// token closure  ( i think )
-async function processAccessToken() {
-  let getAccessToken = await accessToken();
-  let token = getAccessToken.ccAccessToken;
-  function ac() {
-    return token;
-  }
-  return ac();
-}
-
-let token = await processAccessToken();
+let processToken = await accessToken();
+let token = await processToken();
 console.log(token);
 
 let taskId = null;
@@ -54,12 +45,12 @@ async function socketEvent() {
       let taskList = document.querySelector(".taskList");
       taskList.style.display = "block";
     }
-    if (getWSInfo.includes("AgentReloginSuccess")) {
-      let res = JSON.parse(event.data);
-      agentStatus = res.data.subStatus;
-      console.log(agentStatus);
-      callInfo.textContent = agentStatus;
-    }
+    // if (getWSInfo.includes("AgentReloginSuccess")) {
+    //   let res = JSON.parse(event.data);
+    //   agentStatus = res.data.subStatus;
+    //   console.log(agentStatus);
+    //   callInfo.textContent = agentStatus;
+    // }
     // if (getWSInfo.includes("AGENT_MAX_CONNECTIONS_EXCEEDED")) {
     //   let res = JSON.parse(event.data);
     //   reason = res.data.reason;

@@ -29,6 +29,5 @@ export async function oauthCode(req, res) {
   ccAccessToken = response.data.access_token;
   ccExpires = response.data.expires_in;
   console.log(response.data);
-  // res.redirect("/desktop/desktop.html");
   res.redirect("/src/desktop.html");
 }
