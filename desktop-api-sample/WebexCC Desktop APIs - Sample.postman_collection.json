@@ -4688,12 +4688,12 @@
 		},
 		{
 			"key": "client_id",
-			"value": "C5269ded12b2274ae0325cc07d012133ad49e1df44589d0fe38f7c30a8336afac",
+			"value": "your-client-id",
 			"type": "string"
 		},
 		{
 			"key": "client_secret",
-			"value": "6a50ba45d7d391183cd5b18f813765643e91fbd3446edcca0f548d365215f083",
+			"value": "you-client-secret",
 			"type": "string"
 		},
 		{
