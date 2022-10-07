@@ -1,13 +1,15 @@
-## Agent Desktop APIs
+## Webex Contact Center Agent Desktop REST APIs
 
-This is a tutorial on the Desktop APIs. Early access APIs. The focus of this video is to introduce these new APIs. These APIs will help you build a custom Agent Desktop.
+This is a tutorial on the WebexCC Agent Desktop REST APIs, Call Control REST APIs and Websocket API for notifications.
 
-Watch the video below.
+These APIs are currently in early access and will be generally available soon.
 
-## Watch [Agent Desktop APIs](https://app.vidcast.io/share/438b4efb-10e5-479f-afde-4d5f97462aa3)
+The focus of sample is to show you how to use the attached Postman Collection for the REST APIs and Websocket APIs and also on how to build a custom application that leverages these APIs.
 
-> **Note:** This is a /video assumes you have oAuth configured on Postman.
-> We recommend watching the videos @ **[Working with Postman](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample)**
+## Watch: [WebexCC Desktop REST APIs, Call Control APIs and Websocket notification API](https://app.vidcast.io/share/438b4efb-10e5-479f-afde-4d5f97462aa3)
+
+> **Note:** This is a /video assumes you have WebexCC OAuth2 configured on Postman.
+> We recommend watching the video @ **[Working with WebexCC OAuth2 on Postman](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample)** to know how to retrieve an Access Token for WebexCC REST APIs.
 
 ## Developer Documentation
 
@@ -15,29 +17,25 @@ Watch the video below.
 
 ## Getting Started
 
-> **Note:** The code below is first draft, v0.  
-> You might encounter a few bugs if you decide to use it. The code will need to be refactored, as there are a few manually entered key/value pairs, not DRY, etc.. Eventually also re-designed with a Pub/Sub type of pattern.Please keep this in mind.  
-> Thank you.
+> **Disclaimer:** The code below is an early access version and does not gaurantee bug-free use. Several layers have been abstracted away so that you can understand how these REST APIs can be used to control the Desktop and Call Control actions.
+> While using these APIs to build a production-grade desktop, please consider refactoring the code and including pub-sub mechanisms for event listeners to build a more robust, event-driven front-end application.
 
 ### Executing the sample
 
-The sample code makes a good amount of assumptions.
-Its designed to go through the oauth process and during development ngrok was used to obtain a public URL in order to properly redirect.
+The sample code makes use of a few assumptions to show you the main section of desktop and call control.
+Its designed to go through the OAuth process and during development a reverse proxy was used (e.g ngrok) to obtain a public URL.
 
 **Step 0:**
 
-Again, making assumptions that you are able to complete these two aspects to run code locally.
-
-- build out your own webex App to get your own Client / Secret credentials for the OAuth Process
-- Install/Run ngrok locally
+- Build out your own webex App to get your own Client / Secret credentials for the OAuth Process. Follow the other samples to understand how to register and app and get your Client ID / Client Secret.
+- Install/Run a reverse proxy (e.g ngrok) locally to obtain a public URL if needed.
 
 **Step 1:**
-
-To use the existing sample code on your localhost.
+Configure your environment
 
 - Rename the file copy.env to .env (_basically remove the word "copy"_)
 - Inside this project on your terminal type: `npm run dev`
-- This should run the app on your localhost:3000
+- This should run the app on `http://localhost:3000`
 
 **Step 2:**
 Modify a few files (_description in files should help explain_):
@@ -45,7 +43,7 @@ Modify a few files (_description in files should help explain_):
 - .env
 - desktop.html
 - startTokenProcess.js
-- token.js.
+- token.js
 
 ## Disclaimer
 
@@ -66,6 +64,5 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 ## Version History
 
 - 1.0.0
-  - a few GET methods & updated readme
-    <!-- * See [commit change]() or See [release history]() -->
+  - Initial Sample of the Desktop App and Postman collection.
     <!-- * See [commit change]() or See [release history]() -->
