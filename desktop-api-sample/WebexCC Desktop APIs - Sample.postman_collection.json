@@ -1,0 +1,4705 @@
+{
+	"info": {
+		"_postman_id": "0316cd8c-b146-42f0-b4f9-f8df2179ff4f",
+		"name": "WebexCC Desktop APIs - Sample",
+		"description": "Implementation of Task Routes for processing\n\nContact Support:\n Name: WxCC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "889186"
+	},
+	"item": [
+		{
+			"name": "agent",
+			"item": [
+				{
+					"name": "1. Register Websocket Subscription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json\t",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"force\":true,\n   \"isKeepAliveEnabled\":false,\n   \"allowMultiLogin\": true,\n   \"clientType\": \"AgentDesktopMessage\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/notification/subscribe?force=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"notification",
+								"subscribe"
+							],
+							"query": [
+								{
+									"key": "force",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Notifs WSS register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json\t",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"force\":true,\n   \"isKeepAliveEnabled\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.intgus1.ciscoccservice.com/notifs/v1/register?force=true\n",
+									"protocol": "https",
+									"host": [
+										"api",
+										"intgus1",
+										"ciscoccservice",
+										"com"
+									],
+									"path": [
+										"notifs",
+										"v1",
+										"register"
+									],
+									"query": [
+										{
+											"key": "force",
+											"value": "true\n"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 20 Jun 2022 20:12:26 GMT"
+								},
+								{
+									"key": "server",
+									"value": "istio-envoy"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								},
+								{
+									"key": "content-length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "1. Notifs WSS register produs1 (REST)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json\t",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"force\":true,\n   \"isKeepAliveEnabled\":true,\n   \"allowMultiLogin\": true,\n   \"clientType\": \"DefaultClient\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.wxcc-us1.cisco.com/v1/notification/subscribe?force=true\n",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wxcc-us1",
+										"cisco",
+										"com"
+									],
+									"path": [
+										"v1",
+										"notification",
+										"subscribe"
+									],
+									"query": [
+										{
+											"key": "force",
+											"value": "true\n"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "2.(Get Agent Status) Reload Agent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorizatio",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/agents/reload",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"agents",
+								"reload"
+							]
+						},
+						"description": "Allows the user to logout from their Desktop. This API needs to be called once the WSS session has been successfully established."
+					},
+					"response": [
+						{
+							"name": "The task was accepted for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "3. Station Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"dialNumber\": \"0001\",\n  \"teamId\": \"{{team_id}}\",\n  \"isExtension\": true,\n  \"roles\": [\n    \"Agent\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/agents/login",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"agents",
+								"login"
+							]
+						},
+						"description": "Allows the user to login to their Desktop. It does not allow a duplicate login and sends an error message over websocket, if an active session already exists"
+					},
+					"response": [
+						{
+							"name": "The task was accepted for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Precondition Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"roles\": [\n    \"Excepteur anim\",\n    \"p\"\n  ],\n  \"dialNumber\": \"5678956899\",\n  \"teamId\": \"5c8e24ff-a31a-422d-b7a7-b56c6739081d\",\n  \"isExtension\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"login"
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "4. Change State",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/agents/session/state",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"agents",
+								"session",
+								"state"
+							]
+						},
+						"description": "Allows the user to toggle between the states (Available, Idle, Busy etc)"
+					},
+					"response": [
+						{
+							"name": "The task was accepted for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/session/state",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"session",
+										"state"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/session/state",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"session",
+										"state"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/session/state",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"session",
+										"state"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/session/state",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"session",
+										"state"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"state\": \"Available\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/session/state",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"session",
+										"state"
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "tasks(task_id)",
+			"item": [
+				{
+					"name": "Accept Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mediaResourceId\": \"24cad747-aff0-465d-ba94-a5518e8c6f0d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/accept",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"accept"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "aaf8081d-0b1e-46b2-baa3-308ee01991b6",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to accept either an Inbound or an outbound requests. The request can be a call, a chat or an email. Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "The task was accepted for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "End Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/done",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"done"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "aaf8081d-0b1e-46b2-baa3-308ee01991b6",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to end either an Inbound or an outbound requests. The request can be a call, a chat or an email. Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "The task was cancelled.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Hold Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mediaResourceId\": \"9ad73d72-4fb9-4d4a-a9f8-1ff7c038c1ef\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/hold",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"hold"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "9ad73d72-4fb9-4d4a-a9f8-1ff7c038c1ef",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to hold a call. When an user is in consulting state, the task will be put on hold. It is not applicable for Chats and emails. Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "The task was put on hold for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/hold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"hold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/hold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"hold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/hold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"hold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/hold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"hold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/hold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"hold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Resume Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnJZM3N1ZUtNd2g3M1pFYVJweFRxdGcudGtJWlRrN1F4azVwZzI2YjV3djRfNXREWWw0Ym9UMkpCZHZmbGxRZ0JRT2FHWURMZU00YW1GNlFHaDNoa2dzemllVE1wRmVuZFpmQjBqczJCOThxcDcwcVlCLWFWUUFhMnN1UjFQZ2g4UTMzOVkxRzZvVHAxWnQ5dWs4d2R1ZWU1MmJOcWkzS1dFRmlWSnRZT2pVbndkVE1hOEhXV3pQMkZJcElBUWl1b1VpdWs3RmpzNWVHSGxGci1nMHFEdURsSm9YZnZvdkVIa3FGTFZWVy16SEJZM09xWHB2aVpyakJOZ3dQMnhCUGJrVXJ1QlpOcXhSeEJWOWFCd1hNQjM1dVpaUzRyQ0FRU1Z2NFVoOFEwVFhmNzdJOEdIVU5rRElpSjJFQnpxVDl6MkRQN3pVN2lTZlhUSTJSaFJpR0Z2cmZ4MmgwRHE0N3JxNkJncWVjMDdVZW9jNDBBVDJ4R2pvTnkxVFpFcExmYjlUQktVWFFNUlozbU4zbGhEaGZQUUNRSUdjRlZSNHVteXY4Qk1udmd2SUNBR1hNdFBZcU5hVWs2ZWR6X2NtVVBkUVFZdjhrMFI0WTZVLVB3MWgtQzAzVzk3aFhndFM4enMwSnVqaTJjVlhOOW1OWUF3N0xsN3RDYkJudjFzN0hxOHRKcExBbS16c3NrTkh5d0luemROX0RyWjJCclM1eTVHN2YzZEw0SkFTOFROc0pGSk1aMmRDYmZiVENZODR6ZkhLT0M1cHg3UERheXAyLVBXQ1B4d3NHRFJmbkludlAtMGo4Q1RlYm04NG85QTNRN0tralFZaXNXeDFHVXpmRXdhRUJvaHE4bGM0dllISmtQalhvbDJnejd4cHlYYzNQMVpXVHltRFllVGJKeG1fQXp3V1NOSFRIcHF3eWtJT0Q3Qjlzc0hxVXJQMm1aOWtwc3VSOS1mNC1lbG9SaHRmVzd2LTRlV2JhelZNeENkLTZ0UWVwdzZOR1J6dkxPcExoNmlOWk9XNXRkMWs1dWgwLTUwMUk1dkN3dWRwaVNlR09ZMXlrbEE2N1VpanViVWxpR3JrdjFvZ0dYZWI0dmhoREhqU0pQU1g0VlJsLXR4MUM4OWR5V1AwMXlFbU9od0p6OHZwYUo0dnhObzVqaG54RnljclNkaHpKTlphUFZUSWotNV93M1lfSERabE1pVlFNUEdka0NnWjIuTHVlSE5wUVd5VGVMWFVHM1lpNGQ4QSIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME56ZzVORFk1TnpjdFpHUTFNQzAwWXprd0xUbG1aVGd0WW1VMU9ERTRPV1UxWTJWbU5EUTNaVEF6WVRjdE5qZzQiLCJyZWZlcmVuY2VfaWQiOiI2YjRmZjQ1YS0yNGM4LTQzMzItOGRhMC1kOWUwZjRhOTZhYmIiLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTE3OTQwOTA1MiwiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.kqJzRZpHv-1kIuf2-C-Om9RnXiBoT6LGWA8eq4HWthkBG9f2oRaUAD97FK-qE6Rrjtk5opnnoEtZzWbACrtNgrOvtPd7RnwbAnFEaR2ihNokyo6XuEoNecN9ShE6xssZWMhXt_yHlz5Chx9PjXweDzOV00qW1CfcmiA8J_SK5csOGyPmNbDVpMJJMAgz3y0_hh7wG_ii6cnuiMK1pHzhkMnuWhscM7EX6b_qSjbm2oHPdrTrgeclbFgwU_KkTcCLJX6wH87qdh-GqXOIspkHD3-M_D6sRFZxdkXccmo2SIh3pumDLsfnjC4rcath7QrpDTqw2VyKkPC6iVaYmFuaTQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mediaResourceId\": \"b14b6886-e791-4638-b7c9-d2c4c442970f\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/unhold",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"unhold"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "b14b6886-e791-4638-b7c9-d2c4c442970f",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to resume a call from hold. When an user is done consulting, the previously held interaction with the customer should be resumed. It is not applicable for Chats and emails. Requires 'cjp:user' scope for authorization."
+					},
+					"response": [
+						{
+							"name": "The task has been resumed for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/unhold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"unhold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/unhold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"unhold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/unhold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"unhold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/unhold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"unhold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/unhold",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"unhold"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Reject Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnJZM3N1ZUtNd2g3M1pFYVJweFRxdGcudGtJWlRrN1F4azVwZzI2YjV3djRfNXREWWw0Ym9UMkpCZHZmbGxRZ0JRT2FHWURMZU00YW1GNlFHaDNoa2dzemllVE1wRmVuZFpmQjBqczJCOThxcDcwcVlCLWFWUUFhMnN1UjFQZ2g4UTMzOVkxRzZvVHAxWnQ5dWs4d2R1ZWU1MmJOcWkzS1dFRmlWSnRZT2pVbndkVE1hOEhXV3pQMkZJcElBUWl1b1VpdWs3RmpzNWVHSGxGci1nMHFEdURsSm9YZnZvdkVIa3FGTFZWVy16SEJZM09xWHB2aVpyakJOZ3dQMnhCUGJrVXJ1QlpOcXhSeEJWOWFCd1hNQjM1dVpaUzRyQ0FRU1Z2NFVoOFEwVFhmNzdJOEdIVU5rRElpSjJFQnpxVDl6MkRQN3pVN2lTZlhUSTJSaFJpR0Z2cmZ4MmgwRHE0N3JxNkJncWVjMDdVZW9jNDBBVDJ4R2pvTnkxVFpFcExmYjlUQktVWFFNUlozbU4zbGhEaGZQUUNRSUdjRlZSNHVteXY4Qk1udmd2SUNBR1hNdFBZcU5hVWs2ZWR6X2NtVVBkUVFZdjhrMFI0WTZVLVB3MWgtQzAzVzk3aFhndFM4enMwSnVqaTJjVlhOOW1OWUF3N0xsN3RDYkJudjFzN0hxOHRKcExBbS16c3NrTkh5d0luemROX0RyWjJCclM1eTVHN2YzZEw0SkFTOFROc0pGSk1aMmRDYmZiVENZODR6ZkhLT0M1cHg3UERheXAyLVBXQ1B4d3NHRFJmbkludlAtMGo4Q1RlYm04NG85QTNRN0tralFZaXNXeDFHVXpmRXdhRUJvaHE4bGM0dllISmtQalhvbDJnejd4cHlYYzNQMVpXVHltRFllVGJKeG1fQXp3V1NOSFRIcHF3eWtJT0Q3Qjlzc0hxVXJQMm1aOWtwc3VSOS1mNC1lbG9SaHRmVzd2LTRlV2JhelZNeENkLTZ0UWVwdzZOR1J6dkxPcExoNmlOWk9XNXRkMWs1dWgwLTUwMUk1dkN3dWRwaVNlR09ZMXlrbEE2N1VpanViVWxpR3JrdjFvZ0dYZWI0dmhoREhqU0pQU1g0VlJsLXR4MUM4OWR5V1AwMXlFbU9od0p6OHZwYUo0dnhObzVqaG54RnljclNkaHpKTlphUFZUSWotNV93M1lfSERabE1pVlFNUEdka0NnWjIuTHVlSE5wUVd5VGVMWFVHM1lpNGQ4QSIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME56ZzVORFk1TnpjdFpHUTFNQzAwWXprd0xUbG1aVGd0WW1VMU9ERTRPV1UxWTJWbU5EUTNaVEF6WVRjdE5qZzQiLCJyZWZlcmVuY2VfaWQiOiI2YjRmZjQ1YS0yNGM4LTQzMzItOGRhMC1kOWUwZjRhOTZhYmIiLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTE3OTQwOTA1MiwiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.kqJzRZpHv-1kIuf2-C-Om9RnXiBoT6LGWA8eq4HWthkBG9f2oRaUAD97FK-qE6Rrjtk5opnnoEtZzWbACrtNgrOvtPd7RnwbAnFEaR2ihNokyo6XuEoNecN9ShE6xssZWMhXt_yHlz5Chx9PjXweDzOV00qW1CfcmiA8J_SK5csOGyPmNbDVpMJJMAgz3y0_hh7wG_ii6cnuiMK1pHzhkMnuWhscM7EX6b_qSjbm2oHPdrTrgeclbFgwU_KkTcCLJX6wH87qdh-GqXOIspkHD3-M_D6sRFZxdkXccmo2SIh3pumDLsfnjC4rcath7QrpDTqw2VyKkPC6iVaYmFuaTQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mediaResourceId\": \"24cad747-aff0-465d-ba94-a5518e8c6f0d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/reject",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"reject"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "24cad747-aff0-465d-ba94-a5518e8c6f0d",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to reject a task.Once a task is rejected, the status of the user goes to idle from available. Requires 'cjp:user' scope for authorization."
+					},
+					"response": [
+						{
+							"name": "The task has been rejected for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/reject",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"reject"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/reject",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"reject"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/reject",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"reject"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/reject",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"reject"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"mediaResourceId\": \"315fbb91-2288-427c-9588-ec764cd46ea4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/reject",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"reject"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Accept Consult Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"consultAccept"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to accept a consult request from another user. Requires 'cjp:user' scope for authorization."
+					},
+					"response": [
+						{
+							"name": "The task was accepted for consult processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consultAccept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consultAccept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consultAccept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consultAccept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consultAccept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consultAccept"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Transfer Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"to\": \"21aca22b-e104-4314-b0c0-8a0b521d2e29\",\n  \"destinationType\": \"queue\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/transfer",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"transfer"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "03b83141-b075-4915-a691-dbb53d21f8e6",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to transfer a call or a chat to another user.Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "The task is transferred for processing",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"to\": \"315fbb91-2288-427c-9588-ec764cd46ea4\",\n  \"destinationType\": \"queue\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"to\": \"315fbb91-2288-427c-9588-ec764cd46ea4\",\n  \"destinationType\": \"queue\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"to\": \"315fbb91-2288-427c-9588-ec764cd46ea4\",\n  \"destinationType\": \"queue\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"to\": \"315fbb91-2288-427c-9588-ec764cd46ea4\",\n  \"destinationType\": \"queue\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"to\": \"315fbb91-2288-427c-9588-ec764cd46ea4\",\n  \"destinationType\": \"queue\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/transfer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"transfer"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Consult Conference Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"consult",
+								"conference"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user is in consult state and wants to initiate a conference with the consulting agent and the customer. Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "The task was accepted for conference.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consult",
+										"conference"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consult",
+										"conference"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consult",
+										"conference"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consult",
+										"conference"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users.",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/consult/conference",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"consult",
+										"conference"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Create Outdial Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"destination\": \"7813305624\",\n     \"entryPointId\": \"AXdM0qR5vzzZ5gULII0I\",\n     \"outboundType\": \"OUTDIAL\",\n     \"mediaType\": \"telephony\",\n     \"attributes\": {\"\":\"\"}\n}\n"
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pause Recording Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/record/pause",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"record",
+								"pause"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "07f92a24-c3a1-46ad-a62d-029d7dfc2ccf",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "When configured by the administrator, telephony tasks are often being recorded for various reasons. When an user is handling sensitive customer information, he/she might want to pause the recording and later on resume recording."
+					},
+					"response": [
+						{
+							"name": "The recording has been paused",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/pause",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"pause"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/pause",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"pause"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/pause",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"pause"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/pause",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"pause"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/pause",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"pause"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Resume Recording Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"autoResumed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/record/resume",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"record",
+								"resume"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "07f92a24-c3a1-46ad-a62d-029d7dfc2ccf",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "When configured by the administrator, telephony tasks are often being recorded for various reasons. When an user is handling sensitive customer information, he/she might resume the recording after the pause."
+					},
+					"response": [
+						{
+							"name": "The recording has been paused",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"autoResumed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/resume",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"resume"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"autoResumed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/resume",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"resume"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"autoResumed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/resume",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"resume"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"autoResumed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/resume",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"resume"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users. ",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"autoResumed\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/record/resume",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"record",
+										"resume"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Wrap Up Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnd5V1BsamRnRlhZNE9KT1Zwb3pSR2cucFIzdmVSY05YdVBmRTVCdEdvN1BpLWNMeE1XQVY1bGJVT0lwbGpQRFViQ2VZbDV4ZTNhZUVOMUdBZTluNW5ZaHczNmN0ZlRrVXQ0b194Z2xETnI2QzNoLUZYb3l4N2p1OWlWcXM2YVFPM3FNU0tIUXVSNHFQYTFFejJTOUQzeUYtcVEzeWtMNFRraHEwX05FdlRvek5EM3BMLUI1NU1TVzJoOGxISGpobFgtaF9VUGJVSk5MTkxGc19LaE4ycUZnYjJFY3lKNWQyZ3RnZTRuMDVQMFdsLTJ4V29hemU0U25TSW02UWZ5cXBWS0JiZjB6czdac05VSnBpYWVIZUdab25mbnY1ck0wMGpLMEd5Wk1lNk5mb1NTV0t3Z3ZYMjctZDB6NHNNbDhlMk5jQ3RjcGR0Z0hCV01kZUxyUnB2LXBmZE1jSVhFcnFuRVlfYnJBVnY3X3lDbHNjTEV1eERIdDhWOEgzQmJlVTlNbE5kb2ExZ0lOZnZHTTRJMWdMd1hOM0wtUklMekhLQW1pRDBpaFE0T0M3YlA5Qm9GU0NSYXhETDBOaXdHM2FNMnRfRTVVVkJQdDVKblJTckJINlZzU2dqWWtWYjRfX2xIeHp6WHBMaDB6NXExVThpdkZfcmdhc2kwUWM3Q2dCbEJWdGkyV1p3Sm9sYTRFS2kwN2FZT1cycHpHN3E5OWlVMHJmSkhxak5JODJWUTN2MWI4cWIzTERCTmV0SGo0bmk5bWNEYVJZb2RNbXNsSEJaSmVKaWVKLUVaVGZuYmVOVkJSaVhlSldNZ0t0ZlFfM3ZOeWV0SmtzTHpYMXNjS3hXQlVfaGFMVHltelhXYWs2ZWZvUkpwdzBTSVItYXpzMVhvZG5vdkktQk00MURsSjVnX0FoUnJvT09fa0JWUHRsVElKd3VYUFVhMWZuNE85N3BpT3duX1JnRGhXaVFSYWNzOVBtNENvZzVLQ0kwSXQycldILW1oS3k0NXpfUEYySVFsM1YzcjJvbDRXSUZiNVNseGpjZEx2UUxsZjFNVXFydnpqOWlfcnB3VWNZeWE1dzFnZm5aZEFaX3NOTzJuY201RWc1ZWQtcGV2Tk5CYV9selpndERqVGl3dl9jd2VXQTQ4NFR5cFRESGNQQ1R6ak5YanBybXN4MTJDMno0dFNFdzBubEVQelRuZGxycmhwSFQzZHp1bmYuSDRGQkc3cVFQYTN1dG1xOVRQdjJqZyIsInVzZXJfdHlwZSI6InVzZXIiLCJ0b2tlbl9pZCI6IkFhWjNyME1qTTNOREUzTXpRdFl6UmhZUzAwT1RObUxXSTBOR1l0Tm1VelpXUmhNbUUwWWpFelpqUXpaVGd6WldZdE5HWmgiLCJyZWZlcmVuY2VfaWQiOiJmMjY0YmU5Mi1lOTNkLTRiMTItODVmYy0xYTBmNTJhNTE4NzciLCJpc3MiOiJodHRwczpcL1wvaWRicm9rZXIud2ViZXguY29tXC9pZGIiLCJ1c2VyX21vZGlmeV90aW1lc3RhbXAiOiIyMDIyMDIwMjEwMjgyMS44NjRaIiwicmVhbG0iOiJlNDc2ZmUwOC01NzVhLTQ0NGItODk5Ny1hODJlYWY1MTU0MzciLCJjaXNfdXVpZCI6ImY4NmM5NTAxLTZiYWQtNGI3My04YTNiLWYwYTdjMTc1NWQwNCIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJleHBpcnlfdGltZSI6MTY1OTYxMTE1NjI0MywiY2xpZW50X2lkIjoiQ2IzYTA4MmMzNmRhM2NjNmVhYmI1OWI3NTI5NGMzZWQ1MjJjOGI3OTk3YTQ3OGIwZGI3MzJmNjdlNzJiNjgwNTYifQ.dbWBKjTjr8zqOVSf8YgA7fz45-bv5P0v2uYf2KjfnS7FP0Oii8Dgm7oWH_fbx2vH4OvZphqE9sQaQS6gKxrG-Qba5u22d5UlvGo2HfuuVyQbay5DDG6A42BFzluGTnPzd0EwrIfyGTn0HM98IiUVFJj5XGJM1ALBEuFCZxugA5O_QCLfCKsjtQPBmUW7Adtelqoi4RaaTXQNSDPvGJoyiNaYsbz8spR__DMVUgI4zBMrOR5-LV-P6-oyMjGOm6QxQrZZES0GU4r3PCQaHNNdZ2Qyc9Rajd3lwHVe0ZlbCpAGn2pKXU-praWPxcCIKnjNNJZJIyJ5KC5vGGS4XGgZ1Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"auxCodeId\": \"AXsC77QbCsCfPjzFZ-4S\",\n\"wrapUpReason\": \"Account\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/tasks/:taskId/wrapup",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tasks",
+								":taskId",
+								"wrapup"
+							],
+							"variable": [
+								{
+									"key": "taskId",
+									"value": "b3331639-5784-4126-97b6-6e24fd7fe901",
+									"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+								}
+							]
+						},
+						"description": "Access this Endpoint when the user has to wrap up a call, a chat or an email after selecting the Wrap up reason. Requires 'cjp:user' scope for authorization"
+					},
+					"response": [
+						{
+							"name": "Wrap Up Task has been executed successfully",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wrapUpReason\": \"Specify the reason E.g.Sales,Marketing etc\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/wrapup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"wrapup"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wrapUpReason\": \"Specify the reason E.g.Sales,Marketing etc\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/wrapup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"wrapup"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wrapUpReason\": \"Specify the reason E.g.Sales,Marketing etc\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/wrapup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"wrapup"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wrapUpReason\": \"Specify the reason E.g.Sales,Marketing etc\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/wrapup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"wrapup"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Path is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"wrapUpReason\": \"Specify the reason E.g.Sales,Marketing etc\",\n  \"auxCodeId\": \"AXUH3oN12eV-WekpnDpl\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/tasks/:taskId/wrapup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"tasks",
+										":taskId",
+										"wrapup"
+									],
+									"variable": [
+										{
+											"key": "taskId",
+											"value": "315fbb91-2288-427c-9588-ec764cd46ea4",
+											"description": "(Required) The Unique ID represents the Task that the user is currently working on. It will be generated Automatically during the creation of a new Task"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Logout Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"logoutReason\": \"Logout initiated by user\",\n  \"agentId\": \"dff61993-b9a3-4e74-8f57-32f92529ccd7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/v1/agents/logout",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"v1",
+								"agents",
+								"logout"
+							]
+						},
+						"description": "Allows the user to logout from their Desktop. This API needs to be called once the WSS session has been successfully established."
+					},
+					"response": [
+						{
+							"name": "The task was accepted for processing.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized, Token is Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Service Unavailable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) The bearer token would be sent to validate the active users",
+										"key": "Authorization",
+										"value": "Bearer <AuthToken>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"logoutReason\": \"Logout initiated by user abcd@xyz.com\",\n  \"agentId\": \"Logout initiated by user abcd@xyz.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/agents/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"agents",
+										"logout"
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/callback",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": false,
+				"type": "boolean"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "{{scopes}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{accessToken_url}}",
+				"type": "string"
+			},
+			{
+				"key": "state",
+				"value": "new",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{auth_url}}",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "Token",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// Get values from Environment ",
+					"const envValues = {",
+					"    refresh_token: pm.environment.get(\"refresh_token\"),",
+					"    client_id: pm.environment.get(\"client_id\"),",
+					"    grant_type: pm.environment.get(\"grant_type\"),",
+					"    client_secret: pm.environment.get(\"client_secret\")",
+					"}",
+					"",
+					"//Set timers for the token on the Environment",
+					"function setTokeTimer(){",
+					"    var startTimer = pm.environment.set(\"startTimer\", new Date().getTime());",
+					"    var setCountDown = pm.environment.get(\"startTimer\");",
+					"    var expires = pm.environment.set(\"expires\", new Date(new Date(setCountDown).getTime() + 60 * 60 * 10 * 1000).getTime());",
+					"    return setCountDown",
+					"}",
+					"",
+					"function subtractHours(numOfHours, date = new Date()) {",
+					"  date.setHours(date.getHours() - numOfHours);",
+					"  return date;",
+					"}",
+					"",
+					"// Send Post",
+					"const echoPostRequest = {",
+					"url: 'https://webexapis.com/v1/access_token',",
+					"method: 'POST',",
+					"header: 'Content-Type:application/json',",
+					"body: {",
+					"mode: 'application/json',",
+					"raw: JSON.stringify(",
+					"    {",
+					"        'grant_type': envValues.grant_type,",
+					"        'client_id': envValues.client_id,",
+					"        'client_secret': envValues.client_secret,",
+					"        'refresh_token': envValues.refresh_token",
+					"    })",
+					"}",
+					"};",
+					"",
+					"// Make a logical decision to renew Access_Token every 10 hours",
+					"if (pm.environment.get('expires') <= (new Date()).getTime()) {",
+					"    console.log('Token is expired') ",
+					"    pm.sendRequest(echoPostRequest,",
+					"    function (err, response) {",
+					"        let token = response.json(); ",
+					"        pm.environment.set(\"access_token\", token.access_token);",
+					"        pm.environment.set(\"refresh_token\", token.refresh_token);",
+					"        setTokeTimer()",
+					"        const timeLeft = pm.environment.get(\"expires\");",
+					"        const remainTime =  new Date(timeLeft).getHours();",
+					"        console.log(`new token stored, expires in 10 hours`);",
+					"    }",
+					"  );",
+					"} else {",
+					"    console.log(`All good.  Looks like we still have some left until token expires.`);",
+					"    ",
+					"   ",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.wxcc-us1.cisco.com"
+		},
+		{
+			"key": "auth_url",
+			"value": "https://webexapis.com/v1/authorize",
+			"type": "string"
+		},
+		{
+			"key": "accessToken_url",
+			"value": "https://webexapis.com/v1/access_token",
+			"type": "string"
+		},
+		{
+			"key": "client_id",
+			"value": "C5269ded12b2274ae0325cc07d012133ad49e1df44589d0fe38f7c30a8336afac",
+			"type": "string"
+		},
+		{
+			"key": "client_secret",
+			"value": "6a50ba45d7d391183cd5b18f813765643e91fbd3446edcca0f548d365215f083",
+			"type": "string"
+		},
+		{
+			"key": "scopes",
+			"value": "cjp:user cjp:config cjp:config_read",
+			"type": "string"
+		}
+	]
+}
