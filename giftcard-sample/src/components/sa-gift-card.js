@@ -32,6 +32,8 @@ export default class saGiftCard extends HTMLElement {
     this.giftCardLogo2;
     this.giftCardLogo3;
     this.giftCardLogo4;
+    this.smsWebHook;
+    this.emailWebHook;
   }
 
   async connectedCallback() {
@@ -125,7 +127,7 @@ export default class saGiftCard extends HTMLElement {
       code: await this.code,
       name: await this.fullName
     });
-    let status = await sendWebHook("POST", raw, "Z06G1DAUSK");
+    let status = await sendWebHook("POST", raw, this.smsWebHook);
     let postResults = await status.response;
     return postResults;
   }
@@ -154,7 +156,7 @@ export default class saGiftCard extends HTMLElement {
       code: await this.code,
       name: await this.fullName
     });
-    let status = await sendWebHook("POST", raw, "OH68KNEX0O");
+    let status = await sendWebHook("POST", raw, this.emailWebHook);
     await status.response;
   }
 
