@@ -53,11 +53,16 @@ How to run the sample widget:
   - Note that Layouts are configured per Agent Team.
 - Log in to your agent and select the right Team to view the new layout.
 
+**To wire up the Voice Contact Flow:**
+
+- Download the attached `GiftCardVoiceFlow.json` and upload it as a Voice flow.
+- It has a simple queue block but has the required CAD variables `Email` and `Name` hardcoded. Modify as needed.
+
 **To wire up the WebexConnect Flows:**
 
-- Upload the WebexConnectEmail.flow and WebexConnectSMS.flow into the Webex Connect Administration Portal.
+- Upload the `WebexConnectEmail.workflow` and `WebexConnectSMS.workflow` into the Webex Connect Administration Portal.
 - Change the Webhook URLs to correctly execute these flows.
-- For more information on Webex Connect Webhooks to Flows, refer:
+- For more information on configuring the Webex Connect Webhooks to Flows, refer:
 
 **Additional Improvements:**
 

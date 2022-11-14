@@ -160,10 +160,10 @@
                   },
                   "properties": {
                     "token": "$STORE.auth.accessToken",
-                    "giftCardLogo1": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
-                    "giftCardLogo2": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
-                    "giftCardLogo3": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
-                    "giftCardLogo4": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
+                    "giftCardLogo1": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/companyLogo_2730311538685520.png",
+                    "giftCardLogo2": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/companyLogo_2730311538685520.png",
+                    "giftCardLogo3": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/companyLogo_2730311538685520.png",
+                    "giftCardLogo4": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/companyLogo_2730311538685520.png",
                     "smsWebHook": "Z06G1DAUSK",
                     "emailWebHook": "OH68KNEX0O"
                   }
