@@ -10,7 +10,7 @@ This sample covers sending an outbound SMS and Email using an auto populated wid
 
 For this to work effectively, please setup your inbound Voice Flow with 2 variables named Email and Name respectively.
 
-A sample flow called `SampleFlow_Voice.json` is attached which hardcodes these values to `Customer Name` and `customer@email.com` respectively.
+A sample flow called `GiftCardVoiceFlow.json` is attached which hardcodes these values of` Name` to `Customer Name` and `Email` to `customer@email.com` respectively.
 Please change these values as needed.
 
 These are the variables that will autopopulate when a new call comes in.

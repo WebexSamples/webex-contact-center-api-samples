@@ -1,0 +1,968 @@
+{
+  "orgId": "1c71287f-2f41-458b-b101-c4e616123554",
+  "version": 1,
+  "id": "6372b0bece5c3d34b2664dc6",
+  "name": "GiftCardVoiceFlow",
+  "description": "This is for the gift card example",
+  "comment": "",
+  "variables": [
+    {
+      "name": "Email",
+      "description": "Customer Email to send the Gift Card",
+      "type": "STRING",
+      "value": "customer@email.com",
+      "isCAD": true,
+      "desktopLabel": "Customer Email",
+      "isAgentEditable": false,
+      "source": "",
+      "isReportable": false,
+      "overwrite": false,
+      "isSecure": false,
+      "id": ""
+    },
+    {
+      "name": "Name",
+      "description": "Customer Name displayed",
+      "type": "STRING",
+      "value": "Happy Customer",
+      "isCAD": true,
+      "desktopLabel": "Customer Name",
+      "isAgentEditable": false,
+      "source": "",
+      "isReportable": false,
+      "overwrite": false,
+      "isSecure": false,
+      "id": ""
+    }
+  ],
+  "process": {
+    "activities": {
+      "6dc662bb-21a6-4d3f-a3ae-d851954fa9a9": {
+        "id": "6dc662bb-21a6-4d3f-a3ae-d851954fa9a9",
+        "name": "QueueContact_yuc",
+        "group": "action",
+        "properties": {
+          "fallbackQueue": null,
+          "queueRadioGroup": "staticQueue",
+          "destination": "3db85808-a8cd-44be-bf63-8f5e6be6a557",
+          "activityName": "queue-contact",
+          "description": "Queue to Agent",
+          "destination:type": "LONGEST_AVAILABLE_AGENT",
+          "toggle": false,
+          "priority": null,
+          "agentAvailabilityRadioGroup": null,
+          "priorityRadioGroup": null,
+          "skills": null,
+          "activityId": "5f114550ef5cfc454fbbf133",
+          "destination_type": "LONGEST_AVAILABLE_AGENT",
+          "priorityVariable": null,
+          "destinationVariable": null,
+          "name": "QueueContact_yuc",
+          "toggleAgentAvailability": false,
+          "agentAvailabilityVariable": null,
+          "_renderRequestTimestamp": 1668460733549
+        }
+      },
+      "58296486-ec0d-48bf-90a8-80a727c71193": {
+        "id": "58296486-ec0d-48bf-90a8-80a727c71193",
+        "name": "PlayMusic_5ji",
+        "group": "action",
+        "properties": {
+          "duration": null,
+          "activityId": "5faa2ad13505f538acc86afc",
+          "prompt:type": null,
+          "name": "PlayMusic_5ji",
+          "activityName": "play-music",
+          "description": "Play music in queue",
+          "prompt_type": null,
+          "skip": 0,
+          "_renderRequestTimestamp": 1668460733549,
+          "prompt": "defaultmusic_on_hold.wav",
+          "promptDynamic": null,
+          "audioRadioGroup": "staticAudio"
+        }
+      },
+      "c9a4f313-5f3e-49ee-913b-479125056197": {
+        "id": "c9a4f313-5f3e-49ee-913b-479125056197",
+        "name": "NewPhoneContact",
+        "group": "start",
+        "properties": {
+          "name": "NewPhoneContact",
+          "activityName": "NewPhoneContact",
+          "activityId": "start",
+          "event": "NewPhoneContact",
+          "_renderRequestTimestamp": 1668460733549,
+          "flowType": {
+            "eventSourceId": "5eff0e2eb10162499bc9f932",
+            "eventClassificationId": "5f10475cf021306e89e1692c",
+            "eventSpecificationId": "5f2d02144332507e39cc8a7f",
+            "eventSourceName": "WebexContactCenter",
+            "eventClassificationName": "VoiceInteractions",
+            "eventSpecificationName": "ContactStartWorkflow"
+          }
+        }
+      }
+    },
+    "links": [
+      {
+        "id": "5c452c6f-234e-4171-a621-2285ce700c27",
+        "sourceActivityId": "6dc662bb-21a6-4d3f-a3ae-d851954fa9a9",
+        "targetActivityId": "58296486-ec0d-48bf-90a8-80a727c71193",
+        "conditionExpr": "default",
+        "properties": { "value": "default" }
+      },
+      {
+        "id": "dd4bd8e9-0776-4b22-9302-25eb1c3b8603",
+        "sourceActivityId": "58296486-ec0d-48bf-90a8-80a727c71193",
+        "targetActivityId": "58296486-ec0d-48bf-90a8-80a727c71193",
+        "conditionExpr": "default",
+        "properties": { "value": "default" }
+      },
+      {
+        "id": "319b4ac3-a23b-4bf5-8ce7-4c0f9640cb99",
+        "sourceActivityId": "c9a4f313-5f3e-49ee-913b-479125056197",
+        "targetActivityId": "6dc662bb-21a6-4d3f-a3ae-d851954fa9a9",
+        "conditionExpr": "out",
+        "properties": { "value": "out" }
+      }
+    ]
+  },
+  "diagram": {
+    "widgets": {
+      "6dc662bb-21a6-4d3f-a3ae-d851954fa9a9": {
+        "id": "4222f8ec-6f5c-4041-b3b4-eb6da41a1237",
+        "type": "action",
+        "widgetType": "activity",
+        "label": "New Activity Widget in Diagram",
+        "point": { "x": 275, "y": 250 },
+        "ports": [
+          {
+            "portId": "adc1f71a-cd7c-49c5-a2b0-5c269fee91cb",
+            "isSourcePort": true,
+            "linkId": "b5d9f0ef-9da2-4986-b1cc-bcf7b2d2f7f0",
+            "type": "arrow",
+            "links": ["b5d9f0ef-9da2-4986-b1cc-bcf7b2d2f7f0"],
+            "properties": {
+              "x": 267,
+              "name": "in",
+              "y": 268,
+              "label": "in",
+              "alignment": "left"
+            }
+          },
+          {
+            "portId": "e2467aac-0f63-4934-b7c2-0f1684176e63",
+            "isSourcePort": false,
+            "linkId": "efea9c92-2ff2-44ec-8788-b0a92c84ce3a",
+            "type": "arrow",
+            "links": ["efea9c92-2ff2-44ec-8788-b0a92c84ce3a"],
+            "properties": {
+              "x": 442,
+              "name": "default",
+              "y": 268,
+              "label": "default",
+              "alignment": "right"
+            }
+          }
+        ],
+        "properties": {
+          "fallbackQueue": null,
+          "queueRadioGroup": "staticQueue",
+          "destination": "3db85808-a8cd-44be-bf63-8f5e6be6a557",
+          "activityName": "queue-contact",
+          "description": "Queue to Agent",
+          "destination:type": "LONGEST_AVAILABLE_AGENT",
+          "toggle": false,
+          "priority": null,
+          "agentAvailabilityRadioGroup": null,
+          "priorityRadioGroup": null,
+          "skills": null,
+          "activityId": "5f114550ef5cfc454fbbf133",
+          "priorityVariable": null,
+          "destinationVariable": null,
+          "name": "QueueContact_yuc",
+          "toggleAgentAvailability": false,
+          "agentAvailabilityVariable": null,
+          "_renderRequestTimestamp": 1668460733549
+        }
+      },
+      "58296486-ec0d-48bf-90a8-80a727c71193": {
+        "id": "6a6cca49-80d3-4c59-82fa-6c7c51d5b5c5",
+        "type": "action",
+        "widgetType": "activity",
+        "label": "New Activity Widget in Diagram",
+        "point": { "x": 478, "y": 434 },
+        "ports": [
+          {
+            "portId": "166d7d26-ee56-4797-a460-fa419a5ffb98",
+            "isSourcePort": true,
+            "linkId": "efea9c92-2ff2-44ec-8788-b0a92c84ce3a",
+            "type": "arrow",
+            "links": [
+              "efea9c92-2ff2-44ec-8788-b0a92c84ce3a",
+              "0e44a6b4-d6ba-4311-b200-0e221bc32364"
+            ],
+            "properties": {
+              "x": 470,
+              "name": "in",
+              "y": 452,
+              "label": "in",
+              "alignment": "left"
+            }
+          },
+          {
+            "portId": "01a1882c-5e22-4620-9cd2-59eac554e6cf",
+            "isSourcePort": false,
+            "linkId": "0e44a6b4-d6ba-4311-b200-0e221bc32364",
+            "type": "arrow",
+            "links": ["0e44a6b4-d6ba-4311-b200-0e221bc32364"],
+            "properties": {
+              "x": 645,
+              "name": "default",
+              "y": 452,
+              "label": "default",
+              "alignment": "right"
+            }
+          }
+        ],
+        "properties": {
+          "duration": null,
+          "activityId": "5faa2ad13505f538acc86afc",
+          "prompt:type": null,
+          "name": "PlayMusic_5ji",
+          "activityName": "play-music",
+          "description": "Play music in queue",
+          "skip": 0,
+          "_renderRequestTimestamp": 1668460733549,
+          "prompt": "defaultmusic_on_hold.wav",
+          "promptDynamic": null,
+          "audioRadioGroup": "staticAudio"
+        }
+      },
+      "5c452c6f-234e-4171-a621-2285ce700c27": {
+        "id": "efea9c92-2ff2-44ec-8788-b0a92c84ce3a",
+        "type": "arrow",
+        "widgetType": "link",
+        "label": "",
+        "properties": {
+          "curvyness": 50,
+          "selected": false,
+          "color": "gray",
+          "points": [
+            {
+              "id": "ad0fe480-e8a7-459c-993a-0fb099bb0649",
+              "type": "point",
+              "x": 450.5,
+              "y": 276.5
+            },
+            {
+              "id": "cf8c27c7-36d6-4d51-b147-7f181c8b64de",
+              "type": "point",
+              "x": 470,
+              "y": 276.5
+            },
+            {
+              "id": "57cf70a3-96fc-47cf-92a6-925ac1a72f8f",
+              "type": "point",
+              "x": 470,
+              "y": 414
+            },
+            {
+              "id": "ea1ecc43-5cb6-4ecf-bb11-6fc4112ddc6a",
+              "type": "point",
+              "x": 458.5,
+              "y": 414
+            },
+            {
+              "id": "19320237-3370-44af-8e22-f91b36b85848",
+              "type": "point",
+              "x": 458.5,
+              "y": 460.5
+            },
+            {
+              "id": "e18fb286-4ba1-47a6-818f-a107919b8f65",
+              "type": "point",
+              "x": 478.5,
+              "y": 460.5
+            }
+          ],
+          "width": 1,
+          "selectedColor": "rgb(0,192,255)"
+        },
+        "points": [],
+        "sourcePort": {
+          "id": "e2467aac-0f63-4934-b7c2-0f1684176e63",
+          "activeWidgetId": "4222f8ec-6f5c-4041-b3b4-eb6da41a1237",
+          "point": { "x": 450, "y": 276 }
+        },
+        "targetPort": {
+          "id": "166d7d26-ee56-4797-a460-fa419a5ffb98",
+          "activeWidgetId": "6a6cca49-80d3-4c59-82fa-6c7c51d5b5c5",
+          "point": { "x": 478, "y": 460 }
+        }
+      },
+      "dd4bd8e9-0776-4b22-9302-25eb1c3b8603": {
+        "id": "0e44a6b4-d6ba-4311-b200-0e221bc32364",
+        "type": "arrow",
+        "widgetType": "link",
+        "label": "",
+        "properties": {
+          "curvyness": 50,
+          "selected": false,
+          "color": "gray",
+          "points": [
+            {
+              "id": "d0b37c62-15b6-4a41-83e1-f77976f92d7f",
+              "type": "point",
+              "x": 653.5,
+              "y": 460.5
+            },
+            {
+              "id": "ceb421b0-7b6d-487a-9b33-6021ed81f392",
+              "type": "point",
+              "x": 675,
+              "y": 460.5
+            },
+            {
+              "id": "c02c05ab-49cf-46aa-9b9f-af73c03f616f",
+              "type": "point",
+              "x": 675,
+              "y": 414
+            },
+            {
+              "id": "111f8159-2e74-4bda-96b3-dcdeda292c22",
+              "type": "point",
+              "x": 458.5,
+              "y": 414
+            },
+            {
+              "id": "7b115acc-9bfd-4bd1-b4ff-ed42f3c79359",
+              "type": "point",
+              "x": 458.5,
+              "y": 460.5
+            },
+            {
+              "id": "e6616b40-6ea1-4b41-a359-81eedac9d1b7",
+              "type": "point",
+              "x": 478.5,
+              "y": 460.5
+            }
+          ],
+          "width": 1,
+          "selectedColor": "rgb(0,192,255)"
+        },
+        "points": [],
+        "sourcePort": {
+          "id": "01a1882c-5e22-4620-9cd2-59eac554e6cf",
+          "activeWidgetId": "6a6cca49-80d3-4c59-82fa-6c7c51d5b5c5",
+          "point": { "x": 653, "y": 460 }
+        },
+        "targetPort": {
+          "id": "166d7d26-ee56-4797-a460-fa419a5ffb98",
+          "activeWidgetId": "6a6cca49-80d3-4c59-82fa-6c7c51d5b5c5",
+          "point": { "x": 478, "y": 460 }
+        }
+      },
+      "c9a4f313-5f3e-49ee-913b-479125056197": {
+        "id": "0ccf6bf6-fb59-479b-902b-bd7ef7b2d7e7",
+        "type": "start",
+        "widgetType": "activity",
+        "label": "New Activity Widget in Diagram",
+        "point": { "x": 100, "y": 100 },
+        "ports": [
+          {
+            "portId": "4c9f445e-2937-4e67-9394-455a1d503282",
+            "isSourcePort": false,
+            "linkId": "b5d9f0ef-9da2-4986-b1cc-bcf7b2d2f7f0",
+            "type": "arrow",
+            "links": ["b5d9f0ef-9da2-4986-b1cc-bcf7b2d2f7f0"],
+            "properties": {
+              "x": 267,
+              "name": "out",
+              "y": 118,
+              "label": "out",
+              "alignment": "right"
+            }
+          }
+        ],
+        "properties": {
+          "name": "NewPhoneContact",
+          "activityName": "NewPhoneContact",
+          "activityId": "start",
+          "event": "NewPhoneContact",
+          "_renderRequestTimestamp": 1668460733549,
+          "flowType": {
+            "eventSourceId": "5eff0e2eb10162499bc9f932",
+            "eventClassificationId": "5f10475cf021306e89e1692c",
+            "eventSpecificationId": "5f2d02144332507e39cc8a7f",
+            "eventSourceName": "WebexContactCenter",
+            "eventClassificationName": "VoiceInteractions",
+            "eventSpecificationName": "ContactStartWorkflow"
+          }
+        }
+      },
+      "319b4ac3-a23b-4bf5-8ce7-4c0f9640cb99": {
+        "id": "b5d9f0ef-9da2-4986-b1cc-bcf7b2d2f7f0",
+        "type": "arrow",
+        "widgetType": "link",
+        "label": "",
+        "properties": {
+          "curvyness": 50,
+          "selected": false,
+          "color": "gray",
+          "points": [
+            {
+              "id": "a2054d76-271f-4ab1-9ede-cc5565465448",
+              "type": "point",
+              "x": 275.5,
+              "y": 126.5
+            },
+            {
+              "id": "259e0b2a-b582-44d3-b092-3117653a2a71",
+              "type": "point",
+              "x": 295,
+              "y": 126.5
+            },
+            {
+              "id": "1d8ac2fa-53be-43ef-81e9-d2e0db79b4cc",
+              "type": "point",
+              "x": 295,
+              "y": 230
+            },
+            {
+              "id": "22ac6a79-d4a8-4e13-807c-9dd960bda6d9",
+              "type": "point",
+              "x": 255.5,
+              "y": 230
+            },
+            {
+              "id": "7195ae68-fdba-46b3-b63e-b40d8ea9b249",
+              "type": "point",
+              "x": 255.5,
+              "y": 276.5
+            },
+            {
+              "id": "c47b6824-d867-4fee-ab7f-2cfdc0be5985",
+              "type": "point",
+              "x": 275.5,
+              "y": 276.5
+            }
+          ],
+          "width": 1,
+          "selectedColor": "rgb(0,192,255)"
+        },
+        "points": [],
+        "sourcePort": {
+          "id": "4c9f445e-2937-4e67-9394-455a1d503282",
+          "activeWidgetId": "0ccf6bf6-fb59-479b-902b-bd7ef7b2d7e7",
+          "point": { "x": 275, "y": 126 }
+        },
+        "targetPort": {
+          "id": "adc1f71a-cd7c-49c5-a2b0-5c269fee91cb",
+          "activeWidgetId": "4222f8ec-6f5c-4041-b3b4-eb6da41a1237",
+          "point": { "x": 275, "y": 276 }
+        }
+      }
+    },
+    "properties": { "offsetX": -31, "offsetY": -55, "zoom": 100, "gridSize": 0 }
+  },
+  "flowId": "6372afea8078bb4056c53512",
+  "eventFlows": {
+    "eventsMap": {
+      "GLOBAL_EVENTS": {
+        "id": "GLOBAL_EVENTS",
+        "name": "name",
+        "description": "description",
+        "process": {
+          "activities": {
+            "a3d59655-e635-47e2-b8fa-9b615ba8ac22": {
+              "id": "a3d59655-e635-47e2-b8fa-9b615ba8ac22",
+              "name": "AgentContactAssigned",
+              "group": "event",
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5f354a0c6fb8c44e97ccb30d",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "AgentAnswered",
+                "iconDiagram": "icon-headset_16",
+                "eventSpecificationName": "AgentContactAssigned",
+                "name": "AgentContactAssigned",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "AgentAnswered",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "721c052c-d69b-46d0-afcb-002cb6d6114b": {
+              "id": "721c052c-d69b-46d0-afcb-002cb6d6114b",
+              "name": "ContactEnded",
+              "group": "event",
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5f354a336fb8c44e97ccb30e",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "PhoneContactEnded",
+                "iconDiagram": "icon-handset-muted_16",
+                "eventSpecificationName": "ContactEnded",
+                "name": "ContactEnded",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "PhoneContactEnded",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "e8cd442f-7057-49b2-bd05-85777919d4fe": {
+              "id": "e8cd442f-7057-49b2-bd05-85777919d4fe",
+              "name": "FCAsk(ContactLastAgentRemoved)",
+              "group": "event",
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5ffeafa86a7eff72a481c4b5",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "AgentDisconnected",
+                "iconDiagram": "icon-headset-muted_16",
+                "eventSpecificationName": "FCAsk(ContactLastAgentRemoved)",
+                "name": "FCAsk(ContactLastAgentRemoved)",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "AgentDisconnected",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "26147d7c-b153-4aa4-adb3-54430e62f9c4": {
+              "id": "26147d7c-b153-4aa4-adb3-54430e62f9c4",
+              "name": "EndFlow_juh",
+              "group": "end",
+              "properties": {
+                "activityId": "end",
+                "name": "EndFlow_juh",
+                "activityName": "end",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            },
+            "dbf01f6c-7131-424b-8477-c5886c239642": {
+              "id": "dbf01f6c-7131-424b-8477-c5886c239642",
+              "name": "EndFlow_ii3",
+              "group": "end",
+              "properties": {
+                "activityId": "end",
+                "name": "EndFlow_ii3",
+                "activityName": "end",
+                "description": "End Flow",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            },
+            "8920c6c2-9c66-4f74-9aef-0d771fedde25": {
+              "id": "8920c6c2-9c66-4f74-9aef-0d771fedde25",
+              "name": "EndFlow_l3c",
+              "group": "end",
+              "properties": {
+                "activityId": "end",
+                "name": "EndFlow_l3c",
+                "activityName": "end",
+                "description": "End Flow",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            }
+          },
+          "links": [
+            {
+              "id": "630e42ce-77c3-407c-a6de-4aba8804c69f",
+              "sourceActivityId": "a3d59655-e635-47e2-b8fa-9b615ba8ac22",
+              "targetActivityId": "8920c6c2-9c66-4f74-9aef-0d771fedde25",
+              "conditionExpr": "out",
+              "properties": { "value": "out" }
+            },
+            {
+              "id": "eb2e0be8-3c72-4d30-ab17-838806088477",
+              "sourceActivityId": "721c052c-d69b-46d0-afcb-002cb6d6114b",
+              "targetActivityId": "dbf01f6c-7131-424b-8477-c5886c239642",
+              "conditionExpr": "out",
+              "properties": { "value": "out" }
+            },
+            {
+              "id": "b95f7d2e-09ed-4a79-933c-91c085dc4e3d",
+              "sourceActivityId": "e8cd442f-7057-49b2-bd05-85777919d4fe",
+              "targetActivityId": "26147d7c-b153-4aa4-adb3-54430e62f9c4",
+              "conditionExpr": "out",
+              "properties": { "value": "out" }
+            }
+          ]
+        },
+        "onEvents": {
+          "AgentContactAssigned": "a3d59655-e635-47e2-b8fa-9b615ba8ac22",
+          "ContactEnded": "721c052c-d69b-46d0-afcb-002cb6d6114b",
+          "FCAsk(ContactLastAgentRemoved)": "e8cd442f-7057-49b2-bd05-85777919d4fe"
+        },
+        "diagram": {
+          "widgets": {
+            "a3d59655-e635-47e2-b8fa-9b615ba8ac22": {
+              "id": "6fd5e3bd-8680-4dd9-8daf-fd515f89cdcb",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 100, "y": 115 },
+              "ports": [
+                {
+                  "portId": "7348e740-da08-4e6c-9bb1-248b86100d48",
+                  "isSourcePort": false,
+                  "linkId": "e0cac475-2373-4609-920d-58bcc51d1024",
+                  "type": "arrow",
+                  "links": ["e0cac475-2373-4609-920d-58bcc51d1024"],
+                  "properties": {
+                    "x": 267,
+                    "name": "out",
+                    "y": 133,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5f354a0c6fb8c44e97ccb30d",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "AgentAnswered",
+                "iconDiagram": "icon-headset_16",
+                "eventSpecificationName": "AgentContactAssigned",
+                "name": "AgentContactAssigned",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "AgentAnswered",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "8920c6c2-9c66-4f74-9aef-0d771fedde25": {
+              "id": "ea6e4b24-3c71-469b-b59a-bb7b5f44a457",
+              "type": "end",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 365, "y": 61 },
+              "ports": [
+                {
+                  "portId": "2cce2177-b31f-4e8d-abf5-f8d6645aaa99",
+                  "isSourcePort": true,
+                  "linkId": "e0cac475-2373-4609-920d-58bcc51d1024",
+                  "type": "arrow",
+                  "links": ["e0cac475-2373-4609-920d-58bcc51d1024"],
+                  "properties": {
+                    "x": 357,
+                    "name": "in",
+                    "y": 79,
+                    "label": "in",
+                    "alignment": "left"
+                  }
+                }
+              ],
+              "properties": {
+                "name": "EndFlow_l3c",
+                "activityName": "end",
+                "description": "End Flow",
+                "activityId": "end",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            },
+            "630e42ce-77c3-407c-a6de-4aba8804c69f": {
+              "id": "e0cac475-2373-4609-920d-58bcc51d1024",
+              "type": "arrow",
+              "widgetType": "link",
+              "label": "",
+              "properties": {
+                "curvyness": 50,
+                "selected": false,
+                "color": "gray",
+                "points": [
+                  {
+                    "id": "6e5415d5-8406-4aa2-8990-70ac8328ca90",
+                    "type": "point",
+                    "x": 275.5,
+                    "y": 141.5
+                  },
+                  {
+                    "id": "4a055f8f-ceeb-4556-98de-07af36077d68",
+                    "type": "point",
+                    "x": 295,
+                    "y": 141.5
+                  },
+                  {
+                    "id": "3cbe4ff7-bd9b-425f-b02f-8cdf877396bb",
+                    "type": "point",
+                    "x": 295,
+                    "y": 87.5
+                  },
+                  {
+                    "id": "841d45f9-39b2-45af-9fb2-12aa6c950c83",
+                    "type": "point",
+                    "x": 365.5,
+                    "y": 87.5
+                  }
+                ],
+                "width": 1,
+                "selectedColor": "rgb(0,192,255)"
+              },
+              "points": [],
+              "sourcePort": {
+                "id": "7348e740-da08-4e6c-9bb1-248b86100d48",
+                "activeWidgetId": "6fd5e3bd-8680-4dd9-8daf-fd515f89cdcb",
+                "point": { "x": 275, "y": 141 }
+              },
+              "targetPort": {
+                "id": "2cce2177-b31f-4e8d-abf5-f8d6645aaa99",
+                "activeWidgetId": "ea6e4b24-3c71-469b-b59a-bb7b5f44a457",
+                "point": { "x": 365, "y": 87 }
+              }
+            },
+            "721c052c-d69b-46d0-afcb-002cb6d6114b": {
+              "id": "b24fd529-d10c-4ec6-8f2b-0f8e5e1097e2",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 100, "y": 230 },
+              "ports": [
+                {
+                  "portId": "0f4dd9fb-c638-49d4-8581-c39939fb964c",
+                  "isSourcePort": false,
+                  "linkId": "4513441c-e5f5-4dd4-bd54-44ea9b677902",
+                  "type": "arrow",
+                  "links": ["4513441c-e5f5-4dd4-bd54-44ea9b677902"],
+                  "properties": {
+                    "x": 267,
+                    "name": "out",
+                    "y": 248,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5f354a336fb8c44e97ccb30e",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "PhoneContactEnded",
+                "iconDiagram": "icon-handset-muted_16",
+                "eventSpecificationName": "ContactEnded",
+                "name": "ContactEnded",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "PhoneContactEnded",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "dbf01f6c-7131-424b-8477-c5886c239642": {
+              "id": "3a163489-021d-4b58-b2eb-025fb11d6c9b",
+              "type": "end",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 401, "y": 211 },
+              "ports": [
+                {
+                  "portId": "2987fbbe-2839-4cea-af9c-4ddeb83aa539",
+                  "isSourcePort": true,
+                  "linkId": "4513441c-e5f5-4dd4-bd54-44ea9b677902",
+                  "type": "arrow",
+                  "links": ["4513441c-e5f5-4dd4-bd54-44ea9b677902"],
+                  "properties": {
+                    "x": 393,
+                    "name": "in",
+                    "y": 229,
+                    "label": "in",
+                    "alignment": "left"
+                  }
+                }
+              ],
+              "properties": {
+                "name": "EndFlow_ii3",
+                "activityName": "end",
+                "description": "End Flow",
+                "activityId": "end",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            },
+            "eb2e0be8-3c72-4d30-ab17-838806088477": {
+              "id": "4513441c-e5f5-4dd4-bd54-44ea9b677902",
+              "type": "arrow",
+              "widgetType": "link",
+              "label": "",
+              "properties": {
+                "curvyness": 50,
+                "selected": false,
+                "color": "gray",
+                "points": [
+                  {
+                    "id": "8d04d2f9-8dc2-4213-929b-f6d7d8bcc9ca",
+                    "type": "point",
+                    "x": 275.5,
+                    "y": 256.5
+                  },
+                  {
+                    "id": "82cc5ec4-8b63-4a9f-9c5e-6a8f15a6cb4d",
+                    "type": "point",
+                    "x": 295,
+                    "y": 256.5
+                  },
+                  {
+                    "id": "ee838fd3-967a-432e-a7e6-19f4ae1afe25",
+                    "type": "point",
+                    "x": 295,
+                    "y": 237.5
+                  },
+                  {
+                    "id": "deab1993-e426-47f4-9b42-43005cd9eabe",
+                    "type": "point",
+                    "x": 401.5,
+                    "y": 237.5
+                  }
+                ],
+                "width": 1,
+                "selectedColor": "rgb(0,192,255)"
+              },
+              "points": [],
+              "sourcePort": {
+                "id": "0f4dd9fb-c638-49d4-8581-c39939fb964c",
+                "activeWidgetId": "b24fd529-d10c-4ec6-8f2b-0f8e5e1097e2",
+                "point": { "x": 275, "y": 256 }
+              },
+              "targetPort": {
+                "id": "2987fbbe-2839-4cea-af9c-4ddeb83aa539",
+                "activeWidgetId": "3a163489-021d-4b58-b2eb-025fb11d6c9b",
+                "point": { "x": 401, "y": 237 }
+              }
+            },
+            "e8cd442f-7057-49b2-bd05-85777919d4fe": {
+              "id": "ba11edcf-c86a-4445-878e-82abf34936b3",
+              "type": "event",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 100, "y": 345 },
+              "ports": [
+                {
+                  "portId": "1b4e26a2-b787-4852-97ca-02da5d84f918",
+                  "isSourcePort": false,
+                  "linkId": "096d1c31-002b-4b64-92e7-a0c3010759ec",
+                  "type": "arrow",
+                  "links": ["096d1c31-002b-4b64-92e7-a0c3010759ec"],
+                  "properties": {
+                    "x": 267,
+                    "name": "out",
+                    "y": 363,
+                    "label": "out",
+                    "alignment": "right"
+                  }
+                }
+              ],
+              "properties": {
+                "eventSourceId": "5eff0e2eb10162499bc9f932",
+                "activityId": "event",
+                "eventSpecificationId": "5ffeafa86a7eff72a481c4b5",
+                "eventSourceName": "WebexContactCenter",
+                "displayName": "AgentDisconnected",
+                "iconDiagram": "icon-headset-muted_16",
+                "eventSpecificationName": "FCAsk(ContactLastAgentRemoved)",
+                "name": "FCAsk(ContactLastAgentRemoved)",
+                "eventClassificationId": "5f10475cf021306e89e1692c",
+                "event": "AgentDisconnected",
+                "_renderRequestTimestamp": 1668460733549,
+                "eventClassificationName": "VoiceInteractions"
+              }
+            },
+            "26147d7c-b153-4aa4-adb3-54430e62f9c4": {
+              "id": "f9255285-4b76-44af-9f64-f1bae8c6c9d2",
+              "type": "end",
+              "widgetType": "activity",
+              "label": "New Activity Widget in Diagram",
+              "point": { "x": 365, "y": 346 },
+              "ports": [
+                {
+                  "portId": "1a39180d-760e-490f-b2b8-fe0f790db647",
+                  "isSourcePort": true,
+                  "linkId": "096d1c31-002b-4b64-92e7-a0c3010759ec",
+                  "type": "arrow",
+                  "links": ["096d1c31-002b-4b64-92e7-a0c3010759ec"],
+                  "properties": {
+                    "x": 357,
+                    "name": "in",
+                    "y": 364,
+                    "label": "in",
+                    "alignment": "left"
+                  }
+                }
+              ],
+              "properties": {
+                "name": "EndFlow_juh",
+                "activityName": "end",
+                "activityId": "end",
+                "_renderRequestTimestamp": 1668460733549
+              }
+            },
+            "b95f7d2e-09ed-4a79-933c-91c085dc4e3d": {
+              "id": "096d1c31-002b-4b64-92e7-a0c3010759ec",
+              "type": "arrow",
+              "widgetType": "link",
+              "label": "",
+              "properties": {
+                "curvyness": 50,
+                "selected": false,
+                "color": "gray",
+                "points": [
+                  {
+                    "id": "1f06836f-ac04-40fa-a7dc-581e44a7840f",
+                    "type": "point",
+                    "x": 275.5,
+                    "y": 371.5
+                  },
+                  {
+                    "id": "97456043-b408-49f8-a70a-c957f891f7a3",
+                    "type": "point",
+                    "x": 295,
+                    "y": 371.5
+                  },
+                  {
+                    "id": "83b0f6ea-6d1d-479e-b8fc-d4e8503ca38a",
+                    "type": "point",
+                    "x": 295,
+                    "y": 372.5
+                  },
+                  {
+                    "id": "26204dca-1eaa-446a-b72e-a57565129add",
+                    "type": "point",
+                    "x": 365.5,
+                    "y": 372.5
+                  }
+                ],
+                "width": 1,
+                "selectedColor": "rgb(0,192,255)"
+              },
+              "points": [],
+              "sourcePort": {
+                "id": "1b4e26a2-b787-4852-97ca-02da5d84f918",
+                "activeWidgetId": "ba11edcf-c86a-4445-878e-82abf34936b3",
+                "point": { "x": 275, "y": 371 }
+              },
+              "targetPort": {
+                "id": "1a39180d-760e-490f-b2b8-fe0f790db647",
+                "activeWidgetId": "f9255285-4b76-44af-9f64-f1bae8c6c9d2",
+                "point": { "x": 365, "y": 372 }
+              }
+            }
+          },
+          "properties": {}
+        }
+      }
+    },
+    "properties": { "offsetX": 0, "offsetY": 0, "zoom": 100, "gridSize": 0 }
+  },
+  "runtimeVariables": [],
+  "validating": true,
+  "persist": true,
+  "validationResults": [],
+  "createdBy": "arubhatt_ps@email.carehybrid.com",
+  "createdDate": "2022-11-14T21:18:54.916",
+  "lastModifiedDate": "2022-11-14T21:18:54.916",
+  "lastModifiedBy": "arubhatt_ps@email.carehybrid.com",
+  "variableOrders": {}
+}
