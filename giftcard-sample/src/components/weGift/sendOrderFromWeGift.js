@@ -1,16 +1,18 @@
 export async function sendOrderFromWeGift(raw) {
   const requestOptions = {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json"
+      'Content-Type': 'application/json',
     },
     body: raw,
-    redirect: "follow"
+    redirect: 'follow',
   };
 
   try {
-    // let response = await fetch("http://localhost:3005/wegift", requestOptions);
-    let response = await fetch("https://saproxy.herokuapp.com/wegift", requestOptions);
+    let response = await fetch(
+      'https://saproxy.herokuapp.com/wegift',
+      requestOptions
+    );
     let result = await response.text();
     console.log(result);
     return result;

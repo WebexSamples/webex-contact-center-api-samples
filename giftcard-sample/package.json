@@ -1,7 +1,7 @@
 {
   "name": "sa-gift-card",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample widget that helps an agent publish a Gift card via Email or SMS based ont the Webex Connect flow configured.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon index.js",

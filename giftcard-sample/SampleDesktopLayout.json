@@ -1,6 +1,6 @@
 {
   "version": "0.0.6",
-  "appTitle": "Widget Sample Address Book",
+  "appTitle": "Gift Card Demo",
   "logo": "https://wxccdemo.s3.us-west-1.amazonaws.com/allVerticals/webex.png",
   "dragDropEnabled": false,
   "notificationTimer": 8,
@@ -23,19 +23,25 @@
         {
           "comp": "md-tab",
           "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-          "children": [{ "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT_TAB" } }],
+          "children": [
+            { "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT_TAB" } }
+          ],
           "visibility": "IVR_TRANSCRIPT"
         },
         {
           "comp": "md-tab-panel",
           "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT" } }],
+          "children": [
+            { "comp": "slot", "attributes": { "name": "IVR_TRANSCRIPT" } }
+          ],
           "visibility": "IVR_TRANSCRIPT"
         },
         {
           "comp": "md-tab",
           "attributes": { "slot": "tab" },
-          "children": [{ "comp": "slot", "attributes": { "name": "WXM_JOURNEY_TAB" } }],
+          "children": [
+            { "comp": "slot", "attributes": { "name": "WXM_JOURNEY_TAB" } }
+          ],
           "visibility": "WXM_JOURNEY"
         },
         {
@@ -63,23 +69,31 @@
         {
           "comp": "md-tab",
           "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-          "children": [{ "comp": "slot", "attributes": { "name": "CONTACT_HISTORY_TAB" } }]
+          "children": [
+            { "comp": "slot", "attributes": { "name": "CONTACT_HISTORY_TAB" } }
+          ]
         },
         {
           "comp": "md-tab-panel",
           "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "slot", "attributes": { "name": "CONTACT_HISTORY" } }]
+          "children": [
+            { "comp": "slot", "attributes": { "name": "CONTACT_HISTORY" } }
+          ]
         },
         {
           "comp": "md-tab",
           "attributes": { "slot": "tab", "class": "widget-pane-tab" },
-          "children": [{ "comp": "slot", "attributes": { "name": "SCREEN_POP_TAB" } }],
+          "children": [
+            { "comp": "slot", "attributes": { "name": "SCREEN_POP_TAB" } }
+          ],
           "visibility": "SCREEN_POP"
         },
         {
           "comp": "md-tab-panel",
           "attributes": { "slot": "panel", "class": "widget-pane" },
-          "children": [{ "comp": "slot", "attributes": { "name": "SCREEN_POP" } }],
+          "children": [
+            { "comp": "slot", "attributes": { "name": "SCREEN_POP" } }
+          ],
           "visibility": "SCREEN_POP"
         }
       ]
@@ -125,7 +139,7 @@
           "label": "Sample Gift Card",
           "icon": "favorite",
           "iconType": "momentum",
-          "navigateTo": "giftCard",
+          "navigateTo": "sample-gift-card",
           "align": "top"
         },
         "page": {
@@ -146,10 +160,10 @@
                   },
                   "properties": {
                     "token": "$STORE.auth.accessToken",
-                    "giftCardLogo1": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/giftcard/starbucks.png",
-                    "giftCardLogo2": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/giftcard/starbucks.png",
-                    "giftCardLogo3": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/giftcard/starbucks.png",
-                    "giftCardLogo4": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/giftcard/starbucks.png",
+                    "giftCardLogo1": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
+                    "giftCardLogo2": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
+                    "giftCardLogo3": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
+                    "giftCardLogo4": "https://qaemailmedia.s3.amazonaws.com/d3116af2-20cd-4306-b471-0a44cc164308/company_2727640149703924.png",
                     "smsWebHook": "Z06G1DAUSK",
                     "emailWebHook": "OH68KNEX0O"
                   }
