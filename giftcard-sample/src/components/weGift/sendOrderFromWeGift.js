@@ -10,7 +10,7 @@ export async function sendOrderFromWeGift(raw) {
 
   try {
     let response = await fetch(
-      'https://saproxy.herokuapp.com/wegift',
+      'http://locahost:5000/wegift',
       requestOptions
     );
     let result = await response.text();
