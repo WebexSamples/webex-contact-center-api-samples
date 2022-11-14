@@ -185,7 +185,7 @@ export default class saGiftCard extends HTMLElement {
       <div class="container" ">
           <section class="giftCard">
           <section class="giftCard-cover one ">
-          <img src=${this.giftCardLogo1} />
+          <img src=${this.giftCardLogo1} class="logo" />
           </section>
           <div class="giftCard-content">
             <h2>Gift Card will be sent to:  <span class="status"></span></h2>
@@ -228,7 +228,7 @@ export default class saGiftCard extends HTMLElement {
 
         <section class="giftCard">
           <section class="giftCard-cover two">
-          <img src=${this.giftCardLogo2} />
+          <img src=${this.giftCardLogo2} class="logo" />
           </section>
           <div class="giftCard-content">
             <h2>Gift Card will be sent to: <span class="status"></span> </h2>
@@ -268,7 +268,7 @@ export default class saGiftCard extends HTMLElement {
 
         <section class="giftCard">
           <section class="giftCard-cover three">
-          <img src=${this.giftCardLogo3} />
+          <img src=${this.giftCardLogo3} class="logo" />
           </section>
           <div class="giftCard-content">
             <h2>Gift Card will be sent to: <span class="status"></span> </h2>
@@ -307,7 +307,7 @@ export default class saGiftCard extends HTMLElement {
 
         <section class="giftCard">
           <section class="giftCard-cover four">
-          <img src=${this.giftCardLogo4} />
+          <img src=${this.giftCardLogo4} class="logo" />
           </section>
           <div class="giftCard-content">
             <h2>Gift Card will be sent to: <span class="status"></span> </h2>

@@ -251,7 +251,7 @@ p {
     }
   }
 
-  input[type="text"] {
+  input[type='text'] {
     height: $button-height;
     width: 100%;
     padding: 0 1rem;
@@ -276,9 +276,38 @@ select:focus {
 }
 
 @mixin giftwrap($dx, $dy, $outer: true) {
-  $coords: (50% - $dx $dx, 50% + $dx $dx, 100% - $dy 50% - $dy, 100% - $dy 50% + $dy, 50% + $dx 100% - $dx, 50% - $dx 100% - $dx, $dy 50% + $dy, $dy 50% - $dy);
+  $coords: (
+    50% - $dx $dx,
+    50% + $dx $dx,
+    100% - $dy 50% - $dy,
+    100% - $dy 50% + $dy,
+    50% + $dx 100% - $dx,
+    50% - $dx 100% - $dx,
+    $dy 50% + $dy,
+    $dy 50% - $dy
+  );
 
-  $bgcoords: (nth($coords, 1), 50% 2 * $dx, nth($coords, 2), nth($coords, 3), 100% - 2 * $dy 50%, nth($coords, 4), nth($coords, 5), 50% 100% - 2 * $dx, nth($coords, 6), nth($coords, 7), 2 * $dy 50%, nth($coords, 8), nth($coords, 7), nth($coords, 6), nth($coords, 5), nth($coords, 4), nth($coords, 3), nth($coords, 2), nth($coords, 1));
+  $bgcoords: (
+    nth($coords, 1),
+    50% 2 * $dx,
+    nth($coords, 2),
+    nth($coords, 3),
+    100% - 2 * $dy 50%,
+    nth($coords, 4),
+    nth($coords, 5),
+    50% 100% - 2 * $dx,
+    nth($coords, 6),
+    nth($coords, 7),
+    2 * $dy 50%,
+    nth($coords, 8),
+    nth($coords, 7),
+    nth($coords, 6),
+    nth($coords, 5),
+    nth($coords, 4),
+    nth($coords, 3),
+    nth($coords, 2),
+    nth($coords, 1)
+  );
 
   @if not $outer {
     clip-path: polygon(#{join($coords, (), comma)});
@@ -290,7 +319,7 @@ $width: 100px;
 $height: 50px;
 
 .button,
-input[type="text"] {
+input[type='text'] {
   border-radius: 3px;
   border-color: none;
 }
@@ -327,7 +356,7 @@ input[type="text"] {
   &:before,
   &:after {
     display: none;
-    content: "";
+    content: '';
     position: absolute;
     height: ($width + $height);
     width: ($width + $height);
@@ -363,7 +392,7 @@ input[type="text"] {
   z-index: 3;
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 100%;
@@ -398,7 +427,20 @@ input[type="text"] {
   $left: $bow-left;
   $top: $bow-top;
 
-  $bgcoords: ($left - $hw $dy, $left + $hw $dy, $left + $hw $top - $hw, 100% - $dx $top - $hw, 100% - $dx $top + $hw, $left + $hw $top + $hw, $left + $hw 100% - $dy, $left - $hw 100% - $dy, $left - $hw $top + $hw, $dx $top + $hw, $dx $top - $hw, $left - $hw $top - $hw);
+  $bgcoords: (
+    $left - $hw $dy,
+    $left + $hw $dy,
+    $left + $hw $top - $hw,
+    100% - $dx $top - $hw,
+    100% - $dx $top + $hw,
+    $left + $hw $top + $hw,
+    $left + $hw 100% - $dy,
+    $left - $hw 100% - $dy,
+    $left - $hw $top + $hw,
+    $dx $top + $hw,
+    $dx $top - $hw,
+    $left - $hw $top - $hw
+  );
 
   $dy-top-inner: ($dy / $top) * ($dy + 5%);
   $dy-bottom-inner: 100% - $dy - ($dy / $top) * (100% - $top - $dy + 5%);
@@ -452,7 +494,7 @@ input[type="text"] {
   &:before,
   &:after {
     display: none;
-    content: "";
+    content: '';
     position: absolute;
     width: $width + $height;
     height: $width + $height;
@@ -626,4 +668,9 @@ input[type="text"] {
 .dbId {
   // display: none;
   color: $bdId-text-color;
+}
+
+.logo {
+  width: 148px;
+  height: 148px;
 }
