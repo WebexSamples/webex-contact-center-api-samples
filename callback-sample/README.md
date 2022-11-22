@@ -7,7 +7,7 @@ The example uses a Javascript injector called Scripty to inject the Callback for
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/tasks/v1/create-callback-task**
+**https://developer.webex-cx.com/documentation/tasks/v1/create-task**
 
 ## Getting Started
 
