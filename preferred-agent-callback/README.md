@@ -1,9 +1,8 @@
-## Webcallback API - Configure Callbacks from your website using Webex Contact Center
+## Task API - Leverage the outboundType: "EXECUTE_FLOW"
 
-Here is a sample of using the Web Callback Task API, the overview using Postman as well as a sample NodeJS backend for your webpage, using a simple HTML/CSS form that can be rendered on any webpage.
-The example uses a Javascript injector called Scripty to inject the Callback form into any website of your choice.
+The use case on this video demonstrates how a customer can request a callback on a preferred agent..
 
-## [Watch Now: Webcallback API Overview and Demo](https://app.vidcast.io/share/b26ca3a0-309a-4244-8455-56306b302573)
+## [Watch Now: Preferred Agent Callback ](https://app.vidcast.io/share/a38f8bc2-c940-4f45-a79a-e80814628c73)
 
 ## Developer Documentation
 
@@ -21,28 +20,22 @@ How to run the app shown in the demo above:
 
 - Step 1:
 
-  - On the **server.js** file, line 89, please paste in your access token manually. You can do this by visiting the developer portal at developer.webex-cx.com and copying out your access token after Signing in.
+  - On the **server.js** file, line 73, please paste in your access token manually. You can do this by visiting the developer portal at developer.webex-cx.com and copying out your access token after Signing in.
 
 - Step 2:
 
-  - On the **server.js** file, line 12, add your own unique subdomain. ie: _myuniquecallback_
+  - Inside this project on your terminal type: `npm run local`
+  - this should run the app on your localhost:3000 and well as give you a unique URL.
 
 - Step 3:
 
-  - Inside this project on your terminal type: `npm run local`
-  - this should run the app on your localhost:5000 and well as give you a unique URL.
-
-- Step 4:
-
-  - Copy the unique URL to your clipboard.
-  - On file **frontEndForm.js** paste in unique subdomain in line 9.
-
-- Step 5:
-
-  - Copy all the content of the file _**frontEndForm.js**_ into your Javascript Injector.
+  - Due to he secure element of our APIs, ngrok is used in this exmaple to allow calls from your app if running it locally.
+  - If you plan on using the frontend code..
+    - On file **frontEndForm.js** you would need to paste in a public URL (I use ngrok) in line 9.
+    - Copy all the content of the file _**frontEndForm.js**_ into your Javascript Injector.
 
 - _Informational:_
-  - Purpose of the localtunnel library(_reverse proxy_) is to help with local Dev. Security on company laptops could make this feature inconsistent. You can decide to install Ngrok or other similar libraries. These samples are made to help/compliment the Cisco documentation. They are not intended to be production ready apps.
+  - Purpose of the ngrok library(_reverse proxy_) is to help with local Dev. Security on company laptops could make this feature inconsistent. You can decide to install Ngrok or other similar libraries. These samples are made to help/compliment the Cisco documentation. They are not intended to be production ready apps.
 
 ## Disclaimer
 
