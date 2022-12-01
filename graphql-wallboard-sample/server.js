@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-import { db } from "./controller/database/db.js";
+// import { db } from "./controller/database/db.js";
 import cors from "cors";
 import { basicAuth } from "./controller/auth.js";
 
@@ -28,7 +28,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Use DB
-const database = db();
+// const database = db();
 
 // Decode Form URL Encoded data and json
 app.use(express.json());

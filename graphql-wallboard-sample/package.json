@@ -19,5 +19,8 @@
     "js-base64": "^3.7.2",
     "mongoose": "^6.4.0",
     "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
