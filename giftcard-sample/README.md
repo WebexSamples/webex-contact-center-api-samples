@@ -1,8 +1,8 @@
-## Desktop JS SDK Call Control Widget
+## Gift Card Widget Sample
 
-This is a collection of a few telephony call-control methods. The focus of this widget is on understanding common call-control methods in their basic minimal configuration, needed to successfully call these methods.
+In this tutorial we leverage our desktop API and Webex Connect through a widget to easily allow an agent to send out a gift card to a customer via SMS and Email.
 
-## [Watch: Gift Card Sample Widget]()
+## [Watch: Gift Card Sample Widget](https://app.vidcast.io/share/fbc138f2-34ff-4d2c-8351-f389d462f233)
 
 This sample covers sending an outbound SMS and Email using an auto populated widget that populates information using CAD variables.
 
