@@ -1,0 +1,487 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel__item {
+  display: none;
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: rgba(6, 65, 87, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: rgba(6, 65, 87, 0.5);
+}
+.item {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1%;
+  background: #c9f4ff;
+  &:nth-child(2n) {
+    width: 100%;
+    height: 660px;
+    background: #befade;
+    background-image: url("/images/background.png");
+    overflow: scroll;
+  }
+}
+.item-inside {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  width: 100%;
+  height: 30px;
+  background-color: #007aa3;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 10px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  transition: background 0.2s;
+  &:hover {
+    background-color: #07c1f5;
+  }
+}
+.rounded-button {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.rounded-action-button {
+  width: 50px;
+  height: 50px;
+  background: #a12512;
+  color: #fff;
+  display: inline-flex;
+  margin: 0 30px;
+  padding-left: 4px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  transition: background 0.4s;
+  &:hover {
+    cursor: pointer;
+    background: #d4371c;
+    box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+.space {
+  margin: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+.header {
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  letter-spacing: 4px;
+  float: left;
+}
+.cardHeader {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+video {
+  border-radius: 18px;
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px !important;
+  height: 320px !important;
+  box-shadow: 0px 10px 15px 0px rgba(82, 73, 73, 0.75);
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  display: block;
+}
+legend {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.on-air {
+  margin-top: 20px;
+}
+.off {
+  margin-top: 10px;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+}
+.formFieldset {
+  border: 8px white;
+  border-style: double;
+  margin-top: 10px;
+  margin-left: 32%;
+  margin-right: 30%;
+  width: 510px;
+  height: 40px;
+  box-shadow: 0px 8px 20px 0px white;
+}
+.editButton {
+  width: 60px;
+}
+
+.formData {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding: 6px;
+  color: gray;
+}
+
+.bk {
+  font-weight: 600;
+}
+.copy {
+  line-height: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+.results {
+  overflow: scroll;
+  background: transparent;
+}
+.table {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 4px;
+  margin-right: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 0px rgba(82, 73, 73, 0.75);
+}
+.labels {
+  color: #708090;
+}
+
+.form {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 40px;
+  border-radius: 18px;
+  width: 320px;
+}
+.form-header {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border: 1px solid lightgray;
+  background: #fff;
+  color: #333333;
+}
+.form-body {
+  border-radius: 18px;
+  background: lightgray;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  height: 400px;
+}
+.inputs {
+  border: 1px solid gray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  outline: none;
+}
+.fields {
+  color: #fff;
+  display: inline;
+}
+.formField {
+  float: right;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+}
+::placeholder {
+  color: lightgray;
+}
+.chooseFile {
+  margin-bottom: 20px;
+}
+[type="file"] {
+  color: #878787;
+  &::-webkit-file-upload-button {
+    background: gray;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 5px 16px;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+  }
+}
+.sameLine {
+  display: inline;
+}
+hr {
+  color: white;
+  border: none;
+  background: white;
+  height: 2px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cardTable {
+  width: 200px;
+}
+.formLabel {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #708090;
+  cursor: "pointer";
+}
+#search {
+  width: 100%;
+  height: 30px;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  outline: none;
+}
+input {
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+ion-icon {
+  color: red;
+}
+.mic {
+  font-size: 28px;
+}
+.upload {
+  font-size: 24px;
+}
+.hide {
+  display: none;
+}
+.notifications {
+  float: right;
+  margin-top: -80px;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+.success {
+  display: block;
+  color: yellow;
+  font-weight: 600;
+}
+.form.player {
+  background: #000000;
+}
+.bars {
+  height: 30px;
+  left: 48%;
+  position: absolute;
+  width: 40px;
+}
+
+.nameColor {
+  color: #f7644a !important;
+}
+.convertBtn {
+  background: #00ab50;
+  font-family: "fontAwesome";
+}
+.convertBtn:hover {
+  background: #004e25;
+}
+.editBtn {
+  background: #007aa3;
+  font-family: "fontAwesome";
+}
+.editBtn:hover {
+  background: #01475e;
+}
+.start {
+  background: #ffca99;
+  color: #d4371c;
+  font-family: fontAwesome;
+}
+.stop {
+  background: #a12512;
+  color: white;
+  font-family: fontAwesome;
+}
+
+.bar {
+  display: none;
+  background: #545454;
+  bottom: 1px;
+  height: 3px;
+  position: absolute;
+  width: 3px;
+  animation: sound 0ms -800ms linear infinite alternate;
+  &:nth-child(1) {
+    left: 1px;
+    animation-duration: 474ms;
+  }
+  &:nth-child(2) {
+    left: 5px;
+    animation-duration: 433ms;
+  }
+  &:nth-child(3) {
+    left: 9px;
+    animation-duration: 407ms;
+  }
+  &:nth-child(4) {
+    left: 13px;
+    animation-duration: 458ms;
+  }
+  &:nth-child(5) {
+    left: 17px;
+    animation-duration: 400ms;
+  }
+  &:nth-child(6) {
+    left: 21px;
+    animation-duration: 427ms;
+  }
+  &:nth-child(7) {
+    left: 25px;
+    animation-duration: 441ms;
+  }
+  &:nth-child(8) {
+    left: 29px;
+    animation-duration: 419ms;
+  }
+  &:nth-child(9) {
+    left: 33px;
+    animation-duration: 487ms;
+  }
+  &:nth-child(10) {
+    left: 37px;
+    animation-duration: 442ms;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .on-air {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .on-air {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .header {
+    display: none;
+  }
+  .formFieldset {
+    margin-left: 15%;
+  }
+  .form {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .on-air {
+    margin-right: 30%;
+  }
+  .item-inside {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .formFieldset {
+    width: 420px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .on-air {
+    margin-right: 30%;
+  }
+  .item-inside {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .formFieldset {
+    width: 320px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .off {
+    margin-top: 0px;
+    text-align: center;
+  }
+  legend {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
