@@ -1,0 +1,35 @@
+{
+  # Using compound operators for filtering
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    # Compound operators can be used inside one another also
+    filter: {
+      and: [
+        { channelType: { equals: telephony } }
+        {
+          or: [
+            # For Numeric fields - lte, lt , gte, gt, equals, notequals are available.
+            { totalDuration: { lte: 10000 } }
+            { totalDuration: { gte: 600000 } }
+          ]
+        }
+        # lastTeam name should not be null.
+        { lastTeam: { name: { notequals: null } } }
+      ]
+    }
+  ) {
+    tasks {
+      id
+      totalDuration
+      lastTeam {
+        id
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

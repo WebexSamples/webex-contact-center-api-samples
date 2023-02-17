@@ -1,0 +1,28 @@
+{
+    # Query to fetch requested Agent Session attributes between the given epoch time in from and to.
+    # from and to are mandatory paramaters.
+    # Note - response is paginated
+    taskDetails(from: 1644859375000, to: 1671038575000) {
+        tasks {
+            # Fields can be of different types - Boolean, String, Long, Int, List or Objects, refer schema to check available fields and corresponding data types.
+            isActive # Boolean
+            id # String
+            createdTime # Long
+            endedTime
+            totalDuration
+            lastAgent {
+                # Object
+                id
+                name
+            }
+            queueCount # Int
+            queueDuration
+        }
+        pageInfo {
+            # Indicates if the nextPage exists or not
+            hasNextPage
+            # String value which can be passed to fetch the next page.
+            endCursor
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  # Group Aggregations
+  # Group by aggregations can be done by using aggregations argument and adding fields that should be used for the group by operation in the selection set.
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    aggregations: [
+      { field: "id", type: count, name: "Calls count" }
+      {
+        field: "lastQueue.duration"
+        type: average
+        name: "Average Queue Duration"
+      }
+    ]
+  ) {
+    tasks {
+      # Including lastQueue name in the selection when aggregations argument is used implies that a group by has to be done using lastQueue name
+      lastQueue {
+        name
+      }
+      # Note - aggregation does not count as group by, it is used to fetch results
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

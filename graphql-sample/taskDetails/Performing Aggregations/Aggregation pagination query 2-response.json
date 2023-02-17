@@ -1,0 +1,6387 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221127-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep1"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep10"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep2"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep3"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep4"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep5"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep6"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep7"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep8"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team1"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue1"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "Ep9"
+          },
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "lastTeam": {
+            "name": "team2"
+          },
+          "lastQueue": {
+            "name": "queue2"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20221128-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "chat",
+          "lastEntryPoint": {
+            "name": "EP-loadus1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "NA"
+          },
+          "lastQueue": {
+            "name": "Q1_Call_Deep"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20230102-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 64.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "email",
+          "lastEntryPoint": {
+            "name": "EP-loadus1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "NA"
+          },
+          "lastQueue": {
+            "name": "Q1_Call_Deep"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20230102-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 72.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "telephony",
+          "lastEntryPoint": {
+            "name": "EP-loadus1"
+          },
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "lastTeam": {
+            "name": "NA"
+          },
+          "lastQueue": {
+            "name": "Q1_Call_Deep"
+          },
+          "lastAgent": {
+            "name": "deleteloadtestdata20230102-1"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 74.0
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

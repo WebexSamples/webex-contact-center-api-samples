@@ -1,0 +1,42 @@
+{
+  # Aggregations with Sub Filters,
+  # For each aggregation a separate filter criteria can be specified.
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    aggregations: [
+      {
+        field: "id"
+        type: count
+        name: "Calls which ended with Arryn_Queue2"
+        # Filter criteria for a particular operation can be given
+        # Note that syntax for this filter is same as the global filter
+        filter: { lastQueue: { name: { equals: "Arryn_Queue2" } } }
+      }
+      {
+        field: "id"
+        type: count
+        name: "Calls which ended with Arryn_Queue1"
+        filter: { lastQueue: { name: { equals: "Arryn_Queue1" } } }
+      }
+      {
+        field: "id"
+        type: count
+        name: "Calls which ended with Other Queues"
+        filter: {
+          and: [
+            { lastQueue: { name: { notequals: "Arryn_Queue1" } } }
+            { lastQueue: { name: { notequals: "Arryn_Queue2" } } }
+          ]
+        }
+      }
+    ]
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}

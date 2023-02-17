@@ -1,0 +1,24 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "aggregation": [
+            {
+              "name": "Calls which ended with Arryn_Queue2",
+              "value": 10.0
+            },
+            {
+              "name": "Calls which ended with Arryn_Queue1",
+              "value": 1.0
+            },
+            {
+              "name": "Calls which ended with Other Queues",
+              "value": 13.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

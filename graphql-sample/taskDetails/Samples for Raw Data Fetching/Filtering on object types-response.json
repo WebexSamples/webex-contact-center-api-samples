@@ -1,0 +1,68 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "4aa37406-c681-46e2-b9a2-d40c8743f71c",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "6aa8aaf4-bea9-4306-820f-bf14f9a1dd71",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "d5b1cedc-8bf9-464b-8d31-f5d170c16e6b",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "750dd88d-28a1-4a40-8c21-04149cd2a7bb",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "96d85b2e-ffc0-43c1-be14-6b37782f67bb",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "1bb23515-ff5b-4978-9419-bfb09a1efd3c",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        },
+        {
+          "id": "54cf6196-d4bf-46f8-a1ce-6a244298afa4",
+          "lastTeam": {
+            "name": "Arryn_team2",
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

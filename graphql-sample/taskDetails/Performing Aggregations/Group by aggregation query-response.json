@@ -1,0 +1,72 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "lastQueue": {
+            "name": null
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 6.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "name": "Arryn_Queue"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 94017.57
+            },
+            {
+              "name": "Calls count",
+              "value": 7.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "name": "Arryn_Queue1"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "name": "Arryn_Queue2"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 51433.6
+            },
+            {
+              "name": "Calls count",
+              "value": 10.0
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}
