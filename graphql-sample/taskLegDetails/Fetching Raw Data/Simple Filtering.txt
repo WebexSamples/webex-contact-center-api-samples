@@ -1,0 +1,16 @@
+{
+  # Query to fetch documents based on a filter criteria.
+  taskLegDetails(
+    from: 1664099493000
+    to: 1669369893000
+    # Use Filter arguments to apply filter
+    filter: { direction: { equals: "inbound" } }
+  ) {
+    taskLegs {
+      id
+      createdTime
+      direction
+      endedTime
+    }
+  }
+}

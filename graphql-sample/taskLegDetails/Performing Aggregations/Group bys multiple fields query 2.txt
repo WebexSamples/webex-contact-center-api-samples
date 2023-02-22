@@ -1,0 +1,57 @@
+{
+  # Group by multiple fields can be done by including them in the selection set
+  taskLegDetails(
+    from: 1644859375000
+    to: 1671038575000
+    aggregations: [
+      {
+        field: "id"
+        type: count
+        name: "Count of Call Legs"
+      }
+      { field: "consultCount", type: min, name: "min of consultCount" }
+      {
+        field: "selfserviceDuration"
+        type: max
+        name: "max of selfserviceDuration"
+      }
+      {
+        field: "connectedDuration"
+        type: max
+        name: "max of connectedDuration"
+      }
+      {
+        field: "ringingDuration"
+        type: average
+        name: "average of ringingDuration"
+      }
+      {
+        field: "nextDestination.agent.name"
+        type: count
+        name: "count of nextDestination.agent.name"
+      }
+    ]
+  ) {
+    taskLegs {
+      # The order of fields matter and determine how the response will be, compare and check the response for query 1.
+      entryPoint {
+        name
+      }
+      queue {
+          name
+      }
+      aggregation {
+        name
+        value
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "data": {
+    "taskLegDetails": {
+      "taskLegs": [
+        {
+          "aggregation": [
+            {
+              "name": "Call Legs handled by other queues",
+              "value": 1043.0
+            },
+            {
+              "name": "Call Legs handled by AksQueue2",
+              "value": 88.0
+            },
+            {
+              "name": "Call Legs handled by AksQueue1",
+              "value": 160.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
