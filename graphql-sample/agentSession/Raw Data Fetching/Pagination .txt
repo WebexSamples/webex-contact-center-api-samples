@@ -1,11 +1,12 @@
 {
-  # Pagination example 3
-  # Continue passing the new cursor until the hasNextPage is set to false
-  # Since the hasNextPage is set to false, no more pages are available.
+  # Pagination
+  # Include the pageInfo object in the query, to fetch hasNextPage and endCursor
+  # If the hasNextPage is set to true the cursor can be passed in the next query
+  # Check the next example - Pagination 2.txt
   agentSession(from: 1644859375000, to: 1671038575000
   pagination : {
     # Giving cursor as "NA" is equivalent of fetching the first cursor
-    cursor :"fe836a59-84db-4b69-8cf8-d2bd336d8c71"
+    cursor : "NA"
   }
   ) {
     agentSessions {
@@ -32,9 +33,9 @@
       }
     }
     pageInfo {
-      # Check the response - This field has turned to false.
+      # Flag which indicates if the next page exists or not.
       hasNextPage
-      # Since no more pages exists it endCursor value should be ignored and not use, it has changed to null.
+      # Nullable String (not a necessary a Numberic value) to fetch the next page
       endCursor
     }
   }

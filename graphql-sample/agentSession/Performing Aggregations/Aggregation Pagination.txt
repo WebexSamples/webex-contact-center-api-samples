@@ -1,7 +1,8 @@
 {
-  # Aggregation Pagination example 2
-  # Pass the cursor in the previous query (Aggregation Pagination example) in the cursor argument.
-  # Check response if the hasNextPage is set to false, no more pages are available
+  # Aggregation Pagination example
+  # Pagination is also possible in a Group by Aggregation query
+  # Check the response, hasNextPage is set to true and the endCursor is present
+  # For fecthing the next page check query in Aggregation Pagination 2.txt
   agentSession(from: 1644859375000, to: 1671038575000
     aggregations : [
         {
@@ -31,7 +32,7 @@
     }
     pagination: {
       # Passing the cursor as "NA" is same as not passing any cursor value
-      cursor: "intervalStartTime=1655942400000::teamId=e4563313-f504-408c-adc4-608379e5ab62::siteId=883::channelInfo.channelType=social"
+      cursor: "NA"
     }
 ) {
     agentSessions {

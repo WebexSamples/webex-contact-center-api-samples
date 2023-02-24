@@ -1,7 +1,5 @@
 {
-  # Aggregation Pagination example
-  # Pagination is also possible in a Group by Aggregation query
-  # Check the response, hasNextPage is set to true and the endCursor is present
+  # Aggregation query with Group Bys
   agentSession(from: 1644859375000, to: 1671038575000
     aggregations : [
         {
@@ -26,18 +24,9 @@
         }
 
     ]
-    aggregationInterval : {
-        interval : DAILY
-    }
-    pagination: {
-      # Passing the cursor as "NA" is same as not passing any cursor value
-      cursor: "NA"
-    }
 ) {
     agentSessions {
-        intervalStartTime
-        teamId
-        siteId
+        # Including channeInfo channelType in the selection when aggregations argument is used, implies that a group by has to be done using channelInfo channelType
         channelInfo {
             channelType
         }
@@ -45,10 +34,6 @@
             name
             value
         }
-    }
-    pageInfo {
-        hasNextPage
-        endCursor
     }
   }
 }

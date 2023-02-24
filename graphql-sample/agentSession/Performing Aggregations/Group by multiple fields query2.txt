@@ -26,12 +26,12 @@
     ]
 ) {
     agentSessions {
-      # The order of fields matter and determine how the response will be, compare and check the response for query 2.
-        teamName
-        siteName
+      # The order of fields matter and determine how the response will be, compare and check the response for Group by multiple fields query.txt
         channelInfo {
             channelType
         }
+        siteName
+        teamName
         aggregation {
             name
             value

@@ -1,6 +1,7 @@
 {
-  # Interval Based aggregation for Timezone
-  # Timezone can also be passed to ensure buckets are created based on the passed timezone.
+  # Interval Based aggregation can also done by
+  # 1. Using aggregationInterval argument to pass the interval.
+  # 2. Including intervalStartTime in the selection set.
   agentSession(from: 1644859375000, to: 1671038575000
     aggregations : [
         {
@@ -27,13 +28,11 @@
     ]
     aggregationInterval : {
         interval : DAILY
-        # Passing the timezone will ensure that intervalStartTime considers the start of the day for the particular timezone.
-        timezone : "Asia/Kolkata"
     }
 ) {
     agentSessions {
-     # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example )
-      # Missing buckets are not shown, i,e if there is no records for a particular date, those buckets will not be shown.
+     # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see Interval timezone based aggregation query.txt)
+      # Missing buckets are not shown, i.e if there are no records for a particular date, those buckets will not be shown.
         intervalStartTime
         teamName
         aggregation {

@@ -1,0 +1,53 @@
+{
+  # Aggregation Pagination example 2
+  # Pass the endCursor received from the previous query Aggregation Pagination.txt in the cursor argument.
+  # Check response, if the hasNextPage is set to false no more pages are available
+  agentSession(from: 1644859375000, to: 1671038575000
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"
+            name : "Sum of connectedCount"
+            type : sum
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+    aggregationInterval : {
+        interval : DAILY
+    }
+    pagination: {
+      cursor: "intervalStartTime=1655942400000::teamId=e4563313-f504-408c-adc4-608379e5ab62::siteId=883::channelInfo.channelType=social"
+    }
+) {
+    agentSessions {
+        intervalStartTime
+        teamId
+        siteId
+        channelInfo {
+            channelType
+        }
+        aggregation {
+            name
+            value
+        }
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}

@@ -1,10 +1,9 @@
 {
   # Pagination example 2
-  # Pass the endCursor received from a previous query and pass it inside the cursor argument
-  # Do this until the hasNextPage is set to false , Checkout the next example in Pagination 3
+  # Pass the endCursor received from a previous query(Pagination .txt) and pass it inside the cursor argument
+  # Do this until the hasNextPage is set to false , Checkout the next example in Pagination 3.txt
   agentSession(from: 1644859375000, to: 1671038575000
   pagination : {
-    # Giving cursor as "NA" is equivalent of fetching the first cursor
     cursor : "0f36932a-3688-4dda-a25a-6147998a974c"
   }
   ) {

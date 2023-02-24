@@ -1,11 +1,10 @@
 {
-  # Simple Aggregation query
+  # Group by multiple fields can be done by including them in the selection set
   agentSession(from: 1644859375000, to: 1671038575000
-  # Use aggregations to specify aggregation operations, multiple aggregations can be done in a single query.
     aggregations : [
         {
-            field : "channelInfo.connectedCount"
-            name : "Sum of connectedCount"
+            field : "channelInfo.connectedCount" 
+            name : "Sum of connectedCount" 
             type : sum
         }
         {
@@ -27,7 +26,9 @@
     ]
 ) {
     agentSessions {
-        # Including channeInfo channelType in the selection when aggregations argument is used implies that a group by has to be done using channelInfo channelType
+      # The order of fields matter and determine how the response will be, compare and check the response for Group by multiple fields query2.txt
+        teamName
+        siteName
         channelInfo {
             channelType
         }
