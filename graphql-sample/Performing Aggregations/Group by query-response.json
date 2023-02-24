@@ -1,0 +1,108 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 529206.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 7125.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 49.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 3200385.2
+            }
+          ]
+        },
+        {
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 97464.66
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 9150.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 70.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2818252.8
+            }
+          ]
+        },
+        {
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 6014.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2748580.2
+            }
+          ]
+        },
+        {
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 455501.75
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 5741.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 1578.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2813241.8
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

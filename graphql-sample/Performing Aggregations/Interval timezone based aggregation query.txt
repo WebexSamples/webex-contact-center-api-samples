@@ -1,0 +1,45 @@
+{
+  # Interval Based aggregation for Timezone
+  # Timezone can also be passed to ensure buckets are created based on the passed timezone.
+  agentSession(from: 1644859375000, to: 1671038575000
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"
+            name : "Sum of connectedCount"
+            type : sum
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+    aggregationInterval : {
+        interval : DAILY
+        # Passing the timezone will ensure that intervalStartTime considers the start of the day for the particular timezone.
+        timezone : "Asia/Kolkata"
+    }
+) {
+    agentSessions {
+     # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example )
+      # Missing buckets are not shown, i,e if there is no records for a particular date, those buckets will not be shown.
+        intervalStartTime
+        teamName
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}

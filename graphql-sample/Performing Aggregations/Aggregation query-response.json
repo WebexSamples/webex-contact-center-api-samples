@@ -1,0 +1,28 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 435761.53
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 28030.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 1697.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2903482.2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

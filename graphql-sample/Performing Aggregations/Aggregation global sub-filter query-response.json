@@ -1,0 +1,28 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "aggregation": [
+            {
+              "name": "idle Agents",
+              "value": 0.0
+            },
+            {
+              "name": "Agents handling telephony tasks",
+              "value": 4.0
+            },
+            {
+              "name": "Number of Agents in connected state",
+              "value": 0.0
+            },
+            {
+              "name": "Agents handling social tasks",
+              "value": 2.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  # Pagination example 2
+  # Pass the endCursor received from a previous query and pass it inside the cursor argument
+  # Do this until the hasNextPage is set to false , Checkout the next example in Pagination 3
+  agentSession(from: 1644859375000, to: 1671038575000
+  pagination : {
+    # Giving cursor as "NA" is equivalent of fetching the first cursor
+    cursor : "0f36932a-3688-4dda-a25a-6147998a974c"
+  }
+  ) {
+    agentSessions {
+      agentSessionId
+      agentId
+      teamName
+      siteName
+      startTime
+      endTime
+      isActive
+      channelInfo {
+        channelId
+        channelType
+        idleCount
+        idleDuration
+        ringingCount
+        ringingDuration
+        totalDuration
+        connectedCount
+        connectedDuration
+        idleCodeName
+        wrapupCount
+        wrapupDuration
+      }
+    }
+    pageInfo {
+      # Flag which indicates if the next page exists or not.
+      hasNextPage
+      # Nullable String (not a necessary a Numberic value) to fetch the next page
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  # Filtering agentSession
+  agentSession(from: 1644859375000, to: 1671038575000
+  # Use Filter arguments to apply filter
+  filter : {
+      agentId : {equals : "7a8447da-28b4-4266-8765-b19afece4326"}
+  }
+  ) {
+    agentSessions {
+      agentSessionId
+      agentId
+      teamName
+      siteName
+      startTime
+      endTime
+      isActive
+      channelInfo {
+        channelId
+        channelType
+        idleCount
+        idleDuration
+        ringingCount
+        ringingDuration
+        totalDuration
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

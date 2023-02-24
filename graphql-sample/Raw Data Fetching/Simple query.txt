@@ -1,0 +1,32 @@
+{
+  # Query to fetch requested Agent Session attributes between the given epoch time in from and to.
+  # from and to are mandatory paramaters.
+  # Note - response is paginated
+  agentSession(from: 1644859375000, to: 1671038575000) {
+    agentSessions {
+      # Fields can be of different types - Boolean, String, Long, Int, List or Objects, refer schema to check available fields and corresponding data types.
+      agentSessionId # String
+      agentName
+      teamName
+      siteName
+      startTime # Long
+      endTime
+      isActive # Boolean
+      channelInfo {
+        # List of Objects
+        channelId
+        channelType
+        ringingCount
+        ringingDuration
+        idleCount
+        idleDuration
+      }
+    }
+    pageInfo {
+      # Indicates if the nextPage exists or not
+      hasNextPage
+      # String value which can be passed to fetch the next page.
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  # Interval Based aggregation can also done by
+  # 1. Use aggregationInterval argument to pass the interval.
+  # 2. include intervalStartTime in the selection set.
+  agentSession(from: 1644859375000, to: 1671038575000
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"
+            name : "Sum of connectedCount"
+            type : sum
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+    aggregationInterval : {
+        interval : DAILY
+    }
+) {
+    agentSessions {
+     # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example )
+      # Missing buckets are not shown, i,e if there is no records for a particular date, those buckets will not be shown.
+        intervalStartTime
+        teamName
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}
