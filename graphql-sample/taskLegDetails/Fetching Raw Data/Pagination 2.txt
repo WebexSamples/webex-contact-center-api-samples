@@ -1,7 +1,7 @@
 {
   # Pagination example 2
   # Pass the endCursor received from a previous query and pass it inside the cursor argument
-  # Do this until the hasNextPage is set to false , Checkout the next example in Pagination 3
+  # Do this until the hasNextPage is set to false
   taskLegDetails(from: 1644859375000, to: 1671038575000
    filter :{
        team : {

@@ -2,6 +2,7 @@
   # Aggregation Pagination example
   # Pagination is also possible in a Group by Aggregation query
   # Check the response, hasNextPage is set to true and the endCursor is present
+  # For fetching the next page check Group by Aggregation with Pagination 2.txt
   taskLegDetails(
     from: 1641038400000
     to: 1672488000000

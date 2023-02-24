@@ -1,5 +1,5 @@
 {
-  # Query to fetch requested Task Legs Details attributes between the given epoch time in from and to.
+  # Query to fetch requested Task Leg attributes between the given epoch time in from and to.
   # from and to are mandatory paramaters.
   # Note - response is paginated
   taskLegDetails(from: 1672531200000, to: 1676619334000) {

@@ -1,6 +1,6 @@
 {
   # Aggregation Pagination example 2
-  # Pass the cursor in the previous query (Aggregation Pagination example) in the cursor argument.
+  # Pass the cursor in the previous query Group by Aggregation with Pagination.txt in the cursor argument.
   # Check response if the hasNextPage is set to false, no more pages are available
   taskLegDetails(
     from: 1644796800000

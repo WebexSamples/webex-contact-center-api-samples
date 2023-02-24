@@ -3,7 +3,7 @@
   taskLegDetails(
     from: 1644859375000
     to: 1671038575000
-    # Compound Operators can be used inside another compound operator.
+    # Compound Operators(and,or,not) can be used inside another compound operator.
     filter: {
       and: [
         { queue: { name: { equals: "Basic-Queue" } } }

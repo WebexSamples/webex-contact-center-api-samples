@@ -5,7 +5,7 @@
     to: 1669369893000
     filter: {
       # Filter syntax for objects is same as how a field is queried.
-      # For example - nextDestination followed by agent followed be name.
+      # For example - nextDestination followed by agent followed by name.
       nextDestination: { agent: { name: { equals: "Standard Agent" } } }
     }
   ) {
