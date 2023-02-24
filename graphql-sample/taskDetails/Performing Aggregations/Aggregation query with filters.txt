@@ -7,9 +7,9 @@
     filter: { lastQueue: { name: { equals: "Arryn_Queue2" } } }
     aggregations: [
       {
-        field: "id" # field Name on which aggregation needs to be done
-        type: count # operation name
-        name: "Count of Id" # Identifier for the results
+        field: "id"
+        type: count
+        name: "Count of Id"
       }
       {
         field: "totalDuration"

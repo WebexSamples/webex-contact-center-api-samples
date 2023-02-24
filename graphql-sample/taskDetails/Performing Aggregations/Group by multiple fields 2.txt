@@ -13,7 +13,7 @@
     ]
   ) {
     tasks {
-      # The order of fields matter and determine how the response will be, compare and check the response for the next query. Group By with multiple fields Query 2.
+      # The order of fields matter and determine how the response will be, compare and check the response for the next query. Group By with multiple fields
       lastAgent {
         name
       }

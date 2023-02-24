@@ -3,7 +3,7 @@
   taskDetails(
     from: 1644859375000
     to: 1671038575000
-    # Compound operators can be used inside one another also
+    # Compound operators(and,or,not) can be used inside one another also
     filter: {
       and: [
         { channelType: { equals: telephony } }

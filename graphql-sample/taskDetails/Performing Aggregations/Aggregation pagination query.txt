@@ -7,7 +7,7 @@
     to: 1676246400000
     aggregations: [{ field: "id", name: "Calls Completed", type: count }]
     pagination: {
-      # Passing the cursor as "NA" is same as not passing any cursor value
+      # Passing the cursor as "NA" is same as not passing any cursor value and fetching the first page
       cursor: "NA"
     }
     aggregationInterval: { interval: DAILY }

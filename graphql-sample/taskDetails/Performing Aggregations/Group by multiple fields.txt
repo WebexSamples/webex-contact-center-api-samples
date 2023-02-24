@@ -13,7 +13,7 @@
     ]
   ) {
     tasks {
-      # The order of fields matter and determine how the response will be, compare and check the response for query 2.
+      # The order of fields matter and determine how the response will be, compare and check the response for Group by multiple fields 2.txt.
       lastSite {
         name
       }

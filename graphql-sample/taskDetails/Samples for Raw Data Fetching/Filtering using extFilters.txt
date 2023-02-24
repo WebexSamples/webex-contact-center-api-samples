@@ -1,5 +1,5 @@
 {
-  # Some fields in the schema are only filterable when using an extFilter,
+  # Some fields in the schema are only filterable using the extFilter argument.
   taskDetails(
     from: 1644859375000
     to: 1671038575000

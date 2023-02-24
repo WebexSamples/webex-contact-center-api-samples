@@ -2,7 +2,7 @@
   # Pagination
   # Include the pageInfo object in the query, to fetch hasNextPage and endCursor
   # If the hasNextPage is set to true the cursor can be passed in the next query
-  # Check the next example - Pagination 2
+  # Check the next example - Pagination query 2.txt
   taskDetails(from: 1644859375000, to: 1671038575000
    filter :{
        lastTeam : {

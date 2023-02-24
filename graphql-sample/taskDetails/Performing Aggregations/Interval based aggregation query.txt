@@ -1,7 +1,7 @@
 {
   # Interval Based aggregation can also done by
-  # 1. Use aggregationInterval argument to pass the interval.
-  # 2. include intervalStartTime in the selection set.
+  # 1. Using aggregationInterval argument to pass the interval.
+  # 2. Including intervalStartTime in the selection set.
   taskDetails(
     from: 1644796800000
     to: 1676246400000
@@ -9,8 +9,8 @@
     aggregationInterval: { interval: DAILY }
   ) {
     tasks {
-      # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example )
-      # Missing buckets are not shown, i,e if there is no calls for a particular date, those buckets will not be shown.
+      # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example Interval based timezone supported aggregation query.txt)
+      # Missing buckets are not shown, i.e if there is no calls for a particular date, those buckets will not be shown.
       intervalStartTime
       channelType
       lastSite {
