@@ -6,7 +6,7 @@ The use case on this video demonstrates how a customer can request a callback on
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/tasks/v1/create-callback-task**
+**https://developer.webex-cx.com/documentation/tasks/v1/create-task**
 
 ## Getting Started
 
