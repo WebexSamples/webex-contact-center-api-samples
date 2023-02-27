@@ -1,0 +1,60 @@
+{
+  # Aggregations with Sub Filters,
+  # For each aggregation a separate filter criteria can be specified.
+  agentSession(from: 1644859375000, to: 1671038575000
+    filter : {
+        isActive : {equals : true}
+    }
+    aggregations : [
+        {
+            field : "agentId"
+            name : "Agents handling telephony tasks" 
+            type : cardinality
+            # Filter criteria for a particular operation can be given
+            # Note that syntax for this filter is same as the global filter
+            filter : {
+                channelInfo : {
+                    channelType : {equals : "telephony"}
+                }
+            }
+        }
+        {
+            field : "agentId"
+            name : "Agents handling social tasks" 
+            type : cardinality
+            filter : {
+                channelInfo : {
+                    channelType : {equals : "social"}
+                }
+            }
+        }
+        {
+            field : "agentId"
+            name : "idle Agents" 
+            type : cardinality
+            filter : {
+                channelInfo : {
+                    currentState : {equals : idle}
+                }
+            }
+        }
+        {
+            field : "agentId"
+            name : "Number of Agents in connected state" 
+            type : cardinality
+            filter : {
+                channelInfo : {
+                    currentState : {equals : connected}
+                }
+            }
+        }
+    ]
+) {
+    agentSessions {
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}

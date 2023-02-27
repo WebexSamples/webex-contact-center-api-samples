@@ -1,0 +1,132 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "agentSessionId": "42b41ef1-4601-4596-a80f-98520341526d",
+                    "agentId": "AXW8ODqmL4YBh5I5lOvA",
+                    "teamName": "Team-SRI-FF",
+                    "siteName": "Site-SRI-FF",
+                    "startTime": 1665131808039,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "ce08a0b4-b075-4c33-915b-bf7283798968",
+                            "channelType": "telephony",
+                            "idleCount": 1,
+                            "idleDuration": 3176,
+                            "ringingCount": 0,
+                            "ringingDuration": 0,
+                            "totalDuration": 492521
+                        }
+                    ]
+                },
+                {
+                    "agentSessionId": "5d992c31-4fc4-46ad-9883-95bca55beb50",
+                    "agentId": "AXW8OBN1L4YBh5I5lOu-",
+                    "teamName": "Team-SRI-FF-Three",
+                    "siteName": "Site-SRI-FF",
+                    "startTime": 1665131768811,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "5ee2f4b1-a65d-41fe-b99d-b13e355f0db6",
+                            "channelType": "telephony",
+                            "idleCount": 1,
+                            "idleDuration": 3538,
+                            "ringingCount": 1,
+                            "ringingDuration": 10231,
+                            "totalDuration": 536708
+                        }
+                    ]
+                },
+                {
+                    "agentSessionId": "8e0af47f-0ce4-4961-9487-1d5fb46f1219",
+                    "agentId": "AXJaIOJxIwL7fuV2v-nP",
+                    "teamName": "e2e-team",
+                    "siteName": "e2e-site",
+                    "startTime": 1648046442168,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "89a7df6e-3c7b-4769-a240-5722d859cf34",
+                            "channelType": "telephony",
+                            "idleCount": 0,
+                            "idleDuration": 0,
+                            "ringingCount": 1,
+                            "ringingDuration": 10000,
+                            "totalDuration": 130000
+                        }
+                    ]
+                },
+                {
+                    "agentSessionId": "950c7ced-39d4-44e6-a3ab-182e1333f26e",
+                    "agentId": "011689bf-065e-4bce-b4b5-2cf6861e1ef6",
+                    "teamName": "Ranjan_Team1",
+                    "siteName": "TestSite-RJ",
+                    "startTime": 1655449155442,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "32b840cc-4a34-45f7-a301-9605a8bc73c8",
+                            "channelType": "telephony",
+                            "idleCount": 0,
+                            "idleDuration": 0,
+                            "ringingCount": 0,
+                            "ringingDuration": 0,
+                            "totalDuration": 0
+                        }
+                    ]
+                },
+                {
+                    "agentSessionId": "ad83a283-76a5-4494-aeed-6e6b1ae89979",
+                    "agentId": "AXJaIOJxIwL7fuV2v-nP",
+                    "teamName": "e2e-team",
+                    "siteName": "e2e-site",
+                    "startTime": 1648010964891,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "f92ef44f-c535-424c-ab14-78a47a7f6160",
+                            "channelType": "telephony",
+                            "idleCount": 0,
+                            "idleDuration": 0,
+                            "ringingCount": 1,
+                            "ringingDuration": 10000,
+                            "totalDuration": 130000
+                        }
+                    ]
+                },
+                {
+                    "agentSessionId": "d3558825-d8c6-4542-b055-62c17c436840",
+                    "agentId": "AXJaIOJxIwL7fuV2v-nP",
+                    "teamName": "e2e-team",
+                    "siteName": "e2e-site",
+                    "startTime": 1648023126020,
+                    "endTime": -1,
+                    "isActive": true,
+                    "channelInfo": [
+                        {
+                            "channelId": "a3e33cda-c8b3-4968-8039-91bdfd220ec2",
+                            "channelType": "telephony",
+                            "idleCount": 0,
+                            "idleDuration": 0,
+                            "ringingCount": 1,
+                            "ringingDuration": 10000,
+                            "totalDuration": 130000
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}

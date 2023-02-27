@@ -1,0 +1,20 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "aggregation": [
+            {
+              "name": "Active agent count",
+              "value": 4.0
+            },
+            {
+              "name": "Teams with atleast one agent",
+              "value": 4.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

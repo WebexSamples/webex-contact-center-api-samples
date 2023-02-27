@@ -1,0 +1,1694 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "agentSessionId": "0048909d-7a2c-44fb-8260-c415649f813f",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655229928724,
+          "endTime": 1655230560166,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5850a32d-be69-4ce1-9ae3-ac3cdfa3e483",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 124651,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 631442
+            },
+            {
+              "channelId": "a8cd7874-8d0b-4799-b62d-975738d4a85d",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 124651,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 631442
+            },
+            {
+              "channelId": "a8adb4b8-af9a-4eeb-a58e-a75711e2bd8b",
+              "channelType": "chat",
+              "idleCount": 3,
+              "idleDuration": 124651,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 631442
+            }
+          ]
+        },
+        {
+          "agentSessionId": "032477f9-688c-4e4f-a5ce-733366ac6abe",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653492782574,
+          "endTime": 1653493610347,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5b2f792e-4f29-4582-837a-99dabe8e8aff",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 153930,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 827773
+            },
+            {
+              "channelId": "46cfb2c1-7e63-408f-8fad-9868ac605416",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 153930,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 827773
+            },
+            {
+              "channelId": "e0ca2a1d-bc61-4c0a-ab06-5d286d543075",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 153930,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 827773
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0bd701a3-9675-4dd8-bf15-bc96b9726948",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655827550622,
+          "endTime": 1655830123450,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b878e4e7-1fff-4139-b3f1-aba6586995b3",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 123977,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2572828
+            },
+            {
+              "channelId": "91442c70-680b-4998-9386-cef54b330b52",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123977,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2572828
+            },
+            {
+              "channelId": "408cf753-9ff6-4079-add5-cb7cf0f9ce62",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 123977,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2572828
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0f7e8dfb-3086-4b37-ad68-d7e21a03a440",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663927282193,
+          "endTime": 1663927291649,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "17183065-dc09-4c2b-904b-ad187a25d2e5",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 9456,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9456
+            },
+            {
+              "channelId": "2f241c37-3c7f-4529-8cfe-6b63dcd2ba00",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 9456,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9456
+            },
+            {
+              "channelId": "2dc7b8bd-26dd-46c2-9281-fc7ff36f4d45",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 9456,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9456
+            }
+          ]
+        },
+        {
+          "agentSessionId": "1282817c-4ac1-4758-9905-005f366dd582",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1652992628326,
+          "endTime": 1652997632940,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "032661b3-bab8-45d7-97d6-708881677527",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 9698,
+              "ringingCount": 3,
+              "ringingDuration": 16624,
+              "totalDuration": 5004614
+            },
+            {
+              "channelId": "585743ac-5311-4f9f-a3ca-aa9795cca9db",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 129718,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5004614
+            },
+            {
+              "channelId": "fdd75c6d-b25d-490f-a747-749db9c3a861",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 129718,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5004614
+            }
+          ]
+        },
+        {
+          "agentSessionId": "14a6506f-c008-4787-b58c-18d187ba0602",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654696898984,
+          "endTime": 1654708869705,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "37c1e024-56fb-47d3-ab93-84c5c8fe7156",
+              "channelType": "chat",
+              "idleCount": 9,
+              "idleDuration": 447342,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11970721
+            },
+            {
+              "channelId": "8392fc16-6cd6-413c-b15c-f9ca6c0a9d4c",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 37985,
+              "ringingCount": 6,
+              "ringingDuration": 16393,
+              "totalDuration": 11970721
+            },
+            {
+              "channelId": "c73e1a19-137d-4a25-a4c1-f8828bab36a5",
+              "channelType": "email",
+              "idleCount": 9,
+              "idleDuration": 447342,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11970721
+            }
+          ]
+        },
+        {
+          "agentSessionId": "17f5913e-f995-4c0a-8368-f327a7afa02a",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653066368292,
+          "endTime": 1653075356864,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f4fb19ec-86c8-40c7-933e-b464864354c2",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 234545,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8988572
+            },
+            {
+              "channelId": "5f3aaafb-650f-4899-9825-46b62364e811",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 63106,
+              "ringingCount": 1,
+              "ringingDuration": 9178,
+              "totalDuration": 8988572
+            },
+            {
+              "channelId": "1e5d2cdf-5cc1-43ba-8459-b53161298e5c",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 234545,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8988572
+            }
+          ]
+        },
+        {
+          "agentSessionId": "1842bf51-c77f-4612-938c-8829ed8cfd8a",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1652196575969,
+          "endTime": 1652211812029,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a5acef40-4a3d-43c3-8821-de44fbfa0005",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 14848078,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 15236060
+            }
+          ]
+        },
+        {
+          "agentSessionId": "1fae27ab-74e5-47d7-b71c-0eee9722c59d",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659509637090,
+          "endTime": 1659509980075,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7cd777cb-b5a5-40d8-8272-5aee7c170a56",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 51205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 342985
+            },
+            {
+              "channelId": "3572d8b2-0184-40a7-b0ca-6e948d83f655",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 51205,
+              "ringingCount": 1,
+              "ringingDuration": 2156,
+              "totalDuration": 342985
+            },
+            {
+              "channelId": "4c68f29c-defc-49d2-8e37-1665f5b38a85",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 51205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 342985
+            }
+          ]
+        },
+        {
+          "agentSessionId": "27c0aef7-b8cd-4674-a50e-4860ba2bf7ea",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1658779285957,
+          "endTime": 1658779487921,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b8b545c8-31d5-4157-a8e5-39804585f916",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 179733,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 201964
+            },
+            {
+              "channelId": "505d30f1-798b-4ce8-a0ab-3b4b10901ad0",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 179733,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 201964
+            },
+            {
+              "channelId": "5c7339db-78aa-4725-87c7-ed68fbee4d07",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 179733,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 201964
+            }
+          ]
+        },
+        {
+          "agentSessionId": "2f2db66c-a3ec-473b-b6aa-bd16f84e1b5f",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653494363276,
+          "endTime": 1653495389786,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "14a09e9a-fc42-46fa-aa21-e38fb8e8b241",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 132110,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1026510
+            },
+            {
+              "channelId": "69bcfcb7-7cf1-41d9-a660-8ec89c8c5d2f",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 66684,
+              "ringingCount": 1,
+              "ringingDuration": 4729,
+              "totalDuration": 1026510
+            },
+            {
+              "channelId": "6c4908e9-93dc-4737-b54b-62b992b4dd90",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 132110,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1026510
+            }
+          ]
+        },
+        {
+          "agentSessionId": "39177797-2e11-4a3a-bc9b-2dbba88090a5",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655144978588,
+          "endTime": 1655151188681,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d52d9c59-6f07-4e96-99a9-6ee74598be27",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 227444,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 6210093
+            },
+            {
+              "channelId": "c7680bd3-605d-4a61-9cb9-cd221780d828",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 227444,
+              "ringingCount": 2,
+              "ringingDuration": 11608,
+              "totalDuration": 6210093
+            },
+            {
+              "channelId": "0390fd2e-5f5b-4b57-8d09-373679ec37fd",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 227444,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 6210093
+            }
+          ]
+        },
+        {
+          "agentSessionId": "3ae6da67-f06a-4c31-8fa7-af280576d9ed",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651604427472,
+          "endTime": 1651611431956,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "db268734-c5c3-468d-9c85-4e6eeef5251a",
+              "channelType": "telephony",
+              "idleCount": 105,
+              "idleDuration": 1196971,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 7004484
+            }
+          ]
+        },
+        {
+          "agentSessionId": "3d6fe293-1f12-4544-913e-7df4685d8791",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659610041823,
+          "endTime": 1659610709981,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7c062d5c-0cc3-43f1-96ae-1d2765cc3913",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 348742,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 668158
+            },
+            {
+              "channelId": "880e597a-239f-4f65-aa4c-f4cee78590c1",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 348742,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 668158
+            },
+            {
+              "channelId": "c5149fe2-a6ed-4865-a167-202d3492c796",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 348742,
+              "ringingCount": 1,
+              "ringingDuration": 2327,
+              "totalDuration": 668158
+            }
+          ]
+        },
+        {
+          "agentSessionId": "4127fed5-9df4-41e5-b22a-196df726bd80",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663617498515,
+          "endTime": 1663618547910,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "73b2ec04-edf3-4474-8d99-baf28693dada",
+              "channelType": "chat",
+              "idleCount": 3,
+              "idleDuration": 143903,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1049395
+            },
+            {
+              "channelId": "1c868c40-85d0-44db-89b3-d4878fb40c58",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 143903,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1049395
+            },
+            {
+              "channelId": "4097219e-3e71-4b65-b07e-40314489f0ab",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 143903,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1049395
+            }
+          ]
+        },
+        {
+          "agentSessionId": "429580cb-d59f-481f-8944-7c58d9f77cdf",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663619324351,
+          "endTime": 1663619391498,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8849e0b6-b892-4e22-811a-f9e4193bf2aa",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 13574,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 67147
+            },
+            {
+              "channelId": "ca9460a7-c0a9-4801-b632-8a0434f390e2",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 13574,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 67147
+            },
+            {
+              "channelId": "3e0b9db1-3869-40e7-bd76-f47cd469ccf5",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 13574,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 67147
+            }
+          ]
+        },
+        {
+          "agentSessionId": "47051677-7979-4ea6-b822-f176f5941695",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655144666697,
+          "endTime": 1655144916053,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "af19b09c-54f7-4685-a71f-1c6b337778c0",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 33959,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 249356
+            },
+            {
+              "channelId": "d4002551-70a1-4fdf-a98f-c44f170df8f1",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 33959,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 249356
+            },
+            {
+              "channelId": "5610c24b-0f00-4602-9373-74e89185040a",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 33959,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 249356
+            }
+          ]
+        },
+        {
+          "agentSessionId": "4a7b6eea-2701-4732-a8e6-1d3d3b947a8e",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654880570804,
+          "endTime": 1654890589236,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f81fbe23-68de-48a9-9a22-6bb05bae34e5",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 333902,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 10018432
+            },
+            {
+              "channelId": "5bbb9ee6-f08d-4745-a92e-f418762e6211",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 333902,
+              "ringingCount": 2,
+              "ringingDuration": 9792,
+              "totalDuration": 10018432
+            },
+            {
+              "channelId": "8cc97dc6-2c2f-4792-8866-fbe5dbd77371",
+              "channelType": "chat",
+              "idleCount": 3,
+              "idleDuration": 333902,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 10018432
+            }
+          ]
+        },
+        {
+          "agentSessionId": "4d31bd47-3800-40f8-ba26-29d27c8ee54e",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654876112971,
+          "endTime": 1654878721320,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "2ce15ae0-2e15-4400-8641-e25f0ac88f37",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 2379853,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2608349
+            },
+            {
+              "channelId": "1a2b9c2e-ee28-4a49-bbe7-b3aa9e4ffdd8",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 2379853,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2608349
+            },
+            {
+              "channelId": "b25f6d49-eafd-4b3c-bb76-58ebd4294500",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 2379853,
+              "ringingCount": 1,
+              "ringingDuration": 1227,
+              "totalDuration": 2608349
+            }
+          ]
+        },
+        {
+          "agentSessionId": "5214b683-9228-4407-9a1b-1042e39e37c7",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655339566918,
+          "endTime": 1655342518720,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "28d456db-db94-4d73-94fd-d016e5d1e103",
+              "channelType": "email",
+              "idleCount": 5,
+              "idleDuration": 246590,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2951802
+            },
+            {
+              "channelId": "2a4c822f-7269-4352-8e0b-c332a7094d87",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 246590,
+              "ringingCount": 1,
+              "ringingDuration": 3062,
+              "totalDuration": 2951802
+            },
+            {
+              "channelId": "3272462b-0402-4dc7-ab12-22a88bb6a005",
+              "channelType": "chat",
+              "idleCount": 5,
+              "idleDuration": 246590,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2951802
+            }
+          ]
+        },
+        {
+          "agentSessionId": "5316ff93-c4a0-453f-8538-0c240dc09a0c",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654802565421,
+          "endTime": 1654811787773,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e4e0f987-021b-4297-9933-d41b3f076a40",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 675814,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9222352
+            },
+            {
+              "channelId": "caccd11e-009f-4594-8b5c-393fa39005ce",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 629088,
+              "ringingCount": 4,
+              "ringingDuration": 19176,
+              "totalDuration": 9222352
+            },
+            {
+              "channelId": "8456bf15-2a9f-479d-afad-175380f1dd8e",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 675814,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9222352
+            }
+          ]
+        },
+        {
+          "agentSessionId": "5f67623e-95f2-459a-8ac4-e70f7c6333d1",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651247085625,
+          "endTime": 1651265774496,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4f64fae1-15b5-456f-81f0-b1e7c1d533ff",
+              "channelType": "telephony",
+              "idleCount": 86,
+              "idleDuration": 1133234,
+              "ringingCount": 3,
+              "ringingDuration": 16852,
+              "totalDuration": 18688871
+            }
+          ]
+        },
+        {
+          "agentSessionId": "613fae9f-d2a6-4b09-92cf-6cd4c3488b92",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655230715651,
+          "endTime": 1655231328587,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e2c2d9bf-de07-43f0-9b87-abf9bb40b3b4",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 51433,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 612936
+            },
+            {
+              "channelId": "52d4afe6-2439-4d9b-bb90-d80132ba7674",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 51433,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 612936
+            },
+            {
+              "channelId": "b2f02263-b1a4-4da3-b2d5-dee15700e8a3",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 51433,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 612936
+            }
+          ]
+        },
+        {
+          "agentSessionId": "6861fdca-db2c-4ad4-84e4-fe5f34a5a081",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653497579771,
+          "endTime": 1653506993537,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5c300f8e-5c1e-494e-b77f-f09bbe62f3ad",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 135601,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9413766
+            },
+            {
+              "channelId": "561fb748-bc2a-4cf5-830a-691aae3a6881",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 135601,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9413766
+            },
+            {
+              "channelId": "f62a66a1-4aa6-4130-ab09-7a05615667a9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 135601,
+              "ringingCount": 3,
+              "ringingDuration": 9057,
+              "totalDuration": 9413766
+            }
+          ]
+        },
+        {
+          "agentSessionId": "708e93e4-fccd-414d-a6e8-399dd1837ff8",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654872853028,
+          "endTime": 1654873817407,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a2ed7304-cdce-48a4-9cd2-1820f38c5ddb",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 902577,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 964379
+            },
+            {
+              "channelId": "c33b57d0-ddf8-406f-a62d-dcf26ede97cc",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 902577,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 964379
+            },
+            {
+              "channelId": "ee009d62-1a98-45ca-be15-d7159b3ec250",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 902577,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 964379
+            }
+          ]
+        },
+        {
+          "agentSessionId": "71c3a81a-a561-4d8e-a91e-01774535838e",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1651075130907,
+          "endTime": 1651079621479,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b895e591-11aa-41f6-8699-664c0bb1002b",
+              "channelType": "telephony",
+              "idleCount": 37,
+              "idleDuration": 478984,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4490572
+            }
+          ]
+        },
+        {
+          "agentSessionId": "720bfa14-bd0c-40fe-b00c-29ac574ea0f1",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651157381717,
+          "endTime": 1651181045378,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b1f9fdc3-cb98-4300-95df-dd50c7524cf6",
+              "channelType": "telephony",
+              "idleCount": 57,
+              "idleDuration": 782575,
+              "ringingCount": 2,
+              "ringingDuration": 5407,
+              "totalDuration": 23663661
+            }
+          ]
+        },
+        {
+          "agentSessionId": "80d28354-61cf-4c47-9c9b-245c103bab06",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663925982206,
+          "endTime": 1663925993784,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9b1f71b7-dd55-47c4-95d2-0d9ec2c2c3f6",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 11578,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11578
+            },
+            {
+              "channelId": "cf46d697-8b7c-40b1-9b5c-9815c6087f7b",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 11578,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11578
+            },
+            {
+              "channelId": "78043cc9-3ec1-4295-a2f2-98250798a06f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 11578,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11578
+            }
+          ]
+        },
+        {
+          "agentSessionId": "8dfbffdd-0dd8-4bfe-8397-a3249f59307f",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654870746106,
+          "endTime": 1654872776376,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "de853292-c9ae-42bd-86f7-4f3879dfc100",
+              "channelType": "chat",
+              "idleCount": 3,
+              "idleDuration": 32557,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2030270
+            },
+            {
+              "channelId": "7a6490dc-f4cc-4261-bc32-b6d4cb521558",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 32557,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2030270
+            },
+            {
+              "channelId": "e6e9db7c-c0cf-4f4b-9a66-3d6770a71d9c",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 32557,
+              "ringingCount": 3,
+              "ringingDuration": 22999,
+              "totalDuration": 2030270
+            }
+          ]
+        },
+        {
+          "agentSessionId": "95e9872d-d570-47eb-9374-5545f80e6916",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654615220258,
+          "endTime": 1654627193082,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "94e2b175-682f-4dc1-aa70-dd4016775866",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 190185,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11972824
+            },
+            {
+              "channelId": "e8be7590-d5b7-436d-a0aa-e9142a03e1b2",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 190185,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11972824
+            },
+            {
+              "channelId": "3bc4f423-2630-4b4f-a016-3c90f6f54d75",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2685,
+              "ringingCount": 2,
+              "ringingDuration": 5201,
+              "totalDuration": 11972824
+            }
+          ]
+        },
+        {
+          "agentSessionId": "96e2328a-6ec1-4399-8478-8f78ad2143b4",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659607997967,
+          "endTime": 1659608298514,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "689fae2f-856b-4f05-aed9-f6a1f6d744ec",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 117013,
+              "ringingCount": 2,
+              "ringingDuration": 6243,
+              "totalDuration": 300547
+            },
+            {
+              "channelId": "dc56135b-82f8-41d4-b916-764e1de713a2",
+              "channelType": "email",
+              "idleCount": 0,
+              "idleDuration": 0,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 300547
+            },
+            {
+              "channelId": "83324f7a-9cde-4b68-b67c-aec397e96d93",
+              "channelType": "chat",
+              "idleCount": 0,
+              "idleDuration": 0,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 300547
+            }
+          ]
+        },
+        {
+          "agentSessionId": "979aab97-3f3c-445a-bf32-332109eefca1",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651500992331,
+          "endTime": 1651510247129,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "0eb9bad6-205a-4722-9a35-773ba8783972",
+              "channelType": "telephony",
+              "idleCount": 103,
+              "idleDuration": 1505078,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9254798
+            }
+          ]
+        },
+        {
+          "agentSessionId": "98bd70cd-f153-403d-a560-d42f27065d73",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651692848149,
+          "endTime": 1651692853415,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fa6030a3-390d-4fb9-afb3-48f8d6373bba",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 5266,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5266
+            }
+          ]
+        },
+        {
+          "agentSessionId": "99683f1c-82ac-423e-986c-ed448cd966ab",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659523034249,
+          "endTime": 1659531203631,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "36818009-e912-4c8d-b803-b7ccdf69c425",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 7633186,
+              "ringingCount": 3,
+              "ringingDuration": 9188,
+              "totalDuration": 8169382
+            },
+            {
+              "channelId": "896325d6-661f-4ebe-bf94-69113ee3074d",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 7633186,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8169382
+            },
+            {
+              "channelId": "4c20ce7b-3c7c-4200-af11-66cd624b9c70",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 7633186,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8169382
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a53069e5-d820-4c40-92df-c10899375856",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651844679697,
+          "endTime": 1651855092772,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "39bac829-e951-4ec9-a7fd-c4c7146fe472",
+              "channelType": "telephony",
+              "idleCount": 247,
+              "idleDuration": 2729615,
+              "ringingCount": 3,
+              "ringingDuration": 22489,
+              "totalDuration": 10413075
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a615423b-888e-4c67-9704-8607fd750464",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653580064578,
+          "endTime": 1653600912655,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ec6bb2ad-0386-4c26-bb2c-434e18ae79ea",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 223042,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 20848077
+            },
+            {
+              "channelId": "56625951-eb78-4348-ab4a-8677e3279144",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 223042,
+              "ringingCount": 5,
+              "ringingDuration": 24330,
+              "totalDuration": 20848077
+            },
+            {
+              "channelId": "cfdfa4c4-d394-4e1f-9bfd-b5c83f1e367d",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 223042,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 20848077
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a7fe2360-a6b6-4307-9957-5512c4afef1a",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653668853343,
+          "endTime": 1653673520923,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "90697a98-ea26-4c2f-ae55-6b0c3db5662e",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 264695,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4667580
+            },
+            {
+              "channelId": "09dcab9f-3978-4ea1-9eee-3018fa27d504",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 264695,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4667580
+            },
+            {
+              "channelId": "116a20c5-70ce-413d-af88-3d6cf6fb89c9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 2974,
+              "ringingCount": 2,
+              "ringingDuration": 5959,
+              "totalDuration": 4667580
+            }
+          ]
+        },
+        {
+          "agentSessionId": "b46b3bbe-9cfd-48cd-8c0d-cf64b41b9126",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654794226015,
+          "endTime": 1654794310980,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "aa785f0c-7847-499b-ac86-2769a207b25c",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 16148,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 84965
+            },
+            {
+              "channelId": "1773ec30-3b59-444e-8caa-a59c05383d80",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 16148,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 84965
+            },
+            {
+              "channelId": "dbae5c0e-a921-43d0-ba09-50c95c0f02ba",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 16148,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 84965
+            }
+          ]
+        },
+        {
+          "agentSessionId": "c3104980-5e69-4a3e-94f8-5553e746157f",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653573627085,
+          "endTime": 1653580000640,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "2bec4a46-7cbf-4cd5-b7ee-144bec953eb4",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 2840,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 6373555
+            },
+            {
+              "channelId": "9e21eb5e-a5ca-4f36-9df1-bdc4ed428c0b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2840,
+              "ringingCount": 1,
+              "ringingDuration": 3072,
+              "totalDuration": 6373555
+            },
+            {
+              "channelId": "c34492c0-00c5-4f96-88c4-9b840e61e2ce",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 2840,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 6373555
+            }
+          ]
+        },
+        {
+          "agentSessionId": "c7abadae-1e11-4c17-8d97-2347286fc7c0",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651692919998,
+          "endTime": 1651696030000,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b03a3f22-804f-429e-af12-86a64deb4274",
+              "channelType": "telephony",
+              "idleCount": 17,
+              "idleDuration": 308123,
+              "ringingCount": 1,
+              "ringingDuration": 2123,
+              "totalDuration": 3110002
+            }
+          ]
+        },
+        {
+          "agentSessionId": "d6f3fb0a-f214-425b-81bf-cf8a6c712bde",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659507507013,
+          "endTime": 1659508003991,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "91c15e5d-5b9d-457e-a42c-74d8aa960763",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 175665,
+              "ringingCount": 1,
+              "ringingDuration": 4131,
+              "totalDuration": 496978
+            },
+            {
+              "channelId": "528078f5-1ec3-4319-adbf-21baba1e8659",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 175665,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 496978
+            },
+            {
+              "channelId": "3dd11837-c787-4453-9340-a08ff389bf01",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 175665,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 496978
+            }
+          ]
+        },
+        {
+          "agentSessionId": "da040a7a-4700-44f9-88e2-b499893ab2c6",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659105044877,
+          "endTime": 1659112521117,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6c9f22d5-d4ab-4380-977f-5bb0c760ca85",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 122201,
+              "ringingCount": 2,
+              "ringingDuration": 6667,
+              "totalDuration": 7476240
+            },
+            {
+              "channelId": "9a297339-569a-4110-969e-b87f92e16438",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 122201,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 7476240
+            },
+            {
+              "channelId": "63ea1114-c571-454a-8dee-92c6036832e9",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 122201,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 7476240
+            }
+          ]
+        },
+        {
+          "agentSessionId": "deaa04e5-b594-40e2-ba40-d41f9f9f6e78",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655231473201,
+          "endTime": 1655232199570,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3c5cb050-f2ff-4cc9-8b74-c1d2f475a909",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 3872,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 726369
+            },
+            {
+              "channelId": "c133237b-dea6-4ff7-8a85-65d3819b996b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3872,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 726369
+            },
+            {
+              "channelId": "b27bd274-e160-4655-9fa7-e18799fb96c2",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 3872,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 726369
+            }
+          ]
+        },
+        {
+          "agentSessionId": "e2d29f59-f2b0-4ead-a1f4-f06b489c56ea",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1651499656428,
+          "endTime": 1651499882972,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3960c2aa-4aca-4263-b760-d03301caf7ec",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123141,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 226544
+            }
+          ]
+        },
+        {
+          "agentSessionId": "e76371b3-3485-45d5-bf45-5b9df9ce58c4",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659621653870,
+          "endTime": 1659623539619,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d7ac13c6-6287-4469-8f83-8c02c82856b1",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 188827,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1885749
+            },
+            {
+              "channelId": "de10bf58-6c74-4794-942d-6ac4fffacac4",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 188827,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1885749
+            },
+            {
+              "channelId": "3db3e933-b5ac-4ce2-a553-c066d1194f7a",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 886356,
+              "ringingCount": 6,
+              "ringingDuration": 20953,
+              "totalDuration": 1885749
+            }
+          ]
+        },
+        {
+          "agentSessionId": "f32ac230-b899-4e95-9a2d-d51f52798186",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1659618943804,
+          "endTime": 1659621595462,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f4333694-fe4c-40e6-8bc9-42fee0cb2a90",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 1640550,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2651658
+            },
+            {
+              "channelId": "062ca288-918a-49f1-9a75-2061a31d1a7a",
+              "channelType": "chat",
+              "idleCount": 3,
+              "idleDuration": 1640550,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2651658
+            },
+            {
+              "channelId": "be12e641-cc19-40f7-895c-322e4d7dc2d9",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 1640550,
+              "ringingCount": 6,
+              "ringingDuration": 13582,
+              "totalDuration": 2651658
+            }
+          ]
+        },
+        {
+          "agentSessionId": "f6041142-7d81-48f4-bebb-03c5d387f5ab",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654794567188,
+          "endTime": 1654799686407,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9674f7a0-6336-423c-92b9-7ce2ee17cf74",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 186480,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5119219
+            },
+            {
+              "channelId": "e98803a9-ebbc-4a11-ad92-b8b091684ef4",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 186480,
+              "ringingCount": 2,
+              "ringingDuration": 5447,
+              "totalDuration": 5119219
+            },
+            {
+              "channelId": "5be13ef4-6c0a-4214-9a81-2c90be11adec",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 186480,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5119219
+            }
+          ]
+        },
+        {
+          "agentSessionId": "f698b93a-e9da-46f7-89dd-a7f1490c04b7",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654712028219,
+          "endTime": 1654716194879,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b9fda0ee-6f72-4272-8fb3-9dc581937321",
+              "channelType": "chat",
+              "idleCount": 5,
+              "idleDuration": 190407,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4166660
+            },
+            {
+              "channelId": "c903024e-f6a2-49f1-a37b-cb0c5922f378",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2529,
+              "ringingCount": 1,
+              "ringingDuration": 2896,
+              "totalDuration": 4166660
+            },
+            {
+              "channelId": "230e9dc8-ea8a-40f5-a1bb-ef84b9cbd242",
+              "channelType": "email",
+              "idleCount": 5,
+              "idleDuration": 190407,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4166660
+            }
+          ]
+        },
+        {
+          "agentSessionId": "ff37b0e4-6d40-455a-b5ff-fc171aa4f2ee",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1654629023255,
+          "endTime": 1654633963986,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "070d6a86-4574-453c-9bb7-744f7b907a1f",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 295433,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4940731
+            },
+            {
+              "channelId": "9e79b7a3-91cb-4518-9393-78ab87b33c97",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123346,
+              "ringingCount": 2,
+              "ringingDuration": 8547,
+              "totalDuration": 4940731
+            },
+            {
+              "channelId": "b1be4630-8d96-4d8a-969d-aef944af1276",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 295433,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4940731
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

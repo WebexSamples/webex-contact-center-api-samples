@@ -1,0 +1,39 @@
+{
+  # Aggregation query with Group Bys
+  agentSession(from: 1644859375000, to: 1671038575000
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"
+            name : "Sum of connectedCount"
+            type : sum
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+) {
+    agentSessions {
+        # Including channeInfo channelType in the selection when aggregations argument is used, implies that a group by has to be done using channelInfo channelType
+        channelInfo {
+            channelType
+        }
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}

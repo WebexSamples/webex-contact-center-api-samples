@@ -1,0 +1,36 @@
+{
+  # Simple Aggregation query
+  agentSession(from: 1644859375000, to: 1671038575000
+  # Use aggregations argument to specify aggregation operations, multiple aggregations can be done in a single query.
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"  # field Name on which aggregation needs to be done
+            name : "Sum of connectedCount" # Identifier for the results
+            type : sum # operation name
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+) {
+    agentSessions {
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}

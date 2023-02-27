@@ -1,0 +1,28 @@
+{
+  # Aggregation can also be done based on a filter criteria
+  # When using filter argument, aggregations will be performed only on documents which satisfy the filter critera
+  agentSession(from: 1644859375000, to: 1671038575000
+    filter : {
+        isActive : {equals : true}
+    }
+    aggregations : [
+        {
+            field : "agentId"
+            name : "Active agent count"
+            type : cardinality
+        }
+        {
+            field : "teamId"
+            name : "Teams with atleast one agent"
+            type : cardinality
+        }
+    ]
+) {
+    agentSessions {
+        aggregation {
+            name
+            value
+        }
+    }
+  }
+}

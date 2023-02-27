@@ -1,0 +1,2012 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "agentSessionId": "0048909d-7a2c-44fb-8260-c415649f813f",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655229928724,
+          "endTime": 1655230560166,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5850a32d-be69-4ce1-9ae3-ac3cdfa3e483",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 124651,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 631442
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0071cf32-ced2-49f2-bc18-725a666eaebe",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1657847022802,
+          "endTime": 1657849167949,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d6cf6d35-8a45-47ed-9c5f-5839fcdac1a6",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 126131,
+              "ringingCount": 3,
+              "ringingDuration": 17657,
+              "totalDuration": 2145147
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0095195c-efb5-4f43-8fe2-8d1a989b38a0",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1655350668998,
+          "endTime": 1655354050924,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "65d53a98-cd46-48c5-ae0f-b288d9912ef7",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 275497,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3381926
+            }
+          ]
+        },
+        {
+          "agentSessionId": "00fe6b6b-4c3e-47c9-b639-fa77b0319803",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1658298416675,
+          "endTime": 1658298422652,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f2e5ed03-84f7-4e9f-a45b-549c0448ce61",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 5977,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5977
+            }
+          ]
+        },
+        {
+          "agentSessionId": "014e5567-f49b-42f5-869f-f9889b9f9692",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1646904418994,
+          "endTime": 1646904662383,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "36030f3c-821a-4017-b811-51764b63ea46",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 33927,
+              "ringingCount": 2,
+              "ringingDuration": 35191,
+              "totalDuration": 243389
+            }
+          ]
+        },
+        {
+          "agentSessionId": "016ea0eb-b068-4d5b-b977-1858df8a7961",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1662372817191,
+          "endTime": 1662376420253,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fd65647e-31ae-479a-8f1c-592620ef877e",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3603062,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3603062
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02201d6e-c4bf-413a-ad29-ce401d948445",
+          "agentId": "9d54e69c-20bc-47dd-b4e4-974cb888cee7",
+          "teamName": "wxcc_qa_test_Team1",
+          "siteName": "wxcc_qa_test_site",
+          "startTime": 1650861160897,
+          "endTime": 1650861767096,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "61f8e1e4-73e3-415d-8859-1e17d4d6d9cc",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 122427,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 606199
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02667bd7-f260-4f45-abb0-e7b6b80f3a7d",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1655811680988,
+          "endTime": 1655811760369,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5cb3fa09-4558-4b67-94e7-8f5cd5542cde",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 61211,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 79381
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02b4a7c5-0517-41b7-a006-1b92bbf16598",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1646379576912,
+          "endTime": 1646379926458,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f3d47a64-13c9-47ee-a83a-da659b98b454",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 237562,
+              "ringingCount": 1,
+              "ringingDuration": 4127,
+              "totalDuration": 349546
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02bec844-92df-4b7b-9005-1ae4143db842",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1658813834474,
+          "endTime": 1658817455928,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "14bbbe4c-1252-48bf-b633-9f14bf820753",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 2546987,
+              "ringingCount": 5,
+              "ringingDuration": 39428,
+              "totalDuration": 3621454
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02dea954-5980-4724-bf5c-fd4c7ed0ca5a",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1649065968581,
+          "endTime": 1649068846489,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6d81a834-5f5f-4397-acbe-d509a8ec93d4",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 132608,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2877908
+            }
+          ]
+        },
+        {
+          "agentSessionId": "02fb0630-e171-4a63-bbff-3c177bda75ce",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1648124062120,
+          "endTime": 1648126016650,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "0bfa71c0-e242-48a6-b909-235487e136f7",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 1782080,
+              "ringingCount": 3,
+              "ringingDuration": 24958,
+              "totalDuration": 1954530
+            }
+          ]
+        },
+        {
+          "agentSessionId": "030b102d-7d1c-428e-8f80-21077ee0cb77",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1662529766452,
+          "endTime": 1662534401611,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9725033d-1eff-4457-b5e9-007da9cdaab5",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 3045737,
+              "ringingCount": 1,
+              "ringingDuration": 4424,
+              "totalDuration": 4635159
+            }
+          ]
+        },
+        {
+          "agentSessionId": "032477f9-688c-4e4f-a5ce-733366ac6abe",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1653492782574,
+          "endTime": 1653493610347,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e0ca2a1d-bc61-4c0a-ab06-5d286d543075",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 153930,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 827773
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0332bffa-6953-403d-a2c4-aa06c9958b02",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1644941837466,
+          "endTime": 1644942068678,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "60faf716-53d0-44d6-9ec6-ec34126da4b4",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3140,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 231212
+            }
+          ]
+        },
+        {
+          "agentSessionId": "033638ca-c713-4f39-94c0-cf58a6bab0a7",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1661760596470,
+          "endTime": 1661778693101,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5ecf797c-14ab-4760-bb4e-366786e42a06",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 867567,
+              "ringingCount": 5,
+              "ringingDuration": 27830,
+              "totalDuration": 18096631
+            }
+          ]
+        },
+        {
+          "agentSessionId": "035655f9-1afe-43dc-aa6d-61fec545944b",
+          "agentId": "141952be-8c30-4b49-a6f4-99c95e8fad3a",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1660148056112,
+          "endTime": 1660149598597,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8a336c6e-36b7-4fe9-8207-94a9816e0e87",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 1542485,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1542485
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0383f5b9-fe91-4fe8-9bb9-a620bc2f442d",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663758957529,
+          "endTime": 1663759324689,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d30715b8-12df-4284-8114-bc583864e4c7",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 6246,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 367160
+            }
+          ]
+        },
+        {
+          "agentSessionId": "03b1864f-840a-43a8-914f-819c6ef89850",
+          "agentId": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d",
+          "teamName": "wxcc_qa_test_Team1",
+          "siteName": "wxcc_qa_test_site",
+          "startTime": 1650514424806,
+          "endTime": 1650520063732,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "82099e58-f179-479d-b3fc-5db47d86b322",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 542731,
+              "ringingCount": 6,
+              "ringingDuration": 51656,
+              "totalDuration": 5638926
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0410ad8a-026c-428b-b46a-bfa3f69693ee",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1655356591056,
+          "endTime": 1655358587030,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "1f5fe774-7931-47cb-b8a6-819c8932ac38",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 29359,
+              "ringingCount": 5,
+              "ringingDuration": 24279,
+              "totalDuration": 1995974
+            }
+          ]
+        },
+        {
+          "agentSessionId": "041a38a4-c0d9-4062-8ed1-f163ff277651",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1662117438040,
+          "endTime": 1662121139043,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7e9c8489-476e-4821-8102-f100dd930023",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3149378,
+              "ringingCount": 1,
+              "ringingDuration": 4425,
+              "totalDuration": 3701003
+            }
+          ]
+        },
+        {
+          "agentSessionId": "044833a6-aab4-4393-bf34-1ee0176a773d",
+          "agentId": "AXV4TavNL4YBh5I5fJEs",
+          "teamName": "Bangalore_Team",
+          "siteName": "Bangalore",
+          "startTime": 1671030128339,
+          "endTime": 1671038669127,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fd127380-2ce7-4c9f-86c6-1a2e37246be0",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 8145769,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8540788
+            }
+          ]
+        },
+        {
+          "agentSessionId": "044dc3ab-6791-42eb-b9cc-119774c181be",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1645183830832,
+          "endTime": 1645185243121,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "0619f766-1c0a-48fb-91c9-2326c6107ba4",
+              "channelType": "telephony",
+              "idleCount": 7,
+              "idleDuration": 284818,
+              "ringingCount": 1,
+              "ringingDuration": 6704,
+              "totalDuration": 1412289
+            }
+          ]
+        },
+        {
+          "agentSessionId": "045bc2fe-5cbc-4665-ad5e-92324f6c2e2e",
+          "agentId": "7498173b-2508-408a-99f3-ce2c94e3d091",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1656399328845,
+          "endTime": 1656403532009,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "2d550c9d-1da6-490c-a1a3-ef8d0fb83915",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 90177,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4203164
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04613344-0de9-457c-80f5-3c9f63634d87",
+          "agentId": "AXV497uB6YUpW6rPJ04n",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1646648947086,
+          "endTime": 1646654660073,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4936e797-0b76-4f5d-9eb9-211e5f9d045a",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 5456636,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5712987
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04857f1d-3dba-4a3e-b815-7a774af1d4c6",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1648124103162,
+          "endTime": 1648126009124,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "72eee9e5-28cf-445a-852d-3eec79a5db6a",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 1690895,
+              "ringingCount": 2,
+              "ringingDuration": 7277,
+              "totalDuration": 1905962
+            }
+          ]
+        },
+        {
+          "agentSessionId": "048e4a82-53df-4ea0-8b3b-3970e574b5de",
+          "agentId": "e7ed0955-3d81-4745-878d-22667d811f2b",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1654173542494,
+          "endTime": 1654177430212,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "54bcaa4c-51ae-425e-bce7-3414853e6131",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 3481122,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3887718
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04ab021e-eabe-4c8f-8d20-a17f7e479b78",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1660907355152,
+          "endTime": 1660908626204,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5dc0cef7-4b81-40bc-911b-306a4c7ba2dd",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 204120,
+              "ringingCount": 2,
+              "ringingDuration": 15100,
+              "totalDuration": 1271052
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04bee41f-c1da-45d8-ab5f-61ce15ed29c2",
+          "agentId": "3a2893a5-8cbc-4c42-a806-d0f1bab12e31",
+          "teamName": "callDistributionCheck1",
+          "siteName": "America",
+          "startTime": 1655799244240,
+          "endTime": 1655810681985,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4991f901-a57b-49e9-bf54-e9ce6057aa40",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 11437745,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11437745
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04c7d5d4-884b-4780-8d75-19f06b5ce4bd",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1659678024675,
+          "endTime": 1659686188801,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "37f1ad0e-7a21-4d12-839a-882cd9c64a2f",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 5362017,
+              "ringingCount": 2,
+              "ringingDuration": 17372,
+              "totalDuration": 8164126
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04d39b9a-676b-4d79-badb-44ab3fcf5b07",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1644926785053,
+          "endTime": 1644926801778,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3d1c97f8-5632-4def-8259-5129929b1819",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 16725,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16725
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04f71b34-2c64-464b-91e2-701246cbfac6",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1651217455789,
+          "endTime": 1651217772314,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "909cc2c3-06f6-44c4-a3be-2ce2e7a37bbd",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 186890,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 316525
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04f792d4-767f-4c6a-a2a0-efcfc1d91cb6",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "SiteChangeCheckTeam1",
+          "siteName": "SiteChangeCheck1",
+          "startTime": 1654665099346,
+          "endTime": 1654673703650,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a78d505e-d252-4185-b142-6ccc0fc5ee9c",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 18751,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8604304
+            }
+          ]
+        },
+        {
+          "agentSessionId": "04f810a9-ff35-40e7-b237-832df6ad088c",
+          "agentId": "AXV497uB6YUpW6rPJ04n",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1663836048218,
+          "endTime": 1663836458239,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "bd912131-1ca7-487a-91c8-eb4207186462",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 148737,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 410021
+            }
+          ]
+        },
+        {
+          "agentSessionId": "05069dbf-fed0-422d-a739-be7d2b699f12",
+          "agentId": "04113dc3-eb57-427f-a404-ca0df6824f11",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1657624434668,
+          "endTime": 1657624533959,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3f182f0f-405f-46ed-a3dc-9452927c4b53",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 99291,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 99291
+            }
+          ]
+        },
+        {
+          "agentSessionId": "05381c2f-97aa-4650-969a-0f713e008bb6",
+          "agentId": "AXV4TavNL4YBh5I5fJEs",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1646722347337,
+          "endTime": 1646723635688,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a6bb4e2e-bfa1-44b6-976f-7f6ae3620271",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 201566,
+              "ringingCount": 1,
+              "ringingDuration": 9213,
+              "totalDuration": 1288351
+            }
+          ]
+        },
+        {
+          "agentSessionId": "055e0dcc-bfcd-466a-abd3-5cc209f5c307",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1655793943534,
+          "endTime": 1655794495417,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "41f86f34-f111-4966-b045-c944eba4c2fc",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 551883,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 551883
+            }
+          ]
+        },
+        {
+          "agentSessionId": "056144b5-4ca0-4d1f-af92-7e12bcc25849",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "Washington",
+          "siteName": "America",
+          "startTime": 1651043396542,
+          "endTime": 1651046749482,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6e1c288b-ccc2-4164-a372-0f9cc6c59485",
+              "channelType": "telephony",
+              "idleCount": 10,
+              "idleDuration": 297245,
+              "ringingCount": 13,
+              "ringingDuration": 64574,
+              "totalDuration": 3352940
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0572e801-28b4-4be1-b689-242bf9a20ce8",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "callDistributionCheck1",
+          "siteName": "America",
+          "startTime": 1653910352469,
+          "endTime": 1653911306407,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "c849af3b-e6b7-4f0e-940a-b030e219dcca",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3667,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 953938
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0573d386-8b14-43bd-9d6e-045885d7c44c",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1645104796957,
+          "endTime": 1645112013940,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ce6596a4-d7ca-4970-a5bd-c3f07025cf24",
+              "channelType": "telephony",
+              "idleCount": 10,
+              "idleDuration": 322040,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 7216983
+            }
+          ]
+        },
+        {
+          "agentSessionId": "061938b8-f86a-4b71-8297-2359e36ff136",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "callDistributionCheck1",
+          "siteName": "America",
+          "startTime": 1654585236454,
+          "endTime": 1654585501861,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7be620dd-89ae-40b4-b679-5fc351f6b2e8",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 265407,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 265407
+            }
+          ]
+        },
+        {
+          "agentSessionId": "061d16db-51c8-41d0-a0e8-914a6fb6da23",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "callDistributionCheck1",
+          "siteName": "SiteChangeCheck1",
+          "startTime": 1654590727123,
+          "endTime": 1654590754313,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "c197d6f0-e597-40d4-bea6-bee2563bb40b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 27190,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 27190
+            }
+          ]
+        },
+        {
+          "agentSessionId": "063cf498-13a8-4ab5-8e6f-8376bc65803e",
+          "agentId": "1a4993fd-d7c7-4377-bdc3-951596274900",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1653974215526,
+          "endTime": 1653984425684,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ad128169-679f-411d-857b-d2be4488e84e",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 9504193,
+              "ringingCount": 3,
+              "ringingDuration": 17911,
+              "totalDuration": 10210158
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0663e104-672e-4cb4-988f-f08360a3e407",
+          "agentId": "7fba15d2-a08f-495b-b520-74432896ae2e",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1659285911600,
+          "endTime": 1659285923311,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f818294a-b859-4d5a-9f9b-716f66e3b9f3",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 11711,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11711
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0663ee0d-a571-4a3a-adc8-a70b284143ae",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1648794000792,
+          "endTime": 1648796239288,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e5ce3c82-60a5-4d14-a524-a204753233b0",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 94814,
+              "ringingCount": 2,
+              "ringingDuration": 20811,
+              "totalDuration": 2238496
+            }
+          ]
+        },
+        {
+          "agentSessionId": "069d1b21-9ffa-4647-9cd9-5f039cf6d638",
+          "agentId": "AXV497uB6YUpW6rPJ04n",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1649238328164,
+          "endTime": 1649238455369,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e1022922-6a10-49ef-bc79-c3ba415a9470",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 127205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 127205
+            }
+          ]
+        },
+        {
+          "agentSessionId": "06d0521e-a40e-426d-b771-f2124c0b203c",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF-Two",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1664363805231,
+          "endTime": 1664365297515,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4ac83c68-8c77-488f-80fd-a787c78e97c1",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 1441310,
+              "ringingCount": 1,
+              "ringingDuration": 4263,
+              "totalDuration": 1492284
+            }
+          ]
+        },
+        {
+          "agentSessionId": "06d53995-ab4e-4bb0-82d8-8fbb1e6bfb2d",
+          "agentId": "c26b4215-510c-4bf9-95a8-5cb66d43543b",
+          "teamName": "Ranjan_Team1",
+          "siteName": "TestSite-RJ",
+          "startTime": 1661487814868,
+          "endTime": 1661488265937,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6618c03e-2c65-4ebb-8967-d4317e64c5e7",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 5325,
+              "ringingCount": 1,
+              "ringingDuration": 6535,
+              "totalDuration": 451069
+            }
+          ]
+        },
+        {
+          "agentSessionId": "06d6b44f-b5bc-4a07-abbe-326f1a69cd04",
+          "agentId": "e7ed0955-3d81-4745-878d-22667d811f2b",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1654838853885,
+          "endTime": 1654840453659,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3434abe2-a399-446e-b0e1-f63ed6a95a4e",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 1599774,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1599774
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0725f30c-943a-46ae-a2eb-a09d8bc5c949",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1644954138738,
+          "endTime": 1644970779607,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "dafcf8d0-9bf9-4098-b37d-b6e0426d2826",
+              "channelType": "telephony",
+              "idleCount": 126,
+              "idleDuration": 1648476,
+              "ringingCount": 7,
+              "ringingDuration": 45777,
+              "totalDuration": 16640869
+            }
+          ]
+        },
+        {
+          "agentSessionId": "073371bd-647d-4f57-b993-50813a636162",
+          "agentId": "7fba15d2-a08f-495b-b520-74432896ae2e",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1664272163066,
+          "endTime": 1664272205210,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fcb9594b-bb28-4d0d-a0b7-d6f89a089d62",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 23714,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 42144
+            }
+          ]
+        },
+        {
+          "agentSessionId": "07778455-3863-40e5-beb8-2f69ed93dd2f",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1644866600723,
+          "endTime": 1644868057987,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e456933a-addd-4811-b182-8879c8e69541",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123854,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1457264
+            }
+          ]
+        },
+        {
+          "agentSessionId": "077acdd3-a143-406d-bee4-c48e2107933d",
+          "agentId": "f6c31707-8124-4054-816c-795848cf4ea6",
+          "teamName": "Bangalore_Team",
+          "siteName": "Bangalore",
+          "startTime": 1654858985511,
+          "endTime": 1654860792700,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d854c105-9745-4a72-947e-c666ed908361",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 1497090,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1807189
+            }
+          ]
+        },
+        {
+          "agentSessionId": "077d3efa-90bc-47e4-897a-00d454e51640",
+          "agentId": "f7e8835b-73b5-4337-b156-86c6185f91f5",
+          "teamName": "Team_config",
+          "siteName": "Site_config",
+          "startTime": 1657702488586,
+          "endTime": 1657718401026,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "07d4580c-dc76-4ba4-85ac-127274fdef2f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 15912440,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 15912440
+            }
+          ]
+        },
+        {
+          "agentSessionId": "078dbfd6-1258-4181-9b19-a7ec3d6de381",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1645781118809,
+          "endTime": 1645784869771,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b149c816-31aa-43c5-83e3-4a7ff8a744d4",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 3503940,
+              "ringingCount": 2,
+              "ringingDuration": 20827,
+              "totalDuration": 3750962
+            }
+          ]
+        },
+        {
+          "agentSessionId": "07c04103-a6d9-488b-9ecb-cab2f955f589",
+          "agentId": "1216",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1655793657776,
+          "endTime": 1655794197985,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5cc03ca3-b342-4591-b2be-910e943d1e3d",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 25383,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 540209
+            }
+          ]
+        },
+        {
+          "agentSessionId": "07c18379-81b0-4818-9f1f-6aea1b8cf531",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1670478905652,
+          "endTime": 1670490718700,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e9925e5d-8da3-4745-9c72-047ea667a18e",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 11813048,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 11813048
+            }
+          ]
+        },
+        {
+          "agentSessionId": "084be8f4-c83f-4d8d-9966-a79ba02fe938",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1663919438605,
+          "endTime": 1663921323323,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "faa810b3-c73c-41e6-b4b7-aa3ec58eac3f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 1884718,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1884718
+            }
+          ]
+        },
+        {
+          "agentSessionId": "085a6021-2432-48d9-be28-3c45ad6c3466",
+          "agentId": "1a4993fd-d7c7-4377-bdc3-951596274900",
+          "teamName": "WebexTeams_Desktop_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1646039462979,
+          "endTime": 1646039496358,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8a17a529-5338-4842-a791-21267408466c",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 33379,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 33379
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0866f307-6852-4cd5-9cbf-9c5c7c7a12dc",
+          "agentId": "7fba15d2-a08f-495b-b520-74432896ae2e",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1655448361814,
+          "endTime": 1655465865999,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4bb33ba1-1d37-4146-8d14-1fd819191a03",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 387418,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 17504185
+            }
+          ]
+        },
+        {
+          "agentSessionId": "087ee4b8-542e-4333-aeca-5c5fd3016a25",
+          "agentId": "AXaFp1MYH5Tuplm_IylU",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1646388613998,
+          "endTime": 1646389714587,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "83f44276-8a8e-43f1-a164-336181154eb5",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 405831,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1100589
+            }
+          ]
+        },
+        {
+          "agentSessionId": "08841cb2-2489-4c69-8d79-072b28353161",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1645651260164,
+          "endTime": 1645737520005,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3174821c-ad23-4a52-8340-8e9fe1f346df",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 80737630,
+              "ringingCount": 3,
+              "ringingDuration": 18286,
+              "totalDuration": 86259841
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0890fb26-c1d9-4154-b918-775ebcd2dd44",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1645178824322,
+          "endTime": 1645183756336,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "885131ac-e0fb-41c1-a6c4-3c78bd17dc54",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 1390555,
+              "ringingCount": 3,
+              "ringingDuration": 14540,
+              "totalDuration": 4932014
+            }
+          ]
+        },
+        {
+          "agentSessionId": "08d72434-603a-4b43-86c3-17fd5bd8c613",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1655881328972,
+          "endTime": 1655881397111,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9b9f3f24-360b-4b60-9423-1f7bfc30c397",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 28787,
+              "ringingCount": 1,
+              "ringingDuration": 8774,
+              "totalDuration": 68139
+            }
+          ]
+        },
+        {
+          "agentSessionId": "090f0776-aee9-4390-bdcb-ac2b8940ae12",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF-Two",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1658382079935,
+          "endTime": 1658396249155,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "08cf8913-c201-4903-9d80-8d89be568047",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 10860394,
+              "ringingCount": 15,
+              "ringingDuration": 144223,
+              "totalDuration": 14169220
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0918d07d-2eb7-49cd-b95f-3bdcfc15678f",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1648641430990,
+          "endTime": 1648645327200,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e2e5c9b9-8205-4520-a6c2-7fd297f6bc8d",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 1762252,
+              "ringingCount": 4,
+              "ringingDuration": 34932,
+              "totalDuration": 3896210
+            }
+          ]
+        },
+        {
+          "agentSessionId": "092c1751-2b1d-4e8c-a1ec-00a89c2870ff",
+          "agentId": "1107",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1656327471948,
+          "endTime": 1656329705644,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b939181a-bc37-4877-bff0-7b9c16401af7",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 811848,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2233696
+            }
+          ]
+        },
+        {
+          "agentSessionId": "09cff07b-786b-48dc-868f-2c3260918835",
+          "agentId": "1107",
+          "teamName": "Team-SRI-FF-Two",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1657690931588,
+          "endTime": 1657698820226,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "be3b8ecf-4f5e-4b31-8069-2807d2376f60",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 1273736,
+              "ringingCount": 1,
+              "ringingDuration": 4303,
+              "totalDuration": 7888638
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0a102e40-613b-4294-9481-0dc073852d49",
+          "agentId": "AXhp-a6H2rXYxRmva60S",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1648461782676,
+          "endTime": 1648462340313,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4ed24288-ffbf-48cb-ac93-b75be472c864",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 54262,
+              "ringingCount": 1,
+              "ringingDuration": 6632,
+              "totalDuration": 557637
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0a1c0b8b-f25a-4eda-b475-948383eae041",
+          "agentId": "7fba15d2-a08f-495b-b520-74432896ae2e",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1666283739658,
+          "endTime": 1666288893877,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "663f66e0-b4dd-4bb9-9f9e-eac90499b711",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 388347,
+              "ringingCount": 8,
+              "ringingDuration": 36845,
+              "totalDuration": 5154219
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0a454d67-bbf9-457b-8ccb-d56bde3a3373",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1651074919183,
+          "endTime": 1651075088192,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ed23c6e8-424d-4c2a-8e71-7c84b097c878",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3248,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 169009
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0a669c7e-1f93-46a2-abc2-9c28b6ef44fc",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1657789401622,
+          "endTime": 1657804369310,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "c0c3c49f-a35f-4ca5-98aa-eadd545c1344",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 6116436,
+              "ringingCount": 6,
+              "ringingDuration": 43378,
+              "totalDuration": 14967688
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0a7581e5-f284-4b7a-a5cd-500614fcab17",
+          "agentId": "AXV4TawBL4YBh5I5fJEt",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1663331974249,
+          "endTime": 1663334931361,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4ef772ef-d523-47f9-8127-caf1291e7c59",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 122966,
+              "ringingCount": 1,
+              "ringingDuration": 3951,
+              "totalDuration": 2957112
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0b6a0478-f7b5-4a0e-8947-2a1c84d02592",
+          "agentId": "2757d588-e188-421e-8253-65523c9d77f9",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1659335429821,
+          "endTime": 1659335941190,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "1858686a-d3af-433d-837f-81d7d27bfd80",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 511369,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 511369
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0b7db4f7-95ef-4f77-a7ab-30e3846640ba",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1653900356466,
+          "endTime": 1653911078118,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "84ca1306-cdd4-4fd2-88ad-76f49473a747",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 9791533,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 10721652
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0bd701a3-9675-4dd8-bf15-bc96b9726948",
+          "agentId": "7a8447da-28b4-4266-8765-b19afece4326",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1655827550622,
+          "endTime": 1655830123450,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "91442c70-680b-4998-9386-cef54b330b52",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123977,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2572828
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0bd88d3a-900d-42f3-ad17-57617f25e49a",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1659341695767,
+          "endTime": 1659342364953,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "907c53f2-fdce-4bfb-b47f-dd859258f28b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 669186,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 669186
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0be91198-3eec-44b6-a128-02a47dcf05ec",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1661847827623,
+          "endTime": 1661859384346,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "04bd1dd6-08c1-469f-b862-e3bb25498feb",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 7139940,
+              "ringingCount": 2,
+              "ringingDuration": 7489,
+              "totalDuration": 11556723
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0bfcdefc-c823-4efd-9fa4-a151c73952b0",
+          "agentId": "7fba15d2-a08f-495b-b520-74432896ae2e",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1664267389323,
+          "endTime": 1664268242564,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6085af55-fb61-4f7d-8952-bf2d3d23db30",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 123567,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 853241
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0bfe8793-115e-40fa-a0f3-7a4c2b47d9df",
+          "agentId": "AXW8OBN1L4YBh5I5lOu-",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1647416906469,
+          "endTime": 1647417309517,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7efb42a2-9f14-4743-a61e-9ae680b3994b",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 21290,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 403048
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0c3ec232-4b46-4473-89b3-cbebe2c7b9d1",
+          "agentId": "AXW8ODqmL4YBh5I5lOvA",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1664431436434,
+          "endTime": 1664436392679,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "173a035f-90e6-4644-894a-cde23e179ae6",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 4632437,
+              "ringingCount": 3,
+              "ringingDuration": 11344,
+              "totalDuration": 4956245
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0c838c82-a069-42a5-a3fc-53b8f2f5f7d3",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1658138929227,
+          "endTime": 1658141387823,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "453e01b3-f4a4-461a-9824-0f958c861a70",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 83450,
+              "ringingCount": 3,
+              "ringingDuration": 14239,
+              "totalDuration": 2458596
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d1c8aa3-4da7-43a9-a117-ba669887f115",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "callDistributionCheck1",
+          "siteName": "America",
+          "startTime": 1653904659289,
+          "endTime": 1653904904820,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "174bd9b6-ac0e-4c64-b151-43af7237e000",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 7072,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 245531
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d218a65-30d1-46c1-ae50-f8d3b8d9354a",
+          "agentId": "7498173b-2508-408a-99f3-ce2c94e3d091",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1650437820710,
+          "endTime": 1650445168263,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fa1d33d9-c8ab-409c-8a12-46934b92f3d9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 5047237,
+              "ringingCount": 8,
+              "ringingDuration": 60161,
+              "totalDuration": 7347553
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d40386f-e200-48dd-b39a-2646f69fdabf",
+          "agentId": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f",
+          "teamName": "callDistributionCheck1",
+          "siteName": "America",
+          "startTime": 1650432808608,
+          "endTime": 1650437528470,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "1e2ca6fe-b82b-4843-ac1c-babef9271cd2",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4719862,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4719862
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d68a2e7-6015-4cb7-9778-6c6a3746ff5c",
+          "agentId": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1663758886028,
+          "endTime": 1663758931544,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a2ca341d-81ba-4d0a-9328-4b31d7a2de7d",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3769,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 45516
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d93f234-ad0a-4aa2-b0f8-0ff7555594fd",
+          "agentId": "f98b8488-6903-4e6a-8b61-88cb550d102a",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1649908326478,
+          "endTime": 1649917907039,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e27d92aa-af2d-40e5-bb5a-7f6f88f16472",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 45067,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 9580561
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0d956615-1172-4ef9-897e-56e210169693",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1663854232489,
+          "endTime": 1663904889307,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d2ffd526-a878-4a76-8fd9-46ef3354785b",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 128142,
+              "ringingCount": 1,
+              "ringingDuration": 15628,
+              "totalDuration": 50656818
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0dce5e99-ee63-434d-8415-8ad3641f3eaf",
+          "agentId": "1022",
+          "teamName": "Dakshu-Team2",
+          "siteName": "America",
+          "startTime": 1653483540292,
+          "endTime": 1653484211646,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d29f0ba8-c0b9-40ec-b181-2454d6e8a8ba",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 6272,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 671354
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0de337ae-9844-4405-a33d-7fce1b3cafa3",
+          "agentId": "dccc0b28-1bc9-4741-898c-79b989144d1a",
+          "teamName": "AksTeam2",
+          "siteName": "Mig_Site",
+          "startTime": 1657805869307,
+          "endTime": 1657806585447,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "2aaff752-c1f7-482c-a2ea-20a48cb67c7a",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 716140,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 716140
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0de3fe88-d7db-4a42-9f4d-d7240dba879c",
+          "agentId": "011689bf-065e-4bce-b4b5-2cf6861e1ef6",
+          "teamName": "Ranjan_Team1",
+          "siteName": "TestSite-RJ",
+          "startTime": 1650615341257,
+          "endTime": 1650615426772,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "bf62caec-0318-4e5b-90a5-d7fd2818f518",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 26335,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 85515
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e445ce1-f290-4a03-959a-ff4c760773b1",
+          "agentId": "7498173b-2508-408a-99f3-ce2c94e3d091",
+          "teamName": "Team _QbasedAgent1",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1650178632469,
+          "endTime": 1650180357758,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b2a3b364-7d2b-4989-a273-05db8c56ef3e",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 133950,
+              "ringingCount": 5,
+              "ringingDuration": 87346,
+              "totalDuration": 1725289
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e656d65-ac9b-42de-9bb1-7c498b11d4b0",
+          "agentId": "f98b8488-6903-4e6a-8b61-88cb550d102a",
+          "teamName": "Team _QbasedAgent2",
+          "siteName": "Site_QbasedAgent",
+          "startTime": 1649905071313,
+          "endTime": 1649905079657,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "25b1002d-de18-4ffd-ac5b-b63c46659604",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3335,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 8344
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e689c27-b080-4d5d-8731-c321a0ec5549",
+          "agentId": "1a4993fd-d7c7-4377-bdc3-951596274900",
+          "teamName": "AksTeam1",
+          "siteName": "Mig_Site",
+          "startTime": 1645630702152,
+          "endTime": 1645631103964,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "dbe5ea25-ee12-41be-a6f3-cdbbe87240e8",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 5369,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 401812
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e6ee213-323f-48af-82f5-de50003e9c38",
+          "agentId": "1106",
+          "teamName": "Team-SRI-FF",
+          "siteName": "Site-SRI-FF",
+          "startTime": 1657178514932,
+          "endTime": 1657184419053,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "61d8dbf2-21a7-4bdb-a8ba-d735a810b12f",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 5424750,
+              "ringingCount": 1,
+              "ringingDuration": 8541,
+              "totalDuration": 5904121
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e8ffee0-edae-43f9-ba89-61d03e88d15b",
+          "agentId": "AXZ0bhWb0G6K4V3pf5OC",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1658295439291,
+          "endTime": 1658295574808,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "249b4d74-56fa-4c4e-9152-267c41762ebe",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 99606,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 135517
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0e96008b-79f1-42d0-ab44-94d78dca68ee",
+          "agentId": "c17962e7-de45-416e-bfe9-1ad7a48f5f64",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1657172979613,
+          "endTime": 1657173006926,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "49a39c12-f3ab-4ca2-bcd3-18265b2057e3",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 27313,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 27313
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0eb88f52-f06f-45af-bca9-f459fd08cc61",
+          "agentId": "AXV4TawBL4YBh5I5fJEt",
+          "teamName": "California",
+          "siteName": "America",
+          "startTime": 1663829247061,
+          "endTime": 1663830909364,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ea94cf1f-e447-4e40-9f12-5e85d87ec0de",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3572,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1662303
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0edd710e-6060-4170-b3fb-0cc44311e14e",
+          "agentId": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1",
+          "teamName": "Mig_Team",
+          "siteName": "Mig_Site",
+          "startTime": 1649139907502,
+          "endTime": 1649139927196,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "55f89b45-d365-430d-8db7-d7b7ba59eab1",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 10630,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 19694
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0f36932a-3688-4dda-a25a-6147998a974c",
+          "agentId": "28ea80ba-874f-436f-9cfc-bff8740f9205",
+          "teamName": "Dakshu-Team1",
+          "siteName": "America",
+          "startTime": 1646647631329,
+          "endTime": 1646647923872,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "090eb394-75e5-4421-801f-7e3a3200561e",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 52703,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 292543
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": true,
+        "endCursor": "0f36932a-3688-4dda-a25a-6147998a974c"
+      }
+    }
+  }
+}

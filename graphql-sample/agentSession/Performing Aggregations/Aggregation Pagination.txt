@@ -1,0 +1,55 @@
+{
+  # Aggregation Pagination example
+  # Pagination is also possible in a Group by Aggregation query
+  # Check the response, hasNextPage is set to true and the endCursor is present
+  # For fecthing the next page check query in Aggregation Pagination 2.txt
+  agentSession(from: 1644859375000, to: 1671038575000
+    aggregations : [
+        {
+            field : "channelInfo.connectedCount"
+            name : "Sum of connectedCount"
+            type : sum
+        }
+        {
+            field : "channelInfo.connectedDuration"
+            name : "average of connectedDuration"
+            type : average
+        }
+        {
+            field : "channelInfo.idleCount"
+            name : "Sum of idleCount"
+            type : sum
+        }
+                {
+            field : "channelInfo.idleDuration"
+            name : "average of idleDuration"
+            type : average
+        }
+
+    ]
+    aggregationInterval : {
+        interval : DAILY
+    }
+    pagination: {
+      # Passing the cursor as "NA" is same as not passing any cursor value
+      cursor: "NA"
+    }
+) {
+    agentSessions {
+        intervalStartTime
+        teamId
+        siteId
+        channelInfo {
+            channelType
+        }
+        aggregation {
+            name
+            value
+        }
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}
