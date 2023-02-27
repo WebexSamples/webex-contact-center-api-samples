@@ -1,0 +1,20 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
+          "totalDuration": 620277,
+          "lastTeam": {
+            "id": "fb00d141-177f-436c-aa11-20f9a3be56da",
+            "name": "Arryn_team2"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

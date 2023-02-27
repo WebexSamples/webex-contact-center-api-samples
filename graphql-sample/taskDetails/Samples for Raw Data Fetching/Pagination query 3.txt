@@ -1,0 +1,39 @@
+{
+  # Pagination example 3
+  # Continue passing the new cursor until the hasNextPage is set to false
+  # Since the hasNextPage is set to false, no more pages are available.
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    filter: { lastTeam: { id: { equals: "team1" } } }
+    pagination: {
+      # Until the hasNextPage is set to false keep iterating and pass the nextCursor
+      cursor: "4"
+    }
+  ) {
+    tasks {
+      id
+      queueCount
+      ringingDuration
+      totalDuration
+      lastAgent {
+        id
+        name
+      }
+      lastTeam {
+        id
+        name
+      }
+      lastSite {
+        id
+        name
+      }
+    }
+    pageInfo {
+      # Check the response - This field has turned to false.
+      hasNextPage
+      # Since no more pages exists it endCursor value should be ignored and not use, it has changed to null.
+      endCursor
+    }
+  }
+}

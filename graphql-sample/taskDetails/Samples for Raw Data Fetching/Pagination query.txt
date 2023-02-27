@@ -1,0 +1,42 @@
+{
+  # Pagination
+  # Include the pageInfo object in the query, to fetch hasNextPage and endCursor
+  # If the hasNextPage is set to true the cursor can be passed in the next query
+  # Check the next example - Pagination query 2.txt
+  taskDetails(from: 1644859375000, to: 1671038575000
+   filter :{
+       lastTeam : {
+           id : {equals : "team1"}
+       }
+   }
+    pagination : {
+        # Giving cursor as "NA" is equivalent of fetching the first cursor
+        cursor : "NA"
+    }
+  ) {
+    tasks {
+      id
+      queueCount
+      ringingDuration
+      totalDuration
+      lastAgent {
+          id
+          name
+      }
+      lastTeam {
+          id
+          name
+      }
+      lastSite {
+          id
+          name
+      }
+    }
+    pageInfo {
+      # Flag which indicates if the next page exists or not.
+      hasNextPage
+      # Nullable String (not a necessary a Numberic value) to fetch the next page
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "aggregation": [
+            {
+              "name": "Count of Id",
+              "value": 10.0
+            },
+            {
+              "name": "average of totalDuration",
+              "value": 134132.5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

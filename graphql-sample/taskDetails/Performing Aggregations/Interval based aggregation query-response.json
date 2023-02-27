@@ -1,0 +1,4406 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "intervalStartTime": 1644796800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 331414.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644796800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 335493.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644796800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 337525.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644883200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 497631.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644883200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 503530.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644883200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 506595.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644969600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168066.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644969600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169881.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1644969600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170915.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645056000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168319.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645056000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170376.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645056000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171275.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645142400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168698.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645142400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170607.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645142400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171772.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645228800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169085.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645228800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171082.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645228800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172018.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645315200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169449.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645315200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171388.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645315200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172456.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645401600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169733.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645401600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171838.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645401600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172829.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645488000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170176.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645488000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172184.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645488000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173148.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645574400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170617.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645574400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172579.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645574400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173420.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645660800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170984.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645660800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172833.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645660800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": null
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645660800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173906.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645747200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171211.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645747200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173365.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645747200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174255.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645833600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171629.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645833600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173560.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645833600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174750.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645920000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171962.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645920000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174123.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1645920000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174961.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646006400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172349.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646006400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174505.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646006400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 175302.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646092800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166802.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646092800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166629.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646092800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169831.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646179200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167076.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646179200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167132.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646179200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170162.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646265600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167565.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646265600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167305.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646265600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170607.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646352000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167854.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646352000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167859.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646352000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170872.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646438400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168253.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646438400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168262.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646438400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171178.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646524800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 163827.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646524800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 164242.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646524800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167131.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646611200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165061.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646611200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165442.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646611200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169352.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646697600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168316.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646697600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168265.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646697600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171265.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646784000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167819.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646784000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167601.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646784000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170840.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646870400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165354.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646870400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165539.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646870400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 168906.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646956800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167439.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646956800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167255.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1646956800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170306.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647043200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167266.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647043200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167376.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647043200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170358.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647129600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167458.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647129600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167307.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647129600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170235.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647216000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167258.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647216000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167399.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647216000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170343.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647302400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165622.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647302400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 165550.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647302400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169161.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647388800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 164058.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647388800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 161090.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647388800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 164940.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647475200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 159853.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647475200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 161290.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647475200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 162921.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647561600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167389.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647561600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167393.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647561600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170218.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647648000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167426.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647648000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167321.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647648000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170253.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647734400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167456.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647734400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167247.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647734400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170297.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647820800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167447.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647820800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167259.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647820800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170294.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647907200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167150.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647907200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167179.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647907200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170301.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647993600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167136.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647993600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166959.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1647993600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169905.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648080000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167088.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648080000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166949.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648080000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169963.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648166400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167006.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648166400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167016.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648166400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169978.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648252800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166809.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648252800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167122.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648252800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170069.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648339200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167006.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648339200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166978.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648339200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170016.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648425600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166948.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648425600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166960.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648425600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170092.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648512000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167009.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648512000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167007.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648512000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169984.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648598400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167095.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648598400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 166833.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648598400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170072.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648684800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167057.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648684800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167078.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648684800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169865.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648771200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172778.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648771200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 175163.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648771200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 176059.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648857600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172990.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648857600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174999.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648857600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 176011.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648944000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 173009.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648944000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174970.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1648944000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 176021.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649030400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172630.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649030400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 174825.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649030400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 175407.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649116800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 167182.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649116800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 169253.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649116800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 171605.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649203200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170380.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649203200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 170800.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649203200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 172552.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649289600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 340620.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649289600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 344411.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649289600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 346126.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649376000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 337465.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649376000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 341084.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649376000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 341227.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649462400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 341371.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649462400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 345290.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649462400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 347309.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649548800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 341793.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649548800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 345517.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649548800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 347767.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649635200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 495494.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649635200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 497454.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649635200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 504345.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649721600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 494343.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649721600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 496959.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649721600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 503223.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649808000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 494221.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649808000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 495873.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649808000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 502931.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649894400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 497835.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649894400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 499492.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649894400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 506612.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649980800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 498361.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649980800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 500311.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1649980800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 507483.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650067200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 658407.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650067200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 660463.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650067200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 670609.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650153600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 500107.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650153600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 502364.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650153600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 509222.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650240000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 341848.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650240000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 343618.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650240000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 347335.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650326400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 342096.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650326400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 343859.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650326400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 347953.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650412800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 342324.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650412800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 344043.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650412800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 348648.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650499200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 502164.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650499200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 503894.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650499200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 511174.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650585600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 502929.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650585600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 505113.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650585600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 511775.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650672000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 344467.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650672000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 346136.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650672000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 350474.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650758400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 344386.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650758400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 346345.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650758400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 350346.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650844800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 344468.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650844800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 346342.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650844800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 350266.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650931200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 184835.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650931200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 187025.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1650931200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 188110.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651017600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19391.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651017600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19074.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651017600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19288.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651104000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18435.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651104000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18585.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651104000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18516.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651190400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17728.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651190400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17886.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651190400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17709.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651276800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16973.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651276800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16947.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651276800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17187.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651363200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16349.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651363200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16329.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651363200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16213.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651449600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 15306.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651449600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 15260.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651449600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 15370.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651536000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 14041.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651536000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 13745.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651536000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 14197.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651622400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12812.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651622400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12975.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651622400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12873.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651708800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11637.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651708800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11914.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651708800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11786.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651795200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10638.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651795200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10610.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651795200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10767.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651881600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9314.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651881600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9565.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651881600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9442.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651968000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 8130.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651968000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 8129.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1651968000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 8001.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652054400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 7176.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652054400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 7016.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652054400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 7116.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652140800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 6365.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652140800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 6264.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652140800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 6462.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652227200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 5704.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652227200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 5553.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652227200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 5618.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652313600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 4775.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652313600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 4845.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652313600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 4671.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652400000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3670.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652400000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3677.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652400000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 3621.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652486400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2610.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652486400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2665.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652486400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 2739.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652572800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1921.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652572800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1954.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652572800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1924.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652659200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1279.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652659200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1214.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652659200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 1091.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652745600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 600.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652745600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 591.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652745600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 547.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652832000000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 211.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652832000000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 217.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1652832000000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 202.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1653782400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "abc"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 6.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1667260800000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1667260800000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1667260800000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 24.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 20.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668902400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 16.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669075200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 65.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669075200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 73.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669075200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 72.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 23.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 22.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 20.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 23.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "video",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "video",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669334400000,
+          "channelType": "video",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 18.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 25.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 21.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 25.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "social_channel",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 12.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 23.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669507200000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 28.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 17.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 21.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Delhi"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 19.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669593600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Mysore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 23.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "chat",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 64.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "email",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 72.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1672617600000,
+          "channelType": "telephony",
+          "lastSite": {
+            "name": "Bangalore"
+          },
+          "aggregation": [
+            {
+              "name": "Calls Completed",
+              "value": 74.0
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

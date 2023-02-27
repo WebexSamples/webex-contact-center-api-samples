@@ -1,0 +1,22 @@
+{
+  # Some fields in the schema are only filterable using the extFilter argument.
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    # Refer schema for more information on what fields should use extFilter.
+    extFilter: { queues: { name: { equals: "Arryn_Queue" } } }
+  ) {
+    tasks {
+      id
+      queueCount
+      queues {
+        id
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

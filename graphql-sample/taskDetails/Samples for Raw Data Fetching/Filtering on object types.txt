@@ -1,0 +1,24 @@
+{
+  # Filtering based on complex objects.
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    filter: {
+      # Filter syntax for objects is same as how a field is queried.
+      # For example - lastTeam followed by name.
+      lastTeam: { name: { equals: "Arryn_team2" } }
+    }
+  ) {
+    tasks {
+      id
+      lastTeam {
+        name
+        id
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

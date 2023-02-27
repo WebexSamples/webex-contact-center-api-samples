@@ -1,0 +1,252 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "isActive": false,
+          "id": "ae281309-8846-459e-a9c0-a7f75bc67f8e",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "49da0f05-f518-4c18-b846-757077a84d05",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "05d32bcf-cb76-40ea-b278-e789f544c7ec",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "c8427789-6784-43e0-949d-33b153ee4adc",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "4aa37406-c681-46e2-b9a2-d40c8743f71c",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "6aa8aaf4-bea9-4306-820f-bf14f9a1dd71",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "d5b1cedc-8bf9-464b-8d31-f5d170c16e6b",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "750dd88d-28a1-4a40-8c21-04149cd2a7bb",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "96d85b2e-ffc0-43c1-be14-6b37782f67bb",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "1bb23515-ff5b-4978-9419-bfb09a1efd3c",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "54cf6196-d4bf-46f8-a1ce-6a244298afa4",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team2"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "0f8863cf-9fb0-466d-80e9-58598777ba02",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team1"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "5ff4f019-3d34-450e-9220-25b20c7389c8",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "6e2b62c7-a4c3-46fe-a649-541157968b77",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "8b802b5a-d383-4aba-9b2c-6cebc04d2d17",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "4a7af0bd-0242-46ed-a596-dfacf81fe66a",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "e9751ed7-1a9a-4757-a9d7-b25f5d222491",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "d42000db-3017-4312-b274-680f161b36be",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "37db9148-7b42-4e77-aacb-cd28935aafbe",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "59d4dbe3-0c5a-49d7-aa4d-06e6f63869aa",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "28929047-3205-470c-87bf-45b1117b8468",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": "Arryn_team"
+          }
+        },
+        {
+          "isActive": false,
+          "id": "cb2afd27-97d3-42d9-bade-bfaf938633a7",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        },
+        {
+          "isActive": false,
+          "id": "1b0d94b9-cdd5-42ef-938f-6afdc37612ee",
+          "direction": "inbound",
+          "channelType": "telephony",
+          "status": "ended",
+          "lastTeam": {
+            "name": null
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

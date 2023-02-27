@@ -1,0 +1,1092 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "load-bulk-api-Contact-44-71837bd8-fc84-404d-b976-4af234706888",
+          "queueCount": 3,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-4-chat-efcf3e3d-cd9d-49bb-98e2-5b81f98e79b2",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-53-8b10137d-c1bd-44a3-b18a-7610870a874a",
+          "queueCount": 3,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-13-chat-5d5fb2a9-9374-4a0d-b382-0caa69463641",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-12-6fe14648-789c-47a0-b187-ef9f5ea5ce14",
+          "queueCount": 1,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-12-telephony-a3bfb652-8e1d-49c0-852f-748d0af69fbd",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-22-69bfa58f-d112-456d-bfba-afcaccb56312",
+          "queueCount": 2,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-2-email-e8369fe9-3362-4dd9-beca-a3eb70bb466f",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-31-51012341-1361-45c3-a91b-a68399b3a909",
+          "queueCount": 5,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-11-email-c314705e-125b-4af4-bad6-92071887e321",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-37-726c6a2e-bbb4-47ae-ae12-f1e676a4b0eb",
+          "queueCount": 2,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-17-email-3f16c4d4-bd4c-4ff5-911c-7605c0d4c01a",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-40-a27df553-5f3f-4618-9a6e-0f344e4b0a47",
+          "queueCount": 1,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-20-email-7426ddb3-7b1c-4c20-a170-b83c824f3cd8",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-52-c649214a-7ab7-478b-88f9-39e1fff0988d",
+          "queueCount": 4,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-12-chat-4b110532-9394-40d8-838c-132d1251d8fe",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-15-868478a5-dfe9-43a1-a463-f1f3f2c58306",
+          "queueCount": 2,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-15-telephony-3a99db46-43aa-40f7-a913-13baf3b56d4b",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-31-2ac5e917-a35d-4f37-ad6c-3da065fef747",
+          "queueCount": 5,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-11-email-5128c034-e97c-4be0-9d4d-03883e5b3fae",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-37-d2593c00-4fa5-4571-980a-74e6c0536236",
+          "queueCount": 1,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-17-email-ce5b5c04-b9fc-4365-8c87-76d209711610",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-38-da2561af-1db7-4dc5-b030-4181b5b2de05",
+          "queueCount": 5,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-18-email-c8329d96-50bd-48d3-9084-90449be2bc26",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-57-a43b9761-fb21-47e1-9322-9d9e36760108",
+          "queueCount": 1,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-17-chat-b36b5f18-ef84-4282-8363-42fb54e2b55e",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-18-4916e7c4-96cd-4af5-94bd-aa3c25aeee61",
+          "queueCount": 2,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-18-telephony-06a1e8a9-c43e-4ce3-a09a-ee9737fc758e",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-28-305b19dd-bee6-4d57-8e1d-cb1ab7b5a357",
+          "queueCount": 3,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-8-email-e192e1db-1309-444c-8727-6ee1662cf2be",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-41-01e9c997-14c7-4259-b794-86a1a6e18576",
+          "queueCount": 5,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-1-chat-62b26d5a-529c-4034-a3f3-978bc3166fe9",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-49-8297c8cf-d23f-4f36-b63f-e6aa4b1557af",
+          "queueCount": 4,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-9-chat-f3760828-1b6a-46fd-8cad-af6d5016bdad",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-4-9777e94a-46f7-43f7-85da-07a490fe0ec5",
+          "queueCount": 5,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-4-telephony-bb5eaf3b-a36d-44a6-9a6d-264c5850b349",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-22-b19001f9-0794-4f4a-86b2-fd52c0a122bf",
+          "queueCount": 4,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-2-email-ba5ed18e-c1fc-4d9d-829a-a1e9bd386b17",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-24-2c42c7f8-9854-4dd5-a50d-253cb2cdb2a2",
+          "queueCount": 2,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-4-email-f063efaf-55b5-46fe-ace9-29d4f9ad9afc",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-33-c0c4493f-7a36-4633-a735-d0d00224d753",
+          "queueCount": 5,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-13-email-6a7e45ae-bc1e-4b56-bfcf-9dd0a26e6126",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-36-e418e566-a154-407f-b801-d34a54d2e952",
+          "queueCount": 5,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-16-email-a9cd9f60-5e57-4687-b7c2-a8c7f1de098e",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-39-dd24ced0-eed0-4994-8b7a-6e37e168f0b8",
+          "queueCount": 2,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-19-email-adc8f145-7031-4f57-b5df-8d305403ef0c",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-50-e975e124-80b8-4469-994f-5cc01da1dda0",
+          "queueCount": 5,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-10-chat-3239f156-7a35-41bb-8758-bcd67176043c",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-58-0ed8db90-8170-4037-862a-be82fcb8bb3f",
+          "queueCount": 2,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-18-chat-6fbef3d3-03d5-4ce9-9045-9f2fe09f78e9",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-19-a50e1b5c-b6ab-4d4b-9828-5c8b7f92a105",
+          "queueCount": 1,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-19-telephony-63f4d829-6080-4e0b-8f77-776005b882ed",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-29-fe478402-f0d7-4f27-9314-3d84f05456cf",
+          "queueCount": 1,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-9-email-80700cd9-52f9-4fa7-8c9d-380fea1a4334",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-48-6717fa2f-6454-4dc2-afa6-63f3ac66e585",
+          "queueCount": 2,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-8-chat-0008f795-a3d1-4119-81e6-447830d701c1",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-59-b6a1c198-3cd0-473e-99f9-b7099d72fb6a",
+          "queueCount": 4,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-19-chat-ca5984d4-42b3-4154-97e8-c914e13351b6",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-32-f71e6163-bf17-4b27-a5fc-fbe27c2225b7",
+          "queueCount": 1,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-12-email-48109c6d-0a54-45c7-90c7-6ab32546222c",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-49-1e2bdcf1-3791-41de-ab83-b8ac37109c28",
+          "queueCount": 2,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-9-chat-8cc4d14f-4896-4a6f-ae80-923e84c00c5c",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-2-924dc171-26ea-41ca-9315-fc55195c99a4",
+          "queueCount": 2,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-2-telephony-eb93c451-31bd-4c5e-b704-dd919f94dcb0",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-33-dfa6ef2e-4e51-4fcf-be06-ef9397d2628b",
+          "queueCount": 2,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-13-email-fd7a0855-16ea-4f29-b906-dcce868b9579",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-42-59dd31d8-7ae0-44b4-9ee2-7a31a4aa38c3",
+          "queueCount": 5,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-2-chat-348ae7b5-2bfc-48f5-8f95-c239651d8933",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-50-83913811-e52e-4a07-b58b-afd9b87882bc",
+          "queueCount": 5,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-10-chat-62cc1c8b-4fe4-4577-8846-69930a056fa9",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-56-f14ce804-f9d2-477d-aaa4-fd92bbbb1102",
+          "queueCount": 3,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-16-chat-967c8378-5cb6-4c38-bf15-d19f59e0ec48",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-58-bb08dcce-d4c5-47cf-ac91-c131b5c2370d",
+          "queueCount": 5,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-18-chat-3ba8e54a-5943-42e2-920c-de6cff638f85",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-1-ad69e019-e94a-424b-b7b8-564c67ef2396",
+          "queueCount": 3,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-1-telephony-86391097-bc52-4086-b502-5c4c2d62bc67",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-7-261959b5-b42a-444e-9c0c-412f48df9884",
+          "queueCount": 2,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-7-telephony-9becbf5c-1d63-4b80-99df-fbd4b1749670",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-21-31a55c47-791d-46d3-9784-d9dd7c1d9677",
+          "queueCount": 2,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-1-email-84a8b8c8-126e-4240-ad33-6571e72a4b48",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-24-eea76f21-d8c9-432b-a1f2-1389d24d03e0",
+          "queueCount": 4,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-4-email-bafc2544-099b-428c-bc2b-c4cc15944256",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-27-c1354f92-b5c0-433e-8268-efce11d98019",
+          "queueCount": 5,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-7-email-8cd2f060-e226-4ea6-8160-57407d9cfbc7",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-32-cdf88300-e4f5-4a99-981a-b38d8d184af0",
+          "queueCount": 3,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-12-email-9c87b8a0-070b-46ac-afe3-22a0dda61560",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-34-a484df89-9f25-46ee-bb42-0e6ba503b393",
+          "queueCount": 2,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-14-email-8873cab7-4f1b-4a31-8fc0-a859c051ab2f",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-36-26acc11e-654d-4291-88de-a304f0f0fa09",
+          "queueCount": 1,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-16-email-1219a245-0d03-46c8-9255-f6e8a62f272b",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-39-4f2f0b25-fa53-4d47-a619-4a58d002a246",
+          "queueCount": 1,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-19-email-aba9e6e2-c39b-4b23-8fc7-f46fa475264a",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-45-1e8d63f3-7562-4238-80c9-b29747f83a7f",
+          "queueCount": 1,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-5-chat-0c9c50f0-8945-4bd9-81bf-3fed5c53d988",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-47-bdbf3e2e-be44-434a-9ada-b0b48569b668",
+          "queueCount": 3,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-7-chat-74623179-47a1-4975-b2e1-abfb78c6d18d",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-53-49a84ea6-1251-440d-983b-a3fa80a44636",
+          "queueCount": 2,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-13-chat-437a7cf5-e960-46cb-a90e-50e9ca6d2f9a",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-54-219807e8-f37c-4dde-bca8-760e66cb642b",
+          "queueCount": 4,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-14-chat-64718445-a538-4414-8456-0f715ca6210f",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-60-7b3c3d92-7172-4497-92bd-c9acc3f79626",
+          "queueCount": 1,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-20-chat-27d21453-5d16-4053-a1d7-eec0a21d11f1",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-71-883a255b-9f8f-4914-92b7-cdc43d02426d",
+          "queueCount": 5,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-8-e2bebfeb-c235-4764-b73a-47cb5cb49b5e",
+          "queueCount": 4,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-8-telephony-65ac2ce7-fb18-4e2a-ab56-9e4c6af51bc4",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-13-da183931-7743-4938-b4a7-7b90c0186ccd",
+          "queueCount": 5,
+          "ringingDuration": 49380,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-13-telephony-42205907-e57f-4668-8df5-d2dbbdea5f15",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-18-faf2a625-ede7-4d9a-923e-e51781af1d44",
+          "queueCount": 1,
+          "ringingDuration": 37035,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-18-telephony-738ff1b3-2ce2-4eff-8464-6ca80b0d6f62",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "2",
+            "name": "Delhi"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-27-7f70d281-f0ef-48d9-85f5-4c9dcd319e66",
+          "queueCount": 4,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-7-email-e5550e41-1acf-402f-9c2d-04eedee710d0",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-28-7882233b-d310-451b-a8a3-64efad8dcd4a",
+          "queueCount": 3,
+          "ringingDuration": 61725,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-8-email-7af686cb-bc57-4c6f-8dd1-9a3e150f2837",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-30-4c825431-8e0d-4f3e-aadb-32b910c7f6ac",
+          "queueCount": 5,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-10-email-dc0b98a5-03f1-4d2f-afd2-b65b1550e163",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "3",
+            "name": "Mysore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-47-9097c146-9d65-4c8e-bd4f-a934813e98b6",
+          "queueCount": 3,
+          "ringingDuration": 24690,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-7-chat-aa92123f-845c-4619-84c5-9a2b68f5ce4b",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        },
+        {
+          "id": "load-bulk-api-Contact-55-606a7326-5dcd-4c0b-ac7a-8df1129b974b",
+          "queueCount": 4,
+          "ringingDuration": 12345,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "Agent-15-chat-f482e1e3-cf01-4496-ab80-efb2377c4997",
+            "name": "deleteloadtestdata20221120-1"
+          },
+          "lastTeam": {
+            "id": "team1",
+            "name": "team1"
+          },
+          "lastSite": {
+            "id": "1",
+            "name": "Bangalore"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

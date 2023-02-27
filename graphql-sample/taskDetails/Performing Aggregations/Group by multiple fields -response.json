@@ -1,0 +1,88 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "lastSite": {
+            "name": null
+          },
+          "lastAgent": {
+            "name": null
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 69583.0
+            },
+            {
+              "name": "Calls count",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "lastSite": {
+            "name": "Arryn_team_Site"
+          },
+          "lastAgent": {
+            "name": "Arryn Agent1"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 99828.664
+            },
+            {
+              "name": "Calls count",
+              "value": 6.0
+            }
+          ]
+        },
+        {
+          "lastSite": {
+            "name": "Arryn_team_Site1"
+          },
+          "lastAgent": {
+            "name": "Arryn Agent1"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "lastSite": {
+            "name": "Arryn_team_Site2"
+          },
+          "lastAgent": {
+            "name": "Arryn Agent3"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 45592.25
+            },
+            {
+              "name": "Calls count",
+              "value": 8.0
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

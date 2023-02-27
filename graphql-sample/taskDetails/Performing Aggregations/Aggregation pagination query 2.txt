@@ -1,0 +1,42 @@
+{
+  # Aggregation Pagination example 2
+  # Pass the cursor in the previous query (Aggregation Pagination example) in the cursor argument.
+  # Check response if the hasNextPage is set to false, no more pages are available
+  taskDetails(
+    from: 1644796800000
+    to: 1676246400000
+    aggregations: [{ field: "id", name: "Calls Completed", type: count }]
+    pagination: {
+      cursor: "intervalStartTime=1669507200000::channelType=chat::lastEntryPoint.name=Ep7::lastSite.name=Mysore::lastTeam.name=team1::lastQueue.name=queue2::lastAgent.name=deleteloadtestdata20221127-1"
+    }
+    aggregationInterval: { interval: DAILY }
+  ) {
+    tasks {
+      intervalStartTime
+      channelType
+      lastEntryPoint {
+        name
+      }
+      lastSite {
+        name
+      }
+      lastTeam {
+        name
+      }
+      lastQueue {
+        name
+      }
+      lastAgent {
+        name
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
