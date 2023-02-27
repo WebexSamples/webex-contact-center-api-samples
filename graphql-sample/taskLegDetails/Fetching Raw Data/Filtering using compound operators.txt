@@ -1,0 +1,33 @@
+{
+  # Using compound operators for filtering
+  taskLegDetails(
+    from: 1644859375000
+    to: 1671038575000
+    # Compound Operators(and,or,not) can be used inside another compound operator.
+    filter: {
+      and: [
+        { queue: { name: { equals: "Basic-Queue" } } }
+        {
+          or: [
+            { owner: { name: { equals: "agent mig4" } } }
+            { owner: { name: { equals: "Standard Agent" } } }
+          ]
+        }
+      ]
+    }
+  ) {
+    taskLegs {
+      id
+      queue {
+        name
+      }
+      owner {
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  # Aggregation can also be done based on a filter criteria
+  # When using filter argument, aggregations will be performed only on documents which satisfy the filter critera
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    filter: { lastQueue: { name: { equals: "Basic-Queue" } } }
+    aggregations: [{ field: "id", type: count, name: "Count of Id" }]
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}

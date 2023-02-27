@@ -1,0 +1,71 @@
+{
+  # Aggregation Pagination example
+  # Pagination is also possible in a Group by Aggregation query
+  # Check the response, hasNextPage is set to true and the endCursor is present
+  # For fetching the next page check Group by Aggregation with Pagination 2.txt
+  taskLegDetails(
+    from: 1641038400000
+    to: 1672488000000
+    aggregations: [
+      {
+        field: "id" # field Name on which aggregation needs to be done
+        type: count # operation name
+        name: "Count of Call Legs" # Identifier for the results
+      }
+      { field: "consultCount", type: min, name: "min of consultCount" }
+      {
+        field: "selfserviceDuration"
+        type: max
+        name: "max of selfserviceDuration"
+      }
+      {
+        field: "connectedDuration"
+        type: max
+        name: "max of connectedDuration"
+      }
+      {
+        field: "ringingDuration"
+        type: average
+        name: "average of ringingDuration"
+      }
+      {
+        field: "nextDestination.agent.name"
+        type: count
+        name: "count of nextDestination.agent.name"
+      }
+    ]
+    aggregationInterval : {
+        interval : DAILY
+    }
+  ) {
+    taskLegs {
+      channelType
+      intervalStartTime
+      queue {
+          id
+      }
+      owner {
+          id
+      }
+      entryPoint {
+          name
+      }
+      site {
+          id
+          name
+      }
+      team {
+          id
+          name
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

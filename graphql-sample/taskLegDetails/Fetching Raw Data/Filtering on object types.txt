@@ -1,0 +1,23 @@
+{
+  # Filtering based on complex objects.
+  taskLegDetails(
+    from: 1664099493000
+    to: 1669369893000
+    filter: {
+      # Filter syntax for objects is same as how a field is queried.
+      # For example - nextDestination followed by agent followed by name.
+      nextDestination: { agent: { name: { equals: "Standard Agent" } } }
+    }
+  ) {
+    taskLegs {
+      id
+      taskId
+      channelType
+      nextDestination {
+        agent {
+          name
+        }
+      }
+    }
+  }
+}

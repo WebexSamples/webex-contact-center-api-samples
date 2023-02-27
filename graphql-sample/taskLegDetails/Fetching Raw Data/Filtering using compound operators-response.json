@@ -1,0 +1,192 @@
+{
+  "data": {
+    "taskLegDetails": {
+      "taskLegs": [
+        {
+          "id": "693356e5-ab3d-40a6-950a-3be397b666b5-callLeg-1670247384453",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "17a9e532-450a-475f-8a21-b3d4536c895d-callLeg-1667983627972",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "743235ae-00cb-44ce-8cbc-b98785d52113-callLeg-1665990777496",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "bc7ba306-e428-4aeb-b15b-f2e36cc73e83-callLeg-1665133865584",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "81b70b63-a2a3-4041-b0fe-b21751eb4b62-callLeg-1665133506976",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "e2fe3cac-8163-4cfd-a637-4248ff3573a4-callLeg-1665133012585",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "97ac20ec-689e-4eec-9b4b-32b62525c20e-callLeg-1665132729373",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "712e7769-1229-401b-a4d3-b35fb807dbdb-callLeg-1665132693532",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "d2bfc7a1-d1af-4d60-af31-b6f3e4fe26a9-callLeg-1665132335750",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "6ade7888-6b0b-46fa-80ee-5eba0363e05c-callLeg-70389630-1f87-43dc-b815-6476e056e5c7",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "agent mig4"
+          }
+        },
+        {
+          "id": "7546082d-f0f7-44e0-9c40-75a1572cff84-callLeg-58b36f37-2b5c-47f2-8e48-28c083afe735",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "0231a547-7baa-4b80-83b6-0b0e7d0e5747-callLeg-5fde8bf6-aec7-436b-8794-e4c0502cf726",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "c2a78114-87d9-42b5-b351-d40ed0d4e9ef-callLeg-f0e87f9d-4170-4ecc-9ec1-04f4c85dfdbe",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "c2a78114-87d9-42b5-b351-d40ed0d4e9ef-callLeg-8dae1df3-e3a4-420e-840a-e55740777632",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "08435973-bb51-49ad-bf73-226aca1e41a1-callLeg-6a4f7e25-85c6-422f-a9af-f5c6b9ccb278",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "08435973-bb51-49ad-bf73-226aca1e41a1-callLeg-83d6c32f-0f8a-4b71-a6f1-8e14610924b7",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "62e41d23-040d-47d4-8ec4-3f00f021c68a-callLeg-a5c8c4bb-f81f-4ee5-a413-d6f4dc9d4324",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "62e41d23-040d-47d4-8ec4-3f00f021c68a-callLeg-4e09a4db-289a-41c8-8a7d-10142d5dce91",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "c12a4a13-60ce-4354-b996-e65683445b54-callLeg-90b6a8d2-eb4e-4c23-87c1-3a0d0a81382b",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        },
+        {
+          "id": "c12a4a13-60ce-4354-b996-e65683445b54-callLeg-0db5be4d-33ec-4e1e-be49-5569b426c037",
+          "queue": {
+            "name": "Basic-Queue"
+          },
+          "owner": {
+            "name": "Standard Agent"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

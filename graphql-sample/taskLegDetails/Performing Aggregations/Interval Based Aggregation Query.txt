@@ -1,0 +1,58 @@
+  # Interval Based aggregation can also done by
+  # 1. Using aggregationInterval argument to pass the interval.
+  # 2. Including intervalStartTime in the selection set.
+{
+  taskLegDetails(
+    from: 1644859375000
+    to: 1671038575000
+    aggregations: [
+      {
+        field: "id" # field Name on which aggregation needs to be done
+        type: count # operation name
+        name: "Count of Call Legs" # Identifier for the results
+      }
+      { field: "consultCount", type: min, name: "min of consultCount" }
+      {
+        field: "selfserviceDuration"
+        type: max
+        name: "max of selfserviceDuration"
+      }
+      {
+        field: "connectedDuration"
+        type: max
+        name: "max of connectedDuration"
+      }
+      {
+        field: "ringingDuration"
+        type: average
+        name: "average of ringingDuration"
+      }
+      {
+        field: "nextDestination.agent.name"
+        type: count
+        name: "count of nextDestination.agent.name"
+      }
+    ]
+    aggregationInterval : {
+        interval : DAILY
+    }
+  ) {
+    taskLegs {
+      # Note that using the interval as DAILY, intervalStartTime will have the epoch time for the start of the day based on the timezone ( see next example )
+      # Missing buckets are not shown, i,e if there is no calls for a particular date, those buckets will not be shown.
+      intervalStartTime
+      queue {
+        name
+      }
+
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

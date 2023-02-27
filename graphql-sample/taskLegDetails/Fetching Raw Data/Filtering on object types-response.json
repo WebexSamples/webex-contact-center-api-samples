@@ -1,0 +1,138 @@
+{
+  "data": {
+    "taskLegDetails": {
+      "taskLegs": [
+        {
+          "id": "b2107348-632e-4602-af79-50e74a11a92d-callLeg-1665484023763",
+          "taskId": "b2107348-632e-4602-af79-50e74a11a92d",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "dc85a138-efe6-4309-909a-00febdf6d68d-callLeg-1665479861583",
+          "taskId": "dc85a138-efe6-4309-909a-00febdf6d68d",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "6dd17a34-a34d-4c00-ae17-477b3aa2d09d-callLeg-1665478408658",
+          "taskId": "6dd17a34-a34d-4c00-ae17-477b3aa2d09d",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "3082de58-3017-47b5-abda-37366d0a1016-callLeg-1665475419560",
+          "taskId": "3082de58-3017-47b5-abda-37366d0a1016",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "a7c3257c-351a-4cd7-aed5-1bcc11402426-callLeg-1665474220158",
+          "taskId": "a7c3257c-351a-4cd7-aed5-1bcc11402426",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "953f4fe3-8c84-4f61-b902-f6c24fe40d8b-callLeg-c3fc1bf8-b553-4cd0-82e9-e4faa8056f07",
+          "taskId": "953f4fe3-8c84-4f61-b902-f6c24fe40d8b",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "7546082d-f0f7-44e0-9c40-75a1572cff84-callLeg-9cfbfd32-908f-4db2-9e46-8c48cc5f2f4d",
+          "taskId": "7546082d-f0f7-44e0-9c40-75a1572cff84",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "afb06b29-d6be-46d7-ae1b-703d1bae2534-callLeg-13ac0d06-929d-4a6d-8e7b-b6537bee77aa",
+          "taskId": "afb06b29-d6be-46d7-ae1b-703d1bae2534",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "415f76e2-7538-4428-8ce3-d2f487518e2c-callLeg-ad803517-5812-4a02-a9f0-bbd3457e8d7a",
+          "taskId": "415f76e2-7538-4428-8ce3-d2f487518e2c",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "415f76e2-7538-4428-8ce3-d2f487518e2c-callLeg-ec498cde-1dc7-4e4c-8704-0a59e4a5e663",
+          "taskId": "415f76e2-7538-4428-8ce3-d2f487518e2c",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac-callLeg-a5985f0d-61dd-4529-8eee-6be1522feb84",
+          "taskId": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac-callLeg-a41f5aab-015f-4ef8-aba5-ae01acf240b2",
+          "taskId": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        },
+        {
+          "id": "cb635744-2c3a-47d6-8a62-8d3a897e6204-callLeg-1a2f0609-7698-4728-8b2f-7948267349a6",
+          "taskId": "cb635744-2c3a-47d6-8a62-8d3a897e6204",
+          "channelType": "telephony",
+          "nextDestination": {
+            "agent": {
+              "name": "Standard Agent"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
