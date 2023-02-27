@@ -25,7 +25,7 @@
         }
       ]
     }
-    pagination: { cursor: "NA" } #Show first page. This goes from 0 to N-1 pages. Use pageInfo object to traverse
+    pagination: { cursor: "NA" } #Giving cursor as "NA" is equivalent of fetching the first page
   ) {
     tasks {
       #Task Metadata - Note that since these are aggregates, you need to use the GROUPBY Fields HERE
