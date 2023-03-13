@@ -1,0 +1,42 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "stringGlobalVariables": {
+                        "value": null
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of calls",
+                            "value": 818.0
+                        },
+                        {
+                            "name": "Sum of GV2",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "stringGlobalVariables": {
+                        "value": "en-US"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of calls",
+                            "value": 758.0
+                        },
+                        {
+                            "name": "Sum of GV2",
+                            "value": 1.13578E8
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}
