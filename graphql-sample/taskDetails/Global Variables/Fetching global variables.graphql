@@ -1,9 +1,12 @@
 {
     # Query to fetch  Global Variables
     # To fetch a particular global variable
+    # There are 5 types of global variables - integerGlobalVariables, stringGlobalVariables, doubleGlobalVariables, longGlobalVariables, booleanGlobalVariables.
     taskDetails(from: 1644859375000, to: 1671038575000) {
         tasks {
             id
+            # 'name' argument is mandatory.
+            #  This block will fetch name and value for the integerGlobalVariable named 'GV2'
             integerGlobalVariables(name: "GV2") {
                 name
                 value
