@@ -1,5 +1,5 @@
 {
-    # Filter tasks based on Global Variables
+    # Filter taskLegs based on Global Variables
     taskLegDetails(
         from: 1644859375000
         to: 1671038575000
