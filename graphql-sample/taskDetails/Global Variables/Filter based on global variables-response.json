@@ -1,0 +1,2312 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "id": "54e85d6f-69ca-4300-83f6-e96c88897e4b",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "5747ab5c-7643-4569-b322-2ad5e7b7b28c",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "1d74912b-7a87-468b-8a4d-e16a2af013de",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "32591ef7-483c-4b14-93c9-0987525aecff",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "17a9e532-450a-475f-8a21-b3d4536c895d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d37fd510-7199-4840-a69b-258ba22ceb84",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "eecde8fc-0261-43e1-82ad-209e03503c52",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "3eb8c0e2-3878-444d-8977-b865f4f78001",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "7b22cda7-82c1-41ef-8850-a6b90c263f26",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "e6fb83d5-b797-4f1e-8a95-f8a8a9166086",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "b3fe0bd4-e5bc-4eaf-b6ff-2c41f6459fea",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "f03e302b-3877-43e9-9716-603017293cec",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "17cf86d6-54d1-4534-9ea5-ee9d972954ed",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "1d534d2d-9fbc-4335-adc3-134e95d357dd",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "637507c7-b0a8-47a5-a829-a06cab4cb9d1",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "dc332eb3-7bfa-4a6d-af1d-71273e7c66ea",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "660e4b54-adb7-4c9e-9f2b-39953b92e297",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "1201c976-8885-4a6c-b464-ded1726e0a9b",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "5086e2b1-0138-4de1-af17-481c1569f500",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "64b117cd-3036-40dc-b1eb-537101661a92",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "c63cb876-118d-4606-9615-c334d48b87f2",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "424ca5ce-b7ff-4ee1-aa33-d9d9f023855d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "6dae9ecf-a5f4-4071-9817-9911651f70b7",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "9ace3130-ea19-4b2d-8ad2-da64934c703d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "074a08a7-4982-42b7-adb3-2b2b2a31728d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "00bcbdfd-8550-41df-a372-420f4bea4f88",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d2bfc7a1-d1af-4d60-af31-b6f3e4fe26a9",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "6b1b7cae-5b1d-44b3-af95-624a0fc11ead",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "afb06b29-d6be-46d7-ae1b-703d1bae2534",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "a6d6ed5a-e494-4455-805f-86b6eb9d3223",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "0231a547-7baa-4b80-83b6-0b0e7d0e5747",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d7c198b1-0e21-47d9-a82f-035389126bd8",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "af524401-cbff-4f17-a8d2-e17c9f1f372a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "77ca0511-bf2e-4b02-bb10-357b41dc0267",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "aa014ca2-dba7-422a-8e8d-0e67ee218585",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "256d9733-4339-44cc-95b8-6e2e4a5e9da9",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "98cce8c5-ca4c-4887-9899-036663ce603b",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "415f76e2-7538-4428-8ce3-d2f487518e2c",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "62e41d23-040d-47d4-8ec4-3f00f021c68a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ae0dfa24-f030-4fdd-b293-e8a0a8cb8eb4",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "e175ddc5-3a3f-4d21-999a-6246844e7875",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "befa5fd4-234b-4f4b-b69d-c536ade2983b",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "9c57b84a-ac2b-499b-858d-815f15776872",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "bca73820-e24d-47b5-8fc0-c02aa1257b45",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "55233900-56be-4f31-83f0-e4f2a693ce09",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "010e0114-99aa-4c0b-aaaf-4e0830e3dd15",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "149f60dc-53b1-4892-9960-35586bfdf37f",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ab39d245-6187-43cd-93b5-7159b6758123",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "9d5beee9-49cd-42f6-a17e-42ce2a3ae1e4",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "5b0422f2-d875-4222-a0c9-7e3dd23dac83",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ff595bd8-91b8-459f-b5be-89eaafd7f4eb",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "99acc3da-678c-4ff3-a6e4-8cb2a684ae4a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "5ccb307e-4ad8-4fb7-be4a-22fc670c0207",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "1625657f-0942-446b-99dc-5150e1976c81",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "c6be6f5b-ef03-4d61-a58d-b54344619799",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "3aa00317-8536-4cff-9b46-c9659230e14f",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "e8a5d86a-7a24-448b-bd4a-0921fa271ea5",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d69d3752-89eb-416a-9389-bf1024e1cc0b",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "96749780-26e4-4d6c-9150-fc5fdb65417a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "a97250be-6f6e-486b-b093-0587abbdb8a8",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "b54c3328-1f3c-4891-a66d-d467b7d68552",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "fdb4dcd5-2689-4f70-9525-7a81a05683a0",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "3062191f-b60a-4abe-8dfe-4df56c3fae50",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "9cce022c-d7aa-4e40-8013-7a2dc4294c8e",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "374009d6-f620-4c09-99c8-c55e65c792e0",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "a9e56e2b-e1f6-4d23-884a-4ab9c5bb4cd3",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "7cf473a8-8cfc-49c1-8eee-5e5860c5f6f7",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d14605c6-57d8-4c89-aa3b-f84797194de6",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "f4d8ec35-7f23-498b-aa09-a58cbdbb184d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "2d9e1855-61c3-4421-bd7f-d89f7abb2423",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d0d03fdb-6a7a-47c6-9697-0488ef30a547",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "802f0e87-485e-4200-be2d-81e70f9bb688",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "0d5717c5-3c12-4c1b-b0e1-9fb629dcfde1",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "af41a58d-789d-42d9-86db-cb55fc880371",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "27ac8f4d-1ea8-4b65-8c78-3d95ce29db73",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ce134c60-82a2-4f28-b34a-a786e435a03a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "b373a03b-ff45-432a-a9eb-02fcb6edb509",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "7eca324a-d264-4742-8dcc-16874b004f7c",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "590950f9-4dfc-4f4c-ad1b-da0ca098cae1",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "20b618bd-979d-47b6-9809-ae6926b062a1",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "352cd1cf-78bc-494e-8c13-fa1e531cb16d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "d0379463-58e0-47ee-8fd6-7224b4efb943",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "5d8a5592-f0c8-4594-a24f-1bed82d3df7e",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "e39abf06-c6df-43c7-a4cd-a2962b67d6bc",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ac3dea6b-0199-4ec0-a471-b1d8ce95d015",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "534eabe2-0a93-4efb-81b2-fbe498ae9655",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "35ced28f-bd4b-4533-9299-1f0f725cc0a4",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "77bf8476-663b-4a4a-ac6d-1a9925c319e6",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "62355aff-8b12-4009-9f21-5472bd90bfb8",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "251f377f-1cb8-4d4f-8877-502dda7894db",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "03b8f162-b40a-4292-b56a-39dd22ac787c",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "ed064425-173e-4e35-b039-537da6039912",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "8b31f777-090e-4c3f-9b0d-2c713b5e7335",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "894236ed-3772-4b4f-8403-1783e9406485",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "2412f294-5946-43aa-9a04-adc22bdb6e2a",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "c609c789-43a5-4ee9-a11e-a2af54f7fc01",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "65d1ae99-e4a3-4170-a793-4304e5f1306d",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "41feb0bc-d921-47df-b852-6dae817ffb25",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "4d2b519e-bb68-4ecf-bd50-8ab0cceb81e8",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                },
+                {
+                    "id": "64667227-412f-4573-b7c7-9f0f0937f0f7",
+                    "integerGlobalVariables": {
+                        "name": "GV2",
+                        "value": 567890
+                    },
+                    "GV1": {
+                        "name": "GV1",
+                        "value": "ABC123"
+                    },
+                    "GV59": {
+                        "name": "GV59",
+                        "value": "GV59"
+                    },
+                    "booleanGlobalVariables": {
+                        "name": "BooleanGV",
+                        "value": true
+                    },
+                    "longGlobalVariables": {
+                        "name": "DateAndTime",
+                        "value": 268345500000
+                    }
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": true,
+                "endCursor": "1"
+            }
+        }
+    }
+}
