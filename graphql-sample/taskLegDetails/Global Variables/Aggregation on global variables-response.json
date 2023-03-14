@@ -1,0 +1,16 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "aggregation": [
+                        {
+                            "name": "Sum of GV2",
+                            "value": 1.3572571E8
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
