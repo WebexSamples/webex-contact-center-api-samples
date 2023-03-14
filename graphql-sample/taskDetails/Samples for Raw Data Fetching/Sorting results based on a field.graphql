@@ -1,0 +1,19 @@
+{
+    # Sorting results
+    # By default data is sorted in descending order of createdTime field.
+    # Sorting can be done when fetching data, To sort on a particular field use the sort argument for that field
+    # Allowed values are 'asc' for ascending and 'desc' for descening.
+    # Not all fields are sortable, refer schema for details.
+    taskDetails(from: 1644859375000, to: 1671038575000) {
+        tasks {
+            id
+            # Results are sorted by ascending order of createdTime
+            createdTime(sort: asc)
+            endedTime
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    # Filter taskLegs based on Global Variables
+    taskLegDetails(
+        from: 1644859375000
+        to: 1671038575000
+        filter: {
+            and: [
+                {
+                    stringGlobalVariables: {
+                        name: { equals: "GV59" }
+                        value: { equals: "GV59" }
+                    }
+                }
+                {
+                    stringGlobalVariables: {
+                        name: { equals: "GV1" }
+                        value: { equals: "ABC123" }
+                    }
+                }
+                {
+                    integerGlobalVariables: {
+                        name: { equals: "GV2" }
+                        value: { gt: 100 }
+                    }
+                }
+            ]
+        }
+    ) {
+        taskLegs {
+            id
+            integerGlobalVariables(name: "GV2") {
+                name
+                value
+            }
+            GV1: stringGlobalVariables(name: "GV1") {
+                name
+                value
+            }
+            GV59: stringGlobalVariables(name: "GV59") {
+                name
+                value
+            }
+            booleanGlobalVariables(name: "BooleanGV") {
+                name
+                value
+            }
+            longGlobalVariables(name: "DateAndTime") {
+                name
+                value
+            }
+        }
+        pageInfo {
+            # Indicates if the nextPage exists or not
+            hasNextPage
+            # String value which can be passed to fetch the next page.
+            endCursor
+        }
+    }
+}

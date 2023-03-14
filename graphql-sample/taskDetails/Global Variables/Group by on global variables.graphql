@@ -1,0 +1,32 @@
+{
+    # Group by using  Global Variables
+    # To perform a group by on a global variable add the global variable in the selection set.
+    taskDetails(
+        from: 1655449155512
+        to: 1671038575000
+        aggregations: [
+            { field: "id", name: "count of calls", type: count }
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            # Group by on stringGlobalVariable named "Global_Language".
+            stringGlobalVariables(name: "Global_Language") {
+                value
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

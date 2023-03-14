@@ -1,0 +1,39 @@
+{
+    # Query to fetch  Global Variables
+    # To fetch a particular global variable
+    # There are 5 types of global variables - integerGlobalVariables, stringGlobalVariables, doubleGlobalVariables, longGlobalVariables, booleanGlobalVariables.
+    taskLegDetails(from: 1644859375000, to: 1671038575000) {
+        taskLegs {
+            id
+            # 'name' argument is mandatory.
+            #  This block will fetch name and value for the integerGlobalVariable named 'GV2'
+            integerGlobalVariables(name: "GV2") {
+                name
+                value
+            }
+            # To fetch multiple global variables use aliasing - https://graphql.org/learn/queries/#aliases
+            GV1: stringGlobalVariables(name: "GV1") {
+                name
+                value
+            }
+            GV59: stringGlobalVariables(name: "GV59") {
+                name
+                value
+            }
+            booleanGlobalVariables(name: "BooleanGV") {
+                name
+                value
+            }
+            longGlobalVariables(name: "DateAndTime") {
+                name
+                value
+            }
+        }
+        pageInfo {
+            # Indicates if the nextPage exists or not
+            hasNextPage
+            # String value which can be passed to fetch the next page.
+            endCursor
+        }
+    }
+}

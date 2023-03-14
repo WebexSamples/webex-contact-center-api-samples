@@ -1,0 +1,23 @@
+{
+    # Aggregation on global variables.
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        aggregations: [
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                # Predicate is used to define which global variable needs to be considered for the operation.
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            aggregation {
+                name
+                value
+            }
+        }
+    }
+}
