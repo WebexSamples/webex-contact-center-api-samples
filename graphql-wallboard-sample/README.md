@@ -4,7 +4,7 @@ Here is a sample of using the `Search` API (powered by GraphQL) to construct Gra
 
 ## [Watch Now: GraphQL powered Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
 
-## Developer Documentation 
+## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/search**
 
@@ -37,10 +37,14 @@ Follow the steps to run the application as shown in the demo above:
 - Step 4:
 
   - Inside this project on your terminal type: `npm run dev`
-  - This should run the app on your [http://localhost:5000](http://localhost:5000) as well as your own public URL.
+  - This should run the app on your [http://localhost:3000](http://localhost:3000) as well as your own public URL.
 
 - Step 5:
+
   - From here on please follow the video that will help guide you along.
+
+- **Important Note**:
+  - The `From` dates on the queries, will eventually become invalid. Depending on when you pull this sample down, pay attention to the epoch dates that are configured on the 4 graphQL queries.. JS files that are located in the controller/wallboard folders... ie `callCountByEntryPoint.js`
 
 ## Disclaimer
 

@@ -1,5 +1,5 @@
-import fetch from 'node-fetch';
-import { decide } from '../decide.js';
+import fetch from "node-fetch";
+import { decide } from "../decide.js";
 
 export async function totalAgentSessionsRealTime() {
   let info = await decide();
@@ -12,7 +12,7 @@ export async function totalAgentSessionsRealTime() {
   {
     #FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.
     task(
-      from: 1641662144000 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
+      from: 1673729535000 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for look back in days
       to: ${Date.now()}  #This can be set to Date.now() in ms
       filter: {
         #The main filter for active tasks is isActive: true
@@ -42,20 +42,17 @@ export async function totalAgentSessionsRealTime() {
   }
   `;
 
-    const posts = await fetch(
-      `https://api.wxcc-us1.cisco.com/search?orgId=${org_id}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          query,
-        }),
-      }
-    );
+    const posts = await fetch(`https://api.wxcc-us1.cisco.com/search?orgId=${org_id}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify({
+        query
+      })
+    });
     const response = await posts.json();
     let results = await response.data.task.tasks;
 
