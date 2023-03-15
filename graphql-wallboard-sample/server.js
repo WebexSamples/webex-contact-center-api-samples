@@ -90,6 +90,6 @@ app.use("/test", testRoute);
 app.use(express.static(__dirname + "/views"));
 
 // Start listening...
-app.listen(process.env.PORT || "5000", () => {
-  console.log("server running on 5000");
+app.listen(process.env.PORT || "3000", () => {
+  console.log("server running on 3000");
 });
