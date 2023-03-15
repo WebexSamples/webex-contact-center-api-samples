@@ -46,6 +46,11 @@ Follow the steps to run the application as shown in the demo above:
 - **Important Note**:
   - The `From` dates on the queries, will eventually become invalid. Depending on when you pull this sample down, pay attention to the epoch dates that are configured on the 4 graphQL queries.. JS files that are located in the controller/wallboard folders... ie `callCountByEntryPoint.js`
 
+## Live Demo Link
+
+- This sample is hosted if you would like to take a quick look. The hosting service is free so it might take about 30 seconds or so before it renders.
+  URL: [https://graphql-y435.onrender.com/](https://graphql-y435.onrender.com/)
+
 ## Disclaimer
 
 > These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
