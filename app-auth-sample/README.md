@@ -2,11 +2,15 @@
 
 - This basic authorization app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
 
-- Webex Contact Center APIs use OAuth2. For more information, refer :
+- Webex Contact Center APIs use OAuth2. For more information, refer: https://developer.webex-cx.com/documentation/authentication
 
 - The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
 ## [Watch the Video: Understanding WebexCC OAuth2 - App Sample](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
+
+#### Screenshots
+
+![app-Screenshot](./images/1.png)
 
 #### Pre-Requisites:
 

@@ -1,6 +1,9 @@
 {
   "name": "app-auth-sample",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=14.16.1"
+  },
   "description": "Simple App to understand OAuth2 and basic GET APIs",
   "main": "server.js",
   "scripts": {
