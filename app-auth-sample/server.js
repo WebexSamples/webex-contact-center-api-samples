@@ -12,20 +12,13 @@ const redirectUri = process.env.REDIRECT_URI;
 const orgId = process.env.ORG_ID;
 const scopes = 'cjp:config cjp:config_read';
 const apiRootUrl = 'https://api.wxcc-us1.cisco.com'; // Change this to your Datacenter
-// Simple inmemory, global scope - you can store this on local storage if you'd like.
-var loginDetails = null;
 
-// For production HTTPS redirects only
-/*
-const requireHTTPS = (req, res, next) => {
-  // The 'x-forwarded-proto' check is for Heroku
-  if (!req.secure && req.get('x-forwarded-proto') !== 'https') {
-    return res.redirect('https://' + req.get('host') + req.url);
-  }
-  next();
-};
-*/
-//app.use(requireHTTPS);
+// Date and Time in use for all the data API calls
+const to = Date.now();
+const from = to - 15 * 1000 * 60; // Last 15 Minutes
+
+// Simple global scope - you can use session storage or Node's session manager
+var loginDetails = null;
 
 app.use(express.json());
 
@@ -156,10 +149,7 @@ app.get('/tasks', async (req, res) => {
   // Simple "GET Tasks" Sample. Change the DATES to fetch another range.
   // View the spec here :
 
-  let from = new Date('2021-10-10').getTime();
-  let to = new Date('2021-10-20').getTime();
-
-  const options = {
+  let options = {
     method: 'GET',
     url: `${apiRootUrl}/v1/tasks`,
     params: {
@@ -189,7 +179,7 @@ app.get('/users', async (req, res) => {
   // Simple "GET Users" Sample. Change the DATES to fetch another range.
   // View the spec here :
 
-  const options = {
+  let options = {
     method: 'GET',
     url: `${apiRootUrl}/organization/${orgId}/user`,
     headers: {
@@ -212,10 +202,7 @@ app.get('/agents', async (req, res) => {
   // Simple "GET Agent Statistics" Sample. Change the DATES to fetch another range.
   // View the spec here :
 
-  let from = new Date('2021-11-15').getTime();
-  let to = new Date('2021-11-18').getTime();
-
-  options = {
+  let options = {
     method: 'GET',
     url: `${apiRootUrl}/v1/agents/statistics`,
     params: {
@@ -246,10 +233,7 @@ app.get('/queues', async (req, res) => {
   // Simple "GET Queue Statistics" Sample. Change the DATES to fetch another range.
   // View the spec here :
 
-  let from = new Date('2021-10-10').getTime();
-  let to = new Date('2021-10-20').getTime();
-
-  options = {
+  let options = {
     method: 'GET',
     url: `${apiRootUrl}/v1/queues/statistics`,
     params: {
