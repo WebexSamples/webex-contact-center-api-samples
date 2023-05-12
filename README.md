@@ -11,7 +11,7 @@ These basic samples will help you understand the Webex Contact Center APIs avail
 ## Getting Started
 
 To get started, create an App Integration on the Developer Portal:
-( This will help you obtain your `Client ID` and `Client Secret` )
+( This will help you obtain your `Client ID` and `Client Secret` ).
 
 - Sign into developer.webex-cx.com with a valid Webex Control Hub Account.
 - Create an Application Integration by going to your Profile > Manage My Apps.
