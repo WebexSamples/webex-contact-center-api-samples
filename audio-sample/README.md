@@ -2,6 +2,8 @@
 
 In this tutorial we leverage native javascript for access to the PC microphone and give ourselves the ability to record a wav file, and convert it to a play on an IVR platform. From there, within this simple app, we fetch all our wav files on our tenant and have the ability to replace.update any of our files.
 
+### [Watch Now: Audio Recording Widget Example](https://app.vidcast.io/share/2fbacc17-7551-4b69-be1b-47f8cf2b4ac3)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
