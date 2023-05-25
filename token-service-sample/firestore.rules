@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Restrict read & write access, SDK can still read & write
+    match /tokens/{tokenId}{
+      allow read, write: if false;
+    }
+
+  }
+}
