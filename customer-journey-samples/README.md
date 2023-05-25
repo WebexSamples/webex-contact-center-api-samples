@@ -9,7 +9,7 @@ Explore each of the folders below to understand more of each of the samples belo
 | 1   | CJDS Postman Example                   | Postman call examples to CJDS                                                                                                      |                                                                                                                    |         |
 | 2   | Use Case 1: Directing Customer Inputs  | This use case uses various JDS APIs to pull the customer journey to prompt the user based on these events in the journey lifecycle |                                                                                                                    |         |
 | 3   | Use Case 2: Tracking the Repeat Caller | This use case leverages the JDS repository to identify repeat interactions into the Contact Center                                 |                                                                                                                    |         |
-| 4   | Managing Identities and Aliases        | This sample covers the automation of identity and alias management using Webex Connect                                             | [Watch: Merging Identities and Adding Aliases ](https://app.vidcast.io/share/ba8d30c6-7e95-41f9-9153-ecf9403b5fb3) |         |
+| 4   | Managing Identities and Aliases        | This sample covers the automation of identity and alias management using Webex Connect                                             | [Video: Merging Identities and Adding Aliases ](https://app.vidcast.io/share/ba8d30c6-7e95-41f9-9153-ecf9403b5fb3) |         |
 
 ## Developer Documentation
 
@@ -29,6 +29,6 @@ Explore each of the folders below to understand more of each of the samples belo
 
 **https://app.vidcast.io/share/b90e50f4-d085-416c-9aae-29426fa18f53**
 
-### How to Integrate Widget in your agent desktop
+### How to Integrate the Widget in your agent desktop
 
 **https://app.vidcast.io/share/0ebc75d5-62a4-4771-819e-518991c23b23**

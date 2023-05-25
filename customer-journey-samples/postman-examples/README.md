@@ -6,7 +6,11 @@ This video shows you how to use various API's to manage JDS profiles and templat
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/journey
+**https://developer.webex-cx.com/documentation/journey**
+
+**https://developer.webex-cx.com/documentation/guides/journey---getting-started**
+
+[How to Integrate the Widget in your agent desktop](https://app.vidcast.io/share/0ebc75d5-62a4-4771-819e-518991c23b23)
 
 ## Getting Started
 
@@ -16,12 +20,11 @@ Import the JSON collection into Postman to begin using it.
 
 Remember to configure the following environment or local variables
 
-- `client_idJDS`     - Your Datacenter e.g us1
+- `client_idJDS` - Your Datacenter e.g us1
 - `client_secretJDS` - Your Queue ID
-- `org_idJDS`        - Your Org ID
-- `baseUrl`          - Starting URL to your JDS Post
-- `workspaceId`      - Project Id from Control Hub
-
+- `org_idJDS` - Your Org ID
+- `baseUrl` - Starting URL to your JDS Post
+- `workspaceId` - Project Id from Control Hub
 
 Keep in mind that you still need to have your Postman setup with your authorization or at least using an unexpired Access Token to run this API.
 
