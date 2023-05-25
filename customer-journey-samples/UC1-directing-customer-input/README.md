@@ -2,11 +2,11 @@
 
 This video shows you how to use various JDS API's to pull from the customers journey to prompt the user based on events happening in the stream.
 
-## [Watch: Directing Customer Input](https://app.vidcast.io/share/2af7bfc3-466d-4a69-8251-fb349d3c8a03)
+## [Watch: Customer Journey Use case - Directing Customer Input](https://app.vidcast.io/share/2af7bfc3-466d-4a69-8251-fb349d3c8a03)
 
-## Developer Documentation
+## Developer Documentation and Links
 
-**https://developer.webex-cx.com/documentation/journey
+**https://developer.webex-cx.com/documentation/journey**
 
 ## Getting Started
 
