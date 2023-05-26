@@ -6,7 +6,11 @@ This video shows you how to use various API's to manage JDS profiles for Identit
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/journey
+**https://developer.webex-cx.com/documentation/journey**
+
+**https://developer.webex-cx.com/documentation/guides/journey---getting-started**
+
+[How to Integrate the Widget in your agent desktop](https://app.vidcast.io/share/0ebc75d5-62a4-4771-819e-518991c23b23)
 
 ## Getting Started
 
@@ -14,15 +18,14 @@ This video requires you to be familiar with WxConnect. Examples on how this is u
 
 Remember to configure the following environment or local variables
 
-- `JDS Merge Identities and Add Aliases WxConnect.workflow`     - Required to be imported into your WxConnect platform
-- `JDS Merge Identities and Add Aliases Webhook example`        - Sample of webhook request
-
+- `JDS Merge Identities and Add Aliases WxConnect.workflow` - Required to be imported into your WxConnect platform
+- `JDS Merge Identities and Add Aliases Webhook example` - Sample of webhook request
 
 Examples of using this webhook can be found in other examples:
+
 - `UC1-directing-customer-input`
 - `UC2-tracking-the-repeat-caller`
-- `postman-examples`    		
-
+- `postman-examples`
 
 ## Disclaimer
 

@@ -8,6 +8,10 @@ This video shows you how to use various JDS API's to pull from the customers jou
 
 **https://developer.webex-cx.com/documentation/journey**
 
+**https://developer.webex-cx.com/documentation/guides/journey---getting-started**
+
+[How to Integrate the Widget in your agent desktop](https://app.vidcast.io/share/0ebc75d5-62a4-4771-819e-518991c23b23)
+
 ## Getting Started
 
 This video shows you how to use the bmclella_Voice_JDS_1.json file to import into Flow Builder to build this use case. There is an assumption that you have downloaded the postman collection of API's
@@ -15,9 +19,8 @@ to test out your logic before updating the flow.
 
 Remember to configure the following Local variables
 
-- `workspaceId`      - Project Id from Control Hub
-- `Token`     		 - Set this value a valid token used to access JDS. An example to create this can be found by looking for the token-service-sample, taking the token genereated from Postman or your own process.
-
+- `workspaceId` - Project Id from Control Hub
+- `Token` - Set this value a valid token used to access JDS. An example to create this can be found by looking for the token-service-sample, taking the token genereated from Postman or your own process.
 
 ## Disclaimer
 
