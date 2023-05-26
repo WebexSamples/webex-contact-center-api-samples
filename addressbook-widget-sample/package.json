@@ -16,7 +16,7 @@
     "@babel/core": "^7.18.10",
     "@wxcc-desktop/sdk": "^1.2.10",
     "nodemon": "^2.0.19",
-    "serve": "^14.0.1"
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
