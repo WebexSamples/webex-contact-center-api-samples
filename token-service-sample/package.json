@@ -1,0 +1,15 @@
+{
+  "name": "token-service",
+  "description": "Token Service running on Cloud Functions and Firebase",
+  "author": {
+    "name": "David Finnegan"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.8.0"
+  }
+}
