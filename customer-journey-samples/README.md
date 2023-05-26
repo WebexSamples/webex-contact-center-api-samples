@@ -2,6 +2,8 @@
 
 This is the main folder for the Customer Journey Data Services API Samples.
 
+### [Video: Overview of Customer Journey Data Services](https://app.vidcast.io/share/889c2cbf-51b2-4cc9-94f8-9143078dca83)
+
 Explore each of the folders below to understand more of each of the samples below:
 
 | #   | Sample                                 | Description                                                                                                                        | Vidcast                                                                                                             | Read Me |
