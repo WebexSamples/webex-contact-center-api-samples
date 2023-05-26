@@ -1,4 +1,4 @@
-## Using JDS API's - Using JDS API's to show various features and functionality
+## Using JDS APIs - Using JDS API's to show various features and functionality
 
 This video shows you how to use various API's to manage JDS profiles and templates.
 
