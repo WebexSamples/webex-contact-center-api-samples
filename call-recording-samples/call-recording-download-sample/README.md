@@ -20,8 +20,7 @@ REST API: https://developer.webex-cx.com/documentation/captures/v1/list-captures
 
 Webhook: https://developer.webex-cx.com/documentation/captures/v1/capture-available
 
-
-## Steps 
+## Steps
 
 1. For the Call recording Downloader to work, please create a folder called 'recordings'
 
@@ -60,9 +59,11 @@ This will redirect port 5000 to 80 and 443 using HTTP and HTTPS reverse proxies.
 
 ## Support
 
-For Support and Assistance, use the Cisco Developer Community Page:
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
 
-Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+For discussions on the samples, feel free to participate in our Developer Community:
+
+**[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
 
 Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
 

@@ -37,7 +37,6 @@ How to run the sample application:
 
 - Add the details such as the client_id, client_secret, redirect_uri. For more information on how to configure these parameters, refer to the basic samples in the repository.
 
-
 - Modify the property file under
   `/src/main/resources/application.yml`
 
@@ -73,9 +72,11 @@ How to run the sample application:
 
 ## Support
 
-For Support and Assistance, use the Cisco Developer Community Page:
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
 
-Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+For discussions on the samples, feel free to participate in our Developer Community:
+
+**[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
 
 Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
 
@@ -84,5 +85,3 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 - 0.0.1
 
   - Beta version with basic REST API Capture
-
-
