@@ -7,7 +7,7 @@ Watch the demo below to understand what this widget does and how to set it up an
 ## Watch [Desktop JS SDK Widget Sample - Build Powerful Widgets](https://app.vidcast.io/share/e98497f6-8740-4323-8805-e988af3662a3)
 
 > **Note:** This is a sample that assumes you know the basics of layouts.
-> We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)**
+> We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-samples/widget-sample-101)**
 
 ## Developer Documentation
 
