@@ -11,6 +11,8 @@ Watch the demo below to understand what this widget does and how to set it up an
 > **Note:** This is a sample that assumes you know the basics of layouts as well as Desktop JS SDK.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-sample-101)** and **[Desktop JS SDK deep dive](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/desktop-js-sdk-sample)**
 
+![Address Book Sample](./images/addressbook-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
@@ -29,19 +31,21 @@ How to run the sample widget:
 
 **Step 1:**
 
-- To use the Existing sa-ds-sdk.js on your localhost
-- Inside this project on your terminal type: `npm run dev`
-- this should run the app on your localhost:5000
+To use the Existing sa-ds-sdk.js on your localhost :
+
+- Inside this project on your terminal type: `npm install`
+- Then inside this project on your terminal type: `npm run dev`
+- This should run the app on your localhost:5000
 
 **Step 2:**
 
-- In the **_sa-address-book.js_** file, change the Outdial configuration based on your org from Line 23 onwards.
+- In the **_sa-address-book.js_** file, change the Outdial configuration based on your org under Desktop.dialer.startOutdial method.
 
 **Step 3:**
 
 _To wire up the Widget to the Layout:_
 
-- Upload the **_widget-sdk.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
+- Upload the **_addressbook-widget.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
   - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
   - Note that Layouts are configured per Agent Team.
 - Log in to your agent and select the right Team to view the new layout.
@@ -50,7 +54,7 @@ _To wire up the Widget to the Layout:_
 
 - You can modify the widget as required.
 - To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
-- You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
+- You may rename this file, host it on your server of choice, and use this as the widget `src` parameter (under navigation >> page >> widgets) in the layout.
 
 ## Useful Links - Supplemental Resources
 
