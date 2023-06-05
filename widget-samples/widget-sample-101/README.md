@@ -8,6 +8,10 @@ Watch the demo below to understand what this widget does and how to set it up an
 
 ## Watch [Part 2 of 2: Sample web component Widget](https://app.vidcast.io/share/6e211cd5-e0c6-4c38-a1dc-df647b60a0b3)
 
+![Analyzer iFrame Sample](./images/widget-sample-1.png)
+
+![Analyzer iFrame Sample](./images/widget-sample-2.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
@@ -26,15 +30,15 @@ How to run the sample widget:
 
 - **Step 1:**
 
-**To Run the Sample:**
+_To use this widget sample on your localhost_
 
-- To use the Existing widget-store-sample.js on your localhost
-- Inside this project on your terminal type: `npm run dev`
-- this should run the app on your localhost:5000
+- Inside this project on your terminal type: `npm install`
+- Then inside this project on your terminal type: `npm run dev`
+- This should run the app on your localhost:5000
 
 - **Step 2:**
 
-**To wire up the Widget to the Layout:**
+_To wire up the Widget to the Layout:_
 
 - Upload the **_widgetStoreSample.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
   - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
@@ -43,6 +47,8 @@ How to run the sample widget:
 
 - **Step 3:**
   - The CAD variables used in this demo are specific to a tenant. You will have to modify the **_widget-store-sample.js_** file to reflect your custom variables.
+  - After that on your terminal run: `npm run build`. This will rebuild the project and create the updated **bundle.js**
+  - Followed by `npm run dev`. This will run the app on your localhost.
   - To learn more about CAD variables please refer to the links below.
 
 **Additional Improvements:**

@@ -15,6 +15,8 @@
 
 - Upload the Desktop layout on portal and login to the right team to display.
 
+![Analyzer iFrame Sample](./images/analyzer-iframe-sample.png)
+
 ## Support
 
 For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
