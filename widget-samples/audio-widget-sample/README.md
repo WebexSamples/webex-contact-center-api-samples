@@ -4,7 +4,7 @@ In this tutorial we leverage native javascript for access to the PC microphone a
 
 ### [Watch Now: Audio Recording Widget Example](https://app.vidcast.io/share/2fbacc17-7551-4b69-be1b-47f8cf2b4ac3)
 
-![Audio Widget Sample](./images/audio-widget-sample.png)
+![Audio Widget Sample](./src/images/audio-widget-sample.png)
 
 ## Developer Documentation
 
@@ -21,7 +21,7 @@ The sample can be hosted locally and the demo covers how this is done by buildin
 
 **Step 1:**
 
-To use this widget sample on your localhost
+_To use this widget sample on your localhost : _
 
 - Inside this project on your terminal type: `npm install`
 - Then inside this project on your terminal type: `npm run dev`

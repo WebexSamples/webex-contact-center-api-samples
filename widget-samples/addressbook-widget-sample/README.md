@@ -31,7 +31,7 @@ How to run the sample widget:
 
 **Step 1:**
 
-To use the Existing sa-ds-sdk.js on your localhost :
+_To use the Existing sa-ds-sdk.js on your localhost :_
 
 - Inside this project on your terminal type: `npm install`
 - Then inside this project on your terminal type: `npm run dev`
