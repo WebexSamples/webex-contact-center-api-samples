@@ -4,6 +4,8 @@ In this tutorial we leverage native javascript for access to the PC microphone a
 
 ### [Watch Now: Audio Recording Widget Example](https://app.vidcast.io/share/2fbacc17-7551-4b69-be1b-47f8cf2b4ac3)
 
+![Audio Widget Sample](./images/audio-widget-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
@@ -17,14 +19,28 @@ The sample can be hosted locally and the demo covers how this is done by buildin
 
 ### Executing the sample
 
-How to run the sample widget:
+**Step 1:**
 
-**To Run the Sample:**
+To use this widget sample on your localhost
 
-- To use this widget sample on your localhost
 - Inside this project on your terminal type: `npm install`
-- Then Inside this project on your terminal type: `npm run dev`
-- this should run the app on your localhost:3000
+- Then inside this project on your terminal type: `npm run dev`
+- This should run the app on your localhost:3000
+
+**Step 2:**
+
+_To wire up the Widget to the Layout:_
+
+- Upload the **_audio-widget.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
+  - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
+  - Note that Layouts are configured per Agent Team.
+- Log in to your agent and select the right Team to view the new layout.
+
+**Additional Improvements:**
+
+- You can modify the widget as required.
+- To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
+- You may rename this file, host it on your server of choice, and use this as the widget `src` parameter (under navigation >> page >> widgets) in the layout.
 
 ## Useful Links
 
@@ -32,8 +48,7 @@ How to run the sample widget:
 
 ## Disclaimer
 
-> These samples are meant to be used, as "samples", for demos, and to understand how to interact w
-> ith the WebexCC APIs.
+> These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
 > When building a production grade solution, please consider the overall architecture and design with a security first approach.
 > Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
 > These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
