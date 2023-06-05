@@ -10,6 +10,8 @@ You can copy the legend/name of the card and paste in the JS file and it will ta
 
 This is tenant agnostic - meaning you can enter in your tenants queue / entry point IDs straight into the card to call the methods, as well as your mobile for the DN related methods. No need to modify the JS unless you're adding a new method.
 
+![Voice SDK Sample](./images/voice-sdk-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
@@ -28,13 +30,15 @@ How to run the sample widget:
 
 - **Step 1:**
 
-**To Run the Sample:**
+_To use this widget sample on your localhost_
 
-- To use this widget sample on your localhost
-- Inside this project on your terminal type: `npm run dev`
-- this should run the app on your localhost:5000
+- Inside this project on your terminal type: `npm install`
+- Then inside this project on your terminal type: `npm run dev`
+- This should run the app on your localhost:5000
 
-**To wire up the Widget to the Layout:**
+**Step 2:**
+
+_To wire up the Widget to the Layout:_
 
 - Upload the **_callControlWidget.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
   - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_

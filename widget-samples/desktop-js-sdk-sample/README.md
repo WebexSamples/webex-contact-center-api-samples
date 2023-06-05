@@ -9,6 +9,8 @@ Watch the demo below to understand what this widget does and how to set it up an
 > **Note:** This is a sample that assumes you know the basics of layouts.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-samples/widget-sample-101)**
 
+![Desktop SDK Sample](./images/desktop-sdk-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/guides/desktop**
@@ -27,9 +29,11 @@ How to run the sample widget:
 
 **Step 1:**
 
-- To use the Existing sa-ds-sdk.js on your localhost
-- Inside this project on your terminal type: `npm run dev`
-- this should run the app on your localhost:5000
+_To use this widget sample on your localhost_
+
+- Inside this project on your terminal type: `npm install`
+- Then inside this project on your terminal type: `npm run dev`
+- This should run the app on your localhost:5000
 
 **Step 2:**
 
@@ -39,7 +43,7 @@ How to run the sample widget:
 
 _To wire up the Widget to the Layout:_
 
-- Upload the **_widget-sdk.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
+- Upload the **_desktop-layout-with-sdk-widget.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
   - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
   - Note that Layouts are configured per Agent Team.
 - Log in to your agent and select the right Team to view the new layout.
