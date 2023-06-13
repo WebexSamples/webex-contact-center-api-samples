@@ -4,6 +4,8 @@ The use case on this video demonstrates how a customer can request a callback on
 
 ## [Watch Now: Preferred Agent Callback ](https://app.vidcast.io/share/a38f8bc2-c940-4f45-a79a-e80814628c73)
 
+![Preferred Agent Callback Sample](./images/preferred-agent-callback.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/tasks/v1/create-task**

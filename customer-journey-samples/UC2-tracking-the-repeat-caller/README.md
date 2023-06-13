@@ -4,6 +4,8 @@ This video shows you how to use various JDS API's to track the amount of times a
 
 ## [Watch: Repeat Caller Identification](https://app.vidcast.io/share/df3e7189-6000-44f2-bf22-5508522eeef3)
 
+![Repeat Caller Identification Sample](./images/repeat-caller-identification.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/journey**

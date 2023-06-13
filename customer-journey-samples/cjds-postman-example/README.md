@@ -4,6 +4,8 @@ This video shows you how to use various API's to manage JDS profiles and templat
 
 ## [Watch: JDS API's in Postman and how to use them](https://app.vidcast.io/share/9c7f0d45-d860-4962-99d2-d5d818fde573)
 
+![Customer Journey Api Sample](./images/customer-journey-api-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/journey**

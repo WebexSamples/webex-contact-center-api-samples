@@ -8,6 +8,8 @@
 
 ## [Watch the Video: Understanding WebexCC OAuth2 - App Sample](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
 
+![Basic Authorization Sample](./images/basic-authorization-sample.png)
+
 #### Pre-Requisites:
 
 - Node JS and NPM

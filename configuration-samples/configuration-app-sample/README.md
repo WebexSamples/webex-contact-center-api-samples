@@ -5,6 +5,8 @@ Watch the demo below to understand what this app does and how to set it up and e
 
 ## [Watch Now: Configuration App Sample Overview and Demo](https://app.vidcast.io/share/25878069-6460-4a18-aaef-8e639efc48d3)
 
+![Configuration App Sample](./images/configuration-app-sample.png)
+
 ## Getting Started
 
 This app is assuming you already have a Client ID and Secret. If you don't please go to [postman-sample app](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/postman-sample) and obtain your Client ID and Client Secret.
