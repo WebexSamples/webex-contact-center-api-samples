@@ -4,6 +4,8 @@ This video shows you how to use various JDS API's to pull from the customers jou
 
 ## [Watch: Customer Journey Use case - Directing Customer Input](https://app.vidcast.io/share/2af7bfc3-466d-4a69-8251-fb349d3c8a03)
 
+![Directing customer input Sample](./images/directing-customer-input.png)
+
 ## Developer Documentation and Links
 
 **https://developer.webex-cx.com/documentation/journey**

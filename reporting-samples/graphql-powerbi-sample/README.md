@@ -10,6 +10,8 @@ Watch the demo below to understand what this application does and how to set it 
 
 ## [Watch Now: Integrating Webex Contact Center with Power BI - Sample Spring Boot Application](https://app.vidcast.io/share/6fd7cd09-7930-488c-9f02-0baa13f1d0e3)
 
+![Graphql Power BI Sample](./images/graphql-powerbi-sample.png)
+
 > **Note:** This is a sample that assumes you know the basics of GraphQL Search String API as well as Java/Spring Boot.
 
 > This demo goes over the Java sample code that is used to connect Webex Contact Center with Microsoft Power BI. The code exports the Webex Contact Center reporting data available on the GraphQL "Search" API to a Web interface consumable by Microsoft Power BI. It leverages the power of Spring Boot to make this consumable by any external data lake.

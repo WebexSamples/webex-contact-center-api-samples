@@ -4,6 +4,8 @@ Here is a sample of using the `Search` API (powered by GraphQL) to construct Gra
 
 ## [Watch Now: GraphQL powered Wallboard Overview and Demo](https://app.vidcast.io/share/42059f9c-73b8-48eb-9099-0ea45308cd23)
 
+![Graphql Wallboard Sample](./images/graphql-wallboard-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/search**

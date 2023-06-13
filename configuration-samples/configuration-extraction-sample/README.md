@@ -5,6 +5,10 @@ In this tutorial we are using API described at [Getting Started](https://develop
 
 Watch the demo below to understand what this project does, how to set it up and leverage it to build your own code.
 
+## [Watch Now: Extract Configuration Data App Sample Overview and Demo](https://app.vidcast.io/share/33d1fee2-e721-41ae-848d-d02e700f9473)
+
+![Configuration Data Extraction Sample](./images/configuration-extraction-sample.png)
+
 ## Getting Started
 
 The code can be executed on localhost and is intended to bootstrap your knowledge of the WebexCC APIs.
@@ -14,8 +18,6 @@ To understand how to execute the code, please watch the video.
 To understand additional features [Getting Started](https://developer.webex-cx.com/documentation/getting-started).
 
 ### Executing the sample
-
-[Code Video](https://app.vidcast.io/share/33d1fee2-e721-41ae-848d-d02e700f9473).
 
 How to run the sample code:
 

@@ -5,6 +5,8 @@ The example uses a Javascript injector called Scripty to inject the Callback for
 
 ## [Watch Now: Webcallback API Overview and Demo](https://app.vidcast.io/share/b26ca3a0-309a-4244-8455-56306b302573)
 
+![Callback Sample](./images/callback-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com/documentation/tasks/v1/create-task**

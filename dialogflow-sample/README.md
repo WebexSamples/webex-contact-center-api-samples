@@ -5,6 +5,8 @@ From this tutorial, learn how to pass data to and from Webex Contact Center.
 
 ## [Watch: Working with data on Google DialogFlow ES with Webex Contact Center](https://app.vidcast.io/share/491d0e41-99ab-44cf-a48b-18949c406d73)
 
+![Dialogflow ES Sample](./images/dialogflow-es-sample.png)
+
 ## Developer Documentation
 
 **https://developer.webex-cx.com**
