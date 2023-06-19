@@ -1,7 +1,7 @@
 {
   "name": "headless-crm-widget-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "Headless Widget example - showcasing background workers and listeners - basic Console logs for events and data",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
