@@ -1,9 +1,12 @@
 import { Desktop } from '@wxcc-desktop/sdk';
-//import { SERVICE } from "@wxcc-desktop/sdk-types";
 
+// This is the logger initializer factory method for the headless widget
 export const logger = Desktop.logger.createLogger('headless-widget'); 
+
+// Some sample data points
 let callStartTime = 0 , callEndTime = 0 , callDuration = 0;
 let agentName = '';
+
 
 customElements.define(
   'headless-crm-widget',
@@ -13,62 +16,68 @@ customElements.define(
       this.attachShadow({ mode: 'open' });
     }
 
-
   async connectedCallback() 
   {
     this.init(); 
-    logger.info('Neha log : connectedCallback function');
+    logger.info('Headless Widget Log: connectedCallback function');
   }
   
   
   async init() 
   {
+    // This is the Init Method - called to configure the WebexCC Desktop JS SDK inside the headless widget
     await Desktop.config.init();
-    logger.info('Neha log : init function');
+    logger.info('Headless Widget Log: init function');
     this.registerEventListeners();
   }
 
 
   async findWrapUpCode(wrapUpID) {
+
+    // Collect Wrap up code data and print to console 
     let wrapUpInfo = await Desktop.actions.getWrapUpCodes();
-    
     wrapUpInfo =  JSON.stringify(wrapUpInfo);
     wrapUpInfo = JSON.parse(wrapUpInfo);
 
     let wrapUpCode = wrapUpInfo.find(code => code.id === wrapUpID).name;
-    logger.info("Neha Log : Wrap Up Code selected : " + wrapUpCode);    
+    logger.info("Headless Widget Log: Wrap Up Code selected : " + wrapUpCode);    
   }
 
 
   async registerEventListeners()
   {
+
+    // This method registers all the event listeners supported by the JS SDK.
+    // The event listeners are asynchronous and require handlers within each of the listeners.
+    // Sample handlers below are only console logs as an example
+
+    
     Desktop.agentStateInfo.addEventListener('updated', (agentInfo) => {
-        logger.info('Neha log : Agent state has changed.. !!!');
+        // Listener for agent state
+        logger.info('Headless Widget Log: Agent state has changed.. !!!');
         logger.info(agentInfo);
 
         agentName = agentInfo.find(item => item.name === "agentName").value;
       });
 
     Desktop.agentContact.addEventListener('eAgentOfferContact', (agentContact) => {
-      logger.info('Neha log : Agent Offered Contact');
+      // Listener for agent contact offered
+      logger.info('Headless Widget Log: Agent Offered Contact');
     });
 
     Desktop.agentContact.addEventListener('eAgentContactAssigned', (agentContactAssigned) => {
-      logger.info('Neha log : Agent Assigned Contact');
+      // Listener for agent contact assigned
+      logger.info('Headless Widget Log: Agent Assigned Contact');
+      callStartTime = new Date();
 
-    callStartTime = new Date();
-      
-      //Desktop.screenpop("https://youtube.com");
     });
 
+   Desktop.agentContact.addEventListener("eAgentContactWrappedUp", (contactWrappedUp) => {
 
-   // Desktop.disconnectedCallback.addEventListener()
-
-
-   Desktop.agentContact.addEventListener("eAgentContactWrappedUp", (contactWrappedUp) => {  
-      logger.info("Neha Log : Call wrapped up !! Here is the Call Information....");
-      console.log(contactWrappedUp);
-      console.log(JSON.stringify(contactWrappedUp));
+      
+      logger.info("Headless Widget Log: Contact wrapped up! Here is the Contact Information --> ");
+      logger.info(contactWrappedUp);
+      logger.info(JSON.stringify(contactWrappedUp));
       
       contactWrappedUp = JSON.stringify(contactWrappedUp);
       contactWrappedUp = JSON.parse(contactWrappedUp);
@@ -87,16 +96,17 @@ customElements.define(
       let queueName = contactWrappedUp.data['interaction'].callAssociatedDetails.virtualTeamName
       
       this.findWrapUpCode(wrapUpId);
-      logger.info("Neha Log : ANI is : " + ani);
-      logger.info("Neha Log : DNIS is : " + dn);
-      logger.info("Neha Log : Cad Variable Case Number is : " + cadCaseNo);
-      logger.info("Neha Log : Agent ID is : " + agentID);
-      logger.info('Neha log : Agent Name : ' + agentName);
-      logger.info('Neha log : Queue Name : ' + queueName);
-      logger.info("Neha Log : Interaction ID is : " + interactionId);
-      logger.info("Neha Log : Type of call is : " + callType);
-      logger.info('Neha log : Call Duration : ' + callDuration + ' s');
-      logger.info("Neha Log : Wrap up Reason : " + wrapUpReason);
+       
+      logger.info("Headless Widget Log: ANI is : " + ani);
+      logger.info("Headless Widget Log: DNIS is : " + dn);
+      logger.info("Headless Widget Log: Cad Variable Case Number is : " + cadCaseNo);
+      logger.info("Headless Widget Log: Agent ID is : " + agentID);
+      logger.info('Headless Widget Log: Agent Name : ' + agentName);
+      logger.info('Headless Widget Log: Queue Name : ' + queueName);
+      logger.info("Headless Widget Log: Interaction ID is : " + interactionId);
+      logger.info("Headless Widget Log: Type of call is : " + callType);
+      logger.info('Headless Widget Log: Call Duration : ' + callDuration + ' s');
+      logger.info("Headless Widget Log: Wrap up Reason : " + wrapUpReason);
      });
   } 			
 
