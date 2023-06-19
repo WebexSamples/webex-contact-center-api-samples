@@ -18,8 +18,9 @@ customElements.define(
 
   async connectedCallback() 
   {
+    // Mounting the headless widget and initializing
     this.init(); 
-    logger.info('Headless Widget Log: connectedCallback function');
+    logger.info('Headless Widget Log: Webcomponent connectedCallback function');
   }
   
   
@@ -40,7 +41,7 @@ customElements.define(
     wrapUpInfo = JSON.parse(wrapUpInfo);
 
     let wrapUpCode = wrapUpInfo.find(code => code.id === wrapUpID).name;
-    logger.info("Headless Widget Log: Wrap Up Code selected : " + wrapUpCode);    
+    logger.info('Headless Widget Log: Wrap Up Code selected : ' + wrapUpCode);    
   }
 
 
@@ -53,29 +54,32 @@ customElements.define(
 
     
     Desktop.agentStateInfo.addEventListener('updated', (agentInfo) => {
+      
         // Listener for agent state
         logger.info('Headless Widget Log: Agent state has changed.. !!!');
         logger.info(agentInfo);
 
-        agentName = agentInfo.find(item => item.name === "agentName").value;
+        agentName = agentInfo.find(item => item.name === 'agentName').value;
       });
 
     Desktop.agentContact.addEventListener('eAgentOfferContact', (agentContact) => {
+      
       // Listener for agent contact offered
       logger.info('Headless Widget Log: Agent Offered Contact');
     });
 
     Desktop.agentContact.addEventListener('eAgentContactAssigned', (agentContactAssigned) => {
+      
       // Listener for agent contact assigned
       logger.info('Headless Widget Log: Agent Assigned Contact');
       callStartTime = new Date();
 
     });
 
-   Desktop.agentContact.addEventListener("eAgentContactWrappedUp", (contactWrappedUp) => {
+   Desktop.agentContact.addEventListener('eAgentContactWrappedUp', (contactWrappedUp) => {
 
-      
-      logger.info("Headless Widget Log: Contact wrapped up! Here is the Contact Information --> ");
+      // Wrap up event listener - and collection of contact metadata 
+      logger.info('Headless Widget Log: Contact wrapped up! Here is the Contact Information --> ');
       logger.info(contactWrappedUp);
       logger.info(JSON.stringify(contactWrappedUp));
       
@@ -97,16 +101,16 @@ customElements.define(
       
       this.findWrapUpCode(wrapUpId);
        
-      logger.info("Headless Widget Log: ANI is : " + ani);
-      logger.info("Headless Widget Log: DNIS is : " + dn);
-      logger.info("Headless Widget Log: Cad Variable Case Number is : " + cadCaseNo);
-      logger.info("Headless Widget Log: Agent ID is : " + agentID);
+      logger.info('Headless Widget Log: ANI is : ' + ani);
+      logger.info('Headless Widget Log: DNIS is : ' + dn);
+      logger.info('Headless Widget Log: Cad Variable Case Number is : ' + cadCaseNo);
+      logger.info('Headless Widget Log: Agent ID is : ' + agentID);
       logger.info('Headless Widget Log: Agent Name : ' + agentName);
       logger.info('Headless Widget Log: Queue Name : ' + queueName);
-      logger.info("Headless Widget Log: Interaction ID is : " + interactionId);
-      logger.info("Headless Widget Log: Type of call is : " + callType);
+      logger.info('Headless Widget Log: Interaction ID is : ' + interactionId);
+      logger.info('Headless Widget Log: Type of call is : ' + callType);
       logger.info('Headless Widget Log: Call Duration : ' + callDuration + ' s');
-      logger.info("Headless Widget Log: Wrap up Reason : " + wrapUpReason);
+      logger.info('Headless Widget Log: Wrap up Reason : ' + wrapUpReason);
      });
   } 			
 
