@@ -7,7 +7,6 @@ export const logger = Desktop.logger.createLogger('headless-widget');
 let callStartTime = 0 , callEndTime = 0 , callDuration = 0;
 let agentName = '';
 
-
 customElements.define(
   'headless-crm-widget',
   class extends HTMLElement {
@@ -16,69 +15,65 @@ customElements.define(
       this.attachShadow({ mode: 'open' });
     }
 
+  // Mounting the headless widget and initializing
   async connectedCallback() 
   {
-    // Mounting the headless widget and initializing
     this.init(); 
     logger.info('Headless Widget Log: Webcomponent connectedCallback function');
   }
-  
-  
+
+
+  // Init Method - called to configure the WebexCC Desktop JS SDK inside the headless widget
   async init() 
-  {
-    // This is the Init Method - called to configure the WebexCC Desktop JS SDK inside the headless widget
+  {  
     await Desktop.config.init();
     logger.info('Headless Widget Log: init function');
     this.registerEventListeners();
   }
 
 
-  async findWrapUpCode(wrapUpID) {
-
-    // Collect Wrap up code data and print to console 
-    let wrapUpInfo = await Desktop.actions.getWrapUpCodes();
-    wrapUpInfo =  JSON.stringify(wrapUpInfo);
-    wrapUpInfo = JSON.parse(wrapUpInfo);
-
-    let wrapUpCode = wrapUpInfo.find(code => code.id === wrapUpID).name;
-    logger.info('Headless Widget Log: Wrap Up Code selected : ' + wrapUpCode);    
-  }
-
-
+  // This method registers all the event listeners supported by the JS SDK.
+  // The event listeners are asynchronous and require handlers within each of the listeners.
+  // Sample handlers below are only console logs as examples
   async registerEventListeners()
   {
 
-    // This method registers all the event listeners supported by the JS SDK.
-    // The event listeners are asynchronous and require handlers within each of the listeners.
-    // Sample handlers below are only console logs as an example
-
-    
+    // Listener for agent state change event
     Desktop.agentStateInfo.addEventListener('updated', (agentInfo) => {
+      logger.info('Headless Widget Log: Agent state has changed.. !!!');
+      agentName = agentInfo.find(item => item.name === 'agentName').value;
+    });
+
+
+    // Listener for screenpop event
+    Desktop.screenpop.addEventListener("eScreenPop", screenPopMsg => {
+      screenPopMsg = JSON.stringify(screenPopMsg);
+      screenPopMsg = JSON.parse(screenPopMsg);
       
-        // Listener for agent state
-        logger.info('Headless Widget Log: Agent state has changed.. !!!');
-        logger.info(agentInfo);
+      let screenPopName = screenPopMsg.data['screenPopName'];
+      let screenPopUrl = screenPopMsg.data['screenPopUrl'];
 
-        agentName = agentInfo.find(item => item.name === 'agentName').value;
-      });
+      logger.info('Headless Widget Log: Screenpop Message Information --> ');
+      logger.info('Headless Widget Log: ScreenPop Name : ' + screenPopName);
+      logger.info('Headless Widget Log: ScreenPop URL : ' + screenPopUrl);
+    });
 
+
+    // Listener for agent contact offered event
     Desktop.agentContact.addEventListener('eAgentOfferContact', (agentContact) => {
-      
-      // Listener for agent contact offered
       logger.info('Headless Widget Log: Agent Offered Contact');
     });
 
+
+    // Listener for agent contact assigned event
     Desktop.agentContact.addEventListener('eAgentContactAssigned', (agentContactAssigned) => {
-      
-      // Listener for agent contact assigned
       logger.info('Headless Widget Log: Agent Assigned Contact');
       callStartTime = new Date();
-
     });
 
-   Desktop.agentContact.addEventListener('eAgentContactWrappedUp', (contactWrappedUp) => {
 
-      // Wrap up event listener - and collection of contact metadata 
+    // Wrap up event listener - and collection of contact metadata 
+    Desktop.agentContact.addEventListener('eAgentContactWrappedUp', (contactWrappedUp) => {
       logger.info('Headless Widget Log: Contact wrapped up! Here is the Contact Information --> ');
       logger.info(contactWrappedUp);
       logger.info(JSON.stringify(contactWrappedUp));
@@ -111,10 +106,21 @@ customElements.define(
       logger.info('Headless Widget Log: Type of call is : ' + callType);
       logger.info('Headless Widget Log: Call Duration : ' + callDuration + ' s');
       logger.info('Headless Widget Log: Wrap up Reason : ' + wrapUpReason);
-     });
-  } 			
+    });
+  } 	
 
-    disconnectedCallback() {}
 
+  // Collect Wrap up code data and print to console 
+  async findWrapUpCode(wrapUpID) 
+  {
+    let wrapUpInfo = await Desktop.actions.getWrapUpCodes();
+    wrapUpInfo =  JSON.stringify(wrapUpInfo);
+    wrapUpInfo = JSON.parse(wrapUpInfo);
+
+    let wrapUpCode = wrapUpInfo.find(code => code.id === wrapUpID).name;
+    logger.info('Headless Widget Log: Wrap Up Code selected : ' + wrapUpCode);    
   }
-);
+    
+  disconnectedCallback() {}
+
+});
