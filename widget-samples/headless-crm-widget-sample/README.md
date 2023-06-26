@@ -2,13 +2,15 @@
 
 This is a tutorial on how to use the Desktop JS SDK Library along with a Vanilla JS Web Component desktop widget as a "Headless Widget" to ensure the widget runs in the background.
 
-This is useful to build CRM connectors while embedding the desktop as an iFrame into the CRM or another application. 
+This is useful to build CRM connectors while embedding the desktop as an iFrame into the CRM or another application.
 
 In this tutorial we are using a few methods like StateChange, addEventListeners and performing a few action on these events by writing to the console log and extracting data.
 
 This is meant to be a very simple - oversimplified version of the event handlers for a CRM - however one can begin using this and extend onto it by adding more methods and event handlers.
 
 The principle is: Initialize the widget, Register the event listeners, and build an event handler for each of the events.
+
+Watch:[Headless CRM Widget Sample](https://app.vidcast.io/share/b4155a4f-edf8-48cc-9c59-2ff80bf901b3)
 
 > **Note:** This is a sample that assumes you know the basics of layouts.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-samples/widget-sample-101)**
