@@ -10,7 +10,7 @@ This is meant to be a very simple - oversimplified version of the event handlers
 
 The principle is: Initialize the widget, Register the event listeners, and build an event handler for each of the events.
 
-Watch:[Headless CRM Widget Sample](https://app.vidcast.io/share/b4155a4f-edf8-48cc-9c59-2ff80bf901b3)
+## Watch:[Headless CRM Widget Sample](https://app.vidcast.io/share/b4155a4f-edf8-48cc-9c59-2ff80bf901b3)
 
 > **Note:** This is a sample that assumes you know the basics of layouts.
 > We recommend watching the videos @ **[Desktop Layout 101 and Widget Starter](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/widget-samples/widget-sample-101)**
