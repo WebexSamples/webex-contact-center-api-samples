@@ -180,7 +180,7 @@ template.innerHTML = `
                 <fieldset class="outline imageBkGd">
                   <legend> <b>Make an OutDial Call</b></legend>
                   <div>
-                  <span class="atr" >EntryPnt Id #</span>
+                  <span class="atr" >OutDial EP Id #</span>
                     <input class="val" type="text" id="entryPointId" onfocus="this.value=''"></input>
                     <span class="atr" >Destination # </span>
                     <input class="val" type="text" id="destination" onfocus="this.value=''"></input>
@@ -379,14 +379,15 @@ class myDesktopSDK extends HTMLElement {
 
   // Make an OutDial Call
   async makeCall(entryPointId, destination) {
-    alert("make call");
+    //entrypoint is the OutDial Entrypoint
+    //Origin is the OutDial ANI
     try {
       const outDial = await Desktop.dialer.startOutdial({
         data: {
           entryPointId,
           destination,
           direction: "OUTBOUND",
-          origin: this.outDialOrigin,
+          origin: "+1xxxxxxxxxx",
           attributes: {},
           mediaType: "telephony",
           outboundType: "OUTDIAL"
