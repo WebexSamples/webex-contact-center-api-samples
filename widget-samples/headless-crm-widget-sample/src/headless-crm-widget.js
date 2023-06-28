@@ -5,7 +5,9 @@ export const logger = Desktop.logger.createLogger('headless-widget');
 
 // Some sample data points
 let callStartTime = 0 , callEndTime = 0 , callDuration = 0;
-let agentName = '';
+let agentName, agentState = '';
+let isInitialized = false;
+let callType = 'Inbound';
 
 customElements.define(
   'headless-crm-widget',
@@ -40,8 +42,28 @@ customElements.define(
 
     // Listener for agent state change event
     Desktop.agentStateInfo.addEventListener('updated', (agentInfo) => {
-      logger.info('Headless Widget Log: Agent state has changed.. !!!');
-      agentName = agentInfo.find(item => item.name === 'agentName').value;
+      logger.info('Headless Widget Log: agentInfo : ' + JSON.stringify(agentInfo));
+
+      if(isInitialized === false)
+      {
+        agentName = agentInfo.find(item => item.name === 'agentName').value;
+      }
+      else
+      {
+        logger.info('Headless Widget Log: Agent state has changed.. !!!');
+
+        if(agentInfo.some(obj => obj.value === 'Available') === true)
+          agentState = agentInfo.find(item => item.name === 'subStatus').value;
+        else
+          agentState = agentInfo.find(item => item.name === 'idleCode').value['name'];
+
+        logger.info('Headless Widget Log: Agent State is : ' + agentState);
+      }
+
+      if(agentState === 'Make OutDial Call')
+        this.makeOutDialCall();
+
+      isInitialized = true;
     });
 
 
@@ -75,8 +97,7 @@ customElements.define(
     // Wrap up event listener - and collection of contact metadata 
     Desktop.agentContact.addEventListener('eAgentContactWrappedUp', (contactWrappedUp) => {
       logger.info('Headless Widget Log: Contact wrapped up! Here is the Contact Information --> ');
-      logger.info(contactWrappedUp);
-      logger.info(JSON.stringify(contactWrappedUp));
+      logger.info('Headless Widget Log: WrapUpInfo : ' + contactWrappedUp);
       
       contactWrappedUp = JSON.stringify(contactWrappedUp);
       contactWrappedUp = JSON.parse(contactWrappedUp);
@@ -91,8 +112,13 @@ customElements.define(
       let dn = contactWrappedUp.data['interaction'].callAssociatedDetails.dn;
       let callType = contactWrappedUp.data['interaction'].contactDirection.type
       let wrapUpReason = contactWrappedUp.data['type']
-      let cadCaseNo = contactWrappedUp.data['interaction'].callAssociatedData.Case_Number.value;
-      let queueName = contactWrappedUp.data['interaction'].callAssociatedDetails.virtualTeamName
+      let queueName = contactWrappedUp.data['interaction'].callAssociatedDetails.virtualTeamName;
+      let cadCaseNo;
+
+      if(callType === 'Inbound')
+      {
+        cadCaseNo = contactWrappedUp.data['interaction'].callAssociatedData.Case_Number.value;
+      }
       
       this.findWrapUpCode(wrapUpId);
        
@@ -121,6 +147,31 @@ customElements.define(
     logger.info('Headless Widget Log: Wrap Up Code selected : ' + wrapUpCode);    
   }
     
+
+  // method to make an OutDial Call
+  async makeOutDialCall()
+  {
+    callType = 'Outbound';
+    try {
+      const outDial = await Desktop.dialer.startOutdial({
+      data: {
+          entryPointId: '57a9b978-206f-48bd-a340-770b61ca83c4', // OutDial Entry Point ID
+          destination: '14806754111', // user phone number
+          direction: 'OUTBOUND', // either INBOUND or OUTBOUND
+          origin: '+14806754084', // OutDial ANI with country code
+          attributes: {},
+          mediaType: 'telephony',
+          outboundType: 'OUTDIAL',
+         }
+      });
+      logger.info('Headless Widget Log: Dialer outdial : ' + JSON.stringify(outDial));
+    }
+    catch (error) {
+      logger.info('Headless Widget Log: Dialer Error Message : ' + error);
+      Desktop.dialer.addEventListener("eOutdialFailed", msg => logger.info('Headless Widget Log: ' + msg));
+    }
+  }
+
   disconnectedCallback() {}
 
 });

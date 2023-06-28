@@ -58,6 +58,16 @@ _To wire up the Widget to the Layout:_
 - To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
 - You may rename this file, host it on your server of choice, and use this as the widget `src` parameter in the layout.
 
+**To use OutDial feature**
+In the data object, you need to configure below mandatory fields :
+
+- entryPointId is the **_OutDial Entry Point ID_**
+- destination is the **_Dial number of the end recipient_**
+- direction should be **_INBOUND or OUTBOUND_**
+- origin is the **_OutDial ANI (with country code)_**
+- mediaType is the **_media channel(telephony, social, email or chat)_**
+- outboundType = **_OUTDIAL or CourtesyCallback_**
+
 ## Useful Links - Supplemental Resources
 
 [Desktop JS SDK Official Guide](https://developer.webex-cx.com/documentation/guides/desktop)
