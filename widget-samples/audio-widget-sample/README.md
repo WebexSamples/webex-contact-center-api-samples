@@ -12,7 +12,7 @@ In this tutorial we leverage native javascript for access to the PC microphone a
 
 ## Getting Started
 
-The sample can be hosted locally and the demo covers how this is done by building and hosting the widget on localhost.
+This POC widget sample is currently hosted by us on AWS for a limited time. Follow instructions below to wire up the widget on your tenant.
 
 > To understand how to interact with our Desktop Layout, please watch the video and supplemental detailed documentation @ **[Desktop Layout - Administration Guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)**
 > To understand more about the Desktop STORE, please also look at the **useful links** below for additional references.
@@ -21,26 +21,12 @@ The sample can be hosted locally and the demo covers how this is done by buildin
 
 **Step 1:**
 
-_To use this widget sample on your localhost : _
-
-- Inside this project on your terminal type: `npm install`
-- Then inside this project on your terminal type: `npm run dev`
-- This should run the app on your localhost:3000
-
-**Step 2:**
-
 _To wire up the Widget to the Layout:_
 
 - Upload the **_audio-widget.json_** file onto your Administration Portal **[WebexCC Portal - US](https://portal.wxcc-us1.cisco.com/portal/home.html#)**
   - _link above is referencing the US portal link please change if you are in different geo (us1, eu1, eu2, anz1)_
   - Note that Layouts are configured per Agent Team.
 - Log in to your agent and select the right Team to view the new layout.
-
-**Additional Improvements:**
-
-- You can modify the widget as required.
-- To create a new compiled JS file, using `npm run build` which will create the new compiled JS under `build/bundle.js`.
-- You may rename this file, host it on your server of choice, and use this as the widget `src` parameter (under navigation >> page >> widgets) in the layout.
 
 ## Useful Links
 
