@@ -1,6 +1,6 @@
 {
   "version": "0.0.6",
-  "appTitle": "Address Book Widget Sample",
+  "appTitle": "Audio Recorder Widget Sample",
   "logo": "https://wxccdemo.s3.us-west-1.amazonaws.com/allVerticals/webex.png",
   "dragDropEnabled": false,
   "notificationTimer": 8,
@@ -19,18 +19,10 @@
         }
       },
       "layout": {
-        "areas": [
-          [
-            "comp1"
-          ]
-        ],
+        "areas": [["comp1"]],
         "size": {
-          "cols": [
-            1
-          ],
-          "rows": [
-            1
-          ]
+          "cols": [1],
+          "rows": [1]
         }
       }
     },
@@ -203,18 +195,10 @@
             }
           },
           "layout": {
-            "areas": [
-              [
-                "comp1"
-              ]
-            ],
+            "areas": [["comp1"]],
             "size": {
-              "cols": [
-                1
-              ],
-              "rows": [
-                1
-              ]
+              "cols": [1],
+              "rows": [1]
             }
           }
         },
@@ -240,34 +224,20 @@
               "children": [
                 {
                   "comp": "sa-audio-video",
-                  "script": "http://localhost:3000/build/bundle.js",
+                  "script": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/audio-video/bundle.js",
                   "attributes": {
                     "darkmode": "$STORE.app.darkMode"
                   },
-                  "properties": {
-                    "accessToken": "$STORE.auth.accessToken",
-                    "orgId": "$STORE.agent.orgId",
-                    "channels": "$STORE.agent.channels",
-                    "auth": "https://audio-video.onrender.com/auth",
-                    "token": "https://audio-video.onrender.com/token"
-                  }
+                  "properties": {}
                 }
               ]
             }
           },
           "layout": {
-            "areas": [
-              [
-                "main"
-              ]
-            ],
+            "areas": [["main"]],
             "size": {
-              "cols": [
-                1
-              ],
-              "rows": [
-                1
-              ]
+              "cols": [1],
+              "rows": [1]
             }
           }
         }
