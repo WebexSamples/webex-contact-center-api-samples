@@ -71,13 +71,13 @@ Organization License snapshot
 
 - You can see that the flow has the following mandatory flow variables
 
-**OrgId –**Org ID of the organization – required for sending an SMS
+**OrgId** - Org ID of the organization – required for sending an SMS
 
-**Token –**Bot token you created – required for authorization
+**Token** - Bot token you created – required for authorization
 
-**GuestKey**– Guest URL shorthand
+**GuestKey** – Guest URL shorthand
 
-**HostKey**– Host URL Shorthand
+**HostKey** – Host URL Shorthand
 
 **Overall Flow**
 
