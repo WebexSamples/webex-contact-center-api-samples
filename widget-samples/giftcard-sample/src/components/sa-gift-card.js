@@ -1,28 +1,26 @@
-import { Desktop } from '@wxcc-desktop/sdk';
-import styleSCSS from '../giftCard.scss';
+import { Desktop } from "@wxcc-desktop/sdk";
+import styleSCSS from "../giftCard.scss";
 // import { imageBase64 } from "../images/imageBase64.js";
-import { sendWebHook } from './webHooks/sendWebHook.js';
-import { giftCodeDB } from './giftDB/giftCodeDB.js';
-import { sendOrderFromWeGift } from './weGift/sendOrderFromWeGift.js';
-import { notifications } from './helpers/notifications.js';
+import { sendWebHook } from "./webHooks/sendWebHook.js";
+import { giftCodeDB } from "./giftDB/giftCodeDB.js";
+import { sendOrderFromWeGift } from "./weGift/sendOrderFromWeGift.js";
+import { notifications } from "./helpers/notifications.js";
 
-const style = document.createElement('style');
+const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleSCSS));
 
-const template = document.createElement('template');
+const template = document.createElement("template");
 
 export default class saGiftCard extends HTMLElement {
   constructor() {
     super();
 
-    const fontAwesome = document.createElement('link');
-    fontAwesome.href =
-      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css';
-    fontAwesome.rel = 'stylesheet';
+    const fontAwesome = document.createElement("link");
+    fontAwesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css";
+    fontAwesome.rel = "stylesheet";
     document.head.appendChild(fontAwesome);
 
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(style);
 
     // global vars
@@ -48,10 +46,9 @@ export default class saGiftCard extends HTMLElement {
   }
 
   getGiftMessage() {
-    let messageSelect = this.shadowRoot.querySelector('.options');
-    messageSelect.addEventListener('change', () => {
-      this.selectedText =
-        messageSelect.options[messageSelect.selectedIndex].text;
+    let messageSelect = this.shadowRoot.querySelector(".options");
+    messageSelect.addEventListener("change", () => {
+      this.selectedText = messageSelect.options[messageSelect.selectedIndex].text;
     });
   }
 
@@ -65,20 +62,20 @@ export default class saGiftCard extends HTMLElement {
   }
 
   async applyGiftCardInfoEvent() {
-    const giftCardButtons = this.shadowRoot.querySelectorAll('.giftCard');
-    giftCardButtons.forEach((button) => {
-      button.addEventListener('mouseover', async () => {
+    const giftCardButtons = this.shadowRoot.querySelectorAll(".giftCard");
+    giftCardButtons.forEach(button => {
+      button.addEventListener("mouseover", async () => {
         let giftName, giftEmail, giftANI;
-        giftName = this.shadowRoot.querySelectorAll('.fullName');
-        giftName.forEach(async (name) => {
+        giftName = this.shadowRoot.querySelectorAll(".fullName");
+        giftName.forEach(async name => {
           name.textContent = await this.fullName;
         });
-        giftEmail = this.shadowRoot.querySelectorAll('.email');
-        giftEmail.forEach(async (email) => {
+        giftEmail = this.shadowRoot.querySelectorAll(".email");
+        giftEmail.forEach(async email => {
           email.textContent = await this.email;
         });
-        giftANI = this.shadowRoot.querySelectorAll('.ani');
-        giftANI.forEach(async (ani) => {
+        giftANI = this.shadowRoot.querySelectorAll(".ani");
+        giftANI.forEach(async ani => {
           ani.textContent = await this.ani;
         });
       });
@@ -111,9 +108,9 @@ export default class saGiftCard extends HTMLElement {
   }
 
   async mainEvent() {
-    const sendButton = this.shadowRoot.querySelectorAll('.button.secondary');
-    sendButton.forEach(async (sms) => {
-      sms.addEventListener('click', async (e) => {
+    const sendButton = this.shadowRoot.querySelectorAll(".button.secondary");
+    sendButton.forEach(async sms => {
+      sms.addEventListener("click", async e => {
         e.preventDefault();
         this.emailSendEvent();
         this.domNotificationResults();
@@ -127,9 +124,9 @@ export default class saGiftCard extends HTMLElement {
       phone: await this.ani,
       reason: await this.sendGiftMessage(),
       code: await this.code,
-      name: await this.fullName,
+      name: await this.fullName
     });
-    let status = await sendWebHook('POST', raw, this.smsWebHook);
+    let status = await sendWebHook("POST", raw, this.smsWebHook);
     let postResults = await status.response;
     return postResults;
   }
@@ -137,16 +134,16 @@ export default class saGiftCard extends HTMLElement {
   async domNotificationResults() {
     let usePostResults = await this.smsSendEvent();
     switch (usePostResults[0].code) {
-      case '1002':
-        let successStatus = this.shadowRoot.querySelectorAll('.status');
-        notifications(successStatus, 'Success', 'green');
+      case "1002":
+        let successStatus = this.shadowRoot.querySelectorAll(".status");
+        notifications(successStatus, "Success", "green");
 
-        let imitationGiftCode = this.shadowRoot.querySelectorAll('.dbId');
+        let imitationGiftCode = this.shadowRoot.querySelectorAll(".dbId");
         notifications(imitationGiftCode, this.code);
         break;
       default:
-        let failedStatus = this.shadowRoot.querySelectorAll('.status');
-        notifications(failedStatus, 'Failed', 'tomato');
+        let failedStatus = this.shadowRoot.querySelectorAll(".status");
+        notifications(failedStatus, "Failed", "tomato");
         break;
     }
   }
@@ -156,9 +153,9 @@ export default class saGiftCard extends HTMLElement {
       email: await this.email,
       reason: await this.sendGiftMessage(),
       code: await this.code,
-      name: await this.fullName,
+      name: await this.fullName
     });
-    let status = await sendWebHook('POST', raw, this.emailWebHook);
+    let status = await sendWebHook("POST", raw, this.emailWebHook);
     await status.response;
   }
 
@@ -168,13 +165,13 @@ export default class saGiftCard extends HTMLElement {
 
   async sendOrderFromWeGiftEvent() {
     let raw = JSON.stringify({
-      product_code: 'SBUX-US',
-      currency_code: 'USD',
-      amount: '5.00',
+      product_code: "SBUX-US",
+      currency_code: "USD",
+      amount: "5.00",
       description: await this.sendGiftMessage(),
-      delivery_method: 'email',
-      delivery_format: 'url-instant',
-      delivery_email: await this.getEmail(),
+      delivery_method: "email",
+      delivery_format: "url-instant",
+      delivery_email: await this.getEmail()
     });
     await sendOrderFromWeGift(raw);
   }
@@ -345,5 +342,6 @@ export default class saGiftCard extends HTMLElement {
         </section>
       </div>
         `;
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 }
