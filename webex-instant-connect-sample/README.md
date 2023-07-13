@@ -1,6 +1,6 @@
-**Webex Instant Connect with Webex Contact Center**
+# Webex Instant Connect with Webex Contact Center
 
-**Voice to Video Escalation to enable Video Contact Centers**
+## Voice to Video Escalation to enable Video Contact Centers
 
 **Overview**
 
@@ -16,15 +16,15 @@ Customer calls into the Webex Contact Center via the telephony channel and gets 
 
 **Example Scenario**
 
-Customer calls in regarding a device problem\. The Agent is connected on voice and customer receives an SMS to share a live video feed to the agent regarding the device diagnostic status, the agent <a id="_Int_j5pvrrfK"></a>is able to guide the customer more effectively having seen the problem live\.
+Customer calls in regarding a device problem\. The Agent is connected on voice and customer receives an SMS to share a live video feed to the agent regarding the device diagnostic status, the agent is able to guide the customer more effectively having seen the problem live\.
 
 **Configuration**
 
-**Pre\-Requisites: **
+**Pre\-Requisites:**
 
 - Webex Contact Center is already configured for the org\.
 - Voice telephony is already using Webex Contact Center to route to an Agent\.
-- Self Service menus and Routing are already <a id="_Int_sL1PntkR"></a>setup on Webex Contact Center\.
+- Self Service menus and Routing are already setup on Webex Contact Center\.
 
 The voice to video use case requires 3 items to be configured\. It is a simple 3 step process\.
 
@@ -56,14 +56,14 @@ Organization License snapshot
 
 ![screenshot](./images/5.png)
 
-**Step 2: Create a new Bot Account on developer\.webex\.com to obtain an access token\. **
+**Step 2: Create a new Bot Account on developer\.webex\.com to obtain an access token\.**
 
-- This account will be used with the instant connect <a id="_Int_bmDqgFzO"></a>API behind the scenes to create a meeting, send an SMS meeting link, etc\.
+- This account will be used with the instant connect API behind the scenes to create a meeting, send an SMS meeting link, etc\.
 - After creating the bot, copy the Access Token for future use in Step 3\.
 
 ![screenshot](./images/6.png)
 
-**Step 3: Import the Instant_Connect_Contact_Center\.json Flow into Webex Contact Center\. **
+**Step 3: Import the Instant_Connect_Contact_Center\.json Flow into Webex Contact Center\.**
 
 - After importing the flow, this is how it looks\.
 
@@ -71,13 +71,13 @@ Organization License snapshot
 
 - You can see that the flow has the following mandatory flow variables
 
-**OrgId – **Org ID of the organization – required for sending an SMS
+**OrgId –**Org ID of the organization – required for sending an SMS
 
-**Token – **Bot token you created – required for authorization
+**Token –**Bot token you created – required for authorization
 
-**GuestKey **– Guest URL shorthand
+**GuestKey**– Guest URL shorthand
 
-**HostKey **– Host URL Shorthand
+**HostKey**– Host URL Shorthand
 
 **Overall Flow**
 
@@ -85,17 +85,18 @@ Organization License snapshot
 
 ![screenshot](./images/8.png)
 
-Generate Link Node – HTTP POST Node
+**Generate Link Node – HTTP POST Node**
 
 This is used to create a meeting link that will be popped into the Agent Desktop as a live meeting
 
-curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v2/joseencrypt](https://mtg-broker-a.wbx2.com/api/v2/joseencrypt)' \\
+```
+curl --location --request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v2/joseencrypt](https://mtg-broker-a.wbx2.com/api/v2/joseencrypt)' \\
 
-\-\-header 'Authorization: <a id="_Int_gHyV78Pk"></a>Bearer \{\{token\}\}' \\
+--header 'Authorization: Bearer \{\{token\}\}' \\
 
-\-\-header 'Content\-Type: application/json' \\
+--header 'Content\-Type: application/json' \\
 
-\-\-data\-raw '\{
+--data\-raw '\{
 
 "jwt": \{
 
@@ -114,12 +115,13 @@ curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v2/jo
 "provideShortUrls" : true
 
 \}'
+```
 
 ![screenshot](./images/9.png)![screenshot](./images/10.png)
 
 **Section 2 – This is where the Agent Screen pop is sent to the agent\. 1 Screen pop GET URL node\. Agent is made the host of the meeting\.**
 
-**GET **[**https://instant\.webex\.com/visit/\{\{hostKey**](https://instant.webex.com/visit/{{hostKey)**\}\} **
+**GET** [**https://instant\.webex\.com/visit/\{\{hostKey**](https://instant.webex.com/visit/{{hostKey)**\}\}**
 
 **hostKey is extracted from Section 1 – Generate meeting Link**
 
@@ -132,13 +134,14 @@ curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v2/jo
 
 **Section 3 – This is where the Customer SMS is sent with the Guest Link URL\. Customer is the guest of the meeting \(No login required\)**
 
-curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sms/meetingInvite](https://mtg-broker-a.wbx2.com/api/v1/sms/meetingInvite)' \\
+```curl
+curl --location --request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sms/meetingInvite](https://mtg-broker-a.wbx2.com/api/v1/sms/meetingInvite)' \\
 
-\-\-header 'Authorization: <a id="_Int_bnpPLVMx"></a>Bearer \{\{token\}\}' \\
+--header 'Authorization: Bearer \{\{token\}\}' \\
 
-\-\-header 'Content\-Type: application/json' \\
+--header 'Content\-Type: application/json' \\
 
-\-\-data\-raw '\{
+--data\-raw '\{
 
     "integration": "jose",
 
@@ -155,6 +158,7 @@ curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sm
     \]
 
 \}'
+```
 
 **Send SMS Node Settings**
 
@@ -162,13 +166,13 @@ curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sm
 
 ![screenshot](./images/14.png)![screenshot](./images/15.png)
 
-**Demo **
+**Demo**
 
 **Workflow and Narrative**
 
 - Customer calls into the business\. Self\-service is minimal, an Agent is selected, and the call is connected\.
 - In parallel, the Customer receives a link via SMS and the Agent automatically joins the Instant Connect Webex meeting that gets delivered on the Agent Desktop when the call is answered\.
-- The customer <a id="_Int_DdBzhZ6Z"></a>is able to turn on the speaker phone and join the instant connect meeting\.
+- The customer is able to turn on the speaker phone and join the instant connect meeting\.
 - Audio flows through the existing Webex Contact Center Agent to Customer voice path\.
 - Video flows through the Instant Connect meeting to provide a live video feed\.
 - There is minimal lag between the audio and video feed/channels\.
@@ -183,11 +187,11 @@ curl \-\-location \-\-request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sm
 
 ![screenshot](./images/17.jpeg)
 
-**Customer – SMS meeting link **
+**Customer – SMS meeting link**
 
 ![screenshot](./images/18.jpeg)![screenshot](./images/19.jpeg)
 
-**Customer – Joined meeting **
+**Customer – Joined meeting**
 
 ![screenshot](./images/20.jpeg)
 
