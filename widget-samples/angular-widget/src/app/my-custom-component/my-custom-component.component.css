@@ -1,0 +1,50 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+:host {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  color: gray;
+}
+
+:host .isDark {
+  font-family: monospace;
+  background: lightblue;
+  color: #2f4d6e;
+}
+:host mat-card {
+  max-width: 500px;
+  color: white;
+  margin-top: 20px;
+  background: slategray;
+}
+:host button {
+  background: #c7eeff !important;
+  color: #558dc8 !important;
+}
+:host p {
+  font-size: 14px;
+}
+:host img {
+  background: white;
+  height: 200px;
+}
+:host mat-card-subtitle {
+  color: white !important;
+}
+:host mat-divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255);
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url("https://picsum.photos/id/603/600/400");
+  background-size: cover;
+}
+
+.example-full-width {
+  width: 100%;
+}

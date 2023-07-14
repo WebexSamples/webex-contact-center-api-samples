@@ -1,0 +1,34 @@
+<!-- This is an example of how to display attributes/properties passed into the custom element inside the element's template
+	and how to consume a momentum web component   -->
+<md-badge color="blue">Is darkMode?: {{ isDarkMode }}</md-badge>
+
+<mat-card class="example-card">
+	<mat-card-header>
+		<div mat-card-avatar class="example-header-image"></div>
+		<mat-card-title>Angular Widget</mat-card-title>
+		<mat-card-subtitle>Build widgets based on Angular Elements</mat-card-subtitle>
+	</mat-card-header>
+	<img mat-card-image src="https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/illustrations/workplace.svg"
+		alt="workplace">
+	<mat-card-content>
+		<p>
+			The button above: <span class="isDark">is darkMode</span> is using the Momentum Library for styling and getting
+			data passed through properties
+			on the
+			layout.json
+			file.
+			<mat-divider></mat-divider>
+			The card itself, is using Material Library.
+			<mat-divider></mat-divider>
+			Place a call into your IVR. We are looping to get the interaction Id.
+			This Id, will be the basis to run many Desktop/SDK methods within your app/widget.
+		</p>
+		<form class="example-form">
+			<mat-form-field class="example-full-width">
+				<mat-label>Interaction Id </mat-label>
+				<input matInput placeholder="Id" value="{{ interId }}">
+			</mat-form-field>
+		</form>
+	</mat-card-content>
+
+</mat-card>
