@@ -1,0 +1,59 @@
+{
+  "name": "sa-angular-widget",
+  "version": "0.0.1",
+  "author": "Niko Theologitis / based for desktop/SDK taken from the webex-contact-center-widget-starter",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^15.2.9",
+    "@angular/cdk": "15.2.9",
+    "@angular/common": "^15.2.9",
+    "@angular/compiler": "^15.2.9",
+    "@angular/core": "^15.2.9",
+    "@angular/elements": "^15.2.9",
+    "@angular/forms": "^15.2.9",
+    "@angular/material": "15.2.9",
+    "@angular/platform-browser": "^15.2.9",
+    "@angular/platform-browser-dynamic": "^15.2.9",
+    "@angular/router": "^15.2.9",
+    "@wxcc-desktop/sdk": "^1.2.7",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^15.2.9",
+    "@angular/cli": "~15.2.9",
+    "@angular/compiler-cli": "^15.2.9",
+    "@momentum-ui/core": "19.15.16",
+    "@momentum-ui/icons": "8.28.0",
+    "@momentum-ui/tokens": "^1.7.1",
+    "@momentum-ui/utils": "6.2.15",
+    "@momentum-ui/web-components": "2.5.3",
+    "@types/jasmine": "~4.0.0",
+    "jasmine-core": "~4.3.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1",
+    "typescript": "~4.9.5"
+  },
+  "peerDependencies": {
+    "@momentum-ui/core": "19.15.16",
+    "@momentum-ui/icons": "8.28.0",
+    "@momentum-ui/tokens": "^1.7.1",
+    "@momentum-ui/utils": "6.2.15",
+    "@momentum-ui/web-components": "2.5.3",
+    "lit-element": "^2.3.1",
+    "lit-html": "^1.2.1"
+  }
+}
