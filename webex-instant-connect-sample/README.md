@@ -2,6 +2,9 @@
 
 ## Voice to Video Escalation to enable Video Contact Centers
 
+
+[Watch Now: Voice to Video Contact Center with Instant Connect](https://app.vidcast.io/share/168c7b94-6fd9-48d1-9457-69d6dc643cc3)
+
 **Overview**
 
 Customers reach businesses via Webex Contact Center to be connected to Agents\. Webex Contact Center enables Self\-service and Queuing and picks the right agent using Routing Algorithms\.
