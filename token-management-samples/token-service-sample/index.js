@@ -7,8 +7,8 @@ exports.tokenService = async (req, res) => {
   // handle preflight requests here
   if (req.method === "OPTIONS") {
     res.set("Access-Control-Allow-Methods", "GET, POST");
-    res.set("Access-Control-Allow-Headers", "Content-Type, Accept");
-    return res.statusSend(204);
+    res.set("Access-Control-Allow-Headers", "Content-Type, Accept, x-token-passphrase");
+    return res.status(204).Send("");
   }
 
   // callback request
