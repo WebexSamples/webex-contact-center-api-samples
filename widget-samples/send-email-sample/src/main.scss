@@ -1,0 +1,467 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+$button-width: 100px;
+$button-height: 50px;
+$wrap-width: 32%;
+$wrap-height: 18%;
+$wrap-duration: 0.6s;
+$bow-top: 47%;
+$bow-left: 40%;
+$easing: cubic-bezier(0.77, 0, 0.175, 1);
+
+$bdId-text-color: green;
+
+$status-text-color: green;
+$status-text-margin: 20px;
+
+$ribbon-delay: $wrap-duration / 3;
+$wrap-delay: $wrap-duration * 1.2;
+
+$ribbon-color-foreground: white;
+$ribbon-color-background: white;
+
+$card-width: 500px;
+$card-height: 500px;
+$card-margin-top: 3%;
+$card-margin-left: 5%;
+
+$color-primary: #cc199d;
+$color-primary-one: lightblue;
+$color-primary-two: #fbcfc6;
+$color-primary-three: #f6dafb;
+$color-primary-four: #edfbda;
+$color-gray: #939393;
+
+$footer-height: 5rem;
+
+html {
+  height: 100%;
+  width: 100%;
+  // background: #65d3d9;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+.route {
+  display: none;
+}
+
+.mainCard {
+  margin-top: $card-margin-top;
+  margin-left: $card-margin-left;
+  height: $card-height;
+  width: $card-width;
+  font-family: PT Sans, sans-serif;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 8px 10px 16px rgba(0, 0, 0, 0.1);
+  transform: translateZ(0);
+}
+
+.mainCard-content,
+.mainCard-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - #{$footer-height});
+  width: 100%;
+}
+
+.mainCard-cover {
+  background: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  > .fa-apple {
+    color: white;
+    font-size: 6rem;
+  }
+}
+
+.mainCard-cover.one {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  > .fa-apple {
+    color: white;
+    font-size: 6rem;
+  }
+}
+.mainCard-cover.two {
+  background: $color-primary-two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  > .fa-apple {
+    color: white;
+    font-size: 6rem;
+  }
+}
+
+.mainCard-content {
+  padding: 1rem 2rem;
+  color: $color-gray;
+  z-index: 1;
+  background: white;
+
+  > * {
+    transform: translateX(3rem);
+    opacity: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: normal;
+  }
+  h2,
+  h3 {
+    color: $color-gray;
+  }
+  div {
+    font-size: 1rem;
+  }
+  address {
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    border: 2px solid lightsteelblue;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+  }
+  .underline {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    width: 100%;
+  }
+
+  a,
+  .subtext {
+    color: $color-gray;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.mainCard-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: $footer-height;
+  width: 100%;
+  background: white;
+  z-index: 3;
+  transform: translateZ(0);
+
+  > * {
+    float: left;
+  }
+}
+
+.mainCard-text,
+.mainCard-info {
+  width: calc(100% - #{$button-width + $button-height});
+  padding: 1rem;
+  background: lightsteelblue;
+}
+
+.mainCard-text {
+  height: 100%;
+  padding: 1rem;
+
+  > h1,
+  > h2 {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: $color-primary;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    color: $color-gray;
+  }
+}
+
+.mainCard-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  text-align: right;
+  transform: translateX(100%);
+  display: table;
+  padding-left: 0;
+  background: white;
+
+  > * {
+    display: table-cell;
+
+    &:first-child {
+      padding-right: 1rem;
+    }
+  }
+
+  input[type="text"] {
+    height: $button-height;
+    width: 100%;
+    padding: 0 1rem;
+    // -webkit-appearance: none;
+    background: transparent;
+    border: 1px solid #dedede;
+  }
+}
+
+select {
+  overflow: hidden;
+  color: $color-gray;
+  height: $button-height;
+  width: 230px;
+  padding: 0 1rem;
+  background: transparent;
+  border: 1px solid #dedede;
+  margin-right: 30px;
+}
+select:focus {
+  outline: 0;
+}
+
+@mixin mainWrap($dx, $dy, $outer: true) {
+  $coords: (50% - $dx $dx, 50% + $dx $dx, 100% - $dy 50% - $dy, 100% - $dy 50% + $dy, 50% + $dx 100% - $dx, 50% - $dx 100% - $dx, $dy 50% + $dy, $dy 50% - $dy);
+
+  $bgcoords: (nth($coords, 1), 50% 2 * $dx, nth($coords, 2), nth($coords, 3), 100% - 2 * $dy 50%, nth($coords, 4), nth($coords, 5), 50% 100% - 2 * $dx, nth($coords, 6), nth($coords, 7), 2 * $dy 50%, nth($coords, 8), nth($coords, 7), nth($coords, 6), nth($coords, 5), nth($coords, 4), nth($coords, 3), nth($coords, 2), nth($coords, 1));
+
+  @if not $outer {
+    clip-path: polygon(#{join($coords, (), comma)});
+  } @else {
+    clip-path: polygon(#{join($bgcoords, (), comma)});
+  }
+}
+$width: 100px;
+$height: 50px;
+
+.button,
+input[type="text"] {
+  border-radius: 3px;
+  border-color: none;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  height: $height;
+  line-height: 50px;
+  text-align: center;
+  background: #cc199d;
+  color: white;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+
+  &.secondary {
+    background: #009cee;
+    width: 100px;
+    cursor: pointer;
+  }
+}
+
+.mainWrap {
+  width: $width + $height;
+  height: $width + $height;
+  background: lightsteelblue;
+
+  .button {
+    width: $width;
+    top: 20px;
+    border: none;
+    left: calc(50% - #{$width / 2});
+  }
+
+  &:before,
+  &:after {
+    display: none;
+    content: "";
+    position: absolute;
+    height: ($width + $height);
+    width: ($width + $height);
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    @include mainWrap(0%, 0%);
+    background: white;
+    z-index: 2;
+  }
+
+  &:after {
+    @include mainWrap(0%, 0%, false);
+    background: white;
+    z-index: -1;
+  }
+}
+
+.mainCard:hover {
+  .mainWrap > .button {
+    animation: button 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.65) forwards;
+  }
+
+  .mainCard-footer {
+    animation: footer $wrap-duration $wrap-delay $easing both;
+  }
+
+  .mainCard-cover {
+    animation: cover $wrap-duration $wrap-delay $easing both;
+  }
+
+  .mainCard-content {
+    > * {
+      animation: content $wrap-duration $wrap-delay $easing both;
+    }
+
+    @for $i from 1 through 3 {
+      > *:nth-child(#{$i}) {
+        animation-delay: $wrap-delay + ($i - 1) * 0.05s;
+      }
+    }
+  }
+}
+
+.status {
+  display: none;
+  color: $status-text-color;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px 0;
+  width: 100%;
+  color: green;
+  box-shadow: 8px 10px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dbId {
+  // display: none;
+  color: $bdId-text-color;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  margin-right: 10px;
+}
+.space {
+  margin: 25px 0;
+}
+
+.result {
+  width: 93%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: lightsteelblue;
+  outline: none;
+}
+
+label {
+  color: #3165a7;
+}
+.message {
+  color: #3165a7 !important;
+}
+
+@keyframes button {
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes content {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cover {
+  to {
+    transform: translateY(calc(100% - 1px)) scaleX(0.95);
+  }
+}
+
+@keyframes footer {
+  to {
+    transform: translateX(calc(-100%));
+  }
+}
+
+@keyframes wrap-before-2 {
+  50% {
+    @include mainWrap(0%, 0%);
+  }
+  100% {
+    @include mainWrap($wrap-width, $wrap-height);
+  }
+}
+
+@keyframes wrap-after-2 {
+  0% {
+    clip-path: polygon(50% 40%, 60% 50%, 50% 60%, 40% 50%);
+  }
+  49.999% {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  50% {
+    @include mainWrap(0%, 0%, false);
+  }
+  100% {
+    @include mainWrap($wrap-width, $wrap-height, false);
+  }
+}
