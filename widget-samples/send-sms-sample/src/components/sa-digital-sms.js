@@ -86,6 +86,7 @@ export default class saDigitalCard extends HTMLElement {
   }
 
   async smsSendEvent() {
+    // Objects that are sent to the webhook - so you webhook needs these variables
     let raw = JSON.stringify({
       phone: await this.ani,
       reason: await this.sendMessage(),
