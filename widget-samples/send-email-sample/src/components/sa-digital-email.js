@@ -98,6 +98,7 @@ export default class saDigitalCard extends HTMLElement {
   }
 
   async emailSendEvent() {
+    // Objects that are sent to the webhook - so you webhook needs these variables
     let raw = JSON.stringify({
       email: await this.sendEmail(),
       reason: await this.sendMessage(),
