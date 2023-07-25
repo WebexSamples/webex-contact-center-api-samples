@@ -53,6 +53,8 @@ _To wire up the Widget to the Layout:_
 
 - You will need to setup a SMS asset on Webex Connect
 - You will need to setup an Inbound Webhook as well. The ID from the webhook will be added to your Layout.json
+- Variables that the widget and webhook exchange: `phone, reason, name`.
+  make sure these variables are referenced in your webhook.
 - For more information on configuring the Webex Connect Webhooks to Flows, refer to : https://help.imiconnect.io/
 
 **Additional Improvements:**
