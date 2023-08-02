@@ -2,7 +2,6 @@
 
 ## Voice to Video Escalation to enable Video Contact Centers
 
-
 **[Watch Now: Voice to Video Contact Center with Instant Connect](https://app.vidcast.io/share/168c7b94-6fd9-48d1-9457-69d6dc643cc3)**
 
 **Overview**
