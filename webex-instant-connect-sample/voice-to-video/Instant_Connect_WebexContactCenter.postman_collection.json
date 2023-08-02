@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "ff975ba5-92b5-4196-81e8-f2a8a3f05b2b",
+		"name": "Webex Instant Connect with Webex Contact Center",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "889186"
+	},
+	"item": [
+		{
+			"name": "Create Meeting to Obtain Host and Guest URLs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{bot-token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jwt\": {\r\n        \"sub\": \"{{interactionId}}\"\r\n    },\r\n    \"aud\": \"a4d886b0-979f-4e2c-a958-3e8c14605e51\",\r\n    \"numHost\": 1,\r\n    \"numGuest\": 1,\r\n    \"verticalType\": \"gen\",\r\n    \"provideShortUrls\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mtg-broker-url}}/api/v2/joseencrypt",
+					"host": [
+						"{{mtg-broker-url}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"joseencrypt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Meeting",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jwt\": {\r\n        \"sub\": \"{{interactionId}}\"\r\n    },\r\n    \"aud\": \"a4d886b0-979f-4e2c-a958-3e8c14605e51\",\r\n    \"numHost\": 1,\r\n    \"numGuest\": 1,\r\n    \"verticalType\": \"gen\",\r\n    \"provideShortUrls\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mtg-broker-url}}/api/v2/joseencrypt",
+							"host": [
+								"{{mtg-broker-url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"joseencrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "via",
+							"value": "1.1 linkerd"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "trackingid",
+							"value": "ROUTER_64A70CB9-FFBA-01BB-2E93-48A302E22E93"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 06 Jul 2023 18:49:43 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Redacted"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"host\": [\n        {\n            \"cipher\": \"eyJwMnMiOiJJOE5IWmxrQ2Q0dlRzY0pXVVEiLCJwMmMiOjQwMTMsImF1ZCI6ImE0ZDg4NmIwLTk3OWYtNGUyYy1hOTU4LTNlOGMxNDYwNWU1MSIsImlzcyI6IjNmNGFjNjlmLWU4NmEtNGQ2YS1iMDE2LWYwYjBiNzQ0NWMxZCIsImN0eSI6IkpXVCIsImVuYyI6IkEyNTZHQ00iLCJhbGciOiJQQkVTMi1IUzUxMitBMjU2S1cifQ.BnNurfTinu3Lmq7WEK8xVxnrFUIilz5JpVJgHCHMbijxHJE1qHNtMw.KKN7QirbrC874kNi.v8Q_SO7bOy6htk1SGQAvOzfC1hPjdIrsnnFifH-9seA5EvQBsIS44MFMEe-L-6SRrgbOZoeWqok5aMsFKTJiKW6lfeo0cFz71phXraWZwIeNbKzMuG1iqYJiDvTZtAzf7icVFSjxZeQ2ERrVob4ftHZt65eMHYb3G1Op6lzHJGcz9oGD6oArMfsRQ6vAwxe_Aff8lS4pof7ankdt8HASHVu0oXPmMZZNM9p-FeQO6JMK7y2Cuvz7hIw0lTbJY3ZCuQtOBVEZSGVUsjxtC-Bt51_Xf9aVsPHY96GO2L7FPQ5VFuhC9B5O3dVWq2KlEHRxhUSJzGeDlsKlrM9yznauSWmBaHf-S5sP6jV3pCqLzLXn2ZUh2mutf1rOlYcXfi1BeOBmrWQKnXIJKpmhtBRA8oC_jh3knWCkqVk9LjAiR-xh726KxPZCswJk_bzGy10CjkS8KsXQ6HtKP6mCUZ01cMlaegXwJJzrYX9SObgzhxcO4lUGhGXoz0nYlkJVkkEq49-9tJcGvXuZ1BmUsAhEBzJFhcVs1o1eU1Qi0p9X4AV1k9kteXaYZ8P9Og.WDYivgYUi1FLj-7ZSeYwXw\",\n            \"short\": \"PLO5VnE\"\n        }\n    ],\n    \"guest\": [\n        {\n            \"cipher\": \"eyJwMnMiOiJiOGwzZGkzc1RFOVpTR3pZVlk4VkxiN0RoSnZnYUFqVElZVSIsInAyYyI6Mjg2NzksImF1ZCI6ImE0ZDg4NmIwLTk3OWYtNGUyYy1hOTU4LTNlOGMxNDYwNWU1MSIsImlzcyI6IjNmNGFjNjlmLWU4NmEtNGQ2YS1iMDE2LWYwYjBiNzQ0NWMxZCIsImN0eSI6IkpXVCIsImVuYyI6IkEyNTZHQ00iLCJhbGciOiJQQkVTMi1IUzUxMitBMjU2S1cifQ.CzAev-mM0nOBpSYqFhhaNsdPwAFdPFNN3dTF4O40lId4-A5jiIFpPg.7K3gjSYR44SBpTmP.wOZcyFxCu09FHT8wsO4Ud_NmaFP6mFWBZglm581QsMNHxJhG9IH5SHrd1vkuwO0zfRDDFKiKmypp5m4ESRU01p8dBhntgdCq-PerwFJ0p4L9vD_37ESPB0pJMR1e_SjgMoyQxqoHSEbo7hN33bHZgZwb82YRYDBfayRUldp0RLNYiLCstN38BeB30zyc0LVkHm9VXe3Hx3DUqIkXxMs8oYy7_xlwALa8o1E0s-vJm-Wsswljul4zlHAL1lrcQ7NP_RpEzb9ctL2jK4nnbGAZqJ1-zwA7aCYLjUQPgCBxDidUTLbYYkYrVU3m-lxgglMWi7xv1Xddg4Nuy8g-u4C1Nt_2SjOrB6bsKpTqJ8OpAsZKy1ORwzs7FkSQ2YRohdJz5mj-HO6ffNwfipXdw89zh-Bu8col5NI6FS160m9XTzcugMPlcVud9Be5-9oCgdQRDuLsRbQGNR7FjX7get5kzIlPVkdJgvujoRwn21o7I08oKow6FOPgrt6FZlan3qfJBalxbBa_gQVtx8Xt3soyXXNKf7bkYiOPTXdue910WJa23TQix8rrhhHY7Z4.MYU1n1IcJ24FmjgY8kDAlg\",\n            \"short\": \"zA4Lzrd\"\n        }\n    ],\n    \"baseUrl\": \"https://instant.webex.com/visit/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Send SMS Invite to Customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{bot-token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"integration\": \"jose\",\r\n    \"vertical\": \"cc\",\r\n    \"orgId\": \"{{orgId}}\",\r\n    \"meetingId\": \"{{interactionId}}\",\r\n   \"mobileNumbersWithAlpha2CountryCode\": {\r\n        \"us\": [\"{{ANI}}\"]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mtg-broker-url}}/api/v1/sms/meetingInvite",
+					"host": [
+						"{{mtg-broker-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"sms",
+						"meetingInvite"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Send SMS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"integration\": \"jose\",\r\n    \"vertical\": \"cc\",\r\n    \"orgId\": \"{{orgId}}\",\r\n    \"meetingId\": \"{{interactionId}}\",\r\n   \"mobileNumbersWithAlpha2CountryCode\": {\r\n        \"us\": [\"{{ANI}}\"]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mtg-broker-url}}/api/v1/sms/meetingInvite",
+							"host": [
+								"{{mtg-broker-url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"sms",
+								"meetingInvite"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "via",
+							"value": "1.1 linkerd"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "trackingid",
+							"value": "ROUTER_64B058C0-FAC3-01BB-013C-48A302F9013C"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 13 Jul 2023 20:04:16 GMT"
+						},
+						{
+							"key": "server",
+							"value": "Redacted"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Successful\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "MGUxYmY5NDAtNGZiNS00ZTM3LWE4YTAtZTBlMmJmNTI4N2VhMTQ3ZjM0M2UtYTg1_PF84_1c71287f-2f41-458b-b101-c4e616123554",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mtg-broker-url",
+			"value": "https://mtg-broker-a.wbx2.com",
+			"type": "string"
+		},
+		{
+			"key": "bot-token",
+			"value": "NTliOGFkY2QtZGU2OS00OGQ0LWEzNDctYmI4Yjc5ZWMwODBlODY3MDE0MDMtMGZh_PF84_3f4ac69f-e86a-4d6a-b016-f0b0b7445c1d",
+			"type": "string"
+		},
+		{
+			"key": "orgId",
+			"value": "3f4ac69f-e86a-4d6a-b016-f0b0b7445c1d",
+			"type": "string"
+		},
+		{
+			"key": "interactionId",
+			"value": "1c71287f-2f41-458b-b101-c4e616123554",
+			"type": "string"
+		},
+		{
+			"key": "ANI",
+			"value": "+12894421860",
+			"type": "string"
+		}
+	]
+}
