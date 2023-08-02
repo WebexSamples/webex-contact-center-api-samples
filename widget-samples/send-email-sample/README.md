@@ -2,8 +2,6 @@
 
 In this tutorial we leverage our desktop API and Webex Connect through a widget to easily allow an agent to send out info to a customer via Email.
 
-## [Watch: Digital Email Sample Widget...Coming Soon]()
-
 This sample covers sending an outbound SMS and Email using an auto populated widget that populates information using CAD variables.
 
 ![Digital Sample](./src/images/digital-full.png)
