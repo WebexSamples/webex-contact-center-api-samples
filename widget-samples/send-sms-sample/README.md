@@ -2,8 +2,6 @@
 
 In this tutorial we leverage our desktop API and Webex Connect through a widget to easily allow an agent to send out info to a customer via SMS.
 
-## [Watch: Digital SMS Sample Widget...Coming Soon]()
-
 This sample covers sending an outbound SMS using a widget that populates the ANI and allow you to type a message.
 
 ![Digital Sample](./src/images/digital-full.png)
