@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f29f40d5-6566-41df-a2f1-84c9c3b0c292",
+		"_postman_id": "ad6d605d-8b80-41f8-8881-4326b33a0485",
 		"name": "New WebexCC OAuth2 APIs - v2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "889186"
+		"_exporter_id": "25072093"
 	},
 	"item": [
 		{
@@ -416,6 +416,83 @@
 								"{{org_id}}",
 								"address-book",
 								"AXqcxzBT0b8-qeD-RALB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Address book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test_adressBook\",\n    \"parentType\": \"ORGANIZATION\",\n    \"description\": \"from api\",\n    \"siteId\": \"\",\n    \"addressBookEntries\": [\n        {\n            \"name\": \"apiab1\",\n            \"number\": \"1234567890\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/organization/6608122d-50f5-4558-be72-4e9f26c6a42f/address-book",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"organization",
+								"6608122d-50f5-4558-be72-4e9f26c6a42f",
+								"address-book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Address book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://api.wxcc-us1.cisco.com/organization/6608122d-50f5-4558-be72-4e9f26c6a42f/address-book/<addressbook_id>",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wxcc-us1",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"organization",
+								"6608122d-50f5-4558-be72-4e9f26c6a42f",
+								"address-book",
+								"<addressbook_id>"
 							]
 						}
 					},
