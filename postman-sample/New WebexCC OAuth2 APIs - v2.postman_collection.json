@@ -301,7 +301,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}address-book/bulk-export",
+							"raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/bulk-export",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -311,7 +311,8 @@
 							],
 							"path": [
 								"organization",
-								"{{org_id}}address-book",
+								"{{org_id}}",
+								"address-book",
 								"bulk-export"
 							]
 						}
@@ -422,14 +423,6 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
 					"name": "Create an Address book",
 					"request": {
 						"method": "POST",
@@ -452,17 +445,17 @@
 							"raw": "{\n    \"name\": \"test_adressBook\",\n    \"parentType\": \"ORGANIZATION\",\n    \"description\": \"from api\",\n    \"siteId\": \"\",\n    \"addressBookEntries\": [\n        {\n            \"name\": \"apiab1\",\n            \"number\": \"1234567890\"\n        }\n    ]\n}"
 						},
 						"url": {
-							"raw": "https://api.wxcc-us1.cisco.com/organization/6608122d-50f5-4558-be72-4e9f26c6a42f/address-book",
+							"raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book",
 							"protocol": "https",
 							"host": [
 								"api",
-								"wxcc-us1",
+								"wxcc-{{datacenter}}",
 								"cisco",
 								"com"
 							],
 							"path": [
 								"organization",
-								"6608122d-50f5-4558-be72-4e9f26c6a42f",
+								"{{org_id}}",
 								"address-book"
 							]
 						}
@@ -480,17 +473,17 @@
 							}
 						],
 						"url": {
-							"raw": "https://api.wxcc-us1.cisco.com/organization/6608122d-50f5-4558-be72-4e9f26c6a42f/address-book/<addressbook_id>",
+							"raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/<addressbook_id>",
 							"protocol": "https",
 							"host": [
 								"api",
-								"wxcc-us1",
+								"wxcc-{{datacenter}}",
 								"cisco",
 								"com"
 							],
 							"path": [
 								"organization",
-								"6608122d-50f5-4558-be72-4e9f26c6a42f",
+								"{{org_id}}",
 								"address-book",
 								"<addressbook_id>"
 							]
