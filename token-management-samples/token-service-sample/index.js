@@ -8,7 +8,7 @@ exports.tokenService = async (req, res) => {
   if (req.method === "OPTIONS") {
     res.set("Access-Control-Allow-Methods", "GET, POST");
     res.set("Access-Control-Allow-Headers", "Content-Type, Accept, x-token-passphrase");
-    return res.status(204).Send("");
+    return res.status(204).send();
   }
 
   // callback request
