@@ -48,7 +48,7 @@ How to run the sample application:
 
 **Step 4:**
 
-- Run the application locally using: `java -jar capture-0.0.1-SNAPSHOT.jar`
+- Run the application locally using: `java -jar capture-0.0.1-SNAPSHOT.jar` under newly created 'target' directory
 - This should run the app on `http://localhost:8080`
 
 **Additional Improvements:**

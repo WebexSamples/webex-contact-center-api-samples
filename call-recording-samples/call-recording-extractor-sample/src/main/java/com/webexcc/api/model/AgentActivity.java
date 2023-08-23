@@ -2,7 +2,9 @@ package com.webexcc.api.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+//@JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(Include.NON_NULL)
 public class AgentActivity {
 
@@ -30,6 +32,7 @@ public class AgentActivity {
 	private String startTime;
 	private String endTime;
 	private String mmProfileType;
+	private String agentSessionId;
 
 	public boolean isActive() {
 		return active;
@@ -41,6 +44,14 @@ public class AgentActivity {
 
 	public String getAgentId() {
 		return agentId;
+	}
+
+	public void setAgentSessionId(String agentSessionId) {
+		this.agentSessionId = agentSessionId;
+	}
+
+	public String getAgentSessionId() {
+		return agentSessionId;
 	}
 
 	public void setAgentId(String agentId) {
