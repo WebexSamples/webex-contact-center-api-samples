@@ -1,0 +1,3886 @@
+{
+  "info": {
+    "_postman_id": "d5ea5654-bebe-4204-9237-fe1f33768e66",
+    "name": "New WebexCC OAuth2 APIs - v3",
+    "description": "This is the Webex Contact Center postman collection v3 - updated August 2023.  \nSet up the authorization centrally using this tab.\n\nAll the APIs will inherit the token once the OAuth2 Flow is complete.\n\nCreate the following Environment Variables in the Environment Tab before starting:\n\n`access_token` - {Copy and Paste this after OAuth2 flow completes}\n\n`refresh_token` - {Copy and Paste this after OAuth2 flow completes}\n\n`accessToken_url` - [https://webexapis.com/v1/access_token](https://webexapis.com/v1/access_token)\n\n`grant_type` - {refresh_token}\n\n`client_id` - {Your client ID}\n\n`client_secret` - {Your Client Secret}\n\n`auth_url` - [https://webexapis.com/v1/authorize](https://webexapis.com/v1/authorize)\n\n`scope` - cjp:config cjp:config_read cjp:config_write\n\n`org_id` - {Your org Id}\n\n`startTimer` - This needs to be an epoch timestamp\n\n`expires` - leave this blank, the script will auto-populate this value.\n\n`datacenter` - One of us1,eu1,eu2,anz1 and so on.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "889186"
+  },
+  "item": [
+    {
+      "name": "Address Book",
+      "item": [
+        {
+          "name": "1. List Address Books",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "address-book"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cname",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2. Create an Address Book",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Address Book\",\n  \"parentType\": \"ORGANIZATION\",\n  \"description\": \"Address Book created by using API\",\n  \"siteId\": \"\",\n  \"addressBookEntries\": [\n    {\n      \"name\": \"Jane Doe\",\n      \"number\": \"123456789\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "address-book"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Create an Address Book Entry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"name\": \"Jane Doe\",\n     \"number\": \"123456789\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}/entry",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}",
+                "entry"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Get An Address Book Entry By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}/entry/{{address_book_entry_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}",
+                "entry",
+                "{{address_book_entry_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Update An Address Book Entry By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"id\": \"{{address_book_entry_id}}\",\n     \"name\": \"Jane Doe\",\n     \"number\": \"1234567890\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}/entry/{{address_book_entry_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}",
+                "entry",
+                "{{address_book_entry_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Delete An Address Book Entry By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}/entry/{{address_book_entry_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}",
+                "entry",
+                "{{address_book_entry_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "8. Get An Address Book By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "9. Update An Address Book By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"id\": \"{{address_book_id}}\",\n     \"name\": \"Address Book\",\n     \"parentType\": \"ORGANIZATION\",\n     \"description\": \"Address Book created using API\",\n     \"siteId\": \"\",\n     \"addressBookEntries\": [\n          {\n               \"id\": \"{{address_book_entry_id}}\",\n               \"name\": \"Jane Doe\",\n               \"number\": \"123456789\"\n          }\n     ]\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "10. Delete An Address Book By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/{{address_book_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "{{address_book_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "11. Bulk Export Address Books",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/address-book/bulk-export",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "address-book",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "12. List Address Books (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/address-book",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "address-book"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cname",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "13. List Address Books Entries (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/address-book/{{address_book_id}}/entry",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "v2",
+                "address-book",
+                "{{address_book_id}}",
+                "entry"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "neha",
+                  "disabled": true
+                },
+                {
+                  "key": "sort",
+                  "value": "name%2CASC",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Agent Profile",
+      "item": [
+        {
+          "name": "1. List Agent Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "agent-profile"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cactive",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Get An Agent Profile By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/{{agent_profile_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "{{agent_profile_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Delete An Agent Profile By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/{{agent_profile_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "{{agent_profile_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Bulk Export Agent Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/bulk-export",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. List Agent Profiles (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/agent-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "agent-profile"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id==76b94a4c-fdff-4d8a-a967-2787e289864d",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cactive",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Audio Files",
+      "item": [
+        {
+          "name": "2. Get Audio File By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/audio-file/{{audio_file_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "audio-file",
+                "{{audio_file_id}}"
+              ],
+              "query": [
+                {
+                  "key": "includeUrl",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Delete Audio File By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/audio-file/{{audio_file_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "audio-file",
+                "{{audio_file_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. List Audio Files",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/audio-file",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "audio-file"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cname",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "contact%20center",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "AuxiliaryCodes",
+      "item": [
+        {
+          "name": "2. Create An Auxiliary Code",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"active\": true,\n     \"name\": \"Test_Aux_Code\",\n     \"workTypeCode\": \"WRAP_UP_CODE\",\n     \"defaultCode\": false,\n      \"isSystemCode\": false,\n     \"description\": \"Aux_Code created using API\",\n     \"organizationId\": \"\",\n     \"workTypeId\": \"{{aux_worktype_id}}\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "auxiliary-code"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Get An Auxiliary Code By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code/{{aux_code_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "auxiliary-code",
+                "{{aux_code_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Update An Auxiliary Code By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"id\": \"{{aux_code_id}}\",\n     \"active\": false,\n     \"name\": \"test_Aux_Code\",\n     \"workTypeCode\": \"WRAP_UP_CODE\",\n     \"defaultCode\": false,\n     \"workTypeId\": \"{{aux_worktype_id}}\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code/{{aux_code_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "auxiliary-code",
+                "{{aux_code_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Delete An Auxiliary Code By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code/{{aux_code_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "auxiliary-code",
+                "{{aux_code_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Bulk Export Auxiliary Codes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code/bulk-export",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "auxiliary-code",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "1",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1. List Auxiliary Codes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/auxiliary-code",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "auxiliary-code"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. List Auxiliary Codes (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/auxiliary-code",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "auxiliary-code"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Captures",
+      "item": [
+        {
+          "name": "List Captures",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"query\": {\n          \"orgId\": \"{{org_id}}\",\n          \"urlExpiration\": 0,\n          \"taskIds\": [\n               \"{{tasks_id}}\"\n          ]\n          \n     }\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/captures/query",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "captures", "query"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Contact Service Queue",
+      "item": [
+        {
+          "name": "1. List Contact Service Queues",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "contact-service-queue"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cactive",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Get A Contact Service Queue By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue/{{contact_service_queue_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "contact-service-queue",
+                "{{contact_service_queue_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Update A Contact Service Queue By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\t\"id\": \"{{contact_service_queue_id}}\",\n\t\t\"name\": \"TestQueueAPI\",\n\t\t\"description\": \"\",\n\t\t\"queueType\": \"INBOUND\",\n\t\t\"channelType\": \"TELEPHONY\",\n\t\t\"serviceLevelThreshold\": 120,\n\t\t\"maxActiveContacts\": 0,\n\t\t\"maxTimeInQueue\": 10,\n\t\t\"defaultMusicInQueueMediaFileId\": \"fa72b059-a888-4126-b431-780f8efe5acf\",\n\t\t\"active\": true,\n        \"ivrRequeueUrl\": \"https://example.com/foo/bar\",\n\t\t\"monitoringPermitted\": false,\n        \"checkAgentAvailability\": true,\n        \"controlFlowScriptUrl\": \"https://flow-control.produs1.ciscoccservice.com/31f1c57f-4fa1-417b-b5c5-6feb6abea062/royal-enfield\",\n\t\t\"parkingPermitted\": false,\n\t\t\"recordingPermitted\": false,\n\t\t\"recordingAllCallsPermitted\": false,\n\t\t\"pauseRecordingPermitted\": false,\n\t\t\"recordingPauseDuration\": 10,\n\t\t\"routingType\": \"LONGEST_AVAILABLE_AGENT\",\n\t\t\"callDistributionGroups\": [\n\t\t\t{\n\t\t\t\t\"agentGroups\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"teamId\": \"{{team_id}}\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"order\": 1,\n\t\t\t\t\"duration\": 0\n\t\t\t}\n\t\t],\n\t\t\"links\": [],\n\t\t\"createdTime\": 1692902559000,\n\t\t\"lastUpdatedTime\": 1692902559000\n\t}"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue/{{contact_service_queue_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "contact-service-queue",
+                "{{contact_service_queue_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Delete An Contact Service Queue By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue/{{contact_service_queue_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "contact-service-queue",
+                "{{contact_service_queue_id}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Desktop Layout",
+      "item": [
+        {
+          "name": "2. Get Desktop Layout By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/desktop-layout/{{desktop_layout_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "desktop-layout",
+                "{{desktop_layout_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Delete Desktop Layout By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/desktop-layout/{{desktop_layout_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "desktop-layout",
+                "{{desktop_layout_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. List Desktop Layouts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/desktop-layout",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "desktop-layout"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cactive",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Desktop Profile",
+      "item": [
+        {
+          "name": "2. Get Desktop Profile By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/{{agent_profile_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "{{agent_profile_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Delete Desktop Profile By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/{{agent_profile_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "{{agent_profile_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Bulk Export Desktop Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/agent-profile/bulk-export",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "agent-profile",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. List Desktop Profiles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/agent-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "agent-profile"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2Cactive",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Dial Number (Entry Point Mappings)",
+      "item": [
+        {
+          "name": "1. List Dial Numbers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-number",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "dial-number"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Get A Dial Number By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-number/{{dial_number_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-number",
+                "{{dial_number_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Update A Dial Number By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"id\": \"{{dial_number_id}}\",\n     \"name\": \"test Dial Number\",\n     \"active\": true,\n     \"regularExpression\": \"[0-9]\",\n     \"prefix\": \"\",\n     \"strippedChars\": \"\",\n     \"entryPointId\": \"{{entryPoint_id}}\",\n      \"dialledNumber\": \"+1-123456789012\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-number/{{dial_number_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-number",
+                "{{dial_number_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Delete A Dial Number By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-number/{{dial_number_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-number",
+                "{{dial_number_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "7. Bulk Export Dial Numbers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-number/bulk-export",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-number",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "8. List Dial Numbers (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/dial-number",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "dial-number"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dial Plan",
+      "item": [
+        {
+          "name": "1. List Dial Plans",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-plan",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "dial-plan"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2. Create A Dial Plan",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"name\": \"test API\",\n     \"active\": false,\n     \"regularExpression\": \"[0-9a-zA-Z]\",\n     \"prefix\": \"\",\n     \"strippedChars\": \"\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-plan",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "dial-plan"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Get A Dial Plan By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-plan/{{dialPlan_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-plan",
+                "{{dialPlan_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "4. Update A Dial Plan By ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"id\": \"{{dialPlan_id}}\",\n     \"name\": \"Test Dial Plan\",\n     \"active\": false,\n     \"regularExpression\": \"[0-9a-zA-Z]\",\n     \"prefix\": \"\",\n     \"strippedChars\": \"\"\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-plan/{{dialPlan_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-plan",
+                "{{dialPlan_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Delete A Dial Plan By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/dial-plan/{{dialPlan_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "dial-plan",
+                "{{dialPlan_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. List Dial Plans (v2 API)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/v2/dial-plan",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "v2", "dial-plan"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Entry Point",
+      "item": [
+        {
+          "name": "1. List Entry Points",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/entry-point",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "entry-point"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "filter",
+                  "value": "id%3D%3D57efb0e6-5af0-4245-a67d-d3c5045cdb6e",
+                  "disabled": true
+                },
+                {
+                  "key": "attributes",
+                  "value": "id%2CworkTypeCode",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "3. Get An Entry Point By ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/entry-point/{{entryPoint_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "entry-point",
+                "{{entryPoint_id}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6. Bulk Export Entry Points",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/entry-point/bulk-export?type=INBOUND",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "entry-point",
+                "bulk-export"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "type",
+                  "value": "INBOUND"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "5. Delete An Entry Point By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/entry-point/{{entryPoint_id}}",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "entry-point",
+                "{{entryPoint_id}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Callback",
+      "item": [
+        {
+          "name": "1. Create a Callback Task",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"destination\": \"your mobile number\",\n  \"entryPointId\": \"entry point id\",\n  \"attributes\": {\"channel\":\"sales\"},\n  \"outboundType\": \"CALLBACK\",\n  \"mediaType\": \"telephony\",\n  \"callback\": {\n    \"callbackOrigin\": \"web\",\n    \"callbackType\": \"immediate\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/tasks",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "tasks"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Journey",
+      "item": [
+        {
+          "name": "1. Create a Journey Action",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/journey/actions",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "journey", "actions"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Agent",
+      "item": [
+        {
+          "name": "Agent Activities",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/agents/activities?from=1646420205000",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "agents", "activities"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "1646420205000",
+                  "description": "[from,to]: should not be more than 1 days before"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Multimedia Profiles",
+      "item": [
+        {
+          "name": "Multimedia Profiles",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/multimedia-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "multimedia-profile"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Outdial ANIs",
+      "item": [
+        {
+          "name": "Outdial ANIs",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/outdial-ani",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "outdial-ani"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Queues",
+      "item": [
+        {
+          "name": "Queues",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "contact-service-queue"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Queue By Id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/contact-service-queue/14110ca0-da25-4fc7-932d-9e858c3b82a0",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "contact-service-queue",
+                "14110ca0-da25-4fc7-932d-9e858c3b82a0"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create a Queue",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"{{queue_name}}\",\n    \"description\": \"{{queue_description}}\",\n    \"queueType\": \"{{queue_type}}\",\n    \"channelType\": \"{{queue_channelType}}\",\n    \"serviceLevelThreshold\": {{service_level}},\n    \"maxActiveContacts\": {{max_contacts}},\n    \"maxTimeInQueue\": {{max_queue_time}},\n    \"defaultMusicInQueueMediaFileId\": \"2434efa8-f96e-4345-aa60-3508322b2a1f\",\n    \"active\": true,\n    \"monitoringPermitted\": true,\n    \"parkingPermitted\": false,\n    \"recordingPermitted\": true,\n    \"recordingAllCallsPermitted\": false,\n    \"pauseRecordingPermitted\": true,\n    \"recordingPauseDuration\": 10,\n    \"routingType\": \"LONGEST_AVAILABLE_AGENT\",\n    \"callDistributionGroups\": [\n        {\n            \"agentGroups\": [\n                {\n                    \"teamId\": \"a9d5b90f-1e51-4563-a731-6f8237786489\"\n                },\n                {\n                    \"teamId\": \"26f3906b-8359-479e-9efc-0aabc024abe5\"\n                }\n            ],\n            \"order\": 1,\n            \"duration\": 0\n        }\n    ],\n     \"checkAgentAvailability\": false,\n     \"ivrRequeueUrl\": \"http://localhost:8000/\",\n    \"controlFlowScriptUrl\": \"https://flow-control.produs1.ciscoccservice.com/31f1c57f-4fa1-417b-b5c5-6feb6abea062/royal-enfield\"\n\n}"
+            },
+            "url": {
+              "raw": "https://api.wxcc-us1.cisco.com/organization/{{org_id}}/contact-service-queue",
+              "protocol": "https",
+              "host": ["api", "wxcc-us1", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "contact-service-queue"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sites",
+      "item": [
+        {
+          "name": "Sites",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/site",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "site"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill Profiles",
+      "item": [
+        {
+          "name": "GET Skill Profiles",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/skill-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "skill-profile"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Skill Profile By Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\n{\n     \"activeEnumSkills\": [\n          {\n               \"createdTime\": 0,\n               \"enumSkillValueId\": \"\",\n               \"id\": \"\",\n               \"lastUpdatedTime\": 0,\n               \"organizationId\": \"\",\n               \"version\": 0\n          }\n     ],\n     \"activeSkills\": [\n          {\n               \"booleanValue\": false,\n               \"createdTime\": 0,\n               \"id\": \"\",\n               \"lastUpdatedTime\": 0,\n               \"organizationId\": \"\",\n               \"proficiencyValue\": 0,\n               \"skillId\": \"\",\n               \"textValue\": \"\",\n               \"version\": 0\n          }\n     ],\n     \"createdTime\": 0,\n     \"description\": \"\",\n     \"id\": \"\",\n     \"lastUpdatedTime\": 0,\n     \"name\": \"\",\n     \"organizationId\": \"\",\n     \"version\": 0\n}\n"
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/skill-profile/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "skill-profile", "<id>"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skills",
+      "item": [
+        {
+          "name": "Skills",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/skill",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "skill"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Subscriptions",
+      "item": [
+        {
+          "name": "EventTypes",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/event-types",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "event-types"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Subscriptions",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Subscription",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions", "<id>"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Subscriptions",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Capture Recordings Event\",\n  \"description\": \"Send Event when recording is available\",\n  \"eventTypes\": [\n    \"capture:available\"\n  ],\n  \"destinationUrl\": \"Public facing URL <your backend server>\",\n  \"secret\": \"my-32-plus-character-long-secret\",\n  \"orgId\": \"{{org_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions"]
+            },
+            "description": "For the field in the body \"destinationUrl\": \nmake sure its a public facing URL. ie https://myserver.com/webhook"
+          },
+          "response": []
+        },
+        {
+          "name": "Subscriptions",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"description\": \"Capture Recordings\",\n  \"eventTypes\": [\"capture:available\"],\n  \"destinationUrl\": \"Public facing URL <your backend server>\",\n  \"status\": \"active\",\n  \"secret\": \"my-32-plus-character-long-secret\",\n  \"orgId\": \"{{org_id}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/subscriptions/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "subscriptions", "<id>"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "Tasks",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/v1/tasks?from=1646420205000&channelTypes=telephony",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["v1", "tasks"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "1646420205000"
+                },
+                {
+                  "key": "channelTypes",
+                  "value": "telephony"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "item": [
+        {
+          "name": "Teams",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/team",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "team"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Team by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/team/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "team", "<id>"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create TEST Team",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"TEAM API\",\n    \"active\": true,\n    \"siteId\": \"5ba27abe-245f-477f-a008-8e06cda0138b\",\n    \"teamStatus\": \"IN_SERVICE\",\n    \"teamType\": \"AGENT\",\n    \"desktopLayoutId\": \"4189d9d4-5c0e-49e3-bcf8-4551bf206430\",\n    \"multimediaProfileId\": \"632be176-9710-45e5-b6df-c8b2213eae95\"\n}"
+            },
+            "url": {
+              "raw": "https://api.wxcc-us1.cisco.com/organization/{{org_id}}/team",
+              "protocol": "https",
+              "host": ["api", "wxcc-us1", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "team"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Team",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"{{team_name}}\",\n    \"active\": true,\n    \"siteId\": \"5ba27abe-245f-477f-a008-8e06cda0138b\",\n    \"teamStatus\": \"IN_SERVICE\",\n    \"teamType\": \"AGENT\",\n    \"desktopLayoutId\": \"4189d9d4-5c0e-49e3-bcf8-4551bf206430\",\n    \"multimediaProfileId\": \"632be176-9710-45e5-b6df-c8b2213eae95\"\n}"
+            },
+            "url": {
+              "raw": "https://api.wxcc-us1.cisco.com/organization/{{org_id}}/team",
+              "protocol": "https",
+              "host": ["api", "wxcc-us1", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "team"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "User Profile",
+      "item": [
+        {
+          "name": "User Profile",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/user-profile",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "user-profile"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "List Users",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/user",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "user"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List User by Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer bearerToken"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/user/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": ["organization", "{{org_id}}", "user", "<id>"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List User By CI Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLmk1czNWWW13RnhMNXU1emdOUENlMmcuR0tFQjd3V3FJTm9mcy12aGs1UkF2S3ZCOWdGQjdkVGZXNmJlRTAtNlpaYVF1d2lWS0gwTWhQLWNaRjQzaHFfYzlMSVNmM1k0a1NZT2paM1lDYUhqVl9fQk9CVWJQWDItUWdlX3dJajd6UjBaX2U3djEwQXU4Q2NvcWdKMTR4OU1BWWFnNFhONThnblp5dnB0Y3AxNWxWckZHUUhpUVIzQXl1cUNIc0pjWVR2NWpGb3Vqal9lZkNGSXVYaDZRUWw4cXFlWjhhSWZEX01ZNmNvODc4bV9YN3JQWFF1VDFSR2hlVGJXNzBWQThDcFRDZUpsNmlBWFBWMXhYamcwRkRWcEVfakR3VjRiRmYtNDRRSzRwS0FqaXJxbDRxZ3hNX3VVNy1kMkY4MmpFWUI3SlZrSFJJWURXaU1JX3hReFlRUDh1RWo4ZTJfWHptUjVBbzcyeGljYmhmSVFqbXBQTC11cXFNVEJLV0YwbG5jMkVrNWRsTXpNd19RS0htZXd0TXZWWTRZZUkyM0N0RnlpUVlEVVBOcnFCV2kwYW9HaUJ0Slk0a1A0N0RlMU8welRYczhXVXhrOUxnY0htellqemVBdkZFVEdEUFVSUldRU1dHaWpkQk44dmhYM05hc3JYLW81VXdyeUs0UXlObHo1Tkcta1MxUk5uV1dVMkRYb3FPcXlTTEpnelRVcDRWTVVRYzFDR2xEREZyV0RKMDlpblJjazNRU0xIV25GaVA4NTRDNkhXSlRRQ1pkS0lJdExDSFNQbVk5SnYxVE9OMHhRdWpOaUNWclZhbVR0UGVvZFpVN21XUGZ0ekZkSzFLdW1uVTNRT2JnMWVIcVgxZVVmeldyaDZ1djl6RWxoZmdraU91bV81RWxEdmpQMVV0YnlsT2tBY19KWFRGbFdRWjNNdDVwcW0tWDBmeHFzN1pMSjd3cEpabjdEeTBZNHkxVUJmTXFxSGstTkZBLkZDb24tLXl1Yi1YeGlBOFFUclRncnciLCJ1c2VyX3R5cGUiOiJ1c2VyIiwidG9rZW5faWQiOiJBYVozcjBaamt6TUdZMk9XVXRNRGhpWlMwME9XRXhMVGhtTVdZdE5UZGxaVGxsWWpZd1lURXdZemM1WkRBMU1EVXRNVEZrIiwicmVmZXJlbmNlX2lkIjoiMDNhYWUxNjUtM2JiMy00OTliLWI0ZjctMDhmMzE2ZGM2ODU4IiwiaXNzIjoiaHR0cHM6XC9cL2lkYnJva2VyLndlYmV4LmNvbVwvaWRiIiwidXNlcl9tb2RpZnlfdGltZXN0YW1wIjoiMjAyMjA1MDIyMzUzNTguMjIzWiIsInJlYWxtIjoiZDRkMDZiNjgtMTc5YS00NDgwLTljMzgtNDVkNDBiYjg5NWRiIiwiY2lzX3V1aWQiOiJkZmY2MTk5My1iOWEzLTRlNzQtOGY1Ny0zMmY5MjUyOWNjZDciLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiZXhwaXJ5X3RpbWUiOjE2NTE2NTA3NjA3ODIsImNsaWVudF9pZCI6IkM1ODI1NGYzOGNlMDBlYzdhZmQxYjYwNjZmOTdlM2MyNjgwZjgxOWZhZWZlNjhhOTY1MjE5N2EzYTllMTg4N2M0In0.iIuRXDSqv2tSyJoI7U9Afq0_J5mUTAK2rNhm4WiBHg6THrAV2ps6Qf9yh1iKE4x_eZmZZpJ_Aat0vtg20pe88O09tb69PP1OnMLSWNhB6jZ9pLHvqaEa6VcuVfXAxBCM1Woyn97OPGB5M_S0bpS3WbHO7yeRONQeSJHHnsjKqXn739edIyriWOy2BjiwKZA6aE5YKaOPQbVWlhYr8RavmnrE0cIHwaYq9pK_ZpcrC6MCTuKtocMh0INUcscBNhWcz9Bdfc5I2tMEm8skTCz3afpACe72ZfawEMhePHNsEJahdEtnemd5JYvf3k-w5fX8QxqdHhAkeG-vYZcbGOhKlg"
+              }
+            ],
+            "url": {
+              "raw": "https://api.wxcc-{{datacenter}}.cisco.com/organization/{{org_id}}/user/by-ci-user-id/<id>",
+              "protocol": "https",
+              "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+              "path": [
+                "organization",
+                "{{org_id}}",
+                "user",
+                "by-ci-user-id",
+                "<id>"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "tasks",
+          "item": [
+            {
+              "name": "realTimeQueuedTasks",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.\n  task(\n    filter: {\n      #The main filter for active tasks is isActive: true\n      and: [\n        { channelType: { equals: telephony } }\n        # { status: { equals: \"parked\" } }\n        { direction: { equals: \"inbound\" } }\n        { isActive: { equals: true } }\n      ]\n    }\n  ) {\n    tasks {\n      #Add more fields here as needed\n      id\n      origin\n      destination\n      isActive\n      direction\n      owner {\n        id\n        name\n      }\n      lastEntryPoint {\n        id\n        name\n      }\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "advanced",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields\n  task(\n    timeComparator: endedTime #When filtering tasks, use the end time of the task\n    filter: {\n      #Filter the type of Task\n      and: [\n        { channelType: { equals: telephony } } #Telephony calls only\n         { status: { equals: \"ended\" } } #Final Disposition\n        # { direction: { equals: \"inbound\" } } #Inbound call only\n        { isActive: { equals: false } } #Resolved call only\n      ]\n    }\n    aggregation: {\n      #Define custom formulas and Aggregations - NOTE that the FIELDS you insert below has an effect on this.\n      aggr: [\n        { field: totalDuration, type: sum, name: \"Total Duration\" }\n        {\n          field: connectedDuration\n          type: sum\n          name: \"Average Connected Duration\"\n        }\n      ]\n    }\n    pagination: { cursor: \"0\" } #Show first page\n  ) {\n    tasks {\n      #Task Metadata - Note that since these are aggregates, you need to use the GROUPBY Fields HERE\n      origin\n      destination\n      lastWrapupCodeName #Why the customer called\n      #Aggregation Results - Print Total and Average Durations\n      aggregation {\n        name\n        value\n      }\n    }\n    #Pagination Information\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "basicFields",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #BASIC: Basic query to request for certain fields\n  task(\n    #From and To timestamps in Epoch Time\n    from: 1635750000000\n    to: 1638345599000\n    #Start with Page 0\n    pagination: { cursor: \"0\" }\n  ) {\n    tasks {\n      createdTime #ContactStartTime\n      channelType #ChannelType\n      entryPoint {\n        name #EntrypointName\n      }\n      lastQueue {\n        name #NameOfQueue\n      }\n      direction\n      terminationType #HandleType\n      owner {\n        name #AgentName\n      }\n      id #ContactSessionId\n      status #CurrentState\n      destination #DNIS\n      isActive #WhetherRealtimeOrHistorical\n      selfserviceDuration #IVR\n      ringingDuration #Ring\n      queueDuration #QueueTime\n      connectedDuration #HandleTime\n      totalDuration #QueueTime\n      holdDuration #HoldDuration\n      wrapupDuration #WrapUp\n    }\n    #Pagination Information\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "callbackFilter",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #FILTER: Get the Task details using CallBack filters and logical operators to match a condition\n  task(\n    #From and To timestamps in Epoch Time\n    from: 1646121600000\n    # to: 1650009600\n    #Add a filter that checks if a Callback was made and with a status\n    filter: {\n      and: [\n        { callbackData: { equals: { callbackNumber: \"nnnnnnnnnnn\" } } }\n        { callbackData: { equals: { callbackStatus: \"Success\" } } }\n      ]\n    }\n  ) {\n    tasks {\n      callbackData {\n        callbackRequestTime\n        callbackConnectTime\n        callbackNumber\n        callbackStatus\n        callbackOrigin\n        callbackType\n      }\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "interactionDetails",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #CurrentInteraction: Usage of filters, aggregates, pagination and custom fields to find out information about the current interaction\n  task(\n    #Check Interaction Details based on a Specific Interaction ID and get other information about this call\n    from: 1646699261000 #Set this to dateTime NOW so you're looking for a task active right now\n    timeComparator: createdTime #Filter by created Time only\n    filter: {\n      #Filter the type of Task\n      and: [\n        #Telephony call\n        # { id: { equals: \"85f0c70c-19d6-4392-ad04-1854bb757044\" } }\n        # Optional filters - you can remove these\n        { channelType: { equals: telephony } } #Telephony call\n        { origin: { equals: \"+12345670000\" } } #Customer ANI\n         { destination: { equals: \"+14563454567\" } } #DNIS\n        # { direction: { equals: \"inbound\" } } #Inbound call only\n      ]\n    }\n  ) {\n    tasks {\n      #Task Metadata\n      id\n      isActive\n      createdTime\n      endedTime\n      origin\n      destination\n      totalDuration\n      #Treatment Details\n      lastEntryPoint {\n        #Entrypoint Details\n        id\n        name\n      }\n      lastQueue {\n        #Queue Details\n        id\n        name\n      }\n      lastTeam {\n        #Team Details\n        id\n        name\n      }\n      owner {\n        #Agent Details\n        name\n        id\n      }\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "simple",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #SIMPLE: Simply retrieve all task IDs\n\n  task(\n    #Search all tasks in a 15 day window.\n    from: 1646095690000\n    to: 1647305290000\n  ) {\n    tasks {\n      #Return the ID of the task\n      id\n      #You can add more fields below\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "lastAgentInteraction",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached\n  task(\n    #Check if Customer called in the last 7 days and who they were connected to\n    from: 1646699261000\n    to: 1647304061000\n    timeComparator: createdTime #Filter by created Time only\n    filter: {\n      #Filter the type of Task\n      and: [\n        { channelType: { equals: telephony } } #Telephony calls only\n        { origin: { equals: \"+12345677890\" } } #Customer ANI\n        { status: { equals: \"ended\" } } #Final Disposition\n        { direction: { equals: \"inbound\" } } #Inbound call only\n        { isActive: { equals: false } } #Resolved call only\n      ]\n    }\n    pagination: { cursor: \"0\" } #Display first page only\n  ) {\n    tasks {\n      #Task Metadata\n      id\n      createdTime\n      endedTime\n      origin\n      destination\n      lastWrapupCodeName #Why the customer called\n      totalDuration\n      selfserviceDuration\n      captureRequested\n      #Treatment Details\n      lastEntryPoint {\n        #Entrypoint Details\n        id\n        name\n      }\n      lastQueue {\n        #Queue Details\n        id\n        name\n      }\n      lastTeam {\n        #Team Details\n        id\n        name\n      }\n      owner {\n        #Agent Details\n        name\n        id\n      }\n    }\n    #Pagination Information\n    pageInfo {\n      endCursor\n      hasNextPage\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "agentSession",
+          "item": [
+            {
+              "name": "state",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #SIMPLE: Get agent State\n  agentSession{\n\tagentSessions{\n\tagentName\n  }\n  }\n\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search?orgId={{org_id}}",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "taskDetails",
+          "item": [
+            {
+              "name": "channelType",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #SIMPLE: Get channel Type\n  taskDetails{\n      tasks{\n          channelType\n      }\n  }\n    \n    \n\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search?orgId={{org_id}}",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "wallboardQueries",
+          "item": [
+            {
+              "name": "EP",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #TOTAL CALLS BY Entry Point\n\n  task(\n    from: 1653952506445 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days\n    to: 1654557391185 #This can be set to Date.now() in millis\n    timeComparator: createdTime\n    filter: {\n      and: [\n        { direction: { equals: \"inbound\" } }\n        { channelType: { equals: telephony } }\n      ]\n    }\n    aggregations: {\n      field: \"id\"\n      type: count\n      name: \"Total Contacts by Entry Point\"\n    }\n  ) {\n    tasks {\n      lastEntryPoint {\n        name\n        id\n      }\n      aggregation {\n        name\n        value\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "QRealTime",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #TOTAL CALLS Realtime by Queued Calls\n\n  task(\n    from: 1654557726452 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days\n    timeComparator: createdTime\n    filter: {\n      and: [\n        { direction: { equals: \"inbound\" } }\n        { isActive: { equals: true } }\n        { status: { equals: \"parked\" } }\n        { channelType: { equals: telephony } }\n      ]\n    }\n    aggregations: {\n      field: \"id\"\n      type: count\n      name: \"Total Queued Contacts RealTime\"\n    }\n  ) {\n    tasks {\n      aggregation {\n        name\n        value\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Queue",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{access_token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJjbHVzdGVyIjoiUEY4NCIsInByaXZhdGUiOiJleUpqZEhraU9pSktWMVFpTENKbGJtTWlPaUpCTVRJNFEwSkRMVWhUTWpVMklpd2lZV3huSWpvaVpHbHlJbjAuLnFJYUp0OUtuZlFqU3QxVEVZQzZVcVEuSXpuOVZVSGFxM3FuZE5fQmIwRHhjQmNPX25nTlJWeTZXSlY2RnNmS3Z0ekdHT2tlTnJZNzlxZEJudGtxQjA3d1JqT2d3blBDVXM5SDRfd3pLR1lDR3o5OWdHRU9PQWxsYUoweFM3QW95U28tTUdCMXR6dUZNN3VQVDB6Y3VYZDVMLVQxZ3ROR1BFdE5QTzVKT1hQOXdkZVJXZE9XZWRRUDZyVmxxUnhZN0pXYTBQeTBpb3VnODNncGtMSFJ0ZWdVTDc2X0xidG9la0w5RjVDbmpWc2dDVEswX2ctRG5LWTU0SnFoelBxZjdRazFaVmdYZnc0WkQtY2FfM3U2MlFCRU9icHlMWWYzYmJUX2Z6Y3hZT211UzZGMFMxOENyRmtaSGZTQ2twd2NRRktSUGM1eW5Yb3RUYTZLV3BOZ1pMcWNKbUVMc09YMDFsVl80UlVkOTVZNVViRXBjczc0ZE9rNDRfMWIwZ3BKZkNVWXdxdXhqQ0tOdUFoRFRyZGZQTnRqdVJncHoyMEluMEthak1LRHRnTG5mek1pVFZXQzh5LWhYT0ZTSVpGbFI5WURvVEhXQjBwLVJVMjRiaUJUWFpKZUluTjlOQk5wc3FvQnhUTzlyVWtsNjN2SVZXdjZKSnp1amJrdVkyeC1qVVgyckpOaG9XQXBMVmVMTng0NlJ3R3dtRVFtc1lUM05XbTliT0FxM3FNNk1Lc0p4RW5FYlpvZ0k1UnE1N2x5TG5NMnhuT0gxOV96T0ZvZjZuZWtDbWVyeGFpYkwtNkdHOGIxS0tFZmI2dGR5dUlGQzh0dU5TUFlpb2VqZS1oUkJ1Zy5tNk9TZ1JZYjd1YlJIMnR2YVJGS1VRIiwidXNlcl90eXBlIjoidXNlciIsInRva2VuX2lkIjoiQWFaM3IwTVdRelpHVXpNV1F0WVRaaE55MDBZalZtTFRoaU1UWXRaV1ZqWm1ZeE16RmpObUUxTjJRME0yTXhOVFV0TldObSIsInJlZmVyZW5jZV9pZCI6IjU0N2E4MWVhLWU5MTktNGQ1OS04MjdhLWExOTM0M2M1YWJiNiIsImlzcyI6Imh0dHBzOlwvXC9pZGJyb2tlci53ZWJleC5jb21cL2lkYiIsInVzZXJfbW9kaWZ5X3RpbWVzdGFtcCI6IjIwMjIwNDA3MjMzNzU3LjA1NVoiLCJyZWFsbSI6ImQ0ZDA2YjY4LTE3OWEtNDQ4MC05YzM4LTQ1ZDQwYmI4OTVkYiIsImNpc191dWlkIjoiNzc3YmY1MGEtNWU1ZC00YWRhLThhOWQtMzc1NGY2ZTlkMmM3IiwidG9rZW5fdHlwZSI6IkJlYXJlciIsImV4cGlyeV90aW1lIjoxNjUwMTAyOTI1MDA2LCJjbGllbnRfaWQiOiJDNTgyNTRmMzhjZTAwZWM3YWZkMWI2MDY2Zjk3ZTNjMjY4MGY4MTlmYWVmZTY4YTk2NTIxOTdhM2E5ZTE4ODdjNCJ9.TOx2_beryyd_yLrhsMiaTq9sZL5ulMoEF6wv_2pPJ7wCz2Wzqfa8as4RvDo3678IqFd55JnUCcerrUDynrRM_Y-fcZB-veDs6MQrHNmGLIaFYTEsORjiyZIdj-jQCrO8Q7syl3CFuIp7wLrCcl5oUbP2oW3rMzKhn1eVGssJSXV3tXFxEnszQ8Wwb1lQLgvfE8n8rZVz9jJnx6T_0ayQeLALyl7OogGnluxQ8ALtJeB5n3zcdYeY2ljbOI9R9xkaZZRacUCtSJvBbLiBgmJ0_sI8QxhrvzTqk17gg3Q3jNM5LqwoeyR1C7hvavw5HPYbH9tEQ8ijMRHUyyhSbT9gaw"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "graphql",
+                  "graphql": {
+                    "query": "{\n  #TOTAL CALLS BY Queue and Average Handle Time by Queue\n\n  task(\n    from: 1653952506445 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days\n    to: 1654557391185 #This can be set to Date.now() in millis\n    timeComparator: createdTime\n    filter: {\n      and: [\n        { direction: { equals: \"inbound\" } }\n        { channelType: { equals: telephony } }\n      ]\n    }\n    aggregations: [\n      { field: \"id\", type: count, name: \"Total Contacts by Queue\" }\n      { field: \"queueDuration\", type: average, name: \"Average Queue Time\" }\n      { field: \"queueDuration\", type: max, name: \"Maximum Queue Time\" }\n      {\n        field: \"totalDuration\"\n        type: average\n        name: \"Average Handle Time by Queue\"\n      }\n    ]\n  ) {\n    tasks {\n      lastQueue {\n        name\n        id\n      }\n      aggregation {\n        name\n        value\n      }\n    }\n    pageInfo {\n      hasNextPage\n      endCursor\n    }\n  }\n}",
+                    "variables": ""
+                  }
+                },
+                "url": {
+                  "raw": "https://api.wxcc-{{datacenter}}.cisco.com/search",
+                  "protocol": "https",
+                  "host": ["api", "wxcc-{{datacenter}}", "cisco", "com"],
+                  "path": ["search"],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "{{org_id}}",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "{{scope}}",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "{{client_secret}}",
+        "type": "string"
+      },
+      {
+        "key": "clientId",
+        "value": "{{client_id}}",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "{{accessToken_url}}",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "{{auth_url}}",
+        "type": "string"
+      },
+      {
+        "key": "tokenType",
+        "value": "",
+        "type": "string"
+      },
+      {
+        "key": "accessToken",
+        "value": "",
+        "type": "string"
+      },
+      {
+        "key": "tokenName",
+        "value": "Token",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "body",
+        "type": "string"
+      },
+      {
+        "key": "state",
+        "value": "new",
+        "type": "string"
+      },
+      {
+        "key": "challengeAlgorithm",
+        "value": "S256",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "https://www.getpostman.com/oauth2/callback",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Get values from Environment ",
+          "const envValues = {",
+          "    refresh_token: pm.environment.get(\"refresh_token\"),",
+          "    client_id: pm.environment.get(\"client_id\"),",
+          "    grant_type: pm.environment.get(\"grant_type\"),",
+          "    client_secret: pm.environment.get(\"client_secret\")",
+          "}",
+          "",
+          "//Set timers for the token on the Environment",
+          "function setTokeTimer(){",
+          "    var startTimer = pm.environment.set(\"startTimer\", new Date().getTime());",
+          "    var setCountDown = pm.environment.get(\"startTimer\");",
+          "    var expires = pm.environment.set(\"expires\", new Date(new Date(setCountDown).getTime() + 60 * 60 * 10 * 1000).getTime());",
+          "    return setCountDown",
+          "}",
+          "",
+          "function subtractHours(numOfHours, date = new Date()) {",
+          "  date.setHours(date.getHours() - numOfHours);",
+          "  return date;",
+          "}",
+          "",
+          "// Send Post",
+          "const echoPostRequest = {",
+          "url: 'https://webexapis.com/v1/access_token',",
+          "method: 'POST',",
+          "header: 'Content-Type:application/json',",
+          "body: {",
+          "mode: 'application/json',",
+          "raw: JSON.stringify(",
+          "    {",
+          "        'grant_type': envValues.grant_type,",
+          "        'client_id': envValues.client_id,",
+          "        'client_secret': envValues.client_secret,",
+          "        'refresh_token': envValues.refresh_token",
+          "    })",
+          "}",
+          "};",
+          "",
+          "// Make a logical decision to renew Access_Token every 10 hours",
+          "if (pm.environment.get('expires') <= (new Date()).getTime()) {",
+          "    console.log('Token is expired') ",
+          "    pm.sendRequest(echoPostRequest,",
+          "    function (err, response) {",
+          "        let token = response.json(); ",
+          "        pm.environment.set(\"access_token\", token.access_token);",
+          "        pm.environment.set(\"refresh_token\", token.refresh_token);",
+          "        setTokeTimer()",
+          "        const timeLeft = pm.environment.get(\"expires\");",
+          "        const remainTime =  new Date(timeLeft).getHours();",
+          "        console.log(`new token stored, expires in 10 hours`);",
+          "    }",
+          "  );",
+          "} else {",
+          "    console.log(`All good.  Looks like we still have some left until token expires.`);",
+          "    ",
+          "   ",
+          "}"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "site_id",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
