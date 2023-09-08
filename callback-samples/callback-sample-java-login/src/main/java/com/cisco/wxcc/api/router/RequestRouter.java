@@ -1,4 +1,4 @@
-package com.cisco.wxcc.ccai.ui.router;
+package com.cisco.wxcc.api.router;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +14,8 @@ import org.springframework.web.servlet.function.RouterFunction;
 import org.springframework.web.servlet.function.RouterFunctions;
 import org.springframework.web.servlet.function.ServerResponse;
 
-import com.cisco.wxcc.ccai.ui.model.UserInfo;
-import com.cisco.wxcc.ccai.ui.util.Decoder;
+import com.cisco.wxcc.api.model.UserInfo;
+import com.cisco.wxcc.api.util.Decoder;
 
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.MediaType;
@@ -62,12 +62,12 @@ public class RequestRouter {
 					  .build();
 					MediaType mediaType = MediaType.parse("application/json");
 					okhttp3.RequestBody body2 = okhttp3.RequestBody.create(mediaType, "{"
-							+ "  \"destination\": \"1##########\","
-							+ "  \"entryPointId\": \"495ba730-ec20-4e17-8aae-365a12f9337a\","
+							+ "  \"destination\": \"1##########\"," // the number you are calling
+							+ "  \"entryPointId\": \"495ba730-ec20-4e17-8aae-365a12f9337a\"," //Entry Points
 							+ "  \"outboundType\": \"EXECUTE_FLOW\","
 							+ "  \"mediaType\": \"telephony\","
 							+ "  \"attributes\": {\"agentEmail\":\"jiwyatt_ps@email.carehybrid.com\"},"
-							+ "  \"origin\": \"+14806754092\""
+							+ "  \"origin\": \"+14806754092\"" //Outdial ANI
 							+ "}");
 					okhttp3.Request request2 = new Request.Builder()
 					  .url("https://api.wxcc-us1.cisco.com/v1/tasks")
@@ -92,11 +92,11 @@ public class RequestRouter {
 					  .build();
 					MediaType mediaType = MediaType.parse("application/json");
 					okhttp3.RequestBody body2 = okhttp3.RequestBody.create(mediaType, "{"
-							+ "  \"destination\": \"1##########\","
-							+ "  \"entryPointId\": \"57a9b978-206f-48bd-a340-770b61ca83c4\","
+							+ "  \"destination\": \"1##########\"," // the number you are calling
+							+ "  \"entryPointId\": \"57a9b978-206f-48bd-a340-770b61ca83c4\"," //Outdial Entry Points
 							+ "  \"outboundType\": \"OUTDIAL\","
 							+ "  \"mediaType\": \"telephony\","
-							+ "  \"origin\": \"+14806754092\""
+							+ "  \"origin\": \"+14806754092\"" //Outdial ANI
 							+ "}");
 					okhttp3.Request request2 = new Request.Builder()
 					  .url("https://api.wxcc-us1.cisco.com/v1/tasks")
