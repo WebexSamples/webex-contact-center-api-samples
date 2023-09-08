@@ -1,4 +1,4 @@
-package com.cisco.wxcc.ccai.ui.config;
+package com.cisco.wxcc.api.config;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.cisco.wxcc.ccai.ui.util;
+package com.cisco.wxcc.api.util;
 
 import java.util.Base64;
 

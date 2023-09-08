@@ -1,4 +1,4 @@
-package com.cisco.wxcc.ccai.ui.model;
+package com.cisco.wxcc.api.model;
 
 import lombok.Builder;
 import lombok.Data;
