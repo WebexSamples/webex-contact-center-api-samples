@@ -1,4 +1,4 @@
-## Basic Authorization Sample
+## Node Callback Sample code with login
 
 - This basic authorization app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
 
@@ -6,7 +6,7 @@
 
 - The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
-## [Watch the Video: Understanding WebexCC OAuth2 - App Sample](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
+## [Watch the Video](https://app.vidcast.io/)
 
 ![Basic Authorization Sample](./images/basic-authorization-sample.png)
 
@@ -44,8 +44,9 @@ ORG_ID=<your-org-id>
 
 `$ nodemon` OR `$ npm start`
 
-- Go to http://localhost:5000 to fetch an access token
-- Go to http://localhost:5000/tasks or http://localhost:5000/users to see the basic GET Tasks and GET Users examples.
+- Go to http://localhost:5000/userinfo for user details access token
+- Go to http://localhost:5000/outdial for agent outdial
+- Go to http://localhost:5000/execute_flow for preferred agent call back
 
 Expand / extend the sample app(s) as required.
 
