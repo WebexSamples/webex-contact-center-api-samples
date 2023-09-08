@@ -30,3 +30,6 @@ execute
 >./gradlew bootrun
 
 then go to http://localhost:8080
+
+Video
+[https://app.vidcast.io](https://app.vidcast.io/share/7a1224ef-e86c-44bf-b3ce-ca119d0a23f3)
