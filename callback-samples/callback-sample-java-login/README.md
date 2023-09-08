@@ -7,9 +7,10 @@ edit:
 1)
 
 /callback-sample-java-login/src/main/resources/application.yaml
+
 update
- client-id:  
- client-secret:  
+* client-id:  
+* client-secret:  
 
 2)
 
