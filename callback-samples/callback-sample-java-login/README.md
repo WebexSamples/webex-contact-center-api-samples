@@ -18,6 +18,7 @@ makeExecuteFlowCall
 
 open terminal
 cd into the directory callback-samples/callback-sample-java-login
+
 execute
 >./gradlew bootrun
 
