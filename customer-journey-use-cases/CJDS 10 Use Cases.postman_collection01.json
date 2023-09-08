@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"firstName\": \"Niko\",\r\n  \"lastName\": \"Theologitis\",\r\n  \"phone\": [\r\n    \"+19199271174\",\r\n    \"19199271174\"\r\n  ],\r\n  \"email\": [\r\n    \"ntheologitis@cisco.com\"\r\n  ]\r\n}"
+							"raw": "{\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"\",\r\n  \"phone\": [\r\n    \"+\",\r\n    \"\"\r\n  ],\r\n  \"email\": [\r\n    \"\"\r\n  ]\r\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}",
