@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "0a816a33-04b6-4f6f-97fc-00ae49221911",
+		"name": "CJDS 10 Use Cases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20420205"
+	},
+	"item": [
+		{
+			"name": "CJDS01",
+			"item": [
+				{
+					"name": "Create Identity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"\",\r\n  \"phone\": [\r\n    \"+\",\r\n    \"\"\r\n  ],\r\n  \"email\": [\r\n    \"\"\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"person",
+								"workspace-id",
+								"{{workspaceId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Identity",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"identity\", encodeURIComponent(\"+12263762555\"));\r",
+									"// console.log(pm.environment.get(\"identity\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/aliases/{{aliases}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"person",
+								"workspace-id",
+								"{{workspaceId}}",
+								"aliases",
+								"{{aliases}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Identity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/person-id/{{personId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"person",
+								"workspace-id",
+								"{{workspaceId}}",
+								"person-id",
+								"{{personId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CJDS02",
+			"item": [
+				{
+					"name": "UC2 - STEP1- Create Profile Template Repeat Caller",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"encodedAlias\", btoa(\"LeyTlRcYmi7xH4OfQUr0HKpH6YFrvCXRIlD\"));",
+									"console.log(pm.environment.get(\"encodedAlias\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"RepeatCaller\",\r\n    \"attributes\": [\r\n        {\r\n            \"version\": \"0.1\",\r\n            \"event\": \"Payment Queue\",\r\n            \"metaDataType\": \"string\",\r\n            \"metaData\": \"category\",\r\n            \"limit\": 100,\r\n            \"displayName\": \"RepeatCallers\",\r\n            \"lookBackDurationType\": \"minutes\",\r\n            \"lookBackPeriod\": 5,\r\n            \"aggregationMode\": \"Count\",\r\n            \"rules\": {\r\n                \"logic\": \"SINGLE\",\r\n                \"condition\": \"Payment Queue,category,string,Value EQ Payment\"\r\n            },\r\n            \"widgetAttributes\": {\r\n                \"type\": \"table\"\r\n            },\r\n            \"verbose\": false\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/profile-view-template/workspace-id/{{workspaceId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"profile-view-template",
+								"workspace-id",
+								"{{workspaceId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UC2 - STEP2- POST Queued Caller Info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"Payment Queue\",\n  \"source\": \"Voice%20Contact\",\n  \"identity\": \"your mobile number\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"phone\": \"your mobile number\",\n    \"CallsQueuedNow\":\"Use GetQueueInfoNode Values\",\n    \"OldestCallTime\":\"Use GetQueueInfoNode Values\",\n    \"LoggedOnAgents\":\"Use GetQueueInfoNode Values\",\n    \"PIQ\":\"Use GetQueueInfoNode Values\",\n    \"EWT\":\"Use GetQueueInfoNode Values\",\n    \"category\": \"Payment\",\n    \"origin\": \"Payment Queue\",\n    \"channelType\": \"QueueCallNeutral\",\n    \"channelBreakout\": \"voice\"\n}}\n"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"publish",
+								"v1",
+								"api",
+								"event"
+							],
+							"query": [
+								{
+									"key": "workspaceId",
+									"value": "{{workspaceId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UC2 - STEP3- Get Progressive Template values against RepeatCaller",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/api/progressive-profile-view/workspace-id/{{workspaceId}}/person-id/{{personId}}/template-id/{{templateName}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"progressive-profile-view",
+								"workspace-id",
+								"{{workspaceId}}",
+								"person-id",
+								"{{personId}}",
+								"template-id",
+								"{{templateName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UC2 - Get All Profile View Templates",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/profile-view-template/workspace-id/{{workspaceId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"profile-view-template",
+								"workspace-id",
+								"{{workspaceId}}"
+							],
+							"query": [
+								{
+									"key": "organizationId",
+									"value": "1eb65fdf-9643-417f-9974-ad72cae0e10f",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "createdBy%3D%3Dsatjonna%40cisco.com",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "DESC",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UC2 - Progressive Profile View Repeat Caller",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/profile-view-template/workspace-id/{{workspaceId}}/template-name/{{templateName}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"profile-view-template",
+								"workspace-id",
+								"{{workspaceId}}",
+								"template-name",
+								"{{templateName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UC2 - Update Profile Template Repeat Caller",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"encodedAlias\", btoa(\"LeyTlRcYmi7xH4OfQUr0HKpH6YFrvCXRIlD\"));",
+									"console.log(pm.environment.get(\"encodedAlias\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"RepeatCaller\",\r\n    \"attributes\": [\r\n        {\r\n            \"version\": \"0.1\",\r\n            \"event\": \"Payment Queue\",\r\n            \"metaDataType\": \"string\",\r\n            \"metaData\": \"category\",\r\n            \"limit\": 100,\r\n            \"displayName\": \"RepeatCallers\",\r\n            \"lookBackDurationType\": \"minutes\",\r\n            \"lookBackPeriod\": 5,\r\n            \"aggregationMode\": \"Count\",\r\n            \"rules\": {\r\n                \"logic\": \"SINGLE\",\r\n                \"condition\": \"Payment Queue,category,string,Value EQ Payment\"\r\n            },\r\n            \"widgetAttributes\": {\r\n                \"type\": \"table\"\r\n            },\r\n            \"verbose\": false\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/v1/api/profile-view-template/workspace-id/{{workspaceId}}/template-id/{{templateId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"v1",
+								"api",
+								"profile-view-template",
+								"workspace-id",
+								"{{workspaceId}}",
+								"template-id",
+								"{{templateId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api-jds.prod-useast1.ciscowxdap.com",
+			"type": "string"
+		},
+		{
+			"key": "workspaceId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "personId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "templateId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "templateName",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "aliases",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "you can create multiple aliases ",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
