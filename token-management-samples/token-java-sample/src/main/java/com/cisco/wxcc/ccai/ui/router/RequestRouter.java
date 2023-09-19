@@ -42,75 +42,8 @@ public class RequestRouter {
 					log.debug("User info request: {}", req);
 					return ServerResponse.ok().body(userInfo(clientService));
 				})
-				.GET("/outdial", req -> {
-					log.debug("outdial request: {}", req);
-					return makeOutdialCall(clientService);
-				})
-				.GET("/execute_flow", req -> {
-					log.debug("outdial request: {}", req);
-					return makeExecuteFlowCall(clientService);
-				})
 				.build();
 
-	}
-
-	@SuppressWarnings("deprecation")
-	private ServerResponse makeExecuteFlowCall(OAuth2AuthorizedClientService clientService) {
-		try {
-			
-			OkHttpClient client = new OkHttpClient().newBuilder()
-					  .build();
-					MediaType mediaType = MediaType.parse("application/json");
-					okhttp3.RequestBody body2 = okhttp3.RequestBody.create(mediaType, "{"
-							+ "  \"destination\": \"1##########\","
-							+ "  \"entryPointId\": \"495ba730-ec20-4e17-8aae-365a12f9337a\","
-							+ "  \"outboundType\": \"EXECUTE_FLOW\","
-							+ "  \"mediaType\": \"telephony\","
-							+ "  \"attributes\": {\"agentEmail\":\"jiwyatt_ps@email.carehybrid.com\"},"
-							+ "  \"origin\": \"+14806754092\""
-							+ "}");
-					okhttp3.Request request2 = new Request.Builder()
-					  .url("https://api.wxcc-us1.cisco.com/v1/tasks")
-					  .method("POST", body2)
-					  .addHeader("Accept", "application/json")
-					  .addHeader("Authorization", userInfo(clientService).getAccessToken())
-					  .addHeader("Content-Type", "application/json")
-					  .build();
-					okhttp3.Response response2 = client.newCall(request2).execute();
-			return ServerResponse.ok().body(response2.body().string());
-		} catch (Exception e) {
-			logger.error("Exception:{}", e);
-			return ServerResponse.ok().body(e.toString());
-		}
-	}
-
-	@SuppressWarnings("deprecation")
-	private ServerResponse makeOutdialCall(OAuth2AuthorizedClientService clientService) {
-		try {
-			
-			OkHttpClient client = new OkHttpClient().newBuilder()
-					  .build();
-					MediaType mediaType = MediaType.parse("application/json");
-					okhttp3.RequestBody body2 = okhttp3.RequestBody.create(mediaType, "{"
-							+ "  \"destination\": \"1##########\","
-							+ "  \"entryPointId\": \"57a9b978-206f-48bd-a340-770b61ca83c4\","
-							+ "  \"outboundType\": \"OUTDIAL\","
-							+ "  \"mediaType\": \"telephony\","
-							+ "  \"origin\": \"+14806754092\""
-							+ "}");
-					okhttp3.Request request2 = new Request.Builder()
-					  .url("https://api.wxcc-us1.cisco.com/v1/tasks")
-					  .method("POST", body2)
-					  .addHeader("Accept", "application/json")
-					  .addHeader("Authorization", userInfo(clientService).getAccessToken())
-					  .addHeader("Content-Type", "application/json")
-					  .build();
-					okhttp3.Response response2 = client.newCall(request2).execute();
-			return ServerResponse.ok().body(response2.body().string());
-		} catch (Exception e) {
-			logger.error("Exception:{}", e);
-			return ServerResponse.ok().body(e.toString());
-		}
 	}
 
 	private UserInfo userInfo(OAuth2AuthorizedClientService clientService) {

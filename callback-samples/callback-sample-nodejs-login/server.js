@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
   if (loginDetails) {
     // Logged in OR attempted
-    res.json(loginDetails);
+    res.sendFile('index.html', { root: 'dist/' });
   } else {
     // Not logged in
     res.redirect('/login');
@@ -157,8 +157,7 @@ app.get('/userinfo', async (req, res) => {
 });
 
 app.get('/outdial', async (req, res) => {
-  // Simple "GET Users" Sample. Change the DATES to fetch another range.
-  // View the spec here :
+  //click to dial
 
   const options = {
     method: 'POST',
@@ -188,9 +187,7 @@ app.get('/outdial', async (req, res) => {
 
 
 app.get('/execute_flow', async (req, res) => {
-  // Simple "GET Sites" Sample. Change the DATES to fetch another range.
-  // View the spec here :
-
+  // prefered agent
   const options = {
     method: 'POST',
     url: `https://api.wxcc-us1.cisco.com/v1/tasks`,
