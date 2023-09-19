@@ -1,4 +1,4 @@
-## Node Callback Sample code with login
+## Java Spring Boot with Oauth2 Spring Security project to demonstrate Webexcc login for authentication and authorization
 
 - This basic authorization app helps you visualize the Authentication & Authorization flow to obtain an Access Token to use the Webex Contact Center APIs.
 
@@ -6,49 +6,32 @@
 
 - The OAuth Flow can be visualized by going to the http://localhost of this app once the app dependencies are installed and the application is run.
 
-## [Watch the Video](https://app.vidcast.io/share/270b29cb-7169-495f-8449-e0483b9f1393)
+## [Watch the Video](https://app.vidcast.io/share/5c1c16ab-1d3a-4623-b1ea-68bc2fbb19a3)
 
 ![Basic Authorization Sample](./images/basic-authorization-sample.png)
 
 #### Pre-Requisites:
 
-- Node JS and NPM
-- An IDE like VS Code or similar.
+- Java
+- Spring Boot
+- Spring Security Oauth2
+- gradle
 
-```
-$ node -v
-v14.16.1
-$ npm -v
-6.14.12
-```
+
 
 #### Steps:
 
-- Ensure you have installed NodeJS and NPM
 - Clone this Repository / Download it.
-- Create a .env file in each of the folders with the settings of the environment variables required to initialize the environment variables. Your server.js will pick it up from the local .env file in the root folder.
+- Import project
+- Edit /token-java-sample/src/main/resources/application.yaml
 
-`$ cat .env`
 
-```
-PORT=5000
-CLIENT_ID=<your-client-id>
-CLIENT_SECRET=<your-client-secret>
-REDIRECT_URI=<your-redirect uri - ex: http://localhost:5000/auth/webex/callback>
-ORG_ID=<your-org-id>
-```
+- Run `gradle bootRun`
 
-- Run `$ npm install`
+- Go to http://localhost:8080
+- Go to http://localhost:8080/userinfo for user details access token
 
-- Run the App
 
-`$ nodemon` OR `$ npm start`
-
-- Go to http://localhost:5000/userinfo for user details access token
-- Go to http://localhost:5000/outdial for agent outdial
-- Go to http://localhost:5000/execute_flow for preferred agent call back
-
-Expand / extend the sample app(s) as required.
 
 ## Disclaimer
 
