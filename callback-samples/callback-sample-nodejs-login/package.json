@@ -1,0 +1,33 @@
+{
+  "name": "callback-sample-nodejs-login",
+  "version": "1.0.0",
+  "description": "Simple App to understand OAuth2 and basic GET APIs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiscoDevNet/webex-contact-center-api-samples.git"
+  },
+  "keywords": [
+    "Webex",
+    "Contact",
+    "Center",
+    "APIs",
+    "Sample"
+  ],
+  "author": "Arunabh Bhattacharjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CiscoDevNet/webex-contact-center-api-samples/issues"
+  },
+  "homepage": "https://github.com/CiscoDevNet/webex-contact-center-api-samples#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,33 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          webexcc:
+            client-id: https://developer.webex-cx.com/my-apps
+            client-secret: https://developer.webex-cx.com/my-apps
+            scope: cjp:user,spark:people_read,cjp:config_write,cjp:config,cjp:config_read
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/webexcc
+            login-uri: /
+            login-success-uri: /index.html
+            logout-success-uri: /
+            #logout-success-uri: https://idbroker.webex.com/idb/oauth2/v1/logout
+        provider:
+          webexcc:
+            authorization-uri: https://webexapis.com/v1/authorize
+            token-uri: https://webexapis.com/v1/access_token
+            user-info-uri: https://webexapis.com/v1/people/me
+            user-name-attribute: userName
+
+logging:
+  level:
+    ROOT: INFO     
+    
+#server:
+#  port: 443
+#  ssl:
+#    key-store: classpath:https/webexccai.p12
+#    key-store-password: webexccai
+#    key-store-type: PKCS12
+#    key-alias: webexccai
