@@ -1,6 +1,5 @@
 # Webex Contact Center API Samples
 
-![Checks](https://img.shields.io/github/checks-status/CiscoDevNet/webex-contact-center-api-samples/main)
 ![License](https://img.shields.io/github/license/CiscoDevNet/webex-contact-center-api-samples)
 ![Contributors](https://img.shields.io/github/contributors/CiscoDevNet/webex-contact-center-api-samples)
 ![Stars](https://img.shields.io/github/stars/CiscoDevNet/webex-contact-center-api-samples?style=social)
