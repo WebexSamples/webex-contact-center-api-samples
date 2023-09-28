@@ -1,4 +1,6 @@
 # MAC
+.history
+.history/**
 .DS_Store
 # Logs
 logs
