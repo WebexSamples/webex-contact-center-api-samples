@@ -13,7 +13,7 @@ const orgId = process.env.ORG_ID;
 const scopes = 'cjp:config cjp:config_read';
 const apiRootUrl = 'https://api.wxcc-us1.cisco.com'; // Change this to your Datacenter
 // Simple inmemory, global scope - you can store this on local storage if you'd like.
-var loginDetails = null;
+let loginDetails = null;
 
 // For production HTTPS redirects only
 /*

@@ -55,7 +55,7 @@ function primaryCallback() {
         backdrop.addEventListener("click", closeModal);
 
         //create Modal
-        modal = document.createElement("div");
+        let modal = document.createElement("div");
         modal.style.position = "fixed";
         modal.style.zIndex = "200";
         modal.style.top = "10%";
@@ -106,7 +106,7 @@ function primaryCallback() {
         modal.appendChild(inputFieldContainer);
 
         //create a form
-        var startForm = document.createElement("form");
+        let startForm = document.createElement("form");
         startForm.id = "callBackForm";
         startForm.setAttribute(
             "style",
@@ -188,10 +188,10 @@ function primaryCallback() {
         startForm.append(requestType);
 
         //Create and append the options
-        for (var i = 0; i < modifiers.reasons.length; i++) {
-            var option = document.createElement("option");
-            option.value = modifiers.reasons[i];
-            option.text = modifiers.reasons[i];
+        for (const element of modifiers.reasons) {
+            let option = document.createElement("option");
+            option.value = element;
+            option.text = element;
             requestType.appendChild(option);
         }
 
@@ -211,7 +211,7 @@ function primaryCallback() {
         });
         checkboxDiv.append(startCheck);
 
-        var checkBoxLabel = document.createElement("Label");
+        let checkBoxLabel = document.createElement("Label");
         checkBoxLabel.setAttribute("for", "checkboxId");
         checkBoxLabel.innerHTML = "I agree to the Use and Terms and Privacy Policy";
         checkBoxLabel.setAttribute("style", " display: inline; font-size: 12px; margin-left: 4px; ");
