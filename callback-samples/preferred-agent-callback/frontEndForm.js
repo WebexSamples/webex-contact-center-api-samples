@@ -244,10 +244,10 @@ function primaryCallback() {
     callBackAgent.append(preferredCallbackSelect);
 
     // callback Create and append the options
-    for (var i = 0; i < modifiers.agents.length; i++) {
-      var option = document.createElement("option");
-      option.value = modifiers.agents[i];
-      option.text = modifiers.agents[i];
+    for (const element of modifiers.agents) {
+      let option = document.createElement("option");
+      option.value = element;
+      option.text = element;
       preferredCallbackSelect.appendChild(option);
     }
 
