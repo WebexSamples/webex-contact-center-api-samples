@@ -13,7 +13,7 @@ const orgId = process.env.ORG_ID;
 const scopes = 'cjp:config cjp:config_read';
 const apiRootUrl = 'https://api.wxcc-us1.cisco.com'; // Change this to your Datacenter
 // Simple inmemory, global scope - you can store this on local storage if you'd like.
-var loginDetails = null;
+let loginDetails = null;
 
 // For production HTTPS redirects only
 /*
@@ -215,7 +215,7 @@ app.get('/agents', async (req, res) => {
   let from = new Date('2021-11-15').getTime();
   let to = new Date('2021-11-18').getTime();
 
-  options = {
+  const options = {
     method: 'GET',
     url: `${apiRootUrl}/v1/agents/statistics`,
     params: {
@@ -249,7 +249,7 @@ app.get('/queues', async (req, res) => {
   let from = new Date('2021-10-10').getTime();
   let to = new Date('2021-10-20').getTime();
 
-  options = {
+  const options = {
     method: 'GET',
     url: `${apiRootUrl}/v1/queues/statistics`,
     params: {

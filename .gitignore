@@ -124,3 +124,7 @@ call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/target
+.scannerwork/
+*.properties
+*.yaml
+*.yml

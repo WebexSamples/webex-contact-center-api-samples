@@ -76,7 +76,7 @@ app.post('/webhook', async(req, res) => {
         // Extract response GCP
         let recordingDetails = response.data.data.pop().recording.pop().attributes;
         // let localFilePath = process.env.FILE_PATH || './recordings';
-        let fileName = `${taskId}-${recordingDetails.fileName}`;
+//         let fileName = `${taskId}-${recordingDetails.fileName}`;
 
         console.log(`Call Recording Details: ${recordingDetails}\n`);
         console.log(

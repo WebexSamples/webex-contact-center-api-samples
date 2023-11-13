@@ -9,7 +9,7 @@ const fs = require('fs');
 dotenv.config();
 
 // Simple inmemory, global scope
-var loginDetails = null;
+let loginDetails = null;
 
 // For production HTTPS redirects only
 /*
