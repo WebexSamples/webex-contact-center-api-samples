@@ -13,6 +13,8 @@ public class CaptureAttributes {
 	private String startTime;
 	private String stopTime;
 	private List<String> participants;
+	private String channel1;
+	private String channel2;
 
 	public String getFileName() {
 		return fileName;
@@ -54,4 +56,19 @@ public class CaptureAttributes {
 		this.participants = participants;
 	}
 
+	public String getChannel1() {
+		return channel1;
+	}
+
+	public void setChannel1(String channel1) {
+		this.channel1 = channel1;
+	}
+
+	public String getChannel2() {
+		return channel2;
+	}
+
+	public void setChannel2(String channel2) {
+		this.channel2 = channel2;
+	}
 }
