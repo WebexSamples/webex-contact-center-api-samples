@@ -7,7 +7,6 @@
 const https = require('https');
 
 exports.acc_balance = (req, res) => {
-  const tag = req.body.fulfillmentInfo.tag;
   const mockApiUrl = 'https://aedb299d-87b3-4c1d-81cc-cc947f3ad605.mock.pstmn.io/Neha Manshiva';
 
     https

@@ -338,8 +338,8 @@ class DesktopSDKSample extends HTMLElement {
       .addEventListener('focus', () => this.pauseRecord());
 
     // Get the outDial ANI
-    let outDialOrigin = await Desktop.agentStateInfo.mockOutdialAniList();
-    outDialOrigin.data.data.mockOutdialAniList[0].id;
+    await Desktop.agentStateInfo.mockOutdialAniList();
+    // sonarqube cleanup outDialOrigin.data.data.mockOutdialAniList[0].id;
 
     // Searching for default unavailable code in list of unavailable codes.
     let i = 0;
@@ -351,7 +351,7 @@ class DesktopSDKSample extends HTMLElement {
         Desktop.agentStateInfo.latestData.idleCodes[i].id
       );
 
-      if (Desktop.agentStateInfo.latestData.idleCodes[i].isDefault == true) {
+      if (Desktop.agentStateInfo.latestData.idleCodes[i].isDefault === true) {
         this.state.defaultAuxCode =
           Desktop.agentStateInfo.latestData.idleCodes[i].id;
         logger.info(' default aux found ', this.state.defaultAuxCode);
@@ -472,7 +472,7 @@ class DesktopSDKSample extends HTMLElement {
         logger.info('State Changed', agentState);
         break;
       case 'Idle':
-        const agentState1 = await Desktop.agentStateInfo.stateChange({
+        await Desktop.agentStateInfo.stateChange({
           state,
           auxCodeIdArray: this.state.defaultAuxCode,
         });

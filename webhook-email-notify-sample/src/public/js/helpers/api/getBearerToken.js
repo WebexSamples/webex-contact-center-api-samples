@@ -2,7 +2,7 @@ export function getBearerToken() {
   try {
     const query = decodeURI(window.location.search.substring(1));
     const accessToken = query.split("access_token=")[1];
-    var host = decodeURI(window.location.origin);
+    let host = decodeURI(window.location.origin);
 
     // localStorage
     localStorage.setItem("token", accessToken);

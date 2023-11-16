@@ -16,7 +16,7 @@ export function submitForm(e) {
 
   //Get form values
   const formValues = Array.from(select("#form").childNodes).reduce((options, input) => ({ ...options, [input.id]: input.value }), {});
-  const method = `${formValues.selectMethod}`;
+  method = `${formValues.selectMethod}`;
 
   // Check for Errors
   checkForm(formValues);

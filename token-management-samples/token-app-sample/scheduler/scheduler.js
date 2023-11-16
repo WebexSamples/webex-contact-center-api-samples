@@ -106,7 +106,6 @@ const initializeScheduler = () => {
   const job = new SimpleIntervalJob({ hours: INTERVAL }, task);
   scheduler.addSimpleIntervalJob(job);
   console.info(`Scheduler initialized with Interval:${INTERVAL}`);
-  return;
 };
 
 module.exports = { getRefreshToken, initializeScheduler };
