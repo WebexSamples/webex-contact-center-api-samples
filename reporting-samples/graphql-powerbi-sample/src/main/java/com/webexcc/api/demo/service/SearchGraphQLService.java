@@ -44,7 +44,7 @@ public class SearchGraphQLService extends AuthService {
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			//fix eol on Windows. .graphql files edited on a Windows machine would not work 
 			graphqlString = graphqlString.replaceAll("\\r|\\n", "");
-			logger.info("graphqlString:\n{}", graphqlString);
+//			logger.info("graphqlString:\n{}", graphqlString);
 			StringBuffer payload = new StringBuffer();
 			payload.append("{\"query\":\"");
 			payload.append(graphqlString);

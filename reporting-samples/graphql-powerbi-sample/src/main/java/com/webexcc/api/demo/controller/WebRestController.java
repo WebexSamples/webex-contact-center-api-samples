@@ -251,7 +251,7 @@ public class WebRestController {
 
 		graphqlString = graphqlString.replaceAll("\\{from}", "" + from);
 		graphqlString = graphqlString.replaceAll("\\{to}", "" + to);
-		logger.info("graphqlString:\n{}", graphqlString);
+//		logger.info("graphqlString:\n{}", graphqlString);
 		
 		return graphqlString;
 	}
