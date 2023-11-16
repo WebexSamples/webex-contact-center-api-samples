@@ -42,12 +42,16 @@ public class SearchGraphQLService extends AuthService {
 			HttpHeaders headers = new HttpHeaders();
 			headers.add("Content-Type", "application/json");
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
+			//fix eol on Windows. .graphql files edited on a Windows machine would not work 
+			graphqlString = graphqlString.replaceAll("\\r|\\n", "");
+			logger.info("graphqlString:\n{}", graphqlString);
 			StringBuffer payload = new StringBuffer();
 			payload.append("{\"query\":\"");
 			payload.append(graphqlString);
 			payload.append("\",\"variables\":null}");
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
 			String url = baseURL3 + "/search?orgId=" + authentication.getOrginzationId();
+			
 //			logger.info("url:{}", url);
 			ResponseEntity<String> response1 = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
 			JSONObject json = new JSONObject(response1.getBody());
