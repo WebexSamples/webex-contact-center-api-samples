@@ -172,6 +172,6 @@ customElements.define(
     }
   }
 
-  disconnectedCallback() {}
+  disconnectedCallback() {;}
 
 });

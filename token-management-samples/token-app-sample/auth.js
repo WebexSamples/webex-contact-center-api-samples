@@ -16,10 +16,8 @@ const checkRequestHeaders = (headers) => {
     headers.apiToken === process.env.PASSPHRASE &&
     headers.accept === 'application/json'
   ) {
-    return true;
-  } else {
-    false;
-  }
+    pass = true;
+  } 
 
   return pass;
 };

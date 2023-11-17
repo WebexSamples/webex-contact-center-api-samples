@@ -7,11 +7,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -237,16 +237,22 @@ public class WebRestController {
 		fileName = Path.of("./graphql/" + fileToLoad + ".graphql");
 		// read the file
 		String graphqlString = Files.readString(fileName);
+		
 		graphqlString = graphqlString.replaceAll("\n", "\\\\n");
 		graphqlString = graphqlString.replaceAll("\"", "\\\\\"");
 
 		Calendar cal = Calendar.getInstance();
 		long to = cal.getTimeInMillis();
-		cal.set(Calendar.HOUR_OF_DAY, -30);
+		cal.set(Calendar.DAY_OF_MONTH, -30);
 		long from = cal.getTimeInMillis();
+		logger.info("from:{}", new Date(from));
+		logger.info("to  :{}", new Date(to));
+		
 
 		graphqlString = graphqlString.replaceAll("\\{from}", "" + from);
 		graphqlString = graphqlString.replaceAll("\\{to}", "" + to);
+//		logger.info("graphqlString:\n{}", graphqlString);
+		
 		return graphqlString;
 	}
 

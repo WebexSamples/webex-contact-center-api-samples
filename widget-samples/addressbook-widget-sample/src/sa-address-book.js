@@ -29,7 +29,7 @@ customElements.define(
       //This is passed in via a prop in the Desktop Layout JSON file
       let myOutdialEPID = this.myOutdialEPID;
       try {
-        const outDial = await Desktop.dialer.startOutdial({
+         await Desktop.dialer.startOutdial({
           data: {
             // your outDial entrypoint ID from Portal,
             entryPointId: myOutdialEPID,
@@ -115,14 +115,14 @@ customElements.define(
             }
         })
         let btns = this.shadowRoot.querySelectorAll('.button');
-        for (let i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                switch(btns[i].id){
+        for (const element of btns) {
+            element.addEventListener("click", function () {
+                switch(element.id){
                     case "btnTransfer":
-                        phone = btns[i].value;
+                        phone = element.value;
                         destination = phone.replace(/[\W_]/g, '');
                         try {
-                            const blindTransfer = Desktop.agentContact.blindTransfer({
+                            Desktop.agentContact.blindTransfer({
                                 interactionId: interId,
                                 data: {
                                     agentId: agentId,
@@ -137,10 +137,10 @@ customElements.define(
                             }
                         break;
                     case "btnConsult":
-                        phone = btns[i].value;
+                        phone = element.value;
                         destination = phone.replace(/[\W_]/g, '');
                         try {
-                            const consult = Desktop.agentContact.consult({
+                            Desktop.agentContact.consult({
                                 interactionId: interId,
                                 data: {
                                     agentId: agentId,
@@ -155,10 +155,10 @@ customElements.define(
                         }
                         break;
                     case "btnConference":
-                        phone = btns[i].value;
+                        phone = element.value;
                         destination = phone.replace(/[\W_]/g, '');
                         try {
-                            const conferenceTransfer = Desktop.agentContact.consultConference({
+                            Desktop.agentContact.consultConference({
                                 interactionId: interId,
                                 data: {
                                     agentId: agentId,
@@ -173,10 +173,10 @@ customElements.define(
                         }
                         break;
                     case "btnCall":
-                        phone = btns[i].value;
+                        phone = element.value;
                         destination = phone.replace(/[\W_]/g, '');
                         try {
-                            const outDial = Desktop.dialer.startOutdial({
+                            Desktop.dialer.startOutdial({
                                 data: {
                                     // your outDial entrypoint ID from Portal
                                     entryPointId: myOutdialEPID,
@@ -195,7 +195,7 @@ customElements.define(
             });
         }
     }
-    disconnectedCallback() {}
+    disconnectedCallback() {;}
     attributeChangedCallback(attrName, oldVal, newVal) {
       this.render();
     }

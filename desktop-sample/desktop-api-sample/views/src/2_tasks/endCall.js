@@ -1,5 +1,4 @@
 import { callInfo } from "../desktop.js";
-import { agentStatus } from "../desktop.js";
 
 // end call
 export async function endCall(taskId, token) {

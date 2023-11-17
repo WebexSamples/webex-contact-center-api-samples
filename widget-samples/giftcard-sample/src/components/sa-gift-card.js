@@ -25,14 +25,15 @@ export default class saGiftCard extends HTMLElement {
 
     // global vars
     this.code = this.getGiftCode();
-    this.selectedText;
-    // customize from JSON layout
-    this.giftCardLogo1;
-    this.giftCardLogo2;
-    this.giftCardLogo3;
-    this.giftCardLogo4;
-    this.smsWebHook;
-    this.emailWebHook;
+    // sonarqube cleanup
+    // this.selectedText;
+    // // customize from JSON layout
+    // this.giftCardLogo1;
+    // this.giftCardLogo2;
+    // this.giftCardLogo3;
+    // this.giftCardLogo4;
+    // this.smsWebHook;
+    // this.emailWebHook;
   }
 
   async connectedCallback() {

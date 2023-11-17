@@ -22,14 +22,14 @@ export default class saDigitalCard extends HTMLElement {
 
     // global vars
     this.code = "12345";
-    this.selectedText;
-    this.subject;
-    this.email;
-    this.fullName;
+    // this.selectedText;
+    // this.subject;
+    // this.email;
+    // this.fullName;
 
     // data from JSON layout
-    this.logo;
-    this.emailWebHook;
+    // this.logo;
+    // this.emailWebHook;
   }
 
   async connectedCallback() {

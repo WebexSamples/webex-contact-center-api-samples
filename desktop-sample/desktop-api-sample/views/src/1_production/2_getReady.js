@@ -1,5 +1,4 @@
-import { callInfo } from "../desktop.js";
-import { agentStatus } from "../desktop.js";
+import { callInfo, agentStatus } from "../desktop.js";
 
 // Get Ready
 export async function getReady(token) {
