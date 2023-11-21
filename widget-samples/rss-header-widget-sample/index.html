@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;rss-widget> Demo</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../src/rss-widget.js"></script>
+    <style>
+      #widget-container {
+        border: 2px solid #000;
+        padding: 20px;
+        margin-top: 20px;
+        position: relative;
+      }
+      #widget-label {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        background: #fff;
+        padding: 0 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="rss-input" type="text" placeholder="Enter RSS feed URL">
+    <button id="load-feed">Load Feed</button>
+    <div id="widget-container">
+      <div id="widget-label">&lt;rss-widget&gt;</div>
+      <rss-widget id="rss-widget" />
+    </div>
+    <script>
+      const rssInput = document.querySelector('#rss-input');
+      const rssWidget = document.querySelector('#rss-widget');
+      const loadFeedButton = document.querySelector('#load-feed');
+
+      loadFeedButton.addEventListener('click', () => {
+        rssWidget.setAttribute('rss-feed', rssInput.value);
+      });
+    </script>
+  </body>
+</html>
