@@ -4,28 +4,41 @@ For a quick overview of the `/search` API and how to use our documentation, refe
 
 ## [Watch: Getting Started with the /search API](https://app.vidcast.io/share/c8c778c5-6659-4145-891a-bafcece29863)
 
-## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/search**
 
-For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
+## Introduction
 
-This repository is oragnized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
+A GraphQL API enables clients to construct queries in order retrieve data. The queries that can be constructed is defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
 
-| #   | File Name                                                                                                                                               | Comments                                                                                                                                                                 |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | [simple.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/simple.graphql)                               | SIMPLE: Simply retrieve all task IDs.                                                                                                                                    |
-| 2   | [basicFields.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/basicFields.graphql)                     | BASIC: Basic query to request for certain fields.                                                                                                                        |
-| 3   | [advanced.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/advanced.graphql)                           | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields.                                                                                         |
-| 4   | [callback.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/callbackFilter.graphql)                     | FILTER: Get the Task details using CallBack filters and logical operators to match a condition.                                                                          |
-| 5   | [realTimeQueuedTasks.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/realTimeQueuedTasks.graphql)     | FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.                                                                                             |
-| 6   | [lastAgentInteraction.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/lastAgentInteraction.graphql)   | LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached.        |
-| 7   | [interactionDetails.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/interactionDetails.graphql)       | INTERACTION DETAILS: Usage of filters, aggregates, pagination and custom fields to find out information about a specific interaction using INTERACTION ID/TaskID/CSR ID. |
-| 8   | [totalCallsByAni.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/totalCallsByAni.graphql)             | Filter with Aggregates: Usage of filters with aggregations, for total calls made by a specific customer.                                                                 |
-| 9   | [globalVariables.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/globalVariables.graphql)             | GLOBAL VARIABLES: Usage of the Global Variables field to extract a specific global variable or a combination of two global variables.                                    |
-| 10  | [globalVariableFilter.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/globalVariableFilter.graphql)   | GLOBAL VARIABLES: Usage of the Global Variables as a FILTER to extract a specific tasks for a specific global variable.                                                  |
-| 11  | [allContactFields.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/allContactFields.graphql)           | ALL FIELDS: Extracting all fields from the Contact Session Record = Task Details.                                                                                        |
-| 12  | [allAgentSessionFields.graphql](https://github.com/CiscoDevNet/webex-contact-center-api-samples/blob/main/graphql-sample/allAgentSessionFields.graphql) | ALL FIELDS: Extracting all fields from the Agent Session Record = ASR Details.                                                                                           |
+The schema defined by the `/search` API can be found in the "Try Out" section of the  [developer documentation.](**https://developer.webex-cx.com/documentation/search)  Depending the data required the API supports 3 types of queries :
+
+    1) **taskDetails** - This is used for retrieving/analyzing Contact / Task related data.
+
+    2) **agentSession** - This is used for retrieving/analyzing Agent related data.
+
+    3) **taskLegDetails** - This is used for retrieving/analyzing data related to individual call-legs.
+
+
+
+The `/search` API powers the Analyzer UX refresh and supports operations required for reporting  such as filtering of data,  aggregations and group bys. These operations will explained in detail in the following sections.
+
+
+
+> [!TIP]
+
+> For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
+
+### GraphQL query structure.
+
+A typical GraphQL query defines 3 things - Query type, Query Parameters, Fields required.
+
+Here is a sample quer 
+
+
+
+
+
+
 
 ## Support
 
