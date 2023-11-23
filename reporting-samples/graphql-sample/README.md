@@ -8,100 +8,27 @@ For a quick overview of the `/search` API and how to use our documentation, refe
 
 A GraphQL API enables clients to construct queries in order retrieve data. The queries that can be constructed is defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
 
-The schema defined by the `/search` API can be found in the "Try Out" section of the  [developer documentation.](**https://developer.webex-cx.com/documentation/search)  Depending the data required the API supports 3 types of queries :
+Depending the data required the `search`API supports 3 types of queries :
 
-    1) **taskDetails** - This is used for retrieving/analyzing Contact / Task related data.
+    1) **taskDetails** - This is used for retrieving/analyzing Contact / Task related data also represented as Contact Session Records (CSRs) and Contact Activity Records(CARs) in analyzer.
 
-    2) **agentSession** - This is used for retrieving/analyzing Agent related data.
+    2) **agentSession** - This is used for retrieving/analyzing Agent related data also represented as Agent Session Records (ASRs) and Agent Activity Records (AARs) in analyzer.
 
-    3) **taskLegDetails** - This is used for retrieving/analyzing data related to individual call-legs.
+    3) **taskLegDetails** - This is used for retrieving/analyzing data related to Queues also represented as Queue Based Records or Call-Leg-Record (CLR)s.
 
- `/search` API powers the Analyzer UX refresh and supports operations required for reporting  such as filtering of data,  aggregations and group bys. These operations will explained in detail in the following sections.
+ The following sections define each type in detail.
 
+> [!TIP]
+> 
 > For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
 
-### Basics
-
-All the queries defined by the `/search` API has the same structure. Lets take a sample **taskDetails** query. 
-
-```graphql
-{
-  taskDetails(from: 1685577600000, to: 1688169600000) {
-    tasks {
-      id
-      createdTime
-      endedTime
-      lastAgent {
-        id
-      }
-    }
-  }
-}
-
-```
-
-
-
-The query starts with defining the *query type* as **taskDetails**, this implies that the query will be operating over Tasks/Contact data.
-
-Next we have the *[arguments](https://graphql.org/learn/schema/#arguments)* accepted by the query. The schema defined by the `/search` API defines `from` and `to` as mandatory arguments for all query types, both the arguments accept epoch timestamps and define the span of the query.
-
-
-
-`from` defines the start of the query, in the given sample the query would search of Tasks that were **created after** 1685577600000 or *1 June 2023 00:00:00 GMT*.
-
-`to` defines the end of the query, in the given sample the query would search for Tasks 
-
-that were **created before** 1688169600000 or *1 July 2023 00:00:00 GMT*
-
-
-
-After the arguments, the query defines the fields to be fetched, *[Fields](https://graphql.org/learn/queries/#fields)* can be of scalar types such as *string*, *int*, *float* etc. or can be an *object*. 
-
-In the sample query, **id**, **createdTime** and **lastAgent** fields are requested from the **tasks** object, Note that **lastAgent** is an *object* in itself and **id** field is requested from that object. 
-
-For more clarity we refer such fieldswhich are nested, by their full path, In this case we will refer the **id** field present inside **lastAgent** *object* as **lastAgent.Id**.
-
-The fields requested in the query define the response JSON. For the above sample query the response will be 
-
-```json
-{
-  "data": {
-    "taskDetails": {
-      "tasks": [
-        {
-          "id": "6b26d5ce-ab4d-46c2-9cb5-6c36c5714a7c",
-          "createdTime": 1687855049831,
-          "endedTime": 1687856652283,
-          "lastAgent": {
-            "id": "8e59aa37-f222-4fd2-a95c-d1a46f57dbc0"
-          }
-        },
-        {
-          "id": "945d92f3-8ae8-4a63-85d6-c235a0f9fbc7",
-          "createdTime": 1687851550519,
-          "endedTime": 1687851612772,
-          "lastAgent": {
-            "id": null
-          }
-        }
-      ]
-    }
-  }
-}
-```
-
-
-
-### Query Definitions
+## Query Definitions
 
 The following sections describe the query types in detail.
 
+### TaskDetails Query
 
-
-#### TaskDetails Query
-
-A taskDetails query operates over Task data in WxCC. As the GraphQL schema the structure is defined as 
+A taskDetails query operates over CSR and CAR data. The GraphQL schema structure is defined as given below.
 
 ```graphql
 taskDetails(
@@ -110,70 +37,120 @@ taskDetails(
     timeComparator: QueryTimeType
     filter: TaskDetailsFilters
     extFilter: TaskDetailsSpecificFilters
-    aggregation: TaskAggregationFilters
     aggregations: [TaskV2Aggregation]
     aggregationInterval: IntervalData
     pagination: Pagination
 ): TaskDetailsList
 ```
 
-##### Arguments
+#### Arguments
 
 1.  *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
 2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents.
+3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional Argument, Accepts an *TaskDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details. 
+4. *filter* - Optional Argument, Accepts an *TaskDetailsFilters* object, This is used to filter results  based on a user defined criteria, Refer filtering section for more details.
 
 5. *extFilter* - Optional Argument, Accepts an *TaskDetailsSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
 
-6. *aggregation* - Optional Argument, Deprecated, Use `aggregations`.
+6. *aggregations* - Optional Argument, Accepts a List of `TaskV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
 
-7. *aggregations* - Optional Argument, Accepts a List of `TaskV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+7. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
 
-8. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+8. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
 
-9. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+A sample query to fetch CSR records can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
 
+### AgentSession Query
 
+An agentSession query operates over ASR and AAR data. The GraphQL schema structure is defined as
+
+```graphql
+agentSession(
+    from: Long!
+    to: Long!
+    filter: AgentSessionFilters
+    extFilter: AgentSessionSpecificFilters
+    aggregations: [AgentSessionV2Aggregation]
+    aggregationInterval: IntervalData
+    pagination: Pagination
+): AgentSessions
+```
+
+#### Arguments
+
+1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, the `startTime` field used for comparision.
+
+2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, the `startTime` field used for comparision.
+
+3. *filter* - Optional Argument, Accepts an *AgentSessionFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+
+4. *extFilter* - Optional Argument, Accepts an *AgentSessionSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
+
+5. *aggregations* - Optional Argument, Accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+
+6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+
+7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+
+A sample query to fetch ASR records can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
+
+### TaskLegDetails Query
+
+An taskLegDetails query operates over CLR data. The GraphQL schema structure is defined as
+
+```graphql
+taskLegDetails(
+    from: Long!
+    to: Long!    
+    timeComparator: QueryTimeType
+    filter: TaskLegDetailsFilters
+    aggregations: [TaskLegV2Aggregation]
+    aggregationInterval: IntervalData
+    pagination: Pagination
+): TaskLegDetailsList
+```
+
+#### Arguments
+
+1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+
+2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+
+3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
+
+4. *filter* - Optional Argument, Accepts an *TaskLegDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+
+5. *aggregations* - Optional Argument, Accepts a List of `TaskLegV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+
+6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+
+7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+
+A sample query to fetch CSR records can be found [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql), the response for the same is [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json).
 
 ### Performing Aggregations
 
-Any query with the  `aggregations` argument is treated as an aggregation query, which accepts a list of objects.
+Any query with the  `aggregations` argument is treated as an aggregation query, this argument accepts a list of object.
 
 Each object requires the following mandatory arguments :
 
 1. *field* - String, denotes the identifier/field-name on which the aggregation needs to be done.
-2. *type* - Enum, defines the aggregation operation, depending on the data type of the field specified the following aggregations are supported. 
-   
-   | Type        | Description                                                             | Supported data types |
-   | ----------- | ----------------------------------------------------------------------- |:--------------------:|
-   | count       | Counts the number of occurrence across documents for a particular field | Int, Long, String    |
-   | sum         | Returns sum of values across documents for a particular field.          |                      |
-   | min         | Returns minimum  value across documents for a particular field.         |                      |
-   | max         |                                                                         |                      |
-   | average     |                                                                         |                      |
-   | cardinality |                                                                         |                      |
-   
-   
-   * count - Counts the number of occurrence of the field
-   
-   * sum  - 
-   
-   * min  - 
-   
-   * average
-   
-   * max
-   
-   * cardinality
-   
-   
-3. *name* - String, identifier to determine the result of the aggregation operation.
+2. *name* - String, identifier to determine the result of the aggregation operation.
+3. *type* - Enum, defines the aggregation operation, depending on the data type of the field specified the following aggregations are supported. 
 
-The following arguments are optional :   
+| Type        | Description                                                     | Supported data types             |
+| ----------- | --------------------------------------------------------------- | -------------------------------- |
+| count       | Counts the occurence of the field across documents.             | Int, Long, Float, String boolean |
+| min         | Aggregates the value of the field across documents.             | Int, Long, Float                 |
+| max         | Returns the maximum value of the field across documents         | Int, Long, Float                 |
+| sum         | Returns the minimum value of the field across documents         | Int, Long, Float                 |
+| average     | Performs the average of the field across documents.             | Int, Long, Float                 |
+| cardinality | Returns the count of unique value of the field across documents | Int, Long, Float, String boolean |
+
+The following arguments are optional :
 
 1. *filter* - Denotes the filter-criteria for documents for the particular aggregation.
 
@@ -181,19 +158,11 @@ The following arguments are optional :
 
 
 
+## Additional Notes
 
+* Query type *task* API is deprecated, Use *taskDetails*
 
-
-
-
-
-
-
-
-
-
-
-### Appendix
+* *aggregation* argument supported by *TaskDetails*, *agentSession* queries is deprecated, use *aggregations*. 
 
 ## Support
 
