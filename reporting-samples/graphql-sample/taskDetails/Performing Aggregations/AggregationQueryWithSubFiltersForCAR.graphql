@@ -1,0 +1,41 @@
+{
+  # Global filters for CAR fields in an aggregation query
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    aggregations: [
+      {
+        field: "activities.nodes.duration" # field Name on which aggregation needs to be done
+        type: average # operation name
+        name: "AvgDurationQueue1" # Identifier for the results
+        extFilter: {
+          activities: {
+            nodes: {
+              queueId: { equals: "1f1c6150-fdd4-4dc2-b69d-368781753c3b" }
+            }
+          }
+        }
+      }
+      {
+        field: "activities.nodes.duration"
+        type: average
+        name: "AvgDurationQueue2"
+        extFilter: {
+          activities: {
+            nodes: {
+              queueId: { equals: "c511de8c-4e30-4668-8a33-f392d9f8d2ac" }
+            }
+          }
+        }
+      }
+    ]
+  ) {
+    tasks {
+      # Need to include aggregation object to get aggregation results.
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+    # Sub filter with the Aggregation for AAR
+    agentSession(
+        from: 1693526400000
+        to: 1698796800000
+        aggregations: [
+            {
+                field: "channelInfo.activities.nodes.id"
+                name: "count of ringing events"
+                type: count
+                extFilter: {
+                    channelInfo: {
+                        activities: { nodes: { state: { equals: "ringing" } } }
+                    }
+                }
+            }
+            {
+                field: "channelInfo.activities.nodes.id"
+                name: "count of connected events"
+                type: count
+                extFilter: {
+                    channelInfo: {
+                        activities: { nodes: { state: { equals: "connected" } } }
+                    }
+                }
+            }
+        ]
+    ) {
+        agentSessions {
+            aggregation {
+                name
+                value
+            }
+        }
+    }
+}

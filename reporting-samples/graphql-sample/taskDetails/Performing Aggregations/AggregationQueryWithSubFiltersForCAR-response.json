@@ -1,0 +1,20 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "aggregation": [
+            {
+              "name": "AvgDurationQueue2",
+              "value": 47937.04
+            },
+            {
+              "name": "AvgDurationQueue1",
+              "value": 205558.65833333333
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
