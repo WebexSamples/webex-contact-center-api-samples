@@ -63,6 +63,8 @@ taskDetails(
 
 A sample query to fetch CSR records can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
 
+<TODO> Add sample for CAR and AAR
+
 ### AgentSession Query
 
 An agentSession query operates over ASR and AAR data. The GraphQL schema structure is defined as
@@ -96,6 +98,8 @@ agentSession(
 7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
 
 A sample query to fetch ASR records can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
+
+<TODO> Add sample for CAR and AAR
 
 ### TaskLegDetails Query
 
@@ -155,6 +159,178 @@ The following arguments are optional :
 1. *filter* - Denotes the filter-criteria for documents for the particular aggregation.
 
 2. *predicate* - Applicable only for global variables, Refer Global Variable section.
+
+
+
+Refer below for the syntax of `aggregations` argument.
+
+```graphql
+aggregations: [
+  {
+     field: "totalDuration"
+     type: max
+     name: "maxDurationTelephony"
+  }
+]
+```
+
+
+
+taskDetails sample query for aggregating CSRs can be found [here](taskDetails/Performing%20Aggregations/Aggregation%20query.graphql)  and response can be found [here](taskDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)
+
+AgentSession sample query for aggregating ASRs can be found [here](agentSession/Performing%20Aggregations/Aggregation%20query.graphql)  and response can be found [here](agentSession/Performing%20Aggregations/Aggregation%20query-response.json)
+
+taskLegDetails sample query for aggregating CLRs can be found [here](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql) and response can be found [here](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)
+
+<TODO> Add sample for CAR and AAR 
+
+#### Support for filtering
+
+##### Global Filtering support
+
+When filtering has to be applied over all aggregations, the top-level  `filter` and     `extFilter` arguments can be used. Refer Filtering section for more details on the syntax and usage. Refer below general syntax for global filtering support
+
+```graphql
+filter : {
+    lastTeam : {
+        name : {equals : "team1"}
+    }
+},
+aggregations: [
+    {
+        field: "id"
+        type: count
+        name: "count of ids"
+    },
+    {
+        field: "totalDuration"
+        type: average
+        name: "average of totalDuration"
+    }
+]
+```
+
+
+
+Sample queries to perform aggegations with filter criteria on various data types are given below.
+
+| Query Type/ Record           | Query  | Response |
+| ---------------------------- | ------ | -------- |
+| taskDetails query for CSR    |        |          |
+| taskDetails query for CAR    | <TODO> |          |
+| agentSession query for ASR   |        |          |
+| agentSession query for AAR   | <TODO> |          |
+| taskLegDetails query for CLR |        |          |
+
+##### Sub filter support
+
+Filtering can also be done for individual aggregation using the `filter` and `extfilter` argument in the aggregation object. Refer below general syntax for sub-filter support 
+
+```graphql
+aggregations: [
+  {
+     field: "totalDuration"
+     type: max
+     name: "maxDurationTelephony"
+     filter: { channelType: { equals: telephony } }
+  }
+]
+```
+
+Sample queries to perform aggegations with sub-filter criteria on various data types are given below.
+
+| Query Type/ Record           | Query | Response |
+| ---------------------------- | ----- | -------- |
+| taskDetails query for CSR    |       |          |
+| taskDetails query for CAR    |       |          |
+| agentSession query for ASR   |       |          |
+| agentSession query for AAR   |       |          |
+| taskLegDetails query for CLR |       |          |
+
+#### Performing group by operation
+
+To perform a group by operation, the fields required for group bys should be included in the requested fields, The below sample performs a group by on **lastAgent.id** field.
+
+```graphql
+{
+  taskDetails(
+    from: 1617401436000
+    to: 1619647836000
+    aggregations: [
+      {
+        field: "totalDuration"
+        type: max
+        name: "maxDurationTelephony"
+        filter: { channelType: { equals: telephony } }
+      }
+    ]
+  ) {
+    tasks {
+      lastAgent {
+        id
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}
+
+```
+
+
+Some sample queries to perform group by on various data types. 
+
+| Description                                                       | Query  | Response |
+| ----------------------------------------------------------------- | ------ | -------- |
+| taskDetails query to group by on a single field of CSR record     |        |          |
+| taskDetails query to group by on multiple fields of CSR record    |        |          |
+| taskDetails query to group by on a single field of CAR record     | <TODO> |          |
+| taskDetails query to group by on multiple fields of CAR record    | <TODO> |          |
+| agentSession query to group by on a single field of ASR record    |        |          |
+| agentSession query to group by on multiple fields of ASR record   |        |          |
+| agentSession query to group by on a single field of AAR record    | <TODO> |          |
+| agentSession query to group by on a single field of AAR record    | <TODO> |          |
+| taskLegDetails query to group by on single field of CLR record    |        |          |
+| taskLegDetails query to group by on multiple fields of CLR record |        |          |
+
+
+
+##### Interval based group bys.
+
+Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` in ther requested field and using the `aggregationInterval` argument, this accepts 2 parameters 
+
+* *interval* - Mandatory argument, Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
+
+| Query Span        | Supported intervals                                                        |
+|:----------------- |:--------------------------------------------------------------------------:|
+| <= DAY            | `FIFTEEN_MINUTES`,`THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY` |
+| > DAY & <= 7 DAYS | `THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`                   |
+| > 7 DAYS          | `DAILY`, `WEEKLY`, `MONTHLY`                                               |
+
+* timezone - Optional argument, Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
+
+Refer the below sample syntax for the aggregationIntervalArgument. 
+
+```graphql
+aggregationInterval : {
+    interval : DAILY
+    timezone : "America/New_York"
+}
+```
+
+Sample queries to perform interval based aggregations.
+
+| Query Type/ Record           | Query | Response |
+| ---------------------------- | ----- | -------- |
+| taskDetails query for CSR    |       |          |
+| taskDetails query for CAR    |       |          |
+| agentSession query for ASR   |       |          |
+| agentSession query for AAR   |       |          |
+| taskLegDetails query for CLR |       |          |
+
+
 
 
 
