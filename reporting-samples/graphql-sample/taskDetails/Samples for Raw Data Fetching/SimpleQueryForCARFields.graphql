@@ -3,8 +3,6 @@
     taskDetails(from: 1696118400000, to: 1697760000000) {
         tasks {
             id
-            status
-            createdTime
             channelType
             activities {
                 # Count of CAR records

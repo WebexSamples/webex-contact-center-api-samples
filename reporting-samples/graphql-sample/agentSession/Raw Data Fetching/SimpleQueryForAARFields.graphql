@@ -4,8 +4,8 @@
         agentSessions {
             agentSessionId
             agentId
-            startTime
-            endTime
+            teamId
+            siteId
             channelInfo {
                 channelId
                 channelType
