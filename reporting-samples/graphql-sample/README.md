@@ -520,15 +520,85 @@ Fetch taskDetails where channelType is telephony and status is either created or
 
 ##### Fields supported for Filtering:
 
-Refer Data Dictionary section for fields supporting filtering.
+Refer Data Dictionary section for fields supporting filtering. 
 
-## Additional Notes
+## Fetching Raw Data
 
-* Query type *task* API is deprecated, Use *taskDetails*
+Fields from individual records can also fetched using the API, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
 
-* *aggregation* argument supported by *TaskDetails*, *agentSession* queries is deprecated, use *aggregations*. 
+Based on the fields that are requested and the filter criteria specified in the query, the API will read data from the appropriate type of record and return the requested field for each record. **It is recommended to fetch fields belonging to the same type of record**. Refer data dictionary section for more details.
 
-* Recommended to fetch 
+Sample taskDetails query to fetch *id* field in a taskDetails query.
+
+```graphql
+{
+  taskDetails(from: 1644859375000, to: 1671038575000) {
+    tasks {
+      id
+    }
+  }
+}
+
+```
+
+
+
+Samples for various data types are given below 
+
+| Description                              | Query | Response |
+| ---------------------------------------- | ----- | -------- |
+| taskDetails query to fetch CSR fields    | link  | link     |
+| taskDetails query to fetch CAR fields    | link  | link     |
+| agentSession query to fetch ASR fields   | link  | link     |
+| agentSession query to fetch AAR fields   | link  | link     |
+| taskLegDetails query to fetch CLR fields | link  | link     |
+
+### Filtering data
+
+An optional filter critieria can be specified using the `filter` and `extfilter` arguments to fetch record fields matching a filter critieria. Refer section on filtering for the syntax of `filter` and `extFilter`. 
+
+
+
+Sample taskDetails query for fetching id of tasks which are in  `ended` state.
+
+```graphql
+{
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    filter: { status: { equals: "ended" } }
+  ) {
+    tasks {
+      id
+    }
+  }
+}
+
+```
+
+Samples for various data types are given below
+
+| Description                                       | Query | Response |
+| ------------------------------------------------- | ----- | -------- |
+| taskDetails query to filter & fetch CSR fields    | link  | link     |
+| taskDetails query to filter & fetch CAR fields    | link  | link     |
+| agentSession query to filter & fetch ASR fields   | link  | link     |
+| agentSession query to filter & fetch AAR fields   | link  | link     |
+| taskLegDetails query to filter & fetch CLR fields | link  | link     |
+
+### Pagination support for fetching raw data
+
+Pagination is supported for raw queries, Refer section on pagination for the same. 
+
+## Recommendations / Best Practices
+
+* While querying data / performing aggregations, it is recommended to use fields belonging to only a single data type.  
+
+* It is recommended to use *taskDetails* query for any Task related data instead of the older *task* query
+
+* For aggregations, use *aggregation* argument, the older argument named *aggregation*  supports limited functionalities.
+
+* Performing group by's on Global Variables and skill related fields is not recommended as the performance may be impacted based on the data.
 
 ## Support
 
