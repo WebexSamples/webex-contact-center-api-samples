@@ -1,0 +1,44 @@
+{
+    taskDetails (from: 1609056320000, to: 1640592320000,
+
+        extFilter: {
+            and : [
+                { queues: {equals : {id: "de769ee8-7676-4cee-8967-87d21edad4cb"}} }
+                {
+                    teams :{equals : {id: "18df44cd-4fd1-43ed-a05f-f80bef96bfa4"}}
+                }
+            ]
+        }, pagination: {cursor:"0"}) {
+        tasks {
+            id
+            channelType
+            createdTime
+            status
+            direction
+            terminationType
+            queues {
+                id
+                name
+                duration
+            }
+            teams {
+                id
+                name
+            }
+            contributors {
+                id
+                name
+            }
+            sites
+            {
+                id
+                name
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}
+

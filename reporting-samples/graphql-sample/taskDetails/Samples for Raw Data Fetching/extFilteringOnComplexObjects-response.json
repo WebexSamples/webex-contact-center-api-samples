@@ -1,0 +1,210 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "10b5f38e-77ce-41cc-a6a7-556849f02561",
+          "channelType": "telephony",
+          "createdTime": 1630468031160,
+          "status": "ended",
+          "direction": "outdial",
+          "terminationType": "sudden_disconnect",
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
+              "name": "u2 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        },
+        {
+          "id": "4d03c35f-7eb5-40c2-9f8c-4ef5fab6a48f",
+          "channelType": "telephony",
+          "createdTime": 1630467676536,
+          "status": "ended",
+          "direction": "outdial",
+          "terminationType": "sudden_disconnect",
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
+              "name": "u2 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        },
+        {
+          "id": "9d805eaf-7dfd-4a57-9184-18859de90431",
+          "channelType": "telephony",
+          "createdTime": 1630467444948,
+          "status": "ended",
+          "direction": "outdial",
+          "terminationType": "abandoned",
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
+              "name": "u2 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        },
+        {
+          "id": "6563b92d-29f3-4707-bd0c-1be31958fae1",
+          "channelType": "telephony",
+          "createdTime": 1630467398605,
+          "status": "ended",
+          "direction": "outdial",
+          "terminationType": "abandoned",
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
+              "name": "u2 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        },
+        {
+          "id": "1fec445a-54b1-4f24-ba99-0521228fb6a0",
+          "channelType": "telephony",
+          "createdTime": 1630467358884,
+          "status": "connect",
+          "direction": "outdial",
+          "terminationType": null,
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
+              "name": "u2 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        },
+        {
+          "id": "9e9a1727-8538-4069-bcc3-0be94e3b57f0",
+          "channelType": "telephony",
+          "createdTime": 1625109434097,
+          "status": "ended",
+          "direction": "outdial",
+          "terminationType": "sudden_disconnect",
+          "queues": [
+            {
+              "id": "de769ee8-7676-4cee-8967-87d21edad4cb",
+              "name": "testOutdial",
+              "duration": 0
+            }
+          ],
+          "teams": [
+            {
+              "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+              "name": "test-team1"
+            }
+          ],
+          "contributors": [
+            {
+              "id": "d280377c-c0da-4bb5-a0b4-27a139753652",
+              "name": "u1 hogsmeade"
+            }
+          ],
+          "sites": [
+            {
+              "id": "1d34b4d1-aafe-4dd6-9316-af7ea47f4744",
+              "name": "test-site"
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

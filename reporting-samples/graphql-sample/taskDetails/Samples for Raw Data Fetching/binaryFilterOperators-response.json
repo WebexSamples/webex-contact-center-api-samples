@@ -1,0 +1,586 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "d349039b-819b-4d4d-af52-1592b32b9780",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "67c2b7c7-084f-4d29-a13b-12c1a805c00a",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "3e0e7d7c-b352-4ffe-a5f0-e9b45dcb3ecc",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "1f2c5086-c4de-4209-bad6-61c0c7c1d151",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "062f8da1-21dc-4380-8150-b596b01ea171",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "ee7f718e-fa1b-4e9e-9e83-7c037167d918",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "dc9cd43e-374a-44b4-bb8a-b4b2027ba983",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "4ad2bf64-913e-42d2-9fde-78239cea9870",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "9c44239d-51de-468a-be92-3f290c3bd4a2",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "75a9e0c2-fca6-4468-bcb7-623a51d5620a",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "223644f3-00c3-4bf3-923f-e632308ac78d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "40c239ff-96ac-4e42-a35d-23e6f02e4b9b",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "83da094c-9a96-4321-92a3-67cbd3877230",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "936e19fd-e7d1-4224-8c09-485858e10dcb",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "d5476061-481d-448b-a52d-338ad5b60e79",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c2c42480-96e4-4745-9f59-149b8c3fc996",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "5d867cee-883f-4210-8c55-6f21c5e51faf",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "b8d29edb-d429-4958-8ce9-e884dbac2914",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "8656957e-540c-419e-b34b-0f2489838740",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "f293f90d-f3e7-4da2-b444-2a0a2989b441",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "70055534-35fc-4a20-b89e-ed2b2f477752",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "5a7ebe96-20e5-4338-a362-3ca5f1da16e6",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "5888c1ae-7fe1-4d45-b390-14d5240e53d6",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c1bcfb50-2eea-47f3-bd84-e29ff8b90fee",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "5c0d4168-e8e6-45ce-b7da-0bbf2b95493b",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "2b77abfa-a022-40af-a90a-5c2c45a1e26c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c1beb90a-8b4a-4061-98cc-86e4d6f9ad4f",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "aa24e50f-eda4-4e3a-8584-5442e81a51d5",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "43334cd8-3471-490c-8c11-f5d3b14a6f8c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "96ffb772-ff8d-4722-8435-5616cd1a7cb2",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "92480e30-e53d-40eb-91fa-af699e0748ee",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "43847289-b148-4992-8b18-88396f0f9d11",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "98d5a6d5-c31f-4063-bc6d-7d96a5d2bd0f",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "48bed9d4-77a4-4372-ad80-a278b602cff0",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "cce9e3f4-6ab1-4153-b952-8860428fc793",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "ca30753a-ee35-47ef-bb1d-ed9cd20902ef",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "791814e7-a0d0-4d75-ac2b-b45af07cbd9c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "9ad65a4e-b773-4b97-9e70-2faed1591d47",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "f80ece7c-9205-4f9c-977b-bca9e26a09d1",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c16619c3-76b1-473f-a659-cfb6663b670c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "097125c5-4385-449e-8b1d-f175c1b54ebf",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c13b01b3-128d-4775-bd63-3f7a2878f8b3",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "2d6d247b-9b62-42a8-a2d3-debf14fc67e9",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "53b1153f-619b-4384-9fac-28942545b8cf",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "20bdf00d-31f1-4657-beaa-1a4b109280ff",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "454a00cb-d7f0-4a18-b043-c6a954320148",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "19548605-3a67-4e90-a7d3-ecb50f8ac866",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "623ac5ce-23a3-4d7b-a510-d2a6c3e9f012",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "9f70583f-9ff6-40b8-96fc-7197b7166f7c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "618e36f9-5aae-4ba8-ab03-661ad8376a1a",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "96e6f39c-96ce-472f-a04c-1ef4df28bf4b",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "0e123e28-ca3e-46e0-ab2c-9a753ac81d0d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "6f591edc-4e99-4d4b-a4b9-2b6e38bc472f",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "04aa586c-1f7d-479f-8b78-ed80eb045cf5",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "22c47322-c20b-43a6-b27d-103373b0a28b",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "1d50dd63-4d68-452a-a942-fc566fe8a70c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "b499ec5d-b2ae-4caf-a1f3-c766b6c37c58",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "7d8eebe6-5753-44c5-9969-7f75d3311125",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "84466204-9342-4c27-97f5-e1f79042d2a4",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "11ca9701-6517-44f2-af8a-e561b3efcf38",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "95fd381d-3acd-4812-bb1c-188ce4f501f4",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "d795b05a-0e36-4674-98df-f7dcb65f7997",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "bc2e2842-5674-470f-95db-9d70d0e8869c",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "eae891c8-794d-40a2-a163-a25dd990afdb",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "d78e95af-5d99-4cd5-9503-814a467e188d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "114fb217-20e3-415e-8fc2-89759e5e5750",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "adbb1d02-fa52-4731-9ae2-81959ffae3f3",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "db3ae1fc-6d5f-4d00-97d8-873614b46d9d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "c8ddf113-6688-4e91-914c-486ceb8b00f4",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "45bedc7e-0a5d-4dfe-9309-26d2a9c2688d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "680759e7-e206-42d5-8f62-9e664d8427f0",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "6ae37c0c-9a94-42b6-a578-b0234fd3be0d",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "a79149bc-2cd4-44d7-86cd-7e88f9e4faf5",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "53e0ff08-20a3-4654-88fe-0d7a3414d3cc",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "7aa162ff-bbd6-47a7-8186-da5f920756b9",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "81a65cb7-7aa3-4e4c-990b-76ca07f049db",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "8c61907d-a2e9-49a3-8f01-aaebf92a8f99",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "19f05c21-5e7f-40c1-a50c-f336f7d09761",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "34b7743a-a3ce-4c50-a331-cd6aa9c6682b",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "164e6685-6c0c-46f3-b8e7-516ce5722f22",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "a28c8736-11f4-4b4d-a3f7-fa0554d9d2e5",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        },
+        {
+          "id": "e3efb93a-4211-4c08-8c7c-2c4112e8196f",
+          "isActive": false,
+          "channelType": "telephony",
+          "status": "ended",
+          "abandonedType": "agent-connect"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

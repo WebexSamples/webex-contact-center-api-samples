@@ -1,0 +1,24 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "agentName": "gtagent1-hogsmeade gtagent1-hogsmeade",
+          "channelInfo": [
+            {
+              "activities": {
+                "nodes": [
+                  {
+                    "id": "6c62ee4a-bb95-4baa-9d4e-61530841cb41-telephony-1660643074113-available",
+                    "duration": 68450
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
