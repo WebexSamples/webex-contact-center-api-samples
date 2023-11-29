@@ -7,7 +7,7 @@
         filter: {
             and: [
                 { isActive: { equals: false } }
-                { status : {contains : "end.*"}}
+                { status : {contains : "end"}}
                 { abandonedType : {match : "agent-.*"}}
             ]
         }

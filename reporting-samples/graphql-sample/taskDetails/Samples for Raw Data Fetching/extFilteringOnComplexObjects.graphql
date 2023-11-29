@@ -2,10 +2,28 @@
     taskDetails (from: 1609056320000, to: 1640592320000,
 
         extFilter: {
-            and : [
-                { queues: {equals : {id: "de769ee8-7676-4cee-8967-87d21edad4cb"}} }
+            and: [
                 {
-                    teams :{equals : {id: "18df44cd-4fd1-43ed-a05f-f80bef96bfa4"}}
+
+                    activities: {
+                        nodes: {
+                            id: {
+                                notequals: "6c62ee4a-bb95-4baa-9d4e-61530841cb41-telephony-1660643074113-available"
+                            }
+                        }
+                    }
+
+                }
+                {
+
+                    activities: {
+                        nodes: {
+                            duration: {
+                                gt: 100
+                            }
+                        }
+                    }
+
                 }
             ]
         }, pagination: {cursor:"0"}) {
