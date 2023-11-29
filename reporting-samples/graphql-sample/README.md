@@ -69,8 +69,6 @@ The following operators are supported for numerical fields
 | lt        | Less than operation             |
 | lte       | Less than or equal operation    |
 
-
-
 Using the compound operator `and` and numerical operators we can build range filter as given in below sample.
 
 ```graphql
@@ -82,11 +80,11 @@ filter: {
 }
 ```
 
-| Query Type/ Record                              | Query                                                                           | Response                                                                              |
-| ----------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| taskDetails query for CSR  using binary filter  | [link](taskDetails/Samples for Raw Data Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples for Raw Data Fetching/binaryFilterOperators-response.json) |
-| agentSession query for ASR  using binary filter | [link](agentSession/Raw Data Fetching/binaryFilterOperation.graphql)            | [link](agentSession/Raw Data Fetching/binaryFilterOperation-response.json)            |
-| taskLegs query for CLR  using binary filter     | [link](taskLegDetails/Fetching Raw Data/Simple Filtering.graphql)               | [link](taskLegDetails/Fetching Raw Data/Simple Filtering-response.json)               |
+| Query Type/ Record                              | Query                                                                                   | Response                                                                                      |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR  using binary filter  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| agentSession query for ASR  using binary filter | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
+| taskLegs query for CLR  using binary filter     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
 
 #### Compound operators for filtering
 
@@ -110,11 +108,11 @@ Fetch records where channelType is telephony and status is either created or end
 
 Some sample queries using compound operators are given below.
 
-| Query Type/ Record                                  | Query                                                                                        | Response                                                                                           |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR using compound operator   | [link](taskDetails/Samples for Raw Data Fetching/Filtering using compound operators.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Filtering using compound operators-response.json) |
-| agentSession query for ASR  using compound operator | [link](agentSession/Raw Data Fetching/Filtering using compound operators.graphql)            | [link](agentSession/Raw Data Fetching/Filtering using compound operators-response.json)            |
-| taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching Raw Data/Filtering using compound operators.graphql)          | [link](taskLegDetails/Fetching Raw Data/Filtering using compound operators-response.json)          |
+| Query Type/ Record                                  | Query                                                                                                      | Response                                                                                                            |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR using compound operator   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
+| agentSession query for ASR  using compound operator | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
+| taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
 ### Filtering based on Composite objects:
 
@@ -152,6 +150,6 @@ Some samples for filtering on object types are given below
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | taskDetails query with filter on object of CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json) |
 | taskDetails query with filter on object of CAR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters.graphql)  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters-response.json)  |
-| agentSession query with filter on object of ASR   | [link](agentSession/Raw Data Fetching/Filtering on object types.graphql)                          | [link](agentSession/Raw Data Fetching/Filtering on object types-response.json)                          |
+| agentSession query with filter on object of ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
 | agentSession query for filtering on object of AAR | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
-| taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching Raw Data/Filtering on object types.graphql)                        | [link](taskLegDetails/Fetching Raw Data/Filtering on object types-response.json)                        |
+| taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
