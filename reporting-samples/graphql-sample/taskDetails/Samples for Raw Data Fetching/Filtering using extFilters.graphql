@@ -1,17 +1,22 @@
 {
-  # Some fields in the schema are only filterable using the extFilter argument.
-  taskDetails(
-    from: 1644859375000
-    to: 1671038575000
+  # Some fields in the schema are only filterable when using an extFilter,
+  taskDetails(from: 1696118400000, to: 1698667140000
     # Refer schema for more information on what fields should use extFilter.
-    extFilter: { queues: { name: { equals: "Arryn_Queue" } } }
+    extFilter : {
+      activities : {
+        nodes : {
+          queueId : {equals : "40162355-72f4-4dc1-b710-2f8c94e5d14b"}
+        }
+      }
+    }
   ) {
     tasks {
       id
       queueCount
-      queues {
-        id
-        name
+      activities {
+        nodes {
+          queueId
+        }
       }
     }
     pageInfo {

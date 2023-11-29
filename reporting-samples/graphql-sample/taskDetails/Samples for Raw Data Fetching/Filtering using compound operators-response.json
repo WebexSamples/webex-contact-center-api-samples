@@ -3,17 +3,2009 @@
     "taskDetails": {
       "tasks": [
         {
-          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
-          "totalDuration": 620277,
+          "id": "cff02be0-275f-4899-9bee-61b6541d5129",
+          "totalDuration": 2608817,
           "lastTeam": {
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da",
-            "name": "Arryn_team2"
+            "id": "3c3b9967-8630-4524-b589-934078c5d30a",
+            "name": "test-team"
+          }
+        },
+        {
+          "id": "d349039b-819b-4d4d-af52-1592b32b9780",
+          "totalDuration": 6430,
+          "lastTeam": {
+            "id": "3c3b9967-8630-4524-b589-934078c5d30a",
+            "name": "test-team"
+          }
+        },
+        {
+          "id": "2ca86d93-2765-481d-895c-195bde00b7da",
+          "totalDuration": 2410227,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "66c199bc-141c-464d-822d-a3b2270e5025",
+          "totalDuration": 1044897,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "ddf85a1d-1614-478e-9c68-38040533c782",
+          "totalDuration": 3764,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "459e6bef-2976-41ab-96a1-09117a6a97aa",
+          "totalDuration": 3274,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "ab26e9f0-e5ad-4370-bdc3-0800f8388d10",
+          "totalDuration": 2674,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "78606aa6-9940-44f6-b03a-f09da0d9549c",
+          "totalDuration": 8136,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "92822b9b-af37-4f3e-8c17-71f2ce180a57",
+          "totalDuration": 2910,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "06d21577-b803-41ec-a5c2-4500f56bd77a",
+          "totalDuration": 4376,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "91636d6f-a8e9-4805-a3ff-e9d946a957a5",
+          "totalDuration": 5132,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "5f01f8bf-3a65-4ae1-b372-aeb5f0042d14",
+          "totalDuration": 3622,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "808b3f9f-1049-4f00-a244-2520697687c5",
+          "totalDuration": 5109,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0189a44a-2fb8-4b34-911f-8d44e4b79ddd",
+          "totalDuration": 4124236,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "d5476061-481d-448b-a52d-338ad5b60e79",
+          "totalDuration": 4975,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f6218a96-5c71-4bda-8606-89e5089a2257",
+          "totalDuration": 7362,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "5845f77c-d785-4098-8eb4-55805abbed67",
+          "totalDuration": 5036,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "c2c42480-96e4-4745-9f59-149b8c3fc996",
+          "totalDuration": 9487,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "aa24e50f-eda4-4e3a-8584-5442e81a51d5",
+          "totalDuration": 5369,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "51ce2e79-648d-435c-a54c-cf8269f2ed76",
+          "totalDuration": 8092,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "394151bf-5355-4935-b5bc-41a0c01f85cf",
+          "totalDuration": 6276,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "45aa5e46-6847-4640-a160-932fb8ebfd51",
+          "totalDuration": 8952,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "5f2b560c-237c-4ee5-9e9b-25e67111bb5e",
+          "totalDuration": 2412237,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "815a96ac-f248-4b75-ac4e-d776f72156ce",
+          "totalDuration": 640061,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "7c26e932-d212-4df6-992d-9a8f601daa2b",
+          "totalDuration": 1920,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "9ab65540-de71-4984-9317-a8581a3e7947",
+          "totalDuration": 1089206,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "2af32371-395e-4258-b389-81fd6f13d0e3",
+          "totalDuration": 6960,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "fb17eb42-8f46-48d6-bdca-4fd53a119df2",
+          "totalDuration": 869735,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "dc3f7495-9dee-4ec4-8443-8f5129ad2007",
+          "totalDuration": 31246531,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "14699f78-2fd3-4684-8138-2eb1d3188dc0",
+          "totalDuration": 9129,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "ed79b144-0be9-4d8c-b8e1-16c8b79419f5",
+          "totalDuration": 5001373,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "e1f278ac-9bfb-47ef-925f-1f70830bd8b3",
+          "totalDuration": 5001934,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "a7d6ebe9-e323-4427-867b-7bfaffb9f77e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "931a79dd-7f23-4bb9-8ae4-2363d6c73ea6",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1d7eeeca-e081-4c80-82b0-7a67cf2fa4f1",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "d650a5b1-eabd-498b-abf7-840777d961ca",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "079353a6-101b-4100-9476-4545328be887",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0d186a5b-48ae-4f6b-85a9-6530c82e8b0b",
+          "totalDuration": 855185,
+          "lastTeam": {
+            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
+            "name": "test-team-two"
+          }
+        },
+        {
+          "id": "ca97274f-0e8f-4f1b-b1b6-d7a986ec0b3a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "2dc8cab9-7264-4151-9427-5b9face82237",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "75ac4e89-8257-40b6-9f9f-098406b53bcd",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "e1b0f6d2-b2c4-4b5e-ac89-f60b6b4e4733",
+          "totalDuration": 571,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "c9fa0ffe-eed3-4963-ad12-6681a07e8812",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "95126048-bc4a-4c01-bf1f-dbec5758a03c",
+          "totalDuration": 595,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "76053bac-43a2-42e4-93f7-7363d5cc969f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "021d760a-4304-416e-ad03-3cf46eeda8a7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "18501f33-995d-463c-8316-35eedd49fa78",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f6515526-e549-4c5b-93d4-d93e07a8a24c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "41bcb788-f6fe-4808-b03a-be46714fed45",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "8b2af1df-6b52-4d79-afbb-73db8fbce7c7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "772c06e1-3cbb-45b7-a623-f11596622920",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "272fc2c3-fc4b-4989-a1b3-f93710228e41",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "d70ffe21-6cc4-4b4a-bd23-a4661e81b75d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "260cec5f-7f4d-4e98-be93-639d81473b56",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "7864034e-80be-44a8-bd02-1f46bc70223a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "61e417e5-f93b-4224-937d-ef44f544129c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "fbbb417d-efd4-485c-b942-193b2c510c0c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "0d6ca1f0-95af-4060-8174-5e50e4606cc4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "3150d023-60ae-4492-8f1f-19d6dac40bef",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "83107bd9-fbe1-46ad-bece-065372f807fe",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f8d380d6-06d1-4fa2-9156-e980c7cc0f96",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "269d1c13-40ea-4814-a6dc-d0dff64f71fe",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "4b7dd98a-35ce-41af-a711-9822d330bfe2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "5e091b7a-dee2-44c6-bdcd-6112fb4d3f3a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "17b36362-702a-4b5b-abf9-a6a1627d630d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "6aaf9d2d-9497-4395-8d9d-7fe6f1423156",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "2e485339-9582-43b0-b3b5-ae2dee9cb072",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "c41b3fd8-64cc-4e08-bd5c-a43c80292e11",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "d1ba60e0-921b-4801-8a90-01da83ead1a2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "b0d45dd0-13cf-4d85-822e-0c2bc1840778",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "600cdfb8-b669-4d80-a650-009bc1bb7446",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "294bff92-bb24-47dc-a1e0-f4967cbb4bd1",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "f9f50e0b-c0d5-42ed-8e70-6024eecdcbe3",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f95e97fd-f18e-4d3c-ac7d-fd5c86ff4ac2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0b02ef98-a1d9-4e45-96e4-6a26772117ee",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "e9cc2b7c-9417-46d7-bd4e-cf77ec3e371e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "128e681d-ae5f-4c10-9796-3d2aeb80069a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "c0d5c534-23e7-4211-b992-d1d790c7efc7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "6ee57492-62aa-4616-b2f9-4db77c11c649",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "01929414-354d-437f-a908-8da06b532e0b",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1224aaf7-c1d9-4786-b829-5121f40d236b",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f720d1e4-cfd4-412a-8fc3-3e3ed9e92549",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "fcc44423-3af3-48d5-8ce6-f34333750123",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "4872084f-f05b-4897-838b-1d4f5768e79d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "3abb1797-2518-4f53-a59e-72f4b316598f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "6ae37c0c-9a94-42b6-a578-b0234fd3be0d",
+          "totalDuration": 5438,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "7c284211-3b9d-48cc-8c16-313c9125da13",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "45aec74b-23e2-4967-abd6-00de93785199",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "3e8ef57d-c18c-46f7-a35c-6b9abd75e3aa",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "51121552-765a-4488-8392-71db2858045d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "3f32878c-86f4-4b66-b001-cfe761c3d40a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "b35b4761-5977-4f83-a29e-be3fae33e67a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "1cf85b20-2a70-422e-baa6-814eed72bdfc",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "74528415-acdb-48e9-8a3a-42e543894f1e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "ce7147df-751c-4c79-89f7-c74904fe5f3f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "8a51869c-db6d-4ddf-861c-366a1a39a697",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "a30308b7-aef1-4d2c-8af1-b576c6964c66",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "8ad687f4-17c0-4078-964c-227e7b764974",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "e488ce88-109b-4fa7-80af-17bbd18dbbfb",
+          "totalDuration": 484,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "cf6a7d15-1474-4e32-aa24-cb5cc2708ba4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "d3e96c78-2d0c-4c57-bad8-ada99e16cd29",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "98b4f6ea-5f80-45a0-9ed9-14d23cbb5945",
+          "totalDuration": 2138,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "32f2e96f-af36-4b44-aea6-9ad22abc65b7",
+          "totalDuration": 8652,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "10be7495-882a-43b6-903c-3bab1e34f1e4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "7fb3f45f-8d81-4f6b-ad74-d3914d71aae9",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "81f0304d-8710-4b23-9cf2-de738839afdf",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "b17b4810-78cf-4f4b-bbad-740e2009d45c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "931ad078-4401-463f-94ca-60b391305b6f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "98572386-7685-428a-bb6d-9c0e63c491e2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "81d6e830-0c7b-4e48-85de-0904cd9ad51a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1f13d6e2-09b0-445a-a9ee-9af23d286da3",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1b1a78ab-142e-4f4d-8c88-99966a94dfba",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "4eeb3e67-a78a-4d24-856c-298607179c1d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "de951e55-69fb-4f82-8cfb-ec2a7fb2abb5",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "f2f0cf7d-84c3-4a7b-aa33-af4386616ee7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "72e51334-b2af-48c0-9330-468652088182",
+          "totalDuration": 8695,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "e3c52d43-1d5f-4b20-b431-fedd7b884973",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "02316f45-55c9-4256-a24a-412dffbc078f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0dcbb5b9-83d8-499a-bbe1-8fe81246c633",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "6360795f-d7bf-4db6-953f-3e92572c2496",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1e05b0a5-516a-467b-919a-04f4fc4859d6",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "55602723-26ec-4dd0-9c85-0affaa8da56f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "95a3fcb9-9074-4b59-84bc-b15e81cd2d42",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "4a11dabf-e252-4ce1-a326-f0fee6ad3969",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "cb71f454-63c1-491d-bbf0-6db2f43ccf7f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1e3fce54-c5d6-478f-a70f-cf5fd54dbc7e",
+          "totalDuration": 6089,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "3f81a4fb-4304-4d17-a65a-769d6fbc8b53",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "e262b692-d879-4869-9e66-0f7493e6c6c2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "3873742a-94de-4d3a-9683-761ff2277bc0",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "fbcb9604-1aee-41ad-8bb4-a86d30d8817c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "f1c6efea-317e-4caa-883a-7814c6098fbd",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "72d63f8b-8a9c-4902-9c2e-251f76bbe6b0",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "5979a19e-3048-45f7-bb7c-c93d632569b5",
+          "totalDuration": 8463,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "faa65161-0ab7-4765-a2d6-fcc94f44fd74",
+          "totalDuration": 3822026,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "fdee2127-469b-44cf-a5e0-f3d1c31c0b79",
+          "totalDuration": 785714,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "1c0c30f2-9c27-4e6e-8d03-14b716fb440c",
+          "totalDuration": 3188235,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "1f619d1f-a1a7-435d-9cc8-149882d6463e",
+          "totalDuration": 3602,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "a885f33b-0ec4-4d75-9e2f-6de297c2c274",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "f5b86e4f-0ec4-4ea1-bfae-24de34af9c9c",
+          "totalDuration": 5689520,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "069cef5b-748a-403a-aaf8-783bf9a475d6",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "ca7249cc-80d0-4473-a334-d6f0ce2fa6ce",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "a9f2dd5c-fe03-463d-bc32-1a572d41dbf9",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "8f1cc2d7-cc25-4112-825b-93873a99eec5",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0338e8a9-2f86-429b-8d7c-962b29a1f7b7",
+          "totalDuration": 1232401,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "b2cca57e-391c-402c-8664-6df5b29736e3",
+          "totalDuration": 730612,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "d0a86f22-a3f0-48e4-a0d7-4e6472bc222b",
+          "totalDuration": 2564,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "d085861a-db75-492a-a127-421f4fa5ab99",
+          "totalDuration": 789885,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "e07873f4-a3ab-4a26-ac60-1d08b807e143",
+          "totalDuration": 9549,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "a4e60013-140d-484d-933f-e745e65d2691",
+          "totalDuration": 6587,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0b6c4d1a-aaf3-433c-8beb-25ecb04b4483",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "3cf1d7bc-cdd3-41cd-ad9e-1bb32168282d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "c1aa9cb0-3c8e-4115-be08-2d78c2a3fd29",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "434a8511-351c-400a-9c3e-b24ffeef9212",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "7e594cfe-b999-4548-a8de-295d4063cf23",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "6018b6b6-32b7-4e0c-a305-f78a1a4f40e5",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "94b417b1-450a-49ac-b7cd-eabb1bd8574c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "178170e6-64ec-44e8-a95d-eca3eff66214",
+          "totalDuration": 8378,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "ee55a052-8ab5-4c03-b723-a6ba65751d17",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "978ffdb5-1921-4d3c-b1d7-1fdd2eb79008",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "1b3d5bc0-bffa-4615-8eb1-71442083dd68",
+          "totalDuration": 9237,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "c4b8ba17-459f-4474-bdbc-5234d26af478",
+          "totalDuration": 7941,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "ef7d9578-ac35-463e-9d25-b3aa023afc38",
+          "totalDuration": 9526,
+          "lastTeam": {
+            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
+            "name": "test-team-one"
+          }
+        },
+        {
+          "id": "5f5802dd-3d09-4695-929d-38a386ef9ff2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "419c5e28-86b7-4c65-9717-46d8e2684cac",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "e7bfd628-ff9a-452b-a83d-c5498d346fe5",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "17fb7980-6b5d-45fa-8731-a7f4ac241638",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "b60143f6-38d8-4b1e-b9d0-d201f28c5f61",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "23bfcb26-1c21-4523-be7d-0f067404a00e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "0d06f269-ec6f-4263-b218-2b398cbeaf60",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "c280116e-3844-4c6d-9467-bbd606475c7f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "15bdd523-2726-4e99-810c-f239bfe5a8b7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "09f1f735-b8d7-42f5-b1f2-90d3ffae6943",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "ca05f2c4-f509-4d96-8b62-7d79bbd8eacd",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "fd2a6e9e-8c54-47ac-9c31-d2809b47028d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "9b365e0e-c903-4ded-a914-c074ab6d6097",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "d8ace363-b0c5-40d2-b920-47ace1209d8e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "56317008-8ca2-42ad-b5fa-0c68f769690c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "fb7a23ed-8410-475e-8718-4ec0797403bd",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "8b739156-30aa-40e8-999d-ed18a0b5da53",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f0eec089-5291-4946-899c-3f487ee68d80",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "46afdbb4-5014-4411-a3bc-0adc368ea475",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "acfed373-7cbe-4c20-8fe6-dd00974c5f93",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "f7c95035-56fe-45c5-b31f-4e62dddbc70f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f1b24f35-79dc-4122-a1d3-6618874cbc1a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "afff880a-3a56-44dd-b597-a9ba69363d45",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "28bb7cc7-b80b-49eb-bbb3-6a8cc01fce5e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "e341c638-f78f-4e9e-8ae2-c2ca2d7b5389",
+          "totalDuration": 3097,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "de7419b7-5c0c-4859-9fb7-b9499da138fb",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "60ba959c-b4a4-4cba-91bc-a8d224948c87",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "0dcbdfb7-2217-4960-a3e6-c3537ec506c2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "de051d04-a821-480f-8947-3bfd381b45cb",
+          "totalDuration": 1099370,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "48842b2c-134e-4bff-b397-670e7e6dda23",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "77900b23-6f82-41d9-befc-94d379ea6ba9",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "5f48fbb1-dba4-42f2-b630-21da54d46430",
+          "totalDuration": 9291786,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "37d5af9c-1eeb-4599-b5fe-51f30dea57ad",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "d15451e5-eb12-40d7-9b06-67b61284b0ca",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "8f0348df-31e5-4eb9-a2bb-00a86e513d43",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "c4e31c77-cb43-4633-86ea-0f44d78018e1",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "d310da3d-0d10-4a4b-99fb-5c66bb5f2541",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "e6897955-6bed-4e42-8c91-d3df3cf48cac",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "49eb0612-f14f-4520-9038-aaab3b2e482d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "5362518e-5d22-4c37-a816-abff551201a4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "f62b418f-f78d-4731-8bdc-c638a516085d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "3920d057-8334-447b-a9f5-84d7df8d5e1c",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "9679b186-86cb-42f9-8519-6c349ff767e5",
+          "totalDuration": 1035,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "692158cc-94fd-4d73-a80b-f28207b33256",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "2269195f-9dc9-4ae0-8fdf-f4ce3f6c44c9",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "8befcbc9-3f29-4dbd-9f26-7eb8515bb422",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "af47a2a8-cb17-4253-b99b-a5e059080199",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "8d592f5f-5ad8-492e-aac5-ce59ec672452",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "02387a5b-eb21-4dc2-a56c-429d84916928",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "4229ef70-910e-4c0e-a418-0093225c2681",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "7d8edfb0-477b-48c6-b31b-102f02fe7e45",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "318d360e-28c5-4b85-94d4-67773c7540c4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "c0d8b4d6-961a-4e62-bc90-0a9ca0c0bb24",
+          "totalDuration": 4652,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "ef56bf13-0cc4-448a-9fb1-4742b2f8dc72",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "a336ed73-b590-400d-90e0-947a0cfec23f",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1abf76c9-bbf1-4ae0-b660-8c3343649e8e",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "778cd4b8-2142-4ea2-8d13-1e0711447e51",
+          "totalDuration": 8011,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "58537579-25b3-4363-aab7-19d4f2ee1019",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "ba566d37-b9bc-4f4d-87a6-ff9ebd729117",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "a6f5ec42-8da2-49b5-ae7a-68b463e3f524",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "0573fb3f-f3f0-4409-a740-f03a24217747",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "e76cbfad-15f9-4368-964f-b6a6fab1d056",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "db29bf02-a208-4199-ab05-20a3ceb005db",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "8f3e89e4-3147-444d-915b-bcdc523948f6",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "4afd6ee9-7bb4-4d6e-bc3c-124efc33f8cf",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "5aab8e88-10ab-4f11-ac7e-9426f06e5b51",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "70584899-4ecb-4c1d-9678-8a93b7244666",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "179777f6-20dc-4efa-8292-68262961671d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
+            "name": "test-team1"
+          }
+        },
+        {
+          "id": "05f1a6f5-1cec-4663-9adb-c78abb81dc08",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "b3c54315-de55-4359-8ae8-b3d59d46cbb7",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "6b9a6a6c-9a4b-4438-823d-13615d8065da",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "4fc539c3-a07a-4f9f-90b6-ad75f1abe198",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "27c1c8a1-90c0-4c8c-9491-c6f5be652a59",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "6d0061f2-8a30-46a8-9f9d-8568e38b9650",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "00a5e1ed-e293-47bd-9f61-5993ca4d4833",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "45d80f2d-ad86-460e-9ebd-f10855b8469d",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1a30c034-6f20-429a-9d38-60b1c5b40a52",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "3cb9eb4b-7d57-4cdd-97ed-b3441083bd6b",
+          "totalDuration": 938986,
+          "lastTeam": {
+            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
+            "name": "gt-team1"
+          }
+        },
+        {
+          "id": "f8b9d460-f7a7-4a26-aca6-85639c6e9cc2",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "7e465907-c2e3-409d-9504-dabb920d7cc5",
+          "totalDuration": 708,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "40bf65bf-45af-442a-b1cb-ac31afc4544a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1b660a48-b615-415d-b044-32a5f370040a",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "1f1a7851-259d-48b6-809e-491bd54db9d6",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
+          }
+        },
+        {
+          "id": "bfd891a9-5fda-497d-889e-562a848806f4",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "6a9e4e96-e254-4338-9bfd-dba9490ddecc",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "c3aa3ba8-b0bc-4589-9f6c-9c014d7356d8",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "ad20a98b-5df9-4442-afba-57fd7e4ba649",
+          "totalDuration": 0,
+          "lastTeam": {
+            "id": null,
+            "name": null
+          }
+        },
+        {
+          "id": "09054d04-bb7a-4b9f-a9ad-7c4f15d4ba1e",
+          "totalDuration": 1312493,
+          "lastTeam": {
+            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
+            "name": "gt-team2"
           }
         }
       ],
       "pageInfo": {
-        "hasNextPage": false,
-        "endCursor": null
+        "hasNextPage": true,
+        "endCursor": "1"
       }
     }
   }
