@@ -1,33 +1,33 @@
 {
     agentSession(
-        from: 1659414600000
-        to: 1661661000000
-        extFilter : {
-            channelInfo : {
-                activities : {
-                    nodes : {
-                        id : {equals : "6c62ee4a-bb95-4baa-9d4e-61530841cb41-telephony-1660643074113-available"}
+        from: 1696161540000
+        to: 1698667140000
+        extFilter: {
+            channelInfo: {
+                activities: {
+                    nodes: {
+                        state: {
+                            equals: "connected"
+                        }
                     }
                 }
             }
         }
-
     ) {
         agentSessions {
-
             agentId
-            agentName
-            channelInfo{
-                activities{
-                    nodes{
+            agentSessionId
+            channelInfo {
+                channelId
+                activities {
+                    nodes {
                         id
+                        state
                         duration
-
+                        taskId
                     }
                 }
             }
-
-
         }
     }
 }
