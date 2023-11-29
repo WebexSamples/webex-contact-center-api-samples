@@ -525,11 +525,13 @@ To fetch data matching a filter criteria, the `filter` and `extFilter` arguments
 
 Pagination is supported for raw queries, Refer section on pagination for details
 
-### Restrictions
+## Restrictions
 
 1. For any type of query, the query span i.e. the `from` and `to` should not exceed a period of 12 months 
 
 2. When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days.   
+
+3. When fetching CSR and CLR documents, using pagination the API supports upto a maximum of 100K records.  
 
 ## Recommendations / Best Practices
 
@@ -547,8 +549,8 @@ Pagination is supported for raw queries, Refer section on pagination for details
 
 This repository is oragnized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
 
-| #   | File Name                                                                                                                                               | Comments                                                                                                                                                                 | Query Type              |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| #   | File Name                                                                      | Comments                                                                                                                                                                 | Query Type              |
+| --- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
 | 1   | [simple.graphql](More%20Examples/simple.graphql)                               | SIMPLE: Simply retrieve all task IDs.                                                                                                                                    | Fetching raw data       |
 | 2   | [basicFields.graphql](More%20Examples/basicFields.graphql)                     | BASIC: Basic query to request for certain fields.                                                                                                                        | Fetching raw data       |
 | 3   | [advanced.graphql](More%20Examples/advanced.graphql)                           | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields.                                                                                         | Performing Aggregations |
