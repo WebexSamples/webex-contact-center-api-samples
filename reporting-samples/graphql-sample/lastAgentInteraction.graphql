@@ -1,6 +1,6 @@
 {
   #LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached
-  task(
+  taskDetails(
     # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
     from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
     to: 1653341822973 #This can be set to Date.now() in millis
