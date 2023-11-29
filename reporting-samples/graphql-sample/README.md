@@ -507,47 +507,21 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 
 Samples for various data types are given below 
 
-| Description                              | Query | Response |
-| ---------------------------------------- | ----- | -------- |
-| taskDetails query to fetch CSR fields    | link  | link     |
-| taskDetails query to fetch CAR fields    | link  | link     |
-| agentSession query to fetch ASR fields   | link  | link     |
-| agentSession query to fetch AAR fields   | link  | link     |
-| taskLegDetails query to fetch CLR fields | link  | link     |
+| Description                              | Query                                                                                     | Response                                                                                        |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| taskDetails query to fetch CSR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| taskDetails query to fetch CAR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
+| agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
+| taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
 
 ### Filtering data
 
-An optional filter critieria can be specified using the `filter` and `extfilter` arguments to fetch record fields matching a filter critieria. Refer section on filtering for the syntax of `filter` and `extFilter`. 
+To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer section on filtering for details
 
-Sample taskDetails query for fetching id of tasks which are in  `ended` state.
+#### Pagination support for fetching raw data
 
-```graphql
-{
-  taskDetails(
-    from: 1644859375000
-    to: 1671038575000
-    filter: { status: { equals: "ended" } }
-  ) {
-    tasks {
-      id
-    }
-  }
-}
-```
-
-Samples for various data types are given below
-
-| Description                                       | Query | Response |
-| ------------------------------------------------- | ----- | -------- |
-| taskDetails query to filter & fetch CSR fields    | link  | link     |
-| taskDetails query to filter & fetch CAR fields    | link  | link     |
-| agentSession query to filter & fetch ASR fields   | link  | link     |
-| agentSession query to filter & fetch AAR fields   | link  | link     |
-| taskLegDetails query to filter & fetch CLR fields | link  | link     |
-
-### Pagination support for fetching raw data
-
-Pagination is supported for raw queries, Refer section on pagination for the same. 
+Pagination is supported for raw queries, Refer section on pagination for details
 
 ## Recommendations / Best Practices
 
