@@ -23,19 +23,6 @@ The following operators are supported for *String* fields
 | contains  | Checks if a string contains a specific substring. |
 
 
-```graphql
-    filter: {
-      and: [
-        { channelType: { equals: telephony } }
-        {
-          or: [
-            { status: { equals: "ended" } }
-            { status: { equals: "created" } }
-          ]
-        }
-      ]
-    }
-```
  use equals or notequals operator to filter on exact match of a string field
 ```graphql
     filter: {
@@ -73,21 +60,17 @@ The following operators are supported for numerical fields, (Int, Long, float)
 | lt        | Less than operation             |
 | lte       | Less than or equal operation    |
 
+
+fetch records where the totalDuration is either less than or equal to 10,000 or greater than or equal to 600,000.
+we can also use  lt, gt, equals, notequals based on the usecase .
 ```graphql
         filter: {
-            and: [
-                { channelType: { equals: telephony } }
-                {
-                    or: [
-                        # For Numeric fields - lte, lt , gte, gt, equals, notequals are available.
-                        { totalDuration: { lte: 10000 } }
-                        { totalDuration: { gte: 600000 } }
-                    ]
-                }
-                # lastTeam name should not be null.
-                { lastTeam: { name: { notequals: null } } }
+            or: [
+                { totalDuration: { lte: 10000 } }
+                { totalDuration: { gte: 600000 } }
             ]
         }
+
 ```
 
 | Query Type/ Record                              | Query                                                                           | Response                                                                              |
@@ -99,8 +82,8 @@ The following operators are supported for numerical fields, (Int, Long, float)
 ##### Filter using compound operators:
 
 Compound filter includes 2 types of filters - AND , OR operations, each of them accepts a list of filter expressions.
-Fetch taskDetails where channelType is telephony and status is either created or ended
 
+Fetch records where channelType is telephony and status is either created or ended
 ```graphql
     filter: {
       and: [
@@ -130,23 +113,19 @@ Fetch taskDetails where channelType is telephony and status is either created or
 
 ### Filter on Composite objects:
 
-Filtering can also be done based scalar fields present in another  objects,
+Filtering can also be done based on scalar fields present in another  objects,
 For instance, consider the scenario where filtering is performed on the "subject" field within the "email" object, which is nested inside the "channelMetaData" field.
 The structure of the query reflects this hierarchy, starting from the top-level field and traversing through subfields until reaching the leaf field.
 The filter condition is specified using the operator and value for the targeted field.
 
-Fetch TaskDetails where channelMetaData.email.subject is "sample subject"
+Fetch records where  channelMetaData.email.subject is "sample subject"
 
 ```graphql
     filter: {
-      and: [
-        { channelType: { equals: email } }
-        {
           channelMetaData: {
             email: { subject: { equals: "sample subject" } }
           }
-        }
-      ]
+
     }
 ```
 
@@ -158,20 +137,47 @@ Fetch TaskDetails where channelMetaData.email.subject is "sample subject"
 
 ##### extFilter on Composite objects:
 
-All CAR fields specific filter fields such as, queues, sites, teams, contributors and entrypoints can be filtered using an extFilter.
-the operators supported are same as that of filter.
 
+In this filter, channelInfo is a composite object, and we are applying conditions on its nested structure,  on the activities field and its nodes.
+This condition checks if the id field  is not equal to the specified id  and the duration is greater than 100.
 ```graphql
-        extFilter: { queues: { name: { equals: "Arryn_Queue" } } }
+        extFilter: {
+            and: [
+                {
+                    channelInfo: {
+                        activities: {
+                            nodes: {
+                                id: {
+                                    notequals: "6c62ee4a-bb95-4baa-9d4e-61530841cb41-telephony-1660643074113-available"
+                                }
+                            }
+                        }
+                    }
+                }
+                {
+                    channelInfo:{
+                        activities: {
+                            nodes: {
+                                duration: {
+                                    gt: 100
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+   
 ```
 
-All fields which are inside nodes (i.e fields which can only be found in AARs) can be filtered by specifying an extFilter. For example as given in below query.
+All fields which are inside nodes (i.e fields which can only be found in AARs) can be filtered by specifying an extFilter.
+
+The query fetches records where, within the composite object activities, there are nodes where the id is not equal to the given value and the duration is greater than 100.
 
 ```graphql
     extFilter: {
       and: [
         {
-          channelInfo: {
             activities: {
               nodes: {
                 id: {
@@ -179,10 +185,9 @@ All fields which are inside nodes (i.e fields which can only be found in AARs) c
                 }
               }
             }
-          }
+          
         }
         {
-          channelInfo: {
             activities: {
               nodes: {
                 duration: {
@@ -190,11 +195,10 @@ All fields which are inside nodes (i.e fields which can only be found in AARs) c
                 }
               }
             }
-          }
+          
         }
       ]
     }
-  ) 
 ```
 
 | Query Type/ Record                         | query                                                                                  | Response                                                                                     |
@@ -208,3 +212,4 @@ All fields which are inside nodes (i.e fields which can only be found in AARs) c
 ##### Fields supported for Filtering:
 
 Refer Data Dictionary section for fields supporting filtering.
+
