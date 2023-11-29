@@ -156,15 +156,13 @@ filter : {
 }
 ```
 
-
-
-### Filtering based on Scalar fields:
+### Filtering based on Scalar fields
 
 Scalar fields are atomic and represent indivisible values (Unlike object types,
 which can have subfields and contain complex data structures).
 Scalars include basic data types like Int, Long, String, Boolean
 
-#### String Operators for filtering:
+#### String Operators for filtering
 
 The following operators are supported for *String* fields
 
@@ -199,7 +197,7 @@ filter: {
 }
 ```
 
-#### Numerical Operators for filtering:
+#### Numerical Operators for filtering
 
 The following operators are supported for numerical fields
 
@@ -257,13 +255,12 @@ Some sample queries using compound operators are given below.
 | agentSession query for ASR  using compound operator | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
 | taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
-### Filtering based on Composite objects:
+### Filtering based on Composite objects
 
 Filtering is only supported for scalar fields and not supported for objects, however scalar fields inside objects can be filtered.
 
 Consider a scenario where filtering is performed on the `subject` field within the `email` object, which is nested inside the top-level `channelMetaData` field.
 The structure of the query reflects this hierarchy, starting from the top-level field and traversing through subfields until reaching the leaf field.
-
 
 ```graphql
 filter: {
@@ -274,8 +271,6 @@ filter: {
 ```
 
 Since all the CAR and AAR fields are present in the `activities` object, filtering using `extFilter` also follow the same pattern, one such sample is given below
-
-
 
 ```graphql
 extFilter : {
