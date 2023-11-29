@@ -505,6 +505,8 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 }
 ```
 
+**Note** - When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days. 
+
 Samples for various data types are given below 
 
 | Description                              | Query                                                                                     | Response                                                                                        |
@@ -523,6 +525,12 @@ To fetch data matching a filter criteria, the `filter` and `extFilter` arguments
 
 Pagination is supported for raw queries, Refer section on pagination for details
 
+### Restrictions
+
+1. For any type of query, the query span i.e. the `from` and `to` should not exceed a period of 12 months 
+
+2. When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days.   
+
 ## Recommendations / Best Practices
 
 * While querying data / performing aggregations, it is recommended to use fields belonging to only a single data type.  
@@ -532,6 +540,8 @@ Pagination is supported for raw queries, Refer section on pagination for details
 * For aggregations, use *aggregation* argument, the older argument named *aggregation*  supports limited functionalities.
 
 * Performing group by's on Global Variables and skill related fields is not recommended as the performance may be impacted based on the data.
+
+* It is recommended to pass `TrackingId` header with a valid UUID in the request payload, which allows support teams to debug any issues.
 
 ## Support
 
