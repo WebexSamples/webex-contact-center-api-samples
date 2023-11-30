@@ -6,6 +6,7 @@
   "main": "src/rss-widget.js",
   "type": "module",
   "scripts": {
+    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "serve": "wds --watch",

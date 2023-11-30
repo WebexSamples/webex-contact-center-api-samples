@@ -27,6 +27,8 @@
   <body>
     <input id="rss-input" type="text" placeholder="Enter RSS feed URL">
     <button id="load-feed">Load Feed</button>
+    <label for="dark-mode-checkbox">Dark Mode</label>
+    <input id="dark-mode-checkbox" type="checkbox">
     <div id="widget-container">
       <div id="widget-label">&lt;rss-widget&gt;</div>
       <rss-widget id="rss-widget" />
@@ -35,9 +37,18 @@
       const rssInput = document.querySelector('#rss-input');
       const rssWidget = document.querySelector('#rss-widget');
       const loadFeedButton = document.querySelector('#load-feed');
+      const darkModeCheckbox = document.querySelector('#dark-mode-checkbox');
 
       loadFeedButton.addEventListener('click', () => {
         rssWidget.setAttribute('rss-feed', rssInput.value);
+      });
+
+      darkModeCheckbox.addEventListener('change', () => {
+        if (darkModeCheckbox.checked) {
+          rssWidget.setAttribute('is-dark-mode', '');
+        } else {
+          rssWidget.removeAttribute('is-dark-mode');
+        }
       });
     </script>
   </body>
