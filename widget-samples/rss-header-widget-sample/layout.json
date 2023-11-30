@@ -16,7 +16,10 @@
         "advancedHeader": [
           {
             "comp": "rss-widget",
-            "script": "http://localhost:8000/rss-widget.js"
+            "script": "http://localhost:8000/rss-widget.js",
+            "properties": {
+              "is-dark-mode": "$STORE.app.darkMode"
+            }     
           },
           {
             "comp": "agentx-webex"
