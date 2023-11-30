@@ -18,9 +18,13 @@ Depending the data required the `search` API supports 3 types of queries :
 
 The queries formed using these types can be broadly categorized into 2 operations 
 
-1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate.
+1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. The structure of the query is given below.
+   
+   ![Structure of query fetching raw data](Raw%20query%20sample.png)
 
-2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, fitlering and pagination.
+2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, fitlering and pagination. The structure of the query is given below.
+   
+   ![Structure of a query performing aggregations](Aggregation%20query.png)
    
    The following sections define each type in detail.
 
