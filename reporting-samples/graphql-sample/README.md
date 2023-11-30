@@ -339,6 +339,89 @@ Sample queries to perform aggegations on various data types are given below.
 | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR.graphql) | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR-response.json)   |
 | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql)  | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json) |
 
+### Performing group by operation
+
+To perform a group by operation, the fields required for group bys should be included in the requested fields, The below sample performs a group by on **lastAgent.id** field.
+
+```graphql
+{
+  taskDetails(
+    from: 1617401436000
+    to: 1619647836000
+    aggregations: [
+      {
+        field: "totalDuration"
+        type: max
+        name: "maxDurationTelephony"
+        filter: { channelType: { equals: telephony } }
+      }
+    ]
+  ) {
+    tasks {
+      lastAgent {
+        id
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}
+```
+
+Some sample queries to perform group by on various data types.
+
+| Description                                                       | Query                                                                                          | Response                                                                                               |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| taskDetails query to group by on a single field of CSR record     | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
+| taskDetails query to group by on multiple fields of CSR record    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
+| taskDetails query to group by on a single field of CAR record     | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
+| taskDetails query to group by on multiple fields of CAR record    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
+| agentSession query to group by on a single field of ASR record    | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
+| agentSession query to group by on multiple fields of ASR record   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
+| agentSession query to group by on a single field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
+| agentSession query to group by on multiple field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
+| taskLegDetails query to group by on single field of CLR record    | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
+| taskLegDetails query to group by on multiple fields of CLR record | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
+
+#### Interval based group bys.
+
+Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` in ther requested field and using the `aggregationInterval` argument, this accepts 2 parameters
+
+* *interval* - Mandatory argument, Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
+
+| Query Span        | Supported intervals                                                        |
+|:----------------- |:--------------------------------------------------------------------------:|
+| <= DAY            | `FIFTEEN_MINUTES`,`THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY` |
+| > DAY & <= 7 DAYS | `THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`                   |
+| > 7 DAYS          | `DAILY`, `WEEKLY`, `MONTHLY`                                               |
+
+* timezone - Optional argument, Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
+
+Refer the below sample syntax for the aggregationIntervalArgument.
+
+```graphql
+aggregationInterval : {
+    interval : DAILY
+    timezone : "America/New_York"
+}
+```
+
+Sample queries to perform interval based aggregations.
+
+| Query Type/ Record           | Query                                                                                                               | Response                                                                                                                  |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
+| taskDetails query for CAR    | [link](/taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)         | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
+| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
+| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
+| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
+
+#### Pagination support
+
+When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer section for Pagination on more details.
+
 ### Support for filtering within Aggregation
 
 #### Aggregations with global filters
@@ -399,89 +482,6 @@ Sample queries to perform aggegations with sub-filter criteria on various data t
 | agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query-response.json)          |
 | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR.graphql)       | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR-response.json)       |
 | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter-response.json) |
-
-### Performing group by operation
-
-To perform a group by operation, the fields required for group bys should be included in the requested fields, The below sample performs a group by on **lastAgent.id** field.
-
-```graphql
-{
-  taskDetails(
-    from: 1617401436000
-    to: 1619647836000
-    aggregations: [
-      {
-        field: "totalDuration"
-        type: max
-        name: "maxDurationTelephony"
-        filter: { channelType: { equals: telephony } }
-      }
-    ]
-  ) {
-    tasks {
-      lastAgent {
-        id
-      }
-      aggregation {
-        name
-        value
-      }
-    }
-  }
-}
-```
-
-Some sample queries to perform group by on various data types. 
-
-| Description                                                       | Query                                                                                          | Response                                                                                               |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| taskDetails query to group by on a single field of CSR record     | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
-| taskDetails query to group by on multiple fields of CSR record    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
-| taskDetails query to group by on a single field of CAR record     | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
-| taskDetails query to group by on multiple fields of CAR record    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
-| agentSession query to group by on a single field of ASR record    | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
-| agentSession query to group by on multiple fields of ASR record   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
-| agentSession query to group by on a single field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
-| agentSession query to group by on multiple field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
-| taskLegDetails query to group by on single field of CLR record    | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
-| taskLegDetails query to group by on multiple fields of CLR record | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
-
-#### Interval based group bys.
-
-Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` in ther requested field and using the `aggregationInterval` argument, this accepts 2 parameters 
-
-* *interval* - Mandatory argument, Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
-
-| Query Span        | Supported intervals                                                        |
-|:----------------- |:--------------------------------------------------------------------------:|
-| <= DAY            | `FIFTEEN_MINUTES`,`THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY` |
-| > DAY & <= 7 DAYS | `THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`                   |
-| > 7 DAYS          | `DAILY`, `WEEKLY`, `MONTHLY`                                               |
-
-* timezone - Optional argument, Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
-
-Refer the below sample syntax for the aggregationIntervalArgument. 
-
-```graphql
-aggregationInterval : {
-    interval : DAILY
-    timezone : "America/New_York"
-}
-```
-
-Sample queries to perform interval based aggregations.
-
-| Query Type/ Record           | Query                                                                                                               | Response                                                                                                                  |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
-| taskDetails query for CAR    | [link](/taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)         | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
-| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
-| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
-| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
-
-#### Pagination support
-
-When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer section for Pagination on more details.
 
 ### Fields supported for aggregations
 
