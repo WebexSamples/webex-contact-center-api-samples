@@ -12,6 +12,10 @@ export class RSSWidget extends LitElement {
         height: 60px;
         overflow: hidden;
         border: 1px solid #ccc;
+        background-color: var(--background-color, white);
+        color: var(--text-color, black);
+        --link-color: blue;
+        --link-color-dark: lightblue;
       }
       .title {
         flex: 1;
@@ -37,6 +41,22 @@ export class RSSWidget extends LitElement {
         0% { transform: translateX(100%); }
         100% { transform: translateX(-100%); }
       }
+
+      /* Dark mode styles */
+      :host([is-dark-mode]) {
+        background-color: var(--background-color, black);
+        color: var(--text-color, white);
+        --link-color: var(--link-color-dark);
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     `;
   }
 
@@ -45,17 +65,17 @@ export class RSSWidget extends LitElement {
       rssFeed: { attribute: "rss-feed", type: String},
       currentItemIndex: { type: Number },
       items: { type: Array },
-      name: {type: String},
+      isDarkMode: { attribute: "is-dark-mode", type: Boolean }
     }
   };
 
   constructor() {
     super();
-    this.name = 'Somebody else';
     this.rssFeed = 'https://developer.webex.com/api/content/blog/feed';
     this.items = [];
     this.currentItemIndex = 0;
     this.feed = {};
+    this.isDarkMode = false;
   }
 
   // This method will be called whenever the rssFeed property changes.
@@ -79,7 +99,7 @@ export class RSSWidget extends LitElement {
   render() {
     const currentItem = this.items[this.currentItemIndex] || {};
     return html`
-      <div class="rss-widget">
+      <div class="rss-widget" ?is-dark-mode="${this.isDarkMode}">
         <div class="feed-title">${this.feed.title}: ${this.items.length} items</div>
         <div class="feed-items">
           <div>
