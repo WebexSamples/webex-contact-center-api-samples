@@ -1,0 +1,19 @@
+{
+  # Sample query for fetching agentSkill related values
+  agentSession(from: 1696118400000, to: 1701302400000) {
+    agentSessions {
+      agentSessionId
+      agentId
+      teamId
+      siteId
+      startTime
+      endTime
+      skillsProfile
+      agentSkills  #JSON object
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
