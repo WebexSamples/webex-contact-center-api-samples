@@ -521,7 +521,7 @@ Samples for various data types are given below
 
 To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer section on filtering for details
 
-#### Pagination support for fetching raw data
+### Pagination support for fetching raw data
 
 Pagination is supported for raw queries, Refer section on pagination for details
 
