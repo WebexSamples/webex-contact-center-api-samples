@@ -19,13 +19,9 @@ Depending the data required the `search` API supports 3 types of queries :
 The queries formed using these types can be broadly categorized into 2 operations 
 
 1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. The structure of the query is given below.
-   
-   ![Structure of query fetching raw data](Raw%20query%20sample.png)
 
 2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, fitlering and pagination. The structure of the query is given below.
-   
-   ![Structure of a query performing aggregations](Aggregation%20query.png)
-   
+
    The following sections define each type in detail.
 
 > [!TIP]
@@ -162,6 +158,10 @@ filter : {
 
 ### Filtering based on Scalar fields
 
+> [!TIP]
+> 
+> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for Scalar types 
+
 Scalar fields are atomic and represent indivisible values (Unlike object types,
 which can have subfields and contain complex data structures).
 Scalars include basic data types like Int, Long, String, Boolean
@@ -260,6 +260,10 @@ Some sample queries using compound operators are given below.
 | taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
 ### Filtering based on Composite objects
+
+> [!TIP]
+> 
+> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for type system to Object Types
 
 Filtering is only supported for scalar fields and not supported for objects, however scalar fields inside objects can be filtered.
 
@@ -422,9 +426,20 @@ Sample queries to perform interval based aggregations.
 | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
 | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
 
+> [!NOTE]
+> 
+> The number of fields used for a group by operation in an aggregation query cannot exceed 10.
+
 #### Pagination support
 
 When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer section for Pagination on more details.
+
+### Structure of aggregation query
+
+The structure of the aggregation query is given below
+
+
+![Structure of a query performing aggregations](Aggregation%20query.png)
 
 ### Support for filtering within Aggregation
 
@@ -509,7 +524,9 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 }
 ```
 
-**Note** - When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days. 
+> [!NOTE]
+> 
+> When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days
 
 Samples for various data types are given below 
 
@@ -529,6 +546,13 @@ To fetch data matching a filter criteria, the `filter` and `extFilter` arguments
 
 Pagination is supported for raw queries, Refer section on pagination for details
 
+### Structure of a query to fetch raw data
+
+The structure of a query to fetch raw data is given below
+
+
+![Structure of query fetching raw data](Raw%20query%20sample.png)
+
 ## Restrictions
 
 1. For any type of query, the query span i.e. the `from` and `to` should not exceed a period of 12 months 
@@ -536,6 +560,8 @@ Pagination is supported for raw queries, Refer section on pagination for details
 2. When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days.   
 
 3. When fetching CSR and CLR documents, using pagination the API supports upto a maximum of 100K records.  
+
+4. The number of fields used for a group by operation in an aggregation query cannot exceed 10.
 
 ## Recommendations / Best Practices
 
