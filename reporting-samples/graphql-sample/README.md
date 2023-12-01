@@ -21,7 +21,7 @@ The queries formed using these types can be broadly categorized into 2 operation
 1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. The structure of the query is given below.
 
 2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, fitlering and pagination. The structure of the query is given below.
-
+   
    The following sections define each type in detail.
 
 > [!TIP]
@@ -438,14 +438,15 @@ When using group bys, the data can be paginated to get more results, using the `
 
 The structure of the aggregation query is given below
 
-
 ![Structure of a query performing aggregations](Aggregation%20query.png)
 
 ### Support for filtering within Aggregation
 
+In an aggregation query, filters can be applied for all the aggregations or for individual aggregations this is referred to as global filter and sub-filter support.
+
 #### Aggregations with global filters
 
-When filtering has to be applied over all aggregations, the top-level  `filter` and     `extFilter` arguments can be used. Refer Filtering section for more details on the syntax and usage. Refer below general syntax for global filtering support
+When filtering has to be applied over all aggregations, the top-level  `filter` and     `extFilter` arguments can be used. Refer [Filtering section](#support-for-filtering-data) for more details on the syntax and usage. Refer below general syntax for global filtering support
 
 ```graphql
 filter : {
@@ -540,7 +541,7 @@ Samples for various data types are given below
 
 ### Filtering data
 
-To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer section on filtering for details
+To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer [section on filtering](#support-for-filtering-data) for details
 
 ### Pagination support for fetching raw data
 
@@ -549,7 +550,6 @@ Pagination is supported for raw queries, Refer section on pagination for details
 ### Structure of a query to fetch raw data
 
 The structure of a query to fetch raw data is given below
-
 
 ![Structure of query fetching raw data](Raw%20query%20sample.png)
 
