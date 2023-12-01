@@ -1,0 +1,86 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "activities": {
+            "totalCount": 11,
+            "nodes": [
+              {
+                "id": "2f5a8a94-c05e-4373-8455-2c82448a0cf5-1699964515597-capture-available"
+              },
+              {
+                "id": "2f5a8a94-c05e-4373-8455-2c82448a0cf5-1699964513701-wrapup-done"
+              },
+              {
+                "id": "2f5a8a94-c05e-4373-8455-2c82448a0cf5-1699964513700-ended"
+              },
+              {
+                "id": "2f5a8a94-c05e-4373-8455-2c82448a0cf5-1699964499003-capture-started"
+              },
+              {
+                "id": "2f5a8a94-c05e-4373-8455-2c82448a0cf5-1699964497426-connected"
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1699964497426"
+            }
+          }
+        },
+        {
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "id": "2b54d602-c5f6-4041-8e8a-d97dc554dca0-1699964477886-ended"
+              },
+              {
+                "id": "2b54d602-c5f6-4041-8e8a-d97dc554dca0-1699964460993-parked"
+              },
+              {
+                "id": "2b54d602-c5f6-4041-8e8a-d97dc554dca0-1699964460896-flow-activity"
+              },
+              {
+                "id": "2b54d602-c5f6-4041-8e8a-d97dc554dca0-1699964459858-con-to-agent-error"
+              },
+              {
+                "id": "2b54d602-c5f6-4041-8e8a-d97dc554dca0-1699964446819-connect"
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1699964446819"
+            }
+          }
+        },
+        {
+          "activities": {
+            "totalCount": 11,
+            "nodes": [
+              {
+                "id": "699f6842-9dee-455a-b61f-72ac2b6b0f65-1699944464403-capture-available"
+              },
+              {
+                "id": "699f6842-9dee-455a-b61f-72ac2b6b0f65-1699944461897-wrapup-done"
+              },
+              {
+                "id": "699f6842-9dee-455a-b61f-72ac2b6b0f65-1699944461897-ended"
+              },
+              {
+                "id": "699f6842-9dee-455a-b61f-72ac2b6b0f65-1699944445604-capture-started"
+              },
+              {
+                "id": "699f6842-9dee-455a-b61f-72ac2b6b0f65-1699944442646-connected"
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1699944442646"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

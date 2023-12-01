@@ -14,7 +14,6 @@ filter : {
 ```
 
 
-
 ### Filtering based on Scalar fields:
 
 Scalar fields are atomic and represent indivisible values (Unlike object types,
@@ -153,3 +152,155 @@ Some samples for filtering on object types are given below
 | agentSession query with filter on object of ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
 | agentSession query for filtering on object of AAR | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
 | taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
+
+
+### Pagination
+Queries are restricted to returning a defined number of records, known as a page.
+To retrieve successive pages, pagination feature is used.
+The cursor is a unique identifier for a specific record, and it is used to determine the starting point for the next page of results.
+
+| Type of query 	 	      | Page size | Maximum Cursor Value |
+|------------------------|-----------|----------------------|
+| task(CSR)              | 500       | 199                  |
+| taskDetails(CSR + CAR) | 250       | 399                  |
+| agentSession(ASR)      | 250       | No Limit             |
+| taskLegDetails(CLR)    | 500       | 199                  |
+
+NOTE: Cursor value for next request should not be incremented by 1 but instead value should be picked from pageInfo -> endCursor from response always.
+
+#### Sample pagination query for CSR
+```graphql
+  {
+    taskDetails(
+        from: 1641789000000
+        to: 1652157000000
+        pagination: {
+            # The cursor value present here should be the same as the endCursor value from the previous API response
+            cursor: "2"
+        }
+    ) {
+        tasks {
+            id
+        }
+        pageInfo {
+            # This gives the cursor value for the next page and can used in the cursor input above 
+            endCursor
+            hasNextPage
+        }
+    }
+}
+```
+#### Sample pagination query for ASR
+```graphql
+{
+  # Pagination
+  # Include the pageInfo object in the query, to fetch hasNextPage and endCursor
+  # If the hasNextPage is set to true the cursor can be passed in the next query
+  agentSession(from: 1644859375000, to: 1671038575000
+  pagination : {
+    # Giving cursor as "NA" is equivalent of fetching the first cursor
+    cursor : "NA"
+  }
+  ) {
+    agentSessions {
+      agentId
+    }
+    pageInfo {
+      # Flag which indicates if the next page exists or not.
+      hasNextPage
+      # Nullable String (not  necessary a Numberic value) to fetch the next page
+      endCursor
+    }
+  }
+}
+
+```
+| Query Type/ Record                           | Query                                                                        | response                                                                           |
+|----------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| agentSession query for ASR  using pagination | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)             | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                   |
+| agentSession query for ASR  using pagination | [link](agentSession/Raw Data Fetching/Pagination 2.graphql)                  | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                  |
+| agentSession query for ASR  using pagination | [link](agentSession/Raw Data Fetching/Pagination 3.graphql)                  | [link](agentSession/Raw Data Fetching/Pagination 3-response.json)                  |
+| taskDetails query for CSR using pagination   | [link](taskDetails/Samples for Raw Data Fetching/Pagination query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json)  |
+| taskDetails query for CSR using pagination   | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2-response.json) |
+| taskDetails query for CSR using pagination   | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3-response.json) |
+| taskLegs query for CLR using pagination      | [link](taskLegDetails/Fetching Raw Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching Raw Data/Pagination-response.json)                  |
+| taskLegs query for CLR using pagination      | [link](taskLegDetails/Fetching Raw Data/Pagination 2.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 2-response.json)                |
+| taskLegs query for CLR using pagination      | [link](taskLegDetails/Fetching Raw Data/Pagination 3.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 3-response.json)                |
+
+###     Inner Pagination Support
+For the TaskDetails API:
+The default page size for CARs is set at 25, meaning that up to 25 CARs can be retrieved in a single query for a specific contact session.
+If the need arises to fetch more than 25 CARs, you can utilize the "first" parameter as shown in the below example.
+
+```graphql
+{
+    taskDetails(
+        from: 1642215016949, to: 1646197282577
+    ) {
+        tasks {
+            activities(first:2){
+                totalCount
+                nodes{
+                    id
+                }
+                pageInfo{
+                    hasNextPage
+                    endCursor
+                }
+            }
+        }
+    }
+}
+```
+
+For the AgentSession API:
+The default page size for AARs is also set at 25, allowing for the retrieval of up to 25 AARs in a single query for a specific agent session.
+If the need arises to fetch more than 25 AARs, you can utilize the "first" parameter as shown below.
+
+Sample Query for AAR with Inner Pagination
+```graphql
+{
+    agentSession(
+        from: 1642215016949, to: 1646197282577
+    ) {
+        agentSessions {
+            activities(first:2){
+                totalCount
+                nodes{
+                    id
+                }
+                pageInfo{
+                    hasNextPage
+                    endCursor
+                }
+            }
+        }
+    }
+}
+```
+Note: the maximum limit for the  "first" parameter is 100  and is applicable for both CAR and AAR.
+
+| Query Type/ Record                                 | query                                                       | response                                                          |
+|----------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
+| agentSession query for ASR  using inner pagination | agentSession/Raw Data Fetching/innerPagination.graphql      | agentSession/Raw Data Fetching/innerPagination-response.json      |
+| taskDetails query for CAR using inner pagination   | taskDetails/Performing Aggregations/innerPagination.graphql | taskDetails/Performing Aggregations/innerpagination-response.json |
+
+### Pagination Support for Aggregation with Group By
+Pagination can also be applied in case of queries which involve grouping based aggregation to fetch aggregation for more groups.
+The endCursor value from a previous response should be used in the cursor.
+If the cursor value is unknown , use "NA" or remove pagination cursor field.
+
+Note:
+1.We can have a max of 10 group by field as the cursor value.
+2.Cursor value should have the same number of groupBy field and in same order as used in the request query
+
+samples for aggregation with group by queries using pagination are given below 
+
+| Query Type/ Record                                         | query                                                                                 | response                                                                                    |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| taskDetails query for CSR, aggregation using pagination    | taskDetails/Performing Aggregations/Aggregation pagination query.graphql              | taskDetails/Performing Aggregations/Aggregation pagination query -response.json             |
+| taskDetails query for CSR, aggregation using pagination    | taskDetails/Performing Aggregations/Aggregation pagination query 2.graphql            | taskDetails/Performing Aggregations/Aggregation pagination query 2-response.json            |
+| agentSession query for ASR, aggregation using pagination   | agentSession/Performing Aggregations/Aggregation Pagination.graphql                   | agentSession/Performing Aggregations/Aggregation Pagination -response.json                  |
+| agentSession query for ASR, aggregation using pagination   | agentSession/Performing Aggregations/Aggregation Pagination 2.graphql                   | agentSession/Performing Aggregations/Aggregation Pagination 2-response.json                 |
+| taskLegDetails query for CLR, aggregation using pagination | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination.graphql   | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination - response.json |
+| taskLegDetails query for CLR, aggregation using pagination | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2.graphql | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2-response.json |
