@@ -542,8 +542,8 @@ Some sample queries on globalVariables for taskDetails and taskLegDetails
 
 | Query Type                              | Query                                                                                            | Response                                                                                               |
 |-----------------------------------------| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| taskDetails query on globalVariables    | [link](taskDetails/Global Variables/Fetching global variables.graphql)   | [link](taskDetails/Global Variables/Fetching global variables-response.json)   |
-| taskLegDetails query on globalVariables | [link](taskLegDetails/Global Variables/Fetching global variables.graphql) | [link](taskLegDetails/Global Variables/Fetching global variables-response.json) |
+| taskDetails query on globalVariables    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)   | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)   |
+| taskLegDetails query on globalVariables | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
 
 ## Fetching Raw Data
 
