@@ -610,16 +610,16 @@ The page size of a query depends on the query type and the operations, these are
 Sample queries demonstrating pagination when fetching raw data are given below.
 
 | Query Type/ Record                    | Query                                                                        | response                                                                                          |
-| ------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| ------------------------------------- |------------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------- |
 | agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)             | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 2   | [link](agentSession/Raw Data Fetching/Pagination 2.graphql)                  | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 3   | [link](agentSession/Raw Data Fetching/Pagination 3.graphql)                  | [link](agentSession/Raw Data Fetching/Pagination 3-response.json)                                 |
-| taskDetails CSR pagination query 1    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
-| taskDetails CSR pagination query 2    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2-response.json)                |
-| taskDetails CSR pagination query 3    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3-response.json)                |
-| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching Raw Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching Raw Data/Pagination-response.json)                                 |
-| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching Raw Data/Pagination 2.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 2-response.json)                               |
-| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching Raw Data/Pagination 3.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 3-response.json)                               |
+| agentSession ASR pagination query 2   | [link](agentSession/Raw Data Fetching/Pagination%202.graphql)                | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 3   | [link](agentSession/Raw Data Fetching/Pagination%203.graphql)                  | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                                 |
+| taskDetails CSR pagination query 1    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| taskDetails CSR pagination query 2    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)                |
+| taskDetails CSR pagination query 3    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)                |
+| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                                 |
+| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                               |
+| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                               |
 
 ### Inner Pagination / Paginating CAR and AAR records
 
