@@ -18,9 +18,9 @@ Depending the data required the `search` API supports 3 types of queries :
 
 The queries formed using these types can be broadly categorized into 2 operations 
 
-1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. The structure of the query is given below.
+1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. In SQL terminology this operation is analogous to  `SELECT id, channelType FROM task WHERE channelType='telephony'` 
 
-2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, fitlering and pagination. The structure of the query is given below.
+2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, filtering and pagination. In SQL terminology this operation is analogous to `SELECT COUNT(id), MAX(totalDuration) FROM task WHERE channelType='telephony' GROUP BY teamId, siteId`
    
    The following sections define each type in detail.
 
@@ -609,17 +609,17 @@ The page size of a query depends on the query type and the operations, these are
 
 Sample queries demonstrating pagination when fetching raw data are given below.
 
-| Query Type/ Record                    | Query                                                                        | response                                                                                          |
-| ------------------------------------- |------------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------- |
-| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)             | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 2   | [link](agentSession/Raw Data Fetching/Pagination%202.graphql)                | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 3   | [link](agentSession/Raw Data Fetching/Pagination%203.graphql)                  | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                                 |
-| taskDetails CSR pagination query 1    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
-| taskDetails CSR pagination query 2    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)                |
-| taskDetails CSR pagination query 3    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)                |
-| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                                 |
-| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                               |
-| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                               |
+| Query Type/ Record                    | Query                                                                                    | Response                                                                                          |
+| ------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                         | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 2   | [link](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                        | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 3   | [link](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                        | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                           |
+| taskDetails CSR pagination query 1    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| taskDetails CSR pagination query 2    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
+| taskDetails CSR pagination query 3    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
+| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                          | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                             |
+| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                         |
+| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                         |
 
 ### Inner Pagination / Paginating CAR and AAR records
 
@@ -669,16 +669,16 @@ A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-
 
 Sample queries for inner pagination of CAR and AAR are given below.
 
-| Query Type                            | Query                                                                           | response                                                                                |
-| ------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| taskDetails query for CAR pagination  | [link](taskDetails/Samples%20for%20Raw Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
-| agentSession query for AAR pagination | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)              | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
+| Query Type                            | Query                                                                             | Response                                                                                |
+| ------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| taskDetails query for CAR pagination  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
+| agentSession query for AAR pagination | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)                | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
 
 ### Pagination Support for Aggregation with Group Bys
 
 In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
 
-| Query Type/ Record                                     | query                                                                                                     | response                                                                                                          |
+| Query Type/ Record                                     | Query                                                                                                     | Response                                                                                                          |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | taskDetails CSR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
 | taskDetails CSR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
@@ -693,7 +693,7 @@ In case of aggregation queries involving group bys, pagination can be done to fe
 
 ## Global Variables Support
 
-[Global Variables]((https://portal-v2.wxcc-us1.cisco.com/ccone-help-new/webexcc_t_add-global-variable.html#!wcc_c_global-variables.html) are exposed as part of  TaskDetails and TaskLegDetails query,
+[Global Variables](https://portal-v2.wxcc-us1.cisco.com/ccone-help-new/webexcc_t_add-global-variable.html#!wcc_c_global-variables.html) are exposed as part of  TaskDetails and TaskLegDetails query,
 Depending on the data type of the variable there are 5 types of Global Variables:
 
 1. stringGlobalVariables
