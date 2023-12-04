@@ -507,6 +507,190 @@ Sample queries to perform aggegations with sub-filter criteria on various data t
 
 Refer Data Dictionary section for fields supporting aggregation.
 
+## Fetching Raw Data
+
+Fields from individual records can also fetched using the API, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
+
+Based on the fields that are requested and the filter criteria specified in the query, the API will read data from the appropriate type of record and return the requested field for each record. **It is recommended to fetch fields belonging to the same type of record**. Refer data dictionary section for more details.
+
+Sample taskDetails query to fetch *id* field in a taskDetails query.
+
+```graphql
+{
+  taskDetails(from: 1644859375000, to: 1671038575000) {
+    tasks {
+      id
+    }
+  }
+}
+```
+
+> [!NOTE]
+> 
+> When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days
+
+Samples for various data types are given below 
+
+| Description                              | Query                                                                                     | Response                                                                                        |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| taskDetails query to fetch CSR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| taskDetails query to fetch CAR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
+| agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
+| taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
+
+### Filtering data
+
+To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer [section on filtering](#support-for-filtering-data) for details
+
+### Pagination support for fetching raw data
+
+Pagination is supported for raw queries, Refer section on pagination for details
+
+### Structure of a query to fetch raw data
+
+The structure of a query to fetch raw data is given below
+
+![Structure of query fetching raw data](Raw%20query%20sample.png)
+
+## Pagination Support
+
+The `search` API supports pagination for both the operations - performing aggregations and fetching raw data. The page size/ number of records returned by the query is fixed. Clients can fetch the next set of records using the `hasNextPage` and the `endCursor` fields in the response. 
+
+```graphql
+{
+  taskDetails(from: 1690964812000, to: 1691224012000) {
+    tasks {
+      id
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}
+```
+
+`hasNextPage` is a boolean field which determines if more data exists for the given query.  Based on the `hasNextPage` value clients can fetch the value for `endCursor`  fields which is a string field and acts as an identifier for the next page. The value of this field is passed in the subsquent query to fetch the next set of records. 
+
+The `pagination` argument accepts `cursor` input parameter which accepts the `endCursor` value and fetches the next page. A sample is given below 
+
+```graphql
+{
+  taskDetails(
+    from: 1690964812000
+    to: 1691224012000
+    pagination: { cursor: "<VALUE-OF-endCursor-FROM-PREVIOUS-QUERY" }
+  ) {
+    tasks {
+      id
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
+```
+
+The page size of a query depends on the query type and the operations, these are given below.
+
+| Operation         | Query Type     | Page Size | Maximum number of Records that can be fetched |
+| ----------------- | -------------- | --------- | --------------------------------------------- |
+| Fetch raw data    | taskDetails    | 250       | 100000                                        |
+| Fetch raw data    | agentSession   | 250       | No Limit                                      |
+| Fetch raw data    | taskLegDetails | 500       | 100000                                        |
+| Aggregation query | taskDetails    | 1000      | No Limit                                      |
+| Aggregation query | agentSession   | 1000      | No Limit                                      |
+
+> [!NOTE] 
+> 
+> In order to fetch the first page, the `pagination` argument can either be omitted or the `cursor` value can be set to **NA**.
+
+Sample queries demonstrating pagination when fetching raw data are given below.
+
+| Query Type/ Record                    | Query                                                                        | response                                                                                          |
+| ------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)             | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 2   | [link](agentSession/Raw Data Fetching/Pagination 2.graphql)                  | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 3   | [link](agentSession/Raw Data Fetching/Pagination 3.graphql)                  | [link](agentSession/Raw Data Fetching/Pagination 3-response.json)                                 |
+| taskDetails CSR pagination query 1    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| taskDetails CSR pagination query 2    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2-response.json)                |
+| taskDetails CSR pagination query 3    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3-response.json)                |
+| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching Raw Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching Raw Data/Pagination-response.json)                                 |
+| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching Raw Data/Pagination 2.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 2-response.json)                               |
+| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching Raw Data/Pagination 3.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 3-response.json)                               |
+
+### Inner Pagination / Paginating CAR and AAR records
+
+Both CAR and AAR records are exposed within the `activities.nodes` field which provides with a list of records. To fetch more CAR and AAR records, inner pagination can be used, this enables pagination within the records instead of paginating the records themselves.
+
+To fetch more records within `activities.nodes` , the cursor can be retrieved from `activities.pageInfo` field which contains `endCursor` and `hasNextPage` fields. This cursor value can be passed into the `after` argument 
+
+The `activities` field supports the following 2 arguments to support inner pagination 
+
+1. *first*  - Accepts an Int value which determines the number of records to be fetched. The default the value is set to **25** and the maximum supported value is **100**.
+
+2. *after* - Accepts a String value which determines the next page to be fetched.
+
+> [!NOTE]
+> The total count of records can be read using the `activities.totalCount` field.
+
+> [!IMPORTANT]
+> 
+> Since inner pagination enables record level pagination, the cursor value retrieved from a record is not applicable for other records, hence it is highly recommended to use a `filter` to exclude the other records.
+
+A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-b9fd-83e263538393**  after the cursor value of **1697205941011** is shown below 
+
+```graphql
+{
+  taskDetails(
+    from: 1696118400000
+    to: 1697328000000
+    filter: { id: { equals: "9bd2d70a-3438-4784-b9fd-83e263538393" } }
+  ) {
+    tasks {
+      id
+      activities(first: 5, after: "1697205941011") {
+        totalCount
+        nodes {
+          id
+          eventName
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}
+```
+
+Sample queries for inner pagination of CAR and AAR are given below.
+
+| Query Type                            | Query                                                                           | response                                                                                |
+| ------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| taskDetails query for CAR pagination  | [link](taskDetails/Samples%20for%20Raw Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
+| agentSession query for AAR pagination | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)              | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
+
+### Pagination Support for Aggregation with Group Bys
+
+In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
+
+| Query Type/ Record                                     | query                                                                                                     | response                                                                                                          |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| taskDetails CSR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
+| taskDetails CSR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
+| taskDetails CAR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
+| taskDetails CAR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
+| agentSession ASR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
+| agentSession ASR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
+| agentSession AAR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
+| agentSession AAR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
+| taskLegDetails CLR aggregation query with pagination 1 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
+| taskLegDetails CLR aggregation query with pagination 2 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
+
 ## Global Variables Support
 
 [Global Variables]((https://portal-v2.wxcc-us1.cisco.com/ccone-help-new/webexcc_t_add-global-variable.html#!wcc_c_global-variables.html) are exposed as part of  TaskDetails and TaskLegDetails query,
@@ -518,7 +702,7 @@ Depending on the data type of the variable there are 5 types of Global Variables
 
 3. integerGlobalVariables
 
-4. doubleGlobalVariables 
+4. doubleGlobalVariables
 
 5. longGlobalVariables
 
@@ -711,190 +895,6 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 | ----------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | taskDetails groupby on globalVariables    | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)     | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)            |
 | taskLegDetails groupby on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
-
-## Fetching Raw Data
-
-Fields from individual records can also fetched using the API, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
-
-Based on the fields that are requested and the filter criteria specified in the query, the API will read data from the appropriate type of record and return the requested field for each record. **It is recommended to fetch fields belonging to the same type of record**. Refer data dictionary section for more details.
-
-Sample taskDetails query to fetch *id* field in a taskDetails query.
-
-```graphql
-{
-  taskDetails(from: 1644859375000, to: 1671038575000) {
-    tasks {
-      id
-    }
-  }
-}
-```
-
-> [!NOTE]
-> 
-> When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days
-
-Samples for various data types are given below 
-
-| Description                              | Query                                                                                     | Response                                                                                        |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| taskDetails query to fetch CSR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| taskDetails query to fetch CAR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
-| agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
-| agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
-| taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
-
-### Filtering data
-
-To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer [section on filtering](#support-for-filtering-data) for details
-
-### Pagination support for fetching raw data
-
-Pagination is supported for raw queries, Refer section on pagination for details
-
-### Structure of a query to fetch raw data
-
-The structure of a query to fetch raw data is given below
-
-![Structure of query fetching raw data](Raw%20query%20sample.png)
-
-## Pagination Support
-
-The `search` API supports pagination for both the operations - performing aggregations and fetching raw data. The page size/ number of records returned by the query is fixed. Clients can fetch the next set of records using the `hasNextPage` and the `endCursor` fields in the response. 
-
-```graphql
-{
-  taskDetails(from: 1690964812000, to: 1691224012000) {
-    tasks {
-      id
-    }
-    pageInfo {
-        hasNextPage
-        endCursor
-    }
-  }
-}
-```
-
-`hasNextPage` is a boolean field which determines if more data exists for the given query.  Based on the `hasNextPage` value clients can fetch the value for `endCursor`  fields which is a string field and acts as an identifier for the next page. The value of this field is passed in the subsquent query to fetch the next set of records. 
-
-The `pagination` argument accepts `cursor` input parameter which accepts the `endCursor` value and fetches the next page. A sample is given below 
-
-```graphql
-{
-  taskDetails(
-    from: 1690964812000
-    to: 1691224012000
-    pagination: { cursor: "<VALUE-OF-endCursor-FROM-PREVIOUS-QUERY" }
-  ) {
-    tasks {
-      id
-    }
-    pageInfo {
-      hasNextPage
-      endCursor
-    }
-  }
-}
-```
-
-The page size of a query depends on the query type and the operations, these are given below.
-
-| Operation         | Query Type     | Page Size | Maximum number of Records that can be fetched |
-| ----------------- | -------------- | --------- | --------------------------------------------- |
-| Fetch raw data    | taskDetails    | 250       | 100000                                        |
-| Fetch raw data    | agentSession   | 250       | No Limit                                      |
-| Fetch raw data    | taskLegDetails | 500       | 100000                                        |
-| Aggregation query | taskDetails    | 1000      | No Limit                                      |
-| Aggregation query | agentSession   | 1000      | No Limit                                      |
-
-> [!NOTE] 
-> 
-> In order to fetch the first page, the `pagination` argument can either be omitted or the `cursor` value can be set to **NA**.
-
-Sample queries demonstrating pagination when fetching raw data are given below.
-
-| Query Type/ Record                    | Query                                                                        | response                                                                                          |
-| ------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)             | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 2   | [link](agentSession/Raw Data Fetching/Pagination 2.graphql)                  | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 3   | [link](agentSession/Raw Data Fetching/Pagination 3.graphql)                  | [link](agentSession/Raw Data Fetching/Pagination 3-response.json)                                 |
-| taskDetails CSR pagination query 1    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query.graphql)   | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
-| taskDetails CSR pagination query 2    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 2-response.json)                |
-| taskDetails CSR pagination query 3    | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3.graphql) | [link](taskDetails/Samples for Raw Data Fetching/Pagination query 3-response.json)                |
-| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching Raw Data/Pagination.graphql)                  | [link](taskLegDetails/Fetching Raw Data/Pagination-response.json)                                 |
-| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching Raw Data/Pagination 2.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 2-response.json)                               |
-| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching Raw Data/Pagination 3.graphql)                | [link](taskLegDetails/Fetching Raw Data/Pagination 3-response.json)                               |
-
-### Inner Pagination / Paginating CAR and AAR records
-
-Both CAR and AAR records are exposed within the `activities.nodes` field which provides with a list of records. To fetch more CAR and AAR records, inner pagination can be used, this enables pagination within the records instead of paginating the records themselves.
-
-To fetch more records within `activities.nodes` , the cursor can be retrieved from `activities.pageInfo` field which contains `endCursor` and `hasNextPage` fields. This cursor value can be passed into the `after` argument 
-
-The `activities` field supports the following 2 arguments to support inner pagination 
-
-1. *first*  - Accepts an Int value which determines the number of records to be fetched. The default the value is set to **25** and the maximum supported value is **100**.
-
-2. *after* - Accepts a String value which determines the next page to be fetched.
-
-> [!NOTE]
-> The total count of records can be read using the `activities.totalCount` field.
-
-> [!IMPORTANT]
-> 
-> Since inner pagination enables record level pagination, the cursor value retrieved from a record is not applicable for other records, hence it is highly recommended to use a `filter` to exclude the other records.
-
-A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-b9fd-83e263538393**  after the cursor value of **1697205941011** is shown below 
-
-```graphql
-{
-  taskDetails(
-    from: 1696118400000
-    to: 1697328000000
-    filter: { id: { equals: "9bd2d70a-3438-4784-b9fd-83e263538393" } }
-  ) {
-    tasks {
-      id
-      activities(first: 5, after: "1697205941011") {
-        totalCount
-        nodes {
-          id
-          eventName
-        }
-        pageInfo {
-          hasNextPage
-          endCursor
-        }
-      }
-    }
-  }
-}
-```
-
-Sample queries for inner pagination of CAR and AAR are given below.
-
-| Query Type                            | Query                                                                           | response                                                                                |
-| ------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| taskDetails query for CAR pagination  | [link](taskDetails/Samples%20for%20Raw Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
-| agentSession query for AAR pagination | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)              | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
-
-### Pagination Support for Aggregation with Group Bys
-
-In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
-
-| Query Type/ Record                                     | query                                                                                                     | response                                                                                                          |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| taskDetails CSR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
-| taskDetails CSR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
-| taskDetails CAR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
-| taskDetails CAR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
-| agentSession ASR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
-| agentSession ASR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
-| agentSession AAR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
-| agentSession AAR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
-| taskLegDetails CLR aggregation query with pagination 1 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
-| taskLegDetails CLR aggregation query with pagination 2 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
 
 ## Restrictions
 
