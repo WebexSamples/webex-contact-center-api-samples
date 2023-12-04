@@ -507,6 +507,44 @@ Sample queries to perform aggegations with sub-filter criteria on various data t
 
 Refer Data Dictionary section for fields supporting aggregation.
 
+### Global Variables Support
+
+The globalVariables are of five types according values it holds such as stringGlobalVariables, booleanGlobalVariables, integerGlobalVariables, doubleGlobalVariables and longGlobalVariables types
+
+Global Variables are in TaskDetails and TaskLegDetails schema.
+
+to get query the global data, pass name of the global in the argument
+Eg: to get data of the Global Variable String Type with name as GlobalVariable1
+
+```graphql
+# 'name' argument is mandatory.
+#  This block will fetch name and value for the stringGlobalVariable named 'GlobalVariable1'
+stringGlobalVariables(name: "GlobalVariable1") {
+    name
+    value
+}
+```
+to fetch multiple global variables of same type use aliasing:
+
+```graphql
+# To fetch multiple global variables use aliasing - https://graphql.org/learn/queries/#aliases
+GV1: stringGlobalVariables(name: "GV1") {
+    name
+    value
+}
+GV59: stringGlobalVariables(name: "GV59") {
+    name
+    value
+}
+```
+
+Some sample queries on globalVariables for taskDetails and taskLegDetails
+
+| Query Type                              | Query                                                                                            | Response                                                                                               |
+|-----------------------------------------| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| taskDetails query on globalVariables    | [link](taskDetails/Global Variables/Fetching global variables.graphql)   | [link](taskDetails/Global Variables/Fetching global variables-response.json)   |
+| taskLegDetails query on globalVariables | [link](taskLegDetails/Global Variables/Fetching global variables.graphql) | [link](taskLegDetails/Global Variables/Fetching global variables-response.json) |
+
 ## Fetching Raw Data
 
 Fields from individual records can also fetched using the API, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
