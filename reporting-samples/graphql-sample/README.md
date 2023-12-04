@@ -509,12 +509,12 @@ Refer Data Dictionary section for fields supporting aggregation.
 
 ### Global Variables Support
 
-The globalVariables are of five types according values it holds such as stringGlobalVariables, booleanGlobalVariables, integerGlobalVariables, doubleGlobalVariables and longGlobalVariables types
+The globalVariables are of five types according to the values it holds such as stringGlobalVariables, booleanGlobalVariables, integerGlobalVariables, doubleGlobalVariables and longGlobalVariables types
 
 Global Variables are in TaskDetails and TaskLegDetails schema.
 
-to get query the global data, pass name of the global in the argument
-Eg: to get data of the Global Variable String Type with name as GlobalVariable1
+to get query the global variable data, pass name of the global in the argument
+Eg: to get data of the Global Variable of String Type with name as GlobalVariable1
 
 ```graphql
 # 'name' argument is mandatory.
@@ -537,13 +537,162 @@ GV59: stringGlobalVariables(name: "GV59") {
     value
 }
 ```
-
 Some sample queries on globalVariables for taskDetails and taskLegDetails
 
 | Query Type                              | Query                                                                                            | Response                                                                                               |
 |-----------------------------------------| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | taskDetails query on globalVariables    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)   | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)   |
 | taskLegDetails query on globalVariables | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
+
+### Filtering on global variables
+Filtering on global variable is supported by the passing the globalVariable name in name argument and values to be filtered in the value argument.
+EG: fetch the records Global Variable (GV1) of string with value ABC123
+
+```graphql
+{
+    stringGlobalVariables: {
+        name: { equals: "GV1" }
+        value: { equals: "ABC123" }
+    }
+}
+```
+
+EG: fetch the records Global Variable (GV2) of integer type greater than 100
+```graphql
+{
+    integerGlobalVariables: {
+        name: { equals: "GV2" }
+        value: { gt: 100 }
+    }
+}
+```
+
+please refer the filtering section for different operator applied for different types
+
+Some sample queries on globalVariables with filtering for taskDetails and taskLegDetails
+
+| Query Type                                             | Query                                                                                            | Response                                                                                            |
+|--------------------------------------------------------| ------------------------------------------------------------------------------------------------ |-----------------------------------------------------------------------------------------------------|
+| taskDetails query on globalVariables with filtering    | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)   | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
+| taskLegDetails query on globalVariables with filtering | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
+
+### Performing Aggregations on global variables
+on performing the aggregations on global we need to pass an extra argument/field in the schema predicate which hold global variable name
+Eg: we sum of all values of GV2 of integer type global variable
+
+```graphql
+ {
+    field: "integerGlobalVariables.value"
+    name: "Sum of GV2"
+    type: sum
+    # Predicate is used to define which global variable needs to be considered for the operation.
+    predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+}
+```
+Eg: aggregation to get no of unique data values present for GV1 which is of String Type
+```graphql
+ {
+    field: "stringGlobalVariables.value"
+    name: "Unique of GV1"
+    type: cardinality
+    # Predicate is used to define which global variable needs to be considered for the operation.
+    predicate: { stringGlobalVariables: { name: { equals: "GV1" } } }
+}
+```
+please refer the aggregations section for different aggregations supported for each data types
+Some sample aggregations on globalVariables for taskDetails and taskLegDetails
+
+| Query Type                                        | Query                                                                                            | Response                                                                                            |
+|---------------------------------------------------| ------------------------------------------------------------------------------------------------ |-----------------------------------------------------------------------------------------------------|
+| taskDetails aggregation on globalVariables        | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql)   | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json)       |
+| taskLegDetails aggregation on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json) |
+
+### Performing group by operation on global variables
+To perform a group by operation, the fields required for group bys should be included in the requested fields, The below sample performs a group by on stringGlobalVariable(Global_Language) field.
+```graphql
+{
+    # Group by using  Global Variables
+    # To perform a group by on a global variable add the global variable in the selection set.
+    taskDetails(
+        from: 1655449155512
+        to: 1671038575000
+        aggregations: [
+            { field: "id", name: "count of calls", type: count }
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            # Group by on stringGlobalVariable named "Global_Language".
+            stringGlobalVariables(name: "Global_Language") {
+                value
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}
+```
+
+
+
+below sample is mentioning multiple global variables (Global_Language, Location) in group-by using aliasing 
+
+```graphql
+{
+    # Group by using  Global Variables
+    # To perform a group by on a global variable add the global variable in the selection set.
+    taskDetails(
+        from: 1655449155512
+        to: 1671038575000
+        aggregations: [
+            { field: "id", name: "count of calls", type: count }
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            # Group by on stringGlobalVariable named "Global_Language".
+            stringGlobalVariables(name: "Global_Language") {
+                value
+            }
+            # Group by on stringGlobalVariable named "Location".
+            Location: stringGlobalVariables(name: "Location") {
+                value
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}
+```
+
+Some sample group by's on globalVariables with aggregations for taskDetails and taskLegDetails
+
+| Query Type                                    | Query                                                                                            | Response                                                                                            |
+|-----------------------------------------------| ------------------------------------------------------------------------------------------------ |-----------------------------------------------------------------------------------------------------|
+| taskDetails groupby on globalVariables        | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)   | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)       |
+| taskLegDetails groupby on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
 
 ## Fetching Raw Data
 
