@@ -282,7 +282,7 @@ Note: the maximum limit for the  "first" parameter is 100  and is applicable for
 
 | Query Type/ Record                                 | query                                                       | response                                                          |
 |----------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
-| agentSession query for ASR  using inner pagination | agentSession/Raw Data Fetching/innerPagination.graphql      | agentSession/Raw Data Fetching/innerPagination-response.json      |
+| agentSession query for AAR  using inner pagination | agentSession/Raw Data Fetching/innerPagination.graphql      | agentSession/Raw Data Fetching/innerPagination-response.json      |
 | taskDetails query for CAR using inner pagination   | taskDetails/Performing Aggregations/innerPagination.graphql | taskDetails/Performing Aggregations/innerpagination-response.json |
 
 ### Pagination Support for Aggregation with Group By
@@ -296,11 +296,13 @@ Note:
 
 samples for aggregation with group by queries using pagination are given below 
 
-| Query Type/ Record                                         | query                                                                                 | response                                                                                    |
-|------------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| taskDetails query for CSR, aggregation using pagination    | taskDetails/Performing Aggregations/Aggregation pagination query.graphql              | taskDetails/Performing Aggregations/Aggregation pagination query -response.json             |
-| taskDetails query for CSR, aggregation using pagination    | taskDetails/Performing Aggregations/Aggregation pagination query 2.graphql            | taskDetails/Performing Aggregations/Aggregation pagination query 2-response.json            |
-| agentSession query for ASR, aggregation using pagination   | agentSession/Performing Aggregations/Aggregation Pagination.graphql                   | agentSession/Performing Aggregations/Aggregation Pagination -response.json                  |
-| agentSession query for ASR, aggregation using pagination   | agentSession/Performing Aggregations/Aggregation Pagination 2.graphql                   | agentSession/Performing Aggregations/Aggregation Pagination 2-response.json                 |
-| taskLegDetails query for CLR, aggregation using pagination | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination.graphql   | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination - response.json |
-| taskLegDetails query for CLR, aggregation using pagination | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2.graphql | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2-response.json |
+| Query Type/ Record                                            | query                                                                                 | response                                                                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| taskDetails query for CSR, aggregation using pagination       | taskDetails/Performing Aggregations/Aggregation pagination query.graphql              | taskDetails/Performing Aggregations/Aggregation pagination query -response.json             |
+| taskDetails query for CSR, aggregation using pagination       | taskDetails/Performing Aggregations/Aggregation pagination query 2.graphql            | taskDetails/Performing Aggregations/Aggregation pagination query 2-response.json            |
+| taskDetails query for CAR, aggregation using innerpagination  | taskDetails/Performing Aggregations/AggregationWithinnerPaginattionCAR.graphql        | taskDetails/Performing Aggregations/Aggregation pagination query 3-response.json            |
+| agentSession query for ASR, aggregation using pagination      | agentSession/Performing Aggregations/Aggregation Pagination.graphql                   | agentSession/Performing Aggregations/Aggregation Pagination -response.json                  |
+| agentSession query for ASR, aggregation using pagination      | agentSession/Performing Aggregations/Aggregation Pagination 2.graphql                 | agentSession/Performing Aggregations/Aggregation Pagination 2-response.json                 |
+| agentSession query for AAR, aggregation using innerpagination | agentSession/Performing Aggregations/AggregationWithinnerPaginattionAAR.graphql       | agentSession/Performing Aggregations/AggregationWithinnerPaginattionAAR-response.json       |
+| taskLegDetails query for CLR, aggregation using pagination    | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination.graphql   | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination - response.json |
+| taskLegDetails query for CLR, aggregation using pagination    | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2.graphql | taskLegDetails/Performing Aggregations/Group by Aggregation with Pagination 2-response.json |
