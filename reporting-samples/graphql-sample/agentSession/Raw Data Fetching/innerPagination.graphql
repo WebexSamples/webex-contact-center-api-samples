@@ -1,0 +1,27 @@
+{
+    agentSession(from: 1644387011443, to: 1646799853000) {
+        agentSessions {
+            isActive
+            agentId
+            agentName
+            channelInfo {
+                channelId
+                channelType
+                totalDuration
+                activities(first: 30) {
+                    totalCount
+                    nodes {
+                        id
+                        duration
+                        state
+                        startTime
+                    }
+                    pageInfo {
+                        hasNextPage
+                        endCursor
+                    }
+                }
+            }
+        }
+    }
+}
