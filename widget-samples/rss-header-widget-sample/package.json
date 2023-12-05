@@ -1,0 +1,27 @@
+{
+  "name": "rss-header-widget-sample",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/rss-widget.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "serve": "wds --watch",
+    "serve:cdn": "rollup -c --watch & web-dev-server --config web-dev-server.cdn.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@web/dev-server": "^0.4.1",
+    "@web/dev-server-legacy": "^2.1.0",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
+    "rollup": "^4.5.0"
+  }
+}
