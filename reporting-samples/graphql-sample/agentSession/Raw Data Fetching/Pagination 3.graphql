@@ -2,16 +2,16 @@
   # Pagination example 3
   # Continue passing the new cursor until the hasNextPage is set to false
   # Since the hasNextPage is set to false, no more pages are available.
-  agentSession(from: 1644859375000, to: 1671038575000
-  pagination : {
-    cursor :"fe836a59-84db-4b69-8cf8-d2bd336d8c71"
-  }
+  agentSession(from:1673308800000, to: 1701764519000
+    pagination : {
+      cursor :"c24396e3-75c9-45c1-adc2-32a194f63f33"
+    }
   ) {
     agentSessions {
       agentSessionId
       agentId
-      teamName
-      siteName
+      teamId
+      siteId
       startTime
       endTime
       isActive
