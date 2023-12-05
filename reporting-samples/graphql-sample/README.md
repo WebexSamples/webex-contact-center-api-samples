@@ -63,11 +63,7 @@ taskDetails(
 
 4. *filter* - Optional argument: accepts a *TaskDetailsFilters* object. This is used to filter results  based on some criteria, Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on some criteria; 
-   
-   >  [!NOTE]
-   > 
-   > `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on some criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
 6. *aggregations* - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations)  for more details.
 
@@ -103,11 +99,7 @@ agentSession(
 
 3. *filter* - Optional argument: accepts an *AgentSessionFilters* object. This is used to filter results based on a user defined criteria, Refer [filtering section](#support-for-filtering-data) for more details.
 
-4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object.This is used to filter results based on a user defined criteria.
-   
-   > [!NOTE]
-   > 
-   > `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object.This is used to filter results based on a user defined criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
 5. *aggregations* - Optional argument: accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
