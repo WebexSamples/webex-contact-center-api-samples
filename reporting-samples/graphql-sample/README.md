@@ -6,23 +6,27 @@ For a quick overview of the `search` API and how to use our documentation, refer
 
 ## Introduction
 
-A GraphQL API enables clients to construct queries in order retrieve data. The queries that can be constructed is defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
+A GraphQL API enables clients to construct queries in order retrieve data. The queries are defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
 
-Depending the data required the `search` API supports 3 types of queries :
+Depending on the data required the `search` API supports 3 types of queries :
 
-    1. **taskDetails** - This is used for retrieving/analyzing Contact / Task related data also represented as Contact Session Records (CSRs) and Contact Activity Records(CARs) in analyzer.
+    1. **taskDetails** - This is used for retrieving/analyzing Task (or Contact) related data. In analyzer this is represented as  Contact Session Records (CSRs) and Contact Activity Records (CARs).
 
-    2. **agentSession** - This is used for retrieving/analyzing Agent related data also represented as Agent Session Records (ASRs) and Agent Activity Records (AARs) in analyzer.
+    2. **agentSession** - This is used for retrieving/analyzing Agent related data. In analyzer this is represented as Agent Session Records (ASRs) and Agent Activity Records (AARs).
 
     3. **taskLegDetails** - This is used for retrieving/analyzing data related to Queues also represented as Queue Based Records or Call-Leg-Record (CLRs).
 
 The queries formed using these types can be broadly categorized into 2 operations 
 
-1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc, clients can define filter data and paginate. In SQL terminology this operation is analogous to  `SELECT id, channelType FROM task WHERE channelType='telephony'` 
-
-2. **Aggregations** - Performing aggregation operations on fields of records with  support for group-bys, filtering and pagination. In SQL terminology this operation is analogous to `SELECT COUNT(id), MAX(totalDuration) FROM task WHERE channelType='telephony' GROUP BY teamId, siteId`
+1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc. with the ability to filter on data apply pagination to get more records. In SQL terminology this operation is analogous to 
    
-   The following sections define each type in detail.
+    `SELECT id, channelType FROM task WHERE channelType='telephony'` 
+
+2. **Aggregations** - Performing aggregation operations on record fields with support for group-bys, filtering and pagination. In SQL terminology this operation is analogous to
+   
+   `SELECT COUNT(id), MAX(totalDuration) FROM task WHERE channelType='telephony' GROUP BY teamId, siteId`
+
+The following sections describe each query and supported operations in detail
 
 > [!TIP]
 > 
@@ -30,7 +34,7 @@ The queries formed using these types can be broadly categorized into 2 operation
 
 ## Query Definitions
 
-The following sections describe the query types in detail.
+The following sections describe the query types supported in detail.
 
 ### TaskDetails Query
 
@@ -51,21 +55,25 @@ taskDetails(
 
 #### Arguments
 
-1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span. By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
+3. *timeComparator* - Optional argument: accepts a value of `QueryTimeType` type. This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional Argument, Accepts an *TaskDetailsFilters* object, This is used to filter results  based on a user defined criteria, Refer filtering section for more details.
+4. *filter* - Optional argument: accepts a *TaskDetailsFilters* object. This is used to filter results  based on some criteria, Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *extFilter* - Optional Argument, Accepts an *TaskDetailsSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
+5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on some criteria; 
+   
+   >  [!NOTE]
+   > 
+   > `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-6. *aggregations* - Optional Argument, Accepts a List of `TaskV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+6. *aggregations* - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations)  for more details.
 
-7. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+7. *aggregationInterval*- Optional argument: accepts a `IntervalData` object. This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-8. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+8. *pagination* - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
 Sample query to fetch CSR fields can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
 
@@ -89,19 +97,23 @@ agentSession(
 
 #### Arguments
 
-1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, the `startTime` field used for comparision.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, the `startTime` field is used for comparision.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, the `startTime` field used for comparision.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span, the `startTime` field is used for comparision.
 
-3. *filter* - Optional Argument, Accepts an *AgentSessionFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+3. *filter* - Optional argument: accepts an *AgentSessionFilters* object. This is used to filter results based on a user defined criteria, Refer [filtering section](#support-for-filtering-data) for more details.
 
-4. *extFilter* - Optional Argument, Accepts an *AgentSessionSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
+4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object.This is used to filter results based on a user defined criteria.
+   
+   > [!NOTE]
+   > 
+   > `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *aggregations* - Optional Argument, Accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+5. *aggregations* - Optional argument: accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
-6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+6. *aggregationInterval*- Optional argument: accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+7. *pagination* - Optional argument: accepts an object of `Pagination` object, This is used to perform pagination. Refer [pagination section](#pagination-support-1) for more details.
 
 Sample query to fetch ASR fields can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
 
@@ -125,25 +137,25 @@ taskLegDetails(
 
 #### Arguments
 
-1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
+3. *timeComparator* - Optional argument: accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional Argument, Accepts an *TaskLegDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+4. *filter* - Optional argument: accepts an *TaskLegDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *aggregations* - Optional Argument, Accepts a List of `TaskLegV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+5. *aggregations* - Optional argument: accepts a List of `TaskLegV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
-6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+6. *aggregationInterval*- Optional argument: accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+7. *pagination* - Optional argument: accepts an object of `Pagination` object, This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
 A sample query to fetch CLR records can be found [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql), the response for the same is [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json).
 
 ## Support for Filtering data
 
-Filtering of data is supported using the `filter` and `extFilter` arguments which is supported in context of fetching raw data and while performing aggregations, irrespective of the operation the syntax remains the same.
+Filtering of data is supported using the `filter` and `extFilter` arguments.  Filtering  is supported in both the operations, fetching raw data or performing aggregations, the syntax for defining the filter criteria remains the same.
 
 The distinction between `filter` and `extFilter` is type of fields they allow filtering on. In a *taskDetails* query, `filter` is used for filtering data based on fields available in a CSR record and `extFilter` is used for filtering data based on fields available in a CAR record, Similarly in an *agentSession* query, `filter` is used for filtering based on  ASR fields and `extFilter` is used for filtering based on AAR fields.
 In a *taskLegDetails* query `extfilter`  is **not** supported and  `filter` can be used to filter data based on CLR fields.
@@ -225,15 +237,15 @@ filter: {
 }
 ```
 
-| Query Type/ Record                              | Query                                                                                   | Response                                                                                      |
-| ----------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR  using binary filter  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
-| agentSession query for ASR  using binary filter | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
-| taskLegs query for CLR  using binary filter     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
+| Query Type/ Record         | Query                                                                                   | Response                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| agentSession query for ASR | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
+| taskLegs query for CLR     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
 
 #### Compound operators for filtering
 
-Compound filter includes 2 types of operators - `and`  & `or` operators, these accept a list of filter expressions.
+Compound filter include 2 types of operators - `and`  & `or` operators, these accept a multiple filter criteria in a form of a list.
 
 Fetch records where channelType is telephony and status is either created or ended
 
@@ -263,7 +275,7 @@ Some sample queries using compound operators are given below.
 
 > [!TIP]
 > 
-> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for type system to Object Types
+> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for type system and Object Types
 
 Filtering is only supported for scalar fields and not supported for objects, however scalar fields inside objects can be filtered.
 
@@ -316,14 +328,14 @@ Each object requires the following mandatory arguments :
 | min         | Aggregates the value of the field across documents.             | Int, Long, Float                 |
 | max         | Returns the maximum value of the field across documents         | Int, Long, Float                 |
 | sum         | Returns the minimum value of the field across documents         | Int, Long, Float                 |
-| average     | Performs the average of the field across documents.             | Int, Long, Float                 |
+| average     | Returns the average of the field across documents.              | Int, Long, Float                 |
 | cardinality | Returns the count of unique value of the field across documents | Int, Long, Float, String boolean |
 
 The following arguments are optional :
 
 1. *filter* - Denotes the filter-criteria for documents for the particular aggregation.
 
-2. *predicate* - Applicable only for global variables, Refer Global Variable section.
+2. *predicate* - Applicable only for global variables, Refer to the [Global Variable section ](#performing-aggregations-on-global-variables)for more details.
 
 Refer below for the syntax of `aggregations` argument.
 
@@ -395,9 +407,9 @@ Some sample queries to perform group by on various data types.
 
 #### Interval based group bys.
 
-Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` in ther requested field and using the `aggregationInterval` argument, this accepts 2 parameters
+Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` as a requested field and using the `aggregationInterval` argument, this accepts 2 parameters
 
-* *interval* - Mandatory argument, Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
+* *interval* - Mandatory argument: Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
 
 | Query Span        | Supported intervals                                                        |
 |:----------------- |:--------------------------------------------------------------------------:|
@@ -405,9 +417,9 @@ Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` e
 | > DAY & <= 7 DAYS | `THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`                   |
 | > 7 DAYS          | `DAILY`, `WEEKLY`, `MONTHLY`                                               |
 
-* timezone - Optional argument, Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
+* timezone - Optional argument: Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
 
-Refer the below sample syntax for the aggregationIntervalArgument.
+Refer the below sample syntax for the `aggregationInterval` argument.
 
 ```graphql
 aggregationInterval : {
@@ -432,7 +444,7 @@ Sample queries to perform interval based aggregations.
 
 #### Pagination support
 
-When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer section for Pagination on more details.
+When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer to the [Pagination section](#pagination-support-1) on more details.
 
 ### Structure of aggregation query
 
@@ -509,7 +521,7 @@ Refer Data Dictionary section for fields supporting aggregation.
 
 ## Fetching Raw Data
 
-Fields from individual records can also fetched using the API, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
+Fields from individual records can also fetched, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
 
 Based on the fields that are requested and the filter criteria specified in the query, the API will read data from the appropriate type of record and return the requested field for each record. **It is recommended to fetch fields belonging to the same type of record**. Refer data dictionary section for more details.
 
@@ -527,7 +539,7 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 
 > [!NOTE]
 > 
-> When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days
+> When fetching AAR and CAR  data, the query span i.e. `from` and `to` cannot exceed more than 30 days
 
 Samples for various data types are given below 
 
@@ -545,7 +557,7 @@ To fetch data matching a filter criteria, the `filter` and `extFilter` arguments
 
 ### Pagination support for fetching raw data
 
-Pagination is supported for raw queries, Refer section on pagination for details
+Pagination is supported for raw queries, Refer [section on pagination](#pagination-support-1) for details
 
 ### Structure of a query to fetch raw data
 
@@ -571,7 +583,7 @@ The `search` API supports pagination for both the operations - performing aggreg
 }
 ```
 
-`hasNextPage` is a boolean field which determines if more data exists for the given query.  Based on the `hasNextPage` value clients can fetch the value for `endCursor`  fields which is a string field and acts as an identifier for the next page. The value of this field is passed in the subsquent query to fetch the next set of records. 
+`hasNextPage` is a boolean field which determines if more data exists for the given query. If  `hasNextPage` value is `true` clients can fetch the value for `endCursor`  field which is a string and acts as an identifier for the next page. `endCursor` value  is passed in the subsquent query to fetch the next set of records. 
 
 The `pagination` argument accepts `cursor` input parameter which accepts the `endCursor` value and fetches the next page. A sample is given below 
 
@@ -595,13 +607,14 @@ The `pagination` argument accepts `cursor` input parameter which accepts the `en
 
 The page size of a query depends on the query type and the operations, these are given below.
 
-| Operation         | Query Type     | Page Size | Maximum number of Records that can be fetched |
-| ----------------- | -------------- | --------- | --------------------------------------------- |
-| Fetch raw data    | taskDetails    | 250       | 100000                                        |
-| Fetch raw data    | agentSession   | 250       | No Limit                                      |
-| Fetch raw data    | taskLegDetails | 500       | 100000                                        |
-| Aggregation query | taskDetails    | 1000      | No Limit                                      |
-| Aggregation query | agentSession   | 1000      | No Limit                                      |
+| Operation         | Query Type     | Page Size | Total  number of Records that can be fetched with pagination |
+| ----------------- | -------------- | --------- | ------------------------------------------------------------ |
+| Fetch raw data    | taskDetails    | 250       | 100000                                                       |
+| Fetch raw data    | agentSession   | 250       | No Limit                                                     |
+| Fetch raw data    | taskLegDetails | 500       | 100000                                                       |
+| Aggregation query | taskDetails    | 1000      | No Limit                                                     |
+| Aggregation query | agentSession   | 1000      | No Limit                                                     |
+| Aggregation query | taskLegDetails | 1000      | No Limit                                                     |
 
 > [!NOTE] 
 > 
@@ -912,13 +925,13 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 * It is recommended to use *taskDetails* query for any Task related data instead of the older *task* query
 
-* For aggregations, use *aggregation* argument, the older argument named *aggregation*  supports limited functionalities.
+* For aggregations, use *aggregation* argument, the older argument  *aggregation*  supports limited functionalities and is not recommended to be used.
 
-* Performing group by's on Global Variables and skill related fields is not recommended as the performance may be impacted based on the data.
+* Performing group by's on Global Variables and skill related fields is not recommended as the performance may be impacted based on the volume of data.
 
 * Performing group by's on Int, Double or numerical fields or String fields which have  high number of unique values is not recommended.
 
-* It is recommended to pass `TrackingId` header with a valid UUID in the request payload, which allows support teams to debug any issues.
+* It is recommended to pass `TrackingId` header with a valid UUID in the request payload, this allows for support teams for easier debugging in case of  any issue.
 
 ## More Examples
 
