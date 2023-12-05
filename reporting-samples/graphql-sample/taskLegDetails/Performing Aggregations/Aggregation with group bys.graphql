@@ -9,7 +9,7 @@
     taskLegs {
       # queue name in the selection when aggregations argument is used implies that a group by has to be done using queue name
       queue {
-        name
+        id
       }
       # Note - aggregation does not count as group by, it is used to fetch results
       aggregation {

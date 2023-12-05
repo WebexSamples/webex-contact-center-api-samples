@@ -4,304 +4,29 @@
       "taskLegs": [
         {
           "queue": {
-            "name": null
+            "id": null
           },
           "aggregation": [
             {
               "name": "Call Legs count",
-              "value": 208.0
+              "value": 200.0
             }
           ]
         },
         {
           "queue": {
-            "name": ""
+            "id": ""
           },
           "aggregation": [
             {
               "name": "Call Legs count",
-              "value": 63.0
+              "value": 44.0
             }
           ]
         },
         {
           "queue": {
-            "name": "AksQueue1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 160.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "AksQueue2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 88.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "AutoTelephonyQueue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Basic-Queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 48.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Basic-Queue-SBR"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 33.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "CCB_Inbound_Queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat-AutoTest-BOT_Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 3.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat-Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 15.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat_config_QUE"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Dakshu-Q1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 2.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Dakshu-Q2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Email-Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 27.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "EmailQMigration"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Email_OAuth_Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 13.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "GT-Queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 18.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "InboundQueue-SRI"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 11.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Kuldeep-Q1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 17.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Kuldeep-Q2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 7.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Outdial-queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 29.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "QOutMigration"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 10.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue _QbasedAgent3"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 222.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF-Three"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 50.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF-Two"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 45.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRINIVAS"
+            "id": "01e1c2a6-064e-4293-b8dc-3eef72e15230"
           },
           "aggregation": [
             {
@@ -312,51 +37,7 @@
         },
         {
           "queue": {
-            "name": "Queuebased_Queue1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 105.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queuebased_Queue2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 38.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Ranjan-Q1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 3.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Skill_Queue_SRI_BAA"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 8.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Skill_Queue_SRI_LAA"
+            "id": "0bbb8f46-0ee6-42a6-a73c-564223673b4d"
           },
           "aggregation": [
             {
@@ -367,7 +48,128 @@
         },
         {
           "queue": {
-            "name": "Telephony_Q"
+            "id": "1ff47d8a-a8e7-49ea-88ff-6b707bd6d59a"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "316a8c0d-d7da-4997-8733-691622fffef9"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "4bbed815-1e43-413b-a6d8-71a6b40a3bb4"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 8.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "573cbc0a-dc40-42f9-86e5-300aece7e6c0"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "647ce247-3eb2-48ec-b168-584ac7a26a52"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "7617"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "785f2b6b-41fc-4484-8e43-dbe82c3237b4"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 13.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "796e5c59-abc9-4bed-bfa7-dc12f3869265"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "823f4c04-8bfc-435b-af3f-eab674400a0f"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "97f44aa6-c2ab-4770-9831-2bfd218c0bc7"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 13.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXUr0jWTH5Tuplm_Ixh7"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXUsch480G6K4V3pCCRH"
           },
           "aggregation": [
             {
@@ -378,7 +180,18 @@
         },
         {
           "queue": {
-            "name": "Telephony_Q-2"
+            "id": "AXUsj4hTL4YBh5I5YdVd"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 29.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXUswskt0G6K4V3pCEDD"
           },
           "aggregation": [
             {
@@ -389,12 +202,221 @@
         },
         {
           "queue": {
-            "name": "Webcallback_queue"
+            "id": "AXV5TOkP0G6K4V3pI0VD"
           },
           "aggregation": [
             {
               "name": "Call Legs count",
-              "value": 8.0
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXVt0gwaL4YBh5I5eNyH"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 15.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXVu9MLzL4YBh5I5eUL5"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 27.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 202.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXZ0dDC4rPjInEBUPA2u"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 7.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 58.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "AXfX6AGYEB_nTlX2pjrC"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "NA"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 47.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "ade02207-905d-4314-ad6e-908fa465dff4"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 48.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "c511de8c-4e30-4668-8a33-f392d9f8d2ac"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 33.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "c5922f98-2862-4e09-b08b-f1a4688c332d"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "cf9add70-5515-4eae-aeb3-f8c20cc273d7"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "d423209a-eeec-4bf9-8f7e-8e43e9b37fcd"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 105.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "d8de1852-f7ad-4f5e-9935-de7839b55ed2"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 37.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "dc0ccf14-c352-4037-aec3-c5653e899a62"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 149.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "e0395cd9-f3a9-488d-8eff-d21df550e1ea"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 11.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "e39c166d-0f73-4297-8872-4e3bccea5d3f"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 89.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 50.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "f69a05ec-6a51-4b6a-aeb8-e21afff8093a"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "fa928e4c-a743-475d-9939-0e83135b9057"
+          },
+          "aggregation": [
+            {
+              "name": "Call Legs count",
+              "value": 18.0
             }
           ]
         }

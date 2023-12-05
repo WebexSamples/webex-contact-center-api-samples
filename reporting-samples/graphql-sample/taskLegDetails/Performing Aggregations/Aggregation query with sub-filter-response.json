@@ -9,11 +9,11 @@
               "value": 1043.0
             },
             {
-              "name": "Call Legs handled by AksQueue2",
+              "name": "Call Legs handled by dummyQueue2",
               "value": 88.0
             },
             {
-              "name": "Call Legs handled by AksQueue1",
+              "name": "Call Legs handled by dummyQueue1",
               "value": 160.0
             }
           ]
