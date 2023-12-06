@@ -4,54 +4,54 @@
       "tasks": [
         {
           "lastAgent": {
-            "name": null
+            "id": null
           },
           "lastSite": {
-            "name": null
+            "id": null
           },
           "channelType": "telephony",
           "aggregation": [
             {
-              "name": "Average Queue Duration",
-              "value": 69583.0
-            },
-            {
-              "name": "Calls count",
-              "value": 9.0
-            }
-          ]
-        },
-        {
-          "lastAgent": {
-            "name": "Arryn Agent1"
-          },
-          "lastSite": {
-            "name": "Arryn_team_Site"
-          },
-          "channelType": "telephony",
-          "aggregation": [
-            {
-              "name": "Average Queue Duration",
-              "value": 99828.664
-            },
-            {
-              "name": "Calls count",
-              "value": 6.0
-            }
-          ]
-        },
-        {
-          "lastAgent": {
-            "name": "Arryn Agent1"
-          },
-          "lastSite": {
-            "name": "Arryn_team_Site1"
-          },
-          "channelType": "telephony",
-          "aggregation": [
-            {
-              "name": "Average Queue Duration",
+              "name": "average connectedDuration",
               "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 163.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 113300.16853932584
+            },
+            {
+              "name": "Calls count",
+              "value": 103.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "0c22156a-9061-4b46-8e98-09d1db5b713c"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 52672.0
             },
             {
               "name": "Calls count",
@@ -61,20 +61,343 @@
         },
         {
           "lastAgent": {
-            "name": "Arryn Agent3"
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
           },
           "lastSite": {
-            "name": "Arryn_team_Site2"
+            "id": "AWlDKoozl8fyim0A6xoI"
           },
           "channelType": "telephony",
           "aggregation": [
             {
-              "name": "Average Queue Duration",
-              "value": 45592.25
+              "name": "average connectedDuration",
+              "value": 9000.333333333334
+            },
+            {
+              "name": "Calls count",
+              "value": 9.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "16ee68aa-05c0-416b-b42c-3ef7bc1c8ec4"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 860571.2142857143
+            },
+            {
+              "name": "Calls count",
+              "value": 21.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 129322.02777777778
+            },
+            {
+              "name": "Calls count",
+              "value": 73.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "32877be6-a154-464f-8180-410cfc6eb2bd"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 84950.64285714286
+            },
+            {
+              "name": "Calls count",
+              "value": 90.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "350729b9-baae-4a4d-8bad-4cefcc169218"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 483146.0833333333
+            },
+            {
+              "name": "Calls count",
+              "value": 64.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "5039c08a-2d72-48a7-8601-7bc57ff2c7ae"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 2.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "6d42df5e-2d1a-4d7b-b24b-1b597ad96556"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 229964.4642857143
+            },
+            {
+              "name": "Calls count",
+              "value": 36.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "7cc50672-aa2d-4064-bf4d-7395e72148fb"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 102501.7258064516
+            },
+            {
+              "name": "Calls count",
+              "value": 147.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "7d3adf18-cd0f-45d5-8ed9-694eda0552e6"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 2685710.0
+            },
+            {
+              "name": "Calls count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 102164.48484848485
+            },
+            {
+              "name": "Calls count",
+              "value": 92.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "9c0adc9b-7ee4-4174-9dee-623ac7b9f24d"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 2.00643186E7
+            },
+            {
+              "name": "Calls count",
+              "value": 70.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "AYcAGcFV4ybhsd2xTYub"
+          },
+          "lastSite": {
+            "id": "AXlf1sIMToRECEzFuCB5"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Calls count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 163868.64705882352
+            },
+            {
+              "name": "Calls count",
+              "value": 34.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 110260.89024390244
+            },
+            {
+              "name": "Calls count",
+              "value": 226.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 83816.90425531915
+            },
+            {
+              "name": "Calls count",
+              "value": 114.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "d2440559-05a9-469a-ba79-03101cc34063"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 99078.48148148147
+            },
+            {
+              "name": "Calls count",
+              "value": 30.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "f858c3e4-32a9-45ce-b483-fec5302b66fc"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 103187.83333333333
             },
             {
               "name": "Calls count",
               "value": 8.0
+            }
+          ]
+        },
+        {
+          "lastAgent": {
+            "id": "fbd8a8c5-ed8e-4a39-9545-8822943ca22b"
+          },
+          "lastSite": {
+            "id": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c"
+          },
+          "channelType": "telephony",
+          "aggregation": [
+            {
+              "name": "average connectedDuration",
+              "value": 908960.0
+            },
+            {
+              "name": "Calls count",
+              "value": 61.0
             }
           ]
         }

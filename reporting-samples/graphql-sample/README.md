@@ -71,9 +71,12 @@ taskDetails(
 
 8. *pagination* - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
-Sample query to fetch CSR fields can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
+Sample Queries 
 
-Sample query to fetch CAR fields can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json).
+| Scenario Description                                                                                             | Query                                                                                     | Response                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Fetch CSR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch CAR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
 
 ### AgentSession Query
 
@@ -229,11 +232,11 @@ filter: {
 }
 ```
 
-| Query Type/ Record         | Query                                                                                   | Response                                                                                      |
-| -------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
-| agentSession query for ASR | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
-| taskLegs query for CLR     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
+| Usecase                                                 | Query / Record Type | Query                                                                                   | Response                                                                                      |
+| ------------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Fetch *telephony* tasks which are temarked *abandoned*. | taskDetails / CSR   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| agentSession query for ASR                              |                     | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
+| taskLegs query for CLR                                  |                     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
 
 #### Compound operators for filtering
 
@@ -257,11 +260,11 @@ Fetch records where channelType is telephony and status is either created or end
 
 Some sample queries using compound operators are given below.
 
-| Query Type/ Record                                  | Query                                                                                                      | Response                                                                                                            |
-| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR using compound operator   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
-| agentSession query for ASR  using compound operator | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
-| taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
+| Usecase                                                             | Query Type/ Record                                  | Query                                                                                                      | Response                                                                                                            |
+| ------------------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Fetch *telephony* tasks where totalDuration is between 30s and 60s. | taskDetails / CSR                                   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
+|                                                                     | agentSession query for ASR  using compound operator | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
+|                                                                     | taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
 ### Filtering based on Composite objects
 
@@ -296,13 +299,13 @@ extFilter : {
 
 Some samples for filtering on object types are given below
 
-| Query Type/ Record                                | Query                                                                                             | Response                                                                                                |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| taskDetails query with filter on object of CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json) |
-| taskDetails query with filter on object of CAR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters.graphql)  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters-response.json)  |
-| agentSession query with filter on object of ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
-| agentSession query for filtering on object of AAR | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
-| taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
+| Usecase                                                                 | Query Type/ Record                                | Query                                                                                             | Response                                                                                                |
+| ----------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Fetch tasks which are handled by a specific team                        | taskDetails / CSR                                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json) |
+| For a single interaction fetch the queues the contact is *parked* into. | taskDetails / CAR                                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters.graphql)  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters-response.json)  |
+|                                                                         | agentSession query with filter on object of ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
+|                                                                         | agentSession query for filtering on object of AAR | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
+|                                                                         | taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
 
 ## Performing Aggregations
 
@@ -343,13 +346,13 @@ aggregations: [
 
 Sample queries to perform aggegations on various data types are given below.
 
-| Query Type/ Record           | Query                                                                         | Response                                                                              |
-| ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query.graphql)     | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)    |
-| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR.graphql)  | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR-response.json)    |
-| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20query.graphql)    | [link](agentSession/Performing%20Aggregations/Aggregation%20query-response.json)      |
-| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR.graphql) | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR-response.json)   |
-| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql)  | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json) |
+| Usecase                                                  | Query Type/ Record           | Query                                                                         | Response                                                                              |
+| -------------------------------------------------------- | ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Fetch the count of tasks and their average totalDuration | taskDetails / CSR            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query.graphql)     | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)    |
+| Fetch number of unique  queues tasks were queued into.   | taskDetails / CAR            | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR.graphql)  | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR-response.json)    |
+|                                                          | agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20query.graphql)    | [link](agentSession/Performing%20Aggregations/Aggregation%20query-response.json)      |
+|                                                          | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR.graphql) | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR-response.json)   |
+|                                                          | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql)  | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json) |
 
 ### Performing group by operation
 
@@ -384,18 +387,18 @@ To perform a group by operation, the fields required for group bys should be inc
 
 Some sample queries to perform group by on various data types.
 
-| Description                                                       | Query                                                                                          | Response                                                                                               |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| taskDetails query to group by on a single field of CSR record     | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
-| taskDetails query to group by on multiple fields of CSR record    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
-| taskDetails query to group by on a single field of CAR record     | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
-| taskDetails query to group by on multiple fields of CAR record    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
-| agentSession query to group by on a single field of ASR record    | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
-| agentSession query to group by on multiple fields of ASR record   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
-| agentSession query to group by on a single field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
-| agentSession query to group by on multiple field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
-| taskLegDetails query to group by on single field of CLR record    | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
-| taskLegDetails query to group by on multiple fields of CLR record | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
+| Usecase                                                                                             | Query Type / Record                                               | Query                                                                                          | Response                                                                                               |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| For each queue, fetch the number of contacts that were handled and its average queue duration.      | taskDetails / CSR                                                 | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
+| For each site and agent, get the number of tasks handled and the average value of connectedDuration | taskDetails / CSR                                                 | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
+| For each queue the tasks are queued into, get the average duration of parked activity               | taskDetails / CAR                                                 | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
+| For each agent and queue, count the number of times the call was presented.                         | taskDetails / CAR                                                 | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
+|                                                                                                     | agentSession query to group by on a single field of ASR record    | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
+|                                                                                                     | agentSession query to group by on multiple fields of ASR record   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
+|                                                                                                     | agentSession query to group by on a single field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
+|                                                                                                     | agentSession query to group by on multiple field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
+|                                                                                                     | taskLegDetails query to group by on single field of CLR record    | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
+|                                                                                                     | taskLegDetails query to group by on multiple fields of CLR record | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
 
 #### Interval based group bys.
 
@@ -422,13 +425,13 @@ aggregationInterval : {
 
 Sample queries to perform interval based aggregations.
 
-| Query Type/ Record           | Query                                                                                                               | Response                                                                                                                  |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
-| taskDetails query for CAR    | [link](/taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)         | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
-| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
-| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
-| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
+| Usecase                                                                                                | Query Type/ Record           | Query                                                                                                               | Response                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Get the number of tasks handled on a daily basis (based on Asia/Kolkata) for each channelType and site | taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
+|                                                                                                        | taskDetails query for CAR    | [link](/taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)         | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
+|                                                                                                        | agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
+|                                                                                                        | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
+|                                                                                                        | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
 
 > [!NOTE]
 > 
@@ -474,13 +477,13 @@ aggregations: [
 
 Sample queries to perform aggegations with filter criteria on various data types are given below.
 
-| Query Type/ Record           | Query                                                                                                 | Response                                                                                                    |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
-| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
-| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
-| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
-| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
+| Usecase                                                                                                | Query Type/ Record           | Query                                                                                                 | Response                                                                                                    |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Get the number of tasks handled and their average total duration of tasks handled by particular queue. | taskDetails / CSR            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
+| Fetch average duration of parked event for *telephony* contacts                                        | taskDetails / CAR            | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
+|                                                                                                        | agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
+|                                                                                                        | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
+|                                                                                                        | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
 
 #### Aggregations with sub filters
 
@@ -499,13 +502,13 @@ aggregations: [
 
 Sample queries to perform aggegations with sub-filter criteria on various data types are given below.
 
-| Query Type/ Record           | Query                                                                                            | Response                                                                                               |
-| ---------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters.graphql)   | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters-response.json)   |
-| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR.graphql)       | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR-response.json)       |
-| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query-response.json)          |
-| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR.graphql)       | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR-response.json)       |
-| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter-response.json) |
+| Usecase                                                                 | Query Type/ Record           | Query                                                                                            | Response                                                                                               |
+| ----------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Fetch the number of tasks handled by multiple queues.                   | taskDetails / CSR            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters.graphql)   | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters-response.json)   |
+| Fetch the average duration customers are put on hold by specific agents | taskDetails / CAR            | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR.graphql)       | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR-response.json)       |
+|                                                                         | agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query-response.json)          |
+|                                                                         | agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR.graphql)       | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR-response.json)       |
+|                                                                         | taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter-response.json) |
 
 ### Fields supported for aggregations
 
@@ -535,13 +538,13 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 
 Samples for various data types are given below 
 
-| Description                              | Query                                                                                     | Response                                                                                        |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| taskDetails query to fetch CSR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| taskDetails query to fetch CAR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
-| agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
-| agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
-| taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
+| Usecase                                                                                                          | Description                              | Query                                                                                     | Response                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Fetch CSR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | taskDetails / CSR                        | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch CAR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | taskDetails / CAR                        | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+|                                                                                                                  | agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
+|                                                                                                                  | agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
+|                                                                                                                  | taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
 
 ### Filtering data
 
@@ -614,17 +617,17 @@ The page size of a query depends on the query type and the operations, these are
 
 Sample queries demonstrating pagination when fetching raw data are given below.
 
-| Query Type/ Record                    | Query                                                                                    | Response                                                                                          |
-| ------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                         | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 2   | [link](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                        | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| agentSession ASR pagination query 3   | [link](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                        | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                           |
-| taskDetails CSR pagination query 1    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
-| taskDetails CSR pagination query 2    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
-| taskDetails CSR pagination query 3    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
-| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                          | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                             |
-| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                         |
-| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                         |
+| Usecase                                             | Query Type/ Record                    | Query                                                                                      | Response                                                                                               |
+| --------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+|                                                     | agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                           | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                             |
+|                                                     | agentSession ASR pagination query 2   | [link](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                          | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                             |
+|                                                     | agentSession ASR pagination query 3   | [link](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                          | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                                |
+| Fetch the first page of records with CSR attributes | taskDetails /  CSR                    | [query1](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [response1](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| Fetch the next page of data                         | taskDetails  / CSR                    | [query2](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [response2](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
+| Fetch the next & the last page                      | taskDetails / CSR                     | [query3](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [response3](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
+|                                                     | taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                            | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                                  |
+|                                                     | taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                              |
+|                                                     | taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                              |
 
 ### Inner Pagination / Paginating CAR and AAR records
 
@@ -683,18 +686,18 @@ Sample queries for inner pagination of CAR and AAR are given below.
 
 In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
 
-| Query Type/ Record                                     | Query                                                                                                     | Response                                                                                                          |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| taskDetails CSR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
-| taskDetails CSR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
-| taskDetails CAR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
-| taskDetails CAR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
-| agentSession ASR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
-| agentSession ASR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
-| agentSession AAR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
-| agentSession AAR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
-| taskLegDetails CLR aggregation query with pagination 1 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
-| taskLegDetails CLR aggregation query with pagination 2 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
+| Usecase                                                                                                              | Query Type/ Record                                     | Query                                                                                                     | Response                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Get the number of contacts handled on a daily basis per agent, team, site, queue & entrypoint for each channel.      | taskDetails / CSR                                      | [query1](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                  | [response1](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)              |
+| Get the next page of records for the above query.                                                                    | taskDetails / CSR                                      | [query2](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)              | [response2](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)             |
+| Get the count of "connected" or "ctq-accepted" activities on a daily basis per agent, team, site, queue & entrypoint | taskDetails / CAR                                      | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
+| Get the next page of records for the above query.                                                                    | taskDetails / CAR                                      | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
+|                                                                                                                      | agentSession ASR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
+|                                                                                                                      | agentSession ASR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
+|                                                                                                                      | agentSession AAR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
+|                                                                                                                      | agentSession AAR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
+|                                                                                                                      | taskLegDetails CLR aggregation query with pagination 1 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
+|                                                                                                                      | taskLegDetails CLR aggregation query with pagination 2 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
 
 ## Global Variables Support
 
@@ -739,10 +742,10 @@ GV59: stringGlobalVariables(name: "GV59") {
 
 Some sample queries on globalVariables for taskDetails and taskLegDetails
 
-| Query Type                              | Query                                                                           | Response                                                                              |
-| --------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| taskDetails query on globalVariables    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)    |
-| taskLegDetails query on globalVariables | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
+| Usecase                                                      | Query Type           | Query                                                                           | Response                                                                              |
+| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Fetch value of integer, string and boolean global variables. | taskDetails / CSR    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)    |
+|                                                              | taskLegDetails / CLR | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
 
 ### Filtering based on global variables
 
@@ -773,10 +776,10 @@ Refer section of filtering  different operator available.
 
 Some sample queries on globalVariables with filtering for taskDetails and taskLegDetails
 
-| Query Type                                             | Query                                                                                         | Response                                                                                            |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| taskDetails query on globalVariables with filtering    | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)       | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
-| taskLegDetails query on globalVariables with filtering | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
+| Usecase                                                                   | Query Type                                             | Query                                                                                         | Response                                                                                            |
+| ------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Filter tasks based on a condition on string and integer global variables. | taskDetails / CSR                                      | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)       | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
+|                                                                           | taskLegDetails query on globalVariables with filtering | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
 
 ### Performing Aggregations on global variables
 
@@ -809,10 +812,10 @@ Refer section on aggregation for more details on aggregation types.
 
 Some sample aggregations on globalVariables for taskDetails and taskLegDetails
 
-| Query Type                                    | Query                                                                                   | Response                                                                                      |
-| --------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| taskDetails aggregation on globalVariables    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json)    |
-| taskLegDetails aggregation on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json) |
+| Usecase                                              | Query Type                                    | Query                                                                                   | Response                                                                                      |
+| ---------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Calculate sum of integer global variable named "GV2" | taskDetails / CSR                             | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json)    |
+|                                                      | taskLegDetails aggregation on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json) |
 
 ### Performing group by operation on global variables
 
@@ -896,10 +899,10 @@ Using aliasing group by can be done on multtiple global variables of the same ty
 
 Some sample group by's on globalVariables with aggregations for taskDetails and taskLegDetails
 
-| Query Type                                | Query                                                                                   | Response                                                                                             |
-| ----------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| taskDetails groupby on globalVariables    | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)     | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)            |
-| taskLegDetails groupby on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
+| Query Type                                                                                                                               | Query                                                                                   | Response                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Fetch count of calls and sum of integer global variable named "GV2", per unique value of string global variable named "Global_Language". | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)     | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)            |
+| taskLegDetails groupby on globalVariables                                                                                                | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
 
 ## Restrictions
 

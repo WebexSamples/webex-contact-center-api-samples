@@ -1,24 +1,25 @@
 {
   # Group by multiple fields can be done by including them in the selection set
+  # Query: For each site and agent, get the number of tasks handled and the average value of connectedDuration.
   taskDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1693526400000
+    to: 1698796800000
     aggregations: [
       { field: "id", type: count, name: "Calls count" }
       {
-        field: "lastQueue.duration"
+        field: "connectedDuration"
         type: average
-        name: "Average Queue Duration"
+        name: "average connectedDuration"
       }
     ]
   ) {
     tasks {
       # The order of fields matter and determine how the response will be, compare and check the response for Group by multiple fields 2.txt.
       lastSite {
-        name
+        id
       }
       lastAgent {
-        name
+        id
       }
       channelType
       aggregation {

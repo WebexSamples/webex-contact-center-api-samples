@@ -1,5 +1,6 @@
 {
     # Group Aggregations for Customer Activity Record
+    # Query: For each queue name the tasks are queued into, get the average duration of parked activity
     taskDetails(
         from: 1644859375000
         to: 1671038575000

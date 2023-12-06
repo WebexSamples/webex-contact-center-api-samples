@@ -1,5 +1,5 @@
 {
-  # Simple Aggregation query
+  # Fetch the count of tasks and their average totalDuration between the given time range.
   taskDetails(
     from: 1644859375000
     to: 1671038575000

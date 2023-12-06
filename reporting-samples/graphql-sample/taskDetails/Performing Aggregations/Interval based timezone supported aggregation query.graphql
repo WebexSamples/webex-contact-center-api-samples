@@ -1,6 +1,7 @@
 {
   # Interval Based aggregation for Timezone
   # Timezone can also be passed to ensure buckets are created based on the passed timezone.
+  # Query: Get the number of tasks handled on a daily (based on Asia/Kolkata) basis for each channelType and site
   taskDetails(
     from: 1644796800000
     to: 1676246400000

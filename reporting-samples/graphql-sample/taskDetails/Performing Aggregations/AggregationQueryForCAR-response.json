@@ -5,10 +5,6 @@
                 {
                     "aggregation": [
                         {
-                            "name": "Count of Id",
-                            "value": 644.0
-                        },
-                        {
                             "name": "Cardinality of queue",
                             "value": 5.0
                         }

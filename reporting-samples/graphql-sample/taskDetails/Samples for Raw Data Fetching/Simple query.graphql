@@ -1,8 +1,8 @@
 {
-    # Query to fetch requested Task attributes between the given epoch time in from and to.
-    # from and to are mandatory paramaters.
+    # Query to fetch CSR attributes for Tasks created between 1 September 2023 00:00:00 UTC and 7 September 2023 00:00:00 UTC
+    # from and to are mandatory parameters.
     # Note - response is paginated
-    taskDetails(from: 1644859375000, to: 1671038575000) {
+    taskDetails(from: 1693526400000, to: 1694044800000) {
         tasks {
             # Fields can be of different types - Boolean, String, Long, Int, List or Objects, refer schema to check available fields and corresponding data types.
             isActive # Boolean
@@ -13,7 +13,6 @@
             lastAgent {
                 # Object
                 id
-                name
             }
             queueCount # Int
             queueDuration

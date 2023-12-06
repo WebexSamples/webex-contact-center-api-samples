@@ -1,5 +1,6 @@
 {
     # Group Aggregations for Customer Activity Record
+    # Query: For each agent and queue, count the number of times the call was presented.
     taskDetails(
         from: 1644859375000
         to: 1671038575000
