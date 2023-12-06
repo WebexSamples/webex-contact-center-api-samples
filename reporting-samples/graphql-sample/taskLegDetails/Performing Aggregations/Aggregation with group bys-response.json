@@ -8,415 +8,320 @@
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 200.0
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": ""
+            "id": "058b5f45-d5ff-4595-a1df-925a402972e4"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 44.0
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": "01e1c2a6-064e-4293-b8dc-3eef72e15230"
+            "id": "1db6df1f-6469-4493-9081-b4c0819a103e"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 12.0
+              "name": "average ringingDuration",
+              "value": 14045.1875
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": "0bbb8f46-0ee6-42a6-a73c-564223673b4d"
+            "id": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 14.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "1ff47d8a-a8e7-49ea-88ff-6b707bd6d59a"
-          },
-          "aggregation": [
+              "name": "average ringingDuration",
+              "value": 11331.059701492537
+            },
             {
-              "name": "Call Legs count",
-              "value": 8.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "316a8c0d-d7da-4997-8733-691622fffef9"
-          },
-          "aggregation": [
+              "name": "average queueDuration",
+              "value": 9165.40625
+            },
             {
-              "name": "Call Legs count",
-              "value": 2.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "4bbed815-1e43-413b-a6d8-71a6b40a3bb4"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 8.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "573cbc0a-dc40-42f9-86e5-300aece7e6c0"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "647ce247-3eb2-48ec-b168-584ac7a26a52"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "7617"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 2.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "785f2b6b-41fc-4484-8e43-dbe82c3237b4"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 13.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "796e5c59-abc9-4bed-bfa7-dc12f3869265"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "823f4c04-8bfc-435b-af3f-eab674400a0f"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 3.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "97f44aa6-c2ab-4770-9831-2bfd218c0bc7"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 13.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXUr0jWTH5Tuplm_Ixh7"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXUsch480G6K4V3pCCRH"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 15.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXUsj4hTL4YBh5I5YdVd"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 29.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXUswskt0G6K4V3pCEDD"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 12.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXV5TOkP0G6K4V3pI0VD"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXVt0gwaL4YBh5I5eNyH"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 15.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "AXVu9MLzL4YBh5I5eUL5"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
+              "name": "consults into the queue",
               "value": 27.0
             }
           ]
         },
         {
           "queue": {
-            "id": "AXW8SsgIL4YBh5I5lPJV"
+            "id": "343bec8f-7915-436c-88d8-4da075c2d95b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 202.0
+              "name": "average ringingDuration",
+              "value": 37164.28571428572
+            },
+            {
+              "name": "average queueDuration",
+              "value": 34479.64864864865
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": "AXZ0dDC4rPjInEBUPA2u"
+            "id": "40162355-72f4-4dc1-b710-2f8c94e5d14b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 7.0
+              "name": "average ringingDuration",
+              "value": 17121.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 23361.536231884056
+            },
+            {
+              "name": "consults into the queue",
+              "value": 38.0
             }
           ]
         },
         {
           "queue": {
-            "id": "AXdNqOZm1OI4n5kldc5U"
+            "id": "43695f51-3340-4cf0-90f0-4d6f6e2ec0e2"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 58.0
+              "name": "average ringingDuration",
+              "value": 12125.65306122449
+            },
+            {
+              "name": "average queueDuration",
+              "value": 61976.575
+            },
+            {
+              "name": "consults into the queue",
+              "value": 4.0
             }
           ]
         },
         {
           "queue": {
-            "id": "AXfX6AGYEB_nTlX2pjrC"
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 1.0
+              "name": "average ringingDuration",
+              "value": 26179.984375
+            },
+            {
+              "name": "average queueDuration",
+              "value": 76538.65322580645
+            },
+            {
+              "name": "consults into the queue",
+              "value": 26.0
             }
           ]
         },
         {
           "queue": {
-            "id": "NA"
+            "id": "4a78059e-823b-46ef-ab71-e5d8b78830a0"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 47.0
+              "name": "average ringingDuration",
+              "value": 31137.403100775195
+            },
+            {
+              "name": "average queueDuration",
+              "value": 16210.977777777778
+            },
+            {
+              "name": "consults into the queue",
+              "value": 8.0
             }
           ]
         },
         {
           "queue": {
-            "id": "ade02207-905d-4314-ad6e-908fa465dff4"
+            "id": "603e2add-eedd-49c8-9f95-545fcbd28152"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 48.0
+              "name": "average ringingDuration",
+              "value": 19291.666666666668
+            },
+            {
+              "name": "average queueDuration",
+              "value": 4980.553191489362
+            },
+            {
+              "name": "consults into the queue",
+              "value": 9.0
             }
           ]
         },
         {
           "queue": {
-            "id": "c511de8c-4e30-4668-8a33-f392d9f8d2ac"
+            "id": "7c3c68e2-1c48-4288-a7a6-e2a7face0a4b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 33.0
+              "name": "average ringingDuration",
+              "value": 18405.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 6712.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 4.0
             }
           ]
         },
         {
           "queue": {
-            "id": "c5922f98-2862-4e09-b08b-f1a4688c332d"
+            "id": "88479b8a-5c9f-4a08-a9e3-c776b9c49351"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 1.0
+              "name": "average ringingDuration",
+              "value": 18354.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 25520.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": "cf9add70-5515-4eae-aeb3-f8c20cc273d7"
+            "id": "906e784d-4eec-44e7-95fc-e6d491ea1b6d"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 3.0
+              "name": "average ringingDuration",
+              "value": 30511.85714285714
+            },
+            {
+              "name": "average queueDuration",
+              "value": 90497.77777777778
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "id": "d423209a-eeec-4bf9-8f7e-8e43e9b37fcd"
+            "id": "dcf6a2ae-9040-4dd3-a9bb-7b0c1d12b98f"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 105.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "d8de1852-f7ad-4f5e-9935-de7839b55ed2"
-          },
-          "aggregation": [
+              "name": "average ringingDuration",
+              "value": 19009.41975308642
+            },
             {
-              "name": "Call Legs count",
-              "value": 37.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "dc0ccf14-c352-4037-aec3-c5653e899a62"
-          },
-          "aggregation": [
+              "name": "average queueDuration",
+              "value": 10292.134146341463
+            },
             {
-              "name": "Call Legs count",
-              "value": 149.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "e0395cd9-f3a9-488d-8eff-d21df550e1ea"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 11.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "e39c166d-0f73-4297-8872-4e3bccea5d3f"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 89.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 50.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "id": "f69a05ec-6a51-4b6a-aeb8-e21afff8093a"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
+              "name": "consults into the queue",
               "value": 10.0
             }
           ]
         },
         {
           "queue": {
-            "id": "fa928e4c-a743-475d-9939-0e83135b9057"
+            "id": "ea33290c-2293-4267-9517-65b05dd3faab"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 18.0
+              "name": "average ringingDuration",
+              "value": 11195.851063829787
+            },
+            {
+              "name": "average queueDuration",
+              "value": 22363.147058823528
+            },
+            {
+              "name": "consults into the queue",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "ee183f36-b5f8-4f91-a323-5e080c79a434"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 13178.857142857143
+            },
+            {
+              "name": "average queueDuration",
+              "value": 3333.031746031746
+            },
+            {
+              "name": "consults into the queue",
+              "value": 25.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "f91b18f3-cefa-4749-beca-59396cb9a754"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         }

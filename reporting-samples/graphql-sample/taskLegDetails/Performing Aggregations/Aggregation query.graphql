@@ -1,35 +1,19 @@
 {
   # Simple Aggregation query
   taskLegDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698796800000
     # Use aggregations to specify aggregation operations, multiple aggregations can be done in a single query.
     aggregations: [
       {
-        field: "id" # field Name on which aggregation needs to be done
-        type: count # operation name
-        name: "Count of Call Legs" # Identifier for the results
-      }
-      { field: "consultCount", type: min, name: "min of consultCount" }
-      {
-        field: "selfserviceDuration"
-        type: max
-        name: "max of selfserviceDuration"
-      }
-      {
-        field: "connectedDuration"
-        type: sum
-        name: "sum of connectedDuration"
+        field: "queueDuration" #  field Name on which aggregation needs to be done
+        type: average # operation name
+        name: "average of queueDuration" # Identifier for the results
       }
       {
         field: "ringingDuration"
         type: average
-        name: "count of ringingDuration"
-      }
-      {
-        field: "nextDestination.agent.name"
-        type: count
-        name: "count of nextDestination.agent.name"
+        name: "average of ringingDuration"
       }
     ]
   ) {
@@ -42,3 +26,4 @@
     }
   }
 }
+

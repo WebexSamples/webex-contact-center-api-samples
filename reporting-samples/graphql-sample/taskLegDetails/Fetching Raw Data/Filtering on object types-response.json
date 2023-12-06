@@ -3,134 +3,2144 @@
     "taskLegDetails": {
       "taskLegs": [
         {
-          "id": "b2107348-632e-4602-af79-50e74a11a92d-callLeg-1665484023763",
-          "taskId": "b2107348-632e-4602-af79-50e74a11a92d",
+          "id": "de2747e2-30f8-4116-adc8-51207ca0ba67-callLeg-1698732171432",
+          "taskId": "de2747e2-30f8-4116-adc8-51207ca0ba67",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 4806
+          },
+          "handleType": "normal"
         },
         {
-          "id": "dc85a138-efe6-4309-909a-00febdf6d68d-callLeg-1665479861583",
-          "taskId": "dc85a138-efe6-4309-909a-00febdf6d68d",
+          "id": "431c5b71-8ead-458d-a026-1a1b6c701db1-callLeg-1698731562967",
+          "taskId": "431c5b71-8ead-458d-a026-1a1b6c701db1",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 490470
+          },
+          "handleType": "normal"
         },
         {
-          "id": "6dd17a34-a34d-4c00-ae17-477b3aa2d09d-callLeg-1665478408658",
-          "taskId": "6dd17a34-a34d-4c00-ae17-477b3aa2d09d",
+          "id": "26d24aa0-1069-4d4b-bff1-cdcd851dfd94-callLeg-1698729431712",
+          "taskId": "26d24aa0-1069-4d4b-bff1-cdcd851dfd94",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1200797
+          },
+          "handleType": "dequeued"
         },
         {
-          "id": "3082de58-3017-47b5-abda-37366d0a1016-callLeg-1665475419560",
-          "taskId": "3082de58-3017-47b5-abda-37366d0a1016",
+          "id": "f13b71c3-6bc6-42cc-81bb-010cf3986520-callLeg-1698728353069",
+          "taskId": "f13b71c3-6bc6-42cc-81bb-010cf3986520",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 544918
+          },
+          "handleType": "normal"
         },
         {
-          "id": "a7c3257c-351a-4cd7-aed5-1bcc11402426-callLeg-1665474220158",
-          "taskId": "a7c3257c-351a-4cd7-aed5-1bcc11402426",
+          "id": "18b87c85-fea9-4c90-a14a-5e56797c81ed-callLeg-1698728217981",
+          "taskId": "18b87c85-fea9-4c90-a14a-5e56797c81ed",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 50169
+          },
+          "handleType": "normal"
         },
         {
-          "id": "953f4fe3-8c84-4f61-b902-f6c24fe40d8b-callLeg-c3fc1bf8-b553-4cd0-82e9-e4faa8056f07",
-          "taskId": "953f4fe3-8c84-4f61-b902-f6c24fe40d8b",
+          "id": "4b844eed-cba0-4b87-9835-24f9f0c0e635-callLeg-1698727791251",
+          "taskId": "4b844eed-cba0-4b87-9835-24f9f0c0e635",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
         },
         {
-          "id": "7546082d-f0f7-44e0-9c40-75a1572cff84-callLeg-9cfbfd32-908f-4db2-9e46-8c48cc5f2f4d",
-          "taskId": "7546082d-f0f7-44e0-9c40-75a1572cff84",
+          "id": "4b844eed-cba0-4b87-9835-24f9f0c0e635-callLeg-1698727771913",
+          "taskId": "4b844eed-cba0-4b87-9835-24f9f0c0e635",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 164992
+          },
+          "handleType": "dequeued"
         },
         {
-          "id": "afb06b29-d6be-46d7-ae1b-703d1bae2534-callLeg-13ac0d06-929d-4a6d-8e7b-b6537bee77aa",
-          "taskId": "afb06b29-d6be-46d7-ae1b-703d1bae2534",
+          "id": "6eaa3a31-9e70-4bd6-bd39-3943e98424fc-callLeg-1698727488168",
+          "taskId": "6eaa3a31-9e70-4bd6-bd39-3943e98424fc",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
         },
         {
-          "id": "415f76e2-7538-4428-8ce3-d2f487518e2c-callLeg-ad803517-5812-4a02-a9f0-bbd3457e8d7a",
-          "taskId": "415f76e2-7538-4428-8ce3-d2f487518e2c",
+          "id": "6eaa3a31-9e70-4bd6-bd39-3943e98424fc-callLeg-1698727388406",
+          "taskId": "6eaa3a31-9e70-4bd6-bd39-3943e98424fc",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 52340
+          },
+          "handleType": "dequeued"
         },
         {
-          "id": "415f76e2-7538-4428-8ce3-d2f487518e2c-callLeg-ec498cde-1dc7-4e4c-8704-0a59e4a5e663",
-          "taskId": "415f76e2-7538-4428-8ce3-d2f487518e2c",
+          "id": "cf2eb7a0-cd3a-4fb4-b669-fd6588708622-callLeg-1698727020751",
+          "taskId": "cf2eb7a0-cd3a-4fb4-b669-fd6588708622",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
         },
         {
-          "id": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac-callLeg-a5985f0d-61dd-4529-8eee-6be1522feb84",
-          "taskId": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac",
+          "id": "cf2eb7a0-cd3a-4fb4-b669-fd6588708622-callLeg-1698726797305",
+          "taskId": "cf2eb7a0-cd3a-4fb4-b669-fd6588708622",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 216255
+          },
+          "handleType": "normal"
         },
         {
-          "id": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac-callLeg-a41f5aab-015f-4ef8-aba5-ae01acf240b2",
-          "taskId": "78da31f1-4a6b-4fa8-9ab4-b914c2f36aac",
+          "id": "29b9b126-cf03-4626-b07c-616b29955872-callLeg-1698726665934",
+          "taskId": "29b9b126-cf03-4626-b07c-616b29955872",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
         },
         {
-          "id": "cb635744-2c3a-47d6-8a62-8d3a897e6204-callLeg-1a2f0609-7698-4728-8b2f-7948267349a6",
-          "taskId": "cb635744-2c3a-47d6-8a62-8d3a897e6204",
+          "id": "29b9b126-cf03-4626-b07c-616b29955872-callLeg-1698726428566",
+          "taskId": "29b9b126-cf03-4626-b07c-616b29955872",
           "channelType": "telephony",
-          "nextDestination": {
-            "agent": {
-              "name": "Standard Agent"
-            }
-          }
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 227703
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "354c8f5b-cbd1-4a50-b076-b5c0faa2bda3-callLeg-1698725589775",
+          "taskId": "354c8f5b-cbd1-4a50-b076-b5c0faa2bda3",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "354c8f5b-cbd1-4a50-b076-b5c0faa2bda3-callLeg-1698725300278",
+          "taskId": "354c8f5b-cbd1-4a50-b076-b5c0faa2bda3",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 261765
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "45a1ac6e-264c-4cc9-b5f0-f47a1e65324f-callLeg-1698641044757",
+          "taskId": "45a1ac6e-264c-4cc9-b5f0-f47a1e65324f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 226094
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "6f1250ee-245b-4fec-ab75-b361c8bca31b-callLeg-1698640827191",
+          "taskId": "6f1250ee-245b-4fec-ab75-b361c8bca31b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 45424
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "392ec263-c211-42de-8ca8-4af1005382cb-callLeg-1698640500712",
+          "taskId": "392ec263-c211-42de-8ca8-4af1005382cb",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 139914
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "6d05d460-db0c-48e7-ad4b-280d56181d80-callLeg-1698639837343",
+          "taskId": "6d05d460-db0c-48e7-ad4b-280d56181d80",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 234296
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "9de7055f-4427-4e71-977c-be56acde859f-callLeg-1698411657949",
+          "taskId": "9de7055f-4427-4e71-977c-be56acde859f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 337986
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b22d9c02-12c1-452b-9d0c-a40ae4d05e55-callLeg-1698395053085",
+          "taskId": "b22d9c02-12c1-452b-9d0c-a40ae4d05e55",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 161047
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b22d9c02-12c1-452b-9d0c-a40ae4d05e55-callLeg-1698394693725",
+          "taskId": "b22d9c02-12c1-452b-9d0c-a40ae4d05e55",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 234028
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b1fc4b82-367d-4ecd-82c7-33aa1142b540-callLeg-1698394241375",
+          "taskId": "b1fc4b82-367d-4ecd-82c7-33aa1142b540",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 289903
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "8481e861-e3a9-4ae8-a883-460d63e8c5df-callLeg-1698394020923",
+          "taskId": "8481e861-e3a9-4ae8-a883-460d63e8c5df",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 113585
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "323a6f51-c1c0-49c8-b7c3-46fa99a250a6-callLeg-1698391187362",
+          "taskId": "323a6f51-c1c0-49c8-b7c3-46fa99a250a6",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "323a6f51-c1c0-49c8-b7c3-46fa99a250a6-callLeg-1698391173842",
+          "taskId": "323a6f51-c1c0-49c8-b7c3-46fa99a250a6",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 91623
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "a3a11e7d-33e6-4cc0-a638-9ae13e8737af-callLeg-1698390644734",
+          "taskId": "a3a11e7d-33e6-4cc0-a638-9ae13e8737af",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "086680b9-5895-48f1-8225-7b953d065c03-callLeg-1698390493062",
+          "taskId": "086680b9-5895-48f1-8225-7b953d065c03",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "086680b9-5895-48f1-8225-7b953d065c03-callLeg-1698390481427",
+          "taskId": "086680b9-5895-48f1-8225-7b953d065c03",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 138237
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "3cfd4438-3fef-4c9a-83cf-709f8c6e2f15-callLeg-1698389929294",
+          "taskId": "3cfd4438-3fef-4c9a-83cf-709f8c6e2f15",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3cfd4438-3fef-4c9a-83cf-709f8c6e2f15-callLeg-1698389583913",
+          "taskId": "3cfd4438-3fef-4c9a-83cf-709f8c6e2f15",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 77624
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "bc5a9422-1ef9-4ff8-8427-1fabbeefbb12-callLeg-1698389306813",
+          "taskId": "bc5a9422-1ef9-4ff8-8427-1fabbeefbb12",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 76724
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "2dac4ee1-8608-43a6-b05f-92caf7ac5802-callLeg-1698387880560",
+          "taskId": "2dac4ee1-8608-43a6-b05f-92caf7ac5802",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 515259
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "d21321c4-b766-4412-a9b7-a24d646c5164-callLeg-1697795300564",
+          "taskId": "d21321c4-b766-4412-a9b7-a24d646c5164",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "d21321c4-b766-4412-a9b7-a24d646c5164-callLeg-1697795235873",
+          "taskId": "d21321c4-b766-4412-a9b7-a24d646c5164",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 7151
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "95757eed-e717-491d-a4dd-910720ec603c-callLeg-1697795132126",
+          "taskId": "95757eed-e717-491d-a4dd-910720ec603c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "95757eed-e717-491d-a4dd-910720ec603c-callLeg-1697795064734",
+          "taskId": "95757eed-e717-491d-a4dd-910720ec603c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 6642
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "93e74e8a-254f-4c71-9a7b-1d251c3f3e8a-callLeg-1697793970553",
+          "taskId": "93e74e8a-254f-4c71-9a7b-1d251c3f3e8a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "584df32a-96b7-4da2-ac1a-f0f377b58dde-callLeg-1697793725347",
+          "taskId": "584df32a-96b7-4da2-ac1a-f0f377b58dde",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 20261
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "1ec08e6b-e254-4e4e-b79e-e3cc119c8f37-callLeg-1697793501060",
+          "taskId": "1ec08e6b-e254-4e4e-b79e-e3cc119c8f37",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "1ec08e6b-e254-4e4e-b79e-e3cc119c8f37-callLeg-1697793444405",
+          "taskId": "1ec08e6b-e254-4e4e-b79e-e3cc119c8f37",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "71381134-8019-47cf-8360-e6092f3d2a1e-callLeg-1697793158135",
+          "taskId": "71381134-8019-47cf-8360-e6092f3d2a1e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "71381134-8019-47cf-8360-e6092f3d2a1e-callLeg-1697793069054",
+          "taskId": "71381134-8019-47cf-8360-e6092f3d2a1e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 20160
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "869c5177-a872-4af1-b620-aeccbee3b139-callLeg-1697792906001",
+          "taskId": "869c5177-a872-4af1-b620-aeccbee3b139",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "27d11f33-434b-4973-8acf-be43ed177f03-callLeg-1697782101464",
+          "taskId": "27d11f33-434b-4973-8acf-be43ed177f03",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 836
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "3bac5a15-ef69-441d-ac91-871182791e06-callLeg-1697780558211",
+          "taskId": "3bac5a15-ef69-441d-ac91-871182791e06",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 697
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "1056bb1c-7091-4883-b672-7085094a1330-callLeg-1697637725842",
+          "taskId": "1056bb1c-7091-4883-b672-7085094a1330",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "1056bb1c-7091-4883-b672-7085094a1330-callLeg-1697637672578",
+          "taskId": "1056bb1c-7091-4883-b672-7085094a1330",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 572
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "ab3571f2-64ff-4b6b-8c2d-3bc3dd17411a-callLeg-1697622017809",
+          "taskId": "ab3571f2-64ff-4b6b-8c2d-3bc3dd17411a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "aa101970-cdb9-4305-b293-da69f8bb4c1b-callLeg-1697621831537",
+          "taskId": "aa101970-cdb9-4305-b293-da69f8bb4c1b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "aa101970-cdb9-4305-b293-da69f8bb4c1b-callLeg-1697621733085",
+          "taskId": "aa101970-cdb9-4305-b293-da69f8bb4c1b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1041
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "b084e11b-4cdd-4213-837d-1cca512183de-callLeg-1697618414389",
+          "taskId": "b084e11b-4cdd-4213-837d-1cca512183de",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1535
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "5d626356-ea6c-4e06-9153-c494b7279baa-callLeg-1697617875432",
+          "taskId": "5d626356-ea6c-4e06-9153-c494b7279baa",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "2ab13053-e172-4bd8-a71c-de7fee5ca074-callLeg-1697555394479",
+          "taskId": "2ab13053-e172-4bd8-a71c-de7fee5ca074",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 684
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "e0791d69-714e-449f-8a69-7c6abfbd66f8-callLeg-1697554627903",
+          "taskId": "e0791d69-714e-449f-8a69-7c6abfbd66f8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3ff3a08b-a54e-41ff-aa0f-8f3fd4db5587-callLeg-1697554595337",
+          "taskId": "3ff3a08b-a54e-41ff-aa0f-8f3fd4db5587",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1439
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "838d64f5-8236-4c28-94ce-35099d58bac4-callLeg-1697463929722",
+          "taskId": "838d64f5-8236-4c28-94ce-35099d58bac4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "0edc43a9-6507-4209-af65-c6126601aee0-callLeg-1697463764048",
+          "taskId": "0edc43a9-6507-4209-af65-c6126601aee0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "439e3620-dcb8-4665-b7c1-204b72655273-callLeg-1697463714604",
+          "taskId": "439e3620-dcb8-4665-b7c1-204b72655273",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 759
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "3ca0f8d8-7a2c-40db-aa97-e7a80e109379-callLeg-1697463611479",
+          "taskId": "3ca0f8d8-7a2c-40db-aa97-e7a80e109379",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3ca0f8d8-7a2c-40db-aa97-e7a80e109379-callLeg-1697463556811",
+          "taskId": "3ca0f8d8-7a2c-40db-aa97-e7a80e109379",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "78c1a6e4-08c0-4271-9968-23eee2266e71-callLeg-1697463484426",
+          "taskId": "78c1a6e4-08c0-4271-9968-23eee2266e71",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "78c1a6e4-08c0-4271-9968-23eee2266e71-callLeg-1697463374210",
+          "taskId": "78c1a6e4-08c0-4271-9968-23eee2266e71",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8c00b8a6-c86c-46cf-9268-665bff935933-callLeg-1697463108770",
+          "taskId": "8c00b8a6-c86c-46cf-9268-665bff935933",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1014
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "0846d578-bb7a-4ded-b58b-b0198dc12eab-callLeg-1697463030995",
+          "taskId": "0846d578-bb7a-4ded-b58b-b0198dc12eab",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "861a20c4-7d29-45ff-a975-34898a846a18-callLeg-1697462837817",
+          "taskId": "861a20c4-7d29-45ff-a975-34898a846a18",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e61180ea-f5f2-47b9-b79a-5ac843695bea-callLeg-1697462758060",
+          "taskId": "e61180ea-f5f2-47b9-b79a-5ac843695bea",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "266dd1d2-b821-46bd-91ee-88e8bb2f76c5-callLeg-1697462631438",
+          "taskId": "266dd1d2-b821-46bd-91ee-88e8bb2f76c5",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "fb1ab351-bdf6-474c-ad45-b8a26628a6a8-callLeg-1697462565815",
+          "taskId": "fb1ab351-bdf6-474c-ad45-b8a26628a6a8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "531462af-763b-464c-989f-2ee5b4fd7534-callLeg-1697462547048",
+          "taskId": "531462af-763b-464c-989f-2ee5b4fd7534",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "712ce718-94b6-4c75-a2ca-9a891af9c2ad-callLeg-1697462418952",
+          "taskId": "712ce718-94b6-4c75-a2ca-9a891af9c2ad",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b7ff74b6-90e3-4ca1-b5c6-cfaba04b4adb-callLeg-1697462304885",
+          "taskId": "b7ff74b6-90e3-4ca1-b5c6-cfaba04b4adb",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "b7ff74b6-90e3-4ca1-b5c6-cfaba04b4adb-callLeg-1697462295783",
+          "taskId": "b7ff74b6-90e3-4ca1-b5c6-cfaba04b4adb",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1677
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "7505933f-e204-4012-95c0-519333b762ca-callLeg-1697462271203",
+          "taskId": "7505933f-e204-4012-95c0-519333b762ca",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1165
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "1798c453-21d0-4641-9a25-ffee8c2de20b-callLeg-1697461644314",
+          "taskId": "1798c453-21d0-4641-9a25-ffee8c2de20b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "1798c453-21d0-4641-9a25-ffee8c2de20b-callLeg-1697461635319",
+          "taskId": "1798c453-21d0-4641-9a25-ffee8c2de20b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "bab92808-ba9b-4a4e-83d7-6f00afacd341-callLeg-1697444898998",
+          "taskId": "bab92808-ba9b-4a4e-83d7-6f00afacd341",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "bab92808-ba9b-4a4e-83d7-6f00afacd341-callLeg-1697444860427",
+          "taskId": "bab92808-ba9b-4a4e-83d7-6f00afacd341",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "91e47f6d-b0c7-4e87-a912-0d3fb2232639-callLeg-1697439216585",
+          "taskId": "91e47f6d-b0c7-4e87-a912-0d3fb2232639",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "6058b5b1-a07d-44be-a896-da8eb5b53442-callLeg-1697439034276",
+          "taskId": "6058b5b1-a07d-44be-a896-da8eb5b53442",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e1ac9734-d8c3-410c-9d0a-0ae879bd5604-callLeg-1697438989846",
+          "taskId": "e1ac9734-d8c3-410c-9d0a-0ae879bd5604",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e1ac9734-d8c3-410c-9d0a-0ae879bd5604-callLeg-1697438931805",
+          "taskId": "e1ac9734-d8c3-410c-9d0a-0ae879bd5604",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "ebadfcfb-e323-409f-9537-51c9b15c5f52-callLeg-1697438836903",
+          "taskId": "ebadfcfb-e323-409f-9537-51c9b15c5f52",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "ebadfcfb-e323-409f-9537-51c9b15c5f52-callLeg-1697438619054",
+          "taskId": "ebadfcfb-e323-409f-9537-51c9b15c5f52",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "631c512b-1add-4c77-b2fe-1acafa435b36-callLeg-1697438445514",
+          "taskId": "631c512b-1add-4c77-b2fe-1acafa435b36",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "28ce4831-2964-4500-a9a7-84827af00472-callLeg-1697438242752",
+          "taskId": "28ce4831-2964-4500-a9a7-84827af00472",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "fac0df88-544b-4384-89a9-41fab9b7e506-callLeg-1697437984614",
+          "taskId": "fac0df88-544b-4384-89a9-41fab9b7e506",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b5f5dcb2-44fe-47f0-8c4a-55d68123c46c-callLeg-1697437814874",
+          "taskId": "b5f5dcb2-44fe-47f0-8c4a-55d68123c46c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8b4c0368-9125-43da-aa33-7308a43bc64a-callLeg-1697437580777",
+          "taskId": "8b4c0368-9125-43da-aa33-7308a43bc64a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 19
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "b3161750-706e-4662-9eb3-3ec6f6b9a224-callLeg-1697198984542",
+          "taskId": "b3161750-706e-4662-9eb3-3ec6f6b9a224",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "8abc67b6-87b2-4001-b4a4-b27cf84663aa-callLeg-1697198180272",
+          "taskId": "8abc67b6-87b2-4001-b4a4-b27cf84663aa",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 275
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "58117f87-6d8b-4e13-8cfc-77c269a84aaa-callLeg-1697197953693",
+          "taskId": "58117f87-6d8b-4e13-8cfc-77c269a84aaa",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12297
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "e222a04c-e736-4346-a7cc-542c94b2b58d-callLeg-1697197686248",
+          "taskId": "e222a04c-e736-4346-a7cc-542c94b2b58d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12387
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "2e99261d-df15-4b36-aab6-7a59391a1515-callLeg-1697197615803",
+          "taskId": "2e99261d-df15-4b36-aab6-7a59391a1515",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12124
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "1504e44d-e86e-488e-834e-9489fe8dec59-callLeg-1697197407309",
+          "taskId": "1504e44d-e86e-488e-834e-9489fe8dec59",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12146
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "a1f06409-01b2-49f4-986a-85b6c8c74150-callLeg-1697197196452",
+          "taskId": "a1f06409-01b2-49f4-986a-85b6c8c74150",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 21799
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "53ae361b-89bf-445a-ad0c-4358667cc8a3-callLeg-1697196857153",
+          "taskId": "53ae361b-89bf-445a-ad0c-4358667cc8a3",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 76993
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "e62ad045-94a1-48fe-8999-ac3aaec43440-callLeg-1697196564061",
+          "taskId": "e62ad045-94a1-48fe-8999-ac3aaec43440",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 43854
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "336230bc-3250-48b6-8190-24d9b3674732-callLeg-1697196503845",
+          "taskId": "336230bc-3250-48b6-8190-24d9b3674732",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 8905
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "9e965fcd-f1e0-4e4b-88c4-748f82817195-callLeg-1697196421740",
+          "taskId": "9e965fcd-f1e0-4e4b-88c4-748f82817195",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "a323da41-17d5-4efb-ab01-6ad672490700-callLeg-1697196155401",
+          "taskId": "a323da41-17d5-4efb-ab01-6ad672490700",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 28601
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "39d0df39-2dce-4251-b720-7a7f216d2f85-callLeg-1697196031995",
+          "taskId": "39d0df39-2dce-4251-b720-7a7f216d2f85",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 37669
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "04a2edd4-99c6-43f4-a4ac-c0ea18cc9e0e-callLeg-1697195834942",
+          "taskId": "04a2edd4-99c6-43f4-a4ac-c0ea18cc9e0e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 50208
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f6e9ca00-f4ee-4518-bc14-46158b6bf72d-callLeg-1697195504710",
+          "taskId": "f6e9ca00-f4ee-4518-bc14-46158b6bf72d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 179901
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8489a90e-d1a8-42f8-a4ba-c6dab9be5d7e-callLeg-1697195041979",
+          "taskId": "8489a90e-d1a8-42f8-a4ba-c6dab9be5d7e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 27490
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b458030c-f2b9-4b58-b10d-e9e34bca482e-callLeg-1697194956924",
+          "taskId": "b458030c-f2b9-4b58-b10d-e9e34bca482e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 29627
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e6825bc6-737a-492a-b3b1-558c76af6811-callLeg-1697194292312",
+          "taskId": "e6825bc6-737a-492a-b3b1-558c76af6811",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12040
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "55d4cdc1-c0cc-49f0-8727-68d83afc1c72-callLeg-1697194047055",
+          "taskId": "55d4cdc1-c0cc-49f0-8727-68d83afc1c72",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12212
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "675b04f6-b711-4967-b8ae-19dc5a2474da-callLeg-1697193968125",
+          "taskId": "675b04f6-b711-4967-b8ae-19dc5a2474da",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12311
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "4f05dd17-adfe-4364-b3ab-0b446c5c3bde-callLeg-1697193631170",
+          "taskId": "4f05dd17-adfe-4364-b3ab-0b446c5c3bde",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 19377
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "5570a118-8784-4d20-a44a-4ab634609a22-callLeg-1697193574705",
+          "taskId": "5570a118-8784-4d20-a44a-4ab634609a22",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 2206
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "8d942e10-1c49-40f5-9d4e-b597fd45089f-callLeg-1697193409014",
+          "taskId": "8d942e10-1c49-40f5-9d4e-b597fd45089f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 22549
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "cc5b940e-a605-417b-ab8e-b42f4de0f59b-callLeg-1697193246924",
+          "taskId": "cc5b940e-a605-417b-ab8e-b42f4de0f59b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 29546
+          },
+          "handleType": null
+        },
+        {
+          "id": "15b1b63b-2df4-4ec6-80f1-e91079140fb4-callLeg-1697192397356",
+          "taskId": "15b1b63b-2df4-4ec6-80f1-e91079140fb4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12702
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "8d111aa3-58c7-4638-9805-fe93401a0f25-callLeg-1697192163833",
+          "taskId": "8d111aa3-58c7-4638-9805-fe93401a0f25",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12107
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "33e03c3e-7ab2-46d2-8b39-0dbbf8e6650d-callLeg-1697191930249",
+          "taskId": "33e03c3e-7ab2-46d2-8b39-0dbbf8e6650d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 22547
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "2f433265-493d-4df2-b5a5-400157caa578-callLeg-1697191846737",
+          "taskId": "2f433265-493d-4df2-b5a5-400157caa578",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 51489
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "0555f227-a2cf-4e5a-ac00-6831871098f8-callLeg-1697191728715",
+          "taskId": "0555f227-a2cf-4e5a-ac00-6831871098f8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 39743
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "c5144b2f-b603-4132-9f08-99131dc6fa6c-callLeg-1697191446222",
+          "taskId": "c5144b2f-b603-4132-9f08-99131dc6fa6c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 27249
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "a8243ac3-ca88-4812-aaed-7d6dd49de069-callLeg-1697191153435",
+          "taskId": "a8243ac3-ca88-4812-aaed-7d6dd49de069",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 120314
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "746e7037-d0f5-480d-ac52-dbc8b0f3f12c-callLeg-1697190369547",
+          "taskId": "746e7037-d0f5-480d-ac52-dbc8b0f3f12c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "eb71aa20-043e-46b9-8eca-0301e3edf556-callLeg-1697114673366",
+          "taskId": "eb71aa20-043e-46b9-8eca-0301e3edf556",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 12912
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "d979e7c3-57eb-4bee-b68c-6f6271c27331-callLeg-1697109775185",
+          "taskId": "d979e7c3-57eb-4bee-b68c-6f6271c27331",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 26677
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "64d1cb69-5cb4-44e4-a752-86f42277fdf9-callLeg-1697109678952",
+          "taskId": "64d1cb69-5cb4-44e4-a752-86f42277fdf9",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "b84f86f3-96b0-4a13-8fd1-46730011267b-callLeg-1697108280814",
+          "taskId": "b84f86f3-96b0-4a13-8fd1-46730011267b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1179486
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3cc41fa9-7613-4338-8e97-bacc63e37a53-callLeg-1697107462683",
+          "taskId": "3cc41fa9-7613-4338-8e97-bacc63e37a53",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 195217
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "09d6b930-b129-42e7-ac27-0ece359079f0-callLeg-1697106959497",
+          "taskId": "09d6b930-b129-42e7-ac27-0ece359079f0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 40815
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "974d23eb-827a-4439-bba9-8766d063e5c2-callLeg-1697105439869",
+          "taskId": "974d23eb-827a-4439-bba9-8766d063e5c2",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 456421
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "017e273a-5099-4048-9313-ca4096f265b6-callLeg-1697105425390",
+          "taskId": "017e273a-5099-4048-9313-ca4096f265b6",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "61a195a0-e0d4-4e23-9df5-71ea786d09e3-callLeg-1697103381380",
+          "taskId": "61a195a0-e0d4-4e23-9df5-71ea786d09e3",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 21437
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "04066ae5-cb87-4886-af74-86191b392ed2-callLeg-1697103349997",
+          "taskId": "04066ae5-cb87-4886-af74-86191b392ed2",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "b5683030-9bdc-49c7-9333-c13c5b37312c-callLeg-1697102911315",
+          "taskId": "b5683030-9bdc-49c7-9333-c13c5b37312c",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 221668
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "6532ee71-5555-441a-90e6-dc27ec15207d-callLeg-1697102742800",
+          "taskId": "6532ee71-5555-441a-90e6-dc27ec15207d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30365
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "dc59dd95-2263-46f3-8274-d5a18719e1ac-callLeg-1697102699292",
+          "taskId": "dc59dd95-2263-46f3-8274-d5a18719e1ac",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30815
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "a6c7608c-03cc-40ff-a8ca-0fa93717c149-callLeg-1697102292197",
+          "taskId": "a6c7608c-03cc-40ff-a8ca-0fa93717c149",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30097
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "d4552d78-0fa1-4db2-afe5-45daa00c2ce9-callLeg-1697102007044",
+          "taskId": "d4552d78-0fa1-4db2-afe5-45daa00c2ce9",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30429
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "186207d2-ad13-442a-9d26-0391532b9e6b-callLeg-1697101924494",
+          "taskId": "186207d2-ad13-442a-9d26-0391532b9e6b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30614
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "a1b4d229-6515-41af-9459-8347aac7e71f-callLeg-1697101794130",
+          "taskId": "a1b4d229-6515-41af-9459-8347aac7e71f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30338
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "1646a2cc-a0b2-4923-a9a6-0d9c8b86b88b-callLeg-1697101704555",
+          "taskId": "1646a2cc-a0b2-4923-a9a6-0d9c8b86b88b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30716
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "865f9fa7-3dbb-418e-9e46-8796162e68e4-callLeg-1697099841087",
+          "taskId": "865f9fa7-3dbb-418e-9e46-8796162e68e4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30742
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "af64f17f-7827-4c28-9a37-717dbe96fb72-callLeg-1697099498686",
+          "taskId": "af64f17f-7827-4c28-9a37-717dbe96fb72",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30798
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "74e9d18c-b1b8-4d29-93bd-a9f50e3e7d7f-callLeg-1697098927503",
+          "taskId": "74e9d18c-b1b8-4d29-93bd-a9f50e3e7d7f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30070
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "5bd3eab7-5b17-4d44-9b98-4ad684021227-callLeg-1697098211844",
+          "taskId": "5bd3eab7-5b17-4d44-9b98-4ad684021227",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 986
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "7bcf4b93-7d33-4721-bb61-04aa434f0ed2-callLeg-1697098071822",
+          "taskId": "7bcf4b93-7d33-4721-bb61-04aa434f0ed2",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1194
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "24061a79-2a92-4a73-b941-dbb4f7b4f4f0-callLeg-1697097125258",
+          "taskId": "24061a79-2a92-4a73-b941-dbb4f7b4f4f0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 30149
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "94553932-9753-4f8f-8d86-adad172b8669-callLeg-1697011642377",
+          "taskId": "94553932-9753-4f8f-8d86-adad172b8669",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "abf5ec15-6cda-4a71-8066-3f9b140825aa-callLeg-1697011447338",
+          "taskId": "abf5ec15-6cda-4a71-8066-3f9b140825aa",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "abf5ec15-6cda-4a71-8066-3f9b140825aa-callLeg-1697011289260",
+          "taskId": "abf5ec15-6cda-4a71-8066-3f9b140825aa",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "96dd5c9a-f1e4-484b-a67a-93a8cced48d4-callLeg-1697011050529",
+          "taskId": "96dd5c9a-f1e4-484b-a67a-93a8cced48d4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "96dd5c9a-f1e4-484b-a67a-93a8cced48d4-callLeg-1697010990217",
+          "taskId": "96dd5c9a-f1e4-484b-a67a-93a8cced48d4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "eba5921f-a8f7-449f-ac3d-7c85d6367596-callLeg-1697010749672",
+          "taskId": "eba5921f-a8f7-449f-ac3d-7c85d6367596",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f2a9b9c3-e8f9-484c-830b-e950715fa31f-callLeg-1697010625356",
+          "taskId": "f2a9b9c3-e8f9-484c-830b-e950715fa31f",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "9f47654f-e2c6-4cba-9a80-076fc8b86fa1-callLeg-1697010567020",
+          "taskId": "9f47654f-e2c6-4cba-9a80-076fc8b86fa1",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1278
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "b78c5160-2ccb-4e64-a0e6-b61074b04659-callLeg-1696924699143",
+          "taskId": "b78c5160-2ccb-4e64-a0e6-b61074b04659",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b78c5160-2ccb-4e64-a0e6-b61074b04659-callLeg-1696924612217",
+          "taskId": "b78c5160-2ccb-4e64-a0e6-b61074b04659",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e8fe671e-2f07-43a9-b44a-f2ae91ed27da-callLeg-1696924571144",
+          "taskId": "e8fe671e-2f07-43a9-b44a-f2ae91ed27da",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e8fe671e-2f07-43a9-b44a-f2ae91ed27da-callLeg-1696924513377",
+          "taskId": "e8fe671e-2f07-43a9-b44a-f2ae91ed27da",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "c219288a-4f60-4354-a069-e03a013bedd1-callLeg-1696924471136",
+          "taskId": "c219288a-4f60-4354-a069-e03a013bedd1",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "c219288a-4f60-4354-a069-e03a013bedd1-callLeg-1696924410047",
+          "taskId": "c219288a-4f60-4354-a069-e03a013bedd1",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3f52812b-b28c-4d1b-9c6b-ce3013809ff7-callLeg-1696924270012",
+          "taskId": "3f52812b-b28c-4d1b-9c6b-ce3013809ff7",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 18758
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "6383ec17-98f5-4652-95d4-0cb1e59b2b4a-callLeg-1696924138996",
+          "taskId": "6383ec17-98f5-4652-95d4-0cb1e59b2b4a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "dd991e3b-f5b9-4957-ad36-c979c32e8c2e-callLeg-1696924022198",
+          "taskId": "dd991e3b-f5b9-4957-ad36-c979c32e8c2e",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "1908aeaa-2608-4a65-984b-a0c510c1d691-callLeg-1696923908563",
+          "taskId": "1908aeaa-2608-4a65-984b-a0c510c1d691",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1947
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "51dac93a-6775-41eb-8c83-c8fe5fe2ebde-callLeg-1696868096626",
+          "taskId": "51dac93a-6775-41eb-8c83-c8fe5fe2ebde",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "cf0edbe0-a17c-4207-b345-5e2bd3418057-callLeg-1696867108759",
+          "taskId": "cf0edbe0-a17c-4207-b345-5e2bd3418057",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "826d69ce-ee5c-408a-9ee6-766dee50b4df-callLeg-1696867058926",
+          "taskId": "826d69ce-ee5c-408a-9ee6-766dee50b4df",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "fd58e53a-a3f6-465d-93ba-fe942a4c4b7d-callLeg-1696866529938",
+          "taskId": "fd58e53a-a3f6-465d-93ba-fe942a4c4b7d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 7747
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "abc2a945-da8f-4ed5-8efb-7f63414b7d0b-callLeg-1696861910452",
+          "taskId": "abc2a945-da8f-4ed5-8efb-7f63414b7d0b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f24169b9-1351-417f-8a1a-fd279a8101bd-callLeg-1696861750942",
+          "taskId": "f24169b9-1351-417f-8a1a-fd279a8101bd",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8b353bfc-2ebc-4ba9-8df0-58a827a8a485-callLeg-1696861661859",
+          "taskId": "8b353bfc-2ebc-4ba9-8df0-58a827a8a485",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 5191
+          },
+          "handleType": "abandoned"
+        },
+        {
+          "id": "4422d527-3010-4040-bc33-418b952ae67a-callLeg-1696849542385",
+          "taskId": "4422d527-3010-4040-bc33-418b952ae67a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "4422d527-3010-4040-bc33-418b952ae67a-callLeg-1696849172170",
+          "taskId": "4422d527-3010-4040-bc33-418b952ae67a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "b3ba0170-771f-4a5d-85f3-8d357e777927-callLeg-1696845910459",
+          "taskId": "b3ba0170-771f-4a5d-85f3-8d357e777927",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "64fcd32f-b529-4195-be20-72b89c7b32b0-callLeg-1696845904124",
+          "taskId": "64fcd32f-b529-4195-be20-72b89c7b32b0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "64fcd32f-b529-4195-be20-72b89c7b32b0-callLeg-1696845748632",
+          "taskId": "64fcd32f-b529-4195-be20-72b89c7b32b0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "94bf2126-9ff4-446c-b36a-dd9726355e17-callLeg-1696845610102",
+          "taskId": "94bf2126-9ff4-446c-b36a-dd9726355e17",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "94bf2126-9ff4-446c-b36a-dd9726355e17-callLeg-1696845472398",
+          "taskId": "94bf2126-9ff4-446c-b36a-dd9726355e17",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 4982
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "29566aba-c743-4010-b7b2-c49c3f7ead7b-callLeg-1696845349867",
+          "taskId": "29566aba-c743-4010-b7b2-c49c3f7ead7b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "29566aba-c743-4010-b7b2-c49c3f7ead7b-callLeg-1696845256008",
+          "taskId": "29566aba-c743-4010-b7b2-c49c3f7ead7b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "336c61a5-6454-4c3c-b1ce-90b9cef6bbee-callLeg-1696844990514",
+          "taskId": "336c61a5-6454-4c3c-b1ce-90b9cef6bbee",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 4459
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "ab9463ea-1f3c-4e4f-98b8-7ec2244c89c0-callLeg-1696844812012",
+          "taskId": "ab9463ea-1f3c-4e4f-98b8-7ec2244c89c0",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 6297
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f6cb8190-d382-4bc5-baa3-68d5a43503e4-callLeg-1696843751942",
+          "taskId": "f6cb8190-d382-4bc5-baa3-68d5a43503e4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 4079
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "d3c54177-9333-4960-b19b-38025af07f88-callLeg-1696566211598",
+          "taskId": "d3c54177-9333-4960-b19b-38025af07f88",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "e12a51fe-f70a-43f1-b6d0-ca1bf06741db-callLeg-1696566132887",
+          "taskId": "e12a51fe-f70a-43f1-b6d0-ca1bf06741db",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "dequeued"
+        },
+        {
+          "id": "81b762d6-c8d5-4c69-b696-cadb4bc501fb-callLeg-1696565979758",
+          "taskId": "81b762d6-c8d5-4c69-b696-cadb4bc501fb",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "21e0e0e7-9bde-4770-82f0-69564a8d8cde-callLeg-1696565340112",
+          "taskId": "21e0e0e7-9bde-4770-82f0-69564a8d8cde",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f2386b41-e99b-4300-81de-98d22cc6fd53-callLeg-1696564505014",
+          "taskId": "f2386b41-e99b-4300-81de-98d22cc6fd53",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "c54f5ad8-df77-4503-abde-e5d4d62da237-callLeg-1696514847572",
+          "taskId": "c54f5ad8-df77-4503-abde-e5d4d62da237",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "a5947c63-4879-4947-8e26-339601d73bee-callLeg-1696514743338",
+          "taskId": "a5947c63-4879-4947-8e26-339601d73bee",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8d35ba52-8167-4241-8cba-3a97e7c5ccc7-callLeg-1696395304790",
+          "taskId": "8d35ba52-8167-4241-8cba-3a97e7c5ccc7",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "8d35ba52-8167-4241-8cba-3a97e7c5ccc7-callLeg-1696395238320",
+          "taskId": "8d35ba52-8167-4241-8cba-3a97e7c5ccc7",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "21bb1f8e-4afc-4770-8dde-006f10c96bb4-callLeg-1696394987024",
+          "taskId": "21bb1f8e-4afc-4770-8dde-006f10c96bb4",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "c9cc9bb0-e460-4c87-a4df-38a7a06d905d-callLeg-1696394354380",
+          "taskId": "c9cc9bb0-e460-4c87-a4df-38a7a06d905d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "cfec765a-0871-4564-9489-410411bedd7a-callLeg-1696394238183",
+          "taskId": "cfec765a-0871-4564-9489-410411bedd7a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "cfec765a-0871-4564-9489-410411bedd7a-callLeg-1696394172778",
+          "taskId": "cfec765a-0871-4564-9489-410411bedd7a",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "d19c3425-9656-4383-ae35-4610d2a2eacf-callLeg-1696394084397",
+          "taskId": "d19c3425-9656-4383-ae35-4610d2a2eacf",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "d19c3425-9656-4383-ae35-4610d2a2eacf-callLeg-1696394004931",
+          "taskId": "d19c3425-9656-4383-ae35-4610d2a2eacf",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 8875
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3212ab8a-95e9-484c-9b6d-e5f248ebd889-callLeg-1696393724946",
+          "taskId": "3212ab8a-95e9-484c-9b6d-e5f248ebd889",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 3560
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "759909ce-85a4-4eae-b3f6-c037bcc4440d-callLeg-1696393435012",
+          "taskId": "759909ce-85a4-4eae-b3f6-c037bcc4440d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 3239
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "09019b43-4f3b-429d-9f57-6610e4b507c8-callLeg-1696347282023",
+          "taskId": "09019b43-4f3b-429d-9f57-6610e4b507c8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "09019b43-4f3b-429d-9f57-6610e4b507c8-callLeg-1696347174310",
+          "taskId": "09019b43-4f3b-429d-9f57-6610e4b507c8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f957492e-afee-49f8-9fe6-9d8f163e7dbf-callLeg-1696347080675",
+          "taskId": "f957492e-afee-49f8-9fe6-9d8f163e7dbf",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f957492e-afee-49f8-9fe6-9d8f163e7dbf-callLeg-1696347027915",
+          "taskId": "f957492e-afee-49f8-9fe6-9d8f163e7dbf",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "ee76c59d-79a4-46e5-a884-7950818ff9c8-callLeg-1696346805473",
+          "taskId": "ee76c59d-79a4-46e5-a884-7950818ff9c8",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "3d2df382-7c10-4f37-8098-4b8b10ce3427-callLeg-1696346329964",
+          "taskId": "3d2df382-7c10-4f37-8098-4b8b10ce3427",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 1978
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "9dc1463a-2b6e-4829-85f0-ed5a6edf0f10-callLeg-1696346246179",
+          "taskId": "9dc1463a-2b6e-4829-85f0-ed5a6edf0f10",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "9dc1463a-2b6e-4829-85f0-ed5a6edf0f10-callLeg-1696346136711",
+          "taskId": "9dc1463a-2b6e-4829-85f0-ed5a6edf0f10",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "cf9f6a12-52c2-4f77-b628-7ef8a3acc0ce-callLeg-1696345876642",
+          "taskId": "cf9f6a12-52c2-4f77-b628-7ef8a3acc0ce",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "4ef515e6-146f-452c-86d9-d418332a211d-callLeg-1696345764853",
+          "taskId": "4ef515e6-146f-452c-86d9-d418332a211d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "self_service"
+        },
+        {
+          "id": "4ef515e6-146f-452c-86d9-d418332a211d-callLeg-1696345593894",
+          "taskId": "4ef515e6-146f-452c-86d9-d418332a211d",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 14178
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "a340d398-a5fe-4514-aeac-1e78692d2db1-callLeg-1696331377461",
+          "taskId": "a340d398-a5fe-4514-aeac-1e78692d2db1",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "a340d398-a5fe-4514-aeac-1e78692d2db1-callLeg-1696331280585",
+          "taskId": "a340d398-a5fe-4514-aeac-1e78692d2db1",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f231f5e9-b99c-44ac-ba46-5fd7d0d19b4b-callLeg-1696330842903",
+          "taskId": "f231f5e9-b99c-44ac-ba46-5fd7d0d19b4b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
+        },
+        {
+          "id": "f231f5e9-b99c-44ac-ba46-5fd7d0d19b4b-callLeg-1696330803076",
+          "taskId": "f231f5e9-b99c-44ac-ba46-5fd7d0d19b4b",
+          "channelType": "telephony",
+          "queue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb",
+            "duration": 0
+          },
+          "handleType": "normal"
         }
       ]
     }

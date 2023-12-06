@@ -5,28 +5,12 @@
                 {
                     "aggregation": [
                         {
-                            "name": "count of ringingDuration",
-                            "value": 16772.455
+                            "name": "average of ringingDuration",
+                            "value": 20050.972222222223
                         },
                         {
-                            "name": "min of consultCount",
-                            "value": 1.0
-                        },
-                        {
-                            "name": "count of nextDestination.agent.name",
-                            "value": 45.0
-                        },
-                        {
-                            "name": "max of selfserviceDuration",
-                            "value": 1.3578004E7
-                        },
-                        {
-                            "name": "Count of Call Legs",
-                            "value": 1291.0
-                        },
-                        {
-                            "name": "sum of connectedDuration",
-                            "value": 9.1921608E7
+                            "name": "average of queueDuration",
+                            "value": 26687.403263403263
                         }
                     ]
                 }
