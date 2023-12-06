@@ -1,20 +1,14 @@
 {
-    # Aggregation query for CAR fields.
+    # Fetch the count of unique queue names the tasks were queued to.
     taskDetails(
         from: 1644859375000
         to: 1671038575000
         aggregations: [
             {
-                field: "activities.nodes.id" # field Name on which aggregation needs to be done
-                type: count # operation name
-                name: "Count of Id" # Identifier for the results
-            },
-            {
                 field: "activities.nodes.queueName" # field Name on which aggregation needs to be done
                 type: cardinality # operation name
                 name: "Cardinality of queue" # Identifier for the results
-            },
-
+            }
         ]
     ) {
         tasks {

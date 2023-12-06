@@ -1,20 +1,22 @@
 {
-  # Filtering based on complex objects.
+  # Filter tasks which are handled by a specific team
   taskDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698796800000
     filter: {
       # Filter syntax for objects is same as how a field is queried.
       # For example - lastTeam followed by name.
-      lastTeam: { name: { equals: "Arryn_team2" } }
+      lastTeam: { id: { equals: "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb" } }
     }
   ) {
     tasks {
       id
+      channelType
       lastTeam {
-        name
         id
       }
+      connectedDuration
+      holdDuration
     }
     pageInfo {
       hasNextPage

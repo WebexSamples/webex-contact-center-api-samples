@@ -5,12 +5,12 @@
         {
           "aggregation": [
             {
-              "name": "AvgDurationQueue2",
-              "value": 47937.04
+              "name": "AvgHoldDurationDurationAgent2",
+              "value": 22000.555555555555
             },
             {
-              "name": "AvgDurationQueue1",
-              "value": 205558.65833333333
+              "name": "AvgHoldDurationDurationAgent1",
+              "value": 60133.071038251364
             }
           ]
         }

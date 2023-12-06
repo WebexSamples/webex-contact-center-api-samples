@@ -4,7 +4,7 @@
       "tasks": [
         {
           "lastQueue": {
-            "name": null
+            "id": null
           },
           "aggregation": [
             {
@@ -13,28 +13,13 @@
             },
             {
               "name": "Calls count",
-              "value": 6.0
+              "value": 152.0
             }
           ]
         },
         {
           "lastQueue": {
-            "name": "Arryn_Queue"
-          },
-          "aggregation": [
-            {
-              "name": "Average Queue Duration",
-              "value": 94017.57
-            },
-            {
-              "name": "Calls count",
-              "value": 7.0
-            }
-          ]
-        },
-        {
-          "lastQueue": {
-            "name": "Arryn_Queue1"
+            "id": "1db6df1f-6469-4493-9081-b4c0819a103e"
           },
           "aggregation": [
             {
@@ -43,22 +28,262 @@
             },
             {
               "name": "Calls count",
-              "value": 1.0
+              "value": 16.0
             }
           ]
         },
         {
           "lastQueue": {
-            "name": "Arryn_Queue2"
+            "id": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
           },
           "aggregation": [
             {
               "name": "Average Queue Duration",
-              "value": 51433.6
+              "value": 17237.1935483871
             },
             {
               "name": "Calls count",
-              "value": 10.0
+              "value": 147.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "343bec8f-7915-436c-88d8-4da075c2d95b"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 41729.0625
+            },
+            {
+              "name": "Calls count",
+              "value": 81.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "40162355-72f4-4dc1-b710-2f8c94e5d14b"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 35304.23225806452
+            },
+            {
+              "name": "Calls count",
+              "value": 314.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "421dc291-3d38-4892-932d-ab82b000ecc1"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 888.3333333333334
+            },
+            {
+              "name": "Calls count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "43695f51-3340-4cf0-90f0-4d6f6e2ec0e2"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 134474.6891891892
+            },
+            {
+              "name": "Calls count",
+              "value": 99.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 38995.21025641025
+            },
+            {
+              "name": "Calls count",
+              "value": 352.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "4a78059e-823b-46ef-ab71-e5d8b78830a0"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 14623.333333333334
+            },
+            {
+              "name": "Calls count",
+              "value": 207.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "603e2add-eedd-49c8-9f95-545fcbd28152"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 10581.136363636364
+            },
+            {
+              "name": "Calls count",
+              "value": 28.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "7c3c68e2-1c48-4288-a7a6-e2a7face0a4b"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 28394.833333333332
+            },
+            {
+              "name": "Calls count",
+              "value": 15.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "88479b8a-5c9f-4a08-a9e3-c776b9c49351"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 35843.583333333336
+            },
+            {
+              "name": "Calls count",
+              "value": 29.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "906e784d-4eec-44e7-95fc-e6d491ea1b6d"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 124160.95652173914
+            },
+            {
+              "name": "Calls count",
+              "value": 28.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "AWpEGCi_SVK96XSm20PY"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 5214.5
+            },
+            {
+              "name": "Calls count",
+              "value": 14.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "AXl7mqMg1ztWDZ3abPOp"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 51829.0
+            },
+            {
+              "name": "Calls count",
+              "value": 3.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "c806915b-02d2-407e-8e53-055dc1329b2f"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 815.1
+            },
+            {
+              "name": "Calls count",
+              "value": 31.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "dcf6a2ae-9040-4dd3-a9bb-7b0c1d12b98f"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 25040.620689655174
+            },
+            {
+              "name": "Calls count",
+              "value": 88.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "ea33290c-2293-4267-9517-65b05dd3faab"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 38383.2
+            },
+            {
+              "name": "Calls count",
+              "value": 119.0
+            }
+          ]
+        },
+        {
+          "lastQueue": {
+            "id": "ee183f36-b5f8-4f91-a323-5e080c79a434"
+          },
+          "aggregation": [
+            {
+              "name": "Average Queue Duration",
+              "value": 7049.75
+            },
+            {
+              "name": "Calls count",
+              "value": 71.0
             }
           ]
         }

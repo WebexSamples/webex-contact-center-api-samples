@@ -4,312 +4,924 @@
       "tasks": [
         {
           "isActive": false,
-          "id": "ae281309-8846-459e-a9c0-a7f75bc67f8e",
-          "createdTime": 1670939857225,
-          "endedTime": 1670939863762,
-          "totalDuration": 6537,
+          "id": "3da24a30-7221-49d2-af37-08700e9021c5",
+          "createdTime": 1694007067723,
+          "endedTime": 1694007101874,
+          "totalDuration": 34151,
           "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "49da0f05-f518-4c18-b846-757077a84d05",
-          "createdTime": 1670939581516,
-          "endedTime": 1670939586095,
-          "totalDuration": 4579,
+          "id": "1948878b-7cf8-4163-91ff-f2b069a2ebeb",
+          "createdTime": 1694004642257,
+          "endedTime": 1694004727255,
+          "totalDuration": 84998,
           "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "05d32bcf-cb76-40ea-b278-e789f544c7ec",
-          "createdTime": 1670938805601,
-          "endedTime": 1670938993359,
-          "totalDuration": 187758,
+          "id": "70c22738-ced5-4927-abdb-0ca85d2a4c32",
+          "createdTime": 1693982656732,
+          "endedTime": 1693982714292,
+          "totalDuration": 57560,
           "lastAgent": {
-            "id": null,
-            "name": null
-          },
-          "queueCount": 1,
-          "queueDuration": 75544
-        },
-        {
-          "isActive": false,
-          "id": "c8427789-6784-43e0-949d-33b153ee4adc",
-          "createdTime": 1670909247349,
-          "endedTime": 1670909358167,
-          "totalDuration": 110818,
-          "lastAgent": {
-            "id": null,
-            "name": null
-          },
-          "queueCount": 1,
-          "queueDuration": 74054
-        },
-        {
-          "isActive": false,
-          "id": "4aa37406-c681-46e2-b9a2-d40c8743f71c",
-          "createdTime": 1669295283706,
-          "endedTime": 1669295325730,
-          "totalDuration": 42024,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 16196
-        },
-        {
-          "isActive": false,
-          "id": "6aa8aaf4-bea9-4306-820f-bf14f9a1dd71",
-          "createdTime": 1669293896382,
-          "endedTime": 1669293934110,
-          "totalDuration": 37728,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 23598
-        },
-        {
-          "isActive": false,
-          "id": "d5b1cedc-8bf9-464b-8d31-f5d170c16e6b",
-          "createdTime": 1669293634373,
-          "endedTime": 1669293710693,
-          "totalDuration": 76320,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 56901
-        },
-        {
-          "isActive": false,
-          "id": "750dd88d-28a1-4a40-8c21-04149cd2a7bb",
-          "createdTime": 1669293059361,
-          "endedTime": 1669293098926,
-          "totalDuration": 39565,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 22481
-        },
-        {
-          "isActive": false,
-          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
-          "createdTime": 1669292152275,
-          "endedTime": 1669292772552,
-          "totalDuration": 620277,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 586689
-        },
-        {
-          "isActive": false,
-          "id": "96d85b2e-ffc0-43c1-be14-6b37782f67bb",
-          "createdTime": 1669291737400,
-          "endedTime": 1669291784204,
-          "totalDuration": 46804,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 28888
-        },
-        {
-          "isActive": false,
-          "id": "1bb23515-ff5b-4978-9419-bfb09a1efd3c",
-          "createdTime": 1669291664752,
-          "endedTime": 1669291728549,
-          "totalDuration": 63797,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 38084
-        },
-        {
-          "isActive": false,
-          "id": "54cf6196-d4bf-46f8-a1ce-6a244298afa4",
-          "createdTime": 1669291532375,
-          "endedTime": 1669291648609,
-          "totalDuration": 116234,
-          "lastAgent": {
-            "id": "59a05a3e-9c9f-4ba5-b79f-b4166eed62c8",
-            "name": "Arryn Agent3"
-          },
-          "queueCount": 1,
-          "queueDuration": 86776
-        },
-        {
-          "isActive": false,
-          "id": "0f8863cf-9fb0-466d-80e9-58598777ba02",
-          "createdTime": 1669291382416,
-          "endedTime": 1669291409349,
-          "totalDuration": 26933,
-          "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "5ff4f019-3d34-450e-9220-25b20c7389c8",
-          "createdTime": 1669286620110,
-          "endedTime": 1669286663455,
-          "totalDuration": 43345,
+          "id": "f2fe7256-cac9-4b6c-86a4-ae56353c1787",
+          "createdTime": 1693979047473,
+          "endedTime": 1693979136643,
+          "totalDuration": 89170,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
-          },
-          "queueCount": 1,
-          "queueDuration": 10872
-        },
-        {
-          "isActive": false,
-          "id": "6e2b62c7-a4c3-46fe-a649-541157968b77",
-          "createdTime": 1669285392418,
-          "endedTime": 1669285409433,
-          "totalDuration": 17015,
-          "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "8b802b5a-d383-4aba-9b2c-6cebc04d2d17",
-          "createdTime": 1669284826527,
-          "endedTime": 1669284841021,
-          "totalDuration": 14494,
+          "id": "e1c7e20a-f1b1-4bc7-babf-547b179f12ef",
+          "createdTime": 1693912237784,
+          "endedTime": 1693912421392,
+          "totalDuration": 183608,
           "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "4a7af0bd-0242-46ed-a596-dfacf81fe66a",
-          "createdTime": 1669284724831,
-          "endedTime": 1669284823754,
-          "totalDuration": 98923,
+          "id": "e34aeed9-ebd9-4e87-88a6-e33dad32d655",
+          "createdTime": 1693912195198,
+          "endedTime": 1693912222577,
+          "totalDuration": 27379,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 1,
-          "queueDuration": 56912
+          "queueDuration": 13938
         },
         {
           "isActive": false,
-          "id": "e9751ed7-1a9a-4757-a9d7-b25f5d222491",
-          "createdTime": 1669284649280,
-          "endedTime": 1669284716717,
-          "totalDuration": 67437,
+          "id": "afe8acc6-e955-4905-bd83-b4cd728acf59",
+          "createdTime": 1693912137312,
+          "endedTime": 1693912156811,
+          "totalDuration": 19499,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 1,
-          "queueDuration": 5415
+          "queueDuration": 3396
         },
         {
           "isActive": false,
-          "id": "d42000db-3017-4312-b274-680f161b36be",
-          "createdTime": 1669277243528,
-          "endedTime": 1669277339868,
-          "totalDuration": 96340,
+          "id": "d426207a-7666-4a77-bc87-ef33a3920a43",
+          "createdTime": 1693911990432,
+          "endedTime": 1693912115369,
+          "totalDuration": 124937,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
-          },
-          "queueCount": 1,
-          "queueDuration": 3561
-        },
-        {
-          "isActive": false,
-          "id": "37db9148-7b42-4e77-aacb-cd28935aafbe",
-          "createdTime": 1669276886250,
-          "endedTime": 1669276909177,
-          "totalDuration": 22927,
-          "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
           },
           "queueCount": 0,
           "queueDuration": 0
         },
         {
           "isActive": false,
-          "id": "59d4dbe3-0c5a-49d7-aa4d-06e6f63869aa",
-          "createdTime": 1669274379474,
-          "endedTime": 1669274551171,
-          "totalDuration": 171697,
+          "id": "cdaf511a-3692-402d-ad0b-870a14218a8d",
+          "createdTime": 1693911905597,
+          "endedTime": 1693911954305,
+          "totalDuration": 48708,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 1,
-          "queueDuration": 153658
+          "queueDuration": 35581
         },
         {
           "isActive": false,
-          "id": "28929047-3205-470c-87bf-45b1117b8468",
-          "createdTime": 1669274088242,
-          "endedTime": 1669274528767,
-          "totalDuration": 440525,
+          "id": "fed70076-8520-4e95-904a-4b4ad3454e74",
+          "createdTime": 1693911812246,
+          "endedTime": 1693911898535,
+          "totalDuration": 86289,
           "lastAgent": {
-            "id": "c2a46e03-1c6f-4945-9f17-17af41fae03c",
-            "name": "Arryn Agent1"
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 1,
-          "queueDuration": 416073
+          "queueDuration": 988
         },
         {
           "isActive": false,
-          "id": "cb2afd27-97d3-42d9-bade-bfaf938633a7",
-          "createdTime": 1669274000453,
-          "endedTime": 1669274084937,
-          "totalDuration": 84484,
+          "id": "821a8d5d-b206-4ff2-8703-1ee30471b423",
+          "createdTime": 1693911546172,
+          "endedTime": 1693911788503,
+          "totalDuration": 242331,
           "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
           },
           "queueCount": 1,
-          "queueDuration": 59151
+          "queueDuration": 7569
         },
         {
           "isActive": false,
-          "id": "1b0d94b9-cdd5-42ef-938f-6afdc37612ee",
-          "createdTime": 1669271083924,
-          "endedTime": 1669271143587,
-          "totalDuration": 59663,
+          "id": "05e35e25-e205-4839-b692-8cf1ba4d28f2",
+          "createdTime": 1693911132601,
+          "endedTime": 1693911434503,
+          "totalDuration": 301902,
           "lastAgent": {
-            "id": null,
-            "name": null
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 266535
+        },
+        {
+          "isActive": false,
+          "id": "49b18098-963b-4708-9820-02805441c694",
+          "createdTime": 1693911130450,
+          "endedTime": 1693911130828,
+          "totalDuration": 378,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1033pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1034pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep819pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1029pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1036pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": true,
+          "id": "int-test-backend-5sep1057pm",
+          "createdTime": 1693910954000,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep854pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep937pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep942pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1035pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1055pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "int-test-backend-5sep1107pm",
+          "createdTime": 1693910954000,
+          "endedTime": 1693910954050,
+          "totalDuration": 50,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "f6321028-5c10-43fd-9d80-64eaaa9f8252",
+          "createdTime": 1693910175800,
+          "endedTime": 1693910249450,
+          "totalDuration": 73650,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "a9714608-b476-483a-9530-a3971a7552c2",
+          "createdTime": 1693908948711,
+          "endedTime": 1693909039387,
+          "totalDuration": 90676,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "81936367-f2df-4bdc-a767-50506c8b9091",
+          "createdTime": 1693900698649,
+          "endedTime": 1693900841872,
+          "totalDuration": 143223,
+          "lastAgent": {
+            "id": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "f35dbb32-4979-43ae-ab0b-e540ab77a043",
+          "createdTime": 1693900519444,
+          "endedTime": 1693900636807,
+          "totalDuration": 117363,
+          "lastAgent": {
+            "id": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "d4fa470f-1768-4110-bf39-f151fd4f3ade",
+          "createdTime": 1693900317396,
+          "endedTime": 1693900507759,
+          "totalDuration": 190363,
+          "lastAgent": {
+            "id": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "f7031a01-ff97-48c6-873e-28c04b145c77",
+          "createdTime": 1693900153824,
+          "endedTime": 1693900260874,
+          "totalDuration": 107050,
+          "lastAgent": {
+            "id": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "64598c2b-4fd0-4701-b37d-420931219238",
+          "createdTime": 1693900040563,
+          "endedTime": 1693900141803,
+          "totalDuration": 101240,
+          "lastAgent": {
+            "id": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct4",
+          "createdTime": 1693896807350,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "AYcAGcFV4ybhsd2xTYub"
+          },
+          "queueCount": 2,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct5_1141",
+          "createdTime": 1693896807350,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "AYcAGcFV4ybhsd2xTYub"
+          },
+          "queueCount": 2,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct5",
+          "createdTime": 1693896807350,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": "AYcAGcFV4ybhsd2xTYub"
+          },
+          "queueCount": 2,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "af2db2a5-5c05-4469-a0d7-bed8eba2ddee",
+          "createdTime": 1693891624804,
+          "endedTime": 1693892795394,
+          "totalDuration": 1170590,
+          "lastAgent": {
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "adc8108f-4512-4477-a9ea-5af26f7add8b",
+          "createdTime": 1693826749213,
+          "endedTime": 1693826794214,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "4ec21b9f-2a99-4dc8-842e-d0fbe2ece84b",
+          "createdTime": 1693825995443,
+          "endedTime": 1693826040444,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "d29195cd-afa0-411c-89b6-88200c98e492",
+          "createdTime": 1693825994083,
+          "endedTime": 1693826039084,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "ac63354f-058d-4ec6-bdf7-e8c882f13876",
+          "createdTime": 1693825992827,
+          "endedTime": 1693826037828,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "dfb872e3-502c-4bf3-8ef7-1405e974c9a1",
+          "createdTime": 1693823706431,
+          "endedTime": 1693823751432,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "3ccf9d26-2d2b-430f-8fba-147b4f344eba",
+          "createdTime": 1693823585407,
+          "endedTime": 1693823630408,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "3d672ea9-d0fb-4f12-9e95-55f746d9919f",
+          "createdTime": 1693823577940,
+          "endedTime": 1693823622941,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "72fd1ff5-669f-4339-b2be-33d4fa2ad392",
+          "createdTime": 1693823418479,
+          "endedTime": 1693823463480,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "89341c95-79de-439d-96cf-6ad936f331b0",
+          "createdTime": 1693823179169,
+          "endedTime": 1693823224170,
+          "totalDuration": 45001,
+          "lastAgent": {
+            "id": "0e41abb3-fc74-412e-a4b9-ab49862fa00b"
+          },
+          "queueCount": 1,
+          "queueDuration": 5000
+        },
+        {
+          "isActive": false,
+          "id": "3f7fcd97-5054-42db-9b65-f3cee38901ab",
+          "createdTime": 1693814175970,
+          "endedTime": 1693814306343,
+          "totalDuration": 130373,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "2075f441-3e05-4f15-9eeb-5f2557725a94",
+          "createdTime": 1693574550051,
+          "endedTime": 1693574641039,
+          "totalDuration": 90988,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "49ed4ca6-4c36-4a89-bbb2-e8137ad2a604",
+          "createdTime": 1693573901105,
+          "endedTime": 1693574028076,
+          "totalDuration": 126971,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "2b9043f7-77bf-42b8-b6b0-8a6a557da52d",
+          "createdTime": 1693573692809,
+          "endedTime": 1693573840151,
+          "totalDuration": 147342,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "88b089e4-f0cf-4d25-9f73-34fb3ff093e6",
+          "createdTime": 1693573495117,
+          "endedTime": 1693573582444,
+          "totalDuration": 87327,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "96036168-236b-409d-b81b-2c0ef21fb950",
+          "createdTime": 1693573136705,
+          "endedTime": 1693573238809,
+          "totalDuration": 102104,
+          "lastAgent": {
+            "id": "32877be6-a154-464f-8180-410cfc6eb2bd"
+          },
+          "queueCount": 1,
+          "queueDuration": 529
+        },
+        {
+          "isActive": false,
+          "id": "32fe3bb9-558d-4f9b-85cd-11c1592c8ee9",
+          "createdTime": 1693573067198,
+          "endedTime": 1693573131390,
+          "totalDuration": 64192,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "44e907d1-439d-4293-a678-16e042fe7848",
+          "createdTime": 1693571718639,
+          "endedTime": 1693571820952,
+          "totalDuration": 102313,
+          "lastAgent": {
+            "id": "32877be6-a154-464f-8180-410cfc6eb2bd"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "2867a067-0b0a-44d6-928e-882966429a76",
+          "createdTime": 1693571337623,
+          "endedTime": 1693571419305,
+          "totalDuration": 81682,
+          "lastAgent": {
+            "id": "32877be6-a154-464f-8180-410cfc6eb2bd"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "4b959f87-4ec9-4946-b26e-ac3100adc35b",
+          "createdTime": 1693570690307,
+          "endedTime": 1693572487304,
+          "totalDuration": 1796997,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "85c46f93-8e71-4b57-9b0a-412d4e4269ef",
+          "createdTime": 1693570494109,
+          "endedTime": 1693570513915,
+          "totalDuration": 19806,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "8108cef0-8b32-4262-8d6b-c222b9f13db8",
+          "createdTime": 1693567958315,
+          "endedTime": 1693567976481,
+          "totalDuration": 18166,
+          "lastAgent": {
+            "id": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "541c77ce-b327-4dc9-8dfb-10f30db3858a",
+          "createdTime": 1693555425847,
+          "endedTime": 1693555467553,
+          "totalDuration": 41706,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "94eff248-3b32-4b3c-9d44-265b93cb6b2d",
+          "createdTime": 1693555306181,
+          "endedTime": 1693555398202,
+          "totalDuration": 92021,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "8063f965-a845-4193-919c-0411a066a94f",
+          "createdTime": 1693555117395,
+          "endedTime": 1693555301129,
+          "totalDuration": 183734,
+          "lastAgent": {
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": true,
+          "id": "931dab28-42de-465f-9b81-e0a80e2b3753",
+          "createdTime": 1693554902629,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "66bb34e7-b86b-4855-80f4-e3091d741efd",
+          "createdTime": 1693554871379,
+          "endedTime": 1693554949835,
+          "totalDuration": 78456,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "010a01fe-2a32-4e0d-a7b1-95aa2e80d4eb",
+          "createdTime": 1693554716760,
+          "endedTime": 1693554812583,
+          "totalDuration": 95823,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 60110
+        },
+        {
+          "isActive": false,
+          "id": "063d4a77-aeeb-4411-b264-3f763174413a",
+          "createdTime": 1693554549785,
+          "endedTime": 1693554579229,
+          "totalDuration": 29444,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": true,
+          "id": "35925590-8a2f-427e-8ee1-746817b12337",
+          "createdTime": 1693554452654,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "49ab9338-cce5-409e-86ab-77f9235bfc40",
+          "createdTime": 1693554428281,
+          "endedTime": 1693554464874,
+          "totalDuration": 36593,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 965
+        },
+        {
+          "isActive": true,
+          "id": "11d35af5-cdd3-4efa-be12-c5218d9f10dd",
+          "createdTime": 1693554312745,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "f884db34-eeef-4e8c-9513-dd7387e779b2",
+          "createdTime": 1693554281036,
+          "endedTime": 1693554345216,
+          "totalDuration": 64180,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 738
+        },
+        {
+          "isActive": false,
+          "id": "083937fd-a39e-4728-ac38-fc65706aa814",
+          "createdTime": 1693554228374,
+          "endedTime": 1693554245433,
+          "totalDuration": 17059,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": true,
+          "id": "4d86486c-2d3d-4408-9fa7-00324e118443",
+          "createdTime": 1693554145059,
+          "endedTime": -1,
+          "totalDuration": 0,
+          "lastAgent": {
+            "id": null
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "46918b95-2738-4d1c-acb8-e7b726e2b11b",
+          "createdTime": 1693554100841,
+          "endedTime": 1693554198289,
+          "totalDuration": 97448,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 274
+        },
+        {
+          "isActive": false,
+          "id": "00d6dbc0-33a3-4346-b912-5ea7273650ed",
+          "createdTime": 1693554042896,
+          "endedTime": 1693554075031,
+          "totalDuration": 32135,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 18311
+        },
+        {
+          "isActive": false,
+          "id": "22a4e1e3-5977-4cc2-b3e2-493fc441402e",
+          "createdTime": 1693553660117,
+          "endedTime": 1693553763857,
+          "totalDuration": 103740,
+          "lastAgent": {
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
+          },
+          "queueCount": 1,
+          "queueDuration": 8026
+        },
+        {
+          "isActive": false,
+          "id": "a29b6f17-d28d-427f-a657-eb24243bef66",
+          "createdTime": 1693553637476,
+          "endedTime": 1693553645648,
+          "totalDuration": 8172,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 0,
+          "queueDuration": 0
+        },
+        {
+          "isActive": false,
+          "id": "347bc7e2-344e-4c83-affb-210d7b72d69d",
+          "createdTime": 1693552473671,
+          "endedTime": 1693552570520,
+          "totalDuration": 96849,
+          "lastAgent": {
+            "id": "94515885-b59c-4d69-9768-8714d23e490c"
+          },
+          "queueCount": 1,
+          "queueDuration": 25783
+        },
+        {
+          "isActive": false,
+          "id": "d1d61376-cb62-41a8-a156-a4f65e5f17f5",
+          "createdTime": 1693552379405,
+          "endedTime": 1693552427480,
+          "totalDuration": 48075,
+          "lastAgent": {
+            "id": "ba8cc4c5-a6ef-42ff-a8c9-b6af31441731"
+          },
+          "queueCount": 1,
+          "queueDuration": 29225
+        },
+        {
+          "isActive": false,
+          "id": "c6500cb7-b751-45e0-b25c-6d33a91cc7da",
+          "createdTime": 1693551765835,
+          "endedTime": 1693551766201,
+          "totalDuration": 366,
+          "lastAgent": {
+            "id": null
           },
           "queueCount": 0,
           "queueDuration": 0

@@ -1,6 +1,6 @@
 {
-    # Sample query to fetch fields from Customer Activity Record(CAR)
-    taskDetails(from: 1696118400000, to: 1697760000000) {
+    # Query to fetch CAR attributes for Tasks created between 1 September 2023 00:00:00 UTC and 7 September 2023 00:00:00 UTC
+    taskDetails(from: 1693526400000, to: 1694044800000) {
         tasks {
             id
             channelType
@@ -9,10 +9,8 @@
                 totalCount
                 # Required fields from CAR.
                 nodes {
-                    id
                     eventName
-                    createdTime
-                    endedTime
+                    duration
                 }
                 pageInfo {
                     hasNextPage

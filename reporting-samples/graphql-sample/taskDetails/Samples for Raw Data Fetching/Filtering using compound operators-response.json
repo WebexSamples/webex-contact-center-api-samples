@@ -3,2003 +3,4503 @@
     "taskDetails": {
       "tasks": [
         {
-          "id": "cff02be0-275f-4899-9bee-61b6541d5129",
-          "totalDuration": 2608817,
-          "lastTeam": {
-            "id": "3c3b9967-8630-4524-b589-934078c5d30a",
-            "name": "test-team"
-          }
-        },
-        {
-          "id": "d349039b-819b-4d4d-af52-1592b32b9780",
-          "totalDuration": 6430,
-          "lastTeam": {
-            "id": "3c3b9967-8630-4524-b589-934078c5d30a",
-            "name": "test-team"
-          }
-        },
-        {
-          "id": "2ca86d93-2765-481d-895c-195bde00b7da",
-          "totalDuration": 2410227,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "66c199bc-141c-464d-822d-a3b2270e5025",
-          "totalDuration": 1044897,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "ddf85a1d-1614-478e-9c68-38040533c782",
-          "totalDuration": 3764,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "459e6bef-2976-41ab-96a1-09117a6a97aa",
-          "totalDuration": 3274,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "ab26e9f0-e5ad-4370-bdc3-0800f8388d10",
-          "totalDuration": 2674,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "78606aa6-9940-44f6-b03a-f09da0d9549c",
-          "totalDuration": 8136,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "92822b9b-af37-4f3e-8c17-71f2ce180a57",
-          "totalDuration": 2910,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "06d21577-b803-41ec-a5c2-4500f56bd77a",
-          "totalDuration": 4376,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "91636d6f-a8e9-4805-a3ff-e9d946a957a5",
-          "totalDuration": 5132,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "5f01f8bf-3a65-4ae1-b372-aeb5f0042d14",
-          "totalDuration": 3622,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "808b3f9f-1049-4f00-a244-2520697687c5",
-          "totalDuration": 5109,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0189a44a-2fb8-4b34-911f-8d44e4b79ddd",
-          "totalDuration": 4124236,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "d5476061-481d-448b-a52d-338ad5b60e79",
-          "totalDuration": 4975,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f6218a96-5c71-4bda-8606-89e5089a2257",
-          "totalDuration": 7362,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "5845f77c-d785-4098-8eb4-55805abbed67",
-          "totalDuration": 5036,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "c2c42480-96e4-4745-9f59-149b8c3fc996",
-          "totalDuration": 9487,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "aa24e50f-eda4-4e3a-8584-5442e81a51d5",
-          "totalDuration": 5369,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "51ce2e79-648d-435c-a54c-cf8269f2ed76",
-          "totalDuration": 8092,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "394151bf-5355-4935-b5bc-41a0c01f85cf",
-          "totalDuration": 6276,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "45aa5e46-6847-4640-a160-932fb8ebfd51",
-          "totalDuration": 8952,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "5f2b560c-237c-4ee5-9e9b-25e67111bb5e",
-          "totalDuration": 2412237,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "815a96ac-f248-4b75-ac4e-d776f72156ce",
-          "totalDuration": 640061,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "7c26e932-d212-4df6-992d-9a8f601daa2b",
-          "totalDuration": 1920,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "9ab65540-de71-4984-9317-a8581a3e7947",
-          "totalDuration": 1089206,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "2af32371-395e-4258-b389-81fd6f13d0e3",
-          "totalDuration": 6960,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "fb17eb42-8f46-48d6-bdca-4fd53a119df2",
-          "totalDuration": 869735,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "dc3f7495-9dee-4ec4-8443-8f5129ad2007",
-          "totalDuration": 31246531,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "14699f78-2fd3-4684-8138-2eb1d3188dc0",
-          "totalDuration": 9129,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "ed79b144-0be9-4d8c-b8e1-16c8b79419f5",
-          "totalDuration": 5001373,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "e1f278ac-9bfb-47ef-925f-1f70830bd8b3",
-          "totalDuration": 5001934,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "a7d6ebe9-e323-4427-867b-7bfaffb9f77e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "931a79dd-7f23-4bb9-8ae4-2363d6c73ea6",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1d7eeeca-e081-4c80-82b0-7a67cf2fa4f1",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "d650a5b1-eabd-498b-abf7-840777d961ca",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "079353a6-101b-4100-9476-4545328be887",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0d186a5b-48ae-4f6b-85a9-6530c82e8b0b",
-          "totalDuration": 855185,
-          "lastTeam": {
-            "id": "1d2b5102-4996-445e-b5af-ea27a47b63b0",
-            "name": "test-team-two"
-          }
-        },
-        {
-          "id": "ca97274f-0e8f-4f1b-b1b6-d7a986ec0b3a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "2dc8cab9-7264-4151-9427-5b9face82237",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "75ac4e89-8257-40b6-9f9f-098406b53bcd",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "e1b0f6d2-b2c4-4b5e-ac89-f60b6b4e4733",
-          "totalDuration": 571,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "c9fa0ffe-eed3-4963-ad12-6681a07e8812",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "95126048-bc4a-4c01-bf1f-dbec5758a03c",
-          "totalDuration": 595,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "76053bac-43a2-42e4-93f7-7363d5cc969f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "021d760a-4304-416e-ad03-3cf46eeda8a7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "18501f33-995d-463c-8316-35eedd49fa78",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f6515526-e549-4c5b-93d4-d93e07a8a24c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "41bcb788-f6fe-4808-b03a-be46714fed45",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "8b2af1df-6b52-4d79-afbb-73db8fbce7c7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "772c06e1-3cbb-45b7-a623-f11596622920",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "272fc2c3-fc4b-4989-a1b3-f93710228e41",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "d70ffe21-6cc4-4b4a-bd23-a4661e81b75d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "260cec5f-7f4d-4e98-be93-639d81473b56",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "7864034e-80be-44a8-bd02-1f46bc70223a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "61e417e5-f93b-4224-937d-ef44f544129c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "fbbb417d-efd4-485c-b942-193b2c510c0c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "0d6ca1f0-95af-4060-8174-5e50e4606cc4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "3150d023-60ae-4492-8f1f-19d6dac40bef",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "83107bd9-fbe1-46ad-bece-065372f807fe",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f8d380d6-06d1-4fa2-9156-e980c7cc0f96",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "269d1c13-40ea-4814-a6dc-d0dff64f71fe",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "4b7dd98a-35ce-41af-a711-9822d330bfe2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "5e091b7a-dee2-44c6-bdcd-6112fb4d3f3a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "17b36362-702a-4b5b-abf9-a6a1627d630d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "6aaf9d2d-9497-4395-8d9d-7fe6f1423156",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "2e485339-9582-43b0-b3b5-ae2dee9cb072",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "c41b3fd8-64cc-4e08-bd5c-a43c80292e11",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "d1ba60e0-921b-4801-8a90-01da83ead1a2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "b0d45dd0-13cf-4d85-822e-0c2bc1840778",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "600cdfb8-b669-4d80-a650-009bc1bb7446",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "294bff92-bb24-47dc-a1e0-f4967cbb4bd1",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "f9f50e0b-c0d5-42ed-8e70-6024eecdcbe3",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f95e97fd-f18e-4d3c-ac7d-fd5c86ff4ac2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0b02ef98-a1d9-4e45-96e4-6a26772117ee",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "e9cc2b7c-9417-46d7-bd4e-cf77ec3e371e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "128e681d-ae5f-4c10-9796-3d2aeb80069a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "c0d5c534-23e7-4211-b992-d1d790c7efc7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "6ee57492-62aa-4616-b2f9-4db77c11c649",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "01929414-354d-437f-a908-8da06b532e0b",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1224aaf7-c1d9-4786-b829-5121f40d236b",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f720d1e4-cfd4-412a-8fc3-3e3ed9e92549",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "fcc44423-3af3-48d5-8ce6-f34333750123",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "4872084f-f05b-4897-838b-1d4f5768e79d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "3abb1797-2518-4f53-a59e-72f4b316598f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "6ae37c0c-9a94-42b6-a578-b0234fd3be0d",
-          "totalDuration": 5438,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "7c284211-3b9d-48cc-8c16-313c9125da13",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "45aec74b-23e2-4967-abd6-00de93785199",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "3e8ef57d-c18c-46f7-a35c-6b9abd75e3aa",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "51121552-765a-4488-8392-71db2858045d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "3f32878c-86f4-4b66-b001-cfe761c3d40a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "b35b4761-5977-4f83-a29e-be3fae33e67a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "1cf85b20-2a70-422e-baa6-814eed72bdfc",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "74528415-acdb-48e9-8a3a-42e543894f1e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "ce7147df-751c-4c79-89f7-c74904fe5f3f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "8a51869c-db6d-4ddf-861c-366a1a39a697",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "a30308b7-aef1-4d2c-8af1-b576c6964c66",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "8ad687f4-17c0-4078-964c-227e7b764974",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "e488ce88-109b-4fa7-80af-17bbd18dbbfb",
-          "totalDuration": 484,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "cf6a7d15-1474-4e32-aa24-cb5cc2708ba4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "d3e96c78-2d0c-4c57-bad8-ada99e16cd29",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "98b4f6ea-5f80-45a0-9ed9-14d23cbb5945",
-          "totalDuration": 2138,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "32f2e96f-af36-4b44-aea6-9ad22abc65b7",
-          "totalDuration": 8652,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "10be7495-882a-43b6-903c-3bab1e34f1e4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "7fb3f45f-8d81-4f6b-ad74-d3914d71aae9",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "81f0304d-8710-4b23-9cf2-de738839afdf",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "b17b4810-78cf-4f4b-bbad-740e2009d45c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "931ad078-4401-463f-94ca-60b391305b6f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "98572386-7685-428a-bb6d-9c0e63c491e2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "81d6e830-0c7b-4e48-85de-0904cd9ad51a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1f13d6e2-09b0-445a-a9ee-9af23d286da3",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1b1a78ab-142e-4f4d-8c88-99966a94dfba",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "4eeb3e67-a78a-4d24-856c-298607179c1d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "de951e55-69fb-4f82-8cfb-ec2a7fb2abb5",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "f2f0cf7d-84c3-4a7b-aa33-af4386616ee7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "72e51334-b2af-48c0-9330-468652088182",
-          "totalDuration": 8695,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "e3c52d43-1d5f-4b20-b431-fedd7b884973",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "02316f45-55c9-4256-a24a-412dffbc078f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0dcbb5b9-83d8-499a-bbe1-8fe81246c633",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "6360795f-d7bf-4db6-953f-3e92572c2496",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1e05b0a5-516a-467b-919a-04f4fc4859d6",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "55602723-26ec-4dd0-9c85-0affaa8da56f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "95a3fcb9-9074-4b59-84bc-b15e81cd2d42",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "4a11dabf-e252-4ce1-a326-f0fee6ad3969",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "cb71f454-63c1-491d-bbf0-6db2f43ccf7f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1e3fce54-c5d6-478f-a70f-cf5fd54dbc7e",
-          "totalDuration": 6089,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "3f81a4fb-4304-4d17-a65a-769d6fbc8b53",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "e262b692-d879-4869-9e66-0f7493e6c6c2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "3873742a-94de-4d3a-9683-761ff2277bc0",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "fbcb9604-1aee-41ad-8bb4-a86d30d8817c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "f1c6efea-317e-4caa-883a-7814c6098fbd",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "72d63f8b-8a9c-4902-9c2e-251f76bbe6b0",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "5979a19e-3048-45f7-bb7c-c93d632569b5",
-          "totalDuration": 8463,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "faa65161-0ab7-4765-a2d6-fcc94f44fd74",
-          "totalDuration": 3822026,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "fdee2127-469b-44cf-a5e0-f3d1c31c0b79",
-          "totalDuration": 785714,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "1c0c30f2-9c27-4e6e-8d03-14b716fb440c",
-          "totalDuration": 3188235,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "1f619d1f-a1a7-435d-9cc8-149882d6463e",
-          "totalDuration": 3602,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "a885f33b-0ec4-4d75-9e2f-6de297c2c274",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "f5b86e4f-0ec4-4ea1-bfae-24de34af9c9c",
-          "totalDuration": 5689520,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "069cef5b-748a-403a-aaf8-783bf9a475d6",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "ca7249cc-80d0-4473-a334-d6f0ce2fa6ce",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "a9f2dd5c-fe03-463d-bc32-1a572d41dbf9",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "8f1cc2d7-cc25-4112-825b-93873a99eec5",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0338e8a9-2f86-429b-8d7c-962b29a1f7b7",
-          "totalDuration": 1232401,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "b2cca57e-391c-402c-8664-6df5b29736e3",
-          "totalDuration": 730612,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "d0a86f22-a3f0-48e4-a0d7-4e6472bc222b",
-          "totalDuration": 2564,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "d085861a-db75-492a-a127-421f4fa5ab99",
-          "totalDuration": 789885,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "e07873f4-a3ab-4a26-ac60-1d08b807e143",
-          "totalDuration": 9549,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "a4e60013-140d-484d-933f-e745e65d2691",
-          "totalDuration": 6587,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0b6c4d1a-aaf3-433c-8beb-25ecb04b4483",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "3cf1d7bc-cdd3-41cd-ad9e-1bb32168282d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "c1aa9cb0-3c8e-4115-be08-2d78c2a3fd29",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "434a8511-351c-400a-9c3e-b24ffeef9212",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "7e594cfe-b999-4548-a8de-295d4063cf23",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "6018b6b6-32b7-4e0c-a305-f78a1a4f40e5",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "94b417b1-450a-49ac-b7cd-eabb1bd8574c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "178170e6-64ec-44e8-a95d-eca3eff66214",
-          "totalDuration": 8378,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "ee55a052-8ab5-4c03-b723-a6ba65751d17",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "978ffdb5-1921-4d3c-b1d7-1fdd2eb79008",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "1b3d5bc0-bffa-4615-8eb1-71442083dd68",
-          "totalDuration": 9237,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "c4b8ba17-459f-4474-bdbc-5234d26af478",
-          "totalDuration": 7941,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "ef7d9578-ac35-463e-9d25-b3aa023afc38",
-          "totalDuration": 9526,
-          "lastTeam": {
-            "id": "292ea6bd-9b93-4e3d-b252-8c6cf8d80583",
-            "name": "test-team-one"
-          }
-        },
-        {
-          "id": "5f5802dd-3d09-4695-929d-38a386ef9ff2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "419c5e28-86b7-4c65-9717-46d8e2684cac",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "e7bfd628-ff9a-452b-a83d-c5498d346fe5",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "17fb7980-6b5d-45fa-8731-a7f4ac241638",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "b60143f6-38d8-4b1e-b9d0-d201f28c5f61",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "23bfcb26-1c21-4523-be7d-0f067404a00e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "0d06f269-ec6f-4263-b218-2b398cbeaf60",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "c280116e-3844-4c6d-9467-bbd606475c7f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "15bdd523-2726-4e99-810c-f239bfe5a8b7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "09f1f735-b8d7-42f5-b1f2-90d3ffae6943",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "ca05f2c4-f509-4d96-8b62-7d79bbd8eacd",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "fd2a6e9e-8c54-47ac-9c31-d2809b47028d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "9b365e0e-c903-4ded-a914-c074ab6d6097",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "d8ace363-b0c5-40d2-b920-47ace1209d8e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "56317008-8ca2-42ad-b5fa-0c68f769690c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "fb7a23ed-8410-475e-8718-4ec0797403bd",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "8b739156-30aa-40e8-999d-ed18a0b5da53",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f0eec089-5291-4946-899c-3f487ee68d80",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "46afdbb4-5014-4411-a3bc-0adc368ea475",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "acfed373-7cbe-4c20-8fe6-dd00974c5f93",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "f7c95035-56fe-45c5-b31f-4e62dddbc70f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f1b24f35-79dc-4122-a1d3-6618874cbc1a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "afff880a-3a56-44dd-b597-a9ba69363d45",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "28bb7cc7-b80b-49eb-bbb3-6a8cc01fce5e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "e341c638-f78f-4e9e-8ae2-c2ca2d7b5389",
-          "totalDuration": 3097,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "de7419b7-5c0c-4859-9fb7-b9499da138fb",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "60ba959c-b4a4-4cba-91bc-a8d224948c87",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "0dcbdfb7-2217-4960-a3e6-c3537ec506c2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "de051d04-a821-480f-8947-3bfd381b45cb",
-          "totalDuration": 1099370,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "48842b2c-134e-4bff-b397-670e7e6dda23",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "77900b23-6f82-41d9-befc-94d379ea6ba9",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "5f48fbb1-dba4-42f2-b630-21da54d46430",
-          "totalDuration": 9291786,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "37d5af9c-1eeb-4599-b5fe-51f30dea57ad",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "d15451e5-eb12-40d7-9b06-67b61284b0ca",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "8f0348df-31e5-4eb9-a2bb-00a86e513d43",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "c4e31c77-cb43-4633-86ea-0f44d78018e1",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "d310da3d-0d10-4a4b-99fb-5c66bb5f2541",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "e6897955-6bed-4e42-8c91-d3df3cf48cac",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "49eb0612-f14f-4520-9038-aaab3b2e482d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "5362518e-5d22-4c37-a816-abff551201a4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "f62b418f-f78d-4731-8bdc-c638a516085d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "3920d057-8334-447b-a9f5-84d7df8d5e1c",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "9679b186-86cb-42f9-8519-6c349ff767e5",
-          "totalDuration": 1035,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "692158cc-94fd-4d73-a80b-f28207b33256",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "2269195f-9dc9-4ae0-8fdf-f4ce3f6c44c9",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "8befcbc9-3f29-4dbd-9f26-7eb8515bb422",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "af47a2a8-cb17-4253-b99b-a5e059080199",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "8d592f5f-5ad8-492e-aac5-ce59ec672452",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "02387a5b-eb21-4dc2-a56c-429d84916928",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "4229ef70-910e-4c0e-a418-0093225c2681",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "7d8edfb0-477b-48c6-b31b-102f02fe7e45",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "318d360e-28c5-4b85-94d4-67773c7540c4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "c0d8b4d6-961a-4e62-bc90-0a9ca0c0bb24",
-          "totalDuration": 4652,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "ef56bf13-0cc4-448a-9fb1-4742b2f8dc72",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "a336ed73-b590-400d-90e0-947a0cfec23f",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1abf76c9-bbf1-4ae0-b660-8c3343649e8e",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "778cd4b8-2142-4ea2-8d13-1e0711447e51",
-          "totalDuration": 8011,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "58537579-25b3-4363-aab7-19d4f2ee1019",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "ba566d37-b9bc-4f4d-87a6-ff9ebd729117",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "a6f5ec42-8da2-49b5-ae7a-68b463e3f524",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "0573fb3f-f3f0-4409-a740-f03a24217747",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "e76cbfad-15f9-4368-964f-b6a6fab1d056",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "db29bf02-a208-4199-ab05-20a3ceb005db",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "8f3e89e4-3147-444d-915b-bcdc523948f6",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "4afd6ee9-7bb4-4d6e-bc3c-124efc33f8cf",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "5aab8e88-10ab-4f11-ac7e-9426f06e5b51",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "70584899-4ecb-4c1d-9678-8a93b7244666",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "179777f6-20dc-4efa-8292-68262961671d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "18df44cd-4fd1-43ed-a05f-f80bef96bfa4",
-            "name": "test-team1"
-          }
-        },
-        {
-          "id": "05f1a6f5-1cec-4663-9adb-c78abb81dc08",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "b3c54315-de55-4359-8ae8-b3d59d46cbb7",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "6b9a6a6c-9a4b-4438-823d-13615d8065da",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "4fc539c3-a07a-4f9f-90b6-ad75f1abe198",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "27c1c8a1-90c0-4c8c-9491-c6f5be652a59",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "6d0061f2-8a30-46a8-9f9d-8568e38b9650",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "00a5e1ed-e293-47bd-9f61-5993ca4d4833",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "45d80f2d-ad86-460e-9ebd-f10855b8469d",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1a30c034-6f20-429a-9d38-60b1c5b40a52",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "3cb9eb4b-7d57-4cdd-97ed-b3441083bd6b",
-          "totalDuration": 938986,
-          "lastTeam": {
-            "id": "997eb1bb-d8b3-44ce-9b77-fb1a27e6c62b",
-            "name": "gt-team1"
-          }
-        },
-        {
-          "id": "f8b9d460-f7a7-4a26-aca6-85639c6e9cc2",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "7e465907-c2e3-409d-9504-dabb920d7cc5",
-          "totalDuration": 708,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "40bf65bf-45af-442a-b1cb-ac31afc4544a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1b660a48-b615-415d-b044-32a5f370040a",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "1f1a7851-259d-48b6-809e-491bd54db9d6",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
-          }
-        },
-        {
-          "id": "bfd891a9-5fda-497d-889e-562a848806f4",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "6a9e4e96-e254-4338-9bfd-dba9490ddecc",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "c3aa3ba8-b0bc-4589-9f6c-9c014d7356d8",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "ad20a98b-5df9-4442-afba-57fd7e4ba649",
-          "totalDuration": 0,
-          "lastTeam": {
-            "id": null,
-            "name": null
-          }
-        },
-        {
-          "id": "09054d04-bb7a-4b9f-a9ad-7c4f15d4ba1e",
-          "totalDuration": 1312493,
-          "lastTeam": {
-            "id": "07d32e30-219f-4b1c-96d7-6e8fde8ab347",
-            "name": "gt-team2"
+          "id": "d7d8e00a-13c4-432e-a9cb-878cb5b62b81",
+          "createdTime": 1671003167966,
+          "endedTime": 1671003207720,
+          "totalDuration": 39754,
+          "connectedDuration": 25148,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "e7bfec67-a8b1-41f4-bfb2-8ec69862eedf",
+          "createdTime": 1671002003355,
+          "endedTime": 1671002060836,
+          "totalDuration": 57481,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "d777ee73-01d9-48d5-b9ca-99567de968d6",
+          "createdTime": 1669105183611,
+          "endedTime": 1669105216060,
+          "totalDuration": 32449,
+          "connectedDuration": 11976,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "e4563313-f504-408c-adc4-608379e5ab62"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "AXUsCVK2QA-8GMFVREwD"
+          }
+        },
+        {
+          "id": "9eff3f9e-aaa2-40a3-9e71-999022d40521",
+          "createdTime": 1669104275861,
+          "endedTime": 1669104315987,
+          "totalDuration": 40126,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "57574769-02ec-435d-9ad3-2c96fc7d8be1",
+          "createdTime": 1667361966709,
+          "endedTime": 1667362022254,
+          "totalDuration": 55545,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "5af2b443-32bd-40b7-b976-ee4185851361",
+          "createdTime": 1667361819344,
+          "endedTime": 1667361865612,
+          "totalDuration": 46268,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "285b8a97-dc19-4f96-bd4c-620953635a75",
+          "createdTime": 1667361100099,
+          "endedTime": 1667361150211,
+          "totalDuration": 50112,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "e9c4bb6d-1528-4628-afff-81443c7520d7",
+          "createdTime": 1667361013596,
+          "endedTime": 1667361057557,
+          "totalDuration": 43961,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "9cf3b01f-a4e5-4bd7-bce6-9b53d0536d0a",
+          "createdTime": 1666879491785,
+          "endedTime": 1666879529695,
+          "totalDuration": 37910,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "fab87863-5314-4d4e-922d-e2f958ba3a9a",
+          "createdTime": 1666324933694,
+          "endedTime": 1666324975347,
+          "totalDuration": 41653,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "2e2de437-f413-4a3c-81d2-3df13095bf63",
+          "createdTime": 1666324865732,
+          "endedTime": 1666324923198,
+          "totalDuration": 57466,
+          "connectedDuration": 33105,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "1735bad2-07b3-47c5-ae52-c372360112cd",
+          "createdTime": 1666288580489,
+          "endedTime": 1666288631048,
+          "totalDuration": 50559,
+          "connectedDuration": 25790,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "079f0962-836d-49e7-8b81-0d887693de00",
+          "createdTime": 1666284968253,
+          "endedTime": 1666285023871,
+          "totalDuration": 55618,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "8991fbba-84a3-43ab-bcdc-76856fa763c6",
+          "createdTime": 1666284732292,
+          "endedTime": 1666284781298,
+          "totalDuration": 49006,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "17cf86d6-54d1-4534-9ea5-ee9d972954ed",
+          "createdTime": 1666271600444,
+          "endedTime": 1666271632271,
+          "totalDuration": 31827,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "1d534d2d-9fbc-4335-adc3-134e95d357dd",
+          "createdTime": 1666247312779,
+          "endedTime": 1666247352824,
+          "totalDuration": 40045,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "139b281e-e901-4652-b259-cd8ee77d4c8b",
+          "createdTime": 1666237288317,
+          "endedTime": 1666237324439,
+          "totalDuration": 36122,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "0f8fe687-9d4a-404b-9f04-0ae034bff1f1",
+          "createdTime": 1666236944549,
+          "endedTime": 1666236990274,
+          "totalDuration": 45725,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "1d8dd640-2a0f-4045-ba3c-b0f6a96a29c0",
+          "createdTime": 1666236828036,
+          "endedTime": 1666236865658,
+          "totalDuration": 37622,
+          "connectedDuration": 20393,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "c4a08e57-da93-4d3c-a867-1a6de0aa1c7d",
+          "createdTime": 1666233454375,
+          "endedTime": 1666233502762,
+          "totalDuration": 48387,
+          "connectedDuration": 21448,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "f8136918-f36f-4513-a698-8d72e1605164",
+          "createdTime": 1666232005639,
+          "endedTime": 1666232065578,
+          "totalDuration": 59939,
+          "connectedDuration": 30494,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "922eb019-b759-4d19-9976-383dcb811ae4",
+          "createdTime": 1666231741629,
+          "endedTime": 1666231779940,
+          "totalDuration": 38311,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "43ae66e7-c71e-420e-8b4e-6983c45869b1",
+          "createdTime": 1666163946682,
+          "endedTime": 1666163998211,
+          "totalDuration": 51529,
+          "connectedDuration": 19700,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "222a4b4b-1871-470d-afc9-7330e0252cbe",
+          "createdTime": 1666157297743,
+          "endedTime": 1666157333611,
+          "totalDuration": 35868,
+          "connectedDuration": 10775,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "4ebba213-02ae-4245-8538-26c04ca9b473",
+          "createdTime": 1666104037828,
+          "endedTime": 1666104091199,
+          "totalDuration": 53371,
+          "connectedDuration": 33344,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "dfec7891-12f7-487b-910b-89d3d80c750e",
+          "createdTime": 1666016375497,
+          "endedTime": 1666016420601,
+          "totalDuration": 45104,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "660e4b54-adb7-4c9e-9f2b-39953b92e297",
+          "createdTime": 1665668947982,
+          "endedTime": 1665669006334,
+          "totalDuration": 58352,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "5df8f175-7205-4584-bde6-b08bcca39e66",
+          "createdTime": 1665645495297,
+          "endedTime": 1665645529020,
+          "totalDuration": 33723,
+          "connectedDuration": 25427,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "65982bdb-3f70-41c9-a23a-3bfef35163dd",
+          "createdTime": 1665645020294,
+          "endedTime": 1665645075983,
+          "totalDuration": 55689,
+          "connectedDuration": 28825,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "9fd128d9-d31d-4946-8488-eb5121ad8e4a",
+          "createdTime": 1665644869657,
+          "endedTime": 1665644921432,
+          "totalDuration": 51775,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "CUSTOMER_BUSY",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "1201c976-8885-4a6c-b464-ded1726e0a9b",
+          "createdTime": 1665580266003,
+          "endedTime": 1665580300534,
+          "totalDuration": 34531,
+          "connectedDuration": 13170,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "328f7b1a-7099-4e0d-973b-a17b4da79636",
+          "createdTime": 1665494130341,
+          "endedTime": 1665494173576,
+          "totalDuration": 43235,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "7439f4ce-a85e-476e-95b7-56b86c4efa9c",
+          "createdTime": 1665493350488,
+          "endedTime": 1665493396295,
+          "totalDuration": 45807,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "8526148f-3f17-4d32-8ab6-3c33ca361f52",
+          "createdTime": 1665492715870,
+          "endedTime": 1665492767805,
+          "totalDuration": 51935,
+          "connectedDuration": 22717,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "074a08a7-4982-42b7-adb3-2b2b2a31728d",
+          "createdTime": 1665484524571,
+          "endedTime": 1665484558525,
+          "totalDuration": 33954,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "5a54a473-7e7f-48b4-88de-0d9f73504cfe",
+          "createdTime": 1665401958769,
+          "endedTime": 1665401999320,
+          "totalDuration": 40551,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "2ff472cd-5c1e-4691-be4c-ce665c483d6e",
+          "createdTime": 1665400552068,
+          "endedTime": 1665400599866,
+          "totalDuration": 47798,
+          "connectedDuration": 10158,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "a1abd9bd-f321-4f7c-afdc-1f792f868fb8",
+          "createdTime": 1665399561918,
+          "endedTime": 1665399619558,
+          "totalDuration": 57640,
+          "connectedDuration": 11937,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "4683e2d1-6557-43c5-93e9-9efa8cda19e2",
+          "createdTime": 1665388214061,
+          "endedTime": 1665388250393,
+          "totalDuration": 36332,
+          "connectedDuration": 15723,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "9c90c7be-4918-45c9-96d7-b800af334144",
+          "createdTime": 1665388158304,
+          "endedTime": 1665388209438,
+          "totalDuration": 51134,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "2a763895-b238-4e13-8524-cb178cf9f550",
+          "createdTime": 1665387012061,
+          "endedTime": 1665387065489,
+          "totalDuration": 53428,
+          "connectedDuration": 16118,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "7135239d-849a-4782-ba73-1dc981fc46b4",
+          "createdTime": 1665386053974,
+          "endedTime": 1665386106992,
+          "totalDuration": 53018,
+          "connectedDuration": 27117,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "f8aedef6-0b58-4b1d-b751-33302b05583d",
+          "createdTime": 1665385441799,
+          "endedTime": 1665385483996,
+          "totalDuration": 42197,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "56ed0f9e-18ab-41ff-bb1f-efc56cb3067b"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "ad0dc790-b690-44eb-a8c1-03ffbf19ef02",
+          "createdTime": 1665384662049,
+          "endedTime": 1665384707254,
+          "totalDuration": 45205,
+          "connectedDuration": 14378,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "58a36745-b1eb-4482-850b-9d67742222fc",
+          "createdTime": 1665382717590,
+          "endedTime": 1665382754571,
+          "totalDuration": 36981,
+          "connectedDuration": 11089,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "4329b060-f862-4765-97a7-d6130df686cb",
+          "createdTime": 1665381310847,
+          "endedTime": 1665381367437,
+          "totalDuration": 56590,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "d3ef290c-7600-4213-923c-a93aea1d93bb",
+          "createdTime": 1665373106230,
+          "endedTime": 1665373145554,
+          "totalDuration": 39324,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "4785be5f-3dea-45ff-bae5-51ada2961780",
+          "createdTime": 1665372863678,
+          "endedTime": 1665372908266,
+          "totalDuration": 44588,
+          "connectedDuration": 10633,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "6106796f-8944-40a3-a58d-1a24ba0bd4bf",
+          "createdTime": 1665370116744,
+          "endedTime": 1665370171210,
+          "totalDuration": 54466,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "bc1006e8-0352-4c6d-9661-f0a5e494a290",
+          "createdTime": 1665137578215,
+          "endedTime": 1665137638149,
+          "totalDuration": 59934,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "712e7769-1229-401b-a4d3-b35fb807dbdb",
+          "createdTime": 1665132677110,
+          "endedTime": 1665132715892,
+          "totalDuration": 38782,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "56ed0f9e-18ab-41ff-bb1f-efc56cb3067b"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "3fa7dc0c-efff-4c11-ad5e-48c9ba0532c3",
+          "createdTime": 1664383422918,
+          "endedTime": 1664383464582,
+          "totalDuration": 41664,
+          "connectedDuration": 35280,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "9335d51b-6783-4f9c-902f-7a6f8021b049",
+          "createdTime": 1664382139354,
+          "endedTime": 1664382189710,
+          "totalDuration": 50356,
+          "connectedDuration": 0,
+          "terminatingEnd": "Agent",
+          "terminationReason": "AGENT_ENDS",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "f9ac0167-f899-4603-9596-4b16f5aa73e9",
+          "createdTime": 1664278141853,
+          "endedTime": 1664278185858,
+          "totalDuration": 44005,
+          "connectedDuration": 1693,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "5dca47ec-6102-4cd7-a786-5a3fdc9eb198",
+          "createdTime": 1664277323840,
+          "endedTime": 1664277365395,
+          "totalDuration": 41555,
+          "connectedDuration": 6560,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "a11d1be7-5dfa-4548-8a32-99f6e4b8afda",
+          "createdTime": 1664272167840,
+          "endedTime": 1664272210545,
+          "totalDuration": 42705,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "cb635744-2c3a-47d6-8a62-8d3a897e6204",
+          "createdTime": 1664267364543,
+          "endedTime": 1664267408303,
+          "totalDuration": 43760,
+          "connectedDuration": 19404,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "e175ddc5-3a3f-4d21-999a-6246844e7875",
+          "createdTime": 1664260714034,
+          "endedTime": 1664260750736,
+          "totalDuration": 36702,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "e22cb08e-3d9e-11ed-b1f7-b5d3c193ed39",
+          "createdTime": 1664198816916,
+          "endedTime": 1664198856453,
+          "totalDuration": 39537,
+          "connectedDuration": 13602,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Ended",
+          "lastTeam": {
+            "id": "cf242fa5-0c0a-4bb9-b78f-f5c058f8b928"
+          },
+          "lastAgent": {
+            "id": "0f799a51-3488-47ba-aec8-1e783e845b57"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "54b66cb3-2a40-437d-8611-6fac50ed94ef",
+          "createdTime": 1664196117494,
+          "endedTime": 1664196165278,
+          "totalDuration": 47784,
+          "connectedDuration": 22751,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "5100787a-0145-4180-a80a-ffb8a07729ea",
+          "createdTime": 1664189349951,
+          "endedTime": 1664189409826,
+          "totalDuration": 59875,
+          "connectedDuration": 9966,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "141952be-8c30-4b49-a6f4-99c95e8fad3a"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "55233900-56be-4f31-83f0-e4f2a693ce09",
+          "createdTime": 1664178692318,
+          "endedTime": 1664178727549,
+          "totalDuration": 35231,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "e09f9afc-3001-4564-84fb-1214007ed249",
+          "createdTime": 1663926884100,
+          "endedTime": 1663926929699,
+          "totalDuration": 45599,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "acd73781-b8c2-4fb6-ae33-2ef064cb86cd",
+          "createdTime": 1663858558214,
+          "endedTime": 1663858617928,
+          "totalDuration": 59714,
+          "connectedDuration": 23648,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "26abed7c-3a5b-11ed-ac29-cfac6577edbd",
+          "createdTime": 1663839936680,
+          "endedTime": 1663839983476,
+          "totalDuration": 46796,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "5b96bbba-18cb-408a-8d4b-a80d93264b99",
+          "createdTime": 1663835704784,
+          "endedTime": 1663835754824,
+          "totalDuration": 50040,
+          "connectedDuration": 31473,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1f5f74cc-9dfd-4e43-a261-c6dee8cfc19a"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "54d1a021-3a42-11ed-b6ad-0d55ed158a1f",
+          "createdTime": 1663829219610,
+          "endedTime": 1663829269555,
+          "totalDuration": 49945,
+          "connectedDuration": 14903,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Ended",
+          "lastTeam": {
+            "id": "AXUsCfxQL4YBh5I5YaYO"
+          },
+          "lastAgent": {
+            "id": "AXV4TawBL4YBh5I5fJEt"
+          },
+          "lastSite": {
+            "id": "AXUsCVK2QA-8GMFVREwD"
+          }
+        },
+        {
+          "id": "3cd952ec-3b6f-4c68-a249-5467717ce6c2",
+          "createdTime": 1663822503763,
+          "endedTime": 1663822546560,
+          "totalDuration": 42797,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "a4a5fafe-a8c9-4c31-88b8-94b2534e7c95",
+          "createdTime": 1663822408824,
+          "endedTime": 1663822442323,
+          "totalDuration": 33499,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "1599144f-282e-4bd1-9c77-23d941efbcc2",
+          "createdTime": 1663785330689,
+          "endedTime": 1663785376070,
+          "totalDuration": 45381,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "CUSTOMER_BUSY",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "6504e390-7a93-4afb-abab-0826e988be2a",
+          "createdTime": 1663785159483,
+          "endedTime": 1663785190892,
+          "totalDuration": 31409,
+          "connectedDuration": 2376,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "8e022476-58d1-4ed7-b8ed-bece454c3b34",
+          "createdTime": 1663770419367,
+          "endedTime": 1663770451311,
+          "totalDuration": 31944,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "CUSTOMER_BUSY",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "3ff03093-1e6a-4cca-a7cb-79bbd020bb2a",
+          "createdTime": 1663768458803,
+          "endedTime": 1663768492740,
+          "totalDuration": 33937,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "2a8670f0-6396-4d67-9d92-c786894be793",
+          "createdTime": 1663764881721,
+          "endedTime": 1663764929247,
+          "totalDuration": 47526,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "3903688c-26c5-418f-ba02-8bcc77843a46",
+          "createdTime": 1663744251154,
+          "endedTime": 1663744298582,
+          "totalDuration": 47428,
+          "connectedDuration": 37668,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXUsCfxQL4YBh5I5YaYO"
+          },
+          "lastAgent": {
+            "id": "AXUxPY3uH5Tuplm_IxjV"
+          },
+          "lastSite": {
+            "id": "AXUsCVK2QA-8GMFVREwD"
+          }
+        },
+        {
+          "id": "374009d6-f620-4c09-99c8-c55e65c792e0",
+          "createdTime": 1663742599856,
+          "endedTime": 1663742649018,
+          "totalDuration": 49162,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "7cf473a8-8cfc-49c1-8eee-5e5860c5f6f7",
+          "createdTime": 1663741009481,
+          "endedTime": 1663741066084,
+          "totalDuration": 56603,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "cf59f2fa-7dc5-4438-8b51-32eac72cefbe",
+          "createdTime": 1663740583978,
+          "endedTime": 1663740626264,
+          "totalDuration": 42286,
+          "connectedDuration": 29447,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXUsCfxQL4YBh5I5YaYO"
+          },
+          "lastAgent": {
+            "id": "AXUxPY3uH5Tuplm_IxjV"
+          },
+          "lastSite": {
+            "id": "AXUsCVK2QA-8GMFVREwD"
+          }
+        },
+        {
+          "id": "2d9e1855-61c3-4421-bd7f-d89f7abb2423",
+          "createdTime": 1663739774381,
+          "endedTime": 1663739826569,
+          "totalDuration": 52188,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "d8080a80-7e15-455e-be00-3965c7f95980",
+          "createdTime": 1663709619825,
+          "endedTime": 1663709661550,
+          "totalDuration": 41725,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "CUSTOMER_BUSY",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "023f8672-62c4-4c7c-8bed-88e5cbac08a2",
+          "createdTime": 1663704543445,
+          "endedTime": 1663704575254,
+          "totalDuration": 31809,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "b352ee88-b31a-4ada-975b-1e2f68176fbf",
+          "createdTime": 1663704416661,
+          "endedTime": 1663704470807,
+          "totalDuration": 54146,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "d32eacd9-68a6-4038-9621-8e5ca057fc03",
+          "createdTime": 1663684192351,
+          "endedTime": 1663684243124,
+          "totalDuration": 50773,
+          "connectedDuration": 8569,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "d1d2b2b0-c280-41dd-bc6e-e60f2460c534",
+          "createdTime": 1663625276128,
+          "endedTime": 1663625334512,
+          "totalDuration": 58384,
+          "connectedDuration": 6222,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "469ad3a9-c66e-4fab-a915-590aab9f839f",
+          "createdTime": 1663599502036,
+          "endedTime": 1663599552480,
+          "totalDuration": 50444,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "2f8a3bc9-7731-477e-8be3-232012786981",
+          "createdTime": 1663599414949,
+          "endedTime": 1663599462924,
+          "totalDuration": 47975,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "8002135d-03f9-489c-bb50-5aa7fd9c5818",
+          "createdTime": 1663332127756,
+          "endedTime": 1663332164952,
+          "totalDuration": 37196,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "2fcd67e7-78b6-4251-a398-d09b4623d30d",
+          "createdTime": 1663330275354,
+          "endedTime": 1663330318496,
+          "totalDuration": 43142,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "29010322-8618-4a60-84fc-0dc80c1c2267",
+          "createdTime": 1663330136448,
+          "endedTime": 1663330191256,
+          "totalDuration": 54808,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "1ab788d3-3454-451c-a8fa-6d3adfbb21ef",
+          "createdTime": 1663322593650,
+          "endedTime": 1663322647372,
+          "totalDuration": 53722,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "b373a03b-ff45-432a-a9eb-02fcb6edb509",
+          "createdTime": 1663320897764,
+          "endedTime": 1663320942909,
+          "totalDuration": 45145,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "df84dd16-359c-11ed-a4ca-056b8def0cf0",
+          "createdTime": 1663318365563,
+          "endedTime": 1663318396512,
+          "totalDuration": 30949,
+          "connectedDuration": 14524,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "0d0f7b94-1c6b-4f48-9b74-12503acb2a5c",
+          "createdTime": 1663066929963,
+          "endedTime": 1663066961765,
+          "totalDuration": 31802,
+          "connectedDuration": 12888,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "1cf9502e-40da-4ef4-b001-c7beb8e9fde7",
+          "createdTime": 1663066168801,
+          "endedTime": 1663066227785,
+          "totalDuration": 58984,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "ef27fdb0-225f-4a34-b725-302157219774",
+          "createdTime": 1663066024239,
+          "endedTime": 1663066060567,
+          "totalDuration": 36328,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "77bf8476-663b-4a4a-ac6d-1a9925c319e6",
+          "createdTime": 1662992986545,
+          "endedTime": 1662993018625,
+          "totalDuration": 32080,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "f905fcbe-95a6-4f0d-8dfc-622d423d403b",
+          "createdTime": 1662620683474,
+          "endedTime": 1662620742270,
+          "totalDuration": 58796,
+          "connectedDuration": 54674,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "d5d3f5ee-afb7-4df2-ab3a-6feb7e5c1ae9"
+          },
+          "lastAgent": {
+            "id": "c26b4215-510c-4bf9-95a8-5cb66d43543b"
+          },
+          "lastSite": {
+            "id": "ee973dbf-1263-4665-bb77-a90f9a77bcca"
+          }
+        },
+        {
+          "id": "89edab6a-b2a1-4fa4-87b6-b7b82d43540a",
+          "createdTime": 1662618762430,
+          "endedTime": 1662618793277,
+          "totalDuration": 30847,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "Queue Timeout",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "a369e20b-2f39-11ed-98f4-21acaafc7fa3",
+          "createdTime": 1662616044260,
+          "endedTime": 1662616098302,
+          "totalDuration": 54042,
+          "connectedDuration": 26953,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "1c8f76d1-68dc-48a0-a1c1-2214c8bff3a9",
+          "createdTime": 1662378101282,
+          "endedTime": 1662378155982,
+          "totalDuration": 54700,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "2c8dc4f6-7fec-4684-96b1-decc82af60a5",
+          "createdTime": 1662115232174,
+          "endedTime": 1662115291755,
+          "totalDuration": 59581,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "85d46126-18b4-442e-b88c-da5e6c74fb2e",
+          "createdTime": 1662033467501,
+          "endedTime": 1662033520865,
+          "totalDuration": 53364,
+          "connectedDuration": 25389,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "df2286ad-422e-4499-9e73-4c6a89908ae7",
+          "createdTime": 1662020946017,
+          "endedTime": 1662020995666,
+          "totalDuration": 49649,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "96ad40e4-cc1b-42ee-b9a4-b99289dd1498",
+          "createdTime": 1661760608794,
+          "endedTime": 1661760664072,
+          "totalDuration": 55278,
+          "connectedDuration": 21797,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "b22ef319-253c-11ed-a8c6-a555d9145f61",
+          "createdTime": 1661517818498,
+          "endedTime": 1661517856631,
+          "totalDuration": 38133,
+          "connectedDuration": 33223,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Ended",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "7fcb28b3-72dd-4d08-8da8-7b4fa1ccd342",
+          "createdTime": 1661426729408,
+          "endedTime": 1661426785088,
+          "totalDuration": 55680,
+          "connectedDuration": 29866,
+          "terminatingEnd": "System",
+          "terminationReason": "RONA Timer Expired",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "5bdff1f5-686b-46bb-abde-2f25c066ebfb",
+          "createdTime": 1661425277402,
+          "endedTime": 1661425336221,
+          "totalDuration": 58819,
+          "connectedDuration": 18524,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "403e5fd8-1859-4034-a35e-4655bd4d8692",
+          "createdTime": 1661424879397,
+          "endedTime": 1661424914478,
+          "totalDuration": 35081,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7498173b-2508-408a-99f3-ce2c94e3d091"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "80a7b7be-69b3-49ff-9b9b-07ec912085e5",
+          "createdTime": 1661404334950,
+          "endedTime": 1661404388897,
+          "totalDuration": 53947,
+          "connectedDuration": 33737,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "3504e80b-759b-4344-b5da-e2dc5286eda1",
+          "createdTime": 1661404119853,
+          "endedTime": 1661404163982,
+          "totalDuration": 44129,
+          "connectedDuration": 28692,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "f927e942-6854-4d0a-be6c-12d3bb559bb3",
+          "createdTime": 1661404049813,
+          "endedTime": 1661404085767,
+          "totalDuration": 35954,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "02e3f871-38bd-49e9-98ad-cb118887e81e",
+          "createdTime": 1661403781087,
+          "endedTime": 1661403816158,
+          "totalDuration": 35071,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "95ce3389-6f90-4bb5-81cb-1a8de7821a19",
+          "createdTime": 1661402902560,
+          "endedTime": 1661402944180,
+          "totalDuration": 41620,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "d67825f7-ed77-489b-8229-3cab8ede8060",
+          "createdTime": 1661402865849,
+          "endedTime": 1661402901564,
+          "totalDuration": 35715,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "d60b61f2-8fbe-4360-832d-91c9d9734152",
+          "createdTime": 1661332806956,
+          "endedTime": 1661332842504,
+          "totalDuration": 35548,
+          "connectedDuration": 30422,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "d5d3f5ee-afb7-4df2-ab3a-6feb7e5c1ae9"
+          },
+          "lastAgent": {
+            "id": "c26b4215-510c-4bf9-95a8-5cb66d43543b"
+          },
+          "lastSite": {
+            "id": "ee973dbf-1263-4665-bb77-a90f9a77bcca"
+          }
+        },
+        {
+          "id": "efddd801-698f-4266-af43-169614db0bd0",
+          "createdTime": 1661329659633,
+          "endedTime": 1661329690458,
+          "totalDuration": 30825,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "Queue Timeout",
+          "lastTeam": {
+            "id": "d5d3f5ee-afb7-4df2-ab3a-6feb7e5c1ae9"
+          },
+          "lastAgent": {
+            "id": "c26b4215-510c-4bf9-95a8-5cb66d43543b"
+          },
+          "lastSite": {
+            "id": "ee973dbf-1263-4665-bb77-a90f9a77bcca"
+          }
+        },
+        {
+          "id": "623674c7-eab3-4a4e-b90c-2fdecd498b4a",
+          "createdTime": 1661329531884,
+          "endedTime": 1661329562704,
+          "totalDuration": 30820,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "Queue Timeout",
+          "lastTeam": {
+            "id": "d5d3f5ee-afb7-4df2-ab3a-6feb7e5c1ae9"
+          },
+          "lastAgent": {
+            "id": "c26b4215-510c-4bf9-95a8-5cb66d43543b"
+          },
+          "lastSite": {
+            "id": "ee973dbf-1263-4665-bb77-a90f9a77bcca"
+          }
+        },
+        {
+          "id": "3c9ba2d8-638b-4398-9aed-f628f952de64",
+          "createdTime": 1661329433635,
+          "endedTime": 1661329477467,
+          "totalDuration": 43832,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "d5d3f5ee-afb7-4df2-ab3a-6feb7e5c1ae9"
+          },
+          "lastAgent": {
+            "id": "c26b4215-510c-4bf9-95a8-5cb66d43543b"
+          },
+          "lastSite": {
+            "id": "ee973dbf-1263-4665-bb77-a90f9a77bcca"
+          }
+        },
+        {
+          "id": "0232a258-c734-4eb3-b4d7-7e5c9c25e37d",
+          "createdTime": 1661259781633,
+          "endedTime": 1661259829498,
+          "totalDuration": 47865,
+          "connectedDuration": 16177,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "4a7024d1-0e8a-4276-af5c-ca14c4b77d77",
+          "createdTime": 1660196442803,
+          "endedTime": 1660196499385,
+          "totalDuration": 56582,
+          "connectedDuration": 4983,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "141952be-8c30-4b49-a6f4-99c95e8fad3a"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "2da16bb5-0a89-4be8-9a19-0ca084136232",
+          "createdTime": 1660128304165,
+          "endedTime": 1660128340388,
+          "totalDuration": 36223,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "f19e67d1-5237-42c3-800d-abeebec7ec87",
+          "createdTime": 1659987306855,
+          "endedTime": 1659987344749,
+          "totalDuration": 37894,
+          "connectedDuration": 32664,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "ec93abe4-2472-4666-ba18-fb1ba2a1fa3c",
+          "createdTime": 1659987263240,
+          "endedTime": 1659987299234,
+          "totalDuration": 35994,
+          "connectedDuration": 20646,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "d0cdf3c0-e47c-449d-bb83-b9bc45cce3c5",
+          "createdTime": 1659947134696,
+          "endedTime": 1659947191878,
+          "totalDuration": 57182,
+          "connectedDuration": 20282,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "0722f8c0-c381-4754-9f43-54bfb4bc6392",
+          "createdTime": 1659690374461,
+          "endedTime": 1659690431574,
+          "totalDuration": 57113,
+          "connectedDuration": 31889,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "9e8d77ce-c76a-4402-a1da-fa7d558192e7"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "aa981dc4-459d-40ca-b408-2c702a81b465"
+          }
+        },
+        {
+          "id": "ef772c30-2856-43d4-86b4-d59d11eb4589",
+          "createdTime": 1659687345442,
+          "endedTime": 1659687376603,
+          "totalDuration": 31161,
+          "connectedDuration": 8176,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "0aa45016-045d-48d4-afb5-2b54d141caa3",
+          "createdTime": 1659686082749,
+          "endedTime": 1659686120193,
+          "totalDuration": 37444,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "3f5b1854-822a-494c-afb8-4d51a1e33b48",
+          "createdTime": 1659623885889,
+          "endedTime": 1659623922476,
+          "totalDuration": 36587,
+          "connectedDuration": 15999,
+          "terminatingEnd": "caller",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "c7028ac8-84d1-48dc-bdea-76c8da407810",
+          "createdTime": 1659623321462,
+          "endedTime": 1659623367678,
+          "totalDuration": 46216,
+          "connectedDuration": 29572,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "d9e30a66-3b08-4b4d-b4f1-25e785bf5ca1"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "5e957eed-2fcc-46f6-a52b-4de06ef2b8d9",
+          "createdTime": 1659623252918,
+          "endedTime": 1659623287223,
+          "totalDuration": 34305,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "9b05eeb2-1ef8-422b-801f-2c49936d60bf",
+          "createdTime": 1659623082025,
+          "endedTime": 1659623122831,
+          "totalDuration": 40806,
+          "connectedDuration": 15391,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "0e02340f-3629-480e-a796-ed49621be0dc",
+          "createdTime": 1659622778057,
+          "endedTime": 1659622821493,
+          "totalDuration": 43436,
+          "connectedDuration": 22736,
+          "terminatingEnd": "System",
+          "terminationReason": "Consult_Transfer_To_EpDn",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "7a8447da-28b4-4266-8765-b19afece4326"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "803ef84d-77a3-4d82-aa3a-fbd7f6c42d4c",
+          "createdTime": 1659622656764,
+          "endedTime": 1659622698899,
+          "totalDuration": 42135,
+          "connectedDuration": 13138,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "e935f6df-f945-49f4-8acc-cbf1fe573218",
+          "createdTime": 1659622599782,
+          "endedTime": 1659622649834,
+          "totalDuration": 50052,
+          "connectedDuration": 16505,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "e074e87c-a984-4cb6-ab67-e92fee65e85a",
+          "createdTime": 1659622463514,
+          "endedTime": 1659622495369,
+          "totalDuration": 31855,
+          "connectedDuration": 15406,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "edddcc1d-9dd6-476a-898d-8db8917db1bf",
+          "createdTime": 1659622359817,
+          "endedTime": 1659622400226,
+          "totalDuration": 40409,
+          "connectedDuration": 21129,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "cd4170b5-2214-4e72-995e-a3fe637f946b",
+          "createdTime": 1659621935977,
+          "endedTime": 1659621988691,
+          "totalDuration": 52714,
+          "connectedDuration": 17286,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "61122cab-24fd-42c5-b7d3-a2e56d0053e2",
+          "createdTime": 1659621528639,
+          "endedTime": 1659621583798,
+          "totalDuration": 55159,
+          "connectedDuration": 16635,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "62e32907-b9f0-41a9-9b00-073d11de9250",
+          "createdTime": 1659620672689,
+          "endedTime": 1659620711636,
+          "totalDuration": 38947,
+          "connectedDuration": 13300,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "7a8447da-28b4-4266-8765-b19afece4326"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "9651ad53-d11d-4a2b-9872-cc91de3d87c0",
+          "createdTime": 1659620630004,
+          "endedTime": 1659620662905,
+          "totalDuration": 32901,
+          "connectedDuration": 10802,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "7a8447da-28b4-4266-8765-b19afece4326"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "163948fa-ffdf-414a-9585-68f59ff25121",
+          "createdTime": 1659603743271,
+          "endedTime": 1659603774352,
+          "totalDuration": 31081,
+          "connectedDuration": 16201,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "ff493262-482b-44d6-b514-76614a75d364",
+          "createdTime": 1659530760787,
+          "endedTime": 1659530806292,
+          "totalDuration": 45505,
+          "connectedDuration": 12547,
+          "terminatingEnd": "caller",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "5214fe7c-1ec7-410c-9757-4c8d9c14f5c1",
+          "createdTime": 1659528132930,
+          "endedTime": 1659528179198,
+          "totalDuration": 46268,
+          "connectedDuration": 21836,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "6473bfee-9e69-499c-92f5-2f369ef15049",
+          "createdTime": 1659105330796,
+          "endedTime": 1659105366092,
+          "totalDuration": 35296,
+          "connectedDuration": 19303,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "80a80f92-ae8b-41ee-966a-b9ebf7be4d61",
+          "createdTime": 1659099080765,
+          "endedTime": 1659099120839,
+          "totalDuration": 40074,
+          "connectedDuration": 26179,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "deaec742-da23-4ca5-9b52-775e4d3420de",
+          "createdTime": 1659099013723,
+          "endedTime": 1659099055434,
+          "totalDuration": 41711,
+          "connectedDuration": 27711,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "df7f1a29-b215-4d2e-b3f3-6ff676a5095f",
+          "createdTime": 1659098726726,
+          "endedTime": 1659098786419,
+          "totalDuration": 59693,
+          "connectedDuration": 43689,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "c15cc609-0f01-11ed-8d0a-d3c89e68ee70",
+          "createdTime": 1659073626898,
+          "endedTime": 1659073666280,
+          "totalDuration": 39382,
+          "connectedDuration": 9698,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "da55137c-aea0-42c3-8a2e-fb3d51d0ab1a",
+          "createdTime": 1659001640728,
+          "endedTime": 1659001691888,
+          "totalDuration": 51160,
+          "connectedDuration": 32779,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "721a1b2e-0ce9-11ed-99f0-37e848b45661",
+          "createdTime": 1658843235017,
+          "endedTime": 1658843291497,
+          "totalDuration": 56480,
+          "connectedDuration": 2935,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Ended",
+          "lastTeam": {
+            "id": "98b66d8f-f43b-4564-a28e-e8aa6773c2c4"
+          },
+          "lastAgent": {
+            "id": "8c4647b4-baf3-4400-87c4-24489836b5ef"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "24b5a963-1ee9-43a7-a025-b4f4194a0c27",
+          "createdTime": 1658831062726,
+          "endedTime": 1658831101644,
+          "totalDuration": 38918,
+          "connectedDuration": 0,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "758c0097-6161-4f2f-8ca4-b5b3c618d6d9",
+          "createdTime": 1658476590777,
+          "endedTime": 1658476645820,
+          "totalDuration": 55043,
+          "connectedDuration": 42707,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "c0c04108-e70c-4420-a056-4220db00231a",
+          "createdTime": 1658412353521,
+          "endedTime": 1658412407723,
+          "totalDuration": 54202,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "907f0731-b2bf-4103-acdf-fc30578626df",
+          "createdTime": 1658412251341,
+          "endedTime": 1658412301751,
+          "totalDuration": 50410,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "74b05dcb-5ef5-4388-9539-3ea6afd57d45",
+          "createdTime": 1658407309243,
+          "endedTime": 1658407342544,
+          "totalDuration": 33301,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "2914acd3-3857-4c6f-ad08-8db9622a328e",
+          "createdTime": 1658397335620,
+          "endedTime": 1658397391926,
+          "totalDuration": 56306,
+          "connectedDuration": 10699,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "dcdffdb8-a677-4293-8e1b-91f2595a9bcb"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "b203c97f-3125-4795-a7ed-e67d7609160e"
+          }
+        },
+        {
+          "id": "5e12830d-ee47-4cb1-90ba-c7c02a8426e0",
+          "createdTime": 1658397232778,
+          "endedTime": 1658397273809,
+          "totalDuration": 41031,
+          "connectedDuration": 29057,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "dcdffdb8-a677-4293-8e1b-91f2595a9bcb"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "b203c97f-3125-4795-a7ed-e67d7609160e"
+          }
+        },
+        {
+          "id": "27262f88-3e96-4c8a-bcf1-b00ae1cb3968",
+          "createdTime": 1658395777776,
+          "endedTime": 1658395815376,
+          "totalDuration": 37600,
+          "connectedDuration": 10988,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1f5f74cc-9dfd-4e43-a261-c6dee8cfc19a"
+          },
+          "lastAgent": {
+            "id": "AXW8ODqmL4YBh5I5lOvA"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "f064a860-6eec-46fa-9e5e-c7f6d995adc3",
+          "createdTime": 1658394639752,
+          "endedTime": 1658394671135,
+          "totalDuration": 31383,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": null
+          },
+          "lastAgent": {
+            "id": null
+          },
+          "lastSite": {
+            "id": null
+          }
+        },
+        {
+          "id": "d00e0391-2cb7-4757-8ec7-c96a1c0a62dc",
+          "createdTime": 1658394160198,
+          "endedTime": 1658394217417,
+          "totalDuration": 57219,
+          "connectedDuration": 31525,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "dcdffdb8-a677-4293-8e1b-91f2595a9bcb"
+          },
+          "lastAgent": {
+            "id": "00e4c7fe-fa54-41e8-9b66-2505e1241a2d"
+          },
+          "lastSite": {
+            "id": "b203c97f-3125-4795-a7ed-e67d7609160e"
+          }
+        },
+        {
+          "id": "cc547e78-8175-4780-9252-b276c9b6e1e1",
+          "createdTime": 1658309435030,
+          "endedTime": 1658309465394,
+          "totalDuration": 30364,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "NO_ANSWER_FROM_CUSTOMER",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "c89a04ad-44b2-4e16-aae6-74c3ba4a3a6b",
+          "createdTime": 1658307456623,
+          "endedTime": 1658307516476,
+          "totalDuration": 59853,
+          "connectedDuration": 30340,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "644b405c-a82e-4849-963a-eeea4be10f07",
+          "createdTime": 1658300643966,
+          "endedTime": 1658300701181,
+          "totalDuration": 57215,
+          "connectedDuration": 43525,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "37e6895c-4365-4d76-a4e8-0d83ad8d17c8",
+          "createdTime": 1658300431764,
+          "endedTime": 1658300486942,
+          "totalDuration": 55178,
+          "connectedDuration": 44797,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "65e6c23f-5a7f-41bd-a200-4db9458e1bd7",
+          "createdTime": 1658299250476,
+          "endedTime": 1658299290994,
+          "totalDuration": 40518,
+          "connectedDuration": 23657,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "830ead8b-3398-41b0-977e-f126d092b7a7",
+          "createdTime": 1658299249835,
+          "endedTime": 1658299306951,
+          "totalDuration": 57116,
+          "connectedDuration": 36920,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "AXUsCfxQL4YBh5I5YaYO"
+          },
+          "lastAgent": {
+            "id": "AXaFp1MYH5Tuplm_IylU"
+          },
+          "lastSite": {
+            "id": "AXUsCVK2QA-8GMFVREwD"
+          }
+        },
+        {
+          "id": "04e85177-d74c-47bc-9f82-c3e836b13828",
+          "createdTime": 1658234074964,
+          "endedTime": 1658234122695,
+          "totalDuration": 47731,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "0a178f30-3ff9-4bd6-aea9-27382bff24ae",
+          "createdTime": 1658225400932,
+          "endedTime": 1658225456974,
+          "totalDuration": 56042,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "4524e239-00e9-4fd4-8e17-6ddea0a37afd",
+          "createdTime": 1658222548529,
+          "endedTime": 1658222590229,
+          "totalDuration": 41700,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXW8QdbFQA-8GMFVd4WX"
+          },
+          "lastAgent": {
+            "id": "AXW8OBN1L4YBh5I5lOu-"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "5a13e802-26eb-4905-b6c4-279493cd0fb0",
+          "createdTime": 1658136361169,
+          "endedTime": 1658136403439,
+          "totalDuration": 42270,
+          "connectedDuration": 31462,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "750d6ea6-91f2-4635-a892-523039c2df22",
+          "createdTime": 1657905481285,
+          "endedTime": 1657905537742,
+          "totalDuration": 56457,
+          "connectedDuration": 26111,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "e5a896a5-044c-11ed-994c-413abd5203f1",
+          "createdTime": 1657896399767,
+          "endedTime": 1657896430644,
+          "totalDuration": 30877,
+          "connectedDuration": 18609,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "AXjud-XaR0Xmx1QT5XxN"
+          },
+          "lastAgent": {
+            "id": "AXjudDLxahMb1jtpkxMj"
+          },
+          "lastSite": {
+            "id": "AXjudyplkW4JeBB3q82E"
+          }
+        },
+        {
+          "id": "f7366858-cb18-4c47-813c-2c1f94175573",
+          "createdTime": 1657895812041,
+          "endedTime": 1657895847310,
+          "totalDuration": 35269,
+          "connectedDuration": 11652,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "b5a10e2c-e3e7-4493-bbfd-d1ffb8deeec0",
+          "createdTime": 1657895693612,
+          "endedTime": 1657895724327,
+          "totalDuration": 30715,
+          "connectedDuration": 11945,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "554c75ac-917a-45ab-877f-c2608bbe4d6a",
+          "createdTime": 1657895554994,
+          "endedTime": 1657895594567,
+          "totalDuration": 39573,
+          "connectedDuration": 15341,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "7709d414-dd6c-4763-98b8-cbccc3dd2f25",
+          "createdTime": 1657895318889,
+          "endedTime": 1657895373201,
+          "totalDuration": 54312,
+          "connectedDuration": 11080,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "fcd38a7a-6505-41f1-af15-199e1985a7a1",
+          "createdTime": 1657895195133,
+          "endedTime": 1657895234632,
+          "totalDuration": 39499,
+          "connectedDuration": 13225,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "28cf52b2-9c90-49d8-98bb-a07680aaa9f6",
+          "createdTime": 1657895020108,
+          "endedTime": 1657895066634,
+          "totalDuration": 46526,
+          "connectedDuration": 27710,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "aa4410b5-81e8-4c44-90f2-9194b9d43b4d",
+          "createdTime": 1657847332747,
+          "endedTime": 1657847368841,
+          "totalDuration": 36094,
+          "connectedDuration": 6345,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "9356bf9f-4781-4ff7-83b6-34fb82f38ba2",
+          "createdTime": 1657847039049,
+          "endedTime": 1657847076434,
+          "totalDuration": 37385,
+          "connectedDuration": 4930,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "46e3cabf-863c-446c-933f-a9071b261178",
+          "createdTime": 1657843963219,
+          "endedTime": 1657844002177,
+          "totalDuration": 38958,
+          "connectedDuration": 13829,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "7237e003-76e6-4fc7-9de3-328d15090cbf",
+          "createdTime": 1657834369301,
+          "endedTime": 1657834405435,
+          "totalDuration": 36134,
+          "connectedDuration": 26984,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "5a354f9d-9d26-4c79-9abb-1578caa3bfd0",
+          "createdTime": 1657818136401,
+          "endedTime": 1657818183265,
+          "totalDuration": 46864,
+          "connectedDuration": 17327,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "d41167ab-0896-443d-ada1-4b70253aaa2c",
+          "createdTime": 1657817396570,
+          "endedTime": 1657817427096,
+          "totalDuration": 30526,
+          "connectedDuration": 15330,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "6f478d6a-14b1-41f2-9a85-e4e678c1dd4f",
+          "createdTime": 1657815408080,
+          "endedTime": 1657815442766,
+          "totalDuration": 34686,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "cc4466fc-4ca8-40fa-a97e-3ec9f27f8e35",
+          "createdTime": 1657810337378,
+          "endedTime": 1657810378288,
+          "totalDuration": 40910,
+          "connectedDuration": 10393,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "cbffcd7e-0a80-41e3-8716-7e088eb91ec1",
+          "createdTime": 1657808495026,
+          "endedTime": 1657808550184,
+          "totalDuration": 55158,
+          "connectedDuration": 14100,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "e9ed653d-8815-4d5a-b0a0-ee51be62b4d0",
+          "createdTime": 1657799859254,
+          "endedTime": 1657799906623,
+          "totalDuration": 47369,
+          "connectedDuration": 12015,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "5ca76f07-1764-476b-b258-ec5edcc22092",
+          "createdTime": 1657794529446,
+          "endedTime": 1657794571420,
+          "totalDuration": 41974,
+          "connectedDuration": 14752,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "7a66c6ca-70ec-40d4-8fe4-435b6420be05",
+          "createdTime": 1657746513579,
+          "endedTime": 1657746555586,
+          "totalDuration": 42007,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "0d6dfc26-c1fd-4ad8-8310-6401e079d697",
+          "createdTime": 1657717498881,
+          "endedTime": 1657717538109,
+          "totalDuration": 39228,
+          "connectedDuration": 26849,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "186b2bf7-d40e-4338-b0fe-fa86678d32c0",
+          "createdTime": 1657704830915,
+          "endedTime": 1657704870221,
+          "totalDuration": 39306,
+          "connectedDuration": 26402,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "883a359a-e182-409c-bd8f-3f6299bd9f2a",
+          "createdTime": 1657699995358,
+          "endedTime": 1657700045237,
+          "totalDuration": 49879,
+          "connectedDuration": 57027,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "943a9ba8-64c9-48c7-80e7-b97d5a773905",
+          "createdTime": 1657699099778,
+          "endedTime": 1657699138527,
+          "totalDuration": 38749,
+          "connectedDuration": 62743,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "fe9979d8-0ba8-4b5c-87b3-d77ab05bf552",
+          "createdTime": 1657693845491,
+          "endedTime": 1657693904908,
+          "totalDuration": 59417,
+          "connectedDuration": 23701,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "0de81f90-6310-4ea7-8ffb-89435425fe5f",
+          "createdTime": 1657691989665,
+          "endedTime": 1657692026408,
+          "totalDuration": 36743,
+          "connectedDuration": 17953,
+          "terminatingEnd": "System",
+          "terminationReason": "Not Found",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "4d4f125f-8b7e-4088-b19c-38957caab94c",
+          "createdTime": 1657632294650,
+          "endedTime": 1657632325631,
+          "totalDuration": 30981,
+          "connectedDuration": 15734,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "e111d238-19e2-44ea-97a0-467d81d9001a",
+          "createdTime": 1657632196326,
+          "endedTime": 1657632253805,
+          "totalDuration": 57479,
+          "connectedDuration": 38254,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "45de9223-5b6f-41e1-afa5-80ccbf730520",
+          "createdTime": 1657629179046,
+          "endedTime": 1657629211860,
+          "totalDuration": 32814,
+          "connectedDuration": 0,
+          "terminatingEnd": "System",
+          "terminationReason": "System AdmitFailed",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "122d4d62-f006-4824-9641-30da0be254d6",
+          "createdTime": 1657616557372,
+          "endedTime": 1657616593813,
+          "totalDuration": 36441,
+          "connectedDuration": 36390,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "AXW8PTGh0G6K4V3pO0KQ"
+          }
+        },
+        {
+          "id": "9b6798af-4d5f-44ee-88f9-7b5835b69b43",
+          "createdTime": 1657614124816,
+          "endedTime": 1657614169356,
+          "totalDuration": 44540,
+          "connectedDuration": 30761,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "92589c68-8103-4055-89cf-b4f79fa35f7b",
+          "createdTime": 1657612366033,
+          "endedTime": 1657612396812,
+          "totalDuration": 30779,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "de17dd24-5a45-4a3c-b06d-361ed500e376",
+          "createdTime": 1657611990694,
+          "endedTime": 1657612048000,
+          "totalDuration": 57306,
+          "connectedDuration": 26709,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "db2e8fce-8fcb-42de-ad64-1ea6fdefd91b"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "57d0b350-cb2b-4b56-9861-5b84ef31de17",
+          "createdTime": 1657611763053,
+          "endedTime": 1657611798179,
+          "totalDuration": 35126,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "1a4993fd-d7c7-4377-bdc3-951596274900"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "4075f490-53e4-4fe1-a2c0-227653b9e934",
+          "createdTime": 1657606037722,
+          "endedTime": 1657606075720,
+          "totalDuration": 37998,
+          "connectedDuration": 0,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb"
+          },
+          "lastAgent": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb-41f1f7b3-3a0a-4eeb-bd30-355591355e1e"
+          },
+          "lastSite": {
+            "id": "7f7574ca-0f53-4085-abb2-b6bbdc04e05e"
+          }
+        },
+        {
+          "id": "617130f6-358e-419a-91f8-d162371c7dcf",
+          "createdTime": 1657544529739,
+          "endedTime": 1657544560409,
+          "totalDuration": 30670,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "2e9d4f10-e059-4cfa-a448-00c3e349a4af",
+          "createdTime": 1657543747746,
+          "endedTime": 1657543778505,
+          "totalDuration": 30759,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "6a2c10f9-0b02-443c-89e0-6cfbbb2531f3",
+          "createdTime": 1657256189846,
+          "endedTime": 1657256238594,
+          "totalDuration": 48748,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "40d370f8-e16c-4e1d-a4b1-c2a01340254d",
+          "createdTime": 1656699817028,
+          "endedTime": 1656699872850,
+          "totalDuration": 55822,
+          "connectedDuration": 14902,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "3211c1c5-edb6-41f3-9fed-712b9f76f2a2",
+          "createdTime": 1656602352233,
+          "endedTime": 1656602387987,
+          "totalDuration": 35754,
+          "connectedDuration": 9628,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "f9a4ea24-ff57-4ef3-b48d-a3cb40cfd823"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "5a041b0a-e52e-4429-a097-9af9bb66495b",
+          "createdTime": 1656583487312,
+          "endedTime": 1656583539773,
+          "totalDuration": 52461,
+          "connectedDuration": 19088,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "ed35d92c-f7d0-11ec-b5a2-f92a05c3fa7b",
+          "createdTime": 1656523743166,
+          "endedTime": 1656523791931,
+          "totalDuration": 48765,
+          "connectedDuration": 20416,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "2564"
+          },
+          "lastAgent": {
+            "id": "1835"
+          },
+          "lastSite": {
+            "id": "1127"
+          }
+        },
+        {
+          "id": "0790b653-efa0-402c-aaba-2cc9df53f6b3",
+          "createdTime": 1656492497382,
+          "endedTime": 1656492549797,
+          "totalDuration": 52415,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4bb94e3-e41f-42f9-ac64-babe06a0ae7b"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "8f7a821d-a6cb-4d0b-9ec2-cfa4c4919c7f"
+          }
+        },
+        {
+          "id": "e6fe895e-804b-4fa0-9ab4-1ec300eb9fe8",
+          "createdTime": 1656491665491,
+          "endedTime": 1656491721066,
+          "totalDuration": 55575,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4563313-f504-408c-adc4-608379e5ab62"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "73405b68-74bd-4006-ae6e-aff0742f465d",
+          "createdTime": 1656326989408,
+          "endedTime": 1656327040480,
+          "totalDuration": 51072,
+          "connectedDuration": 21058,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "97d59609-810b-470b-8cd5-fe3ae0fa8b8a",
+          "createdTime": 1656326937844,
+          "endedTime": 1656326975417,
+          "totalDuration": 37573,
+          "connectedDuration": 21550,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1107"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "2d7f5c82-8c8d-45da-8512-db399ce8eee9",
+          "createdTime": 1656326452177,
+          "endedTime": 1656326508361,
+          "totalDuration": 56184,
+          "connectedDuration": 34505,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1107"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "6826bac5-18d1-45f4-91a3-acf3fedc416b",
+          "createdTime": 1656072871673,
+          "endedTime": 1656072914510,
+          "totalDuration": 42837,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4563313-f504-408c-adc4-608379e5ab62"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "37a4a8bd-044f-45b4-9d9f-bea6d2326670",
+          "createdTime": 1656068187471,
+          "endedTime": 1656068247058,
+          "totalDuration": 59587,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4563313-f504-408c-adc4-608379e5ab62"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "15ee5d70-d60e-4245-903c-e8d66910c015"
+          }
+        },
+        {
+          "id": "5829e26d-4ab5-4fcd-802c-97d254953f72",
+          "createdTime": 1656068009194,
+          "endedTime": 1656068061720,
+          "totalDuration": 52526,
+          "connectedDuration": 12179,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "138344a7-3dea-4832-8d00-f48bb8159d27"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "15ee5d70-d60e-4245-903c-e8d66910c015"
+          }
+        },
+        {
+          "id": "3100686c-ee8d-4ad1-9470-f19375989fbf",
+          "createdTime": 1656067800893,
+          "endedTime": 1656067842982,
+          "totalDuration": 42089,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "f4493d2b-83b4-4676-8c87-714d48cd9a42",
+          "createdTime": 1656050608672,
+          "endedTime": 1656050650505,
+          "totalDuration": 41833,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4563313-f504-408c-adc4-608379e5ab62"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "8f7a821d-a6cb-4d0b-9ec2-cfa4c4919c7f"
+          }
+        },
+        {
+          "id": "d75496b2-71f3-41b1-91e2-354589d9dc0f",
+          "createdTime": 1656050437377,
+          "endedTime": 1656050484702,
+          "totalDuration": 47325,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "e4bb94e3-e41f-42f9-ac64-babe06a0ae7b"
+          },
+          "lastAgent": {
+            "id": "0ecb9bc0-e257-42a3-a578-b1060b07ea9f"
+          },
+          "lastSite": {
+            "id": "8f7a821d-a6cb-4d0b-9ec2-cfa4c4919c7f"
+          }
+        },
+        {
+          "id": "0fb52d33-f314-11ec-96e6-5bd508456212",
+          "createdTime": 1656020758774,
+          "endedTime": 1656020798340,
+          "totalDuration": 39566,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "93548c63-2cbe-40d1-aa16-e20614cd6ab3",
+          "createdTime": 1655963257216,
+          "endedTime": 1655963300789,
+          "totalDuration": 43573,
+          "connectedDuration": 22511,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "256a51aa-0627-4fea-96dd-212731e4f834",
+          "createdTime": 1655960907463,
+          "endedTime": 1655960952883,
+          "totalDuration": 45420,
+          "connectedDuration": 18693,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "1184c802-63e2-4425-9f30-8d86280b1509",
+          "createdTime": 1655907985433,
+          "endedTime": 1655908025798,
+          "totalDuration": 40365,
+          "connectedDuration": 18901,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "92f0ef29-8e63-4867-958f-1d811ba7e46b",
+          "createdTime": 1655903740125,
+          "endedTime": 1655903785859,
+          "totalDuration": 45734,
+          "connectedDuration": 18893,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "da9fd1c4-0ee0-4c6b-ae40-a4cd2cd7011c",
+          "createdTime": 1655901338327,
+          "endedTime": 1655901378603,
+          "totalDuration": 40276,
+          "connectedDuration": 18819,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "a26580fe-b758-4604-a731-8a7f4fe851af",
+          "createdTime": 1655900855787,
+          "endedTime": 1655900896031,
+          "totalDuration": 40244,
+          "connectedDuration": 18798,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "8eefeb36-cd35-4931-82bb-db6f4a28f541",
+          "createdTime": 1655881331974,
+          "endedTime": 1655881377250,
+          "totalDuration": 45276,
+          "connectedDuration": 18720,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "41481a6a-946d-4897-9918-527a825d052b",
+          "createdTime": 1655880474240,
+          "endedTime": 1655880520157,
+          "totalDuration": 45917,
+          "connectedDuration": 19023,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "94e44e70-b66d-4cf3-91d3-159296493232",
+          "createdTime": 1655879994850,
+          "endedTime": 1655880044425,
+          "totalDuration": 49575,
+          "connectedDuration": 21557,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "6a8c062d-22b2-420c-8792-eb3ecdf25124",
+          "createdTime": 1655878186861,
+          "endedTime": 1655878227689,
+          "totalDuration": 40828,
+          "connectedDuration": 22370,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "211482f2-9871-451e-84ab-4597e32a4862",
+          "createdTime": 1655874671809,
+          "endedTime": 1655874717034,
+          "totalDuration": 45225,
+          "connectedDuration": 18617,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "2e8a6f43-37f4-4f1e-a671-d16c78903a2b",
+          "createdTime": 1655818102196,
+          "endedTime": 1655818143479,
+          "totalDuration": 41283,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb"
+          },
+          "lastAgent": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb-41f1f7b3-3a0a-4eeb-bd30-355591355e1e"
+          },
+          "lastSite": {
+            "id": "7f7574ca-0f53-4085-abb2-b6bbdc04e05e"
+          }
+        },
+        {
+          "id": "11f37761-faf1-47e7-8e6c-6552c554c01c",
+          "createdTime": 1655812626774,
+          "endedTime": 1655812674541,
+          "totalDuration": 47767,
+          "connectedDuration": 34063,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "06d08007-a550-4c71-adb6-73a5c22101e9",
+          "createdTime": 1655811697065,
+          "endedTime": 1655811728854,
+          "totalDuration": 31789,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "c17962e7-de45-416e-bfe9-1ad7a48f5f64"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "51f170da-24c7-4ac2-9848-f45b3ffbca3b",
+          "createdTime": 1655811483429,
+          "endedTime": 1655811523690,
+          "totalDuration": 40261,
+          "connectedDuration": 24682,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "2053"
+          },
+          "lastAgent": {
+            "id": "1106"
+          },
+          "lastSite": {
+            "id": "920"
+          }
+        },
+        {
+          "id": "4f035a6c-6288-4478-9bdf-e5a0abbceb06",
+          "createdTime": 1655468565176,
+          "endedTime": 1655468600151,
+          "totalDuration": 34975,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "b20bba3b-20eb-4d90-b88a-dd65d6bb88d0",
+          "createdTime": 1655468523520,
+          "endedTime": 1655468558265,
+          "totalDuration": 34745,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "7fba15d2-a08f-495b-b520-74432896ae2e"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "3696ada7-c940-4dd2-bd16-fe94ef711957",
+          "createdTime": 1655467645823,
+          "endedTime": 1655467680190,
+          "totalDuration": 34367,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "065b136c-cc69-45a9-9bb4-53683b70034a",
+          "createdTime": 1655467601497,
+          "endedTime": 1655467641213,
+          "totalDuration": 39716,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
+          }
+        },
+        {
+          "id": "0d7b489d-25d7-45e9-b5ea-02ed1eb838a2",
+          "createdTime": 1655467554526,
+          "endedTime": 1655467584662,
+          "totalDuration": 30136,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1e399c63-441c-4063-8843-4551965060c9"
+          },
+          "lastAgent": {
+            "id": "dccc0b28-1bc9-4741-898c-79b989144d1a"
+          },
+          "lastSite": {
+            "id": "f911df59-9bf0-4ca3-9fc6-a56136315d73"
+          }
+        },
+        {
+          "id": "b06bf0ce-98f5-4633-b5f7-a361305a7dcc",
+          "createdTime": 1655446629106,
+          "endedTime": 1655446665059,
+          "totalDuration": 35953,
+          "connectedDuration": 7142,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "a2f70d77-5349-49f0-b5d2-3a5c3801a3b7"
+          },
+          "lastAgent": {
+            "id": "1216"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "f2a847ff-25d6-42b0-b25d-f7d7b52b8d7e",
+          "createdTime": 1655446117183,
+          "endedTime": 1655446150999,
+          "totalDuration": 33816,
+          "connectedDuration": 21368,
+          "terminatingEnd": "Agent",
+          "terminationReason": "Agent Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "1216"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "38782a42-9550-4adf-9239-a1f5b3612981",
+          "createdTime": 1655445823883,
+          "endedTime": 1655445860919,
+          "totalDuration": 37036,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb"
+          },
+          "lastAgent": {
+            "id": "6eedd446-a94e-445b-b096-7b569e4a8ffb-41f1f7b3-3a0a-4eeb-bd30-355591355e1e"
+          },
+          "lastSite": {
+            "id": "7f7574ca-0f53-4085-abb2-b6bbdc04e05e"
+          }
+        },
+        {
+          "id": "c21eb84e-d9c8-4388-9eb0-965cdd674e18",
+          "createdTime": 1655444506008,
+          "endedTime": 1655444555276,
+          "totalDuration": 49268,
+          "connectedDuration": 37777,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "1216"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "6948387a-5c1b-41ca-a558-385d2901009d",
+          "createdTime": 1655444359002,
+          "endedTime": 1655444413563,
+          "totalDuration": 54561,
+          "connectedDuration": 31947,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "1976"
+          },
+          "lastAgent": {
+            "id": "1216"
+          },
+          "lastSite": {
+            "id": "883"
+          }
+        },
+        {
+          "id": "1627aac4-84f3-4716-860d-df496cb2999a",
+          "createdTime": 1655444258160,
+          "endedTime": 1655444294608,
+          "totalDuration": 36448,
+          "connectedDuration": 0,
+          "terminatingEnd": "Customer",
+          "terminationReason": "Customer Left",
+          "lastTeam": {
+            "id": "NA"
+          },
+          "lastAgent": {
+            "id": "NA"
+          },
+          "lastSite": {
+            "id": "NA"
           }
         }
       ],

@@ -1,6 +1,7 @@
 {
   # Aggregation can also be done based on a filter criteria
-  # When using filter argument, aggregations will be performed only on documents which satisfy the filter critera
+  # When using filter argument, aggregations will be performed only on documents which satisfy the filter criteria
+  # Get the number of tasks handled and their average total duration of tasks handled by particular queue.
   taskDetails(
     from: 1644859375000
     to: 1671038575000
