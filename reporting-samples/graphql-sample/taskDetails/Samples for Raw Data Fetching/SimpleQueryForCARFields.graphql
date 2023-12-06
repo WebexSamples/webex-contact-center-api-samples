@@ -1,0 +1,28 @@
+{
+    # Sample query to fetch fields from Customer Activity Record(CAR)
+    taskDetails(from: 1696118400000, to: 1697760000000) {
+        tasks {
+            id
+            channelType
+            activities {
+                # Count of CAR records
+                totalCount
+                # Required fields from CAR.
+                nodes {
+                    id
+                    eventName
+                    createdTime
+                    endedTime
+                }
+                pageInfo {
+                    hasNextPage
+                    endCursor
+                }
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                                "queueId": "1db6df1f-6469-4493-9081-b4c0819a103e"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 8.0
+                        }
+                    ]
+                },
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 23.0
+                        }
+                    ]
+                },
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                                "queueId": "4058ad91-d872-4d4f-9b93-ff93db5b20e2"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "AXW8OBN1L4YBh5I5lOu-",
+                                "queueId": "fa928e4c-a743-475d-9939-0e83135b9057"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "AXW8ODqmL4YBh5I5lOvA",
+                                "queueId": "c511de8c-4e30-4668-8a33-f392d9f8d2ac"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "activities": {
+                        "nodes": [
+                            {
+                                "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 3.0
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}

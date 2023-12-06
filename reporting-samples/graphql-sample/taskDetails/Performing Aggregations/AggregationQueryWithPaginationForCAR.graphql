@@ -1,0 +1,38 @@
+{
+    # Group Aggregations for Customer Activity Record
+    taskDetails(
+        from: 1672444800000
+        to: 1701693617000
+        extFilter: {
+            or: [
+                { activities: { nodes: { eventName: { equals: "connected" } } } }
+                { activities: { nodes: { eventName: { equals: "ctq-accepted" } } } }
+            ]
+        }
+        aggregations: [
+            { field: "activities.nodes.id", type: count, name: "count of id" }
+        ]
+        aggregationInterval: { interval: DAILY }
+    ) {
+        tasks {
+            intervalStartTime
+            activities {
+                nodes {
+                    entrypointId
+                    queueId
+                    siteId
+                    teamId
+                    agentId
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

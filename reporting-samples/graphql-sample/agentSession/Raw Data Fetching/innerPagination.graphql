@@ -1,0 +1,34 @@
+{
+    agentSession(
+        from: 1698235036000
+        to: 1699271836000
+        filter: {
+            channelInfo: {
+                channelId: { equals: "3d4750ab-e6e1-496f-a8a3-80c745bc3105" }
+            }
+        }
+    ) {
+        agentSessions {
+            agentId
+            agentSessionId
+            channelInfo {
+                channelId
+                channelType
+                totalDuration
+                activities(first: 3, after: "1698273611061") {
+                    totalCount
+                    nodes {
+                        id
+                        duration
+                        state
+                        startTime
+                    }
+                    pageInfo {
+                        hasNextPage
+                        endCursor
+                    }
+                }
+            }
+        }
+    }
+}

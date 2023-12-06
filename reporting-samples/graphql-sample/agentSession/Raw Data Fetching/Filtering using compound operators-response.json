@@ -5,8 +5,8 @@
                 {
                     "agentSessionId": "42b41ef1-4601-4596-a80f-98520341526d",
                     "agentId": "AXW8ODqmL4YBh5I5lOvA",
-                    "teamName": "Team-SRI-FF",
-                    "siteName": "Site-SRI-FF",
+                    "teamName": "DummyTeam",
+                    "siteName": "DummySite",
                     "startTime": 1665131808039,
                     "endTime": -1,
                     "isActive": true,
@@ -25,8 +25,8 @@
                 {
                     "agentSessionId": "5d992c31-4fc4-46ad-9883-95bca55beb50",
                     "agentId": "AXW8OBN1L4YBh5I5lOu-",
-                    "teamName": "Team-SRI-FF-Three",
-                    "siteName": "Site-SRI-FF",
+                    "teamName": "DummyTeam-Three",
+                    "siteName": "DummySite",
                     "startTime": 1665131768811,
                     "endTime": -1,
                     "isActive": true,
@@ -65,8 +65,8 @@
                 {
                     "agentSessionId": "950c7ced-39d4-44e6-a3ab-182e1333f26e",
                     "agentId": "011689bf-065e-4bce-b4b5-2cf6861e1ef6",
-                    "teamName": "Ranjan_Team1",
-                    "siteName": "TestSite-RJ",
+                    "teamName": "DummyTeam2",
+                    "siteName": "DummySite2",
                     "startTime": 1655449155442,
                     "endTime": -1,
                     "isActive": true,

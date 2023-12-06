@@ -1,0 +1,20 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "aggregation": [
+                        {
+                            "name": "Count of id",
+                            "value": 1510.0
+                        },
+                        {
+                            "name": "max of duration",
+                            "value": 3.5220661E8
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

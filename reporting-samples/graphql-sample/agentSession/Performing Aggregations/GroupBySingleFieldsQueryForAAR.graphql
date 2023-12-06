@@ -1,0 +1,32 @@
+{
+    # Aggregation query for Agent Activity Record (AAR).
+    agentSession(
+        from: 1644859375000
+        to: 1671038575000
+        aggregations: [
+            {
+                field: "channelInfo.activities.nodes.duration"
+                name: "max of duration"
+                type: max
+            }
+        ]
+    ) {
+        agentSessions {
+            channelInfo {
+                activities {
+                    nodes {
+                        state
+                    }
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

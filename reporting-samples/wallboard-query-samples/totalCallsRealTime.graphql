@@ -1,0 +1,30 @@
+{
+  #TOTAL CALLS in the Contact Center - Realtime
+
+  task(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: createdTime
+    filter: {
+      and: [
+        { direction: { equals: "inbound" } }
+        { isActive: { equals: true } }
+        { status: { notequals: "ended" } }
+        { channelType: { equals: telephony } }
+      ]
+    }
+    aggregations: { field: "id", type: count, name: "Total Contacts RealTime" }
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

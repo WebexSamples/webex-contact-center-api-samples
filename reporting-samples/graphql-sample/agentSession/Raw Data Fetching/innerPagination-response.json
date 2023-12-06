@@ -1,0 +1,46 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "agentId": "fbd8a8c5-ed8e-4a39-9545-8822943ca22b",
+          "agentSessionId": "0f5a37f5-8426-4054-91a2-2815e9d90197",
+          "channelInfo": [
+            {
+              "channelId": "3d4750ab-e6e1-496f-a8a3-80c745bc3105",
+              "channelType": "telephony",
+              "totalDuration": 40331305,
+              "activities": {
+                "totalCount": 7,
+                "nodes": [
+                  {
+                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698273587051-available",
+                    "duration": 24010,
+                    "state": "available",
+                    "startTime": 1698273587051
+                  },
+                  {
+                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698267285362-idle-rona",
+                    "duration": 6301689,
+                    "state": "idle",
+                    "startTime": 1698267285362
+                  },
+                  {
+                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698247438293-available",
+                    "duration": 19847069,
+                    "state": "available",
+                    "startTime": 1698247438293
+                  }
+                ],
+                "pageInfo": {
+                  "hasNextPage": true,
+                  "endCursor": "1698247438293"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

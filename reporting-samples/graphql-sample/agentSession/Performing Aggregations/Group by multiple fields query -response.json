@@ -3,8 +3,8 @@
     "agentSession": {
       "agentSessions": [
         {
-          "teamName": "AksTeam1",
-          "siteName": "Mig_Site",
+          "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -13,25 +13,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 299475.16
+              "value": 0.0
             },
             {
               "name": "Sum of idleCount",
-              "value": 2181.0
+              "value": 948.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 8.0
+              "value": 0.0
             },
             {
               "name": "average of idleDuration",
-              "value": 7643306.5
+              "value": 4.946939273214286E7
             }
           ]
         },
         {
-          "teamName": "AksTeam1",
-          "siteName": "Mig_Site",
+          "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -40,25 +40,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 115015.62
+              "value": 0.0
             },
             {
               "name": "Sum of idleCount",
-              "value": 2697.0
+              "value": 948.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 15.0
+              "value": 0.0
             },
             {
               "name": "average of idleDuration",
-              "value": 5580221.5
+              "value": 4.946939273214286E7
             }
           ]
         },
         {
-          "teamName": "AksTeam1",
-          "siteName": "Mig_Site",
+          "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -71,7 +71,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 2016.0
+              "value": 316.0
             },
             {
               "name": "Sum of connectedCount",
@@ -79,13 +79,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 3992095.2
+              "value": 4.946939273214286E7
             }
           ]
         },
         {
-          "teamName": "AksTeam1",
-          "siteName": "Mig_Site",
+          "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -94,25 +94,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 715736.75
+              "value": 700705.0476190476
             },
             {
               "name": "Sum of idleCount",
-              "value": 896.0
+              "value": 311.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 350.0
+              "value": 281.0
             },
             {
               "name": "average of idleDuration",
-              "value": 7505502.5
+              "value": 4.942989785714286E7
             }
           ]
         },
         {
-          "teamName": "AksTeam2",
-          "siteName": "Mig_Site",
+          "teamId": "2816667c-1902-43be-aebf-e532e05d2c22",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -125,7 +125,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 322.0
+              "value": 33.0
             },
             {
               "name": "Sum of connectedCount",
@@ -133,13 +133,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1388572.4
+              "value": 5.65093505E8
             }
           ]
         },
         {
-          "teamName": "AksTeam2",
-          "siteName": "Mig_Site",
+          "teamId": "2816667c-1902-43be-aebf-e532e05d2c22",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -152,7 +152,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 250.0
+              "value": 33.0
             },
             {
               "name": "Sum of connectedCount",
@@ -160,13 +160,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1512443.9
+              "value": 5.65093505E8
             }
           ]
         },
         {
-          "teamName": "AksTeam2",
-          "siteName": "Mig_Site",
+          "teamId": "2816667c-1902-43be-aebf-e532e05d2c22",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -179,7 +179,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 22.0
+              "value": 11.0
             },
             {
               "name": "Sum of connectedCount",
@@ -187,13 +187,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 6814759.0
+              "value": 5.65093505E8
             }
           ]
         },
         {
-          "teamName": "AksTeam2",
-          "siteName": "Mig_Site",
+          "teamId": "2816667c-1902-43be-aebf-e532e05d2c22",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -202,25 +202,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 590505.75
+              "value": 53391.0
             },
             {
               "name": "Sum of idleCount",
-              "value": 825.0
+              "value": 11.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 116.0
+              "value": 8.0
             },
             {
               "name": "average of idleDuration",
-              "value": 1009187.5
+              "value": 5.65093505E8
             }
           ]
         },
         {
-          "teamName": "Aks_team3",
-          "siteName": "Mig_Site",
+          "teamId": "341227ea-a99e-4e6c-8eb8-4f167ac1cfb2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -233,7 +233,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 8.0
+              "value": 483.0
             },
             {
               "name": "Sum of connectedCount",
@@ -241,13 +241,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1300875.8
+              "value": 4.8383096729166664E7
             }
           ]
         },
         {
-          "teamName": "Aks_team3",
-          "siteName": "Mig_Site",
+          "teamId": "341227ea-a99e-4e6c-8eb8-4f167ac1cfb2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -260,7 +260,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 8.0
+              "value": 483.0
             },
             {
               "name": "Sum of connectedCount",
@@ -268,94 +268,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1300875.8
+              "value": 4.8383096729166664E7
             }
           ]
         },
         {
-          "teamName": "Aks_team3",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1300875.8
-            }
-          ]
-        },
-        {
-          "teamName": "Bangalore_Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 44633.0
-            }
-          ]
-        },
-        {
-          "teamName": "Bangalore_Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 44633.0
-            }
-          ]
-        },
-        {
-          "teamName": "Bangalore_Team",
-          "siteName": "America",
+          "teamId": "341227ea-a99e-4e6c-8eb8-4f167ac1cfb2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -368,7 +287,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 1.0
+              "value": 161.0
             },
             {
               "name": "Sum of connectedCount",
@@ -376,13 +295,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 44633.0
+              "value": 4.8383096729166664E7
             }
           ]
         },
         {
-          "teamName": "Bangalore_Team",
-          "siteName": "America",
+          "teamId": "341227ea-a99e-4e6c-8eb8-4f167ac1cfb2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -391,82 +310,28 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 0.0
+              "value": 1354243.888888889
             },
             {
               "name": "Sum of idleCount",
-              "value": 1.0
+              "value": 143.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 0.0
+              "value": 75.0
             },
             {
               "name": "average of idleDuration",
-              "value": 44633.0
+              "value": 4.8355638354166664E7
             }
           ]
         },
         {
-          "teamName": "Bangalore_Team",
-          "siteName": "Bangalore",
+          "teamId": "78fbcb83-c8ed-4fa5-806b-92d7ea2294a2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 20.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2890976.5
-            }
-          ]
-        },
-        {
-          "teamName": "Bangalore_Team",
-          "siteName": "Bangalore",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 20.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2890976.5
-            }
-          ]
-        },
-        {
-          "teamName": "Bangalore_Team",
-          "siteName": "Bangalore",
-          "channelInfo": [
-            {
-              "channelType": "social"
             }
           ],
           "aggregation": [
@@ -484,16 +349,1096 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 768153.7
+              "value": 127971.0
             }
           ]
         },
         {
-          "teamName": "Bangalore_Team",
-          "siteName": "Bangalore",
+          "teamId": "78fbcb83-c8ed-4fa5-806b-92d7ea2294a2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 6.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 127971.0
+            }
+          ]
+        },
+        {
+          "teamId": "78fbcb83-c8ed-4fa5-806b-92d7ea2294a2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 2.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 127971.0
+            }
+          ]
+        },
+        {
+          "teamId": "78fbcb83-c8ed-4fa5-806b-92d7ea2294a2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 52672.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 2.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 1.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 127971.0
+            }
+          ]
+        },
+        {
+          "teamId": "797c64b1-072e-4b0b-b49c-84c4e8a0fd47",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1045.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6077934.216216216
+            }
+          ]
+        },
+        {
+          "teamId": "797c64b1-072e-4b0b-b49c-84c4e8a0fd47",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1045.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6077934.216216216
+            }
+          ]
+        },
+        {
+          "teamId": "797c64b1-072e-4b0b-b49c-84c4e8a0fd47",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1045.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6077934.216216216
+            }
+          ]
+        },
+        {
+          "teamId": "797c64b1-072e-4b0b-b49c-84c4e8a0fd47",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 469006.5740740741
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 355.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 258.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 1.4875577567901235E7
+            }
+          ]
+        },
+        {
+          "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 399.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.892371195E7
+            }
+          ]
+        },
+        {
+          "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 399.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.892371195E7
+            }
+          ]
+        },
+        {
+          "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 133.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.892371195E7
+            }
+          ]
+        },
+        {
+          "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 239929.65384615384
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 130.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 121.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.8923066375E7
+            }
+          ]
+        },
+        {
+          "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 999.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6.5678692686274506E7
+            }
+          ]
+        },
+        {
+          "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 999.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6.5678692686274506E7
+            }
+          ]
+        },
+        {
+          "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 333.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6.5678692686274506E7
+            }
+          ]
+        },
+        {
+          "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 884774.1666666666
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 343.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 151.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 6.564324539215686E7
+            }
+          ]
+        },
+        {
+          "teamId": "99099ea6-be58-4a51-ba59-8d87a9b79f78",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 15.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 17778.0
+            }
+          ]
+        },
+        {
+          "teamId": "99099ea6-be58-4a51-ba59-8d87a9b79f78",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 15.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 17778.0
+            }
+          ]
+        },
+        {
+          "teamId": "99099ea6-be58-4a51-ba59-8d87a9b79f78",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 5.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 17778.0
+            }
+          ]
+        },
+        {
+          "teamId": "99099ea6-be58-4a51-ba59-8d87a9b79f78",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 5.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 17778.0
+            }
+          ]
+        },
+        {
+          "teamId": "AWn8X-7ORM6_hBZA1PUJ",
+          "siteId": "AWn8XmdC-MmYjwcdYK2i",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 4.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 11000.0
+            }
+          ]
+        },
+        {
+          "teamId": "AWn8X-7ORM6_hBZA1PUJ",
+          "siteId": "AWn8XmdC-MmYjwcdYK2i",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 3.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 5000.0
+            }
+          ]
+        },
+        {
+          "teamId": "AWn8X-7ORM6_hBZA1PUJ",
+          "siteId": "AWn8XmdC-MmYjwcdYK2i",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 16000.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 2.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 1.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 17000.5
+            }
+          ]
+        },
+        {
+          "teamId": "a17f5244-b0fd-46df-a802-78b2c98efcda",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 147.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.714827114E8
+            }
+          ]
+        },
+        {
+          "teamId": "a17f5244-b0fd-46df-a802-78b2c98efcda",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 147.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.714827114E8
+            }
+          ]
+        },
+        {
+          "teamId": "a17f5244-b0fd-46df-a802-78b2c98efcda",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 49.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.714827114E8
+            }
+          ]
+        },
+        {
+          "teamId": "a17f5244-b0fd-46df-a802-78b2c98efcda",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 566304.5
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 45.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 20.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.714783634E8
+            }
+          ]
+        },
+        {
+          "teamId": "b44157fb-e2a8-4b1a-a1a8-5bccffcb143c",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 387.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 3.2279318703703705E7
+            }
+          ]
+        },
+        {
+          "teamId": "b44157fb-e2a8-4b1a-a1a8-5bccffcb143c",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 388.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 3.2279318703703705E7
+            }
+          ]
+        },
+        {
+          "teamId": "b44157fb-e2a8-4b1a-a1a8-5bccffcb143c",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 130.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 3.2279318703703705E7
+            }
+          ]
+        },
+        {
+          "teamId": "b44157fb-e2a8-4b1a-a1a8-5bccffcb143c",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 2016676.3076923077
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 122.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 34.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 4043949.4444444445
+            }
+          ]
+        },
+        {
+          "teamId": "b4e5a804-f899-4725-8101-d6fdc85106ef",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1025.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 1.9508425843137253E7
+            }
+          ]
+        },
+        {
+          "teamId": "b4e5a804-f899-4725-8101-d6fdc85106ef",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1025.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 1.9508425843137253E7
+            }
+          ]
+        },
+        {
+          "teamId": "b4e5a804-f899-4725-8101-d6fdc85106ef",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 1025.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 1.9508425843137253E7
+            }
+          ]
+        },
+        {
+          "teamId": "b4e5a804-f899-4725-8101-d6fdc85106ef",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 727230.304347826
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 184.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 55.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 1.940114054901961E7
+            }
+          ]
+        },
+        {
+          "teamId": "c1b52be1-ef3e-42f5-aef2-8248760bfd99",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 144.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.1618741727272728E8
+            }
+          ]
+        },
+        {
+          "teamId": "c1b52be1-ef3e-42f5-aef2-8248760bfd99",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 144.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.1618741727272728E8
+            }
+          ]
+        },
+        {
+          "teamId": "c1b52be1-ef3e-42f5-aef2-8248760bfd99",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 48.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.1618741727272728E8
+            }
+          ]
+        },
+        {
+          "teamId": "c1b52be1-ef3e-42f5-aef2-8248760bfd99",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "telephony"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 189005.57142857142
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 50.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 26.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 2.1617215754545453E8
+            }
+          ]
+        },
+        {
+          "teamId": "c1ca56c5-f458-405f-bb5e-85ac8d03f222",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "chat"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 63.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 734116.2222222222
+            }
+          ]
+        },
+        {
+          "teamId": "c1ca56c5-f458-405f-bb5e-85ac8d03f222",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "email"
+            }
+          ],
+          "aggregation": [
+            {
+              "name": "average of connectedDuration",
+              "value": 0.0
+            },
+            {
+              "name": "Sum of idleCount",
+              "value": 63.0
+            },
+            {
+              "name": "Sum of connectedCount",
+              "value": 0.0
+            },
+            {
+              "name": "average of idleDuration",
+              "value": 734116.2222222222
+            }
+          ]
+        },
+        {
+          "teamId": "c1ca56c5-f458-405f-bb5e-85ac8d03f222",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+          "channelInfo": [
+            {
+              "channelType": "social"
             }
           ],
           "aggregation": [
@@ -511,94 +1456,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 2890330.8
+              "value": 734116.2222222222
             }
           ]
         },
         {
-          "teamName": "California",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 788352.4
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 909.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 12.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3705277.5
-            }
-          ]
-        },
-        {
-          "teamName": "California",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 95637.82
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1050.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 24.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 4106495.5
-            }
-          ]
-        },
-        {
-          "teamName": "California",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 762.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 4358344.0
-            }
-          ]
-        },
-        {
-          "teamName": "California",
-          "siteName": "America",
+          "teamId": "c1ca56c5-f458-405f-bb5e-85ac8d03f222",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -607,1685 +1471,11 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 343903.88
+              "value": 91532.33333333333
             },
             {
               "name": "Sum of idleCount",
-              "value": 522.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 155.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3489029.5
-            }
-          ]
-        },
-        {
-          "teamName": "Chicago",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 22.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 973060.7
-            }
-          ]
-        },
-        {
-          "teamName": "Chicago",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 32.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 982765.6
-            }
-          ]
-        },
-        {
-          "teamName": "Chicago",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 20.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1003793.0
-            }
-          ]
-        },
-        {
-          "teamName": "Chicago",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 173532.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 2.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 946718.7
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 450972.0
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 13.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 410603.28
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 450972.0
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 434753.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 3.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 450972.0
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team2",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 27.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 115384.375
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team2",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 28.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 103284.336
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team2",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 2.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 6484.0
-            }
-          ]
-        },
-        {
-          "teamName": "Dakshu-Team2",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 15073.5
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 26.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 4.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 130941.57
-            }
-          ]
-        },
-        {
-          "teamName": "Kuldeep-Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 9.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1367671.4
-            }
-          ]
-        },
-        {
-          "teamName": "Kuldeep-Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 7.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1427503.2
-            }
-          ]
-        },
-        {
-          "teamName": "Kuldeep-Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2183490.2
-            }
-          ]
-        },
-        {
-          "teamName": "Kuldeep-Team",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 5.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2083770.6
-            }
-          ]
-        },
-        {
-          "teamName": "Mig_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 74414.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 496.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1249381.9
-            }
-          ]
-        },
-        {
-          "teamName": "Mig_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 50184.57
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 653.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 8.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1649730.2
-            }
-          ]
-        },
-        {
-          "teamName": "Mig_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 322.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 5123710.5
-            }
-          ]
-        },
-        {
-          "teamName": "Mig_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 1996930.6
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1037.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 61.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1768635.8
-            }
-          ]
-        },
-        {
-          "teamName": "Newyork",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2745.0
-            }
-          ]
-        },
-        {
-          "teamName": "Ranjan_Team1",
-          "siteName": "TestSite-RJ",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 33.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 423286.0
-            }
-          ]
-        },
-        {
-          "teamName": "Ranjan_Team1",
-          "siteName": "TestSite-RJ",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 33.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 423286.0
-            }
-          ]
-        },
-        {
-          "teamName": "Ranjan_Team1",
-          "siteName": "TestSite-RJ",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 154278.2
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 46.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 9.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 740002.0
-            }
-          ]
-        },
-        {
-          "teamName": "Ronatimeout_Team",
-          "siteName": "Ronatimeout_Site",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 9.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 84949.5
-            }
-          ]
-        },
-        {
-          "teamName": "Ronatimeout_Team",
-          "siteName": "Ronatimeout_Site",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 9.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 84949.5
-            }
-          ]
-        },
-        {
-          "teamName": "Ronatimeout_Team",
-          "siteName": "Ronatimeout_Site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 10168.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 9.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 2.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 84949.5
-            }
-          ]
-        },
-        {
-          "teamName": "SBR_Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 150838.0
-            }
-          ]
-        },
-        {
-          "teamName": "SBR_Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 150838.0
-            }
-          ]
-        },
-        {
-          "teamName": "SBR_Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 150838.0
-            }
-          ]
-        },
-        {
-          "teamName": "SBR_Team1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 150838.0
-            }
-          ]
-        },
-        {
-          "teamName": "San Fransisco",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 4288.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 15.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 360484.53
-            }
-          ]
-        },
-        {
-          "teamName": "San Fransisco",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 17.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 420158.75
-            }
-          ]
-        },
-        {
-          "teamName": "San Fransisco",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 322869.5
-            }
-          ]
-        },
-        {
-          "teamName": "San Fransisco",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 880163.5
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 2.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 350757.44
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheck",
-          "siteName": "Autiomation_Telephony",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 252850.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheck",
-          "siteName": "Autiomation_Telephony",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 252850.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheck",
-          "siteName": "Autiomation_Telephony",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 252850.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheck",
-          "siteName": "Autiomation_Telephony",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 248875.33
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 10.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 42362.332
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 10.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 42362.332
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 10.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 42362.332
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 305151.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 10.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 5.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 42362.332
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 49.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 248309.89
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 51933.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 49.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 248309.89
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 47.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 267906.97
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 29386.2
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 49.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 5.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 247927.3
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam2",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 165855.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam2",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 165855.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam2",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 4.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 88605.0
-            }
-          ]
-        },
-        {
-          "teamName": "SiteChangeCheckTeam2",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 12187.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 165855.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent1",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 40328.5
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 607.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 2.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 676491.2
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent1",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 33735.5
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 825.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 3.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 673644.5
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent1",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 432.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 664126.4
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent1",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 320622.97
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 542.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 146.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1050564.4
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent2",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 84134.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent2",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 84134.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent2",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 195249.11
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 211.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 42.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 989034.75
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent3",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 43052.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent3",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 43052.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team _QbasedAgent3",
-          "siteName": "Site_QbasedAgent",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 10.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1425570.9
-            }
-          ]
-        },
-        {
-          "teamName": "Team-SRI-FF",
-          "siteName": "Site-SRI-FF",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 144211.55
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1913.0
+              "value": 21.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2293,94 +1483,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1844251.5
+              "value": 734116.2222222222
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF",
-          "siteName": "Site-SRI-FF",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 260813.58
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 2875.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 7.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1847914.8
-            }
-          ]
-        },
-        {
-          "teamName": "Team-SRI-FF",
-          "siteName": "Site-SRI-FF",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 1911.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1844783.5
-            }
-          ]
-        },
-        {
-          "teamName": "Team-SRI-FF",
-          "siteName": "Site-SRI-FF",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 243474.5
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 980.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 501.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1796706.6
-            }
-          ]
-        },
-        {
-          "teamName": "Team-SRI-FF-Three",
-          "siteName": "Site-SRI-FF",
+          "teamId": "c74fb3f5-810c-419a-ba07-b59a534cb132",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -2393,7 +1502,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 56.0
+              "value": 645.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2401,13 +1510,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1576371.9
+              "value": 3.2407554390243903E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Three",
-          "siteName": "Site-SRI-FF",
+          "teamId": "c74fb3f5-810c-419a-ba07-b59a534cb132",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -2420,7 +1529,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 84.0
+              "value": 645.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2428,13 +1537,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1576371.9
+              "value": 3.2407554390243903E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Three",
-          "siteName": "Site-SRI-FF",
+          "teamId": "c74fb3f5-810c-419a-ba07-b59a534cb132",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -2447,7 +1556,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 56.0
+              "value": 645.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2455,13 +1564,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 1576371.9
+              "value": 3.2407554390243903E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Three",
-          "siteName": "Site-SRI-FF",
+          "teamId": "c74fb3f5-810c-419a-ba07-b59a534cb132",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -2470,25 +1579,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 113473.25
+              "value": 221903.25
             },
             {
               "name": "Sum of idleCount",
+              "value": 122.0
+            },
+            {
+              "name": "Sum of connectedCount",
               "value": 28.0
             },
             {
-              "name": "Sum of connectedCount",
-              "value": 9.0
-            },
-            {
               "name": "average of idleDuration",
-              "value": 1576371.9
+              "value": 3.237258219512195E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Two",
-          "siteName": "Site-SRI-FF",
+          "teamId": "d0167404-89f4-4a48-a02d-be32cb4d62c2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -2497,25 +1606,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 53360.0
+              "value": 0.0
             },
             {
               "name": "Sum of idleCount",
-              "value": 77.0
+              "value": 1845.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 1.0
+              "value": 0.0
             },
             {
               "name": "average of idleDuration",
-              "value": 3031434.5
+              "value": 2.3913454888888888E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Two",
-          "siteName": "Site-SRI-FF",
+          "teamId": "d0167404-89f4-4a48-a02d-be32cb4d62c2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -2528,7 +1637,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 115.0
+              "value": 1845.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2536,13 +1645,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 3079776.8
+              "value": 2.3913454888888888E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Two",
-          "siteName": "Site-SRI-FF",
+          "teamId": "d0167404-89f4-4a48-a02d-be32cb4d62c2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -2555,7 +1664,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 76.0
+              "value": 1845.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2563,13 +1672,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 3054944.0
+              "value": 2.3913454888888888E7
             }
           ]
         },
         {
-          "teamName": "Team-SRI-FF-Two",
-          "siteName": "Site-SRI-FF",
+          "teamId": "d0167404-89f4-4a48-a02d-be32cb4d62c2",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -2578,106 +1687,25 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 165526.75
+              "value": 441383.3275862069
             },
             {
               "name": "Sum of idleCount",
-              "value": 39.0
+              "value": 394.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 17.0
+              "value": 292.0
             },
             {
               "name": "average of idleDuration",
-              "value": 3040712.2
+              "value": 2.7912034345238097E7
             }
           ]
         },
         {
-          "teamName": "Team_Automation_Akshatha",
-          "siteName": "Site_Automation_Akshatha",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 1620240.2
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 15.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 13.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 280824.2
-            }
-          ]
-        },
-        {
-          "teamName": "Team_Automation_Akshatha",
-          "siteName": "Site_Automation_Akshatha",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 16.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 283167.4
-            }
-          ]
-        },
-        {
-          "teamName": "Team_Automation_Akshatha",
-          "siteName": "Site_Automation_Akshatha",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 16.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 283167.4
-            }
-          ]
-        },
-        {
-          "teamName": "Team_New_config",
-          "siteName": "Site_New_config",
+          "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "chat"
@@ -2690,7 +1718,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 9.0
+              "value": 732.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2698,13 +1726,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 148425.0
+              "value": 4.934410198039216E7
             }
           ]
         },
         {
-          "teamName": "Team_New_config",
-          "siteName": "Site_New_config",
+          "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "email"
@@ -2717,7 +1745,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 9.0
+              "value": 732.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2725,13 +1753,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 148425.0
+              "value": 4.934410198039216E7
             }
           ]
         },
         {
-          "teamName": "Team_New_config",
-          "siteName": "Site_New_config",
+          "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "social"
@@ -2744,7 +1772,7 @@
             },
             {
               "name": "Sum of idleCount",
-              "value": 9.0
+              "value": 244.0
             },
             {
               "name": "Sum of connectedCount",
@@ -2752,13 +1780,13 @@
             },
             {
               "name": "average of idleDuration",
-              "value": 148425.0
+              "value": 4.934410198039216E7
             }
           ]
         },
         {
-          "teamName": "Team_New_config",
-          "siteName": "Site_New_config",
+          "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+          "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
           "channelInfo": [
             {
               "channelType": "telephony"
@@ -2767,910 +1795,19 @@
           "aggregation": [
             {
               "name": "average of connectedDuration",
-              "value": 0.0
+              "value": 312514.0975609756
             },
             {
               "name": "Sum of idleCount",
-              "value": 3.0
+              "value": 237.0
             },
             {
               "name": "Sum of connectedCount",
-              "value": 0.0
+              "value": 199.0
             },
             {
               "name": "average of idleDuration",
-              "value": 148425.0
-            }
-          ]
-        },
-        {
-          "teamName": "Team_config",
-          "siteName": "Site_config",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1.117324E7
-            }
-          ]
-        },
-        {
-          "teamName": "Team_config",
-          "siteName": "Site_config",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 9.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1.117324E7
-            }
-          ]
-        },
-        {
-          "teamName": "Team_config",
-          "siteName": "Site_config",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1.117324E7
-            }
-          ]
-        },
-        {
-          "teamName": "Team_config",
-          "siteName": "Site_config",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 6555262.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1.117324E7
-            }
-          ]
-        },
-        {
-          "teamName": "Washington",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 56.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 366465.34
-            }
-          ]
-        },
-        {
-          "teamName": "Washington",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 66.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 366375.72
-            }
-          ]
-        },
-        {
-          "teamName": "Washington",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 56.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 366465.34
-            }
-          ]
-        },
-        {
-          "teamName": "Washington",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 169072.25
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 28.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 22.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 366465.34
-            }
-          ]
-        },
-        {
-          "teamName": "WebexTeams_Desktop_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2710082.2
-            }
-          ]
-        },
-        {
-          "teamName": "WebexTeams_Desktop_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 17.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2901275.2
-            }
-          ]
-        },
-        {
-          "teamName": "WebexTeams_Desktop_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2710082.2
-            }
-          ]
-        },
-        {
-          "teamName": "WebexTeams_Desktop_Team",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 6.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2710082.2
-            }
-          ]
-        },
-        {
-          "teamName": "adjohari_team1",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 26213.5
-            }
-          ]
-        },
-        {
-          "teamName": "adjohari_team1",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 12699.2
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 12.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 5.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 26213.5
-            }
-          ]
-        },
-        {
-          "teamName": "adjohari_team1",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 26213.5
-            }
-          ]
-        },
-        {
-          "teamName": "adjohari_team1",
-          "siteName": "Mig_Site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 4.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 26213.5
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 178.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3994837.2
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 27177.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 178.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 6.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3994837.2
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 178.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3994837.2
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "America",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 58114.15
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 176.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 26.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 3994525.5
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 96830.8
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 25171.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 96830.8
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 96830.8
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck1",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 44885.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 8.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 1.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 96830.8
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 49790.0
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 49790.0
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 49790.0
-            }
-          ]
-        },
-        {
-          "teamName": "callDistributionCheck1",
-          "siteName": "SiteChangeCheck2",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 3.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 49790.0
-            }
-          ]
-        },
-        {
-          "teamName": "e2e-team",
-          "siteName": "e2e-site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 30000.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 3.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 0.0
-            }
-          ]
-        },
-        {
-          "teamName": "wxcc_qa_test_Team1",
-          "siteName": "wxcc_qa_test_site",
-          "channelInfo": [
-            {
-              "channelType": "chat"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 32.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1744245.4
-            }
-          ]
-        },
-        {
-          "teamName": "wxcc_qa_test_Team1",
-          "siteName": "wxcc_qa_test_site",
-          "channelInfo": [
-            {
-              "channelType": "email"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 34.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 1506905.1
-            }
-          ]
-        },
-        {
-          "teamName": "wxcc_qa_test_Team1",
-          "siteName": "wxcc_qa_test_site",
-          "channelInfo": [
-            {
-              "channelType": "social"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 0.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 11.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 0.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 342970.16
-            }
-          ]
-        },
-        {
-          "teamName": "wxcc_qa_test_Team1",
-          "siteName": "wxcc_qa_test_site",
-          "channelInfo": [
-            {
-              "channelType": "telephony"
-            }
-          ],
-          "aggregation": [
-            {
-              "name": "average of connectedDuration",
-              "value": 124554.0
-            },
-            {
-              "name": "Sum of idleCount",
-              "value": 183.0
-            },
-            {
-              "name": "Sum of connectedCount",
-              "value": 96.0
-            },
-            {
-              "name": "average of idleDuration",
-              "value": 2986231.2
+              "value": 3.177280331372549E7
             }
           ]
         }

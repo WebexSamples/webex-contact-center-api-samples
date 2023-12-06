@@ -13,14 +13,11 @@
         # Object
         agent {
           # Object
-          name
+          id
         }
       }
-      owner {
-        name
-      }
       queue {
-        name
+        id
       }
 
       consultCount #Int

@@ -1,0 +1,16 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "aggregation": [
+            {
+              "name": "AvgDuration",
+              "value": 11692.576923076924
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

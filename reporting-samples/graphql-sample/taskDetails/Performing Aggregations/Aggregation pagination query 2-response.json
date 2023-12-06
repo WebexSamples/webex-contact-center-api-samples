@@ -6306,7 +6306,7 @@
           "intervalStartTime": 1672617600000,
           "channelType": "chat",
           "lastEntryPoint": {
-            "name": "EP-loadus1"
+            "name": "EP-dummyValue"
           },
           "lastSite": {
             "name": "Bangalore"
@@ -6331,7 +6331,7 @@
           "intervalStartTime": 1672617600000,
           "channelType": "email",
           "lastEntryPoint": {
-            "name": "EP-loadus1"
+            "name": "EP-dummyValue"
           },
           "lastSite": {
             "name": "Bangalore"
@@ -6356,7 +6356,7 @@
           "intervalStartTime": 1672617600000,
           "channelType": "telephony",
           "lastEntryPoint": {
-            "name": "EP-loadus1"
+            "name": "EP-dummyValue"
           },
           "lastSite": {
             "name": "Bangalore"

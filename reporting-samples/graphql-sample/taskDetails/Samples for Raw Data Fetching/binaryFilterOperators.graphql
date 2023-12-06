@@ -1,0 +1,28 @@
+{
+    # Query to fetch documents based on a filter criteria.
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        # Use Filter arguments to apply filter
+        filter: {
+            and: [
+                { isActive: { equals: false } }
+                { status : {contains : "end"}}
+                { abandonedType : {match : "agent-.*"}}
+            ]
+        }
+    ) {
+        tasks {
+            id
+            isActive
+            channelType
+            status
+            abandonedType
+
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

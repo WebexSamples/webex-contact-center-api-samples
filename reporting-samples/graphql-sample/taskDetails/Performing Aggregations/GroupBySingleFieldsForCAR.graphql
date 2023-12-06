@@ -1,0 +1,31 @@
+{
+    # Group Aggregations for Customer Activity Record
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        extFilter: { activities: { nodes: { eventName: { equals: "parked" } } } }
+        aggregations: [
+            {
+                field: "activities.nodes.duration"
+                type: average
+                name: "average parked duration"
+            }
+        ]
+    ) {
+        tasks {
+            activities {
+                nodes {
+                    queueName
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

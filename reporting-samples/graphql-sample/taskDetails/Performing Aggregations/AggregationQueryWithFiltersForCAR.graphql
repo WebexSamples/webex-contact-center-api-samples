@@ -1,0 +1,24 @@
+{
+  # Global filters for CAR fields in an aggregation query
+  taskDetails(
+    from: 1644859375000
+    to: 1671038575000
+    filter: { channelType: { equals: telephony } }
+    extFilter: { activities: { nodes: { eventName: { equals: "parked" } } } }
+    aggregations: [
+      {
+        field: "activities.nodes.duration" # field Name on which aggregation needs to be done
+        type: average # operation name
+        name: "AvgDuration" # Identifier for the results
+      }
+    ]
+  ) {
+    tasks {
+      # Need to include aggregation object to get aggregation results.
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}

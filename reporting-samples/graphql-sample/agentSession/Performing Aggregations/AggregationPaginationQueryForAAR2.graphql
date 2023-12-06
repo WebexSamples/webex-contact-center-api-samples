@@ -1,0 +1,38 @@
+{
+    # Aggregation query for Agent Activity Record (AAR).
+    agentSession(
+        from: 1672444800000
+        to: 1701693308000
+        aggregations: [
+            {
+                field: "channelInfo.activities.nodes.duration"
+                name: "max of duration"
+                type: max
+            }
+        ]
+        pagination : {
+            cursor : "agentId=fbd8a8c5-ed8e-4a39-9545-8822943ca22b::teamId=341227ea-a99e-4e6c-8eb8-4f167ac1cfb2::siteId=dd0b2b7c-d3c1-429b-a2f5-4335de00640c::channelInfo.activities.nodes.state=ringing"
+        }
+    ) {
+        agentSessions {
+            agentId
+            teamId
+            siteId
+            channelInfo {
+                activities {
+                    nodes {
+                        state
+                    }
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

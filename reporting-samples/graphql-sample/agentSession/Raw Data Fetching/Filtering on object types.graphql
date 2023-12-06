@@ -1,19 +1,17 @@
 {
   # Filtering based on complex objects.
-  agentSession(from: 1644859375000, to: 1671038575000
-  filter : {
+  agentSession(from: 1693526400000 to: 1701763420000
+    filter : {
       # Filter syntax for objects is same as how a field is queried.
       # For example - channelInfo followed by channelType.
       channelInfo : {
-          channelType : {equals : "telephony"}
+        channelType : {equals : "telephony"}
       }
-  }
+    }
   ) {
     agentSessions {
       agentSessionId
       agentId
-      teamName
-      siteName
       startTime
       endTime
       isActive

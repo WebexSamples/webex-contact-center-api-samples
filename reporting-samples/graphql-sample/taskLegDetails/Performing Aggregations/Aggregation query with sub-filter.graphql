@@ -8,16 +8,16 @@
       {
         field: "id"
         type: count
-        name: "Call Legs handled by AksQueue1"
+        name: "Call Legs handled by dummyQueue1"
         # Filter criteria for a particular operation can be given
         # Note that syntax for this filter is same as the global filter
-        filter: { queue: { name: { equals: "AksQueue1" } } }
+        filter: { queue: { name: { equals: "dummyQueue1" } } }
       }
       {
         field: "id"
         type: count
-        name: "Call Legs handled by AksQueue2"
-        filter: { queue: { name: { equals: "AksQueue2" } } }
+        name: "Call Legs handled by dummyQueue2"
+        filter: { queue: { name: { equals: "dummyQueue2" } } }
       }
       {
         field: "id"
@@ -25,8 +25,8 @@
         name: "Call Legs handled by other queues"
         filter: {
           and: [
-            { queue: { name: { notequals: "AksQueue1" } } }
-            { queue: { name: { notequals: "AksQueue2" } } }
+            { queue: { name: { notequals: "dummyQueue1" } } }
+            { queue: { name: { notequals: "dummyQueue2" } } }
           ]
         }
       }

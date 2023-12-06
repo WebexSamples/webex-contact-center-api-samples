@@ -1,0 +1,108 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "intervalStartTime": 1665547200000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "c511de8c-4e30-4668-8a33-f392d9f8d2ac"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 7193.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1665547200000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "fa928e4c-a743-475d-9939-0e83135b9057"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 6605.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1666670400000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 330.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668402000000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "4058ad91-d872-4d4f-9b93-ff93db5b20e2"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 7132.5
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668661200000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "4058ad91-d872-4d4f-9b93-ff93db5b20e2"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 11589.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669006800000,
+          "activities": {
+            "nodes": [
+              {
+                "queueId": "4058ad91-d872-4d4f-9b93-ff93db5b20e2"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 38410.25
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981-1700719518064-capture-started",
+                "eventName": "recording-started"
+              },
+              {
+                "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981-1700719516513-connected",
+                "eventName": "connected"
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1700719516513"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

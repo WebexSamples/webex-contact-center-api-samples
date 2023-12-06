@@ -1,22 +1,32 @@
 # Getting started with the Search API using GraphQL
 
-For a quick overview of the `/search` API and how to use our documentation, refer the video below:
+For a quick overview of the `search` API and how to use our documentation, refer the video below:
 
 ## [Watch: Getting Started with the /search API](https://app.vidcast.io/share/c8c778c5-6659-4145-891a-bafcece29863)
 
 ## Introduction
 
-A GraphQL API enables clients to construct queries in order retrieve data. The queries that can be constructed is defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
+A GraphQL API enables clients to construct queries in order retrieve data. The queries are defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
 
-Depending the data required the `search`API supports 3 types of queries :
+Depending on the data required the `search` API supports 3 types of queries :
 
-    1) **taskDetails** - This is used for retrieving/analyzing Contact / Task related data also represented as Contact Session Records (CSRs) and Contact Activity Records(CARs) in analyzer.
+    1. **taskDetails** - This is used for retrieving/analyzing Task (or Contact) related data. In analyzer this is represented as  Contact Session Records (CSRs) and Contact Activity Records (CARs).
 
-    2) **agentSession** - This is used for retrieving/analyzing Agent related data also represented as Agent Session Records (ASRs) and Agent Activity Records (AARs) in analyzer.
+    2. **agentSession** - This is used for retrieving/analyzing Agent related data. In analyzer this is represented as Agent Session Records (ASRs) and Agent Activity Records (AARs).
 
-    3) **taskLegDetails** - This is used for retrieving/analyzing data related to Queues also represented as Queue Based Records or Call-Leg-Record (CLR)s.
+    3. **taskLegDetails** - This is used for retrieving/analyzing data related to Queues also represented as Queue Based Records or Call-Leg-Record (CLRs).
 
- The following sections define each type in detail.
+The queries formed using these types can be broadly categorized into 2 operations 
+
+1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc. with the ability to filter on data apply pagination to get more records. In SQL terminology this operation is analogous to 
+   
+    `SELECT id, channelType FROM task WHERE channelType='telephony'` 
+
+2. **Aggregations** - Performing aggregation operations on record fields with support for group-bys, filtering and pagination. In SQL terminology this operation is analogous to
+   
+   `SELECT COUNT(id), MAX(totalDuration) FROM task WHERE channelType='telephony' GROUP BY teamId, siteId`
+
+The following sections describe each query and supported operations in detail
 
 > [!TIP]
 > 
@@ -24,11 +34,11 @@ Depending the data required the `search`API supports 3 types of queries :
 
 ## Query Definitions
 
-The following sections describe the query types in detail.
+The following sections describe the query types supported in detail.
 
 ### TaskDetails Query
 
-A taskDetails query operates over CSR and CAR data. The GraphQL schema structure is defined as given below.
+A taskDetails query operates over CSR and CAR data. The GraphQL schema structure is defined as given below. 
 
 ```graphql
 taskDetails(
@@ -45,25 +55,25 @@ taskDetails(
 
 #### Arguments
 
-1.  *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span. By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
+3. *timeComparator* - Optional argument: accepts a value of `QueryTimeType` type. This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional Argument, Accepts an *TaskDetailsFilters* object, This is used to filter results  based on a user defined criteria, Refer filtering section for more details.
+4. *filter* - Optional argument: accepts a *TaskDetailsFilters* object. This is used to filter results  based on some criteria, Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *extFilter* - Optional Argument, Accepts an *TaskDetailsSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
+5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on some criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-6. *aggregations* - Optional Argument, Accepts a List of `TaskV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+6. *aggregations* - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations)  for more details.
 
-7. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+7. *aggregationInterval*- Optional argument: accepts a `IntervalData` object. This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-8. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+8. *pagination* - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
-A sample query to fetch CSR records can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
+Sample query to fetch CSR fields can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json).
 
-<TODO> Add sample for CAR and AAR
+Sample query to fetch CAR fields can be found [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql), the response for the same is [here](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json).
 
 ### AgentSession Query
 
@@ -83,23 +93,23 @@ agentSession(
 
 #### Arguments
 
-1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, the `startTime` field used for comparision.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, the `startTime` field is used for comparision.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, the `startTime` field used for comparision.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span, the `startTime` field is used for comparision.
 
-3. *filter* - Optional Argument, Accepts an *AgentSessionFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+3. *filter* - Optional argument: accepts an *AgentSessionFilters* object. This is used to filter results based on a user defined criteria, Refer [filtering section](#support-for-filtering-data) for more details.
 
-4. *extFilter* - Optional Argument, Accepts an *AgentSessionSpecificFilters* object, This is used to filter results based on a user defined criteria, `filter` and `extFilter` define criteria for different fields, Refer filtering section for more details.
+4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object.This is used to filter results based on a user defined criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *aggregations* - Optional Argument, Accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+5. *aggregations* - Optional argument: accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
-6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+6. *aggregationInterval*- Optional argument: accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+7. *pagination* - Optional argument: accepts an object of `Pagination` object, This is used to perform pagination. Refer [pagination section](#pagination-support-1) for more details.
 
-A sample query to fetch ASR records can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
+Sample query to fetch ASR fields can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
 
-<TODO> Add sample for CAR and AAR
+Sample query to fetch AAR fields can be found [here](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json).
 
 ### TaskLegDetails Query
 
@@ -119,23 +129,182 @@ taskLegDetails(
 
 #### Arguments
 
-1. *from* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+1. *from* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the start of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-2. *to* - Mandatory Argument, Accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+2. *to* - Mandatory argument: accepts a *Long* value representing epoch timestamp which defines the end of the query span, By default the `createdTime` field is used for comparision, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
 
-3. *timeComparator* - Optional Argument, Accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
+3. *timeComparator* - Optional argument: accepts a value of `QueryTimeType` type, This defines which field should `from` and `to` arguments use for retrieving documents, Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional Argument, Accepts an *TaskLegDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer filtering section for more details.
+4. *filter* - Optional argument: accepts an *TaskLegDetailsFilters* object, This is used to filter results based on a user defined criteria, Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *aggregations* - Optional Argument, Accepts a List of `TaskLegV2Aggregation`, This is used to perform aggregations over data. Refer aggregations section for more details.
+5. *aggregations* - Optional argument: accepts a List of `TaskLegV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
-6. *aggregationInterval*- Optional Argument, Accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer aggregations section for more details.
+6. *aggregationInterval*- Optional argument: accepts a `IntervalData` object, This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
 
-7. *pagination* - Optional Argument, Accepts an object of `Pagination` object, This is used to perform pagination. Refer pagination section for more details.
+7. *pagination* - Optional argument: accepts an object of `Pagination` object, This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
-A sample query to fetch CSR records can be found [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql), the response for the same is [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json).
+A sample query to fetch CLR records can be found [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql), the response for the same is [here](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json).
 
-### Performing Aggregations
+## Support for Filtering data
+
+Filtering of data is supported using the `filter` and `extFilter` arguments.  Filtering  is supported in both the operations, fetching raw data or performing aggregations, the syntax for defining the filter criteria remains the same.
+
+The distinction between `filter` and `extFilter` is type of fields they allow filtering on. In a *taskDetails* query, `filter` is used for filtering data based on fields available in a CSR record and `extFilter` is used for filtering data based on fields available in a CAR record, Similarly in an *agentSession* query, `filter` is used for filtering based on  ASR fields and `extFilter` is used for filtering based on AAR fields.
+In a *taskLegDetails* query `extfilter`  is **not** supported and  `filter` can be used to filter data based on CLR fields.
+
+The general formula/syntax for filtering is
+
+```graphql
+filter : {
+    fieldName : { operator : value }
+}
+```
+
+### Filtering based on Scalar fields
+
+> [!TIP]
+> 
+> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for Scalar types 
+
+Scalar fields are atomic and represent indivisible values (Unlike object types,
+which can have subfields and contain complex data structures).
+Scalars include basic data types like Int, Long, String, Boolean
+
+#### String Operators for filtering
+
+The following operators are supported for *String* fields
+
+| Operator  | Description                                       |
+| --------- | ------------------------------------------------- |
+| equals    | Checks if two values are equal.                   |
+| notequals | Checks if two values are not equal.               |
+| match     | Checks if a value matches a specified pattern.    |
+| contains  | Checks if a string contains a specific substring. |
+
+Given below is a sample for filtering using *equals* operator, *equals* can be replaced with *notequals*.
+
+```graphql
+filter: {
+    origin: { equals: "+12344565678" }
+}
+```
+
+*match* operator can be used  filter based on a regex/pattern.
+
+```graphql
+filter: {
+    origin: { match: "+12345678.+" }
+}
+```
+
+*contains* operator to filter on a substring match of a string field
+
+```graphql
+filter: {
+    campaignName : { contains : "Sales"}
+}
+```
+
+#### Numerical Operators for filtering
+
+The following operators are supported for numerical fields
+
+| Operator  | Description                     |
+| --------- | ------------------------------- |
+| equals    | Exact match operation           |
+| notequals | Negate operation                |
+| gt        | Greater than operation          |
+| gte       | Greater than or equal operation |
+| lt        | Less than operation             |
+| lte       | Less than or equal operation    |
+
+Using the compound operator `and` and numerical operators we can build range filter as given in below sample.
+
+```graphql
+filter: {
+    and: [
+        { totalDuration: { lte: 120000 } }
+        { totalDuration: { gte: 60000 } }
+    ]
+}
+```
+
+| Query Type/ Record         | Query                                                                                   | Response                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| agentSession query for ASR | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
+| taskLegs query for CLR     | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
+
+#### Compound operators for filtering
+
+Compound filter include 2 types of operators - `and`  & `or` operators, these accept a multiple filter criteria in a form of a list.
+
+Fetch records where channelType is telephony and status is either created or ended
+
+```graphql
+    filter: {
+      and: [
+        { channelType: { equals: telephony } }
+        {
+          or: [
+            { status: { equals: "ended" } }
+            { status: { equals: "created" } }
+          ]
+        }
+      ]
+    }
+```
+
+Some sample queries using compound operators are given below.
+
+| Query Type/ Record                                  | Query                                                                                                      | Response                                                                                                            |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR using compound operator   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
+| agentSession query for ASR  using compound operator | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
+| taskLegs query for CLR  using compound operator     | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
+
+### Filtering based on Composite objects
+
+> [!TIP]
+> 
+> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for type system and Object Types
+
+Filtering is only supported for scalar fields and not supported for objects, however scalar fields inside objects can be filtered.
+
+Consider a scenario where filtering is performed on the `subject` field within the `email` object, which is nested inside the top-level `channelMetaData` field.
+The structure of the query reflects this hierarchy, starting from the top-level field and traversing through subfields until reaching the leaf field.
+
+```graphql
+filter: {
+    channelMetaData: {
+        email: { subject: { equals: "sample subject" } }
+    }
+}
+```
+
+Since all the CAR and AAR fields are present in the `activities` object, filtering using `extFilter` also follow the same pattern, one such sample is given below
+
+```graphql
+extFilter : {
+    activities : {
+        nodes : {
+            queueId : {equals : "40162355-72f4-4dc1-b710-2f8c94e5d14b"}
+        }
+    }
+}
+```
+
+Some samples for filtering on object types are given below
+
+| Query Type/ Record                                | Query                                                                                             | Response                                                                                                |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| taskDetails query with filter on object of CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json) |
+| taskDetails query with filter on object of CAR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters.graphql)  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20extFilters-response.json)  |
+| agentSession query with filter on object of ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
+| agentSession query for filtering on object of AAR | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
+| taskLegDetails query with filter on object of CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
+
+## Performing Aggregations
 
 Any query with the  `aggregations` argument is treated as an aggregation query, this argument accepts a list of object.
 
@@ -151,16 +320,14 @@ Each object requires the following mandatory arguments :
 | min         | Aggregates the value of the field across documents.             | Int, Long, Float                 |
 | max         | Returns the maximum value of the field across documents         | Int, Long, Float                 |
 | sum         | Returns the minimum value of the field across documents         | Int, Long, Float                 |
-| average     | Performs the average of the field across documents.             | Int, Long, Float                 |
+| average     | Returns the average of the field across documents.              | Int, Long, Float                 |
 | cardinality | Returns the count of unique value of the field across documents | Int, Long, Float, String boolean |
 
 The following arguments are optional :
 
 1. *filter* - Denotes the filter-criteria for documents for the particular aggregation.
 
-2. *predicate* - Applicable only for global variables, Refer Global Variable section.
-
-
+2. *predicate* - Applicable only for global variables, Refer to the [Global Variable section ](#performing-aggregations-on-global-variables)for more details.
 
 Refer below for the syntax of `aggregations` argument.
 
@@ -174,80 +341,17 @@ aggregations: [
 ]
 ```
 
+Sample queries to perform aggegations on various data types are given below.
 
+| Query Type/ Record           | Query                                                                         | Response                                                                              |
+| ---------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query.graphql)     | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)    |
+| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR.graphql)  | [link](taskDetails/Performing%20Aggregations/AggregationQueryForCAR-response.json)    |
+| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20query.graphql)    | [link](agentSession/Performing%20Aggregations/Aggregation%20query-response.json)      |
+| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR.graphql) | [link](agentSession/Performing%20Aggregations/AggregationQueryForAAR-response.json)   |
+| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql)  | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json) |
 
-taskDetails sample query for aggregating CSRs can be found [here](taskDetails/Performing%20Aggregations/Aggregation%20query.graphql)  and response can be found [here](taskDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)
-
-AgentSession sample query for aggregating ASRs can be found [here](agentSession/Performing%20Aggregations/Aggregation%20query.graphql)  and response can be found [here](agentSession/Performing%20Aggregations/Aggregation%20query-response.json)
-
-taskLegDetails sample query for aggregating CLRs can be found [here](taskLegDetails/Performing%20Aggregations/Aggregation%20query.graphql) and response can be found [here](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20-response.json)
-
-<TODO> Add sample for CAR and AAR 
-
-#### Support for filtering
-
-##### Global Filtering support
-
-When filtering has to be applied over all aggregations, the top-level  `filter` and     `extFilter` arguments can be used. Refer Filtering section for more details on the syntax and usage. Refer below general syntax for global filtering support
-
-```graphql
-filter : {
-    lastTeam : {
-        name : {equals : "team1"}
-    }
-},
-aggregations: [
-    {
-        field: "id"
-        type: count
-        name: "count of ids"
-    },
-    {
-        field: "totalDuration"
-        type: average
-        name: "average of totalDuration"
-    }
-]
-```
-
-
-
-Sample queries to perform aggegations with filter criteria on various data types are given below.
-
-| Query Type/ Record           | Query  | Response |
-| ---------------------------- | ------ | -------- |
-| taskDetails query for CSR    |        |          |
-| taskDetails query for CAR    | <TODO> |          |
-| agentSession query for ASR   |        |          |
-| agentSession query for AAR   | <TODO> |          |
-| taskLegDetails query for CLR |        |          |
-
-##### Sub filter support
-
-Filtering can also be done for individual aggregation using the `filter` and `extfilter` argument in the aggregation object. Refer below general syntax for sub-filter support 
-
-```graphql
-aggregations: [
-  {
-     field: "totalDuration"
-     type: max
-     name: "maxDurationTelephony"
-     filter: { channelType: { equals: telephony } }
-  }
-]
-```
-
-Sample queries to perform aggegations with sub-filter criteria on various data types are given below.
-
-| Query Type/ Record           | Query | Response |
-| ---------------------------- | ----- | -------- |
-| taskDetails query for CSR    |       |          |
-| taskDetails query for CAR    |       |          |
-| agentSession query for ASR   |       |          |
-| agentSession query for AAR   |       |          |
-| taskLegDetails query for CLR |       |          |
-
-#### Performing group by operation
+### Performing group by operation
 
 To perform a group by operation, the fields required for group bys should be included in the requested fields, The below sample performs a group by on **lastAgent.id** field.
 
@@ -276,32 +380,28 @@ To perform a group by operation, the fields required for group bys should be inc
     }
   }
 }
-
 ```
 
+Some sample queries to perform group by on various data types.
 
-Some sample queries to perform group by on various data types. 
+| Description                                                       | Query                                                                                          | Response                                                                                               |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| taskDetails query to group by on a single field of CSR record     | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
+| taskDetails query to group by on multiple fields of CSR record    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
+| taskDetails query to group by on a single field of CAR record     | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
+| taskDetails query to group by on multiple fields of CAR record    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
+| agentSession query to group by on a single field of ASR record    | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
+| agentSession query to group by on multiple fields of ASR record   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
+| agentSession query to group by on a single field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
+| agentSession query to group by on multiple field of AAR record    | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
+| taskLegDetails query to group by on single field of CLR record    | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
+| taskLegDetails query to group by on multiple fields of CLR record | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
 
-| Description                                                       | Query  | Response |
-| ----------------------------------------------------------------- | ------ | -------- |
-| taskDetails query to group by on a single field of CSR record     |        |          |
-| taskDetails query to group by on multiple fields of CSR record    |        |          |
-| taskDetails query to group by on a single field of CAR record     | <TODO> |          |
-| taskDetails query to group by on multiple fields of CAR record    | <TODO> |          |
-| agentSession query to group by on a single field of ASR record    |        |          |
-| agentSession query to group by on multiple fields of ASR record   |        |          |
-| agentSession query to group by on a single field of AAR record    | <TODO> |          |
-| agentSession query to group by on a single field of AAR record    | <TODO> |          |
-| taskLegDetails query to group by on single field of CLR record    |        |          |
-| taskLegDetails query to group by on multiple fields of CLR record |        |          |
+#### Interval based group bys.
 
+Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` as a requested field and using the `aggregationInterval` argument, this accepts 2 parameters
 
-
-##### Interval based group bys.
-
-Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` in ther requested field and using the `aggregationInterval` argument, this accepts 2 parameters 
-
-* *interval* - Mandatory argument, Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
+* *interval* - Mandatory argument: Accepts an Enum, Based on the query span, (i.e difference of the values passed in `from` and `to`) the following values are supported.
 
 | Query Span        | Supported intervals                                                        |
 |:----------------- |:--------------------------------------------------------------------------:|
@@ -309,9 +409,9 @@ Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` e
 | > DAY & <= 7 DAYS | `THIRTY_MINUTES`, `HOURLY`, `DAILY`, `WEEKLY`, `MONTHLY`                   |
 | > 7 DAYS          | `DAILY`, `WEEKLY`, `MONTHLY`                                               |
 
-* timezone - Optional argument, Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
+* timezone - Optional argument: Accepts a String representing the timezone, using which the intervals should be formed, the default timezone used is `UTC`.
 
-Refer the below sample syntax for the aggregationIntervalArgument. 
+Refer the below sample syntax for the `aggregationInterval` argument.
 
 ```graphql
 aggregationInterval : {
@@ -322,23 +422,530 @@ aggregationInterval : {
 
 Sample queries to perform interval based aggregations.
 
-| Query Type/ Record           | Query | Response |
-| ---------------------------- | ----- | -------- |
-| taskDetails query for CSR    |       |          |
-| taskDetails query for CAR    |       |          |
-| agentSession query for ASR   |       |          |
-| agentSession query for AAR   |       |          |
-| taskLegDetails query for CLR |       |          |
+| Query Type/ Record           | Query                                                                                                               | Response                                                                                                                  |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
+| taskDetails query for CAR    | [link](/taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)         | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
+| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
+| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
+| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
 
+> [!NOTE]
+> 
+> The number of fields used for a group by operation in an aggregation query cannot exceed 10.
 
+#### Pagination support
 
+When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer to the [Pagination section](#pagination-support-1) on more details.
 
+### Structure of aggregation query
 
-## Additional Notes
+The structure of the aggregation query is given below
 
-* Query type *task* API is deprecated, Use *taskDetails*
+![Structure of a query performing aggregations](Aggregation%20query.png)
 
-* *aggregation* argument supported by *TaskDetails*, *agentSession* queries is deprecated, use *aggregations*. 
+### Support for filtering within Aggregation
+
+In an aggregation query, filters can be applied for all the aggregations or for individual aggregations this is referred to as global filter and sub-filter support.
+
+#### Aggregations with global filters
+
+When filtering has to be applied over all aggregations, the top-level  `filter` and     `extFilter` arguments can be used. Refer [Filtering section](#support-for-filtering-data) for more details on the syntax and usage. Refer below general syntax for global filtering support
+
+```graphql
+filter : {
+    lastTeam : {
+        name : {equals : "team1"}
+    }
+},
+aggregations: [
+    {
+        field: "id"
+        type: count
+        name: "count of ids"
+    },
+    {
+        field: "totalDuration"
+        type: average
+        name: "average of totalDuration"
+    }
+]
+```
+
+Sample queries to perform aggegations with filter criteria on various data types are given below.
+
+| Query Type/ Record           | Query                                                                                                 | Response                                                                                                    |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
+| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
+| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
+| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
+| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
+
+#### Aggregations with sub filters
+
+Filtering can also be done for individual aggregation using the `filter` and `extfilter` argument in the aggregation object. Refer below general syntax for sub-filter support 
+
+```graphql
+aggregations: [
+  {
+     field: "totalDuration"
+     type: max
+     name: "maxDurationTelephony"
+     filter: { channelType: { equals: telephony } }
+  }
+]
+```
+
+Sample queries to perform aggegations with sub-filter criteria on various data types are given below.
+
+| Query Type/ Record           | Query                                                                                            | Response                                                                                               |
+| ---------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| taskDetails query for CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters.graphql)   | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filters-response.json)   |
+| taskDetails query for CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR.graphql)       | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithSubFiltersForCAR-response.json)       |
+| agentSession query for ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20sub-filter%20query-response.json)          |
+| agentSession query for AAR   | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR.graphql)       | [link](agentSession/Performing%20Aggregations/AggregationQueryWithSubFilterForAAR-response.json)       |
+| taskLegDetails query for CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20sub-filter-response.json) |
+
+### Fields supported for aggregations
+
+Refer Data Dictionary section for fields supporting aggregation.
+
+## Fetching Raw Data
+
+Fields from individual records can also fetched, this is referred to as fetching raw data, Any query without the `aggregations` argument is treated as a query to fetch raw data. 
+
+Based on the fields that are requested and the filter criteria specified in the query, the API will read data from the appropriate type of record and return the requested field for each record. **It is recommended to fetch fields belonging to the same type of record**. Refer data dictionary section for more details.
+
+Sample taskDetails query to fetch *id* field in a taskDetails query.
+
+```graphql
+{
+  taskDetails(from: 1644859375000, to: 1671038575000) {
+    tasks {
+      id
+    }
+  }
+}
+```
+
+> [!NOTE]
+> 
+> When fetching AAR and CAR  data, the query span i.e. `from` and `to` cannot exceed more than 30 days
+
+Samples for various data types are given below 
+
+| Description                              | Query                                                                                     | Response                                                                                        |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| taskDetails query to fetch CSR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| taskDetails query to fetch CAR fields    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| agentSession query to fetch ASR fields   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
+| agentSession query to fetch AAR fields   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
+| taskLegDetails query to fetch CLR fields | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
+
+### Filtering data
+
+To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer [section on filtering](#support-for-filtering-data) for details
+
+### Pagination support for fetching raw data
+
+Pagination is supported for raw queries, Refer [section on pagination](#pagination-support-1) for details
+
+### Structure of a query to fetch raw data
+
+The structure of a query to fetch raw data is given below
+
+![Structure of query fetching raw data](Raw%20query%20sample.png)
+
+## Pagination Support
+
+The `search` API supports pagination for both the operations - performing aggregations and fetching raw data. The page size/ number of records returned by the query is fixed. Clients can fetch the next set of records using the `hasNextPage` and the `endCursor` fields in the response. 
+
+```graphql
+{
+  taskDetails(from: 1690964812000, to: 1691224012000) {
+    tasks {
+      id
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}
+```
+
+`hasNextPage` is a boolean field which determines if more data exists for the given query. If  `hasNextPage` value is `true` clients can fetch the value for `endCursor`  field which is a string and acts as an identifier for the next page. `endCursor` value  is passed in the subsquent query to fetch the next set of records. 
+
+The `pagination` argument accepts `cursor` input parameter which accepts the `endCursor` value and fetches the next page. A sample is given below 
+
+```graphql
+{
+  taskDetails(
+    from: 1690964812000
+    to: 1691224012000
+    pagination: { cursor: "<VALUE-OF-endCursor-FROM-PREVIOUS-QUERY" }
+  ) {
+    tasks {
+      id
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
+```
+
+The page size of a query depends on the query type and the operations, these are given below.
+
+| Operation         | Query Type     | Page Size | Total  number of Records that can be fetched with pagination |
+| ----------------- | -------------- | --------- | ------------------------------------------------------------ |
+| Fetch raw data    | taskDetails    | 250       | 100000                                                       |
+| Fetch raw data    | agentSession   | 250       | No Limit                                                     |
+| Fetch raw data    | taskLegDetails | 500       | 100000                                                       |
+| Aggregation query | taskDetails    | 1000      | No Limit                                                     |
+| Aggregation query | agentSession   | 1000      | No Limit                                                     |
+| Aggregation query | taskLegDetails | 1000      | No Limit                                                     |
+
+> [!NOTE] 
+> 
+> In order to fetch the first page, the `pagination` argument can either be omitted or the `cursor` value can be set to **NA**.
+
+Sample queries demonstrating pagination when fetching raw data are given below.
+
+| Query Type/ Record                    | Query                                                                                    | Response                                                                                          |
+| ------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| agentSession ASR pagination query 1   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                         | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 2   | [link](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                        | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| agentSession ASR pagination query 3   | [link](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                        | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                           |
+| taskDetails CSR pagination query 1    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| taskDetails CSR pagination query 2    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
+| taskDetails CSR pagination query 3    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
+| taskLegDetails CLR pagination query 1 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                          | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                             |
+| taskLegDetails CLR pagination query 2 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                         |
+| taskLegDetails CLR pagination query 3 | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                         |
+
+### Inner Pagination / Paginating CAR and AAR records
+
+Both CAR and AAR records are exposed within the `activities.nodes` field which provides with a list of records. To fetch more CAR and AAR records, inner pagination can be used, this enables pagination within the records instead of paginating the records themselves.
+
+To fetch more records within `activities.nodes` , the cursor can be retrieved from `activities.pageInfo` field which contains `endCursor` and `hasNextPage` fields. This cursor value can be passed into the `after` argument 
+
+The `activities` field supports the following 2 arguments to support inner pagination 
+
+1. *first*  - Accepts an Int value which determines the number of records to be fetched. The default the value is set to **25** and the maximum supported value is **100**.
+
+2. *after* - Accepts a String value which determines the next page to be fetched.
+
+> [!NOTE]
+> The total count of records can be read using the `activities.totalCount` field.
+
+> [!IMPORTANT]
+> 
+> Since inner pagination enables record level pagination, the cursor value retrieved from a record is not applicable for other records, hence it is highly recommended to use a `filter` to exclude the other records.
+
+A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-b9fd-83e263538393**  after the cursor value of **1697205941011** is shown below 
+
+```graphql
+{
+  taskDetails(
+    from: 1696118400000
+    to: 1697328000000
+    filter: { id: { equals: "9bd2d70a-3438-4784-b9fd-83e263538393" } }
+  ) {
+    tasks {
+      id
+      activities(first: 5, after: "1697205941011") {
+        totalCount
+        nodes {
+          id
+          eventName
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}
+```
+
+Sample queries for inner pagination of CAR and AAR are given below.
+
+| Query Type                            | Query                                                                             | Response                                                                                |
+| ------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| taskDetails query for CAR pagination  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
+| agentSession query for AAR pagination | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)                | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
+
+### Pagination Support for Aggregation with Group Bys
+
+In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
+
+| Query Type/ Record                                     | Query                                                                                                     | Response                                                                                                          |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| taskDetails CSR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
+| taskDetails CSR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
+| taskDetails CAR aggregation query with pagination 1    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
+| taskDetails CAR aggregation query with pagination 2    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
+| agentSession ASR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
+| agentSession ASR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
+| agentSession AAR aggregation query with pagination 1   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
+| agentSession AAR aggregation query with pagination 2   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
+| taskLegDetails CLR aggregation query with pagination 1 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
+| taskLegDetails CLR aggregation query with pagination 2 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
+
+## Global Variables Support
+
+[Global Variables](https://portal-v2.wxcc-us1.cisco.com/ccone-help-new/webexcc_t_add-global-variable.html#!wcc_c_global-variables.html) are exposed as part of  TaskDetails and TaskLegDetails query,
+Depending on the data type of the variable there are 5 types of Global Variables:
+
+1. stringGlobalVariables
+
+2. booleanGlobalVariables
+
+3. integerGlobalVariables
+
+4. doubleGlobalVariables
+
+5. longGlobalVariables
+
+To get fetch the global variable data, pass name of the global in the argument
+Eg: To get data of the Global Variable of String Type with name as GlobalVariable1
+
+```graphql
+# 'name' argument is mandatory.
+#  This block will fetch name and value for the stringGlobalVariable named 'GlobalVariable1'
+stringGlobalVariables(name: "GlobalVariable1") {
+    name
+    value
+}
+```
+
+Multple global variables of same type can be fetched using [aliasing](https://graphql.org/learn/queries/#aliases):
+
+```graphql
+# To fetch multiple global variables use aliasing - https://graphql.org/learn/queries/#aliases
+GV1: stringGlobalVariables(name: "GV1") {
+    name
+    value
+}
+GV59: stringGlobalVariables(name: "GV59") {
+    name
+    value
+}
+```
+
+Some sample queries on globalVariables for taskDetails and taskLegDetails
+
+| Query Type                              | Query                                                                           | Response                                                                              |
+| --------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| taskDetails query on globalVariables    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)    |
+| taskLegDetails query on globalVariables | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
+
+### Filtering based on global variables
+
+Filtering on global variable is supported by the passing the globalVariable name in name argument and values to be filtered in the value argument.
+Eg: Fetch the records Global Variable (GV1) of string with value ABC123
+
+```graphql
+{
+    stringGlobalVariables: {
+        name: { equals: "GV1" }
+        value: { equals: "ABC123" }
+    }
+}
+```
+
+Eg: Fetch the records Global Variable (GV2) of integer type greater than 100
+
+```graphql
+{
+    integerGlobalVariables: {
+        name: { equals: "GV2" }
+        value: { gt: 100 }
+    }
+}
+```
+
+Refer section of filtering  different operator available.
+
+Some sample queries on globalVariables with filtering for taskDetails and taskLegDetails
+
+| Query Type                                             | Query                                                                                         | Response                                                                                            |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| taskDetails query on globalVariables with filtering    | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)       | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
+| taskLegDetails query on globalVariables with filtering | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
+
+### Performing Aggregations on global variables
+
+For performing aggregation on global variables we need to use the `predicate` argument in the `aggregations` object
+Eg: Sum of all values of integer global variable named `GV2` .
+
+```graphql
+ {
+    field: "integerGlobalVariables.value"
+    name: "Sum of GV2"
+    type: sum
+    # Predicate is used to define which global variable needs to be considered for the operation.
+    predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+}
+```
+
+Eg: Fetch unique value of a string global variable named `GV1`.
+
+```graphql
+ {
+    field: "stringGlobalVariables.value"
+    name: "Unique of GV1"
+    type: cardinality
+    # Predicate is used to define which global variable needs to be considered for the operation.
+    predicate: { stringGlobalVariables: { name: { equals: "GV1" } } }
+}
+```
+
+Refer section on aggregation for more details on aggregation types.
+
+Some sample aggregations on globalVariables for taskDetails and taskLegDetails
+
+| Query Type                                    | Query                                                                                   | Response                                                                                      |
+| --------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| taskDetails aggregation on globalVariables    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json)    |
+| taskLegDetails aggregation on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json) |
+
+### Performing group by operation on global variables
+
+For performing group by's using global variables, the fields required for group bys should be included in the requested fields, The sample below performs a group by operation on the value of a string global variable named `Global_Language`.
+
+```graphql
+{
+    # Group by using  Global Variables
+    # To perform a group by on a global variable add the global variable in the selection set.
+    taskDetails(
+        from: 1655449155512
+        to: 1671038575000
+        aggregations: [
+            { field: "id", name: "count of calls", type: count }
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            # Group by on stringGlobalVariable named "Global_Language".
+            stringGlobalVariables(name: "Global_Language") {
+                value
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}
+```
+
+Using aliasing group by can be done on multtiple global variables of the same type.
+
+```graphql
+{
+    # Group by using  Global Variables
+    # To perform a group by on a global variable add the global variable in the selection set.
+    taskDetails(
+        from: 1655449155512
+        to: 1671038575000
+        aggregations: [
+            { field: "id", name: "count of calls", type: count }
+            {
+                field: "integerGlobalVariables.value"
+                name: "Sum of GV2"
+                type: sum
+                predicate: { integerGlobalVariables: { name: { equals: "GV2" } } }
+            }
+        ]
+    ) {
+        tasks {
+            # Group by on stringGlobalVariable named "Global_Language".
+            stringGlobalVariables(name: "Global_Language") {
+                value
+            }
+            # Group by on stringGlobalVariable named "Location".
+            Location: stringGlobalVariables(name: "Location") {
+                value
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}
+```
+
+Some sample group by's on globalVariables with aggregations for taskDetails and taskLegDetails
+
+| Query Type                                | Query                                                                                   | Response                                                                                             |
+| ----------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| taskDetails groupby on globalVariables    | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)     | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)            |
+| taskLegDetails groupby on globalVariables | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
+
+## Restrictions
+
+1. For any type of query, the query span i.e. the `from` and `to` should not exceed a period of 12 months 
+
+2. When fetching AAR and CAR raw data, the query span i.e. `from` and `to` cannot exceed more than 30 days.   
+
+3. When fetching CSR and CLR documents, using pagination the API supports upto a maximum of 100K records.  
+
+4. The number of fields used for a group by operation in an aggregation query cannot exceed 10.
+
+## Recommendations / Best Practices
+
+* While querying data / performing aggregations, it is recommended to use fields belonging to only a single data type.  
+
+* It is recommended to use *taskDetails* query for any Task related data instead of the older *task* query
+
+* For aggregations, use *aggregation* argument, the older argument  *aggregation*  supports limited functionalities and is not recommended to be used.
+
+* Performing group by's on Global Variables and skill related fields is not recommended as the performance may be impacted based on the volume of data.
+
+* Performing group by's on Int, Double or numerical fields or String fields which have  high number of unique values is not recommended.
+
+* It is recommended to pass `TrackingId` header with a valid UUID in the request payload, this allows for support teams for easier debugging in case of  any issue.
+
+## More Examples
+
+This repository is oragnized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
+
+| #   | File Name                                                                            | Comments                                                                                                                                                                 | Query Type              |
+| --- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| 1   | [simple.graphql](More%20Examples/simple.graphql)                                     | SIMPLE: Simply retrieve all task IDs.                                                                                                                                    | Fetching raw data       |
+| 2   | [basicFields.graphql](More%20Examples/basicFields.graphql)                           | BASIC: Basic query to request for certain fields.                                                                                                                        | Fetching raw data       |
+| 3   | [advanced.graphql](More%20Examples/advanced.graphql)                                 | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields.                                                                                         | Performing Aggregations |
+| 4   | [callback.graphql](More%20Examples/callbackFilter.graphql)                           | FILTER: Get the Task details using CallBack filters and logical operators to match a condition.                                                                          | Fetching raw data       |
+| 5   | [realTimeQueuedTasks.graphql](More%20Examples/realTimeQueuedTasks.graphql)           | FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.                                                                                             | Fetching raw data       |
+| 6   | [lastAgentInteraction.graphql](More%20Examples/lastAgentInteraction.graphql)         | LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached.        | Performing Aggregations |
+| 7   | [interactionDetails.graphql](More%20Examples/interactionDetails.graphql)             | INTERACTION DETAILS: Usage of filters, aggregates, pagination and custom fields to find out information about a specific interaction using INTERACTION ID/TaskID/CSR ID. | Performing Aggregations |
+| 8   | [totalCallsByAni.graphql](More%20Examples/totalCallsByAni.graphql)                   | Filter with Aggregates: Usage of filters with aggregations, for total calls made by a specific customer.                                                                 | Performing Aggregations |
+| 9   | [globalVariables.graphql](More%20Examples/globalVariables.graphql)                   | GLOBAL VARIABLES: Usage of the Global Variables field to extract a specific global variable or a combination of two global variables.                                    | Fetching raw data       |
+| 10  | [globalVariableFilter.graphql](More%20Examples/globalVariableFilter.graphql)         | GLOBAL VARIABLES: Usage of the Global Variables as a FILTER to extract a specific tasks for a specific global variable.                                                  | Fetching raw data       |
+| 11  | [allContactFields.graphql](More%20Examples/allContactFields.graphql)                 | ALL FIELDS: Extracting all fields from the Contact Session Record = Task Details.                                                                                        | Fetching raw data       |
+| 12  | [allAgentSessionFields.graphql](More%20Examples/allAgentSessionFields.graphql)       | ALL FIELDS: Extracting all fields from the Agent Session Record = ASR Details.##                                                                                         | Fetching raw data       |
+| 13  | [FetchAgentSkill.graphql](More%20Examples/FetchAgentSkill.graphql)                   | SKILLS : Extracting Agent skills from an ASR record                                                                                                                      | Fetching raw data       |
+| 14  | [FilteringUsingAgentSkill.graphql](More%20Examples/FilteringUsingAgentSkill.graphql) | SKILLS : Filtering ASR records based on Agent skill criteria                                                                                                             | Fetching raw data       |
+| 15  | [GroupByAgentSkills.graphql](More%20Examples/GroupByAgentSkills.graphql)             | SKILLS: Group ASR records based on set of skills                                                                                                                         | Performing Aggregations |
 
 ## Support
 

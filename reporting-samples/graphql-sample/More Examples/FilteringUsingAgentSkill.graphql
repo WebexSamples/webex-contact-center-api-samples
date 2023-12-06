@@ -1,0 +1,23 @@
+{
+  # Sample query for filtering using agentSkill
+  agentSession(
+    from: 1696118400000
+    to: 1701302400000
+    filter: { agentSkills: { name: { equals: "Python" }, intVal: { gte: 9 } } }
+  ) {
+    agentSessions {
+      agentSessionId
+      agentId
+      teamId
+      siteId
+      startTime
+      endTime
+      skillsProfile
+      agentSkills #JSON object
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   # Interval Based aggregation for Timezone
   # Timezone can also be passed to ensure buckets are created based on the passed timezone.
-  agentSession(from: 1644859375000, to: 1671038575000
+  agentSession(from: 1693526400000 to: 1701763420000
     aggregations : [
         {
             field : "channelInfo.connectedCount"
@@ -33,7 +33,7 @@
 ) {
     agentSessions {
         intervalStartTime
-        teamName
+        teamId
         aggregation {
             name
             value

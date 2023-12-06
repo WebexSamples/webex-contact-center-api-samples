@@ -9,8 +9,8 @@
     agentSessions {
       agentSessionId
       agentId
-      teamName
-      siteName
+      teamId
+      siteId
       startTime
       endTime
       isActive

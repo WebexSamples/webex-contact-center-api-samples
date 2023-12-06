@@ -1,0 +1,111 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "intervalStartTime": 1666670400000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 18579.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1667448000000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 18511.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668142800000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 95.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668402000000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 26594.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1668661200000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 33503.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669006800000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 27112.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669698000000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 14787.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669784400000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 33507.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669870800000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 26992.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1669957200000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 12720.0
+            }
+          ]
+        },
+        {
+          "intervalStartTime": 1670302800000,
+          "aggregation": [
+            {
+              "name": "max of ringing duration",
+              "value": 59380.0
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  #ADVANCED: This Example shows you a combination of comparators, filters, aggregations that can be built
+  taskDetails(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: endedTime #When filtering tasks, use the end time of the task
+    filter: {
+      #Filter the type of Task
+      and: [
+        { channelType: { equals: telephony } } #Telephony calls only
+        { status: { equals: "ended" } } #Final Disposition
+        { direction: { equals: "inbound" } } #Inbound call only
+        { isActive: { equals: false } } #Resolved call only
+      ]
+    }
+    aggregation: {
+      #Define custom formulas and Aggregations - NOTE that the FIELDS you insert below has an effect on this.
+      aggr: [
+        { field: totalDuration, type: sum, name: "Total Duration" }
+        {
+          field: connectedDuration
+          type: average
+          name: "Average Connected Duration"
+        }
+      ]
+    }
+    pagination: { cursor: "NA" } #Giving cursor as "NA" is equivalent of fetching the first page
+  ) {
+    tasks {
+      #Task Metadata - Note that since these are aggregates, you need to use the GROUPBY Fields HERE
+      origin
+      destination
+      lastWrapupCodeName #Why the customer called
+      #Aggregation Results - Print Total and Average Durations
+      aggregation {
+        name
+        value
+      }
+    }
+    #Pagination Information
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "available"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 3.5220661E8
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "call-ended"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1481.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "connected"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 878633.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "hold-done"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 86907.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "idle"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 3.1670295E7
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "logged-out"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "not-responding"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 49359.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "on-hold"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 19929.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "outdial-reserved"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.8290694E7
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "ringing"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 59380.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "skill-update"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "wrapup"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.8292479E7
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}

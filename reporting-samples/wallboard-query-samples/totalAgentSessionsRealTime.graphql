@@ -1,0 +1,23 @@
+{
+  #TOTAL Agent Sessions Logged in - Currently
+
+  task(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: createdTime
+    filter: { and: [{ isActive: { equals: true } }] }
+    aggregations: { field: "id", type: count, name: "Total Contacts RealTime" }
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

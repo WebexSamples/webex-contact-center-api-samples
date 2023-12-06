@@ -3,7 +3,7 @@
   # Include the pageInfo object in the query, to fetch hasNextPage and endCursor
   # If the hasNextPage is set to true the cursor can be passed in the next query
   # Check the next example - Pagination 2.txt
-  agentSession(from: 1644859375000, to: 1671038575000
+  agentSession(from:1673308800000, to: 1701764519000
   pagination : {
     # Giving cursor as "NA" is equivalent of fetching the first cursor
     cursor : "NA"
@@ -12,8 +12,8 @@
     agentSessions {
       agentSessionId
       agentId
-      teamName
-      siteName
+      teamId
+      siteId
       startTime
       endTime
       isActive

@@ -1,0 +1,33 @@
+{
+    # Query to fetch fields from Agent Activity Record (AAR).
+    agentSession(from: 1696118400000, to: 1697760000000) {
+        agentSessions {
+            agentSessionId
+            agentId
+            teamId
+            siteId
+            channelInfo {
+                channelId
+                channelType
+                activities {
+                    totalCount
+                    # Required fields from AAR.
+                    nodes {
+                        id
+                        state
+                        startTime
+                        endTime
+                    }
+                    pageInfo {
+                        hasNextPage
+                        endCursor
+                    }
+                }
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+  #BASIC: Basic query to request for certain fields for the last 30 days of data - 1 Month lookback
+  taskDetails(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    #Start with Page 0
+    pagination: { cursor: "0" }
+  ) {
+    tasks {
+      createdTime #ContactStartTime
+      endedTime #Contact EndTime
+      id #ContactSessionId
+      status #CurrentState
+      channelType #ChannelType
+      direction
+      origin #ANI
+      destination #DNIS
+      isActive #WhetherRealtimeOrHistorical
+      lastEntryPoint {
+        id
+        name #EntrypointName
+      }
+      lastQueue {
+        id
+        name #NameOfQueue
+      }
+      lastTeam {
+        id
+        name
+      }
+      owner {
+        id #AgentId
+        name #AgentName
+      }
+      terminationType #HandleType
+      lastWrapupCodeName #WrapUpCode
+      selfserviceDuration #IVRDuration
+      ringingDuration #RingDuration
+      queueDuration #QueueDurtaion
+      connectedDuration #HandleDuration
+      totalDuration #TotalCallDuration
+      holdDuration #HoldDuration
+      wrapupDuration #WrapUpDuration
+    }
+    #Pagination Information
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
