@@ -8,23 +8,37 @@ For a quick overview of the `search` API and how to use our documentation, refer
 
 A GraphQL API enables clients to construct queries in order retrieve data. The queries are defined by the API server in the form of a GraphQL schema, this acts a contract between the server and the client.
 
-Depending on the data required the `search` API supports 3 types of queries :
+The API supports 3 types of query types :
 
-    1. **taskDetails** - This is used for retrieving/analyzing Task (or Contact) related data. In analyzer this is represented as  Contact Session Records (CSRs) and Contact Activity Records (CARs).
+    1. **taskDetails**  - This is used for retrieving/analyzing Task (or Contact) related data. In analyzer this is represented as  Contact Session Records (CSRs) and Contact Activity Records (CARs).
 
     2. **agentSession** - This is used for retrieving/analyzing Agent related data. In analyzer this is represented as Agent Session Records (ASRs) and Agent Activity Records (AARs).
 
     3. **taskLegDetails** - This is used for retrieving/analyzing data related to Queues also represented as Queue Based Records or Call-Leg-Record (CLRs).
 
-The queries formed using these types can be broadly categorized into 2 operations 
+Based on the operation, a query can be of 2 types 
 
-1. **Fetching Raw Data** - Fetching individual records stored such as CSRs, ASRs, CARs etc. with the ability to filter on data apply pagination to get more records. In SQL terminology this operation is analogous to 
+1. **Query to fetch raw data** - Fetching individual records stored such as CSRs, ASRs, CARs etc. with the ability to filter on data apply pagination to get more records. In SQL terminology this operation is analogous to 
    
     `SELECT id, channelType FROM task WHERE channelType='telephony'` 
-
-2. **Aggregations** - Performing aggregation operations on record fields with support for group-bys, filtering and pagination. In SQL terminology this operation is analogous to
    
-   `SELECT COUNT(id), MAX(totalDuration) FROM task WHERE channelType='telephony' GROUP BY teamId, siteId`
+   The structure of such a query can be found below
+   
+   ![Structure of query fetching raw data](Raw%20query%20sample.png) 
+
+2. **Query to perform aggregations** - Performing aggregation operations on record fields with support for group-bys, filtering and pagination. In SQL terminology the API is capable of the following queries.
+   
+   * `SELECT COUNT(id), MAX(totalDuration) FROM task`
+   
+   * `SELECT AVG(connectedDuration), AVG(totalDuration) FROM task  GROUP BY teamId, siteId`
+   
+   * `SELECT MAX(holdDuration) FROM task WHERE channelType='telephony' GROUP BY lastAgent.id`
+   
+   The structure of such a query can be found below
+   
+   ![Structure of a query performing aggregations](Aggregation%20query.png)
+   
+   
 
 The following sections describe each query and supported operations in detail
 
@@ -38,12 +52,39 @@ The following sections describe the query types supported in detail.
 
 ### TaskDetails Query
 
-A taskDetails query operates over CSR and CAR data. The GraphQL schema structure is defined as given below. 
+A taskDetails query operates over **CSR** and **CAR** records. 
+
+#### Sample Query
+
+A sample query to fetch tasks created on 1st January 2023 
+
+```graphql
+{
+  taskDetails(
+    from: 1672531200000 # 1st January 2023 00:00:00 UTC
+    to: 1672617599000 # 1st January 2023 23:59:59 UTC
+  ) {
+    tasks {
+      id
+      isActive
+      channelType
+      createdTime
+      endedTime
+    }
+  }
+}
+
+
+```
+
+#### GraphQL Schema
+
+The GraphQL schema structure is defined as given below. 
 
 ```graphql
 taskDetails(
-    from: Long!
-    to: Long!
+    from: Long!  # MANDATORY ARGUMENT
+    to: Long!    # MANDATORY ARGUMENT
     timeComparator: QueryTimeType
     filter: TaskDetailsFilters
     extFilter: TaskDetailsSpecificFilters
@@ -80,17 +121,53 @@ Sample Queries
 
 ### AgentSession Query
 
-An agentSession query operates over ASR and AAR data. The GraphQL schema structure is defined as
+An agentSession query operates over **ASR** and **AAR** records. 
+
+#### Sample Query
+
+A sample query to fetch agentSessions created on 1st January 2023.
+
+
+```graphql
+{
+  agentSession(
+    from: 1672531200000 # 1st January 2023 00:00:00 UTC
+    to: 1672617599000 # 1st January 2023 23:59:59 UTC
+  ) {
+    agentSessions {
+      agentId
+      teamId
+      siteId
+      startTime
+      endTime
+      channelInfo {
+        channelId
+        channelType
+        totalDuration
+        connectedDuration
+      }
+    }
+  }
+}
+
+```
+
+
+
+
+#### GraphQL schema
+
+The GraphQL schema structure is defined as given below.
 
 ```graphql
 agentSession(
-    from: Long!
-    to: Long!
+    from: Long! # MANDATORY ARGUMENT
+    to: Long!   # MANDATORY ARGUMENT 
     filter: AgentSessionFilters
     extFilter: AgentSessionSpecificFilters
-    aggregations: [AgentSessionV2Aggregation]
-    aggregationInterval: IntervalData
-    pagination: Pagination
+    aggregations: [AgentSessionV2Aggregation]
+    aggregationInterval: IntervalData
+    pagination: Pagination
 ): AgentSessions
 ```
 
@@ -116,17 +193,45 @@ Sample query to fetch AAR fields can be found [here](agentSession/Raw%20Data%20F
 
 ### TaskLegDetails Query
 
-An taskLegDetails query operates over CLR data. The GraphQL schema structure is defined as
+An taskLegDetails query operates over CLR data. 
+
+#### Sample Query
+
+A sample query to fetch taskLegs for a particular task on 1st January 2023
+
+```graphql
+{
+  taskLegDetails(
+    from: 1672531200000 # 1st January 2023 00:00:00 UTC
+    to: 1672617599000 # 1st January 2023 23:59:59 UTC
+    filter: { taskId: { equals: "2d6ef583-4a57-40ec-83b4-390d14625e19" } }
+  ) {
+    taskLegs {
+      id
+      taskId
+      queue {
+        name
+      }
+      handleType
+    }
+  }
+}
+
+```
+
+#### GraphQL schema
+
+The GraphQL schema structure is defined as
 
 ```graphql
 taskLegDetails(
-    from: Long!
-    to: Long!    
-    timeComparator: QueryTimeType
-    filter: TaskLegDetailsFilters
-    aggregations: [TaskLegV2Aggregation]
-    aggregationInterval: IntervalData
-    pagination: Pagination
+    from: Long! # MANDATORY ARGUMENT
+    to: Long!   # MANDATORY ARGUMENT 
+    timeComparator: QueryTimeType
+    filter: TaskLegDetailsFilters
+    aggregations: [TaskLegV2Aggregation]
+    aggregationInterval: IntervalData
+    pagination: Pagination
 ): TaskLegDetailsList
 ```
 
@@ -443,12 +548,6 @@ Sample queries to perform interval based aggregations.
 
 When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer to the [Pagination section](#pagination-support-1) on more details.
 
-### Structure of aggregation query
-
-The structure of the aggregation query is given below
-
-![Structure of a query performing aggregations](Aggregation%20query.png)
-
 ### Support for filtering within Aggregation
 
 In an aggregation query, filters can be applied for all the aggregations or for individual aggregations this is referred to as global filter and sub-filter support.
@@ -555,12 +654,6 @@ To fetch data matching a filter criteria, the `filter` and `extFilter` arguments
 ### Pagination support for fetching raw data
 
 Pagination is supported for raw queries, Refer [section on pagination](#pagination-support-1) for details
-
-### Structure of a query to fetch raw data
-
-The structure of a query to fetch raw data is given below
-
-![Structure of query fetching raw data](Raw%20query%20sample.png)
 
 ## Pagination Support
 
