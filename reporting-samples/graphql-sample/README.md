@@ -100,9 +100,9 @@ taskDetails(
 
 3. *timeComparator* - Optional argument: accepts a value of the `QueryTimeType` type. This defines which field should `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
 
-4. *filter* - Optional argument: accepts a *TaskDetailsFilters* object. This is used to filter results based on some criteria. Refer to the [filtering section](#support-for-filtering-data) for more details.
+4. *filter* - Optional argument: accepts a *TaskDetailsFilters* object. This is used to filter results based on a criteria defined on CSR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on some criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+5. *extFilter* - Optional argument: accepts a *TaskDetailsSpecificFilters* object. This is used to filter results based on a criteria defined on CAR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
 6. *aggregations* - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
@@ -112,10 +112,10 @@ taskDetails(
 
 Some sample queries can be found below
 
-| Usecase                                                                                                          | Query                                                                                     | Response                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Fetch CSR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| Fetch CAR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC. | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| Usecase                                                                                                                                                  | Query / Record Type | Query                                                                                     | Response                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Fetch isActive, id, createdTime, endedTime, totalDuration, lastAgent.id, queueCount and queueDuration  attributes for tasks with pagination information. | CSR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch id, channelType of task and the number of CARs, eventName, duration of CARs, along with pagination information                                     | CAR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
 
 ### AgentSession Query
 
@@ -170,9 +170,9 @@ agentSession(
 
 2. *to* - Mandatory argument: accepts a *Long* value representing the epoch timestamp, which defines the end of the query span; the `startTime` field is used for comparison.
 
-3. *filter* - Optional argument: accepts an *AgentSessionFilters* object. This is used to filter results based on user-defined criteria. Refer to the [filtering section](#support-for-filtering-data) for more details.
+3. *filter* - Optional argument: accepts an *AgentSessionFilters* object. This is used to filter results based on user-defined criteria on ASR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object. This is used to filter results based on user-defined criteria; `filter` and `extFilter` are used to specify criteria for different fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+4. *extFilter* - Optional argument: accepts an *AgentSessionSpecificFilters* object. This is used to filter results based on user-defined criteria on AAR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
 5. *aggregations* - Optional argument: accepts a List of `AgentSessionV2Aggregation`, This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
@@ -182,10 +182,10 @@ agentSession(
 
 Sample query to fetch ASR fields can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
 
-| Scenario Description                                                                                                       | Query                                                                      | Response                                                                         |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Fetch ASR attributes for agent sessions created between 14 February 2022 17:22:55 UTC  and  14 December 2022 17:22:55 UTC. | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| Fetch AAR attributes for agent sessions created between 01 October 2023 00:00:00 UTC and 20 October 2023 00:00:00 UTC      | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
+| Usecase | Query / Record Type | Query                                                                      | Response                                                                         |
+| ------- | ------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+|         | ASR                 | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
+|         | AAR                 | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
 
 ### TaskLegDetails Query
 
@@ -246,9 +246,9 @@ taskLegDetails(
 
 7. *pagination* - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
-| Scenario Description                                                                                                       | Query                                                               | Response                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Fetch CLR attributes for task legs created between 1 January 2023 00:00:00 UTC and Friday, 17 February 2023 07:35:34 UTC . | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql) | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json) |
+| Usecase | Query / Record Type | Query                                                               | Response                                                                  |
+| ------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+|         | CLR                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql) | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json) |
 
 ## Support for Filtering data
 
@@ -343,7 +343,7 @@ filter: {
 
 | Usecase                                                                                     | Query / Record Type  | Query                                                                                   | Response                                                                                      |
 | ------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Fetch *telephony* tasks which are temarked *abandoned*.                                     | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| Fetch *telephony* tasks which are marked *abandoned*.                                       | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
 | Fetch records for active sessions where channelType is not *telephony* and teamName exists. | agentSession /  ASR  | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
 | Fetch taskLegs created for a particular task.                                               | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
 
@@ -477,8 +477,8 @@ To perform a group by operation, the fields required for group bys should be inc
     ]
   ) {
     tasks {
-      lastAgent {
-        id
+      lastAgent {   
+        id   # Group by on lastAgent.id
       }
       aggregation {
         name
@@ -491,18 +491,18 @@ To perform a group by operation, the fields required for group bys should be inc
 
 Some sample queries to perform group by on various data types.
 
-| Usecase                                                                                                                  | Query Type / Record  | Query                                                                                          | Response                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------ | -------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| For each queue, fetch the number of contacts that were handled and its average queue duration.                           | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
-| For each site , agent and channelType, get the number of tasks handled and the average value of connectedDuration.       | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
-| For each queue the tasks are queued into, get the average duration of parked activity.                                   | taskDetails / CAR    | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
-| For each agent and queue, count the number of times the call was presented.                                              | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
-| For each channelType find the total connectedCount, average connectedDuration, total idleCount and average idleDuration. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
-| For each team, site and channelType find the total connectedCount, average connectedDuration and average idleDuration.   | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
-| For each activity state find the max of duration(differnce between activity started and ended).                          | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
-| For each agent and activity state find the max of duration.                                                              | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
-| Get count of consults, average queued duration and ringing duration for each queue                                       | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
-| Calculate the number of consult-transfers and blind-transfers done to each queue and EP.                                 | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
+| Usecase                                                                                                                         | Query Type / Record  | Query                                                                                          | Response                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| For each queue, fetch the number of contacts that were handled and its average queue duration.                                  | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query.graphql)         | [link](taskDetails/Performing%20Aggregations/Group%20by%20aggregation%20query-response.json)           |
+| For each site, agent and channelType, get the number of tasks handled and the average value of connected duration.              | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields.graphql)           | [link](taskDetails/Performing%20Aggregations/Group%20by%20multiple%20fields%20-response.json)          |
+| For each queue the tasks are queued into, get the average duration of parked activity.                                          | taskDetails / CAR    | [link](graphql-sample/taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR.graphql) | [link](taskDetails/Performing%20Aggregations/GroupBySingleFieldsForCAR-response.json)                  |
+| For each agent and queue, count the number of times the call was presented.                                                     | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR.graphql)              | [link](taskDetails/Performing%20Aggregations/GroupByMultipleFieldsForCAR-response.json)                |
+| For each channel type, find the total connected count, average connected duration, total idle count, and average idle duration. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Group%20by%20query.graphql)                      | [link](agentSession/Performing%20Aggregations/Group%20by%20query-response.json)                        |
+| For each team, site and channel type, compute the total connected count, average connected duration, and average idle duration. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query.graphql)  | [link](agentSession/Performing%20Aggregations/Group%20by%20multiple%20fields%20query%20-response.json) |
+| Find the maximum duration of each agent activity.                                                                               | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR.graphql)          | [link](agentSession/Performing%20Aggregations/GroupBySingleFieldsQueryForAAR-response.json)            |
+| For each agent and activity state find the max of duration.                                                                     | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR.graphql)        | [link](agentSession/Performing%20Aggregations/GroupByMultipleFieldsQueryForAAR-response.json)          |
+| Get count of consults, average queued duration and ringing duration for each queue                                              | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys.graphql)      | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20with%20group%20bys-response.json)        |
+| Calculate the number of consult-transfers and blind-transfers done into the queue and entrypoint.                               | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields.graphql)       | [link](taskLegDetails/Performing%20Aggregations/Group%20bys%20multiple%20fields%20-response.json)      |
 
 #### Interval based group bys.
 
@@ -529,13 +529,13 @@ aggregationInterval : {
 
 Sample queries to perform interval based aggregations.
 
-| Usecase                                                                                                                               | Query Type/ Record   | Query                                                                                                               | Response                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Get the number of tasks handled on a daily basis (based on Asia/Kolkata) for each channelType and site                                | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
-| Find the average duration of parked events on a daily basis for each queue.                                                           | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)          | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
-| Fetch the total connectedCount,average connectedDuration,total idleCount,average idleDuration records on a daily basis for each team. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
-| Fetch max ringing duration on daily basis.                                                                                            | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
-| For each queue get the number of calls queued and number of consults to the queue on a daily basis (based on Asia/Kolkata)            | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
+| Usecase                                                                                                                                | Query Type/ Record   | Query                                                                                                               | Response                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Get the number of tasks handled on a daily basis (based on Asia/Kolkata) for each channelType and site                                 | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
+| Find the average duration of parked events on a daily basis for each queue.                                                            | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)          | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
+| Fetch the total connected Count, average connected duration, total idle count, average of idleDuration on a daily basis for each team. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
+| Fetch max ringing duration on daily basis.                                                                                             | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
+| For each queue get the number of calls queued and number of consults into the queue on a daily basis (based on Asia/Kolkata)           | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
 
 > [!NOTE]
 > 
@@ -547,7 +547,7 @@ When using group bys, the data can be paginated to get more results, using the `
 
 ### Support for filtering within Aggregation
 
-In an aggregation query, filters can be applied for all the aggregations or for individual aggregations; this is referred to as global filter and sub-filter support.
+In an aggregation query, filters can be applied for all the aggregations or for individual aggregations, which are referred to as global filters and sub-filters respectively.
 
 When filtering has to be applied to all aggregations, the top-level `filter` and extFilter arguments can be used. Refer to the [Filtering section](#support-for-filtering-data) for more details on the syntax and usage. Refer to the below general syntax for global filtering support.
 
@@ -578,7 +578,7 @@ Sample queries to perform aggegations with filter criteria on various data types
 | Get the number of tasks handled and their average total duration of tasks handled by particular queue. | taskDetails / CSR      | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
 | Fetch average duration of parked events for *telephony* contacts.                                      | taskDetails / CAR      | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
 | Fetch the count of agents and teams for active sessions.                                               | agentSession / ASR     | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
-| For a given agen agent, fetch the count of connected events across sessions.                           | agentSession / AAR     | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
+| For a given agent, fetch the count of connected events across sessions.                                | agentSession / AAR     | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
 | Get the count of abandoned callLegs                                                                    | taskLegDetails  /  CLR | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
 
 #### Aggregations with sub filters
@@ -608,7 +608,7 @@ Sample queries to perform aggegations with sub-filter criteria on various data t
 
 ### Fields supported for aggregations
 
-Refer Data Dictionary section for fields supporting aggregation.
+Refer data dictionary for fields supporting aggregation.
 
 ## Fetching Raw Data
 
@@ -634,7 +634,7 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 
 Samples for various data types are given below 
 
-| Usecase                                                                                                                      | Description                            | Query                                                                                     | Response                                                                                        |
+| Usecase                                                                                                                      | Query / Record Type                    | Query                                                                                     | Response                                                                                        |
 | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Fetch CSR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC.             | taskDetails / CSR                      | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
 | Fetch CAR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC.             | taskDetails / CAR                      | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
@@ -707,17 +707,17 @@ The page size of a query depends on the query type and the operations, these are
 
 Sample queries demonstrating pagination when fetching raw data are given below.
 
-| Usecase                                              | Query Type/ Record   | Query                                                                                      | Response                                                                                               |
-| ---------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| Fetch the first page of records with ASR attributes. | agentSession / ASR   | [query1](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                         | [response1](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| Fetch the next page of data.                         | agentSession / ASR   | [query2](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                        | [response2](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
-| Fetch the next & the last page.                      | agentSession / ASR   | [query3](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                        | [response3](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                           |
-| Fetch the first page of records with CSR attributes  | taskDetails /  CSR   | [query1](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [response1](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
-| Fetch the next page of data                          | taskDetails  / CSR   | [query2](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [response2](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
-| Fetch the next & the last page                       | taskDetails / CSR    | [query3](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [response3](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
-| Fetch the first page of records with CLR attributes  | taskLegDetails / CLR | [query1](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                          | [response1](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                             |
-| Fetch the next page of data                          | taskLegDetails / CLR | [query2](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                      | [response2](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                         |
-| Fetch the next & the last page.                      | taskLegDetails / CLR | [query3](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                      | [response3](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                         |
+| Usecase                                              | Query Type/ Record   | Query                                                                                    | Response                                                                                          |
+| ---------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Fetch the first page of records with ASR attributes. | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Pagination%20.graphql)                         | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| Fetch the next page of data.                         | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Pagination%202.graphql)                        | [link](agentSession%2FRaw%20Data%20Fetching%2FPagination%20-response.json)                        |
+| Fetch the next & the last page.                      | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Pagination%203.graphql)                        | [link](agentSession/Raw%20Data%20Fetching/Pagination%203-response.json)                           |
+| Fetch the first page of records with CSR attributes  | taskDetails /  CSR   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query.graphql)     | [link](taskDetails%2FSamples%20for%20Raw%20Data%20Fetching%2FPagination%20query%20-response.json) |
+| Fetch the next page of data                          | taskDetails  / CSR   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%202-response.json)    |
+| Fetch the next & the last page                       | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Pagination%20query%203-response.json)    |
+| Fetch the first page of records with CLR attributes  | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination.graphql)                          | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination-response.json)                             |
+| Fetch the next page of data                          | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%202-response.json)                         |
+| Fetch the next & the last page.                      | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203.graphql)                      | [link](taskLegDetails/Fetching%20Raw%20Data/Pagination%203-response.json)                         |
 
 ### Inner Pagination / Paginating CAR and AAR records
 
@@ -767,27 +767,27 @@ A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-
 
 Sample queries for inner pagination of CAR and AAR are given below.
 
-| Usecase                                                           | Query Type         | Query                                                                             | Response                                                                                |
-| ----------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| For a task fetch the next 2 CAR records after a given cursor      | taskDetails / CAR  | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
-| For a channelId fetch the next 3 AAR records after a given cursor | agentSession / AAR | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)                | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
+| Usecase                                                           | Query / Record Type | Query                                                                             | Response                                                                                |
+| ----------------------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| For a task fetch the next 2 CAR records after a given cursor      | taskDetails / CAR   | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerPagination.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/innerpagination-response.json) |
+| For a channelId fetch the next 3 AAR records after a given cursor | agentSession / AAR  | [link](agentSession/Raw%20Data%20Fetching/innerPagination.graphql)                | [link](agentSession/Raw%20Data%20Fetching/innerPagination-response.json)                |
 
 ### Pagination Support for Aggregation with Group Bys
 
 In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
 
-| Usecase                                                                                                                                                                     | Query Type/ Record                                   | Query                                                                                                     | Response                                                                                                          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Get the number of contacts handled on a daily basis per agent, team, site, queue & entrypoint for each channel.                                                             | taskDetails / CSR                                    | [query1](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                  | [response1](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)              |
-| Get the next page of records for the above query.                                                                                                                           | taskDetails / CSR                                    | [query2](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)              | [response2](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)             |
-| Get the count of "connected" or "ctq-accepted" activities on a daily basis per agent, team, site, queue & entrypoint                                                        | taskDetails / CAR                                    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
-| Get the next page of records for the above query.                                                                                                                           | taskDetails / CAR                                    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
-| Fetch the total connectedcount, average connectedDuration,total idleCount, average idleDuration.                                                                            | agentSession ASR aggregation query with pagination 1 | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
-| Get the next page of records for the above query.                                                                                                                           | agentSession ASR aggregation query with pagination 2 | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
-| Find the max duration for each agent,team,site and state.                                                                                                                   | agentSession AAR aggregation query with pagination 1 | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
-| Get the next page of records for the above query.                                                                                                                           | agentSession AAR aggregation query with pagination 2 | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
-| Get average of queue quration, ringing duration, connected duration and self-service duration  on a daily basis per agent, team, site, queue & entrypoint for each channel. | taskLegDetails / CLR                                 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
-| Get the next page for the above query.                                                                                                                                      | taskLegDetails / CLR                                 | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
+| Usecase                                                                                                                                                                     | Query Type/ Record   | Query                                                                                                     | Response                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Get the number of contacts handled on a daily basis per agent, team, site, queue & entrypoint for each channel.                                                             | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                   |
+| Get the next page of records for the above query.                                                                                                                           | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                  |
+| Get the count of "connected" or "ctq-accepted" activities on a daily basis per agent, team, site, queue & entrypoint                                                        | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                  |
+| Get the next page of records for the above query.                                                                                                                           | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2-response.json)                 |
+| Fetch the total connectedcount, average connectedDuration,total idleCount, average idleDuration.                                                                            | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                          |
+| Get the next page of records for the above query.                                                                                                                           | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                         |
+| Find the max duration for each agent,team,site and state.                                                                                                                   | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                     |
+| Get the next page of records for the above query.                                                                                                                           | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                    |
+| Get average of queue quration, ringing duration, connected duration and self-service duration  on a daily basis per agent, team, site, queue & entrypoint for each channel. | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json) |
+| Get the next page for the above query.                                                                                                                                      | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202-response.json)   |
 
 ## Global Variables Support
 
@@ -831,7 +831,7 @@ GV59: stringGlobalVariables(name: "GV59") {
 
 Some sample queries on globalVariables for taskDetails and taskLegDetails
 
-| Usecase                                                      | Query Type           | Query                                                                           | Response                                                                              |
+| Usecase                                                      | Query / Record Type  | Query                                                                           | Response                                                                              |
 | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | Fetch value of integer, string and boolean global variables. | taskDetails / CSR    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Fetching%20global%20variables-response.json)    |
 | Fetch value of integer, string and boolean global variables. | taskLegDetails / CLR | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Fetching%20global%20variables-response.json) |
@@ -865,10 +865,10 @@ Refer [section on filtering](#support-for-filtering-data) for different operator
 
 Some sample queries on global variables with filtering for taskDetails and taskLegDetails
 
-| Usecase                                                                      | Query Type                                             | Query                                                                                         | Response                                                                                            |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Filter tasks based on a condition on string and integer global variables.    | taskDetails / CSR                                      | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)       | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
-| Filter taskLegs based on a condition on string and integer global variables. | taskLegDetails query on globalVariables with filtering | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
+| Usecase                                                                      | Query / Record Type  | Query                                                                                         | Response                                                                                            |
+| ---------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Filter tasks based on a condition on string and integer global variables.    | taskDetails / CSR    | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables.graphql)       | [link](taskDetails/Global%20Variables/Filter%20based%20on%20global%20variables-response.json)       |
+| Filter taskLegs based on a condition on string and integer global variables. | taskLegDetails / CLR | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Filtering%20based%20on%20global%20variables-response.json) |
 
 ### Performing Aggregations on global variables
 
@@ -901,7 +901,7 @@ Refer [section on aggregation](#performing-aggregations) for more details on agg
 
 Some sample aggregations on globalVariables for taskDetails and taskLegDetails
 
-| Usecase                                                          | Query Type           | Query                                                                                   | Response                                                                                      |
+| Usecase                                                          | Query / Record Type  | Query                                                                                   | Response                                                                                      |
 | ---------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Calculate sum of integer global variable named "GV2" across CSRs | taskDetails / CSR    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql)    | [link](taskDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json)    |
 | Calculate sum of integer global variable named "GV2" across CLRs | taskLegDetails / CLR | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables-response.json) |
@@ -988,7 +988,7 @@ Using aliasing group by can be done on multtiple global variables of the same ty
 
 Some sample group by's on globalVariables with aggregations for taskDetails and taskLegDetails
 
-| Query Type                                                                                                                               | Query Type           | Query                                                                                   | Response                                                                                             |
+| Query Type                                                                                                                               | Query / Record Type  | Query                                                                                   | Response                                                                                             |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Fetch count of calls and sum of integer global variable named "GV2", per unique value of string global variable named "Global_Language". | taskDetails / CSR    | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables.graphql)     | [link](taskDetails/Global%20Variables/Group%20by%20on%20global%20variables-response.json)            |
 | Fetch count of calls and sum of integer global variable named "GV2", per unique value of string global variable named "Global_Language". | taskLegDetails / CLR | [link](taskLegDetails/Global%20Variables/Aggregation%20on%20global%20variables.graphql) | [link](taskLegDetails/Global%20Variables/Group%20by%20based%20on%20global%20variables-response.json) |
@@ -1015,7 +1015,7 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 - Performing group by's on Int, Double or numerical fields or String fields that have a high number of unique values is not recommended.
 
-- It is recommended to pass a `TrackingId` header with a valid UUID in the request payload; this allows for easier debugging by support teams in case of any issue.
+- It is recommended to pass a `TrackingId` header with a valid UUID in the request payload, For example - `007bfe3b-a257-4caa-9882-fbd710cc671e`;this allows for easier debugging by support teams in case of any issue.
 
 ## Sample Usecases and queries
 
@@ -1057,3 +1057,5 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
   - Added wallboard-query-samples
 - 2.0.0
   - Added several additional example calls
+- 3.0.0
+  - Update documentation and add more samples.
