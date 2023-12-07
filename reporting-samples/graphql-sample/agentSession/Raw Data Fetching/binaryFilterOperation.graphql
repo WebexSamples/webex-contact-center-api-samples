@@ -3,12 +3,10 @@
     agentSession(from: 1644859375000, to: 1671038575000
         # Compound operators(and,or,not) can be used inside one another also
         filter : {
-            or : [
+            and : [
                 {isActive : {equals : true}}
                 {channelInfo : { channelType : {notequals : "telephony"}}}
-                {teamName : {contains : "test"}}
-                {siteName : {match : "test-.*"}}
-
+                {teamName : {match : ".+"}}
             ]
         }
     ) {
