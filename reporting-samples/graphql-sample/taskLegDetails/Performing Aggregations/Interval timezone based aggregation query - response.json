@@ -3,3062 +3,2210 @@
         "taskLegDetails": {
             "taskLegs": [
                 {
-                    "intervalStartTime": 1658946600000,
+                    "intervalStartTime": 1696185000000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1658946600000,
+                    "intervalStartTime": 1696185000000,
                     "queue": {
-                        "name": ""
+                        "name": "Dinesh_Queue_1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1658946600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1658946600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1658946600000,
-                    "queue": {
-                        "name": "Queuebased_Queue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 10.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 16.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 33.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "Chat-AutoTest-BOT_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "Chat-Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "Email-Q"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 22.0
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "EmailQMigration"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659033000000,
-                    "queue": {
-                        "name": "Queuebased_Queue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 21.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659205800000,
-                    "queue": {
-                        "name": "Chat-Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659465000000,
+                    "intervalStartTime": 1696271400000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 6.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1659465000000,
+                    "intervalStartTime": 1696271400000,
                     "queue": {
-                        "name": ""
+                        "name": "Dinesh_Queue_1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659465000000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 26.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659465000000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659465000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 9.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659551400000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 16.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659551400000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 12.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659551400000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 48.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659551400000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 37.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659551400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 12.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 8.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 15.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659637800000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659897000000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1659897000000,
+                    "intervalStartTime": 1696271400000,
                     "queue": {
-                        "name": "AksQueue2"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1659897000000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661797800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661797800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661970600000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661970600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661970600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1661970600000,
-                    "queue": {
-                        "name": "Webcallback_queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662057000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662057000000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 6.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 4.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662057000000,
+                    "intervalStartTime": 1696271400000,
                     "queue": {
-                        "name": "AksQueue2"
+                        "name": "queue-2-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662057000000,
-                    "queue": {
-                        "name": "Kuldeep-Q1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 17.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662057000000,
-                    "queue": {
-                        "name": "Kuldeep-Q2"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662057000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 15.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662229800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662316200000,
+                    "intervalStartTime": 1696357800000,
                     "queue": {
-                        "name": null
+                        "name": "Dinesh_Queue_1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of calls queued",
+                            "value": 14.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662316200000,
+                    "intervalStartTime": 1696357800000,
                     "queue": {
-                        "name": ""
+                        "name": "Dinesh_Queue_2"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 3.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662316200000,
+                    "intervalStartTime": 1696357800000,
                     "queue": {
-                        "name": "Queue-SRI-FF"
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 15.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662316200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662402600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662402600000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 8.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662402600000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662402600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 5.0
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662402600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
+                    "intervalStartTime": 1696357800000,
                     "queue": {
                         "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_LAA"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662489000000,
-                    "queue": {
-                        "name": "Telephony_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": "Chat-Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662575400000,
-                    "queue": {
-                        "name": "Ranjan-Q1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662661800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662661800000,
-                    "queue": {
-                        "name": ""
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662661800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662661800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662661800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662921000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1662921000000,
+                    "intervalStartTime": 1696357800000,
                     "queue": {
-                        "name": "Queue-SRI-FF"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 4.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696357800000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 10.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1662921000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1663007400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663007400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663007400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663007400000,
-                    "queue": {
-                        "name": "Telephony_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663093800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663266600000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 3.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1663266600000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": "Chat-Q"
+                        "name": "Dinesh_Queue_1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663266600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663266600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663266600000,
-                    "queue": {
-                        "name": "Telephony_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663525800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663525800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663525800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663525800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663525800000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663612200000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 13.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663612200000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663612200000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663612200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663612200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 14.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 21.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Dakshu-Q2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "QOutMigration"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 9.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 24.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_BAA"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_LAA"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 9.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Telephony_Q-2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 12.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663698600000,
-                    "queue": {
-                        "name": "Webcallback_queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Chat-Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Chat_config_QUE"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Email_OAuth_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 12.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 10.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 2.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1663785000000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Two"
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Telephony_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663785000000,
-                    "queue": {
-                        "name": "Webcallback_queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663871400000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663871400000,
-                    "queue": {
-                        "name": "Email_OAuth_Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663871400000,
-                    "queue": {
-                        "name": "QOutMigration"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663871400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1663871400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 8.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664130600000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": "AksQueue1"
+                        "name": "QUEUE_sumamitr"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Email-Q"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_BAA"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664130600000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_LAA"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 17.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 17.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 12.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queue-SRINIVAS"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 10.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664217000000,
-                    "queue": {
-                        "name": "Queuebased_Queue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": "AksQueue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 13.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": "InboundQueue-SRI"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664303400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664389800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664389800000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664389800000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664389800000,
-                    "queue": {
-                        "name": "InboundQueue-SRI"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664476200000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664476200000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": "AksQueue1"
+                        "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 8.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1664476200000,
-                    "queue": {
-                        "name": "InboundQueue-SRI"
-                    },
-                    "aggregation": [
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664476200000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": "Queuebased_Queue2"
+                        "name": "anuTyrell_dummyQ"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 4.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664735400000,
+                    "intervalStartTime": 1696444200000,
                     "queue": {
-                        "name": null
+                        "name": "basic_queue"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696444200000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696444200000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 2.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664735400000,
+                    "intervalStartTime": 1696530600000,
                     "queue": {
-                        "name": "AksQueue1"
+                        "name": "US_QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 4.0
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664735400000,
+                    "intervalStartTime": 1696530600000,
                     "queue": {
-                        "name": "Basic-Queue"
+                        "name": "US_S_QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664821800000,
+                    "intervalStartTime": 1696530600000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696530600000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696789800000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1664994600000,
+                    "intervalStartTime": 1696789800000,
                     "queue": {
-                        "name": "AksQueue2"
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665081000000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
+                            "name": "Number of calls queued",
+                            "value": 18.0
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 14.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665081000000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 5.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665081000000,
+                    "intervalStartTime": 1696789800000,
                     "queue": {
-                        "name": "AksQueue2"
+                        "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 4.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665081000000,
+                    "intervalStartTime": 1696789800000,
                     "queue": {
-                        "name": "Basic-Queue"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 15.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696789800000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 5.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "US_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "US_S_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696876200000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 4.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "US_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 19.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "US_S_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 6.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1696962600000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 20.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 11.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665081000000,
+                    "intervalStartTime": 1697049000000,
                     "queue": {
-                        "name": "Queue-SRI-FF"
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 13.0
+                            "name": "Number of calls queued",
+                            "value": 21.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665081000000,
+                    "intervalStartTime": 1697049000000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Three"
+                        "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Dakshu-Q1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 27.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Queue-SRINIVAS"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665340200000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 8.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": "InboundQueue-SRI"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of consuls to the queue",
                             "value": 2.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665426600000,
+                    "intervalStartTime": 1697049000000,
                     "queue": {
-                        "name": "Queue-SRI-FF"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 30.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697049000000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665426600000,
+                    "intervalStartTime": 1697135400000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Three"
+                        "name": "US_QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 22.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "US_S_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 48.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 36.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697135400000,
+                    "queue": {
+                        "name": "anuTyrell_Queue3"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 6.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665426600000,
+                    "intervalStartTime": 1697135400000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Two"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 54.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665426600000,
+                    "intervalStartTime": 1697135400000,
                     "queue": {
-                        "name": "Queue-SRINIVAS"
+                        "name": "queue-2-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 34.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697308200000,
+                    "queue": {
+                        "name": "Dinesh_Queue_1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665426600000,
+                    "intervalStartTime": 1697308200000,
                     "queue": {
-                        "name": "Queuebased_Queue2"
+                        "name": "Dinesh_Queue_2"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665426600000,
-                    "queue": {
-                        "name": "Skill_Queue_SRI_LAA"
-                    },
-                    "aggregation": [
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665513000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 7.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665513000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": "AksQueue1"
+                        "name": "Dinesh_Queue_1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665513000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": "AutoTelephonyQueue"
+                        "name": "Dinesh_Queue_2"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 1.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665513000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": "Basic-Queue"
+                        "name": "OUTQUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665513000000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665513000000,
-                    "queue": {
-                        "name": "GT-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 4.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665513000000,
-                    "queue": {
-                        "name": "InboundQueue-SRI"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "CCB_Inbound_Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "GT-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665599400000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665685800000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": null
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 5.0
+                            "name": "Number of calls queued",
+                            "value": 25.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665685800000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": "Queuebased_Queue1"
+                        "name": "QUEUE_sumamitr"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1665945000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": null
+                        "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 7.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "GT-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Three"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Queue-SRI-FF-Two"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1665945000000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666031400000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666031400000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 5.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666117800000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666117800000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 8.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 10.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 9.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": "GT-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 24.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666204200000,
-                    "queue": {
-                        "name": "Queuebased_Queue2"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666290600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666290600000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1666290600000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 18.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1666636200000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": "GT-Queue"
+                        "name": "Queue_Data_2"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 12.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697394600000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 11.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697394600000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 6.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697394600000,
+                    "queue": {
+                        "name": "anuTyrell_Queue3"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1666809000000,
+                    "intervalStartTime": 1697394600000,
                     "queue": {
-                        "name": null
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 27.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697394600000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 12.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 2.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1666809000000,
+                    "intervalStartTime": 1697481000000,
                     "queue": {
-                        "name": "Queuebased_Queue1"
+                        "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "Dinesh_Queue_1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 20.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "Dinesh_Queue_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 6.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697481000000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "OUTQUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 6.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 11.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 10.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "Queue_Data_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 6.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697567400000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 51.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 20.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697653800000,
+                    "queue": {
+                        "name": "anuTyrell_Queue3"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "OUTQUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "Queue_Data_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "US_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "US_S_QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 15.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697740200000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 13.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697999400000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 11.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1697999400000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698085800000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 39.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698085800000,
+                    "queue": {
+                        "name": "anuTyrell_Queue2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698172200000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 9.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698172200000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698172200000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698172200000,
+                    "queue": {
+                        "name": "Queue_Data_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698172200000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 7.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698258600000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 10.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698258600000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698258600000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
                             "value": 4.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1666895400000,
+                    "intervalStartTime": 1698258600000,
+                    "queue": {
+                        "name": "Queue_Data_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698345000000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1666895400000,
+                    "intervalStartTime": 1698345000000,
                     "queue": {
-                        "name": "Queuebased_Queue1"
+                        "name": "OUTQUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667327400000,
+                    "intervalStartTime": 1698345000000,
                     "queue": {
-                        "name": null
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 4.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698345000000,
+                    "queue": {
+                        "name": "Queue-1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698345000000,
+                    "queue": {
+                        "name": "Queue_Data_2"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698345000000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 15.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698345000000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698431400000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698604200000,
+                    "queue": {
+                        "name": "QUEUE_DATA"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 3.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698604200000,
+                    "queue": {
+                        "name": "QUEUE_sumamitr"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698604200000,
+                    "queue": {
+                        "name": "anuTyrell_Queue1"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 5.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698604200000,
+                    "queue": {
+                        "name": "queue-1-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 10.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667413800000,
+                    "intervalStartTime": 1698604200000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
+                            "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698690600000,
                     "queue": {
                         "name": null
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
+                            "name": "Number of calls queued",
+                            "value": 0.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667413800000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "GT-Queue"
+                        "name": "OUTQUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1667413800000,
-                    "queue": {
-                        "name": "Queue-SRI-FF"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 2.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667413800000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Two"
+                        "name": "QUEUE_DATA"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667932200000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": null
+                        "name": "QUEUE_sumamitr"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 2.0
+                            "name": "Number of calls queued",
+                            "value": 33.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667932200000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "Basic-Queue"
+                        "name": "Queue-1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667932200000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "GT-Queue"
+                        "name": "anuTyrell_Queue1"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
-                            "value": 3.0
+                            "name": "Number of calls queued",
+                            "value": 35.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1667932200000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "Queuebased_Queue1"
+                        "name": "anuTyrell_Queue2"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
                             "value": 1.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 },
                 {
-                    "intervalStartTime": 1668018600000,
+                    "intervalStartTime": 1698690600000,
                     "queue": {
-                        "name": "Queue-SRI-FF-Two"
+                        "name": "queue-1-kekansal"
                     },
                     "aggregation": [
                         {
-                            "name": "Call Legs count",
+                            "name": "Number of calls queued",
+                            "value": 13.0
+                        },
+                        {
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1698690600000,
+                    "queue": {
+                        "name": "queue-2-kekansal"
+                    },
+                    "aggregation": [
+                        {
+                            "name": "Number of calls queued",
                             "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1668018600000,
-                    "queue": {
-                        "name": "Telephony_Q"
-                    },
-                    "aggregation": [
+                        },
                         {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1668450600000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1668450600000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1668450600000,
-                    "queue": {
-                        "name": "Queue _QbasedAgent3"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1668450600000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670178600000,
-                    "queue": {
-                        "name": "Basic-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 2.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670178600000,
-                    "queue": {
-                        "name": "Basic-Queue-SBR"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670178600000,
-                    "queue": {
-                        "name": "GT-Queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670783400000,
-                    "queue": {
-                        "name": "Outdial-queue"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670956200000,
-                    "queue": {
-                        "name": null
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 1.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670956200000,
-                    "queue": {
-                        "name": "AksQueue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 3.0
-                        }
-                    ]
-                },
-                {
-                    "intervalStartTime": 1670956200000,
-                    "queue": {
-                        "name": "Queuebased_Queue1"
-                    },
-                    "aggregation": [
-                        {
-                            "name": "Call Legs count",
-                            "value": 6.0
+                            "name": "Number of consuls to the queue",
+                            "value": 0.0
                         }
                     ]
                 }

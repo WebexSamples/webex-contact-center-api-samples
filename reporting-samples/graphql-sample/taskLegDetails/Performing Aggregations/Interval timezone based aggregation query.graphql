@@ -2,15 +2,20 @@
   # Interval Based aggregation for Timezone
   # Timezone can also be passed to ensure buckets are created based on the passed timezone.
   taskLegDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698796800000
     aggregations: [
-      { field: "id", type: count, name: "Call Legs count" }
+      { field: "queueCount", type: sum, name: "Number of calls queued" }
+      {
+        field: "consultToQueueCount"
+        type: sum
+        name: "Number of consults to the queue"
+      }
     ]
-    aggregationInterval : {
-        interval : DAILY
-        # Passing the timezone will ensure that intervalStartTime considers the start of the day for the particular timezone.
-        timezone : "Asia/Kolkata"
+    aggregationInterval: {
+      interval: DAILY
+      # Passing the timezone will ensure that intervalStartTime considers the start of the day for the particular timezone.
+      timezone: "Asia/Kolkata"
     }
   ) {
     taskLegs {

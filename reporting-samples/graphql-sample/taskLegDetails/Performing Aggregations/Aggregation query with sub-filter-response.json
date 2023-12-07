@@ -5,16 +5,16 @@
         {
           "aggregation": [
             {
-              "name": "Call Legs handled by other queues",
-              "value": 1043.0
+              "name": "Call Legs queued into queue2",
+              "value": 143.0
             },
             {
-              "name": "Call Legs handled by dummyQueue2",
-              "value": 88.0
+              "name": "Call Legs queued into other queues",
+              "value": 955.0
             },
             {
-              "name": "Call Legs handled by dummyQueue1",
-              "value": 160.0
+              "name": "Call Legs queued into queue1",
+              "value": 14.0
             }
           ]
         }

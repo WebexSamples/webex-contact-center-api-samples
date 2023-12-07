@@ -4,24 +4,18 @@
   # Check the response, hasNextPage is set to true and the endCursor is present
   # For fetching the next page check Group by Aggregation with Pagination 2.txt
   taskLegDetails(
-    from: 1641038400000
-    to: 1672488000000
+    from: 1673082986000
+    to: 1698796800000
     aggregations: [
       {
-        field: "id" # field Name on which aggregation needs to be done
-        type: count # operation name
-        name: "Count of Call Legs" # Identifier for the results
-      }
-      { field: "consultCount", type: min, name: "min of consultCount" }
-      {
         field: "selfserviceDuration"
-        type: max
-        name: "max of selfserviceDuration"
+        type: average
+        name: "average of selfserviceDuration"
       }
       {
         field: "connectedDuration"
         type: max
-        name: "max of connectedDuration"
+        name: "average of connectedDuration"
       }
       {
         field: "ringingDuration"
@@ -29,34 +23,30 @@
         name: "average of ringingDuration"
       }
       {
-        field: "nextDestination.agent.name"
-        type: count
-        name: "count of nextDestination.agent.name"
+        field: "queueDuration"
+        type: average
+        name: "average of queueDuration"
       }
     ]
-    aggregationInterval : {
-        interval : DAILY
-    }
+    aggregationInterval: { interval: DAILY }
   ) {
     taskLegs {
       channelType
       intervalStartTime
       queue {
-          id
+        id
       }
       owner {
-          id
+        id
       }
       entryPoint {
-          name
+        id
       }
       site {
-          id
-          name
+        id
       }
       team {
-          id
-          name
+        id
       }
       aggregation {
         name

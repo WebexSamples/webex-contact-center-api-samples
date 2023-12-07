@@ -1,44 +1,28 @@
 {
   # Group by multiple fields can be done by including them in the selection set
   taskLegDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698796800000
     aggregations: [
       {
-        field: "id"
-        type: count
-        name: "Count of Call Legs"
-      }
-      { field: "consultCount", type: min, name: "min of consultCount" }
-      {
-        field: "selfserviceDuration"
-        type: max
-        name: "max of selfserviceDuration"
+        field: "interQueueBlindTransferCount" # field Name on which aggregation needs to be done
+        type: sum # operation name
+        name: "Count of blind transfers to the queue" # Identifier for the results
       }
       {
-        field: "connectedDuration"
-        type: max
-        name: "max of connectedDuration"
-      }
-      {
-        field: "ringingDuration"
-        type: average
-        name: "average of ringingDuration"
-      }
-      {
-        field: "nextDestination.agent.name"
-        type: count
-        name: "count of nextDestination.agent.name"
+        field: "interQueueConsultTransferCount"
+        type: sum
+        name: "Count of Consult transfers to the queue"
       }
     ]
   ) {
     taskLegs {
       # The order of fields matter and determine how the response will be, compare and check the response for Group bys multiple fields.txt.
       entryPoint {
-        name
+        id
       }
       queue {
-          name
+        id
       }
       aggregation {
         name
