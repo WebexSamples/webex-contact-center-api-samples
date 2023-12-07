@@ -6,7 +6,7 @@
         isActive : {equals : true}
     }
     aggregations : [
-        #counts the number of unique agents  where 'channelType' equals 'telephony'.
+        #count the number of unique agents  where 'channelType' equals 'telephony'.
         {
             field : "agentId"
             name : "Agents handling telephony tasks" 

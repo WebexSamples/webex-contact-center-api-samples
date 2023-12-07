@@ -13,6 +13,7 @@
                 type : max
             }
         ]
+        aggregationInterval: { interval: DAILY, timezone: "America/New_York" }
     ) {
         agentSessions {
             aggregation {

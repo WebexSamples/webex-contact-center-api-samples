@@ -3,6 +3,46 @@
     "agentSession": {
       "agentSessions": [
         {
+          "agentSessionId": "00f9ba3e-9fda-435d-bf42-ee6c4c63ff3e",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1664777555581,
+          "endTime": 1664781402936,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5e11ebf6-a1bf-4ce2-ac89-dc3a6a994055",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 3257765,
+              "ringingCount": 3,
+              "ringingDuration": 20913,
+              "totalDuration": 3847355
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0253317b-437a-4cdf-ae9f-350238b7247f",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1661841568497,
+          "endTime": 1661842532922,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8a202a39-081e-4f50-bd1e-f14de0bbb32f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 268624,
+              "ringingCount": 1,
+              "ringingDuration": 2008,
+              "totalDuration": 964425
+            }
+          ]
+        },
+        {
           "agentSessionId": "0291b1d5-2c4a-48a4-8e07-265c1442f0ac",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -37,6 +77,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 1567296
+            }
+          ]
+        },
+        {
+          "agentSessionId": "05174329-5ce1-4d8b-8bc6-a405c5a49a72",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1660642604343,
+          "endTime": 1660643142563,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6c62ee4a-bb95-4baa-9d4e-61530841cb41",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 188534,
+              "ringingCount": 4,
+              "ringingDuration": 20254,
+              "totalDuration": 538220
             }
           ]
         },
@@ -90,6 +150,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "f719ef4b-89ca-40bf-ae90-f78ab49b8288",
+              "channelType": "chat",
+              "idleCount": 2,
+              "idleDuration": 6990,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 745522
+            },
+            {
               "channelId": "cec211ce-a925-400f-baff-6c1bf3bd4604",
               "channelType": "email",
               "idleCount": 2,
@@ -103,15 +172,6 @@
               "channelType": "telephony",
               "idleCount": 1,
               "idleDuration": 5403,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 745522
-            },
-            {
-              "channelId": "f719ef4b-89ca-40bf-ae90-f78ab49b8288",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 6990,
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 745522
@@ -157,6 +217,26 @@
           ]
         },
         {
+          "agentSessionId": "099e934b-d2ab-4ee4-884f-35a4dde31e16",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1660289461495,
+          "endTime": 1660302065684,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "dac82a87-4dd2-4bdd-9f85-b34da7df6bbd",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 160020,
+              "ringingCount": 4,
+              "ringingDuration": 17492,
+              "totalDuration": 12604189
+            }
+          ]
+        },
+        {
           "agentSessionId": "09d9e138-bb86-48de-b9f2-aab422df7792",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-one",
@@ -193,6 +273,26 @@
               "ringingCount": 2,
               "ringingDuration": 7523,
               "totalDuration": 1077059
+            }
+          ]
+        },
+        {
+          "agentSessionId": "0ef9d309-3c59-403f-8f0f-cdc45e52012d",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1664802834858,
+          "endTime": 1664807310102,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7aeb175d-b166-45f0-b355-9631311c353b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4475244,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4475244
             }
           ]
         },
@@ -293,15 +393,6 @@
               "totalDuration": 570878
             },
             {
-              "channelId": "72e645d0-1fdc-4a5d-ae0b-eaf902fbee7c",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 4042,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 570878
-            },
-            {
               "channelId": "481124c9-b273-4760-94ac-14b94e05bc2b",
               "channelType": "telephony",
               "idleCount": 1,
@@ -309,6 +400,35 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 570878
+            },
+            {
+              "channelId": "72e645d0-1fdc-4a5d-ae0b-eaf902fbee7c",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 4042,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 570878
+            }
+          ]
+        },
+        {
+          "agentSessionId": "1291954b-3058-46d9-a49d-7f7feeeb9e22",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1663209149236,
+          "endTime": 1663209342714,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "0d3dfdfb-9518-4824-b138-bace06c42e1f",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 93265,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 193478
             }
           ]
         },
@@ -322,21 +442,21 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "add92b7e-d849-455f-801c-a9aa18f7a0e9",
-              "channelType": "chat",
-              "idleCount": 4,
-              "idleDuration": 36611954,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 38208125
-            },
-            {
               "channelId": "f07d1d3c-567e-4c2e-8bd5-24d0120fdacd",
               "channelType": "telephony",
               "idleCount": 4,
               "idleDuration": 36611954,
               "ringingCount": 9,
               "ringingDuration": 135552,
+              "totalDuration": 38208125
+            },
+            {
+              "channelId": "add92b7e-d849-455f-801c-a9aa18f7a0e9",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 36611954,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 38208125
             },
             {
@@ -347,6 +467,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 38208125
+            }
+          ]
+        },
+        {
+          "agentSessionId": "14066d85-b363-433b-9b2b-16b2d739adc6",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1666174292170,
+          "endTime": 1666190861158,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4c3cf226-fed9-4cc9-8d3f-a460d1fae64f",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 315671,
+              "ringingCount": 10,
+              "ringingDuration": 33483,
+              "totalDuration": 16568988
             }
           ]
         },
@@ -367,6 +507,46 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 416285
+            }
+          ]
+        },
+        {
+          "agentSessionId": "17d40986-c0d0-4479-895d-53eab5e19bdd",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658748524511,
+          "endTime": 1658748684783,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6390070b-abe7-47a1-a204-7317db9b568a",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 56862,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 160272
+            }
+          ]
+        },
+        {
+          "agentSessionId": "18559d92-5e22-4ba9-82dd-43f9ef19528b",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1667825798851,
+          "endTime": 1667827585093,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "6eae6bd1-532d-4258-aafc-31f077b0e3b6",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 1551478,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1786242
             }
           ]
         },
@@ -467,6 +647,26 @@
           ]
         },
         {
+          "agentSessionId": "1b158b0a-650d-48da-a3b8-bdd8dd96e74d",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658999345225,
+          "endTime": 1659000627393,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3d2ee994-1fd1-4139-bdab-10cf3460f488",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 544999,
+              "ringingCount": 1,
+              "ringingDuration": 1788,
+              "totalDuration": 1282168
+            }
+          ]
+        },
+        {
           "agentSessionId": "1c19cc68-339f-42c1-9c46-d05657f57f34",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -485,21 +685,21 @@
               "totalDuration": 909102
             },
             {
-              "channelId": "fa962b66-6d12-4899-9320-187f36d4a073",
-              "channelType": "telephony",
-              "idleCount": 0,
-              "idleDuration": 0,
-              "ringingCount": 2,
-              "ringingDuration": 9968,
-              "totalDuration": 909102
-            },
-            {
               "channelId": "4f24a435-c7db-4e4b-ba7d-505be31742c0",
               "channelType": "chat",
               "idleCount": 0,
               "idleDuration": 0,
               "ringingCount": 0,
               "ringingDuration": 0,
+              "totalDuration": 909102
+            },
+            {
+              "channelId": "fa962b66-6d12-4899-9320-187f36d4a073",
+              "channelType": "telephony",
+              "idleCount": 0,
+              "idleDuration": 0,
+              "ringingCount": 2,
+              "ringingDuration": 9968,
               "totalDuration": 909102
             }
           ]
@@ -572,15 +772,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "7d5edb86-ffc7-4ba7-a908-63d48723b361",
-              "channelType": "chat",
-              "idleCount": 21,
-              "idleDuration": 667727,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 7420492
-            },
-            {
               "channelId": "81b9d566-c124-4faf-b760-46e64aae665b",
               "channelType": "email",
               "idleCount": 21,
@@ -592,6 +783,15 @@
             {
               "channelId": "b1c11f6d-dbe6-4c5b-8206-02c4a790b9b8",
               "channelType": "telephony",
+              "idleCount": 21,
+              "idleDuration": 667727,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 7420492
+            },
+            {
+              "channelId": "7d5edb86-ffc7-4ba7-a908-63d48723b361",
+              "channelType": "chat",
               "idleCount": 21,
               "idleDuration": 667727,
               "ringingCount": 0,
@@ -621,6 +821,46 @@
           ]
         },
         {
+          "agentSessionId": "21be6434-c094-4a7b-8b58-6e3613c53dea",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1661849975669,
+          "endTime": 1661850553965,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5aae03f1-7689-483d-8585-46ce087cdc0c",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4166,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 578296
+            }
+          ]
+        },
+        {
+          "agentSessionId": "223aad3c-b4c3-4893-8797-a3d8f7779f62",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658751123101,
+          "endTime": 1658751171855,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9882db95-246b-4880-b91a-892fc130b865",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 12181,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 48754
+            }
+          ]
+        },
+        {
           "agentSessionId": "2412c0e4-09e3-45f3-927c-82b9de6173f3",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -639,8 +879,8 @@
               "totalDuration": 5177388
             },
             {
-              "channelId": "f84285c4-0e3c-4bbb-bb35-bcbdc72db557",
-              "channelType": "email",
+              "channelId": "81692231-6d4a-438a-8dc5-84eeff4bf823",
+              "channelType": "chat",
               "idleCount": 5,
               "idleDuration": 79142,
               "ringingCount": 0,
@@ -648,8 +888,8 @@
               "totalDuration": 5177388
             },
             {
-              "channelId": "81692231-6d4a-438a-8dc5-84eeff4bf823",
-              "channelType": "chat",
+              "channelId": "f84285c4-0e3c-4bbb-bb35-bcbdc72db557",
+              "channelType": "email",
               "idleCount": 5,
               "idleDuration": 79142,
               "ringingCount": 0,
@@ -679,6 +919,26 @@
           ]
         },
         {
+          "agentSessionId": "244be32d-6a87-4f95-96cb-4f72bb2c8102",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1659018631868,
+          "endTime": 1659019133642,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b53eec35-c365-44f8-a2e4-a93c795772ca",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 10362,
+              "ringingCount": 1,
+              "ringingDuration": 4693,
+              "totalDuration": 501774
+            }
+          ]
+        },
+        {
           "agentSessionId": "2464a6bb-88be-443b-83f6-2b758f682372",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -687,15 +947,6 @@
           "endTime": 1657889936929,
           "isActive": false,
           "channelInfo": [
-            {
-              "channelId": "9ff7c7d8-8cbb-4f60-a05a-1c8879d0eba3",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 28905,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 295500
-            },
             {
               "channelId": "4db8c71c-72c9-4997-a9d5-fc5c29b7db5d",
               "channelType": "chat",
@@ -712,6 +963,15 @@
               "idleDuration": 28905,
               "ringingCount": 1,
               "ringingDuration": 12706,
+              "totalDuration": 295500
+            },
+            {
+              "channelId": "9ff7c7d8-8cbb-4f60-a05a-1c8879d0eba3",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 28905,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 295500
             }
           ]
@@ -835,6 +1095,26 @@
           ]
         },
         {
+          "agentSessionId": "29f66610-643c-4c48-b2d5-a1f1f1248ce1",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1661507202171,
+          "endTime": 1661510640680,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3852f4fa-b48b-449b-9ba5-e4f9bca42216",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 19439,
+              "ringingCount": 5,
+              "ringingDuration": 21040,
+              "totalDuration": 3438509
+            }
+          ]
+        },
+        {
           "agentSessionId": "2a602e27-f503-4e55-bcef-27ff4cea15ec",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team",
@@ -875,6 +1155,26 @@
           ]
         },
         {
+          "agentSessionId": "2b741316-4b82-4de1-bf30-e9a22fad71b1",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1659351212429,
+          "endTime": 1659351364377,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "fcd5f3ad-3776-4587-b05e-b5f441eb4fcd",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 56985,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 151948
+            }
+          ]
+        },
+        {
           "agentSessionId": "2c7214a0-1852-439d-b55b-5bca4cc703a8",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -884,12 +1184,12 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "3976a4d9-5470-4527-a084-15664eb8d635",
-              "channelType": "telephony",
+              "channelId": "2b269aa8-ebe3-4b1f-b5eb-d9d8756e27a5",
+              "channelType": "chat",
               "idleCount": 4,
               "idleDuration": 57018,
-              "ringingCount": 2,
-              "ringingDuration": 19458,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 1823353
             },
             {
@@ -902,12 +1202,12 @@
               "totalDuration": 1823353
             },
             {
-              "channelId": "2b269aa8-ebe3-4b1f-b5eb-d9d8756e27a5",
-              "channelType": "chat",
+              "channelId": "3976a4d9-5470-4527-a084-15664eb8d635",
+              "channelType": "telephony",
               "idleCount": 4,
               "idleDuration": 57018,
-              "ringingCount": 0,
-              "ringingDuration": 0,
+              "ringingCount": 2,
+              "ringingDuration": 19458,
               "totalDuration": 1823353
             }
           ]
@@ -933,6 +1233,46 @@
           ]
         },
         {
+          "agentSessionId": "2e3d1965-89bd-490b-b390-24c657252749",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1668423919288,
+          "endTime": 1668424321316,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "ca9a7dc9-8585-4d07-94ce-4c1e45bb93d9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 20662,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 402028
+            }
+          ]
+        },
+        {
+          "agentSessionId": "2f7229bc-a885-4d91-a5c0-ea3c21b328e5",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658227965937,
+          "endTime": 1658231132520,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d1bc5b33-9e76-468c-ab12-fb1594fffa10",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 24170,
+              "ringingCount": 6,
+              "ringingDuration": 18718,
+              "totalDuration": 3166583
+            }
+          ]
+        },
+        {
           "agentSessionId": "2fc7833d-6f61-4746-9078-37ef490031ab",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -951,15 +1291,6 @@
               "totalDuration": 6378328
             },
             {
-              "channelId": "b838c1d0-5a96-4bbd-a0c5-229a5ba500ca",
-              "channelType": "email",
-              "idleCount": 5,
-              "idleDuration": 192721,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 6378328
-            },
-            {
               "channelId": "b4b80a4d-00b8-430d-9633-0a2127568795",
               "channelType": "telephony",
               "idleCount": 5,
@@ -967,6 +1298,35 @@
               "ringingCount": 1,
               "ringingDuration": 1894,
               "totalDuration": 6378328
+            },
+            {
+              "channelId": "b838c1d0-5a96-4bbd-a0c5-229a5ba500ca",
+              "channelType": "email",
+              "idleCount": 5,
+              "idleDuration": 192721,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 6378328
+            }
+          ]
+        },
+        {
+          "agentSessionId": "307d4d02-898c-46bd-ba1e-6c651d8c624a",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1661408847617,
+          "endTime": 1661410018559,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9f097672-5547-46a5-ab52-111afc7f2516",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 11149,
+              "ringingCount": 2,
+              "ringingDuration": 4400,
+              "totalDuration": 1170942
             }
           ]
         },
@@ -980,6 +1340,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "d4fed5a2-8b2f-4c6f-99c9-5b8ff8ccef54",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 138699,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1303421
+            },
+            {
               "channelId": "6ad9e6bb-3513-42a9-b4f0-7e0d2d7564a0",
               "channelType": "telephony",
               "idleCount": 1,
@@ -991,15 +1360,6 @@
             {
               "channelId": "528023aa-1525-4784-ae71-fcd33724ef8b",
               "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 138699,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1303421
-            },
-            {
-              "channelId": "d4fed5a2-8b2f-4c6f-99c9-5b8ff8ccef54",
-              "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 138699,
               "ringingCount": 0,
@@ -1067,15 +1427,6 @@
               "totalDuration": 1257877
             },
             {
-              "channelId": "85c08efa-0f91-4b2c-bb17-85cda16d1772",
-              "channelType": "telephony",
-              "idleCount": 5,
-              "idleDuration": 135905,
-              "ringingCount": 5,
-              "ringingDuration": 131505,
-              "totalDuration": 1257877
-            },
-            {
               "channelId": "f83984d6-63c8-4951-9fc6-f60855d761d1",
               "channelType": "chat",
               "idleCount": 5,
@@ -1083,6 +1434,35 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 1257877
+            },
+            {
+              "channelId": "85c08efa-0f91-4b2c-bb17-85cda16d1772",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 135905,
+              "ringingCount": 5,
+              "ringingDuration": 131505,
+              "totalDuration": 1257877
+            }
+          ]
+        },
+        {
+          "agentSessionId": "385f6ac7-e4a2-486e-a883-772d6dcb4d50",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1664774431701,
+          "endTime": 1664781407351,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5b0f8043-0a44-4dc8-b6b2-797e0aa2e3eb",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 1167640,
+              "ringingCount": 13,
+              "ringingDuration": 73118,
+              "totalDuration": 6975650
             }
           ]
         },
@@ -1105,8 +1485,8 @@
               "totalDuration": 4485555
             },
             {
-              "channelId": "c0b04dca-2c2a-4504-adf8-f5eb528789e4",
-              "channelType": "telephony",
+              "channelId": "96f9f17d-c989-46dc-90ac-7ef5173c85e2",
+              "channelType": "email",
               "idleCount": 1,
               "idleDuration": 4485555,
               "ringingCount": 0,
@@ -1114,8 +1494,8 @@
               "totalDuration": 4485555
             },
             {
-              "channelId": "96f9f17d-c989-46dc-90ac-7ef5173c85e2",
-              "channelType": "email",
+              "channelId": "c0b04dca-2c2a-4504-adf8-f5eb528789e4",
+              "channelType": "telephony",
               "idleCount": 1,
               "idleDuration": 4485555,
               "ringingCount": 0,
@@ -1185,6 +1565,46 @@
           ]
         },
         {
+          "agentSessionId": "412eb059-cbfe-483f-8613-7278c534d63f",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658751472002,
+          "endTime": 1658755969425,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "469941c4-051c-482e-a32f-7bc75848b21e",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 137243,
+              "ringingCount": 4,
+              "ringingDuration": 11956,
+              "totalDuration": 4497423
+            }
+          ]
+        },
+        {
+          "agentSessionId": "418b5bc5-f94f-4ced-8640-05a433d747df",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1661408854302,
+          "endTime": 1661410029751,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3c4bf969-d591-4522-9094-e2532ac5ab9a",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 1175449,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1175449
+            }
+          ]
+        },
+        {
           "agentSessionId": "41b3c52d-287f-4a13-89bf-a40ebfe7fb72",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -1223,6 +1643,26 @@
           ]
         },
         {
+          "agentSessionId": "438a9f20-369d-4100-9d37-032df1a650bf",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658227877834,
+          "endTime": 1658227926533,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "db6b9f1b-91d6-40ed-94e0-cf28936b1d45",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 48699,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 48699
+            }
+          ]
+        },
+        {
           "agentSessionId": "43b606be-fda3-4220-a61b-ae6327d67188",
           "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
           "teamName": "test-team1",
@@ -1243,6 +1683,26 @@
           ]
         },
         {
+          "agentSessionId": "44030195-fbd6-4a5b-90a5-859a0462fddd",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1659018636652,
+          "endTime": 1659019125554,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "431430b1-47f9-4278-8fbc-313c1d22df92",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2925,
+              "ringingCount": 1,
+              "ringingDuration": 3366,
+              "totalDuration": 488902
+            }
+          ]
+        },
+        {
           "agentSessionId": "44aec9a6-42fe-4f2a-8f45-eed0d4b40bd8",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -1251,6 +1711,15 @@
           "endTime": 1662731509076,
           "isActive": false,
           "channelInfo": [
+            {
+              "channelId": "82766ad5-fcc3-4055-ba4f-35b236ad2c6b",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 5630,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 61219
+            },
             {
               "channelId": "a8e5f440-309e-41ef-98fc-8a7f43a32518",
               "channelType": "email",
@@ -1263,15 +1732,6 @@
             {
               "channelId": "954f0797-bc25-4720-8639-6d14355d5c99",
               "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 5630,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 61219
-            },
-            {
-              "channelId": "82766ad5-fcc3-4055-ba4f-35b236ad2c6b",
-              "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 5630,
               "ringingCount": 0,
@@ -1297,6 +1757,26 @@
               "ringingCount": 2,
               "ringingDuration": 6479,
               "totalDuration": 1841815
+            }
+          ]
+        },
+        {
+          "agentSessionId": "45ae8e0b-9f5e-420b-86b4-c93c203e4b67",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1661507430831,
+          "endTime": 1661510623941,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f776a367-7e0b-41fd-9e15-455ba477cc90",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 5086,
+              "ringingCount": 5,
+              "ringingDuration": 36985,
+              "totalDuration": 3193110
             }
           ]
         },
@@ -1417,6 +1897,26 @@
           ]
         },
         {
+          "agentSessionId": "4daca130-dbfe-4175-81a4-3f684c92b8f4",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1660634345419,
+          "endTime": 1660635229690,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8b2f22e0-c422-490a-bd0a-de42fe5992c7",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 93471,
+              "ringingCount": 4,
+              "ringingDuration": 11119,
+              "totalDuration": 884271
+            }
+          ]
+        },
+        {
           "agentSessionId": "4dad0544-0396-4669-b468-28b7308d653b",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-two",
@@ -1475,42 +1975,6 @@
             {
               "channelId": "d0d6b1c5-8236-415c-97c3-f874d07682da",
               "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 2556,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 3085769
-            },
-            {
-              "channelId": "cb0bbed8-bd7a-439a-9f20-e1c741c99f18",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 2556,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 3085769
-            },
-            {
-              "channelId": "3e6d8527-d0be-4def-aa90-8866ef8c75f0",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 2556,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 3085769
-            },
-            {
-              "channelId": "3dbabbfb-952e-4a95-9daa-70a942f22f50",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 2556,
-              "ringingCount": 1,
-              "ringingDuration": 5110,
-              "totalDuration": 3085769
-            },
-            {
-              "channelId": "34c8df81-191d-4b0c-a295-d42ce06a8772",
-              "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 2556,
               "ringingCount": 0,
@@ -1588,6 +2052,42 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 3085769
+            },
+            {
+              "channelId": "cb0bbed8-bd7a-439a-9f20-e1c741c99f18",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 2556,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3085769
+            },
+            {
+              "channelId": "3e6d8527-d0be-4def-aa90-8866ef8c75f0",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 2556,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3085769
+            },
+            {
+              "channelId": "3dbabbfb-952e-4a95-9daa-70a942f22f50",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2556,
+              "ringingCount": 1,
+              "ringingDuration": 5110,
+              "totalDuration": 3085769
+            },
+            {
+              "channelId": "34c8df81-191d-4b0c-a295-d42ce06a8772",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 2556,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 3085769
             }
           ]
         },
@@ -1601,21 +2101,21 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "900462e9-0d82-4194-a7bb-ad7d08442d9b",
-              "channelType": "email",
-              "idleCount": 2,
-              "idleDuration": 6337733,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 7105277
-            },
-            {
               "channelId": "2bf62566-7788-4fdc-9996-e86278602451",
               "channelType": "telephony",
               "idleCount": 2,
               "idleDuration": 6337733,
               "ringingCount": 4,
               "ringingDuration": 16211,
+              "totalDuration": 7105277
+            },
+            {
+              "channelId": "900462e9-0d82-4194-a7bb-ad7d08442d9b",
+              "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 6337733,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 7105277
             },
             {
@@ -1688,6 +2188,87 @@
               "totalDuration": 16146363
             },
             {
+              "channelId": "b4ba02a5-8758-44f7-b7af-b4a872267e9c",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "051705f9-dd8c-4d82-9f3d-51b893d6d621",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "35fbd56f-1eaf-4da7-9b95-905ee0057e30",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "065111e8-7017-4fd1-8dc3-db517771ca55",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "3212f2b2-618b-4410-8baf-6aea5ef18383",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "8e3c1035-3c60-4f22-8cf2-2d667a5c7040",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "23ac0af8-93a6-4bee-8b9e-a29014311c3d",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "02f4bb65-fef0-49b9-91dd-60d76f050184",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
+              "channelId": "3803de77-f73b-4c6b-ac6a-17136c5e25ce",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 16146363,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 16146363
+            },
+            {
               "channelId": "a59b0ff4-16df-4bc8-9bd3-47b00af3a270",
               "channelType": "email",
               "idleCount": 1,
@@ -1740,87 +2321,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 16146363
-            },
+            }
+          ]
+        },
+        {
+          "agentSessionId": "50b589f5-43f6-44e9-a72a-9c9ec6a394c8",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658222610822,
+          "endTime": 1658222761430,
+          "isActive": false,
+          "channelInfo": [
             {
-              "channelId": "23ac0af8-93a6-4bee-8b9e-a29014311c3d",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "02f4bb65-fef0-49b9-91dd-60d76f050184",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "3803de77-f73b-4c6b-ac6a-17136c5e25ce",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "35fbd56f-1eaf-4da7-9b95-905ee0057e30",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "065111e8-7017-4fd1-8dc3-db517771ca55",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "3212f2b2-618b-4410-8baf-6aea5ef18383",
+              "channelId": "46c1f2ce-9246-4836-84b4-fbef337c0caa",
               "channelType": "telephony",
               "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "8e3c1035-3c60-4f22-8cf2-2d667a5c7040",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "b4ba02a5-8758-44f7-b7af-b4a872267e9c",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
-            },
-            {
-              "channelId": "051705f9-dd8c-4d82-9f3d-51b893d6d621",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 16146363,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 16146363
+              "idleDuration": 7737,
+              "ringingCount": 1,
+              "ringingDuration": 1785,
+              "totalDuration": 150608
             }
           ]
         },
@@ -1863,6 +2383,26 @@
           ]
         },
         {
+          "agentSessionId": "539cc756-ba4e-4662-b5f5-a2756cec8d19",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1659351404147,
+          "endTime": 1659351840701,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f70743e3-2d55-48d4-b0fa-ab4baddba382",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 188822,
+              "ringingCount": 2,
+              "ringingDuration": 3955,
+              "totalDuration": 436554
+            }
+          ]
+        },
+        {
           "agentSessionId": "548df097-ad31-4a7c-91d9-7619dcdc5956",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-one",
@@ -1879,6 +2419,26 @@
               "ringingCount": 1,
               "ringingDuration": 2551,
               "totalDuration": 1109438
+            }
+          ]
+        },
+        {
+          "agentSessionId": "549dd5a7-2985-4fd4-a032-9474b0de3cd8",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1667825794508,
+          "endTime": 1667831573876,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "01d83ad3-bbe4-417e-ad01-649dbe81c5f3",
+              "channelType": "telephony",
+              "idleCount": 7,
+              "idleDuration": 641525,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5779368
             }
           ]
         },
@@ -2021,6 +2581,46 @@
           ]
         },
         {
+          "agentSessionId": "5c8f3032-c487-485e-8694-e5a570aedb3e",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1660642599816,
+          "endTime": 1660643126551,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3ea8860c-3aeb-405f-b5b4-e7a04902cf74",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 106343,
+              "ringingCount": 5,
+              "ringingDuration": 15108,
+              "totalDuration": 526735
+            }
+          ]
+        },
+        {
+          "agentSessionId": "5ff47937-2dae-4c8e-abb0-268670786223",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658751387893,
+          "endTime": 1658755976987,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5097ba7d-6fdc-44bd-b99f-9de6a32e18c9",
+              "channelType": "telephony",
+              "idleCount": 5,
+              "idleDuration": 330438,
+              "ringingCount": 4,
+              "ringingDuration": 37855,
+              "totalDuration": 4589094
+            }
+          ]
+        },
+        {
           "agentSessionId": "60658e01-67b8-4236-9b96-6b6b6b638993",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -2088,15 +2688,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "97bb62a7-10c4-4c09-b3ea-9f9f8b3c4d8f",
-              "channelType": "email",
-              "idleCount": 7,
-              "idleDuration": 225776,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 652242
-            },
-            {
               "channelId": "97335f25-40a4-4adb-991e-735bfc63fdef",
               "channelType": "telephony",
               "idleCount": 7,
@@ -2108,6 +2699,15 @@
             {
               "channelId": "58634e31-60e0-4251-bad8-1f42fcac6546",
               "channelType": "chat",
+              "idleCount": 7,
+              "idleDuration": 225776,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 652242
+            },
+            {
+              "channelId": "97bb62a7-10c4-4c09-b3ea-9f9f8b3c4d8f",
+              "channelType": "email",
               "idleCount": 7,
               "idleDuration": 225776,
               "ringingCount": 0,
@@ -2137,6 +2737,26 @@
           ]
         },
         {
+          "agentSessionId": "660959c4-b74e-4027-b240-6cd1a325ee93",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1663216296899,
+          "endTime": 1663226454112,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "18422ea6-6dad-4b5b-8043-cc7862283e80",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 10157213,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 10157213
+            }
+          ]
+        },
+        {
           "agentSessionId": "66565eee-cab1-49bb-b2fe-c8318269fd02",
           "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
           "teamName": "test-team1",
@@ -2153,6 +2773,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 15373997
+            }
+          ]
+        },
+        {
+          "agentSessionId": "66d9bb39-c153-46b6-87ad-43c0dba8f7fc",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1660720591262,
+          "endTime": 1660735563397,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e129142d-761d-4960-8f1e-572ebce08bf9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 14799469,
+              "ringingCount": 1,
+              "ringingDuration": 2259,
+              "totalDuration": 14972135
             }
           ]
         },
@@ -2269,6 +2909,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 5235513
+            }
+          ]
+        },
+        {
+          "agentSessionId": "69aff17f-2399-4117-9e52-6533baa8420c",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1659432687382,
+          "endTime": 1659434669946,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "cf8c73fc-98fe-448a-8b0f-9e33a158d38a",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2792,
+              "ringingCount": 1,
+              "ringingDuration": 4483,
+              "totalDuration": 1982564
             }
           ]
         },
@@ -2391,6 +3051,46 @@
           ]
         },
         {
+          "agentSessionId": "6cd62435-bee8-4a4e-913a-7eee806081fa",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1663049265253,
+          "endTime": 1663051671614,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "032497d8-7304-40ee-a5d0-c937ca36ed3f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 301025,
+              "ringingCount": 3,
+              "ringingDuration": 12284,
+              "totalDuration": 2406361
+            }
+          ]
+        },
+        {
+          "agentSessionId": "6df45155-f9e1-41ca-970d-2987c5c2adb8",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658748521368,
+          "endTime": 1658748689814,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "723b635a-dbac-4674-8687-c058844c14f9",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 16446,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 168446
+            }
+          ]
+        },
+        {
           "agentSessionId": "6eb82665-9b42-4898-afec-9625891b1287",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -2399,15 +3099,6 @@
           "endTime": 1663335995709,
           "isActive": false,
           "channelInfo": [
-            {
-              "channelId": "f47fe551-4ba6-4d63-9942-4a5ff9df4b87",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 1250136,
-              "ringingCount": 2,
-              "ringingDuration": 5796,
-              "totalDuration": 9740720
-            },
             {
               "channelId": "2356d790-2e9b-43b0-bc53-04badd18c5ed",
               "channelType": "chat",
@@ -2424,6 +3115,15 @@
               "idleDuration": 1250136,
               "ringingCount": 0,
               "ringingDuration": 0,
+              "totalDuration": 9740720
+            },
+            {
+              "channelId": "f47fe551-4ba6-4d63-9942-4a5ff9df4b87",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 1250136,
+              "ringingCount": 2,
+              "ringingDuration": 5796,
               "totalDuration": 9740720
             }
           ]
@@ -2458,8 +3158,8 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "41905aa3-9536-4695-9274-64159dfa0d86",
-              "channelType": "email",
+              "channelId": "6658d056-06bb-48c9-a5d3-c8e9dfe4ab6d",
+              "channelType": "telephony",
               "idleCount": 1,
               "idleDuration": 10285,
               "ringingCount": 0,
@@ -2467,8 +3167,8 @@
               "totalDuration": 10285
             },
             {
-              "channelId": "6658d056-06bb-48c9-a5d3-c8e9dfe4ab6d",
-              "channelType": "telephony",
+              "channelId": "41905aa3-9536-4695-9274-64159dfa0d86",
+              "channelType": "email",
               "idleCount": 1,
               "idleDuration": 10285,
               "ringingCount": 0,
@@ -2483,6 +3183,66 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 10285
+            }
+          ]
+        },
+        {
+          "agentSessionId": "7076111f-de71-436a-94ee-a1e0f7dcf9ca",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1662618206019,
+          "endTime": 1662619402934,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "1c89d8e0-f48f-4757-8a42-d7bb19643ead",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 702355,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1196915
+            }
+          ]
+        },
+        {
+          "agentSessionId": "70b1b068-74d3-484b-b538-83d0ece990ee",
+          "agentId": "9dece7c1-14e4-4d2c-831e-033cfb035081",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658228810922,
+          "endTime": 1658231149444,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d3afe757-37e3-4dee-87ab-ad8672c6ed6e",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 9402,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 2338522
+            }
+          ]
+        },
+        {
+          "agentSessionId": "73e0ac8d-52b5-4c7e-89a4-8046b12826dd",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658299145367,
+          "endTime": 1658299319957,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "85b87bf1-0ccb-4909-9795-f296b13245ef",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 8036,
+              "ringingCount": 2,
+              "ringingDuration": 3647,
+              "totalDuration": 174590
             }
           ]
         },
@@ -2567,6 +3327,26 @@
           ]
         },
         {
+          "agentSessionId": "7790871f-d2b6-4c5a-9459-e9cb69302058",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1660634351823,
+          "endTime": 1660635219397,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "702d2e0c-b921-42cd-aaf8-e5dfad8b65eb",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 785374,
+              "ringingCount": 1,
+              "ringingDuration": 2600,
+              "totalDuration": 867574
+            }
+          ]
+        },
+        {
           "agentSessionId": "79a55bef-c94e-40f5-b38a-443bec4b1654",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-one",
@@ -2583,6 +3363,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 3375829
+            }
+          ]
+        },
+        {
+          "agentSessionId": "79aeffe6-e784-4694-bcf0-a9cf6a4d5bc0",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1663049049139,
+          "endTime": 1663054111295,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "14777b27-7b57-4371-9a95-dd32c8351048",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 677236,
+              "ringingCount": 7,
+              "ringingDuration": 20929,
+              "totalDuration": 5062156
             }
           ]
         },
@@ -2605,15 +3405,6 @@
               "totalDuration": 1441223
             },
             {
-              "channelId": "d7b6458b-b9ad-4aab-97f0-61e7865b3d24",
-              "channelType": "email",
-              "idleCount": 23,
-              "idleDuration": 471112,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1441223
-            },
-            {
               "channelId": "5db9161e-3f2d-481a-913a-81a564226754",
               "channelType": "telephony",
               "idleCount": 19,
@@ -2621,6 +3412,35 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 1441223
+            },
+            {
+              "channelId": "d7b6458b-b9ad-4aab-97f0-61e7865b3d24",
+              "channelType": "email",
+              "idleCount": 23,
+              "idleDuration": 471112,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1441223
+            }
+          ]
+        },
+        {
+          "agentSessionId": "7bf45da3-369f-4197-809c-d1e431da336c",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1659351209831,
+          "endTime": 1659351834875,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "e6b45352-a1e2-447c-b736-50e18985f41f",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 57770,
+              "ringingCount": 4,
+              "ringingDuration": 9451,
+              "totalDuration": 625044
             }
           ]
         },
@@ -2641,6 +3461,26 @@
               "ringingCount": 4,
               "ringingDuration": 85513,
               "totalDuration": 36419357
+            }
+          ]
+        },
+        {
+          "agentSessionId": "7eb7f2e4-21c3-4d9d-a2c5-138b8621870f",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1668423110481,
+          "endTime": 1668423281493,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3622296b-c5ae-45c2-bc78-14ebf829dc33",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 96751,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 171012
             }
           ]
         },
@@ -2712,7 +3552,7 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "51cc58e1-2163-4cd7-92c3-3d72ae96c4e6",
+              "channelId": "3ef8cd79-45ca-41e1-bec3-d355d195e423",
               "channelType": "chat",
               "idleCount": 4,
               "idleDuration": 66468,
@@ -2721,7 +3561,7 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "f3af9531-a56e-4fc9-864c-d16ff3f7978f",
+              "channelId": "8e42131d-1097-4a37-8f00-f06832bcc065",
               "channelType": "email",
               "idleCount": 4,
               "idleDuration": 66468,
@@ -2730,8 +3570,8 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "de46499b-4daa-4c01-84b1-e49364985c8c",
-              "channelType": "social",
+              "channelId": "df570d86-ed1d-4704-befb-f02b98227b53",
+              "channelType": "chat",
               "idleCount": 4,
               "idleDuration": 66468,
               "ringingCount": 0,
@@ -2793,24 +3633,6 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "d395cd2f-92c1-4638-af2a-5ba9c2775a5e",
-              "channelType": "email",
-              "idleCount": 4,
-              "idleDuration": 66468,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 254246
-            },
-            {
-              "channelId": "ba17c58f-2e7d-4a1e-a41a-d396a6c4d158",
-              "channelType": "email",
-              "idleCount": 4,
-              "idleDuration": 66468,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 254246
-            },
-            {
               "channelId": "36fde8ad-b25b-46ca-8e05-b583b749957f",
               "channelType": "email",
               "idleCount": 4,
@@ -2829,7 +3651,7 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "3ef8cd79-45ca-41e1-bec3-d355d195e423",
+              "channelId": "51cc58e1-2163-4cd7-92c3-3d72ae96c4e6",
               "channelType": "chat",
               "idleCount": 4,
               "idleDuration": 66468,
@@ -2838,7 +3660,7 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "8e42131d-1097-4a37-8f00-f06832bcc065",
+              "channelId": "f3af9531-a56e-4fc9-864c-d16ff3f7978f",
               "channelType": "email",
               "idleCount": 4,
               "idleDuration": 66468,
@@ -2847,8 +3669,26 @@
               "totalDuration": 254246
             },
             {
-              "channelId": "df570d86-ed1d-4704-befb-f02b98227b53",
-              "channelType": "chat",
+              "channelId": "de46499b-4daa-4c01-84b1-e49364985c8c",
+              "channelType": "social",
+              "idleCount": 4,
+              "idleDuration": 66468,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 254246
+            },
+            {
+              "channelId": "d395cd2f-92c1-4638-af2a-5ba9c2775a5e",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 66468,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 254246
+            },
+            {
+              "channelId": "ba17c58f-2e7d-4a1e-a41a-d396a6c4d158",
+              "channelType": "email",
               "idleCount": 4,
               "idleDuration": 66468,
               "ringingCount": 0,
@@ -3045,6 +3885,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "dd29742b-e19d-461e-88d8-fd2e375edab5",
+              "channelType": "chat",
+              "idleCount": 5,
+              "idleDuration": 50689,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 114807
+            },
+            {
               "channelId": "d521d542-b468-40db-9ab8-48a5b46b0d27",
               "channelType": "telephony",
               "idleCount": 4,
@@ -3056,15 +3905,6 @@
             {
               "channelId": "7705d8a0-56f0-41c8-9508-a3acf55e5c8b",
               "channelType": "email",
-              "idleCount": 5,
-              "idleDuration": 50689,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 114807
-            },
-            {
-              "channelId": "dd29742b-e19d-461e-88d8-fd2e375edab5",
-              "channelType": "chat",
               "idleCount": 5,
               "idleDuration": 50689,
               "ringingCount": 0,
@@ -3092,21 +3932,21 @@
               "totalDuration": 1234377
             },
             {
-              "channelId": "8158e698-3b51-486e-9614-ea24988459b7",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 204328,
-              "ringingCount": 3,
-              "ringingDuration": 10847,
-              "totalDuration": 1234377
-            },
-            {
               "channelId": "2b04a681-6f9b-4240-9ceb-86ab336f8151",
               "channelType": "email",
               "idleCount": 2,
               "idleDuration": 204328,
               "ringingCount": 0,
               "ringingDuration": 0,
+              "totalDuration": 1234377
+            },
+            {
+              "channelId": "8158e698-3b51-486e-9614-ea24988459b7",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 204328,
+              "ringingCount": 3,
+              "ringingDuration": 10847,
               "totalDuration": 1234377
             }
           ]
@@ -3161,15 +4001,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "d8c7e54b-6918-422c-97cd-12463fa20ff6",
-              "channelType": "email",
-              "idleCount": 3,
-              "idleDuration": 48008356,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 49059949
-            },
-            {
               "channelId": "01e6bd91-7d36-4451-9cd7-015830a45e0b",
               "channelType": "chat",
               "idleCount": 3,
@@ -3185,6 +4016,15 @@
               "idleDuration": 48008356,
               "ringingCount": 6,
               "ringingDuration": 31866,
+              "totalDuration": 49059949
+            },
+            {
+              "channelId": "d8c7e54b-6918-422c-97cd-12463fa20ff6",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 48008356,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 49059949
             }
           ]
@@ -3206,6 +4046,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 652653
+            }
+          ]
+        },
+        {
+          "agentSessionId": "897adb75-c126-416a-b4a3-8784fab8118d",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658999277254,
+          "endTime": 1659000631667,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "a6c688d4-657a-4473-b744-8a7b6cb2fb7c",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 2828,
+              "ringingCount": 2,
+              "ringingDuration": 8651,
+              "totalDuration": 1354413
             }
           ]
         },
@@ -3335,6 +4195,42 @@
               "totalDuration": 304919
             },
             {
+              "channelId": "7ef64d0f-ae39-4bd5-9bab-2ec9ddaa8ce2",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 23702,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 304919
+            },
+            {
+              "channelId": "18240917-d898-41fe-81f7-79f282ee3757",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 23702,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 304919
+            },
+            {
+              "channelId": "04156160-98e3-4510-9174-084c6940a5ea",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 23702,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 304919
+            },
+            {
+              "channelId": "de147933-6dee-4a42-81bf-6b5ccfde277f",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 23702,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 304919
+            },
+            {
               "channelId": "3784f558-3aed-4e7e-adf8-317d49ad8edd",
               "channelType": "chat",
               "idleCount": 1,
@@ -3372,42 +4268,6 @@
             },
             {
               "channelId": "03192022-bf8d-4c15-b463-160e97cfca49",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 23702,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 304919
-            },
-            {
-              "channelId": "7ef64d0f-ae39-4bd5-9bab-2ec9ddaa8ce2",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 23702,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 304919
-            },
-            {
-              "channelId": "18240917-d898-41fe-81f7-79f282ee3757",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 23702,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 304919
-            },
-            {
-              "channelId": "04156160-98e3-4510-9174-084c6940a5ea",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 23702,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 304919
-            },
-            {
-              "channelId": "de147933-6dee-4a42-81bf-6b5ccfde277f",
               "channelType": "email",
               "idleCount": 1,
               "idleDuration": 23702,
@@ -3474,6 +4334,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "8f978cc8-1ab8-486d-a4ae-f7741fa1f16b",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 5793658,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 5805546
+            },
+            {
               "channelId": "c8e241f6-4568-4b59-933d-eae2e6f406fb",
               "channelType": "chat",
               "idleCount": 3,
@@ -3487,15 +4356,6 @@
               "channelType": "telephony",
               "idleCount": 4,
               "idleDuration": 5770027,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 5805546
-            },
-            {
-              "channelId": "8f978cc8-1ab8-486d-a4ae-f7741fa1f16b",
-              "channelType": "email",
-              "idleCount": 3,
-              "idleDuration": 5793658,
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 5805546
@@ -3539,6 +4399,26 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 472351
+            }
+          ]
+        },
+        {
+          "agentSessionId": "8d87c191-c0cb-4edb-8647-962aad1b6e32",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1662618181134,
+          "endTime": 1662619386582,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "3016e9bb-9373-4678-8e29-5f563052539b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 719498,
+              "ringingCount": 2,
+              "ringingDuration": 6089,
+              "totalDuration": 1205448
             }
           ]
         },
@@ -3630,6 +4510,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "c123ba9c-361e-4d1a-88e2-66495d78fe7d",
+              "channelType": "email",
+              "idleCount": 3,
+              "idleDuration": 25929,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 199470
+            },
+            {
               "channelId": "68d88fc4-9c43-404b-b026-31cdde7b3e3e",
               "channelType": "telephony",
               "idleCount": 3,
@@ -3641,15 +4530,6 @@
             {
               "channelId": "5368ec43-8a71-4cdc-b62c-088ecf375fd9",
               "channelType": "chat",
-              "idleCount": 3,
-              "idleDuration": 25929,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 199470
-            },
-            {
-              "channelId": "c123ba9c-361e-4d1a-88e2-66495d78fe7d",
-              "channelType": "email",
               "idleCount": 3,
               "idleDuration": 25929,
               "ringingCount": 0,
@@ -3699,6 +4579,26 @@
           ]
         },
         {
+          "agentSessionId": "90da2fc8-dbde-4d6d-97d6-721ab0a1941f",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658394783842,
+          "endTime": 1658400447421,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d2cacacf-7ad3-4a20-bd54-6a4a333fe94b",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 902916,
+              "ringingCount": 7,
+              "ringingDuration": 33173,
+              "totalDuration": 5663579
+            }
+          ]
+        },
+        {
           "agentSessionId": "91da648d-f1d1-47dc-8a80-ab66290f9e8d",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-one",
@@ -3715,6 +4615,26 @@
               "ringingCount": 7,
               "ringingDuration": 20705,
               "totalDuration": 17573414
+            }
+          ]
+        },
+        {
+          "agentSessionId": "93e73c4f-525a-41cb-ab71-bad4c3f7a075",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1668423907928,
+          "endTime": 1668424327987,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "d70fbb1f-9d21-487d-a650-b03bb2296e69",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 30108,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 420059
             }
           ]
         },
@@ -3837,6 +4757,26 @@
           ]
         },
         {
+          "agentSessionId": "988a7f85-1155-4d6e-9272-a40ebb211902",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658394953919,
+          "endTime": 1658400053545,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "5bf7be76-e988-4216-b401-3e1fc3f936fd",
+              "channelType": "telephony",
+              "idleCount": 6,
+              "idleDuration": 916745,
+              "ringingCount": 4,
+              "ringingDuration": 27354,
+              "totalDuration": 5099626
+            }
+          ]
+        },
+        {
           "agentSessionId": "9942fc10-a732-496c-97ec-2f643103bbeb",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team",
@@ -3942,60 +4882,6 @@
               "totalDuration": 678109
             },
             {
-              "channelId": "0c7d0dab-4c60-4834-b48d-84a025ffbe4b",
-              "channelType": "social",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
-              "channelId": "b715b017-b00c-4a47-b80e-62c8e767999d",
-              "channelType": "social",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
-              "channelId": "1d6c00d0-0432-4ca1-a166-b5e360f9c169",
-              "channelType": "chat",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
-              "channelId": "6348875e-7be6-47ba-b4ab-27175fdff541",
-              "channelType": "email",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
-              "channelId": "747a6232-35eb-4f3e-8a62-9183b367fbfa",
-              "channelType": "telephony",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
-              "channelId": "7236716d-304b-468a-bc2b-0b735ba07448",
-              "channelType": "chat",
-              "idleCount": 4,
-              "idleDuration": 106962,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 678109
-            },
-            {
               "channelId": "c4da5970-5c4a-4627-9c62-0b38560749ed",
               "channelType": "email",
               "idleCount": 4,
@@ -4048,6 +4934,60 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 678109
+            },
+            {
+              "channelId": "0c7d0dab-4c60-4834-b48d-84a025ffbe4b",
+              "channelType": "social",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
+            },
+            {
+              "channelId": "b715b017-b00c-4a47-b80e-62c8e767999d",
+              "channelType": "social",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
+            },
+            {
+              "channelId": "1d6c00d0-0432-4ca1-a166-b5e360f9c169",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
+            },
+            {
+              "channelId": "6348875e-7be6-47ba-b4ab-27175fdff541",
+              "channelType": "email",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
+            },
+            {
+              "channelId": "747a6232-35eb-4f3e-8a62-9183b367fbfa",
+              "channelType": "telephony",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
+            },
+            {
+              "channelId": "7236716d-304b-468a-bc2b-0b735ba07448",
+              "channelType": "chat",
+              "idleCount": 4,
+              "idleDuration": 106962,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 678109
             }
           ]
         },
@@ -4068,6 +5008,26 @@
               "ringingCount": 1,
               "ringingDuration": 7727,
               "totalDuration": 4966699
+            }
+          ]
+        },
+        {
+          "agentSessionId": "9b6d44f5-162e-4c21-873c-175c88e94cee",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1663210497516,
+          "endTime": 1663215702885,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "c1d27929-f172-4035-94c4-bd68c58f2f0e",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 15956,
+              "ringingCount": 2,
+              "ringingDuration": 65592,
+              "totalDuration": 5205369
             }
           ]
         },
@@ -4170,6 +5130,86 @@
           ]
         },
         {
+          "agentSessionId": "a050afb7-d6fe-4839-b840-f35282191b57",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1662638476330,
+          "endTime": 1662644168746,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "86837012-af13-4552-8926-889b4c4ac31d",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 2634399,
+              "ringingCount": 2,
+              "ringingDuration": 5093,
+              "totalDuration": 5692416
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a072f76e-6027-4767-a865-007fa2e5d805",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658228202381,
+          "endTime": 1658231130687,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "cce8e6f8-32d2-4f00-9a79-0aff50746a95",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 173359,
+              "ringingCount": 7,
+              "ringingDuration": 61916,
+              "totalDuration": 2928306
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a2ce494b-d703-437d-b6f0-fb879246a83d",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1664802840626,
+          "endTime": 1664807345500,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "8af2c69e-3d8d-4c90-a8fd-75d71ed79cc9",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4504874,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 4504874
+            }
+          ]
+        },
+        {
+          "agentSessionId": "a6d4e6bd-0da5-4140-baa1-0fc79d758030",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658394740292,
+          "endTime": 1658402430668,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "7423e259-e02a-42dd-bf6f-5c7b358f7b8d",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 3500772,
+              "ringingCount": 7,
+              "ringingDuration": 39953,
+              "totalDuration": 7690376
+            }
+          ]
+        },
+        {
           "agentSessionId": "a7620fc1-3b25-4834-adb1-a821b7b831d5",
           "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
           "teamName": "test-team1",
@@ -4257,6 +5297,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "d70bbfd8-09a4-47b3-bab9-6f66c40cbe2d",
+              "channelType": "chat",
+              "idleCount": 5,
+              "idleDuration": 22165245,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 22651578
+            },
+            {
               "channelId": "f58688ba-7bae-49ea-8a8b-141e56192650",
               "channelType": "telephony",
               "idleCount": 5,
@@ -4276,15 +5325,6 @@
             },
             {
               "channelId": "461c464a-fcf2-4cb2-a7b3-d2dabaa23a54",
-              "channelType": "chat",
-              "idleCount": 5,
-              "idleDuration": 22165245,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 22651578
-            },
-            {
-              "channelId": "d70bbfd8-09a4-47b3-bab9-6f66c40cbe2d",
               "channelType": "chat",
               "idleCount": 5,
               "idleDuration": 22165245,
@@ -4412,8 +5452,8 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "5cc6e33a-7115-4a42-a112-ba3e04b6c7e5",
-              "channelType": "email",
+              "channelId": "16453eb6-6a2b-41af-859f-e23f742e3e3d",
+              "channelType": "chat",
               "idleCount": 5,
               "idleDuration": 327003,
               "ringingCount": 0,
@@ -4421,8 +5461,8 @@
               "totalDuration": 612847
             },
             {
-              "channelId": "16453eb6-6a2b-41af-859f-e23f742e3e3d",
-              "channelType": "chat",
+              "channelId": "5cc6e33a-7115-4a42-a112-ba3e04b6c7e5",
+              "channelType": "email",
               "idleCount": 5,
               "idleDuration": 327003,
               "ringingCount": 0,
@@ -4526,15 +5566,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "ba2ebdc5-1bbb-42d0-ac69-6e91909bc080",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 229242,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1137768
-            },
-            {
               "channelId": "c2a9d3c5-540f-4d4a-bc9e-45411a21345a",
               "channelType": "chat",
               "idleCount": 1,
@@ -4550,6 +5581,15 @@
               "idleDuration": 611503,
               "ringingCount": 1,
               "ringingDuration": 6159,
+              "totalDuration": 1137768
+            },
+            {
+              "channelId": "ba2ebdc5-1bbb-42d0-ac69-6e91909bc080",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 229242,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 1137768
             }
           ]
@@ -4595,6 +5635,26 @@
           ]
         },
         {
+          "agentSessionId": "b06bb8ac-4b82-48c5-b251-c64e3a8274f3",
+          "agentId": "9dece7c1-14e4-4d2c-831e-033cfb035081",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658394583949,
+          "endTime": 1658399891912,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "54c65009-44af-43c4-b52a-6f82cb9d5332",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4985,
+              "ringingCount": 6,
+              "ringingDuration": 36016,
+              "totalDuration": 5307963
+            }
+          ]
+        },
+        {
           "agentSessionId": "b16bc054-e5fb-479c-ba97-f90e7d1e7224",
           "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
           "teamName": "test-team-one",
@@ -4624,6 +5684,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "dd559be2-475f-420d-bca3-05f617a3c7a6",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 76273,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 336724
+            },
+            {
               "channelId": "073fb3f9-038a-43d8-a23b-f4c0c7a998a6",
               "channelType": "email",
               "idleCount": 1,
@@ -4640,15 +5709,26 @@
               "ringingCount": 2,
               "ringingDuration": 11789,
               "totalDuration": 336724
-            },
+            }
+          ]
+        },
+        {
+          "agentSessionId": "b3c735bf-b504-4a26-9a70-4c522a938a4c",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1659078831891,
+          "endTime": 1659080243612,
+          "isActive": false,
+          "channelInfo": [
             {
-              "channelId": "dd559be2-475f-420d-bca3-05f617a3c7a6",
-              "channelType": "chat",
+              "channelId": "fe1bcaaa-3a25-4cf8-b41b-83889c078d6d",
+              "channelType": "telephony",
               "idleCount": 1,
-              "idleDuration": 76273,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 336724
+              "idleDuration": 4731,
+              "ringingCount": 3,
+              "ringingDuration": 8035,
+              "totalDuration": 1411721
             }
           ]
         },
@@ -4845,6 +5925,15 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "16151b8c-2a23-4932-8b1d-1df26de169e0",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 139719,
+              "ringingCount": 1,
+              "ringingDuration": 6126,
+              "totalDuration": 4009936
+            },
+            {
               "channelId": "0b4ac1bb-c0ff-4e2e-aa5c-1e7abff3876a",
               "channelType": "email",
               "idleCount": 2,
@@ -4860,15 +5949,6 @@
               "idleDuration": 139719,
               "ringingCount": 0,
               "ringingDuration": 0,
-              "totalDuration": 4009936
-            },
-            {
-              "channelId": "16151b8c-2a23-4932-8b1d-1df26de169e0",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 139719,
-              "ringingCount": 1,
-              "ringingDuration": 6126,
               "totalDuration": 4009936
             }
           ]
@@ -4903,15 +5983,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "6bcec502-0af6-4dd1-813a-7e6398a03a0c",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 113750,
-              "ringingCount": 7,
-              "ringingDuration": 15160,
-              "totalDuration": 2914317
-            },
-            {
               "channelId": "0d725a85-020c-4237-a7de-479fb6bc5a31",
               "channelType": "chat",
               "idleCount": 2,
@@ -4928,6 +5999,15 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 2914317
+            },
+            {
+              "channelId": "6bcec502-0af6-4dd1-813a-7e6398a03a0c",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 113750,
+              "ringingCount": 7,
+              "ringingDuration": 15160,
+              "totalDuration": 2914317
             }
           ]
         },
@@ -4941,15 +6021,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "512d572f-707a-45fc-83a6-1f888af8712a",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 198647,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1117641
-            },
-            {
               "channelId": "4fcca0a2-68cf-45da-b707-54e6351c7e88",
               "channelType": "telephony",
               "idleCount": 2,
@@ -4961,6 +6032,15 @@
             {
               "channelId": "92dd3c24-47ab-4260-a3a2-f9e4bc2ba6e1",
               "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 198647,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1117641
+            },
+            {
+              "channelId": "512d572f-707a-45fc-83a6-1f888af8712a",
+              "channelType": "chat",
               "idleCount": 2,
               "idleDuration": 198647,
               "ringingCount": 0,
@@ -5001,87 +6081,6 @@
             {
               "channelId": "d9da8fcb-a0fa-4332-bc5c-807dea322ddc",
               "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "d3a74111-b124-4a83-8523-1e1d2a132fc0",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "1fcc1c32-6189-42c3-9b07-953c8d10d439",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "3a09ebd6-d0d4-4e4b-94d0-d659329756ac",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "8a046e88-b7f1-4728-a91e-ccf8a4a25b39",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "881d11f7-6e2b-4e0f-a4f9-6c0d58327528",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "cf142843-bd43-474f-bc5a-5e69c4f645c5",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "50d3807e-e707-4e7e-a279-04f3c12aed3f",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "c4a55b42-da58-4f05-8d0a-4def0e0b6d75",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 3205,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1679051
-            },
-            {
-              "channelId": "e2715023-6400-4262-a35c-17499defb45e",
-              "channelType": "telephony",
               "idleCount": 1,
               "idleDuration": 3205,
               "ringingCount": 0,
@@ -5141,6 +6140,107 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 1679051
+            },
+            {
+              "channelId": "881d11f7-6e2b-4e0f-a4f9-6c0d58327528",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "cf142843-bd43-474f-bc5a-5e69c4f645c5",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "50d3807e-e707-4e7e-a279-04f3c12aed3f",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "c4a55b42-da58-4f05-8d0a-4def0e0b6d75",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "d3a74111-b124-4a83-8523-1e1d2a132fc0",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "1fcc1c32-6189-42c3-9b07-953c8d10d439",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "3a09ebd6-d0d4-4e4b-94d0-d659329756ac",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "8a046e88-b7f1-4728-a91e-ccf8a4a25b39",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            },
+            {
+              "channelId": "e2715023-6400-4262-a35c-17499defb45e",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3205,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1679051
+            }
+          ]
+        },
+        {
+          "agentSessionId": "c19735d2-0349-43d3-a4ff-ab05421975d6",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658220659788,
+          "endTime": 1658222517392,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "aef6a0e6-b762-46de-b296-a0d65bec0285",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 62380,
+              "ringingCount": 7,
+              "ringingDuration": 24683,
+              "totalDuration": 1857604
             }
           ]
         },
@@ -5205,6 +6305,26 @@
           ]
         },
         {
+          "agentSessionId": "c7dd5dfb-e7ad-4999-919c-4aca841c9bd7",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1662638522042,
+          "endTime": 1662644545968,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "21b76ac3-b69e-4282-bb0e-7c037a775482",
+              "channelType": "telephony",
+              "idleCount": 17,
+              "idleDuration": 851205,
+              "ringingCount": 4,
+              "ringingDuration": 20491,
+              "totalDuration": 6023926
+            }
+          ]
+        },
+        {
           "agentSessionId": "c85b69a1-7810-49b4-a40f-da6ec368f797",
           "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
           "teamName": "test-team1",
@@ -5221,6 +6341,46 @@
               "ringingCount": 6,
               "ringingDuration": 39619,
               "totalDuration": 4271662
+            }
+          ]
+        },
+        {
+          "agentSessionId": "ca2ffc5e-d48c-45a9-b303-f565ae93c243",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1668422359568,
+          "endTime": 1668423290020,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "f71f15f3-4e9b-4ec7-bff6-213fba66adc9",
+              "channelType": "telephony",
+              "idleCount": 10,
+              "idleDuration": 166976,
+              "ringingCount": 2,
+              "ringingDuration": 7495,
+              "totalDuration": 930452
+            }
+          ]
+        },
+        {
+          "agentSessionId": "cb05e11d-6b5e-4248-b69a-350bff7ab0a7",
+          "agentId": "65daf087-f5ba-44e8-8b68-f9340c4e5690",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1664774435405,
+          "endTime": 1664777288296,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "b668d0fa-e0db-420f-9b8c-c7a9be97cf30",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 1388965,
+              "ringingCount": 1,
+              "ringingDuration": 4101,
+              "totalDuration": 2852891
             }
           ]
         },
@@ -5281,6 +6441,26 @@
               "ringingCount": 1,
               "ringingDuration": 26295,
               "totalDuration": 258353
+            }
+          ]
+        },
+        {
+          "agentSessionId": "cdafc28d-0ec0-41c8-a9e9-c3fc7e9e9d00",
+          "agentId": "22d48d8e-fc25-4247-bfe9-e97d7692df24",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1668421059573,
+          "endTime": 1668421172512,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "9e627911-5db2-4010-9e23-01be73ef92e1",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 45737,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 112939
             }
           ]
         },
@@ -5354,21 +6534,21 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "c56d277d-dd42-4a7b-815f-8b15abe7a9b4",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 4706,
-              "ringingCount": 2,
-              "ringingDuration": 36416,
-              "totalDuration": 637971
-            },
-            {
               "channelId": "0df2a10b-75cb-415b-9e65-eb622ae371fd",
               "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 4706,
               "ringingCount": 0,
               "ringingDuration": 0,
+              "totalDuration": 637971
+            },
+            {
+              "channelId": "c56d277d-dd42-4a7b-815f-8b15abe7a9b4",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 4706,
+              "ringingCount": 2,
+              "ringingDuration": 36416,
               "totalDuration": 637971
             },
             {
@@ -5399,6 +6579,46 @@
               "ringingCount": 0,
               "ringingDuration": 0,
               "totalDuration": 14291762
+            }
+          ]
+        },
+        {
+          "agentSessionId": "d32cd426-4967-44db-bfeb-86392f8a575b",
+          "agentId": "9dece7c1-14e4-4d2c-831e-033cfb035081",
+          "teamName": "gt-team2",
+          "siteName": "gt-site",
+          "startTime": 1658227986267,
+          "endTime": 1658228572356,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "4f3227de-4496-47a5-83c2-ef9f5919ad6a",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 224024,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 586089
+            }
+          ]
+        },
+        {
+          "agentSessionId": "d6891d65-8fed-4cf7-940b-df29c6fbc0b4",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1658216878051,
+          "endTime": 1658220607973,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "cc3a9897-9eae-4180-8043-371b00109823",
+              "channelType": "telephony",
+              "idleCount": 2,
+              "idleDuration": 102348,
+              "ringingCount": 6,
+              "ringingDuration": 20483,
+              "totalDuration": 3729922
             }
           ]
         },
@@ -5472,15 +6692,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "4fa077f0-d0a3-4006-9d0b-3e393458bdf3",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 32834339,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 33868250
-            },
-            {
               "channelId": "357900aa-3976-414d-90bf-42e58a6d6ec3",
               "channelType": "telephony",
               "idleCount": 2,
@@ -5492,6 +6703,15 @@
             {
               "channelId": "10b2fef6-6179-4715-87c9-4c1f056abeaf",
               "channelType": "email",
+              "idleCount": 2,
+              "idleDuration": 32834339,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 33868250
+            },
+            {
+              "channelId": "4fa077f0-d0a3-4006-9d0b-3e393458bdf3",
+              "channelType": "chat",
               "idleCount": 2,
               "idleDuration": 32834339,
               "ringingCount": 0,
@@ -5570,15 +6790,6 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "e1e018f2-0368-4242-9a56-25dd319f8b8b",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 96715,
-              "ringingCount": 2,
-              "ringingDuration": 5827,
-              "totalDuration": 1743831
-            },
-            {
               "channelId": "fa9dd28c-eacb-4e07-8342-4824912f73f8",
               "channelType": "chat",
               "idleCount": 1,
@@ -5594,6 +6805,15 @@
               "idleDuration": 96715,
               "ringingCount": 0,
               "ringingDuration": 0,
+              "totalDuration": 1743831
+            },
+            {
+              "channelId": "e1e018f2-0368-4242-9a56-25dd319f8b8b",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 96715,
+              "ringingCount": 2,
+              "ringingDuration": 5827,
               "totalDuration": 1743831
             }
           ]
@@ -5686,6 +6906,24 @@
           "isActive": false,
           "channelInfo": [
             {
+              "channelId": "b1cd73a6-a0c4-4797-b390-51f6f88c75e0",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 2857,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 195113
+            },
+            {
+              "channelId": "585af4dd-4781-4941-8b47-3227804680a3",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 2857,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 195113
+            },
+            {
               "channelId": "d9d07d54-5b05-4f93-a0b4-ff8221becf87",
               "channelType": "chat",
               "idleCount": 1,
@@ -5731,7 +6969,7 @@
               "totalDuration": 195113
             },
             {
-              "channelId": "c0d82f3e-86e3-4e89-a2c6-1060a0da12f1",
+              "channelId": "3c1f9bed-f715-4425-8f19-dac663198235",
               "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 2857,
@@ -5740,8 +6978,17 @@
               "totalDuration": 195113
             },
             {
-              "channelId": "0248e5c3-3496-49c0-a3ed-f57d3c3a6fce",
-              "channelType": "email",
+              "channelId": "eb195738-c879-4637-baf1-27ab4c119c86",
+              "channelType": "social",
+              "idleCount": 1,
+              "idleDuration": 2857,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 195113
+            },
+            {
+              "channelId": "21ed62cc-bcf9-4ae9-ad84-1598ba89a9c7",
+              "channelType": "social",
               "idleCount": 1,
               "idleDuration": 2857,
               "ringingCount": 0,
@@ -5785,7 +7032,7 @@
               "totalDuration": 195113
             },
             {
-              "channelId": "3c1f9bed-f715-4425-8f19-dac663198235",
+              "channelId": "c0d82f3e-86e3-4e89-a2c6-1060a0da12f1",
               "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 2857,
@@ -5794,35 +7041,8 @@
               "totalDuration": 195113
             },
             {
-              "channelId": "eb195738-c879-4637-baf1-27ab4c119c86",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 2857,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 195113
-            },
-            {
-              "channelId": "21ed62cc-bcf9-4ae9-ad84-1598ba89a9c7",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 2857,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 195113
-            },
-            {
-              "channelId": "b1cd73a6-a0c4-4797-b390-51f6f88c75e0",
+              "channelId": "0248e5c3-3496-49c0-a3ed-f57d3c3a6fce",
               "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 2857,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 195113
-            },
-            {
-              "channelId": "585af4dd-4781-4941-8b47-3227804680a3",
-              "channelType": "chat",
               "idleCount": 1,
               "idleDuration": 2857,
               "ringingCount": 0,
@@ -5872,6 +7092,26 @@
           ]
         },
         {
+          "agentSessionId": "e422146d-4159-40d2-8bcb-30cf61538672",
+          "agentId": "06022ee4-32a3-4168-abb4-5e499173691b",
+          "teamName": "gt-team1",
+          "siteName": "gt-site",
+          "startTime": 1663053976245,
+          "endTime": 1663054119024,
+          "isActive": false,
+          "channelInfo": [
+            {
+              "channelId": "59fc850c-0118-4b11-956c-45a4a31977c5",
+              "channelType": "telephony",
+              "idleCount": 1,
+              "idleDuration": 3042,
+              "ringingCount": 1,
+              "ringingDuration": 2902,
+              "totalDuration": 142779
+            }
+          ]
+        },
+        {
           "agentSessionId": "e5fa1814-803b-4da5-a927-12c1db6c33ba",
           "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
           "teamName": "test-team1",
@@ -5881,12 +7121,12 @@
           "isActive": false,
           "channelInfo": [
             {
-              "channelId": "a79c59e6-ed23-4915-9aea-4829f5bc4fa2",
-              "channelType": "chat",
-              "idleCount": 8,
-              "idleDuration": 5830866,
-              "ringingCount": 0,
-              "ringingDuration": 0,
+              "channelId": "a6a9e056-6ea4-4993-953a-57ea56c19823",
+              "channelType": "telephony",
+              "idleCount": 3,
+              "idleDuration": 189781,
+              "ringingCount": 4,
+              "ringingDuration": 8522,
               "totalDuration": 8838349
             },
             {
@@ -5899,12 +7139,12 @@
               "totalDuration": 8838349
             },
             {
-              "channelId": "a6a9e056-6ea4-4993-953a-57ea56c19823",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 189781,
-              "ringingCount": 4,
-              "ringingDuration": 8522,
+              "channelId": "a79c59e6-ed23-4915-9aea-4829f5bc4fa2",
+              "channelType": "chat",
+              "idleCount": 8,
+              "idleDuration": 5830866,
+              "ringingCount": 0,
+              "ringingDuration": 0,
               "totalDuration": 8838349
             }
           ]
@@ -5948,1004 +7188,11 @@
               "totalDuration": 3027528
             }
           ]
-        },
-        {
-          "agentSessionId": "e7a26b64-8213-4540-81d6-8caa133b7830",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1667845015780,
-          "endTime": 1667845135170,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "b9a55401-4565-4f3a-8ffa-6ed85577f323",
-              "channelType": "email",
-              "idleCount": 6,
-              "idleDuration": 73031,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 119390
-            },
-            {
-              "channelId": "560b8535-1870-4a69-881b-18e540262c63",
-              "channelType": "chat",
-              "idleCount": 6,
-              "idleDuration": 73031,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 119390
-            },
-            {
-              "channelId": "87ef1d1d-7d4d-46d2-9e58-12d2e36e91a6",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 29798,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 119390
-            }
-          ]
-        },
-        {
-          "agentSessionId": "e8da3401-be76-4641-b87b-ffd29448d8bf",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team",
-          "siteName": "Site-1",
-          "startTime": 1665330653046,
-          "endTime": 1665330662911,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "d9493eb0-89d4-4c81-808c-170ba5dae831",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 9865,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 9865
-            }
-          ]
-        },
-        {
-          "agentSessionId": "e9696ae3-6df8-466b-befe-aa8f4217fa15",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team",
-          "siteName": "Site-1",
-          "startTime": 1669724405922,
-          "endTime": 1669726053004,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "98c16690-0ca6-4207-b470-773283d40440",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 1647082,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1647082
-            }
-          ]
-        },
-        {
-          "agentSessionId": "e9de7430-8a30-4b29-9661-fff6a99904c4",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1662729807804,
-          "endTime": 1662729922546,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "74cbec7b-0455-4fd2-b009-9ec03974f487",
-              "channelType": "email",
-              "idleCount": 2,
-              "idleDuration": 9318,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 114742
-            },
-            {
-              "channelId": "79ebf3b2-d368-45d6-8dab-a5963db940e0",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 9318,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 114742
-            },
-            {
-              "channelId": "4251080e-4bc0-4326-b284-5056e04936a5",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 9318,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 114742
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ea89280a-ce35-436c-b3b8-5f53585199e9",
-          "agentId": "cdfccd36-67bb-4861-8c38-323b4ed45c05",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1662704614025,
-          "endTime": 1662710736751,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "d68879e4-ee22-496e-b42c-4eba8ace2426",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 154019,
-              "ringingCount": 1,
-              "ringingDuration": 4480,
-              "totalDuration": 6122726
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ebf7b284-b76c-44f4-98bc-a61417025ba7",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663141565248,
-          "endTime": 1663144072734,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "02bd5c8b-b24f-4bf5-bd7d-08d23747195a",
-              "channelType": "email",
-              "idleCount": 4,
-              "idleDuration": 1373566,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 2507486
-            },
-            {
-              "channelId": "6a92c367-eb46-46a6-8c0e-2c6f027c6635",
-              "channelType": "telephony",
-              "idleCount": 4,
-              "idleDuration": 1373566,
-              "ringingCount": 4,
-              "ringingDuration": 15783,
-              "totalDuration": 2507486
-            },
-            {
-              "channelId": "2c0e2cb7-ebc2-4e94-b5dc-66fa5b3cf55a",
-              "channelType": "chat",
-              "idleCount": 4,
-              "idleDuration": 1373566,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 2507486
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ec2d65aa-2262-4754-90c4-062bff4bfc7d",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1668429215425,
-          "endTime": 1668431422873,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "fafd990b-4a4d-4fce-bce6-f6edb8d660c4",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 7160,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 2207448
-            },
-            {
-              "channelId": "a7f309d7-bd5e-4f30-9860-822b55a9d577",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 7160,
-              "ringingCount": 1,
-              "ringingDuration": 3127,
-              "totalDuration": 2207448
-            },
-            {
-              "channelId": "788092bd-ca92-4169-a47c-4800586fa92a",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 7160,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 2207448
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ed394060-5d7c-40e8-b40f-9d1d02cdcc58",
-          "agentId": "762438f6-470d-4426-bd72-0f4e8e597a33",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1661235760389,
-          "endTime": 1661237705011,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "9cf1d7e1-ca03-4a61-a672-79886abad99e",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 206566,
-              "ringingCount": 3,
-              "ringingDuration": 21714,
-              "totalDuration": 1944622
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ed48441f-4832-4e15-93be-73fd2102de74",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-two",
-          "siteName": "Site-1",
-          "startTime": 1667458728782,
-          "endTime": 1667488880000,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "310a2af1-3102-4752-9e90-c154b5313770",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 64073,
-              "ringingCount": 1,
-              "ringingDuration": 89,
-              "totalDuration": 30151218
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ed7e8367-c23c-4d39-96c2-e90897e669a3",
-          "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663141880447,
-          "endTime": 1663142239987,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "76a091d7-24c2-40aa-b929-78af591bc08f",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 337397,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 359540
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ee510822-3c23-4f53-bbe0-6bef09da408c",
-          "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1667838799626,
-          "endTime": 1667840456462,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "97aa7549-0c52-4c6c-938c-217f036ca3fe",
-              "channelType": "telephony",
-              "idleCount": 6,
-              "idleDuration": 692272,
-              "ringingCount": 1,
-              "ringingDuration": 11042,
-              "totalDuration": 1656836
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f0b9e88d-09a5-446d-b3b6-e39e38ad3133",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team",
-          "siteName": "Site-1",
-          "startTime": 1664794407499,
-          "endTime": 1664794439005,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "85988d1e-4f93-412a-8797-afad8c5eb86a",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 14372,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 31506
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f0e9090d-0642-4adb-be1f-cf28b4375853",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1662977215082,
-          "endTime": 1662982260958,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "0591de06-0fce-4901-948b-c09c70fd12ca",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 161199,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 5045876
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f0f1750d-acf3-42cc-8155-c18202eacc97",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-two",
-          "siteName": "Site-1",
-          "startTime": 1664512079859,
-          "endTime": 1664531629819,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "7f478599-5dbd-490f-9435-2267ef0b6842",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 9993803,
-              "ringingCount": 3,
-              "ringingDuration": 18740,
-              "totalDuration": 19549960
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f144c66e-6f6a-411d-9452-384d236c03bb",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1662555115674,
-          "endTime": 1662559024264,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "cc93dfc7-f13b-4922-b508-97c22f607954",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 7979,
-              "ringingCount": 4,
-              "ringingDuration": 17637,
-              "totalDuration": 3908590
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f510593c-4bb4-4b5a-8504-3bb3dbb320b7",
-          "agentId": "06e324ad-8569-4cec-9a15-078d50616ebc",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1669726101977,
-          "endTime": 1669726896732,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "864c74c3-425c-43d4-ab8c-027ebc7ff037",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "8c21b0e8-d8aa-4a6c-ab12-3f3b1d3fcc83",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "c8d91dde-a0f3-4846-b51d-c972f2269d47",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "8099553e-9978-4aa3-a731-86ee1b346172",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "04d593c2-e3b1-4e6d-8a17-7893d145174b",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "debf5449-b354-43f5-9b16-111fb0bf3c62",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "0536bcbf-5f85-46f4-89d3-407ba3ed1984",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "84b6b262-fc54-48b3-9bbb-e2e39e19344f",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "769d0345-c5cd-4136-8bca-f9acebdf010c",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "c785b5fc-b8d3-4107-9561-0c309dec6490",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "8507661d-57a9-433d-b714-66b359c33886",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "3e696547-07e5-41bc-851b-d7f1ca2d189b",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "36995d97-74e7-4845-b7b6-1c5f66fa1a1c",
-              "channelType": "social",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "4e011bde-7d49-4393-aaee-38e2b76880ec",
-              "channelType": "chat",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "e0531f3f-2bcc-4499-b61f-d6c1c5dec9fc",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            },
-            {
-              "channelId": "a3ce66c5-c413-48ce-bc1b-8bd98bd923e2",
-              "channelType": "email",
-              "idleCount": 1,
-              "idleDuration": 794755,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 794755
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f6a38b0e-6826-4e52-bdb1-398499286dcb",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663163162257,
-          "endTime": 1663164336836,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "6e031547-6766-4a3d-b3ba-f477cc0ba29e",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 153380,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1174579
-            },
-            {
-              "channelId": "af66c2fe-4373-4352-ac5c-4a0184bbae78",
-              "channelType": "email",
-              "idleCount": 2,
-              "idleDuration": 153380,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1174579
-            },
-            {
-              "channelId": "8007b4e7-36bc-4945-9727-e6cec045034c",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 153380,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1174579
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f7c8ed38-3d90-4183-b73b-50387d20b71e",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1659010251680,
-          "endTime": 1659017995627,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "ceb9a1df-c82d-4ba0-af40-be36cc3caf4a",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 124883,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 7743947
-            },
-            {
-              "channelId": "713b0d94-4d1e-4ca7-888e-86d1621f6602",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 124883,
-              "ringingCount": 12,
-              "ringingDuration": 37580,
-              "totalDuration": 7743947
-            },
-            {
-              "channelId": "8bb908ba-d289-4b5d-8d63-a4fbd9f7c019",
-              "channelType": "email",
-              "idleCount": 2,
-              "idleDuration": 124883,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 7743947
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f7dcf3aa-d848-4e23-a1d5-55e4090d6dbd",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663566349683,
-          "endTime": 1663572322561,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "b57a6a26-f217-491f-a424-dd1aa0cc049a",
-              "channelType": "email",
-              "idleCount": 7,
-              "idleDuration": 1377204,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 5972878
-            },
-            {
-              "channelId": "19ebf4d9-4ffa-48d3-a2b7-05bea9289e09",
-              "channelType": "telephony",
-              "idleCount": 7,
-              "idleDuration": 1377204,
-              "ringingCount": 2,
-              "ringingDuration": 14266,
-              "totalDuration": 5972878
-            },
-            {
-              "channelId": "827ecc37-1c2c-4be7-9f39-c0df96e3599a",
-              "channelType": "chat",
-              "idleCount": 7,
-              "idleDuration": 1377204,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 5972878
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f7efb41e-8938-4cb8-afa1-5a6f82a3905e",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team",
-          "siteName": "Site-1",
-          "startTime": 1667805496746,
-          "endTime": 1667805508439,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "fb17d29c-ae01-45dd-ae88-b4ceb1cef305",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 11693,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 11693
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f83bcca2-6cff-482b-a3aa-4b4f6dec8834",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1663333794006,
-          "endTime": 1663336189141,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "cd52f2cf-0343-4fbd-b237-b1ffda4ae73c",
-              "channelType": "telephony",
-              "idleCount": 4,
-              "idleDuration": 289636,
-              "ringingCount": 1,
-              "ringingDuration": 1689,
-              "totalDuration": 2395135
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f83d0df0-68b3-409d-986f-b4dc71a6b9d3",
-          "agentId": "388f7c3a-28cf-41a5-9d5f-7d84168849db",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1658407631294,
-          "endTime": 1658408687410,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "467e95b1-f5e0-43dd-aa38-4314fe4f9361",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 4675,
-              "ringingCount": 2,
-              "ringingDuration": 2751,
-              "totalDuration": 1056116
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f8d57790-8418-43d2-91ee-42cff99cd50c",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1662632548076,
-          "endTime": 1662649653357,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "6e662015-ae64-4349-b052-0ba5183265fe",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 165248,
-              "ringingCount": 5,
-              "ringingDuration": 19476,
-              "totalDuration": 17105281
-            }
-          ]
-        },
-        {
-          "agentSessionId": "f9117249-2800-40ab-91f4-bdcfe5b0b189",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1663161399291,
-          "endTime": 1663163254807,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "fa97b43f-c139-4402-b0fb-b4674ce0964d",
-              "channelType": "telephony",
-              "idleCount": 4,
-              "idleDuration": 350731,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 1855516
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fb74ce56-93b2-47c6-89bb-b1bf984fe638",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663572458698,
-          "endTime": 1663572598613,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "b91896d8-c9ec-4265-bb8f-816a54a2cee3",
-              "channelType": "chat",
-              "idleCount": 3,
-              "idleDuration": 26555,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 139915
-            },
-            {
-              "channelId": "88e09a89-cd90-424c-9a74-e94fe6e20e3f",
-              "channelType": "email",
-              "idleCount": 3,
-              "idleDuration": 26555,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 139915
-            },
-            {
-              "channelId": "f5f7905e-7d75-4ad0-9d09-c70fdc78cd07",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 26555,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 139915
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fb9636b1-5287-4596-bacb-ae04a76cdbeb",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663747090961,
-          "endTime": 1663747565985,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "3b87879a-7fbe-4e63-8cef-b1c300e17ddb",
-              "channelType": "email",
-              "idleCount": 2,
-              "idleDuration": 15770,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 475024
-            },
-            {
-              "channelId": "72fc59dc-176c-4585-a20f-fc5923f35977",
-              "channelType": "chat",
-              "idleCount": 2,
-              "idleDuration": 15770,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 475024
-            },
-            {
-              "channelId": "a42954e1-dcf5-437e-8ac8-87b718ef96f0",
-              "channelType": "telephony",
-              "idleCount": 2,
-              "idleDuration": 15770,
-              "ringingCount": 1,
-              "ringingDuration": 5281,
-              "totalDuration": 475024
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fc60b833-817f-44c9-a82c-c29c6e3a2f4e",
-          "agentId": "11ba6977-171c-4124-bf0f-9b148306b2bd",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663676598013,
-          "endTime": 1663676873515,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "2e8360a9-b655-42bb-a994-f775ef1a167c",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 275502,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 275502
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fcad21e8-6f73-4fe7-9889-52b661893379",
-          "agentId": "cdfccd36-67bb-4861-8c38-323b4ed45c05",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1664459090693,
-          "endTime": 1664459113005,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "8fced163-8773-4c09-89fb-f06252899bc7",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 22312,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 22312
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fd2df1b4-3267-4874-ae73-c444946af317",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663751209706,
-          "endTime": 1663773455432,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "6426768e-6dae-450d-994f-eeabf1d6cf9f",
-              "channelType": "email",
-              "idleCount": 8,
-              "idleDuration": 1719642,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 22245726
-            },
-            {
-              "channelId": "ec2a1bcc-98d6-4767-91a4-2809a747680d",
-              "channelType": "chat",
-              "idleCount": 8,
-              "idleDuration": 1719642,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 22245726
-            },
-            {
-              "channelId": "01c9f2f1-fbc0-4b03-a732-9773d7dbbc85",
-              "channelType": "telephony",
-              "idleCount": 8,
-              "idleDuration": 1719642,
-              "ringingCount": 10,
-              "ringingDuration": 42700,
-              "totalDuration": 22245726
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fe2d4861-9fa3-4c37-be35-7db3c05a06d6",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1662038277535,
-          "endTime": 1662039111669,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "1178b6fb-971e-47c8-af87-8b90d13f77cf",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 135544,
-              "ringingCount": 4,
-              "ringingDuration": 80796,
-              "totalDuration": 834134
-            }
-          ]
-        },
-        {
-          "agentSessionId": "febe8034-3784-4970-b92d-a18bc2858664",
-          "agentId": "d280377c-c0da-4bb5-a0b4-27a139753652",
-          "teamName": "test-team1",
-          "siteName": "test-site",
-          "startTime": 1663561983602,
-          "endTime": 1663562483392,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "293da29f-58c9-4669-9d7f-51c8ea876a40",
-              "channelType": "telephony",
-              "idleCount": 3,
-              "idleDuration": 37652,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 499790
-            },
-            {
-              "channelId": "42fdbe93-213c-443a-ad49-97c8fb13da9d",
-              "channelType": "email",
-              "idleCount": 3,
-              "idleDuration": 37652,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 499790
-            },
-            {
-              "channelId": "25592082-efbe-45de-8941-7faa4df08cf4",
-              "channelType": "chat",
-              "idleCount": 3,
-              "idleDuration": 37652,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 499790
-            }
-          ]
-        },
-        {
-          "agentSessionId": "fee244c4-7833-41c0-b6d2-ba0fb3f8ffa7",
-          "agentId": "1a5c44c5-0359-422f-91c5-12e754d868c9",
-          "teamName": "test-team-two",
-          "siteName": "Site-1",
-          "startTime": 1664872591640,
-          "endTime": 1665247661033,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "6c7f742f-e2f2-40ae-adbe-0f73f66f17fe",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 5591,
-              "ringingCount": 1,
-              "ringingDuration": 2448,
-              "totalDuration": 375069393
-            }
-          ]
-        },
-        {
-          "agentSessionId": "ffc56826-a270-478d-a784-de14bcb371f6",
-          "agentId": "cdfccd36-67bb-4861-8c38-323b4ed45c05",
-          "teamName": "test-team-one",
-          "siteName": "Site-1",
-          "startTime": 1665330584011,
-          "endTime": 1665330614496,
-          "isActive": false,
-          "channelInfo": [
-            {
-              "channelId": "f7a0bd40-f0b7-4286-8353-351c26275031",
-              "channelType": "telephony",
-              "idleCount": 1,
-              "idleDuration": 3294,
-              "ringingCount": 0,
-              "ringingDuration": 0,
-              "totalDuration": 30485
-            }
-          ]
         }
       ],
       "pageInfo": {
-        "hasNextPage": false,
-        "endCursor": null
+        "hasNextPage": true,
+        "endCursor": "e72f3a94-092e-42a5-94df-65ec9ef300ee"
       }
     }
   }

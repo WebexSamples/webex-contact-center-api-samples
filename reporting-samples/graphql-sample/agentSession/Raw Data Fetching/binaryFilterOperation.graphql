@@ -6,10 +6,7 @@
             or : [
                 {isActive : {equals : true}}
                 {channelInfo : { channelType : {notequals : "telephony"}}}
-                {teamName : {contains : "test"}}
-                {siteName : {match : "test-.*"}}
-
-
+                {teamName : {match : ".+"}}
             ]
         }
     ) {
