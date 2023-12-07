@@ -21,12 +21,14 @@ Based on the operation, a query can be of two types:
 1. **Query to fetch raw data:** fetching individual records stored, such as CSRs, ASRs, CARs, etc., with the ability to filter on data and apply pagination to get more records. In SQL terminology, this operation is analogous to
    
     `SELECT id, channelType FROM task WHERE channelType='telephony'` 
-
+   
    The structure of such a query is shown below
+   
+   ![Structure of query fetching raw data](Raw%20query%20sample.png)
 
-<img title="" src="Raw%20query%20sample.png" alt="Structure of query fetching raw data" data-align="center"> 
+ 
 
-1. **Query to perform aggregations*: performing aggregation operations on record fields with support for group-bys, filtering, and pagination. In SQL terminology, the API is capable of the following queries:
+1. **Query to perform aggregations**: performing aggregation operations on record fields with support for group-bys, filtering, and pagination. In SQL terminology, the API is capable of the following queries:
    
    * `SELECT COUNT(id), MAX(totalDuration) FROM task`
    
@@ -36,7 +38,7 @@ Based on the operation, a query can be of two types:
    
    The structure of such a query can be found below
    
-   <img src="Aggregation%20query.png" title="" alt="Structure of a query performing aggregations" data-align="center">
+   ![Structure of a query performing aggregations](Aggregation%20query.png)
 
 The following sections describe each query and supported operations in detail.
 
@@ -262,15 +264,23 @@ filter : {
 }
 ```
 
-### Filtering based on Scalar fields
+
+
+Fields in GraphQL can either be **Scalar** or an **Object** type.
+
+1. Scalar fields are atomic and represent indivisible values, these are basic data types like Int, Long, String, Boolean, Float
+
+2. Object fields are defined by the graphQL schema and contain other fields within them.
 
 > [!TIP]
 > 
-> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for Scalar types 
+> Refer GraphQL documentation for [Scalar types](https://graphql.org/learn/schema/#scalar-types), [ Type system and objects](https://graphql.org/learn/schema/#object-types-and-fields)
 
-Scalar fields are atomic and represent indivisible values (Unlike object types,
-which can have subfields and contain complex data structures).
-Scalars include basic data types like Int, Long, String, Boolean
+
+
+### Filtering based on Scalar fields
+
+Based on the data type different filter operators are available
 
 #### String Operators for filtering
 
@@ -366,10 +376,6 @@ Some sample queries using compound operators are given below.
 | Fetch taskLegs associated with a specific queue.                            | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
 ### Filtering based on Composite objects
-
-> [!TIP]
-> 
-> Refer [GraphQL documentation](https://graphql.org/learn/schema/#scalar-types) for type system and Object Types
 
 Filtering is only supported for scalar fields and not for objects; however, scalar fields inside objects can be filtered.
 
@@ -523,13 +529,13 @@ aggregationInterval : {
 
 Sample queries to perform interval based aggregations.
 
-| Usecase                                                                                                                               | Query Type/ Record        | Query                                                                                                               | Response                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Get the number of tasks handled on a daily basis (based on Asia/Kolkata) for each channelType and site                                | taskDetails / CSR         | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
-| Find the average duration of parked events on a daily basis for each queue.                                                           | taskDetails query for CAR | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)          | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
-| Fetch the total connectedCount,average connectedDuration,total idleCount,average idleDuration records on a daily basis for each team. | agentSession / ASR        | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
-| Fetch max ringing duration on daily basis.                                                                                            | agentSession / AAR        | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
-| For each queue get the number of calls queued and number of consults to the queue on a daily basis (based on Asia/Kolkata)            | taskLegDetails / CLR      | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
+| Usecase                                                                                                                               | Query Type/ Record   | Query                                                                                                               | Response                                                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Get the number of tasks handled on a daily basis (based on Asia/Kolkata) for each channelType and site                                | taskDetails / CSR    | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query.graphql) | [link](taskDetails/Performing%20Aggregations/Interval%20based%20timezone%20supported%20aggregation%20query-response.json) |
+| Find the average duration of parked events on a daily basis for each queue.                                                           | taskDetails / CAR    | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR.graphql)          | [link](taskDetails/Performing%20Aggregations/IntervalBasedTimezoneSupportedAggregationQueryForCAR-response.json)          |
+| Fetch the total connectedCount,average connectedDuration,total idleCount,average idleDuration records on a daily basis for each team. | agentSession / ASR   | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)            | [link](agentSession/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query-response.json)            |
+| Fetch max ringing duration on daily basis.                                                                                            | agentSession / AAR   | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR.graphql)                  | [link](agentSession/Performing%20Aggregations/IntervalTimezoneBasedAggregationQueryForAAR-response.json)                  |
+| For each queue get the number of calls queued and number of consults to the queue on a daily basis (based on Asia/Kolkata)            | taskLegDetails / CLR | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query.graphql)          | [link](taskLegDetails/Performing%20Aggregations/Interval%20timezone%20based%20aggregation%20query%20-%20response.json)    |
 
 > [!NOTE]
 > 
