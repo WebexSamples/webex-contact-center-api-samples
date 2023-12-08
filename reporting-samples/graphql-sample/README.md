@@ -192,10 +192,10 @@ agentSession(
 
 Sample query to fetch ASR fields can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
 
-| Usecase                                                                                                                                                                                                                                                                 | Query / Record Type | Query                                                                      | Response                                                                         |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Fetch the agentSessionId, agentId, teamId, siteId, agentSession startTime, endTime, isActive and channelInfo fields such as channelId, channelType and few metrics along with pagination information.                                                                   | ASR                 | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| Fetch the agentSession Id, agent Id, team Id, site Id, agentSession's startTime, endTime, isActive and channel level details such as channelId, channelType. For each channel also includes the AAR with id, startTime, endtime state fields and pagination information | AAR                 | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
+| Usecase                                                                                                                            | Query / Record Type | Query                                                                      | Response                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Fetch the agentSession details, agent details, team details, site details and channel details along with pagination information.   | ASR                 | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch the agentSession , agent details, team details, site details and channel details. For each channel also includes AAR details | AAR                 | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
 
 ### TaskLegDetails Query
 
@@ -406,6 +406,14 @@ Some samples for filtering on object types are given below
 | Fetch ASR records where channelType is *telephony*.                     | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20on%20object%20types-response.json)                |
 | Fetch AAR records where activity *state*  is *connected*.               | agentSession / AAR   | [link](agentSession/Raw%20Data%20Fetching/FitleringOnextFilter.graphql)                           | [link](agentSession/Raw%20Data%20Fetching/FilteringOnextFilter-response.json)                           |
 | Fetch taskLegs associated with a specific queue and agents.             | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20on%20object%20types-response.json)              |
+
+### Fields supported for filtering
+
+Refer data dictionary for fields supporting filtering.
+
+
+
+
 
 ## Performing Aggregations
 
