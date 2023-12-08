@@ -8,23 +8,14 @@
       id # String
       taskId
       createdTime # Long
-      isChildLeg
-      nextDestination {
-        # Object
-        agent {
-          # Object
-          id
-        }
-      }
-      queue {
+      queue { # Object field
         id
       }
-
-      consultCount #Int
-      consultDuration
       entryPoint {
         id
       }
+      consultSuccessCount #Int
+      consultDuration
     }
     pageInfo {
       # Indicates if the nextPage exists or not

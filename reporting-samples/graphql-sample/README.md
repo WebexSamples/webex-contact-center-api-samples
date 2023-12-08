@@ -26,8 +26,6 @@ Based on the operation, a query can be of two types:
    
    ![Structure of query fetching raw data](Raw%20query%20sample.png)
 
- 
-
 1. **Query to perform aggregations**: performing aggregation operations on record fields with support for group-bys, filtering, and pagination. In SQL terminology, the API is capable of the following queries:
    
    * `SELECT COUNT(id), MAX(totalDuration) FROM task`
@@ -65,15 +63,27 @@ A sample query to fetch tasks created on 1st January 2023
     to: 1672617599000 # 1st January 2023 23:59:59 UTC
   ) {
     tasks {
-      id
+      id # Scalar field
       isActive
       channelType
       createdTime
       endedTime
+      lastAgent {# Object / Composite field
+        id # Scalar field
+      }
     }
   }
 }
+
 ```
+
+> [!NOTE]
+> 
+> Scalar fields are atomic and represent indivisible values, these are basic data types like Int, Long, String, Boolean, Float
+> 
+> Object fields are defined by the graphQL schema and contain other fields within them.
+> 
+> Refer GraphQL documentation for [Scalar types](https://graphql.org/learn/schema/#scalar-types), [type system and objects](https://graphql.org/learn/schema/#object-types-and-fields)
 
 #### GraphQL Schema
 
@@ -112,10 +122,10 @@ taskDetails(
 
 Some sample queries can be found below
 
-| Usecase                                                                                                                                                  | Query / Record Type | Query                                                                                     | Response                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Fetch isActive, id, createdTime, endedTime, totalDuration, lastAgent.id, queueCount and queueDuration  attributes for tasks with pagination information. | CSR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| Fetch id, channelType of task and the number of CARs, eventName, duration of CARs, along with pagination information                                     | CAR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| Usecase                                                                                                                                                 | Query / Record Type | Query                                                                                     | Response                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Fetch isActive, id, createdTime, endedTime, totalDuration, lastAgent.id, queueCount and queueDuration attributes for tasks with pagination information. | CSR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch id, channelType of task and the number of CARs, eventName, duration of CARs, along with pagination information                                    | CAR                 | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
 
 ### AgentSession Query
 
@@ -132,14 +142,14 @@ A sample query to fetch agentSessions created on 1st January 2023.
     to: 1672617599000 # 1st January 2023 23:59:59 UTC
   ) {
     agentSessions {
-      agentId
+      agentId # Scalar field
       teamId
       siteId
       startTime
       endTime
-      channelInfo {
+      channelInfo { # Object / Composite field
         channelId
-        channelType
+        channelType # Scalar field
         totalDuration
         connectedDuration
       }
@@ -182,10 +192,10 @@ agentSession(
 
 Sample query to fetch ASR fields can be found [here](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql), the response for the same is [here](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json).
 
-| Usecase | Query / Record Type | Query                                                                      | Response                                                                         |
-| ------- | ------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-|         | ASR                 | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
-|         | AAR                 | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
+| Usecase                                                                                                                                                                                                                                                                 | Query / Record Type | Query                                                                      | Response                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Fetch the agentSessionId, agentId, teamId, siteId, agentSession startTime, endTime, isActive and channelInfo fields such as channelId, channelType and few metrics along with pagination information.                                                                   | ASR                 | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch the agentSession Id, agent Id, team Id, site Id, agentSession's startTime, endTime, isActive and channel level details such as channelId, channelType. For each channel also includes the AAR with id, startTime, endtime state fields and pagination information | AAR                 | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql) | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json) |
 
 ### TaskLegDetails Query
 
@@ -246,9 +256,9 @@ taskLegDetails(
 
 7. *pagination* - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
-| Usecase | Query / Record Type | Query                                                               | Response                                                                  |
-| ------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-|         | CLR                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql) | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json) |
+| Usecase                                                                                                                                             | Query / Record Type | Query                                                               | Response                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Fetch id of the taskLeg, taskId, createdTime,  queue id, entrypoint id, number of successful consults, consult duration and pagination information. | CLR                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql) | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json) |
 
 ## Support for Filtering data
 
@@ -263,20 +273,6 @@ filter : {
     fieldName : { operator : value }
 }
 ```
-
-
-
-Fields in GraphQL can either be **Scalar** or an **Object** type.
-
-1. Scalar fields are atomic and represent indivisible values, these are basic data types like Int, Long, String, Boolean, Float
-
-2. Object fields are defined by the graphQL schema and contain other fields within them.
-
-> [!TIP]
-> 
-> Refer GraphQL documentation for [Scalar types](https://graphql.org/learn/schema/#scalar-types), [ Type system and objects](https://graphql.org/learn/schema/#object-types-and-fields)
-
-
 
 ### Filtering based on Scalar fields
 
@@ -341,11 +337,11 @@ filter: {
 }
 ```
 
-| Usecase                                                                                     | Query / Record Type  | Query                                                                                   | Response                                                                                      |
-| ------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Fetch *telephony* tasks which are marked *abandoned*.                                       | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
-| Fetch records for active sessions where channelType is not *telephony* and teamName exists. | agentSession /  ASR  | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
-| Fetch taskLegs created for a particular task.                                               | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
+| Usecase                                                                                                           | Query / Record Type  | Query                                                                                   | Response                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Fetch *telephony* tasks which are marked *abandoned*.                                                             | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/binaryFilterOperators-response.json) |
+| Fetch records for active sessions where channelType is not *telephony* and teamName exists.                       | agentSession /  ASR  | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation.graphql)                | [link](agentSession/Raw%20Data%20Fetching/binaryFilterOperation-response.json)                |
+| Fetch id of taskLeg, created time, queue id, agent/owner id, entrypoint id and ended time  for a particular task. | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering.graphql)                 | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Filtering-response.json)                 |
 
 #### Compound operators for filtering
 
@@ -369,11 +365,11 @@ Fetch records where channelType is telephony and status is either created or end
 
 Some sample queries using compound operators are given below.
 
-| Usecase                                                                     | Query Type/ Record   | Query                                                                                                      | Response                                                                                                            |
-| --------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Fetch *telephony* tasks where totalDuration is between 30s and 60s.         | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
-| Fetch records where agent session is active and channelType is *telephony*. | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
-| Fetch taskLegs associated with a specific queue.                            | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
+| Usecase                                                                         | Query Type/ Record   | Query                                                                                                      | Response                                                                                                            |
+| ------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Fetch *telephony* tasks where totalDuration is between 30s and 60s.             | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql) | [link](tastaskDetails/Samples%20for%20Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json) |
+| Fetch records where agent session is active and channelType is *telephony*.     | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators.graphql)                | [link](agentSession/Raw%20Data%20Fetching/Filtering%20using%20compound%20operators-response.json)                   |
+| Fetch id of taskLegs, queue ids and owner ids associated with a specific queue. | taskLegDetails / CLR | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators.graphql)              | [link](taskLegDetails/Fetching%20Raw%20Data/Filtering%20using%20compound%20operators-response.json)                 |
 
 ### Filtering based on Composite objects
 
@@ -634,13 +630,13 @@ Sample taskDetails query to fetch *id* field in a taskDetails query.
 
 Samples for various data types are given below 
 
-| Usecase                                                                                                                      | Query / Record Type                    | Query                                                                                     | Response                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Fetch CSR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC.             | taskDetails / CSR                      | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
-| Fetch CAR attributes for tasks created between 1 September 2023 00:00:00 UTC  and 7 September 2023 00:00:00 UTC.             | taskDetails / CAR                      | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
-| Fetch ASR attributes created between the given time range 14 February 2022 17:22:55 UTC  and  14 December 2022 17:22:55 UTC. | agentSession query to fetch ASR fields | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
-| Fetch AAR attributes created between the given time range  01 October 2023 00:00:00 UTC  and  14 December 2022 17:22:55 UTC. | agentSession query to fetch AAR fields | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
-| Fetch CLR attributes for task legs created between 1 January 2023 00:00:00 UTC and Friday, 17 February 2023 07:35:34 UTC .   | taskLegDetails / CLR                   | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
+| Usecase                                                                                                                                                                                                                                                                  | Query / Record Type  | Query                                                                                     | Response                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Fetch isActive, id, createdTime, endedTime, totalDuration, lastAgent.id, queueCount and queueDuration attributes for tasks with pagination information.                                                                                                                  | taskDetails / CSR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch id, channelType of task and the number of CARs, eventName, duration of CARs, along with pagination information                                                                                                                                                     | taskDetails / CAR    | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
+| Fetch the agentSessionId, agentId, teamId, siteId, agentSession startTime, endTime, isActive and channelInfo fields such as channelId, channelType and few metrics along with pagination information.                                                                    | agentSession / ASR   | [link](agentSession/Raw%20Data%20Fetching/Simple%20query.graphql)                         | [link](agentSession/Raw%20Data%20Fetching/Simple%20query-response.json)                         |
+| Fetch the agentSession Id, agent Id, team Id, site Id, agentSession's startTime, endTime, isActive and channel level details such as channelId, channelType. For each channel also includes the AAR with id, startTime, endtime, state fields and pagination information | agentSession / AAR   | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields.graphql)                | [link](agentSession/Raw%20Data%20Fetching/SimpleQueryForAARFields-response.json)                |
+| Fetch id of the taskLeg, taskId, createdTime, queue id, entrypoint id, number of successful consults, consult duration and pagination information                                                                                                                        | taskLegDetails / CLR | [link](askLegDetails/Fetching%20Raw%20Data/Simple%20Query.graphql)                        | [link](taskLegDetails/Fetching%20Raw%20Data/Simple%20Query-response.json)                       |
 
 ### Filtering data
 
