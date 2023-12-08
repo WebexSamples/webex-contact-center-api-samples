@@ -88,19 +88,9 @@ public class AuthService {
 	 */
 	String webexapisURL = "https://webexapis.com/v1";// new
 
-	/**
-	 * Configuration data API URL
-	 */
-	String baseURL = "https://api.wxcc-us1.cisco.com/organization";
-	/**
-	 * Reporting data API URL
-	 */
-	String baseURL2 = "https://api.wxcc-us1.cisco.com/v1/";
 
-	/**
-	 * Graphql data API URL
-	 */
-	String baseURL3 = "https://api.wxcc-us1.cisco.com";
+	@Value("${data_center_url}")
+	String dataCenterURL;
 
 	/**
 	 * @see https://developer.webex-cx.com/documentation/authentication
@@ -222,10 +212,9 @@ public class AuthService {
 	public String toString() {
 		// @formatter:off
 		return "ApiService ["
-				+ "\nbaseURL=" + baseURL
-				+ "\nbaseURL2=" + baseURL2
-				+ "\nbaseURL3=" + baseURL3
-				+ "\nauthentication=" + authentication + "]";
+				+ "\ndataCenterURL=" + dataCenterURL
+				+ "\nauthentication=" + authentication 
+				+ "]";
 		// @formatter:on
 	}
 
