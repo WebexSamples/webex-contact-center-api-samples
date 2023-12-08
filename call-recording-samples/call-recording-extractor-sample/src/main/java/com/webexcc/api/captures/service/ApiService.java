@@ -8,6 +8,7 @@ import java.util.Calendar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpEntity;
@@ -32,6 +33,9 @@ public class ApiService {
 	private RestTemplate restTemplate;
 	DateFormat oDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 	String baseURL = "https://api.wxcc-us1.cisco.com/organization";
+
+	@Value("${data_center_url}")
+	String dataCenterURL;
 
 	Authentication authentication;
 
@@ -115,7 +119,7 @@ public class ApiService {
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			StringBuffer payload = new StringBuffer();
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
-			url = "https://api.wxcc-us1.cisco.com/v1/agents/activities?channelTypes=" + channelTypes + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.getOrginzationId();
+			url = dataCenterURL + "/v1/agents/activities?channelTypes=" + channelTypes + "&from=" + from + "&to=" + to + "&pageSize=900" + "&orgId=" + authentication.getOrginzationId();
 			ResponseEntity<String> response1 = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
@@ -153,7 +157,7 @@ public class ApiService {
 			payload.append("  }");
 			payload.append("}");
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
-			ResponseEntity<String> response1 = restTemplate.exchange("https://api.wxcc-us1.cisco.com/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
+			ResponseEntity<String> response1 = restTemplate.exchange(dataCenterURL + "/v1/captures/query" + "", HttpMethod.POST, entity, String.class);
 
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);

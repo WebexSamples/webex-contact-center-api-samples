@@ -50,7 +50,7 @@ public class SearchGraphQLService extends AuthService {
 			payload.append(graphqlString);
 			payload.append("\",\"variables\":null}");
 			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
-			String url = baseURL3 + "/search?orgId=" + authentication.getOrginzationId();
+			String url = dataCenterURL + "/search?orgId=" + authentication.getOrginzationId();
 			
 //			logger.info("url:{}", url);
 			ResponseEntity<String> response1 = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);

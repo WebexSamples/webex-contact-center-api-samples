@@ -90,8 +90,19 @@ public class Authentication implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Authentication [" + "\naccess_token=" + access_token + "" + "\nexpires_in=" + expires_in + "" + "\nrefresh_token=" + refresh_token + "" + "\nrefresh_token_expires_in=" + refresh_token_expires_in + ""
-				+ "\ntoken_type=" + token_type + "\norginzationId=" + orginzationId + "\nloginTimestamp=" + loginTimestamp + "\n]";
+		// @formatter:off
+		return "Authentication [" 
+				+ "\naccess_token=" 			+ access_token + "" 
+				+ "\nexpires_in=" 				+ expires_in + "" 
+				+ "\nrefresh_token=" 			+ refresh_token + "" 
+				+ "\nrefresh_token_expires_in=" + refresh_token_expires_in + ""
+				+ "\ntoken_type=" 				+ token_type 
+				+ "\norginzationId=" 			+ orginzationId 
+				+ "\nloginTimestamp=" 			+ loginTimestamp 
+				+ "\n]";
+ 
+		// @formatter:on
+
 	}
 
 	public String getScope() {
