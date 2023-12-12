@@ -8,6 +8,10 @@ For a quick overview of the `search` API and how to use our documentation, refer
 
 A GraphQL API enables clients to construct queries in order to retrieve data. The queries are defined by the API server in the form of a GraphQL schema, which acts as a contract between the server and the client.
 
+> [!TIP]
+>
+> For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
+
 The API allows access to the following:
 
 1. Task related data stored as Customer Session Records (CSRs) and Customer Activity Records (CARs), accessible using the **taskDetails** graphql query.
@@ -39,10 +43,6 @@ Based on the operation, a query can be of two types:
    ![Structure of a query performing aggregations](Aggregation%20query.png)
 
 The following sections describe each query and supported operations in detail.
-
-> [!TIP]
-> 
-> For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
 
 ## Query Definitions
 
