@@ -8,7 +8,9 @@
 
 ## [Watch the Video](https://app.vidcast.io/share/270b29cb-7169-495f-8449-e0483b9f1393)
 
-![Basic Authorization Sample](./images/basic-authorization-sample.png)
+## [Watch the Video - detailed](https://app.vidcast.io/share/270b29cb-7169-495f-8449-e0483b9f1393)
+
+ 
 
 #### Pre-Requisites:
 
