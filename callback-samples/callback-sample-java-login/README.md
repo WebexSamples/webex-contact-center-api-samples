@@ -32,4 +32,5 @@ execute
 then go to http://localhost:8080
 
 Video
-[https://app.vidcast.io](https://app.vidcast.io/share/7a1224ef-e86c-44bf-b3ce-ca119d0a23f3)
+[https://app.vidcast.io - detail](https://app.vidcast.io/share/270b29cb-7169-495f-8449-e0483b9f1393)
+[https://app.vidcast.io - generic](https://app.vidcast.io/share/7a1224ef-e86c-44bf-b3ce-ca119d0a23f3)
