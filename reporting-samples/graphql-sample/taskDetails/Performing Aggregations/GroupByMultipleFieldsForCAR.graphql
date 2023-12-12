@@ -1,0 +1,33 @@
+{
+    # Group Aggregations for Customer Activity Record
+    # Query: For each agent and queue, count the number of times the call was presented.
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        extFilter: { activities: { nodes: { eventName: { equals: "connect" } } } }
+        aggregations: [
+            {
+                field: "activities.nodes.id"
+                type: count
+                name: "count of id"
+            }
+        ]
+    ) {
+        tasks {
+            activities {
+                nodes {
+                    agentId
+                    queueId
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

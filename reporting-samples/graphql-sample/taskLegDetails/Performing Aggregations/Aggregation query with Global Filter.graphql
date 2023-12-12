@@ -1,13 +1,14 @@
 {
-  # Aggregation can also be done based on a filter criteria
-  # When using filter argument, aggregations will be performed only on documents which satisfy the filter critera
-  taskDetails(
-    from: 1644859375000
-    to: 1671038575000
-    filter: { lastQueue: { name: { equals: "Basic-Queue" } } }
-    aggregations: [{ field: "id", type: count, name: "Count of Id" }]
+  # Aggregation query with a global filter
+  taskLegDetails(
+    from: 1696118400000
+    to: 1698796800000
+    filter: { handleType: { equals: "abandoned" } }
+    aggregations: [
+      { field: "id", type: count, name: "Count of abandoned taskLegs" }
+    ]
   ) {
-    tasks {
+    taskLegs {
       aggregation {
         name
         value

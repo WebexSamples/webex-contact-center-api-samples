@@ -1,0 +1,672 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "intervalStartTime": 1700956800000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1700956800000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "0cca2df7-9bc2-4105-adab-77dfc0f259eb",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1700956800000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 6.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1700956800000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "4a78059e-823b-46ef-ab71-e5d8b78830a0",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+                                "agentId": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "ea33290c-2293-4267-9517-65b05dd3faab",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+                                "agentId": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "ea33290c-2293-4267-9517-65b05dd3faab",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+                                "agentId": "d2440559-05a9-469a-ba79-03101cc34063"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "0cca2df7-9bc2-4105-adab-77dfc0f259eb",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "8b85cf83-8231-402a-924d-a9295c6cedf1",
+                                "queueId": "906e784d-4eec-44e7-95fc-e6d491ea1b6d",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "c1ca56c5-f458-405f-bb5e-85ac8d03f222",
+                                "agentId": "d2440559-05a9-469a-ba79-03101cc34063"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "8b85cf83-8231-402a-924d-a9295c6cedf1",
+                                "queueId": "ea33290c-2293-4267-9517-65b05dd3faab",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+                                "agentId": "32877be6-a154-464f-8180-410cfc6eb2bd"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 5.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "f1d3f76d-657d-456e-bb1c-70201dab9042",
+                                "queueId": "4a78059e-823b-46ef-ab71-e5d8b78830a0",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+                                "agentId": "c553caf3-1d2f-47b8-ac15-12c0c334da7a"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 5.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "f1d3f76d-657d-456e-bb1c-70201dab9042",
+                                "queueId": "4a78059e-823b-46ef-ab71-e5d8b78830a0",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb",
+                                "agentId": "d2440559-05a9-469a-ba79-03101cc34063"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "f1d3f76d-657d-456e-bb1c-70201dab9042",
+                                "queueId": "ea33290c-2293-4267-9517-65b05dd3faab",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "7aea5b2f-8945-4d52-ad5c-77559675c145",
+                                "agentId": "32877be6-a154-464f-8180-410cfc6eb2bd"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701043200000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 3.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701129600000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701129600000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 4.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701129600000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701129600000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "0cca2df7-9bc2-4105-adab-77dfc0f259eb",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 5.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 24.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701216000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 9.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701302400000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "0cca2df7-9bc2-4105-adab-77dfc0f259eb",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701302400000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "0cca2df7-9bc2-4105-adab-77dfc0f259eb",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701302400000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 7.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701302400000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701648000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": null,
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701648000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "1f1c6150-fdd4-4dc2-b69d-368781753c3b",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "11a91b88-531c-4d71-a650-9f5393f3d628",
+                                "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 2.0
+                        }
+                    ]
+                },
+                {
+                    "intervalStartTime": 1701648000000,
+                    "activities": {
+                        "nodes": [
+                            {
+                                "entrypointId": "fb190ec0-7943-4b1f-82c9-b9089f6d6082",
+                                "queueId": "ee183f36-b5f8-4f91-a323-5e080c79a434",
+                                "siteId": "dd0b2b7c-d3c1-429b-a2f5-4335de00640c",
+                                "teamId": "8530e34b-6401-4d83-aaab-0f0c006e4418",
+                                "agentId": "1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+                            }
+                        ]
+                    },
+                    "aggregation": [
+                        {
+                            "name": "count of id",
+                            "value": 1.0
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}

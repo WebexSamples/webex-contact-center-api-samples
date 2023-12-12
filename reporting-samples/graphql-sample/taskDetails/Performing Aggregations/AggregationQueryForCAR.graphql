@@ -1,0 +1,22 @@
+{
+    # Fetch the count of unique queue names the tasks were queued to.
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        aggregations: [
+            {
+                field: "activities.nodes.queueName" # field Name on which aggregation needs to be done
+                type: cardinality # operation name
+                name: "Cardinality of queue" # Identifier for the results
+            }
+        ]
+    ) {
+        tasks {
+            # Need to include aggregation Object to get aggregation results.
+            aggregation {
+                name
+                value
+            }
+        }
+    }
+}

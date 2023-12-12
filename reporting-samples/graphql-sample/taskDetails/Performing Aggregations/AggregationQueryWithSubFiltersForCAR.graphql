@@ -1,0 +1,43 @@
+{
+  # Global filters for CAR fields in an aggregation query
+  taskDetails(
+    from: 1693526400000
+    to: 1701388800000
+    extFilter: {
+      or: [{ activities: { nodes: { eventName: { equals: "on-hold" } } } }]
+    }
+    aggregations: [
+      {
+        field: "activities.nodes.duration" # field Name on which aggregation needs to be done
+        type: average # operation name
+        name: "AvgHoldDurationDurationAgent1" # Identifier for the results
+        extFilter: {
+          activities: {
+            nodes: {
+              agentId: { equals: "0699dce3-0149-4a0a-9e3e-368a41317a3f" }
+            }
+          }
+        }
+      }
+      {
+        field: "activities.nodes.duration"
+        type: average
+        name: "AvgHoldDurationDurationAgent2"
+        extFilter: {
+          activities: {
+            nodes: {
+              agentId: { equals: "0e41abb3-fc74-412e-a4b9-ab49862fa00b" }
+            }
+          }
+        }
+      }
+    ]
+  ) {
+    tasks {
+      aggregation {
+        name
+        value
+      }
+    }
+  }
+}

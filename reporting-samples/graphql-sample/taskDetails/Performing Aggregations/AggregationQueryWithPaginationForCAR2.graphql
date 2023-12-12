@@ -1,0 +1,41 @@
+{
+    # Group Aggregations for Customer Activity Record
+    taskDetails(
+        from: 1672444800000
+        to: 1701693617000
+        extFilter: {
+            or: [
+                { activities: { nodes: { eventName: { equals: "connected" } } } }
+                { activities: { nodes: { eventName: { equals: "ctq-accepted" } } } }
+            ]
+        }
+        aggregations: [
+            { field: "activities.nodes.id", type: count, name: "count of id" }
+        ]
+        aggregationInterval: { interval: DAILY }
+        pagination : {
+            cursor : "intervalStartTime=1700784000000::activities.nodes.entrypointId=fb190ec0-7943-4b1f-82c9-b9089f6d6082::activities.nodes.queueId=ee183f36-b5f8-4f91-a323-5e080c79a434::activities.nodes.siteId=dd0b2b7c-d3c1-429b-a2f5-4335de00640c::activities.nodes.teamId=8530e34b-6401-4d83-aaab-0f0c006e4418::activities.nodes.agentId=1b0e205a-6d75-4d66-8b0f-e458164d8c90"
+        }
+    ) {
+        tasks {
+            intervalStartTime
+            activities {
+                nodes {
+                    entrypointId
+                    queueId
+                    siteId
+                    teamId
+                    agentId
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

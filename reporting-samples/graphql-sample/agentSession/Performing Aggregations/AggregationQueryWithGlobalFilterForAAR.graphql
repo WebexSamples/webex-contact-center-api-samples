@@ -1,0 +1,25 @@
+{
+    # Global filter with the Aggregation for AAR
+    agentSession(
+        from: 1644859375000
+        to: 1671038575000
+        filter: { agentId: { equals: "0699dce3-0149-4a0a-9e3e-368a41317a3f" } }
+        extFilter: {
+            channelInfo: { activities: { nodes: { state: { equals: "connected" } } } }
+        }
+        aggregations: [
+            {
+                field: "channelInfo.activities.nodes.id"
+                name: "Count of connected events"
+                type: count
+            }
+        ]
+    ) {
+        agentSessions {
+            aggregation {
+                name
+                value
+            }
+        }
+    }
+}

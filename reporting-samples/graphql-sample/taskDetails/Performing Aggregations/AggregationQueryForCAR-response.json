@@ -1,0 +1,16 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "aggregation": [
+                        {
+                            "name": "Cardinality of queue",
+                            "value": 5.0
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

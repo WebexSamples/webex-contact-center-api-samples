@@ -1,12 +1,12 @@
 {
   "data": {
-    "taskDetails": {
-      "tasks": [
+    "taskLegDetails": {
+      "taskLegs": [
         {
           "aggregation": [
             {
-              "name": "Count of Id",
-              "value": 29.0
+              "name": "Count of abandoned taskLegs",
+              "value": 183.0
             }
           ]
         }

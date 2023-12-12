@@ -1,0 +1,33 @@
+{
+    agentSession(
+        from: 1696161540000
+        to: 1698667140000
+        extFilter: {
+            channelInfo: {
+                activities: {
+                    nodes: {
+                        state: {
+                            equals: "connected"
+                        }
+                    }
+                }
+            }
+        }
+    ) {
+        agentSessions {
+            agentId
+            agentSessionId
+            channelInfo {
+                channelId
+                activities {
+                    nodes {
+                        id
+                        state
+                        duration
+                        taskId
+                    }
+                }
+            }
+        }
+    }
+}

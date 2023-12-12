@@ -2,31 +2,43 @@
   # Aggregations with Sub Filters,
   # For each aggregation a separate filter criteria can be specified.
   taskLegDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698796800000
     aggregations: [
       {
-        field: "id"
-        type: count
-        name: "Call Legs handled by AksQueue1"
+        field: "queueCount"
+        type: sum
+        name: "Call Legs queued into queue1"
         # Filter criteria for a particular operation can be given
         # Note that syntax for this filter is same as the global filter
-        filter: { queue: { name: { equals: "AksQueue1" } } }
+        filter: {
+          queue: { id: { equals: "1db6df1f-6469-4493-9081-b4c0819a103e" } }
+        }
       }
       {
-        field: "id"
-        type: count
-        name: "Call Legs handled by AksQueue2"
-        filter: { queue: { name: { equals: "AksQueue2" } } }
+        field: "queueCount"
+        type: sum
+        name: "Call Legs queued into queue2"
+        filter: {
+          queue: { id: { equals: "1f1c6150-fdd4-4dc2-b69d-368781753c3b" } }
+        }
       }
       {
-        field: "id"
-        type: count
-        name: "Call Legs handled by other queues"
+        field: "queueCount"
+        type: sum
+        name: "Call Legs queued into other queues"
         filter: {
           and: [
-            { queue: { name: { notequals: "AksQueue1" } } }
-            { queue: { name: { notequals: "AksQueue2" } } }
+            {
+              queue: {
+                id: { notequals: "1db6df1f-6469-4493-9081-b4c0819a103e" }
+              }
+            }
+            {
+              queue: {
+                id: { notequals: "1f1c6150-fdd4-4dc2-b69d-368781753c3b" }
+              }
+            }
           ]
         }
       }

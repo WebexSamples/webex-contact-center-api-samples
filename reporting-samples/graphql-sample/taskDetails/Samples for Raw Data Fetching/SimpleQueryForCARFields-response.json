@@ -1,0 +1,4473 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "3da24a30-7221-49d2-af37-08700e9021c5",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 8,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4187
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 22085
+              },
+              {
+                "eventName": "connect",
+                "duration": 10120
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 34151
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "1948878b-7cf8-4163-91ff-f2b069a2ebeb",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 12,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4532
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "resumed",
+                "duration": 0
+              },
+              {
+                "eventName": "paused",
+                "duration": 6743
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 33921
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 8373
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 25774
+              },
+              {
+                "eventName": "connect",
+                "duration": 14991
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 84998
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "70c22738-ced5-4927-abdb-0ca85d2a4c32",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 12,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 5901
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "resumed",
+                "duration": 0
+              },
+              {
+                "eventName": "paused",
+                "duration": 9416
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 21394
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 8695
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 14627
+              },
+              {
+                "eventName": "connect",
+                "duration": 10368
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 57560
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "f2fe7256-cac9-4b6c-86a4-ae56353c1787",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 12,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4409
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "resumed",
+                "duration": 0
+              },
+              {
+                "eventName": "paused",
+                "duration": 4362
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 39872
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 14572
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 24383
+              },
+              {
+                "eventName": "connect",
+                "duration": 8852
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 89170
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "e1c7e20a-f1b1-4bc7-babf-547b179f12ef",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 28,
+            "nodes": [
+              {
+                "eventName": "WrapUp",
+                "duration": 5115
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 7241
+              },
+              {
+                "eventName": "connected",
+                "duration": 41308
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 5
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 694
+              },
+              {
+                "eventName": "consulting",
+                "duration": 61017
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 64555
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 65207
+              },
+              {
+                "eventName": "consult",
+                "duration": 2
+              },
+              {
+                "eventName": "ctq",
+                "duration": 602
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "conference-done",
+                "duration": 13551
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 13884
+              },
+              {
+                "eventName": "conferencing",
+                "duration": 14187
+              },
+              {
+                "eventName": "Conference",
+                "duration": 645
+              },
+              {
+                "eventName": "consulting",
+                "duration": 16609
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 21832
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 36371
+              },
+              {
+                "eventName": "consult",
+                "duration": 3
+              },
+              {
+                "eventName": "ctq",
+                "duration": 7497
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 22172
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1693912243782"
+            }
+          }
+        },
+        {
+          "id": "e34aeed9-ebd9-4e87-88a6-e33dad32d655",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 3620
+              },
+              {
+                "eventName": "connect",
+                "duration": 1713
+              },
+              {
+                "eventName": "connect",
+                "duration": 1228
+              },
+              {
+                "eventName": "connect",
+                "duration": 1253
+              },
+              {
+                "eventName": "connect",
+                "duration": 1184
+              },
+              {
+                "eventName": "parked",
+                "duration": 10318
+              },
+              {
+                "eventName": "connect",
+                "duration": 6591
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1472
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "afe8acc6-e955-4905-bd83-b4cd728acf59",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 12,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connect",
+                "duration": 116
+              },
+              {
+                "eventName": "connect",
+                "duration": 1057
+              },
+              {
+                "eventName": "connect",
+                "duration": 1324
+              },
+              {
+                "eventName": "connect",
+                "duration": 1163
+              },
+              {
+                "eventName": "parked",
+                "duration": 3396
+              },
+              {
+                "eventName": "connect",
+                "duration": 1535
+              },
+              {
+                "eventName": "connect",
+                "duration": 1146
+              },
+              {
+                "eventName": "connect",
+                "duration": 1232
+              },
+              {
+                "eventName": "connect",
+                "duration": 7063
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1467
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "d426207a-7666-4a77-bc87-ef33a3920a43",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 38,
+            "nodes": [
+              {
+                "eventName": "WrapUp",
+                "duration": 9236
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 75
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 383
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 13
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 9
+              },
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 17494
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 372
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 871
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 10646
+              },
+              {
+                "eventName": "conferencing",
+                "duration": 10799
+              },
+              {
+                "eventName": "Conference",
+                "duration": 800
+              },
+              {
+                "eventName": "connected",
+                "duration": 18118
+              },
+              {
+                "eventName": "connect",
+                "duration": 3931
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 2463
+              },
+              {
+                "eventName": "consulting",
+                "duration": 13067
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 13472
+              },
+              {
+                "eventName": "consult",
+                "duration": 683
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "conference-done",
+                "duration": 9221
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1693912063923"
+            }
+          }
+        },
+        {
+          "id": "cdaf511a-3692-402d-ad0b-870a14218a8d",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 9,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 35174
+              },
+              {
+                "eventName": "connect",
+                "duration": 1746
+              },
+              {
+                "eventName": "connect",
+                "duration": 1254
+              },
+              {
+                "eventName": "connect",
+                "duration": 1741
+              },
+              {
+                "eventName": "connect",
+                "duration": 6580
+              },
+              {
+                "eventName": "parked",
+                "duration": 407
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1806
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "fed70076-8520-4e95-904a-4b4ad3454e74",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 31,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 8989
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 11655
+              },
+              {
+                "eventName": "parked",
+                "duration": 988
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "connect",
+                "duration": 1726
+              },
+              {
+                "eventName": "connect",
+                "duration": 1236
+              },
+              {
+                "eventName": "connect",
+                "duration": 1281
+              },
+              {
+                "eventName": "connect",
+                "duration": 7346
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1941
+              },
+              {
+                "eventName": "consulting",
+                "duration": 14493
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 26425
+              },
+              {
+                "eventName": "consult",
+                "duration": 581
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "conference-done",
+                "duration": 10445
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 9192
+              },
+              {
+                "eventName": "conferencing",
+                "duration": 9278
+              },
+              {
+                "eventName": "Conference",
+                "duration": 674
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8188
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 12827
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 22796
+              },
+              {
+                "eventName": "consult",
+                "duration": 3
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1693911838866"
+            }
+          }
+        },
+        {
+          "id": "821a8d5d-b206-4ff2-8703-1ee30471b423",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 10160
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "conference-done",
+                "duration": 13308
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 18521
+              },
+              {
+                "eventName": "conferencing",
+                "duration": 18670
+              },
+              {
+                "eventName": "Conference",
+                "duration": 681
+              },
+              {
+                "eventName": "consulting",
+                "duration": 150902
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 159804
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 179345
+              },
+              {
+                "eventName": "consult",
+                "duration": 3
+              },
+              {
+                "eventName": "ctq",
+                "duration": 627
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 35528
+              },
+              {
+                "eventName": "connect",
+                "duration": 5711
+              },
+              {
+                "eventName": "parked",
+                "duration": 7569
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1741
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "05e35e25-e205-4839-b692-8cf1ba4d28f2",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 6,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 266535
+              },
+              {
+                "eventName": "con-to-agent-error",
+                "duration": 1137
+              },
+              {
+                "eventName": "connect",
+                "duration": 32791
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1439
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "49b18098-963b-4708-9820-02805441c694",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 3,
+            "nodes": [
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 378
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1033pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1034pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep819pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 3,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "campaignOutbound",
+                "duration": 40
+              },
+              {
+                "eventName": "new",
+                "duration": 10
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1029pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1036pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1057pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 1,
+            "nodes": [
+              {
+                "eventName": "new",
+                "duration": -1
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep854pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 3,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "campaignOutbound",
+                "duration": 40
+              },
+              {
+                "eventName": "new",
+                "duration": 10
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep937pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 3,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "campaignOutbound",
+                "duration": 40
+              },
+              {
+                "eventName": "new",
+                "duration": 10
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep942pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 3,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "campaignOutbound",
+                "duration": 40
+              },
+              {
+                "eventName": "new",
+                "duration": 10
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1035pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1055pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "int-test-backend-5sep1107pm",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 50
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "f6321028-5c10-43fd-9d80-64eaaa9f8252",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 13,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3862
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 14022
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 3889
+              },
+              {
+                "eventName": "consulting",
+                "duration": 18612
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22858
+              },
+              {
+                "eventName": "consult",
+                "duration": 851
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 25681
+              },
+              {
+                "eventName": "connect",
+                "duration": 9921
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1168
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "a9714608-b476-483a-9530-a3971a7552c2",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3990
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 5644
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7319
+              },
+              {
+                "eventName": "connected",
+                "duration": 32065
+              },
+              {
+                "eventName": "connect",
+                "duration": 9172
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 2030
+              },
+              {
+                "eventName": "consulting",
+                "duration": 43346
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 51147
+              },
+              {
+                "eventName": "consult",
+                "duration": 785
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 22382
+              },
+              {
+                "eventName": "connect",
+                "duration": 9709
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1794
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "81936367-f2df-4bdc-a767-50506c8b9091",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 12,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 5140
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 6878
+              },
+              {
+                "eventName": "consulting",
+                "duration": 90655
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 98415
+              },
+              {
+                "eventName": "consult",
+                "duration": 718
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 36028
+              },
+              {
+                "eventName": "connect",
+                "duration": 6679
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 2101
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "f35dbb32-4979-43ae-ab0b-e540ab77a043",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4610
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 2765
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7753
+              },
+              {
+                "eventName": "connected",
+                "duration": 74798
+              },
+              {
+                "eventName": "connect",
+                "duration": 10528
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1796
+              },
+              {
+                "eventName": "consulting",
+                "duration": 87700
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 96286
+              },
+              {
+                "eventName": "consult",
+                "duration": 602
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 10451
+              },
+              {
+                "eventName": "connect",
+                "duration": 6311
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1550
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "d4fa470f-1768-4110-bf39-f151fd4f3ade",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3815
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 6
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 41966
+              },
+              {
+                "eventName": "connected",
+                "duration": 110086
+              },
+              {
+                "eventName": "connect",
+                "duration": 23041
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 2002
+              },
+              {
+                "eventName": "consulting",
+                "duration": 135296
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 94242
+              },
+              {
+                "eventName": "consult",
+                "duration": 688
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 44411
+              },
+              {
+                "eventName": "connect",
+                "duration": 8252
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1486
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "f7031a01-ff97-48c6-873e-28c04b145c77",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3662
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 39411
+              },
+              {
+                "eventName": "connected",
+                "duration": 47195
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 4
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 843
+              },
+              {
+                "eventName": "consulting",
+                "duration": 27149
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 36441
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 37068
+              },
+              {
+                "eventName": "consult",
+                "duration": 2
+              },
+              {
+                "eventName": "ctq",
+                "duration": 620
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 12815
+              },
+              {
+                "eventName": "connect",
+                "duration": 9234
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1361
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "64598c2b-4fd0-4701-b37d-420931219238",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3778
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11559
+              },
+              {
+                "eventName": "connected",
+                "duration": 27139
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 5
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 568
+              },
+              {
+                "eventName": "consulting",
+                "duration": 16593
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 30024
+              },
+              {
+                "eventName": "consult",
+                "duration": 555
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 33447
+              },
+              {
+                "eventName": "connect",
+                "duration": 9207
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1418
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct4",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "eventName": "WrapUp",
+                "duration": 31305
+              },
+              {
+                "eventName": "callbackFailed",
+                "duration": 1150284
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 3
+              },
+              {
+                "eventName": "optOutOfQueue",
+                "duration": 825414
+              },
+              {
+                "eventName": "parked",
+                "duration": -1
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 95
+              },
+              {
+                "eventName": "parked",
+                "duration": 51829
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 31646
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct5",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "eventName": "WrapUp",
+                "duration": 31305
+              },
+              {
+                "eventName": "callbackFailed",
+                "duration": 1150284
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 3
+              },
+              {
+                "eventName": "optOutOfQueue",
+                "duration": 825414
+              },
+              {
+                "eventName": "parked",
+                "duration": -1
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 95
+              },
+              {
+                "eventName": "parked",
+                "duration": 51829
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 31646
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "238a9012-1efa-4716-a8dc-4405b0b62a68-oct5_1141",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "eventName": "WrapUp",
+                "duration": 31305
+              },
+              {
+                "eventName": "callbackFailed",
+                "duration": 1150284
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 3
+              },
+              {
+                "eventName": "optOutOfQueue",
+                "duration": 825414
+              },
+              {
+                "eventName": "parked",
+                "duration": -1
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 95
+              },
+              {
+                "eventName": "parked",
+                "duration": 51829
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 31646
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "af2db2a5-5c05-4469-a0d7-bed8eba2ddee",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 34,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 3573
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 566206
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 6202
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 467
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 712
+              },
+              {
+                "eventName": "connected",
+                "duration": 40675
+              },
+              {
+                "eventName": "connect",
+                "duration": 12226
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1972
+              },
+              {
+                "eventName": "consulting",
+                "duration": 54123
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 54516
+              },
+              {
+                "eventName": "consult",
+                "duration": 736
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "conference-done",
+                "duration": 257404
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 209074
+              },
+              {
+                "eventName": "conferencing",
+                "duration": 209264
+              },
+              {
+                "eventName": "Conference",
+                "duration": 629
+              },
+              {
+                "eventName": "connected",
+                "duration": 237232
+              },
+              {
+                "eventName": "connect",
+                "duration": 9722
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "1693891668788"
+            }
+          }
+        },
+        {
+          "id": "adc8108f-4512-4477-a9ea-5af26f7add8b",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8001
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22001
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "4ec21b9f-2a99-4dc8-842e-d0fbe2ece84b",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8000
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22000
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5001
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "d29195cd-afa0-411c-89b6-88200c98e492",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8000
+              },
+              {
+                "eventName": "consult",
+                "duration": 3001
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22001
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "ac63354f-058d-4ec6-bdf7-e8c882f13876",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8001
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22001
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "dfb872e3-502c-4bf3-8ef7-1405e974c9a1",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8000
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22000
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5001
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "3ccf9d26-2d2b-430f-8fba-147b4f344eba",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8000
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22000
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2001
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "3d672ea9-d0fb-4f12-9e95-55f746d9919f",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8001
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22001
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "72fd1ff5-669f-4339-b2be-33d4fa2ad392",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8000
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22000
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5001
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "89341c95-79de-439d-96cf-6ad936f331b0",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 14,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4000
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 7000
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8001
+              },
+              {
+                "eventName": "consult",
+                "duration": 3000
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 22001
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 5000
+              },
+              {
+                "eventName": "connect",
+                "duration": 2000
+              },
+              {
+                "eventName": "parked",
+                "duration": 5000
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-done",
+                "duration": 0
+              },
+              {
+                "eventName": "ivr-connected",
+                "duration": 2000
+              },
+              {
+                "eventName": "new",
+                "duration": 1000
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "3f7fcd97-5054-42db-9b65-f3cee38901ab",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4375
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 13138
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 5846
+              },
+              {
+                "eventName": "connected",
+                "duration": 44129
+              },
+              {
+                "eventName": "connect",
+                "duration": 14070
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 59975
+              },
+              {
+                "eventName": "consulting",
+                "duration": 59970
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 66423
+              },
+              {
+                "eventName": "consult",
+                "duration": 752
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 32800
+              },
+              {
+                "eventName": "connect",
+                "duration": 16418
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 130373
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "2075f441-3e05-4f15-9eeb-5f2557725a94",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 12161
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 3439
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 8219
+              },
+              {
+                "eventName": "connected",
+                "duration": 14478
+              },
+              {
+                "eventName": "connect",
+                "duration": 5646
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 22005
+              },
+              {
+                "eventName": "consulting",
+                "duration": 22183
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 30948
+              },
+              {
+                "eventName": "consult",
+                "duration": 565
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 41680
+              },
+              {
+                "eventName": "connect",
+                "duration": 13648
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 90988
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "49ed4ca6-4c36-4a89-bbb2-e8137ad2a604",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 17,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 6593
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 8309
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 6648
+              },
+              {
+                "eventName": "consulting",
+                "duration": 77731
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 89857
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 83935
+              },
+              {
+                "eventName": "consult",
+                "duration": 4
+              },
+              {
+                "eventName": "ctq",
+                "duration": 716
+              },
+              {
+                "eventName": "resumed",
+                "duration": 0
+              },
+              {
+                "eventName": "paused",
+                "duration": 3790
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 21456
+              },
+              {
+                "eventName": "connect",
+                "duration": 5739
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 126971
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "2b9043f7-77bf-42b8-b6b0-8a6a557da52d",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4210
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 3753
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 8490
+              },
+              {
+                "eventName": "consulting",
+                "duration": 14964
+              },
+              {
+                "eventName": "consult",
+                "duration": 9043
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 66058
+              },
+              {
+                "eventName": "consult-error",
+                "duration": 6
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 122018
+              },
+              {
+                "eventName": "consult",
+                "duration": 705
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 11701
+              },
+              {
+                "eventName": "connect",
+                "duration": 8373
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 147342
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "88b089e4-f0cf-4d25-9f73-34fb3ff093e6",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 10,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4882
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 20230
+              },
+              {
+                "eventName": "blind-transfer",
+                "duration": 815
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 51659
+              },
+              {
+                "eventName": "connect",
+                "duration": 13530
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 87327
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "96036168-236b-409d-b81b-2c0ef21fb950",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4392
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 39544
+              },
+              {
+                "eventName": "connect",
+                "duration": 11111
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 6220
+              },
+              {
+                "eventName": "vt-transfer",
+                "duration": 1700
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 48
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 31079
+              },
+              {
+                "eventName": "connect",
+                "duration": 15982
+              },
+              {
+                "eventName": "parked",
+                "duration": 529
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 102104
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "32fe3bb9-558d-4f9b-85cd-11c1592c8ee9",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 7590
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 5
+              },
+              {
+                "eventName": "connect",
+                "duration": 14962
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 17389
+              },
+              {
+                "eventName": "consulting",
+                "duration": 17638
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 18309
+              },
+              {
+                "eventName": "consult",
+                "duration": 775
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 27252
+              },
+              {
+                "eventName": "connect",
+                "duration": 16907
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 64192
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "44e907d1-439d-4293-a678-16e042fe7848",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4649
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 4356
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 5728
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 16725
+              },
+              {
+                "eventName": "connect",
+                "duration": 9340
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 5324
+              },
+              {
+                "eventName": "vt-transfer",
+                "duration": 723
+              },
+              {
+                "eventName": "dequeued",
+                "duration": 29
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 58876
+              },
+              {
+                "eventName": "connect",
+                "duration": 5333
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 102919
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "2867a067-0b0a-44d6-928e-882966429a76",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 13,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 4333
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 23189
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 5221
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 13019
+              },
+              {
+                "eventName": "blind-transfer",
+                "duration": 864
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 34833
+              },
+              {
+                "eventName": "connect",
+                "duration": 8990
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 81682
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "4b959f87-4ec9-4946-b26e-ac3100adc35b",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 8,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 12247
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 1789253
+              },
+              {
+                "eventName": "connect",
+                "duration": 6314
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1796997
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "85c46f93-8e71-4b57-9b0a-412d4e4269ef",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 8,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 12186
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 11892
+              },
+              {
+                "eventName": "connect",
+                "duration": 5917
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 19806
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "8108cef0-8b32-4262-8d6b-c222b9f13db8",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 8,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 12183
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 4656
+              },
+              {
+                "eventName": "connect",
+                "duration": 12027
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1483
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "541c77ce-b327-4dc9-8dfb-10f30db3858a",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 13,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11737
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 10239
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11555
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 7582
+              },
+              {
+                "eventName": "blind-transfer",
+                "duration": 573
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 17190
+              },
+              {
+                "eventName": "connect",
+                "duration": 5078
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1617
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "94eff248-3b32-4b3c-9d44-265b93cb6b2d",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 16,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11302
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 12070
+              },
+              {
+                "eventName": "connected",
+                "duration": 57036
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 4
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 500
+              },
+              {
+                "eventName": "consulting",
+                "duration": 9421
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 16729
+              },
+              {
+                "eventName": "consult",
+                "duration": 674
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 12732
+              },
+              {
+                "eventName": "connect",
+                "duration": 4406
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1114
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "8063f965-a845-4193-919c-0411a066a94f",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 13,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11765
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 66402
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 563
+              },
+              {
+                "eventName": "consulting",
+                "duration": 50728
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 51223
+              },
+              {
+                "eventName": "consult",
+                "duration": 594
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 60786
+              },
+              {
+                "eventName": "connect",
+                "duration": 4104
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1219
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "931dab28-42de-465f-9b81-e0a80e2b3753",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 1,
+            "nodes": [
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "66bb34e7-b86b-4855-80f4-e3091d741efd",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 20,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 8476
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 20991
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 7663
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 466
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 607
+              },
+              {
+                "eventName": "connected",
+                "duration": 18351
+              },
+              {
+                "eventName": "connect",
+                "duration": 7493
+              },
+              {
+                "eventName": "new",
+                "duration": 1682
+              },
+              {
+                "eventName": "consulting",
+                "duration": 26692
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 27009
+              },
+              {
+                "eventName": "consult",
+                "duration": 532
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 22254
+              },
+              {
+                "eventName": "connect",
+                "duration": 6450
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1286
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "010a01fe-2a32-4e0d-a7b1-95aa2e80d4eb",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 7,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 2293
+              },
+              {
+                "eventName": "con-to-agent-error",
+                "duration": 925
+              },
+              {
+                "eventName": "connect",
+                "duration": 33123
+              },
+              {
+                "eventName": "parked",
+                "duration": 57817
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1665
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "063d4a77-aeeb-4411-b264-3f763174413a",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 4,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connect",
+                "duration": 28230
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1214
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "35925590-8a2f-427e-8ee1-746817b12337",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "49ab9338-cce5-409e-86ab-77f9235bfc40",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 19,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11263
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 4336
+              },
+              {
+                "eventName": "parked",
+                "duration": 965
+              },
+              {
+                "eventName": "connect",
+                "duration": 2178
+              },
+              {
+                "eventName": "connect",
+                "duration": 1309
+              },
+              {
+                "eventName": "connect",
+                "duration": 1145
+              },
+              {
+                "eventName": "connect",
+                "duration": 1611
+              },
+              {
+                "eventName": "new",
+                "duration": 1607
+              },
+              {
+                "eventName": "consulting",
+                "duration": 8917
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 13491
+              },
+              {
+                "eventName": "consult",
+                "duration": 663
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 16413
+              },
+              {
+                "eventName": "connect",
+                "duration": 5427
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1262
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "11d35af5-cdd3-4efa-be12-c5218d9f10dd",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "f884db34-eeef-4e8c-9513-dd7387e779b2",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 20,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11188
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "hold-done",
+                "duration": 7358
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 12343
+              },
+              {
+                "eventName": "parked",
+                "duration": 738
+              },
+              {
+                "eventName": "connect",
+                "duration": 1705
+              },
+              {
+                "eventName": "connect",
+                "duration": 1166
+              },
+              {
+                "eventName": "connect",
+                "duration": 1177
+              },
+              {
+                "eventName": "connect",
+                "duration": 7262
+              },
+              {
+                "eventName": "new",
+                "duration": 1570
+              },
+              {
+                "eventName": "consulting",
+                "duration": 13702
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 34271
+              },
+              {
+                "eventName": "consult",
+                "duration": 634
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 16982
+              },
+              {
+                "eventName": "connect",
+                "duration": 4240
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1329
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "083937fd-a39e-4728-ac38-fc65706aa814",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 4,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connect",
+                "duration": 15508
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1551
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "4d86486c-2d3d-4408-9fa7-00324e118443",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 1,
+            "nodes": [
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "46918b95-2738-4d1c-acb8-e7b726e2b11b",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 17,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11138
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "consult-done",
+                "duration": 5
+              },
+              {
+                "eventName": "connected",
+                "duration": 46583
+              },
+              {
+                "eventName": "connect",
+                "duration": 6212
+              },
+              {
+                "eventName": "new",
+                "duration": 1430
+              },
+              {
+                "eventName": "consulting",
+                "duration": 54093
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 54248
+              },
+              {
+                "eventName": "consult",
+                "duration": 820
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 37196
+              },
+              {
+                "eventName": "connect",
+                "duration": 4096
+              },
+              {
+                "eventName": "parked",
+                "duration": 274
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1634
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "00d6dbc0-33a3-4346-b912-5ea7273650ed",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 8,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 18311
+              },
+              {
+                "eventName": "connect",
+                "duration": 2272
+              },
+              {
+                "eventName": "connect",
+                "duration": 1688
+              },
+              {
+                "eventName": "connect",
+                "duration": 1134
+              },
+              {
+                "eventName": "connect",
+                "duration": 7383
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1347
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "22a4e1e3-5977-4cc2-b3e2-493fc441402e",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 18,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 8485
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 9875
+              },
+              {
+                "eventName": "connected",
+                "duration": 32086
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 5
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 490
+              },
+              {
+                "eventName": "consulting",
+                "duration": 26949
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 33827
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 34241
+              },
+              {
+                "eventName": "consult",
+                "duration": 3
+              },
+              {
+                "eventName": "ctq",
+                "duration": 557
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 24293
+              },
+              {
+                "eventName": "connect",
+                "duration": 3831
+              },
+              {
+                "eventName": "parked",
+                "duration": 8026
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1672
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "a29b6f17-d28d-427f-a657-eb24243bef66",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 4,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "connect",
+                "duration": 7008
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1164
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "347bc7e2-344e-4c83-affb-210d7b72d69d",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 19,
+            "nodes": [
+              {
+                "eventName": "recording-available",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 5725
+              },
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "WrapUp",
+                "duration": 11336
+              },
+              {
+                "eventName": "connected",
+                "duration": 21349
+              },
+              {
+                "eventName": "Transferred",
+                "duration": 6
+              },
+              {
+                "eventName": "ConsultTransfer",
+                "duration": 605
+              },
+              {
+                "eventName": "consulting",
+                "duration": 7607
+              },
+              {
+                "eventName": "on-hold",
+                "duration": 13376
+              },
+              {
+                "eventName": "ctq-accepted",
+                "duration": 13963
+              },
+              {
+                "eventName": "consult",
+                "duration": 4
+              },
+              {
+                "eventName": "ctq",
+                "duration": 509
+              },
+              {
+                "eventName": "recording-started",
+                "duration": 0
+              },
+              {
+                "eventName": "connected",
+                "duration": 26489
+              },
+              {
+                "eventName": "connect",
+                "duration": 8309
+              },
+              {
+                "eventName": "parked",
+                "duration": 25783
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1537
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "d1d61376-cb62-41a8-a156-a4f65e5f17f5",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 13,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "parked",
+                "duration": 14989
+              },
+              {
+                "eventName": "connect",
+                "duration": 1727
+              },
+              {
+                "eventName": "connect",
+                "duration": 1281
+              },
+              {
+                "eventName": "connect",
+                "duration": 1423
+              },
+              {
+                "eventName": "connect",
+                "duration": 1371
+              },
+              {
+                "eventName": "parked",
+                "duration": 14236
+              },
+              {
+                "eventName": "connect",
+                "duration": 1611
+              },
+              {
+                "eventName": "connect",
+                "duration": 1197
+              },
+              {
+                "eventName": "connect",
+                "duration": 1539
+              },
+              {
+                "eventName": "connect",
+                "duration": 7226
+              },
+              {
+                "eventName": "flow-activity",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 1475
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        },
+        {
+          "id": "c6500cb7-b751-45e0-b25c-6d33a91cc7da",
+          "channelType": "telephony",
+          "activities": {
+            "totalCount": 2,
+            "nodes": [
+              {
+                "eventName": "ended",
+                "duration": 0
+              },
+              {
+                "eventName": "new",
+                "duration": 366
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": null
+            }
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    # Query to fetch CAR attributes for Tasks created between 1 September 2023 00:00:00 UTC and 7 September 2023 00:00:00 UTC
+    taskDetails(from: 1693526400000, to: 1694044800000) {
+        tasks {
+            id
+            channelType
+            activities {
+                # Count of CAR records
+                totalCount
+                # Required fields from CAR.
+                nodes {
+                    eventName
+                    duration
+                }
+                pageInfo {
+                    hasNextPage
+                    endCursor
+                }
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

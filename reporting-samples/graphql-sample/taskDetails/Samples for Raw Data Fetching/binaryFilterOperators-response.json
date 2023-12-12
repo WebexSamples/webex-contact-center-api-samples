@@ -1,0 +1,492 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "id": "5eded294-c80d-4e59-8641-1c610c35966c",
+          "createdTime": 1698664170958,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "1956d4f6-5492-4b2f-8fcd-7a4e13545f4e",
+          "createdTime": 1698653630182,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "87e1e073-7f08-4225-aede-be7369d10e19",
+          "createdTime": 1698651457524,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "a0daf89c-c7bf-44de-92ea-962fb554778e",
+          "createdTime": 1698313399751,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "66324546-40d8-47ce-989b-11f0a75c6f8a",
+          "createdTime": 1698313343275,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "1b1641ae-dd31-4526-92c5-9d50931f69de",
+          "createdTime": 1698311519629,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "9b1f9f51-1656-4f33-a35b-0c6bb99eecca",
+          "createdTime": 1697698958153,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "6db71c92-37f7-4423-8bc7-d1156de11609",
+          "createdTime": 1697698538094,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "31a89b10-b8b9-4863-b92d-04644a404754",
+          "createdTime": 1697695187675,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "f793b198-8014-468a-89dd-e4c54e8a7e78",
+          "createdTime": 1697694706134,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "e9576144-8252-4b6e-8f34-d737572fe496",
+          "createdTime": 1697694566802,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "21cdeb1e-8179-494e-bda1-23a70b25862e",
+          "createdTime": 1697694253519,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "8d6f40ff-f2f3-45a1-bdab-42c6edcbc9f8",
+          "createdTime": 1697694084170,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "54c9fa92-bc28-4957-a5ba-3d46936d6432",
+          "createdTime": 1697693891012,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "d7144bba-cffe-4c1b-8d98-3f6c0a30b832",
+          "createdTime": 1697692400961,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "59a96c27-1068-42a5-9e84-9dbb8cf55b4c",
+          "createdTime": 1697692217673,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "883da228-4ee0-418e-b216-b34829f36113",
+          "createdTime": 1697692149594,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "d3407d09-1151-478b-b647-2003c1989e16",
+          "createdTime": 1697687271921,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "37424ce5-7a2b-44a4-9fc2-7e2298104197",
+          "createdTime": 1697687230477,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "c58068aa-fade-4edc-bff5-d0ee0ae4411d",
+          "createdTime": 1697687022341,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "8ad48c67-5be4-4117-9234-23479a4829ba",
+          "createdTime": 1697686944267,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "ea195877-9896-4b5a-84ad-d84f0a4fe6c8"
+          },
+          "lastEntryPoint": {
+            "id": "dfcae3a2-5410-4f53-90a8-01c2e20ffa63"
+          }
+        },
+        {
+          "id": "051cbc15-1af4-484d-9877-7204ccb676a7",
+          "createdTime": 1697627086551,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "3cdad1c5-1c13-4f97-b3be-8e80510d0185",
+          "createdTime": 1697437383135,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "d423209a-eeec-4bf9-8f7e-8e43e9b37fcd"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "b23d52b1-ad10-4eb0-9768-3ae052378e26",
+          "createdTime": 1697437321053,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "dc0ccf14-c352-4037-aec3-c5653e899a62"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "44d4cf1f-7441-4d3b-b64c-8cb10b47cbf2",
+          "createdTime": 1697192456481,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXV5TOkP0G6K4V3pI0VD"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "d905d9c7-308d-45d1-b13d-b78d294c2d3a",
+          "createdTime": 1697188934414,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "8985daa6-f076-4ac0-9fe1-ff211010a59b",
+          "createdTime": 1697180445192,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "99279f6c-77e9-4abe-9d6c-2a9b56dd101e",
+          "createdTime": 1697178863924,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXdNqOZm1OI4n5kldc5U"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "ce43b853-4757-4b95-a32b-d5d0914d4eeb",
+          "createdTime": 1697177825270,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "d423209a-eeec-4bf9-8f7e-8e43e9b37fcd"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "9df7d751-e7a2-4b5d-a0bc-17098f484a1f",
+          "createdTime": 1696932458216,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXUsj4hTL4YBh5I5YdVd"
+          },
+          "lastEntryPoint": {
+            "id": "AXUsjEne0G6K4V3pCC2Z"
+          }
+        },
+        {
+          "id": "a9c1fb13-0db0-4b43-b2bc-fb0f0627a773",
+          "createdTime": 1696887612710,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "dc0ccf14-c352-4037-aec3-c5653e899a62"
+          },
+          "lastEntryPoint": {
+            "id": "fde9b989-ed34-4473-9c39-14e0e1c80af7"
+          }
+        },
+        {
+          "id": "9adac854-34a3-4fa1-b54a-52649ea8eab9",
+          "createdTime": 1696887443386,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "dc0ccf14-c352-4037-aec3-c5653e899a62"
+          },
+          "lastEntryPoint": {
+            "id": "fde9b989-ed34-4473-9c39-14e0e1c80af7"
+          }
+        },
+        {
+          "id": "d923bd5e-256d-4b0f-af45-d92b969d20aa",
+          "createdTime": 1696848744521,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "85d1ff97-7e66-429f-b452-87149c760350",
+          "createdTime": 1696848373192,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "a014a788-e6b1-469f-b8c6-1772434cd9c3",
+          "createdTime": 1696848273060,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "6fb7a226-634d-4896-b736-272292f01208",
+          "createdTime": 1696847879878,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "1a8fb4a6-99d3-4d01-8fe7-33c1cccafc6d",
+          "createdTime": 1696485776177,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "45524b54-138e-4928-b923-7e3a4d0edcf8",
+          "createdTime": 1696405896066,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "e02e5d17-97d4-43f6-a560-5bc1310442ee",
+          "createdTime": 1696405849740,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        },
+        {
+          "id": "0b59cb22-2e89-4665-b59d-e8d3f44e7902",
+          "createdTime": 1696402567344,
+          "contactHandleType": "abandoned",
+          "channelType": "telephony",
+          "lastQueue": {
+            "id": "AXW8SsgIL4YBh5I5lPJV"
+          },
+          "lastEntryPoint": {
+            "id": "AXW8SRLP1OI4n5kl2g3E"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

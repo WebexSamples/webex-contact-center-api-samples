@@ -6,9 +6,9 @@
     agentSessions {
       # Fields can be of different types - Boolean, String, Long, Int, List or Objects, refer schema to check available fields and corresponding data types.
       agentSessionId # String
-      agentName
-      teamName
-      siteName
+      agentId
+      teamId
+      siteId
       startTime # Long
       endTime
       isActive # Boolean

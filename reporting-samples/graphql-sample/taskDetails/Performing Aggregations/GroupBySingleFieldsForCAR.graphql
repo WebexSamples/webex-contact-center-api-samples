@@ -1,0 +1,32 @@
+{
+    # Group Aggregations for Customer Activity Record
+    # Query: For each queue name the tasks are queued into, get the average duration of parked activity
+    taskDetails(
+        from: 1644859375000
+        to: 1671038575000
+        extFilter: { activities: { nodes: { eventName: { equals: "parked" } } } }
+        aggregations: [
+            {
+                field: "activities.nodes.duration"
+                type: average
+                name: "average parked duration"
+            }
+        ]
+    ) {
+        tasks {
+            activities {
+                nodes {
+                    queueName
+                }
+            }
+            aggregation {
+                name
+                value
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

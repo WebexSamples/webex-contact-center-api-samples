@@ -2,16 +2,16 @@
   # Pagination example 2
   # Pass the endCursor received from a previous query(Pagination .txt) and pass it inside the cursor argument
   # Do this until the hasNextPage is set to false , Checkout the next example in Pagination 3.txt
-  agentSession(from: 1644859375000, to: 1671038575000
-  pagination : {
-    cursor : "0f36932a-3688-4dda-a25a-6147998a974c"
-  }
+  agentSession(from:1673308800000, to: 1701764519000
+    pagination : {
+      cursor : "646938c8-1d15-43fe-b036-db991983094d"
+    }
   ) {
     agentSessions {
       agentSessionId
       agentId
-      teamName
-      siteName
+      teamId
+      siteId
       startTime
       endTime
       isActive

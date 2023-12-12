@@ -1,0 +1,54 @@
+{
+  #CurrentInteraction: Usage of filters, aggregates, pagination and custom fields to find out information about the current interaction
+  # Check Interaction Details based on a Specific Interaction ID and get other information about this call
+  taskDetails(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: createdTime #Filter by created Time only
+    filter: {
+      #Filter the type of Task
+      and: [
+        #Telephony call
+        { id: { equals: "85f0c70c-19d6-4392-ad04-1854bb757044" } }
+        # Optional filters - you can remove these
+        { channelType: { equals: telephony } } #Telephony call
+        { origin: { equals: "+12342343456" } } #Customer ANI
+        { destination: { equals: "+14563454567" } } #DNIS
+        { direction: { equals: "inbound" } } #Inbound call only
+      ]
+    }
+  ) {
+    tasks {
+      #Task Metadata
+      id
+      isActive
+      createdTime
+      endedTime
+      origin
+      destination
+      totalDuration
+      #Treatment Details
+      lastEntryPoint {
+        #Entrypoint Details
+        id
+        name
+      }
+      lastQueue {
+        #Queue Details
+        id
+        name
+      }
+      lastTeam {
+        #Team Details
+        id
+        name
+      }
+      owner {
+        #Agent Details
+        name
+        id
+      }
+    }
+  }
+}

@@ -1,22 +1,21 @@
 {
-  # Some fields in the schema are only filterable using the extFilter argument.
+  # For a specific task, fetch the queueId in which the contact was parked
   taskDetails(
-    from: 1644859375000
-    to: 1671038575000
+    from: 1696118400000
+    to: 1698667140000
+    filter: { id: { equals: "fd58e53a-a3f6-465d-93ba-fe942a4c4b7d" } }
     # Refer schema for more information on what fields should use extFilter.
-    extFilter: { queues: { name: { equals: "Arryn_Queue" } } }
+    extFilter: { activities: { nodes: { eventName: { equals: "parked" } } } }
   ) {
     tasks {
       id
-      queueCount
-      queues {
-        id
-        name
+      activities {
+        nodes {
+          queueId
+          duration
+          eventName
+        }
       }
-    }
-    pageInfo {
-      hasNextPage
-      endCursor
     }
   }
 }

@@ -3,60 +3,607 @@
     "taskDetails": {
       "tasks": [
         {
-          "id": "4aa37406-c681-46e2-b9a2-d40c8743f71c",
+          "id": "bc83f716-356b-4abc-968c-0b0550ef88aa",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 104901,
+          "holdDuration": 38002
         },
         {
-          "id": "6aa8aaf4-bea9-4306-820f-bf14f9a1dd71",
+          "id": "6bf182d7-df0e-43e7-9033-16ee3fdadb6d",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
         },
         {
-          "id": "d5b1cedc-8bf9-464b-8d31-f5d170c16e6b",
+          "id": "f2cb3d8d-f4ef-4187-9a0f-119e0ddbf750",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
         },
         {
-          "id": "750dd88d-28a1-4a40-8c21-04149cd2a7bb",
+          "id": "32830b3b-8b35-4f05-9eb9-fb40af07d018",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 40210,
+          "holdDuration": 0
         },
         {
-          "id": "1fdef4fa-a171-463a-97a8-1091559459db",
+          "id": "82903755-66c3-4a50-a71c-7c56045c49b4",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
         },
         {
-          "id": "96d85b2e-ffc0-43c1-be14-6b37782f67bb",
+          "id": "f5327bc0-db8f-4676-ab36-dbc0530b972b",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 998407,
+          "holdDuration": 0
         },
         {
-          "id": "1bb23515-ff5b-4978-9419-bfb09a1efd3c",
+          "id": "18369c0f-c5e5-4719-ba13-1da704ecd8fc",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 28148,
+          "holdDuration": 0
         },
         {
-          "id": "54cf6196-d4bf-46f8-a1ce-6a244298afa4",
+          "id": "5307443e-9992-465a-946e-f6fe2ec75822",
+          "channelType": "telephony",
           "lastTeam": {
-            "name": "Arryn_team2",
-            "id": "fb00d141-177f-436c-aa11-20f9a3be56da"
-          }
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 51630,
+          "holdDuration": 0
+        },
+        {
+          "id": "362c1034-c8ac-4ea2-a638-5fcda6817aed",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "d9eecda4-d026-48c5-b1b8-c423d6749d41",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "5d612a84-02be-4c20-b1a8-5844cd3f82c6",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "301a8c74-4ca0-4d92-b8ec-52eb8810d7f7",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "2b59be66-3c40-4299-b934-6cec204f61c9",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 196353,
+          "holdDuration": 0
+        },
+        {
+          "id": "e4ea08d4-42f3-45fc-b000-92d75d041815",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 54408,
+          "holdDuration": 0
+        },
+        {
+          "id": "e57040f9-79ac-4c9c-83e5-1cca9d0082d5",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "4249f491-f55d-48e1-ab16-4f1784f7879d",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 50449,
+          "holdDuration": 0
+        },
+        {
+          "id": "7e2a740b-1629-4429-8de1-bf9a775912a2",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 6055,
+          "holdDuration": 0
+        },
+        {
+          "id": "fad9efee-3256-41a0-aa17-8c9279e05c85",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 68093,
+          "holdDuration": 0
+        },
+        {
+          "id": "4a2925d4-1099-4d42-ac30-c6772230cf55",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "f31c1d73-e9f6-48d4-bcd9-099f29ef424c",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 137164,
+          "holdDuration": 119935
+        },
+        {
+          "id": "54d48c47-ec50-463a-be71-5f014a93a487",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 105770,
+          "holdDuration": 101298
+        },
+        {
+          "id": "880a2158-c715-43d8-8a8d-45f9c19e9f92",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "c8c8e305-c280-4eb6-8849-4053892e0f18",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 25195,
+          "holdDuration": 0
+        },
+        {
+          "id": "53ce87e7-d872-446a-8f0e-8aba4ee2972b",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 81438,
+          "holdDuration": 0
+        },
+        {
+          "id": "64abc6c4-7f74-4e3c-913c-bb138ba96714",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "18c6e5b6-5da9-4eae-b144-a57791957500",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "3982ba11-680f-4299-a496-29e6c3c8837f",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 19891,
+          "holdDuration": 0
+        },
+        {
+          "id": "67d5b5f6-51d1-4b5a-a86d-caf7afa8f1a9",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 17583,
+          "holdDuration": 0
+        },
+        {
+          "id": "45310ec3-079a-4f56-9443-47706a3d7210",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 63337,
+          "holdDuration": 0
+        },
+        {
+          "id": "f4db5310-5fe4-41a2-ac73-7ab878466caa",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 27172,
+          "holdDuration": 0
+        },
+        {
+          "id": "63c00f86-74ec-4ae7-8771-96220f0603e6",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 61533,
+          "holdDuration": 0
+        },
+        {
+          "id": "182e2eba-0e32-4e4f-9367-ab5618503518",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 74135,
+          "holdDuration": 0
+        },
+        {
+          "id": "843cb71d-a377-494e-a966-1a7dea1ad48e",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 48214,
+          "holdDuration": 0
+        },
+        {
+          "id": "4e17464b-4978-414a-8bdc-125d82ecea8f",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 103283,
+          "holdDuration": 0
+        },
+        {
+          "id": "af386046-5f3b-47c9-8b72-2d0915f5f82b",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 41550,
+          "holdDuration": 0
+        },
+        {
+          "id": "c2e81ae4-6d54-42d0-a88b-8a98a1c1002a",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 310105,
+          "holdDuration": 0
+        },
+        {
+          "id": "d752e307-3f92-48d3-9cae-ee236cada09b",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 165985,
+          "holdDuration": 0
+        },
+        {
+          "id": "e94a2ee7-5601-45e9-afe9-176d0d205fce",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 156548,
+          "holdDuration": 0
+        },
+        {
+          "id": "eb2483f7-4711-4627-9eb4-ea4b3dd2761c",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 85852,
+          "holdDuration": 0
+        },
+        {
+          "id": "215ad695-546d-4f67-b1ff-947e880e4493",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 52018,
+          "holdDuration": 0
+        },
+        {
+          "id": "2eafb046-e8fa-43e1-9349-862e3708132e",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "d2e87352-eeab-4389-b7c2-7bde92f2e3c7",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 58414,
+          "holdDuration": 0
+        },
+        {
+          "id": "2db0654e-39b7-460f-9476-e6e371c685d0",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 23802,
+          "holdDuration": 0
+        },
+        {
+          "id": "0cb71cab-a22d-45cb-a1df-b2284c39f040",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 43954,
+          "holdDuration": 0
+        },
+        {
+          "id": "18716357-df54-40b6-b8e8-d1c20cfedc2e",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 96569,
+          "holdDuration": 0
+        },
+        {
+          "id": "81974ed8-5a33-434c-a2be-531c9c368c04",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 67094,
+          "holdDuration": 0
+        },
+        {
+          "id": "0b0195ef-dc82-42c6-ab6c-348b005b7255",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 75594,
+          "holdDuration": 0
+        },
+        {
+          "id": "26ddbd95-2cd0-430c-bc28-2e5559224881",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 14170,
+          "holdDuration": 0
+        },
+        {
+          "id": "73061171-9080-4ed7-b018-5d70f2d0d7ab",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 74818,
+          "holdDuration": 0
+        },
+        {
+          "id": "5ae7f2c9-6bfc-4749-bd4e-73f8d1f5a927",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 68414,
+          "holdDuration": 0
+        },
+        {
+          "id": "a169b426-7c87-47fd-986c-520754282fe1",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 213060,
+          "holdDuration": 28743
+        },
+        {
+          "id": "1f8e00e0-7e37-4e6b-a8cb-4190b50ea3ba",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 15167,
+          "holdDuration": 0
+        },
+        {
+          "id": "56f0512a-f136-483b-a1fb-706f3704e1db",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 50258,
+          "holdDuration": 0
+        },
+        {
+          "id": "90643cd4-4b94-49a8-bb35-bb5684daf382",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "b91dec9f-0bda-480b-81a8-17934abcf715",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 34409,
+          "holdDuration": 0
+        },
+        {
+          "id": "2bc27442-1cb0-4f34-80ec-93074df0dabf",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "16b0b76f-9eb9-4f6c-9894-320e2cadfb71",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 69843,
+          "holdDuration": 0
+        },
+        {
+          "id": "2c3e0665-66b1-449e-bab5-c776bb8ff2ac",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 115138,
+          "holdDuration": 0
+        },
+        {
+          "id": "a242fca0-3b93-4e47-9542-5574cd59d52b",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "355a7689-88d2-4ba4-9b6a-daea2f79205c",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 117406,
+          "holdDuration": 0
+        },
+        {
+          "id": "ad60dd30-8161-4401-a2b8-9021f6044b24",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 0,
+          "holdDuration": 0
+        },
+        {
+          "id": "8d1d1251-5168-4dc5-b8f1-b6c670c8b2d2",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 427059,
+          "holdDuration": 0
+        },
+        {
+          "id": "a874c4d7-a0aa-4a40-8bc8-58aca9b4726a",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 38295,
+          "holdDuration": 25978
+        },
+        {
+          "id": "ca5446dd-9204-4b3a-af2c-45f5db80b501",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 84255,
+          "holdDuration": 27007
+        },
+        {
+          "id": "c139f901-a330-42aa-9093-9096fba231d5",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 68780,
+          "holdDuration": 99125
+        },
+        {
+          "id": "e9572777-a2da-47a3-8fb0-87ca69f45e60",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 66296,
+          "holdDuration": 37469
+        },
+        {
+          "id": "d1f44a60-0ca3-4274-b771-4b02541b4a7b",
+          "channelType": "telephony",
+          "lastTeam": {
+            "id": "edee836f-ade6-4a1e-9d5f-09b0cc5b6bfb"
+          },
+          "connectedDuration": 55965,
+          "holdDuration": 71225
         }
       ],
       "pageInfo": {

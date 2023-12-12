@@ -1,5 +1,5 @@
 {
-  # Query to fetch requested Task Leg attributes between the given epoch time in from and to.
+  # Query to fetch CLR  attributes between the given epoch time in 1 January 2023 00:00:00 UTC and Friday, 17 February 2023 07:35:34 UTC
   # from and to are mandatory paramaters.
   # Note - response is paginated
   taskLegDetails(from: 1672531200000, to: 1676619334000) {
@@ -8,26 +8,14 @@
       id # String
       taskId
       createdTime # Long
-      isChildLeg
-      nextDestination {
-        # Object
-        agent {
-          # Object
-          name
-        }
+      queue { # Object field
+        id
       }
-      owner {
-        name
-      }
-      queue {
-        name
-      }
-
-      consultCount #Int
-      consultDuration
       entryPoint {
         id
       }
+      consultSuccessCount #Int
+      consultDuration
     }
     pageInfo {
       # Indicates if the nextPage exists or not

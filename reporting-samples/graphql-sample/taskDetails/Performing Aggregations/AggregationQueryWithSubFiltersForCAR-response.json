@@ -1,0 +1,20 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "aggregation": [
+            {
+              "name": "AvgHoldDurationDurationAgent2",
+              "value": 22000.555555555555
+            },
+            {
+              "name": "AvgHoldDurationDurationAgent1",
+              "value": 60133.071038251364
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

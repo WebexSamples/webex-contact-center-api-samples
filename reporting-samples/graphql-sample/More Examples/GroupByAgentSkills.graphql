@@ -1,0 +1,18 @@
+{
+    agentSession(
+        from: 1696118400000
+        to: 1701302400000
+        aggregations: [
+            { field: "agentId", name: "Unique agent count", type: cardinality }
+        ]
+    ) {
+        agentSessions {
+            skillsProfile
+            agentSkills
+            aggregation {
+                name
+                value
+            }
+        }
+    }
+}

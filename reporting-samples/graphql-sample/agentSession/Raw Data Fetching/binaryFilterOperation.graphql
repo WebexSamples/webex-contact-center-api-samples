@@ -1,0 +1,36 @@
+{
+    # Using compound operators for filtering
+    agentSession(from: 1644859375000, to: 1671038575000
+        # Compound operators(and,or,not) can be used inside one another also
+        filter : {
+            and : [
+                {isActive : {equals : true}}
+                {channelInfo : { channelType : {notequals : "telephony"}}}
+                {teamName : {match : ".+"}}
+            ]
+        }
+    ) {
+        agentSessions {
+            agentSessionId
+            agentId
+            teamName
+            siteName
+            startTime
+            endTime
+            isActive
+            channelInfo {
+                channelId
+                channelType
+                idleCount
+                idleDuration
+                ringingCount
+                ringingDuration
+                totalDuration
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

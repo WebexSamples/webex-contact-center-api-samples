@@ -1,0 +1,31 @@
+{
+    # Query to fetch abandoned telephony tasks created between 1st October 2023 00:00:00 UTC and 1 November 2023 00:00:00 UTC
+    taskDetails(
+        from: 1696118400000
+        to: 1698796800000
+        # Use Filter arguments to apply filter
+        filter: {
+            and: [
+                { channelType: { equals: telephony } }
+                { contactHandleType: { equals: "abandoned" } }
+            ]
+        }
+    ) {
+        tasks {
+            id
+            createdTime
+            contactHandleType
+            channelType
+            lastQueue {
+                id
+            }
+            lastEntryPoint {
+                id
+            }
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+    }
+}

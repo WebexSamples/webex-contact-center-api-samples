@@ -1,0 +1,95 @@
+{
+  "data": {
+    "agentSession": {
+      "agentSessions": [
+        {
+          "agentSessionId": "bce8cd6a-402f-4a81-85fe-f61fccf11606",
+          "agentId": "e6b78bde-1116-40f4-bd33-9ec9271e8a86",
+          "teamName": "av-team",
+          "siteName": "av-site",
+          "startTime": 1646727607352,
+          "endTime": -1,
+          "isActive": true,
+          "channelInfo": [
+            {
+              "channelId": "38dd8faa-dc65-460b-85f6-42de43af686d",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "9e8cc1b9-9ec5-48a5-9855-7564a11dd9fc",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "c601b82e-992e-483d-a3e7-078dfa868990",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "74eb46c0-e804-456d-aaa3-70d900573436",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "dbe223b1-981f-404a-84be-f8b5ef6d53ee",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "fe9c0366-b58d-47e1-94e3-3b1924345872",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "34f51e67-2b13-47ab-800d-eba71d349efa",
+              "channelType": "email",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 2,
+              "ringingDuration": 38432,
+              "totalDuration": 1344944
+            },
+            {
+              "channelId": "b485bf7d-632a-4390-a9bb-06e8510a2c97",
+              "channelType": "chat",
+              "idleCount": 1,
+              "idleDuration": 143993,
+              "ringingCount": 0,
+              "ringingDuration": 0,
+              "totalDuration": 1344944
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

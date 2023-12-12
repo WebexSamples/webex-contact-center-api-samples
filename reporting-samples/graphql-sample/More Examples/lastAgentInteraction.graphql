@@ -1,0 +1,60 @@
+{
+  #LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached
+  taskDetails(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: createdTime #Filter by created Time only
+    filter: {
+      #Filter the type of Task
+      and: [
+        { channelType: { equals: telephony } } #Telephony calls only
+        { origin: { equals: "+12345677890" } } #Customer ANI
+        { status: { equals: "ended" } } #Final Disposition
+        { direction: { equals: "inbound" } } #Inbound call only
+        { isActive: { equals: false } } #Resolved call only
+        { owner: { notequals: { id: null } } } #Only calls that had an Owner
+      ]
+    }
+    pagination: { cursor: "0" } #Display first page only
+  ) {
+    tasks {
+      #Task Metadata
+      id
+      createdTime
+      endedTime
+      origin
+      destination
+      lastWrapupCodeName #Why the customer called
+      totalDuration
+      selfserviceDuration
+      captureRequested
+      #Treatment Details
+      lastEntryPoint {
+        #Entrypoint Details
+        id
+        name
+      }
+      lastQueue {
+        #Queue Details
+        id
+        name
+      }
+      lastTeam {
+        #Team Details
+        id
+        name
+      }
+      owner {
+        #Agent Details
+        name
+        id
+      }
+    }
+    #Pagination Information
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}

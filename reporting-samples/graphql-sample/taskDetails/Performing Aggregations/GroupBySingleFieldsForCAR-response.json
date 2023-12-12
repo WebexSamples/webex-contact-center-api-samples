@@ -1,0 +1,72 @@
+{
+  "data": {
+    "taskDetails": {
+      "tasks": [
+        {
+          "activities": {
+            "nodes": [
+              {
+                "queueName": "Basic-Queue"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 7193.0
+            }
+          ]
+        },
+        {
+          "activities": {
+            "nodes": [
+              {
+                "queueName": "Basic-Queue-1"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 6605.0
+            }
+          ]
+        },
+        {
+          "activities": {
+            "nodes": [
+              {
+                "queueName": "QUEUE_DATA"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 330.0
+            }
+          ]
+        },
+        {
+          "activities": {
+            "nodes": [
+              {
+                "queueName": "QUEUE_DATA-2"
+              }
+            ]
+          },
+          "aggregation": [
+            {
+              "name": "average parked duration",
+              "value": 25642.14285714286
+            }
+          ]
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    }
+  }
+}

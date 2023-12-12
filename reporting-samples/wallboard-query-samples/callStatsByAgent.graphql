@@ -1,0 +1,42 @@
+{
+  #Call Statistics by Agent
+
+  task(
+    # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
+    from: 1652737172156 #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
+    to: 1653341822973 #This can be set to Date.now() in millis
+    timeComparator: createdTime
+    filter: {
+      and: [
+        { direction: { equals: "inbound" } }
+        { channelType: { equals: telephony } }
+        {owner: {notequals : {id: null}}}
+      ]
+    }
+    aggregations: [
+      { field: "id", type: count, name: "Total Contacts Handled" }
+      { field: "connectedDuration", type: average, name: "Average Talk Time" }
+      { field: "holdDuration", type: max, name: "Maximum Hold Time" }
+      {
+        field: "totalDuration"
+        type: average
+        name: "Average Handle Time by Agent"
+      }
+    ]
+  ) {
+    tasks {
+      owner {
+        name
+        id
+      }
+      aggregation {
+        name
+        value
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

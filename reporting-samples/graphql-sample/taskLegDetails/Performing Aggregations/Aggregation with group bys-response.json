@@ -4,397 +4,324 @@
       "taskLegs": [
         {
           "queue": {
-            "name": null
+            "id": null
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 208.0
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "name": ""
+            "id": "058b5f45-d5ff-4595-a1df-925a402972e4"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 63.0
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "name": "AksQueue1"
+            "id": "1db6df1f-6469-4493-9081-b4c0819a103e"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 160.0
+              "name": "average ringingDuration",
+              "value": 14045.1875
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "name": "AksQueue2"
+            "id": "1f1c6150-fdd4-4dc2-b69d-368781753c3b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 88.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "AutoTelephonyQueue"
-          },
-          "aggregation": [
+              "name": "average ringingDuration",
+              "value": 11331.059701492537
+            },
             {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Basic-Queue"
-          },
-          "aggregation": [
+              "name": "average queueDuration",
+              "value": 9165.40625
+            },
             {
-              "name": "Call Legs count",
-              "value": 48.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Basic-Queue-SBR"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 33.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "CCB_Inbound_Queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat-AutoTest-BOT_Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 3.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat-Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 15.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Chat_config_QUE"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Dakshu-Q1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 2.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Dakshu-Q2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Email-Q"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
+              "name": "consults into the queue",
               "value": 27.0
             }
           ]
         },
         {
           "queue": {
-            "name": "EmailQMigration"
+            "id": "343bec8f-7915-436c-88d8-4da075c2d95b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 1.0
+              "name": "average ringingDuration",
+              "value": 37164.28571428572
+            },
+            {
+              "name": "average queueDuration",
+              "value": 34479.64864864865
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Email_OAuth_Q"
+            "id": "40162355-72f4-4dc1-b710-2f8c94e5d14b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 13.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "GT-Queue"
-          },
-          "aggregation": [
+              "name": "average ringingDuration",
+              "value": 17121.0
+            },
             {
-              "name": "Call Legs count",
-              "value": 18.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "InboundQueue-SRI"
-          },
-          "aggregation": [
+              "name": "average queueDuration",
+              "value": 23361.536231884056
+            },
             {
-              "name": "Call Legs count",
-              "value": 11.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Kuldeep-Q1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 17.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Kuldeep-Q2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 7.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Outdial-queue"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 29.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "QOutMigration"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 10.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue _QbasedAgent3"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 1.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 222.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF-Three"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 50.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRI-FF-Two"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 45.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queue-SRINIVAS"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 12.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queuebased_Queue1"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
-              "value": 105.0
-            }
-          ]
-        },
-        {
-          "queue": {
-            "name": "Queuebased_Queue2"
-          },
-          "aggregation": [
-            {
-              "name": "Call Legs count",
+              "name": "consults into the queue",
               "value": 38.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Ranjan-Q1"
+            "id": "43695f51-3340-4cf0-90f0-4d6f6e2ec0e2"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 3.0
+              "name": "average ringingDuration",
+              "value": 12125.65306122449
+            },
+            {
+              "name": "average queueDuration",
+              "value": 61976.575
+            },
+            {
+              "name": "consults into the queue",
+              "value": 4.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Skill_Queue_SRI_BAA"
+            "id": "450efd53-39d6-4ce7-83ca-bb949a5c1dfb"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
+              "name": "average ringingDuration",
+              "value": 26179.984375
+            },
+            {
+              "name": "average queueDuration",
+              "value": 76538.65322580645
+            },
+            {
+              "name": "consults into the queue",
+              "value": 26.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "4a78059e-823b-46ef-ab71-e5d8b78830a0"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 31137.403100775195
+            },
+            {
+              "name": "average queueDuration",
+              "value": 16210.977777777778
+            },
+            {
+              "name": "consults into the queue",
               "value": 8.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Skill_Queue_SRI_LAA"
+            "id": "603e2add-eedd-49c8-9f95-545fcbd28152"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 14.0
+              "name": "average ringingDuration",
+              "value": 19291.666666666668
+            },
+            {
+              "name": "average queueDuration",
+              "value": 4980.553191489362
+            },
+            {
+              "name": "consults into the queue",
+              "value": 9.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Telephony_Q"
+            "id": "7c3c68e2-1c48-4288-a7a6-e2a7face0a4b"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 15.0
+              "name": "average ringingDuration",
+              "value": 18405.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 6712.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 4.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Telephony_Q-2"
+            "id": "88479b8a-5c9f-4a08-a9e3-c776b9c49351"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 12.0
+              "name": "average ringingDuration",
+              "value": 18354.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 25520.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         },
         {
           "queue": {
-            "name": "Webcallback_queue"
+            "id": "906e784d-4eec-44e7-95fc-e6d491ea1b6d"
           },
           "aggregation": [
             {
-              "name": "Call Legs count",
-              "value": 8.0
+              "name": "average ringingDuration",
+              "value": 30511.85714285714
+            },
+            {
+              "name": "average queueDuration",
+              "value": 90497.77777777778
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "dcf6a2ae-9040-4dd3-a9bb-7b0c1d12b98f"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 19009.41975308642
+            },
+            {
+              "name": "average queueDuration",
+              "value": 10292.134146341463
+            },
+            {
+              "name": "consults into the queue",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "ea33290c-2293-4267-9517-65b05dd3faab"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 11195.851063829787
+            },
+            {
+              "name": "average queueDuration",
+              "value": 22363.147058823528
+            },
+            {
+              "name": "consults into the queue",
+              "value": 10.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "ee183f36-b5f8-4f91-a323-5e080c79a434"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 13178.857142857143
+            },
+            {
+              "name": "average queueDuration",
+              "value": 3333.031746031746
+            },
+            {
+              "name": "consults into the queue",
+              "value": 25.0
+            }
+          ]
+        },
+        {
+          "queue": {
+            "id": "f91b18f3-cefa-4749-beca-59396cb9a754"
+          },
+          "aggregation": [
+            {
+              "name": "average ringingDuration",
+              "value": 0.0
+            },
+            {
+              "name": "average queueDuration",
+              "value": 0.0
+            },
+            {
+              "name": "consults into the queue",
+              "value": 0.0
             }
           ]
         }

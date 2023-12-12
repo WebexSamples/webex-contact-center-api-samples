@@ -1,0 +1,452 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "available"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 3.5220661E8
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "call-ended"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1481.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "connected"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 878633.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "hold-done"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 86907.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "idle"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 3.1670295E7
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "logged-out"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "not-responding"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 49359.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "on-hold"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 19929.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "outdial-reserved"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.8290694E7
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "ringing"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 59380.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "skill-update"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "0699dce3-0149-4a0a-9e3e-368a41317a3f",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "wrapup"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.8292479E7
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "available"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 8657763.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "call-ended"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "connected"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 111495.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "idle"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 1.2222235E7
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "logged-out"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "ringing"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 17179.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ab4f774c-9749-4dd0-89fe-8e882ccf31e6",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "wrapup"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 7881.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ef00c4dd-9355-4db4-9552-bb44d963f6ce",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "available"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 74916.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ef00c4dd-9355-4db4-9552-bb44d963f6ce",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "idle"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 29834.0
+                        }
+                    ]
+                },
+                {
+                    "agentId": "ef00c4dd-9355-4db4-9552-bb44d963f6ce",
+                    "channelInfo": [
+                        {
+                            "activities": {
+                                "nodes": [
+                                    {
+                                        "state": "logged-out"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ],
+            "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+            }
+        }
+    }
+}

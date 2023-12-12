@@ -1,6 +1,7 @@
 {
   # Aggregations with Sub Filters,
   # For each aggregation a separate filter criteria can be specified.
+  # Query: Fetch the number of tasks handled by multiple queues.
   taskDetails(
     from: 1644859375000
     to: 1671038575000
@@ -11,7 +12,7 @@
         name: "Calls which ended with Arryn_Queue2"
         # Filter criteria for a particular operation can be given
         # Note that syntax for this filter is same as the global filter
-        filter: { lastQueue: { name: { equals: "Arryn_Queue2" } } }
+        filter: { isWithinSLA: {equals : true}}
       }
       {
         field: "id"

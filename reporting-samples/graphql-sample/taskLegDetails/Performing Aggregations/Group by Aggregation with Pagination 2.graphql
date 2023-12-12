@@ -3,33 +3,52 @@
   # Pass the cursor in the previous query Group by Aggregation with Pagination.txt in the cursor argument.
   # Check response if the hasNextPage is set to false, no more pages are available
   taskLegDetails(
-    from: 1644796800000
-    to: 1676246400000
-    aggregations: [{ field: "id", name: "Calls Completed", type: count }]
-    pagination: {
-      cursor: "channelType=chat::intervalStartTime=1641081600000::queue.id=queue1::owner.id=Agent-885-chat::entryPoint.name=Ep9::site.id=3::site.name=Mysore::team.id=team6::team.name=team6"
-    }
+    from: 1673082986000
+    to: 1698796800000
+    aggregations: [
+      {
+        field: "selfserviceDuration"
+        type: average
+        name: "average of selfserviceDuration"
+      }
+      {
+        field: "connectedDuration"
+        type: max
+        name: "average of connectedDuration"
+      }
+      {
+        field: "ringingDuration"
+        type: average
+        name: "average of ringingDuration"
+      }
+      {
+        field: "queueDuration"
+        type: average
+        name: "average of queueDuration"
+      }
+    ]
     aggregationInterval: { interval: DAILY }
+    pagination: {
+      cursor: "channelType=telephony::intervalStartTime=1696982400000::queue.id=1f1c6150-fdd4-4dc2-b69d-368781753c3b::owner.id=null::entryPoint.id=fb190ec0-7943-4b1f-82c9-b9089f6d6082::site.id=null::team.id=null"
+    }
   ) {
     taskLegs {
       channelType
       intervalStartTime
       queue {
-          id
+        id
       }
       owner {
-          id
+        id
       }
       entryPoint {
-          name
+        id
       }
       site {
-          id
-          name
+        id
       }
       team {
-          id
-          name
+        id
       }
       aggregation {
         name

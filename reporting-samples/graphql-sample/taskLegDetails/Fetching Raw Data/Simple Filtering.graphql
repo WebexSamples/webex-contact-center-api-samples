@@ -1,15 +1,23 @@
 {
-  # Query to fetch documents based on a filter criteria.
+  # Query to fetch CLR attributes for a specific queue.
   taskLegDetails(
-    from: 1664099493000
-    to: 1669369893000
+    from: 1696118400000
+    to: 1698796800000
     # Use Filter arguments to apply filter
-    filter: { direction: { equals: "inbound" } }
+    filter: { taskId: {equals : "d9eecda4-d026-48c5-b1b8-c423d6749d41"} }
   ) {
     taskLegs {
       id
       createdTime
-      direction
+      queue {
+        id
+      }
+      owner {
+        id
+      }
+      entryPoint {
+        id
+      }
       endedTime
     }
   }

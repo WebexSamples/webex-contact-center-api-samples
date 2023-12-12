@@ -6,6 +6,7 @@
         isActive : {equals : true}
     }
     aggregations : [
+        #count the number of unique agents  where 'channelType' equals 'telephony'.
         {
             field : "agentId"
             name : "Agents handling telephony tasks" 
@@ -18,6 +19,7 @@
                 }
             }
         }
+        #count the number of unique agents where 'channelType' equals 'social'
         {
             field : "agentId"
             name : "Agents handling social tasks" 
@@ -28,6 +30,7 @@
                 }
             }
         }
+        #count the number of unique agents where 'currentState' equals 'idle'
         {
             field : "agentId"
             name : "idle Agents" 
@@ -38,6 +41,7 @@
                 }
             }
         }
+        #count the number of unique agents where 'currentState' equals 'connected'
         {
             field : "agentId"
             name : "Number of Agents in connected state" 

@@ -1,0 +1,16 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "aggregation": [
+                        {
+                            "name": "Count of connected events",
+                            "value": 27.0
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

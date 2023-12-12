@@ -1,0 +1,16 @@
+{
+    "data": {
+        "agentSession": {
+            "agentSessions": [
+                {
+                    "aggregation": [
+                        {
+                            "name": "max of duration",
+                            "value": 6.16398842E8
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
