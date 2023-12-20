@@ -1007,6 +1007,8 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 4. The number of fields used for a group by operation in an aggregation query cannot exceed 10.
 
+5. When using `extFilter` in a query to fetch raw data, if matching records for first page cannot be populated from the first 2500 Records (based on query span and `filter` criteria), then the API will respond back with 413 Status code.
+
 ## Recommendations and best practices
 
 - While querying data or performing aggregations, it is recommended to use fields belonging to only a single data type.
