@@ -1,141 +1,142 @@
-
 CLR Data Dictionary
 ===================
 
-|Field Name|Data Type|Description|Is Aggregatable ?|Is Group By Allowed ?|Is Filterable ?|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|id|String|Unique ID for each task-leg.|Yes|Yes|Yes|
-|taskId|String|contact session Id or Interaction of the task-leg|Yes|Yes|Yes|
-|createdTime|Long|logical start time of the call-leg in epoch|Yes|Yes|No|
-|endedTime|Long|logical end time of the call-leg in epoch|Yes|Yes|No|
-|lastActivityTime|Long|last activity timestamp on the task-leg|Yes|Yes|Yes|
-|isActive|Boolean|Flag that indicates whether the session is an active session.|Yes|Yes|Yes|
-|status|String|Current status of the task-leg. Some examples of possible values are: new, parked, connected, ended.|Yes|Yes|Yes|
-|contactState|String|Last activity  of the task-leg, Some examples of possible values are: ended, wrapup-completed|Yes|Yes|Yes|
-|destination|String|DNIS digits delivered with the call.|Yes|Yes|Yes|
-|origin|String|ANI digits delivered with a call.|Yes|Yes|Yes|
-|channelType|String|The media channel through which the task will be fulfilled. Can be telephony, email, or chat.|Yes|Yes|Yes|
-|channelSubType|String|Indicates the classification of a particular channel type. For e.g. for "social" channel, "twitter" is a sub channel type.|Yes|Yes|Yes|
-|entryPoint.id|String|The unique identifier for an entity|Yes|Yes|Yes|
-|entryPoint.name|String|The name or title associated with an entity.|Yes|Yes|Yes|
-|monitorFullName|String|Name of the supervisor monitoring the call|Yes|Yes|Yes|
-|isBarged|Boolean|Indicates whether the call was monitored.|Yes|Yes|Yes|
-|bargedInDuration|Long|total barged duration for the call|Yes|Yes|Yes|
-|bargedInCount|Int|The number of times a call was barged|Yes|Yes|Yes|
-|bargedInFailedCount|Int|The number of times barge in failed for a call|Yes|Yes|Yes|
-|isContactOffered|Boolean|Indicates whether the call was offered to an agent.|Yes|Yes|Yes|
-|isWithinServiceLevel|Boolean|Flag that indicates whether the task-leg is within the service level threshold.|Yes|Yes|Yes|
-|queue.id|String|The id of the queue where the task is lined up.|Yes|Yes|Yes|
-|queue.name|String|The name of the queue where the task is lined up.|Yes|Yes|Yes|
-|queue.duration|Long|The amount of time(in epoch millis) the task was lined up in the queue.|Yes|Yes|Yes|
-|ringingDuration|Long|The total ringing duration before a call is answered.|Yes|Yes|Yes|
-|owner.id|String|ID of the agent last assigned to this task.|Yes|Yes|Yes|
-|owner.name|String|Name of the agent last assigned to this task.|Yes|Yes|Yes|
-|owner.signInId|String|SignInId name using which an agent logs in to the Agent Desktop.|Yes|Yes|Yes|
-|owner.sessionId|String|A string that identifies an agent login session.|Yes|Yes|Yes|
-|owner.phoneNumber|String|The endpoint (number) on which an agent receives calls.|Yes|Yes|Yes|
-|owner.channelId|String|Id of the channel the agent is|Yes|Yes|Yes|
-|site.id|String|The unique identifier for an entity|Yes|Yes|Yes|
-|site.name|String|The name or title associated with an entity.|Yes|Yes|Yes|
-|team.id|String|The unique identifier for an entity|Yes|Yes|Yes|
-|team.name|String|The name or title associated with an entity.|Yes|Yes|Yes|
-|direction|String|Indicates whether the task-leg is inbound or outbound.|Yes|Yes|Yes|
-|ivrScriptId|String|The ID for the IVR Script.|Yes|Yes|Yes|
-|ivrScriptName|String|The name of the flow in the Call Control section of the routing strategy configuration.|Yes|Yes|Yes|
-|ivrScriptTagId|String|identifier for flow tag in the Call Control section of the routing strategy configuration.|Yes|Yes|Yes|
-|ivrScriptTagName|String|The name of the flow tag in the Call Control section of the routing strategy configuration.|Yes|Yes|Yes|
-|terminatingEnd|String|Indicates the party that terminated the taskLeg.|Yes|Yes|Yes|
-|terminationReason|String|The reason for ending the contact. The reason can be one of the following: Agent Left, Customer Busy, Customer Left, Customer Unavailable, Not Found, Participant Invite Timer Expired.|Yes|Yes|Yes|
-|contactReason|String|The reason why the customer is contacting the contact center.|Yes|Yes|Yes|
-|botName|String|The name of the bot.|Yes|Yes|Yes|
-|customer.name|String|A human-readable name of the end customer.|Yes|Yes|Yes|
-|customer.phoneNumber|String|A valid customer DN, on which the agent can reach out to the customer.|Yes|Yes|Yes|
-|customer.email|String|A valid email address on which the agent can reach out to the customer.|Yes|Yes|Yes|
-|preferredAgentSystemId|String|A string that identifies preferred agentId.|Yes|Yes|Yes|
-|preferredAgentName|String|A string that identifies preferred agentName.|Yes|Yes|Yes|
-|isHandledByPreferredAgent|Boolean|Flag that indicates whether contact was handled by preferred Agent.|Yes|Yes|Yes|
-|routingType|String|The type of routing used, that could be skillBased, QueueBased and Longest Available.|Yes|Yes|Yes|
-|callType|String|Type of call|Yes|Yes|Yes|
-|lastWrapupCodeName|String|The Wrapup code that the agent selected for the interaction.|Yes|Yes|Yes|
-|wrapupDuration|Long|The total time that the agents spent in the Wrapup state after handling the interactions.|Yes|Yes|Yes|
-|isOutdial|Boolean|Flag that indicates whether this activity occurred while making an outdial call.|Yes|Yes|Yes|
-|isMonitored|Boolean|Flag that indicates whether the call is being monitored.|Yes|Yes|Yes|
-|totalMonitoringCount|Int|The number of times a task-leg was monitored.|Yes|Yes|Yes|
-|silentMonitoringCount|Int|Silent Monitoring count per call leg.|Yes|Yes|Yes|
-|fullMonitoringCount|Int|The number of calls that were completely monitored.|Yes|Yes|Yes|
-|midcallMonitoringCount|Int|The number of calls for which monitoring started in the middle of the call.|Yes|Yes|Yes|
-|abandonedType|String|The Abandoned Type is set when the task-leg is abandoned. The following values show the states of the call when abandoned new, queue, treatment, agent-connect|Yes|Yes|Yes|
-|blindTransferCount|Int|The number of times a call was transferred by an agent to another agent or an external DN (Dial Number) via a blind transfer.|Yes|Yes|Yes|
-|resumedCount|Int|Count of call recordings that were paused and later resumed.|Yes|Yes|Yes|
-|transferCount|Int|The number of times a call was transferred by an agent.|Yes|Yes|Yes|
-|queueCount|Int|the no of times call is presented to the queue or agent|Yes|Yes|Yes|
-|overflowCount|Int|The Overflow Count indicating the number of calls that were directed to an overflow number.|Yes|Yes|Yes|
-|transferErrorCount|Int|Count of transfer error failures.|Yes|Yes|Yes|
-|taskLegCount|Int|Represents number of task-legs.|Yes|Yes|Yes|
-|handleType|String|Shows how the call was handled: normal, abandoned, self_service, connect, park, park_and_transfer, straight_transfer, overflow, dequeued or TransferToDN.|Yes|Yes|Yes|
-|isTaskLegHandled|Boolean|Flag that indicates whether the contact was handled by an agent within this leg or queue|Yes|Yes|Yes|
-|isOptOutOfQueue|Boolean|True indicates it is an opt-out call|Yes|Yes|Yes|
-|optOutOfQueueTimestamp|Long|Timestamp when contact is request for opt-out|Yes|Yes|Yes|
-|connectedCount|Int|The number of time that agent connected to contact within this leg|Yes|Yes|Yes|
-|connectedDuration|Long|The total duration in milli-seconds for which the agent was in conversation with the customer for a task-leg|Yes|Yes|Yes|
-|holdCount|Int|The number of times an agent put an inbound caller on hold.|Yes|Yes|Yes|
-|holdDuration|Long|The total duration for which a call was on hold.|Yes|Yes|Yes|
-|consultDuration|Long|The amount of time an agent spent consulting with another agent while handling a call (inbound only).|Yes|Yes|Yes|
-|outdialConsultCount|Int|Number of times an agent initiated a consult call with another agent or someone at an external number while handling a (out-dial)contact.|Yes|Yes|Yes|
-|outdialConsultDuration|Long|The amount of time in milli-seconds an agent spent consulting with another agent while handling for  this (out-bound)contact|Yes|Yes|Yes|
-|outdialConferenceCount|Int|The number of times an agent established a conference contact leg with the caller and another agent while in an outdial call.|Yes|Yes|Yes|
-|outdialConferenceDuration|Long|The amount of time in milli-seconds an agent spent in a conference contact leg with the caller and another agent while in an outdial call.|Yes|Yes|Yes|
-|conferenceDuration|Long|The amount of time an agent spent in conference with a caller and another agent.|Yes|Yes|Yes|
-|selfserviceDuration|Long|The amount of time, in minutes, during which a call was in IVR state.|Yes|Yes|Yes|
-|selfserviceCount|Int|The number of times the contact was in IVR state.|Yes|Yes|Yes|
-|consultToQueueCount|Int|Number of consult-to-queue within an call-leg in interaction (inbound calls)|Yes|Yes|Yes|
-|consultToQueueDuration|Long|Total duration in milli-seconds spent on consult-to queue within an call-leg in interaction (inbound calls)|Yes|Yes|Yes|
-|outdialConsultToQueueCount|Int|This is the count of consult-to-queue within an outdial interaction.|Yes|Yes|Yes|
-|outdialConsultToQueueDuration|Long|Total duration in milli-seconds spent on consult-to queue within an call-leg in interaction (outbound calls)|Yes|Yes|Yes|
-|pausedDuration|Long|The amount of time in milli-seconds, during which a call in this call-leg was in pause state.|Yes|Yes|Yes|
-|pausedCount|Int|Count of call recordings that were paused.|Yes|Yes|Yes|
-|slaValue|String|The value of Service Level Agreement in seconds for the queue in this call-leg|Yes|Yes|Yes|
-|handleTime|Long|The total amount of time an agent handles the call.|Yes|Yes|Yes|
-|consultEpId|String|Entrypoint ID in the event of consult to EP/DN.|Yes|Yes|Yes|
-|consultEpName|String|Entrypoint Name in the event of consult to EP/DN.|Yes|Yes|Yes|
-|childContactId|String|Child interaction Id in the case of consult to EP/DN.|Yes|Yes|Yes|
-|childContactType|String|Determines the type of Consult.|Yes|Yes|Yes|
-|isChildLeg|Boolean|Denotes whether the call-leg represents the consult to EP/DN scenario.|Yes|Yes|Yes|
-|consultToEPCount|Int|Defines the number of times consult was done to EP/DN for that call-leg.|Yes|Yes|Yes|
-|consultToEPDuration|Long|Defines the duration of consult for EP/DN for that call-leg.|Yes|Yes|Yes|
-|outdialConsultToEPCount|Int|Outdial Consult To EntryPoint Count.|Yes|Yes|Yes|
-|outdialConsultToEPDuration|Long|Outdial Consult To EntryPoint Duration.|Yes|Yes|Yes|
-|nextDestination.agent.id|String|ID of the agent last assigned to this task.|Yes|Yes|Yes|
-|nextDestination.agent.name|String|Name of the agent last assigned to this task.|Yes|Yes|Yes|
-|nextDestination.agent.signInId|String|SignInId name using which an agent logs in to the Agent Desktop.|No|No|Yes|
-|nextDestination.agent.sessionId|String|A string that identifies an agent login session.|Yes|Yes|Yes|
-|nextDestination.agent.phoneNumber|String|The endpoint (number) on which an agent receives calls.|Yes|Yes|Yes|
-|nextDestination.agent.channelId|String|Id of the channel the agent is|Yes|Yes|Yes|
-|nextDestination.team.id|String|The unique identifier for an entity|Yes|Yes|Yes|
-|nextDestination.team.name|String|The name or title associated with an entity.|Yes|Yes|Yes|
-|nextDestination.queue.id|String|The unique identifier for an entity|Yes|Yes|Yes|
-|nextDestination.queue.name|String|The name or title associated with an entity.|Yes|Yes|Yes|
-|abandonedSlCount|Int|The number of calls that got terminated while in queue within the Service Level threshold provisioned for the queue or skill|Yes|Yes|Yes|
-|agentToDnTransferCount|Int|The number of calls that were transferred to DN by an agent.|Yes|Yes|Yes|
-|agentToQueueTransferCount|Int|The number of times a call was transferred from an agent to a queue.|Yes|Yes|Yes|
-|agentTransferedInCount|Int|The number of times a call was transferred to an agent.|Yes|Yes|Yes|
-|integerGlobalVariables.name|String|Name or title associated with an Integer entity.|No|No|Yes|
-|integerGlobalVariables.value|Int|Integer Numeric value associated with an entity.|Yes|Yes|Yes|
-|stringGlobalVariables.name|String|Name or title associated with an String entity.|No|No|Yes|
-|stringGlobalVariables.value|String|String value associated with an entity.|Yes|Yes|Yes|
-|longGlobalVariables.name|String|Name or title associated with an Long entity.|No|No|Yes|
-|longGlobalVariables.value|Long|Long Numeric value associated with an entity.|Yes|Yes|Yes|
-|doubleGlobalVariables.name|String|Name or title associated with an double entity.|No|No|Yes|
-|doubleGlobalVariables.value|Float|Double does not exist in GraphQL.  Float has same precision has Java Double.  double Numeric value associated with an entity.|Yes|Yes|Yes|
-|booleanGlobalVariables.name|String|Name or title associated with an boolean entity.|No|No|Yes|
-|booleanGlobalVariables.value|Boolean|Boolean value associated with an entity.|Yes|Yes|Yes|
-|matchedSkills|JSON|The skill of an agent that matched the skill requirements for the call sessio|No|Yes|Yes|
-|requiredSkills|JSON|The required skill of an agent for the call session.|No|Yes|Yes|
-|matchedSkillsProfile|String|Shows the name of the skill profile that is associated with an agent.|Yes|Yes|Yes|
-|consultToQueueHandledCount|Int|count of the consult to queue taskleg was handled by an agent.|Yes|Yes|Yes|
-|outdialConsultToQueueHandledCount|Int|count of the outdial consult to queue taskleg was handled by an agent.|Yes|Yes|Yes|
-|interQueueBlindTransferCount|Int|Denotes the number of successful blind transfers made to the queue.|Yes|Yes|Yes|
-|interQueueConsultTransferCount|Int|Denotes the number of consult transfers followed by successful transfers to the queue.|Yes|Yes|Yes|
-|consultSuccessCount|Int|Indicates the number of successful consults initiated from the queue.|Yes|Yes|Yes|
-|conferenceSuccessCount|Int|Indicates the number of successful conferences initiated from the queue.|Yes|Yes|Yes|
-|blindTransferToAgentCount|Int|Count of successful blind transfer to another agent.|Yes|Yes|Yes|
+>  **Note** - For all the filterable fields, use `filter` argument to perform filtering.
+
+| Field Name                        | Data Type | Description                                                                                                                                                                             | Aggregatable | Group By's Allowed | Filterable |
+|:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|
+| id                                | String    | Unique ID for each task-leg.                                                                                                                                                            | Yes          | Yes                | Yes        |
+| taskId                            | String    | contact session Id or Interaction of the task-leg                                                                                                                                       | Yes          | Yes                | Yes        |
+| createdTime                       | Long      | logical start time of the call-leg in epoch                                                                                                                                             | Yes          | Yes                | No         |
+| endedTime                         | Long      | logical end time of the call-leg in epoch                                                                                                                                               | Yes          | Yes                | No         |
+| lastActivityTime                  | Long      | last activity timestamp on the task-leg                                                                                                                                                 | Yes          | Yes                | Yes        |
+| isActive                          | Boolean   | Flag that indicates whether the session is an active session.                                                                                                                           | Yes          | Yes                | Yes        |
+| status                            | String    | Current status of the task-leg. Some examples of possible values are: new, parked, connected, ended.                                                                                    | Yes          | Yes                | Yes        |
+| contactState                      | String    | Last activity  of the task-leg, Some examples of possible values are: ended, wrapup-completed                                                                                           | Yes          | Yes                | Yes        |
+| destination                       | String    | DNIS digits delivered with the call.                                                                                                                                                    | Yes          | Yes                | Yes        |
+| origin                            | String    | ANI digits delivered with a call.                                                                                                                                                       | Yes          | Yes                | Yes        |
+| channelType                       | String    | The media channel through which the task will be fulfilled. Can be telephony, email, or chat.                                                                                           | Yes          | Yes                | Yes        |
+| channelSubType                    | String    | Indicates the classification of a particular channel type. For e.g. for "social" channel, "twitter" is a sub channel type.                                                              | Yes          | Yes                | Yes        |
+| entryPoint.id                     | String    | The ID assigned to an entry point (EP).                                                                                                                                                 | Yes          | Yes                | Yes        |
+| entryPoint.name                   | String    | The name of the EP, which is the landing place for customer calls on the Webex Contact Center system.                                                                                   | Yes          | Yes                | Yes        |
+| monitorFullName                   | String    | Name of the supervisor who is monitoring the call                                                                                                                                       | Yes          | Yes                | Yes        |
+| isBarged                          | Boolean   | Indicates whether the call was monitored.                                                                                                                                               | Yes          | Yes                | Yes        |
+| bargedInDuration                  | Long      | Duration (in milli-seconds) between barged-started and ended events.                                                                                                                    | Yes          | Yes                | Yes        |
+| bargedInCount                     | Int       | The number of times a call was barged                                                                                                                                                   | Yes          | Yes                | Yes        |
+| bargedInFailedCount               | Int       | The number of times barge in failed for a call                                                                                                                                          | Yes          | Yes                | Yes        |
+| isContactOffered                  | Boolean   | Indicates whether the call was offered to an agent.                                                                                                                                     | Yes          | Yes                | Yes        |
+| isWithinServiceLevel              | Boolean   | Flag that indicates whether the task-leg is within the service level threshold.                                                                                                         | Yes          | Yes                | Yes        |
+| queue.id                          | String    | A string that identifies a queue.                                                                                                                                                       | Yes          | Yes                | Yes        |
+| queue.name                        | String    | The name of a queue, which is the holding place for calls while they await handling by an agent.                                                                                        | Yes          | Yes                | Yes        |
+| queue.duration                    | Long      | The amount of time(in epoch millis) the task was lined up in the queue.                                                                                                                 | Yes          | Yes                | Yes        |
+| ringingDuration                   | Long      | The total ringing duration before a call is answered.                                                                                                                                   | Yes          | Yes                | Yes        |
+| owner.id                          | String    | A string that identifies an agent.                                                                                                                                                      | Yes          | Yes                | Yes        |
+| owner.name                        | String    | The name of the agent who answers customer calls, chats, and emails.                                                                                                                    | Yes          | Yes                | Yes        |
+| owner.signInId                    | String    | Login Id, using which an agent logs in to the Agent Desktop.                                                                                                                            | Yes          | Yes                | Yes        |
+| owner.sessionId                   | String    | A string that uniquely identifies an agent’s login session.                                                                                                                             | Yes          | Yes                | Yes        |
+| owner.phoneNumber                 | String    | The endpoint (number, e-mail, or chat handle) on which an agent receives calls, chats, or emails.                                                                                       | Yes          | Yes                | Yes        |
+| owner.channelId                   | String    | Id of the channel the agent is                                                                                                                                                          | Yes          | Yes                | Yes        |
+| site.id                           | String    | ID assigned to a call center location.                                                                                                                                                  | Yes          | Yes                | Yes        |
+| site.name                         | String    | Call center location to which a call was distributed.                                                                                                                                   | Yes          | Yes                | Yes        |
+| team.id                           | String    | The ID assigned to a team.                                                                                                                                                              | Yes          | Yes                | Yes        |
+| team.name                         | String    | A group of agents at a specific site who handle a particular type of call.                                                                                                              | Yes          | Yes                | Yes        |
+| direction                         | String    | Indicates whether the task-leg is inbound or outbound.                                                                                                                                  | Yes          | Yes                | Yes        |
+| ivrScriptId                       | String    | A string that identifies the IVR's flow tag.                                                                                                                                            | Yes          | Yes                | Yes        |
+| ivrScriptName                     | String    | The name of the flow in the Call Control section of the routing strategy configuration.                                                                                                 | Yes          | Yes                | Yes        |
+| ivrScriptTagId                    | String    | identifier for flow tag in the Call Control section of the routing strategy configuration.                                                                                              | Yes          | Yes                | Yes        |
+| ivrScriptTagName                  | String    | The name of the flow tag in the Call Control section of the routing strategy configuration.                                                                                             | Yes          | Yes                | Yes        |
+| terminatingEnd                    | String    | Indicates the party that terminated the taskLeg.                                                                                                                                        | Yes          | Yes                | Yes        |
+| terminationReason                 | String    | The reason for ending the contact. The reason can be one of the following: Agent Left, Customer Busy, Customer Left, Customer Unavailable, Not Found, Participant Invite Timer Expired. | Yes          | Yes                | Yes        |
+| contactReason                     | String    | The reason why the customer is contacting the contact center.                                                                                                                           | Yes          | Yes                | Yes        |
+| botName                           | String    | The name of the bot.                                                                                                                                                                    | Yes          | Yes                | Yes        |
+| customer.name                     | String    | A human-readable name of the end customer.                                                                                                                                              | Yes          | Yes                | Yes        |
+| customer.phoneNumber              | String    | A valid customer DN, on which the agent can reach out to the customer.                                                                                                                  | Yes          | Yes                | Yes        |
+| customer.email                    | String    | A valid email address on which the agent can reach out to the customer.                                                                                                                 | Yes          | Yes                | Yes        |
+| preferredAgentSystemId            | String    | A string that identifies preferred agentId.                                                                                                                                             | Yes          | Yes                | Yes        |
+| preferredAgentName                | String    | A string that identifies preferred agentName.                                                                                                                                           | Yes          | Yes                | Yes        |
+| isHandledByPreferredAgent         | Boolean   | Flag that indicates whether contact was handled by preferred Agent.                                                                                                                     | Yes          | Yes                | Yes        |
+| routingType                       | String    | The type of routing used, that could be skillBased, QueueBased and Longest Available.                                                                                                   | Yes          | Yes                | Yes        |
+| callType                          | String    | Type of call                                                                                                                                                                            | Yes          | Yes                | Yes        |
+| lastWrapupCodeName                | String    | The Wrapup code that the agent selected for the interaction.                                                                                                                            | Yes          | Yes                | Yes        |
+| wrapupDuration                    | Long      | The total time that the agents spent in the Wrapup state after handling the interactions.                                                                                               | Yes          | Yes                | Yes        |
+| isOutdial                         | Boolean   | Flag that indicates whether this activity occurred while making an outdial call.                                                                                                        | Yes          | Yes                | Yes        |
+| isMonitored                       | Boolean   | Flag that indicates whether the call is being monitored.                                                                                                                                | Yes          | Yes                | Yes        |
+| totalMonitoringCount              | Int       | The number of times a task-leg was monitored.                                                                                                                                           | Yes          | Yes                | Yes        |
+| silentMonitoringCount             | Int       | Silent Monitoring count per call leg.                                                                                                                                                   | Yes          | Yes                | Yes        |
+| fullMonitoringCount               | Int       | The number of calls that were completely monitored.                                                                                                                                     | Yes          | Yes                | Yes        |
+| midcallMonitoringCount            | Int       | The number of calls for which monitoring started in the middle of the call.                                                                                                             | Yes          | Yes                | Yes        |
+| abandonedType                     | String    | The Abandoned Type is set when the task-leg is abandoned. The following values show the states of the call when abandoned new, queue, treatment, agent-connect                          | Yes          | Yes                | Yes        |
+| blindTransferCount                | Int       | The number of times a call was transferred by an agent to another agent or an external DN (Dial Number) via a blind transfer.                                                           | Yes          | Yes                | Yes        |
+| resumedCount                      | Int       | Count of call recordings that were paused and later resumed.                                                                                                                            | Yes          | Yes                | Yes        |
+| transferCount                     | Int       | The number of times a call was transferred by an agent.                                                                                                                                 | Yes          | Yes                | Yes        |
+| queueCount                        | Int       | the no of times call is presented to the queue or agent                                                                                                                                 | Yes          | Yes                | Yes        |
+| overflowCount                     | Int       | The Overflow Count indicating the number of calls that were directed to an overflow number.                                                                                             | Yes          | Yes                | Yes        |
+| transferErrorCount                | Int       | Count of transfer error failures.                                                                                                                                                       | Yes          | Yes                | Yes        |
+| taskLegCount                      | Int       | Represents number of task-legs.                                                                                                                                                         | Yes          | Yes                | Yes        |
+| handleType                        | String    | Shows how the call was handled: normal, abandoned, self_service, connect, park, park_and_transfer, straight_transfer, overflow, dequeued or TransferToDN.                               | Yes          | Yes                | Yes        |
+| isTaskLegHandled                  | Boolean   | Flag that indicates whether the contact was handled by an agent within this leg or queue                                                                                                | Yes          | Yes                | Yes        |
+| isOptOutOfQueue                   | Boolean   | True indicates it is an opt-out call                                                                                                                                                    | Yes          | Yes                | Yes        |
+| optOutOfQueueTimestamp            | Long      | Timestamp when contact is request for opt-out                                                                                                                                           | Yes          | Yes                | Yes        |
+| connectedCount                    | Int       | The number of time that agent connected to contact within this leg                                                                                                                      | Yes          | Yes                | Yes        |
+| connectedDuration                 | Long      | The total duration in milli-seconds for which the agent was in conversation with the customer for a task-leg                                                                            | Yes          | Yes                | Yes        |
+| holdCount                         | Int       | The number of times an agent put an inbound caller on hold.                                                                                                                             | Yes          | Yes                | Yes        |
+| holdDuration                      | Long      | The total duration for which a call was on hold.                                                                                                                                        | Yes          | Yes                | Yes        |
+| consultDuration                   | Long      | The amount of time an agent spent consulting with another agent while handling a call (inbound only).                                                                                   | Yes          | Yes                | Yes        |
+| outdialConsultCount               | Int       | This is the count of consult within an outdial interaction.                                                                                                                             | Yes          | Yes                | Yes        |
+| outdialConsultDuration            | Long      | The amount of time in milli-seconds an agent spent consulting with another agent while handling for  this (out-bound)contact                                                            | Yes          | Yes                | Yes        |
+| outdialConferenceCount            | Int       | The number of times an agent established a conference contact leg with the caller and another agent while in an outdial call.                                                           | Yes          | Yes                | Yes        |
+| outdialConferenceDuration         | Long      | The amount of time in milli-seconds an agent spent in a conference contact leg with the caller and another agent while in an outdial call.                                              | Yes          | Yes                | Yes        |
+| conferenceDuration                | Long      | The amount of time an agent spent in conference with a caller and another agent.                                                                                                        | Yes          | Yes                | Yes        |
+| selfserviceDuration               | Long      | The amount of time, in minutes, during which a call was in IVR state.                                                                                                                   | Yes          | Yes                | Yes        |
+| selfserviceCount                  | Int       | The number of times the contact was in IVR state.                                                                                                                                       | Yes          | Yes                | Yes        |
+| consultToQueueCount               | Int       | Number of consult-to-queue within an interaction.                                                                                                                                       | Yes          | Yes                | Yes        |
+| consultToQueueDuration            | Long      | Total duration spent on consult-to queue within an interaction.                                                                                                                         | Yes          | Yes                | Yes        |
+| outdialConsultToQueueCount        | Int       | This is the count of consult-to-queue within an outdial interaction.                                                                                                                    | Yes          | Yes                | Yes        |
+| outdialConsultToQueueDuration     | Long      | Total duration in milli-seconds spent on consult-to queue within an call-leg in interaction (outbound calls)                                                                            | Yes          | Yes                | Yes        |
+| pausedDuration                    | Long      | The amount of time in milli-seconds during which a call was in pause state.                                                                                                             | Yes          | Yes                | Yes        |
+| pausedCount                       | Int       | Count of call recordings that were paused.                                                                                                                                              | Yes          | Yes                | Yes        |
+| slaValue                          | String    | The value of Service Level Agreement in seconds for the queue in this call-leg                                                                                                          | Yes          | Yes                | Yes        |
+| handleTime                        | Long      | The total amount of time an agent handles the call.                                                                                                                                     | Yes          | Yes                | Yes        |
+| consultEpId                       | String    | Entrypoint ID in the event of consult to EP/DN.                                                                                                                                         | Yes          | Yes                | Yes        |
+| consultEpName                     | String    | Entrypoint Name in the event of consult to EP/DN.                                                                                                                                       | Yes          | Yes                | Yes        |
+| childContactId                    | String    | Child interaction Id in the case of consult to EP/DN.                                                                                                                                   | Yes          | Yes                | Yes        |
+| childContactType                  | String    | Determines the type of Consult.                                                                                                                                                         | Yes          | Yes                | Yes        |
+| isChildLeg                        | Boolean   | Denotes whether the call-leg represents the consult to EP/DN scenario.                                                                                                                  | Yes          | Yes                | Yes        |
+| consultToEPCount                  | Int       | Defines the number of times consult was done to EP/DN for that call-leg.                                                                                                                | Yes          | Yes                | Yes        |
+| consultToEPDuration               | Long      | Defines the duration of consult for EP/DN for that call-leg.                                                                                                                            | Yes          | Yes                | Yes        |
+| outdialConsultToEPCount           | Int       | Outdial Consult To EntryPoint Count.                                                                                                                                                    | Yes          | Yes                | Yes        |
+| outdialConsultToEPDuration        | Long      | Outdial Consult To EntryPoint Duration.                                                                                                                                                 | Yes          | Yes                | Yes        |
+| nextDestination.agent.id          | String    | ID of the second agent in the event of transfer.                                                                                                                                        | Yes          | Yes                | Yes        |
+| nextDestination.agent.name        | String    | Name of the second agent in the event of transfers.                                                                                                                                     | Yes          | Yes                | Yes        |
+| nextDestination.agent.signInId    | String    | SignInId name using which an agent logs in to the Agent Desktop.                                                                                                                        | No           | No                 | Yes        |
+| nextDestination.agent.sessionId   | String    | Agent session ID of the second agent in the event of transfers.                                                                                                                         | Yes          | Yes                | Yes        |
+| nextDestination.agent.phoneNumber | String    | Endpoint of the second agent in the event of transfers.                                                                                                                                 | Yes          | Yes                | Yes        |
+| nextDestination.agent.channelId   | String    | Channel ID of the second agent in the event of transfers.                                                                                                                               | Yes          | Yes                | Yes        |
+| nextDestination.team.id           | String    | ID of the second team.                                                                                                                                                                  | Yes          | Yes                | Yes        |
+| nextDestination.team.name         | String    | Name of the second team.                                                                                                                                                                | Yes          | Yes                | Yes        |
+| nextDestination.queue.id          | String    | ID of the second queue in the event of transfers                                                                                                                                        | Yes          | Yes                | Yes        |
+| nextDestination.queue.name        | String    | Name of the second queue in the event of transfers                                                                                                                                      | Yes          | Yes                | Yes        |
+| abandonedSlCount                  | Int       | Number of calls that got terminated while in queue within the Service Level threshold provisioned for the queue or skill.                                                               | Yes          | Yes                | Yes        |
+| agentToDnTransferCount            | Int       | The number of times a call was transferred from an agent.                                                                                                                               | Yes          | Yes                | Yes        |
+| agentToQueueTransferCount         | Int       | Number of times a call was transferred from an agent to a queue.                                                                                                                        | Yes          | Yes                | Yes        |
+| agentTransferedInCount            | Int       | Number of times a call was transferred to an agent.                                                                                                                                     | Yes          | Yes                | Yes        |
+| integerGlobalVariables.name       | String    | Name or title associated with an Integer entity.                                                                                                                                        | No           | No                 | Yes        |
+| integerGlobalVariables.value      | Int       | Integer Numeric value associated with an entity.                                                                                                                                        | Yes          | Yes                | Yes        |
+| stringGlobalVariables.name        | String    | Name or title associated with an String entity.                                                                                                                                         | No           | No                 | Yes        |
+| stringGlobalVariables.value       | String    | String value associated with an entity.                                                                                                                                                 | Yes          | Yes                | Yes        |
+| longGlobalVariables.name          | String    | Name or title associated with an Long entity.                                                                                                                                           | No           | No                 | Yes        |
+| longGlobalVariables.value         | Long      | Long Numeric value associated with an entity.                                                                                                                                           | Yes          | Yes                | Yes        |
+| doubleGlobalVariables.name        | String    | Name or title associated with an double entity.                                                                                                                                         | No           | No                 | Yes        |
+| doubleGlobalVariables.value       | Float     | Double does not exist in GraphQL.  Float has same precision has Java Double.  double Numeric value associated with an entity.                                                           | Yes          | Yes                | Yes        |
+| booleanGlobalVariables.name       | String    | Name or title associated with an boolean entity.                                                                                                                                        | No           | No                 | Yes        |
+| booleanGlobalVariables.value      | Boolean   | Boolean value associated with an entity.                                                                                                                                                | Yes          | Yes                | Yes        |
+| matchedSkills                     | JSON      | The skill of an agent that matched the skill requirements for the call sessio                                                                                                           | No           | Yes                | Yes        |
+| requiredSkills                    | JSON      | The required skill of an agent for the call session.                                                                                                                                    | No           | Yes                | Yes        |
+| matchedSkillsProfile              | String    | Shows the name of the skill profile that is associated with an agent.                                                                                                                   | Yes          | Yes                | Yes        |
+| consultToQueueHandledCount        | Int       | count of the consult to queue taskleg was handled by an agent.                                                                                                                          | Yes          | Yes                | Yes        |
+| outdialConsultToQueueHandledCount | Int       | count of the outdial consult to queue taskleg was handled by an agent.                                                                                                                  | Yes          | Yes                | Yes        |
+| interQueueBlindTransferCount      | Int       | Denotes the number of successful blind transfers made to the queue.                                                                                                                     | Yes          | Yes                | Yes        |
+| interQueueConsultTransferCount    | Int       | Denotes the number of consult transfers followed by successful transfers to the queue.                                                                                                  | Yes          | Yes                | Yes        |
+| consultSuccessCount               | Int       | Indicates the number of successful consults initiated from the queue.                                                                                                                   | Yes          | Yes                | Yes        |
+| conferenceSuccessCount            | Int       | Indicates the number of successful conferences initiated from the queue.                                                                                                                | Yes          | Yes                | Yes        |
+| blindTransferToAgentCount         | Int       | Count of successful blind transfer to another agent.                                                                                                                                    | Yes          | Yes                | Yes        |
