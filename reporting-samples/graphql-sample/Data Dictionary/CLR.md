@@ -1,9 +1,7 @@
 CLR Data Dictionary
 ===================
 
->  **Note** - For all the filterable fields, use `filter` argument to perform filtering.
-
-| Field Name                        | Data Type | Description                                                                                                                                                                             | Aggregatable | Group By's Allowed | Filterable | Is Sortable ? |
+| Field Name                        | Data Type | Description                                                                                                                                                                             | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|:-------------:|
 | id                                | String    | Unique ID for each task-leg.                                                                                                                                                            | Yes          | Yes                | Yes        | Yes           |
 | taskId                            | String    | contact session Id or Interaction of the task-leg                                                                                                                                       | Yes          | Yes                | Yes        | Yes           |
