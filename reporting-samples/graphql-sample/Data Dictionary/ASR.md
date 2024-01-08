@@ -1,8 +1,6 @@
 ASR Data Dictionary
 ===================
 
-> **Note** - For all the filterable fields,  use ```filter``` argument to perform filtering.
-
 | Field Name                                          | Data Type  | Description                                                                                                                                                                                                                                      | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable? |
 |:---------------------------------------------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------:|:-------------------:|:------------------------------------------------------------:| ------------ |
 | isActive                                            | Boolean    | Flag that indicates whether the session is active.                                                                                                                                                                                               | Yes                     | Yes                 | Yes                                                          | No           |
