@@ -61,4 +61,4 @@
 | matchedSkillsProfile                         | String     | The name of the skill profile, which an agent is associated to.                                                                                                                                         | No*                     | Yes                 | Yes/filter                                 | No           |
 | preferredAgentName                           | String     | Name of the Preferred Agent or the name of the preferred agent who made the callback to the contact in queue.                                                                                           | No*                     | Yes                 | Yes/filter                                 | Yes          |
 
-* : Aggregation is not allowed for this field along with other CAR fields. Refer CSR Data Dictionary.
+\* : Aggregation is not allowed for this field along with other CAR fields. Refer CSR Data Dictionary.
