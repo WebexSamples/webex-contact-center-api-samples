@@ -33,4 +33,5 @@
 | channelInfo.activities.nodes.isLogoutActivity  | Boolean    | Flag that indicates whether this activity was the logout activity.                                 | Yes                      | Yes                  | Yes/extFilter                               | No            |
 | channelInfo.activities.nodes.changedById       | String     | Agent State Changed by supervisorId                                                                | Yes                      | Yes                  | Yes/extFilter                               | No            |
 | channelInfo.activities.nodes.changedByName     | String     | Agent State changed by supervisorName                                                              | Yes                      | Yes                  | Yes/extFilter                               | No            |
+ 
 \* Aggregation is not allowed for this field along with other AAR fields. Please refer ASR Data Dictionary for aggregation support on this field.
