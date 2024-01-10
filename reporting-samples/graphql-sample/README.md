@@ -9,7 +9,7 @@ For a quick overview of the `search` API and how to use our documentation, refer
 A GraphQL API enables clients to construct queries in order to retrieve data. The queries are defined by the API server in the form of a GraphQL schema, which acts as a contract between the server and the client.
 
 > [!TIP]
->
+> 
 > For an introduction to GraphQL, refer : **[GraphQL - 101](https://graphql.org/learn/)**
 
 The API allows access to the following:
@@ -30,7 +30,7 @@ Based on the operation, a query can be of two types:
    
    ![Structure of query fetching raw data](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/Raw%20query%20sample.png)
 
-1. **Query to perform aggregations**: performing aggregation operations on record fields with support for group-bys, filtering, and pagination. In SQL terminology, the API is capable of the following queries:
+2. **Query to perform aggregations**: performing aggregation operations on record fields with support for group-bys, filtering, and pagination. In SQL terminology, the API is capable of the following queries:
    
    * `SELECT COUNT(id), MAX(totalDuration) FROM task`
    
@@ -74,7 +74,6 @@ A sample query to fetch tasks created on 1st January 2023
     }
   }
 }
-
 ```
 
 > [!NOTE]
@@ -409,11 +408,7 @@ Some samples for filtering on object types are given below
 
 ### Fields supported for filtering
 
-Refer data dictionary for fields supporting filtering.
-
-
-
-
+Refer [data dictionary](#data-dictionary) for fields supporting filtering.
 
 ## Performing Aggregations
 
@@ -612,7 +607,7 @@ Sample queries to perform aggegations with sub-filter criteria on various data t
 
 ### Fields supported for aggregations
 
-Refer data dictionary for fields supporting aggregation.
+Refer [data dictionary](#data-dictionary) for fields supporting aggregation.
 
 ## Fetching Raw Data
 
@@ -1044,6 +1039,18 @@ This repository is oragnized into multiple files that you can paste directly int
 | 13  | [FetchAgentSkill.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/FetchAgentSkill.graphql)                   | SKILLS : Extracting Agent skills from an ASR record                                                                                                                      | Fetching raw data       |
 | 14  | [FilteringUsingAgentSkill.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/FilteringUsingAgentSkill.graphql) | SKILLS : Filtering ASR records based on Agent skill criteria                                                                                                             | Fetching raw data       |
 | 15  | [GroupByAgentSkills.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/GroupByAgentSkills.graphql)             | SKILLS: Group ASR records based on set of skills                                                                                                                         | Performing Aggregations |
+
+## Data Dictionary
+
+Refer data dictionaries for available fields and supported operations for each query type and record.
+
+| Query Type / Record  | Dictionary Link               |
+| -------------------- | ----------------------------- |
+| taskDetails / CSR    | [link](DataDictionary/CSR.md) |
+| taskDetals / CAR     | [link](DataDictionary/CAR.md) |
+| agentSession / ASR   | [link](DataDictionary/ASR.md) |
+| agentSession / AAR   | [link](DataDictionary/AAR.md) |
+| taskLegDetails / CLR | [link](DataDictionary/CLR.md) |
 
 ## Support
 
