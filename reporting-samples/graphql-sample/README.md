@@ -1046,11 +1046,11 @@ Refer data dictionaries for available fields and supported operations for each q
 
 | Query Type / Record  | Dictionary Link               |
 | -------------------- | ----------------------------- |
-| taskDetails / CSR    | [link](DataDictionary/CSR.md) |
-| taskDetals / CAR     | [link](DataDictionary/CAR.md) |
-| agentSession / ASR   | [link](DataDictionary/ASR.md) |
-| agentSession / AAR   | [link](DataDictionary/AAR.md) |
-| taskLegDetails / CLR | [link](DataDictionary/CLR.md) |
+| taskDetails / CSR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CSR.md) |
+| taskDetals / CAR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CAR.md) |
+| agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/ASR.md) |
+| agentSession / AAR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/AAR.md) |
+| taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CLR.md) |
 
 ## Support
 
