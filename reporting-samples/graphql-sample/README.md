@@ -1044,13 +1044,13 @@ This repository is oragnized into multiple files that you can paste directly int
 
 Refer data dictionaries for available fields and supported operations for each query type and record.
 
-| Query Type / Record  | Dictionary Link                  |
-| -------------------- | -------------------------------- |
-| taskDetails / CSR    | [link](Data%20Dictionary/CSR.md) |
-| taskDetals / CAR     | [link](Data%20Dictionary/CAR.md) |
-| agentSession / ASR   | [link](Data%20Dictionary/ASR.md) |
-| agentSession / AAR   | [link](Data%20Dictionary/AAR.md) |
-| taskLegDetails / CLR | [link](Data%20Dictionary/CLR.md) |
+| Query Type / Record  | Dictionary Link               |
+| -------------------- | ----------------------------- |
+| taskDetails / CSR    | [link](DataDictionary/CSR.md) |
+| taskDetals / CAR     | [link](DataDictionary/CAR.md) |
+| agentSession / ASR   | [link](DataDictionary/ASR.md) |
+| agentSession / AAR   | [link](DataDictionary/AAR.md) |
+| taskLegDetails / CLR | [link](DataDictionary/CLR.md) |
 
 ## Support
 
