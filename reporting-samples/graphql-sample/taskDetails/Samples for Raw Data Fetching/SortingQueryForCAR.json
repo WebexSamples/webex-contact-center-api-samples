@@ -1,0 +1,61 @@
+{
+    "data": {
+        "taskDetails": {
+            "tasks": [
+                {
+                    "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13",
+                    "channelType": "telephony",
+                    "activities": {
+                        "totalCount": 11,
+                        "nodes": [
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774892084-new",
+                                "createdTime": 1704774892084
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774892633-flow-activity",
+                                "createdTime": 1704774892633
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774894520-treatment",
+                                "createdTime": 1704774894520
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774900532-flow-activity",
+                                "createdTime": 1704774900532
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774901013-treatment-completed",
+                                "createdTime": 1704774901013
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774901758-connect",
+                                "createdTime": 1704774901758
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774908171-connected",
+                                "createdTime": 1704774908171
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774909879-capture-started",
+                                "createdTime": 1704774909879
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774959098-ended",
+                                "createdTime": 1704774959098
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774959099-wrapup-done",
+                                "createdTime": 1704774959099
+                            },
+                            {
+                                "id": "ad28739a-1961-4e7d-b6fc-af5c45fa8c13-1704774960991-capture-available",
+                                "createdTime": 1704774960991
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
