@@ -1,5 +1,7 @@
 # AAR Data Dictionary
 
+Agent Activity Record (AAR), represents an atomic step in the agent workflow. The following fields are available from the API from an AAR record.
+
 | Field Name                                     | Field Type | Description                                                                                        | Is Aggregation allowed ? | Is GroupBy allowed ? | Is Filter allowed ?/Filter argument to use. | Is Sortable ? |
 |------------------------------------------------|------------|----------------------------------------------------------------------------------------------------|--------------------------|----------------------|---------------------------------------------|---------------|
 | agentId                                        | String     | A UUID that identifies an agent.                                                                   | No*                      | Yes                  | Yes/filter                                  | No            |

@@ -1,5 +1,7 @@
 # CSR Data Dictionary
 
+Customer Session Record (CSR), represents the customer workflow, consisting of a sequence of customer activities. The following fields are available from the API from an CSR record.
+
 | Field Name                         | Field Type | Description                                                                                                                                                                                                        | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?<br/>(use 'filter' argument for all the fields) | Is Sortable? |
 |------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|-------------------------------------------------------------------|--------------|
 | id                                 | String     | A unique string that identifies the contact session.                                                                                                                                                               | Yes                     | Yes                 | Yes                                                               | Yes          |
