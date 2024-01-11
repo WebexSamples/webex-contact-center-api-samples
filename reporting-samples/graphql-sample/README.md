@@ -645,31 +645,6 @@ Samples for various data types are given below
 
 To fetch data matching a filter criteria, the `filter` and `extFilter` arguments can be used. Refer [section on filtering](#support-for-filtering-data) for details
 
-### Sorting Support
-When fetching raw data, the data can be sorted in ascending or descending order. Fields supporting sorting accept a `sort` argument where the sorting criteria can be specified as 
-`asc` for ascending and `desc` for descending. The below sample sorts data in ascending order of "createdTime" field.
-
-```graphql
-{
-  taskDetails(
-    from: 1644859375000
-    to: 1671038575000
-  ) {
-    tasks {
-      id
-      createdTime(sort : asc)
-    }
-  }
-}
-```
-Refer to the [data dictionary](#data-dictionary) for fields supporting sorting.
-Sample queries to fetch data with sorting are given below.
-
-| Usecase                                                                                                                         | Query Type/ Record   | Query                                                                                                               | Response                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------- |----------------------| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Fetch id, createdTime and endedTime for tasks sorted based on ascending order of createdTime field                              | taskDetails / CSR    |[link](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/Sorting%20results%20based%20on%20a%20field.graphql)                                                                                                             | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/Sorting%20results%20based%20on%20a%20field-response.json)                                                                                                                 | 
-| Fetch id of the taskLeg, taskId, channelType and createdTime based on ascending order of createdTime field                      | taskLegDetails / CLR |[link](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/taskLegDetails/Fetching%20Raw%20Data/Sorting%20samples%20based%20on%20a%20field.graphql)                                                                                                             | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/taskLegDetails/Fetching%20Raw%20Data/Sorting%20samples%20based%20on%20a%20field-response.json)                                                                                                                 |
-
 ### Pagination support for fetching raw data
 
 Pagination is supported for raw queries, Refer [section on pagination](#pagination-support-1) for details
