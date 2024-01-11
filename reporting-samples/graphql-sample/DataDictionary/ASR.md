@@ -1,6 +1,6 @@
 ASR Data Dictionary
 ===================
-Agent Session Record (ASR), represents the agent workflow, consisting of a sequence of agent activities. The following fields are available from the API from an ASR record.
+Agent Session Record (ASR) - It represents the agent workflow, consisting of a sequence of agent activities. The following fields are available in an ASR record.
 
 Note - These fields are only applicable for the API and not Analyzer UI.
 

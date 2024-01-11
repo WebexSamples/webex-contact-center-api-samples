@@ -1,6 +1,6 @@
 CLR Data Dictionary
 ===================
-Call Leg Record(CLR), lists the standard fields and measures aggregated at Queue level. TThe following fields are available from the API from a CLR record.
+Call Leg Record (CLR)- It lists the standard fields and measures aggregated at Queue level. TThe following fields are available in a CLR record.
 
 Note - These fields are only applicable for the API and not Analyzer UI.
 

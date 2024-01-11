@@ -1,6 +1,6 @@
 # CAR Data Dictionary
 
-Customer Activity Record (CAR), represents an atomic step in the customer workflow. The following fields are available from the API from a CAR record.
+Customer Activity Record (CAR) - It represents an atomic step in the customer workflow. The following fields are available in a CAR record.
 
 Note - These fields are only applicable for the API and not Analyzer UI.
 

@@ -1,6 +1,6 @@
 # AAR Data Dictionary
 
-Agent Activity Record (AAR), represents an atomic step in the agent workflow. The following fields are available from the API from an AAR record.
+Agent Activity Record (AAR) - It represents an atomic step in the agent workflow. The following fields are available in an AAR record.
 
 Note - These fields are only applicable for the API and not Analyzer UI.
 
