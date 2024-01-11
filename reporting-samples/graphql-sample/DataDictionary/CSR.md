@@ -1,6 +1,8 @@
 # CSR Data Dictionary
 
-Customer Session Record (CSR), represents the customer workflow, consisting of a sequence of customer activities. The following fields are available from the API from an CSR record.
+Customer Session Record (CSR), represents the customer workflow, consisting of a sequence of customer activities. The following fields are available from the API from a CSR record.
+
+Note - These fields are only applicable for the API and not Analyzer UI.
 
 | Field Name                         | Field Type | Description                                                                                                                                                                                                        | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?<br/>(use 'filter' argument for all the fields) | Is Sortable? |
 |------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|-------------------------------------------------------------------|--------------|

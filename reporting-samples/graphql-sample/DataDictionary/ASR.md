@@ -2,6 +2,8 @@ ASR Data Dictionary
 ===================
 Agent Session Record (ASR), represents the agent workflow, consisting of a sequence of agent activities. The following fields are available from the API from an ASR record.
 
+Note - These fields are only applicable for the API and not Analyzer UI.
+
 | Field Name                                          | Data Type  | Description                                                                                                                                                                                                                                      | Is Aggregation allowed ? | Is GroupBy allowed ? | Is Filter allowed ?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------------------------:|:----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------:|:--------------------:|:-------------------------------------------------------------:|---------------|
 | isActive                                            | Boolean    | Flag that indicates whether the session is active.                                                                                                                                                                                               |           Yes            |         Yes          |                              Yes                              | No            |
