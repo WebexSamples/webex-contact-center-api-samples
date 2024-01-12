@@ -227,8 +227,7 @@
                   "script": "https://wxccdemo.s3.us-west-1.amazonaws.com/widgets/audio-video/bundle.js",
                   "attributes": {
                     "darkmode": "$STORE.app.darkMode"
-                  },
-                  "properties": {}
+                  }
                 }
               ]
             }
