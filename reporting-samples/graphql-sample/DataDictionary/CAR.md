@@ -2,7 +2,7 @@
 
 Customer Activity Record (CAR) - It represents an atomic step in the customer workflow. The following fields are available in a CAR record.
 
-Note - These fields are only applicable for the API and not Analyzer UI.
+Note - These fields are applicable only for the API and not for Analyzer UI.
 
 | Field Name                                   | Field Type | Description                                                                                                                                                                                             | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?/Filter argument to use. | Is Sortable? |
 |----------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|--------------------------------------------|--------------|

@@ -2,7 +2,7 @@
 
 Customer Session Record (CSR) - It represents the customer workflow, consisting of a sequence of customer activities. The following fields are available in a CSR record.
 
-Note - These fields are only applicable for the API and not Analyzer UI.
+Note - These fields are applicable only for the API and not for Analyzer UI.
 
 | Field Name                         | Field Type | Description                                                                                                                                                                                                        | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?<br/>(use 'filter' argument for all the fields) | Is Sortable? |
 |------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|-------------------------------------------------------------------|--------------|
