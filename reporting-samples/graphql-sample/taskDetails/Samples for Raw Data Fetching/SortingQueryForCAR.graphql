@@ -1,0 +1,19 @@
+{
+    taskDetails(
+        from: 1704758400000
+        to: 1704880297000
+        filter: { id: { equals: "ad28739a-1961-4e7d-b6fc-af5c45fa8c13" } }
+    ) {
+        tasks {
+            id
+            channelType
+            activities {
+                totalCount
+                nodes {
+                    id
+                    createdTime(sort: asc)
+                }
+            }
+        }
+    }
+}
