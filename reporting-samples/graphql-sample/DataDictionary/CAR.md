@@ -1,5 +1,9 @@
 # CAR Data Dictionary
 
+Customer Activity Record (CAR) - It represents an atomic step in the customer workflow. The following fields are available in a CAR record.
+
+Note - These fields are applicable only for the API and not for Analyzer UI.
+
 | Field Name                                   | Field Type | Description                                                                                                                                                                                             | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?/Filter argument to use. | Is Sortable? |
 |----------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|--------------------------------------------|--------------|
 | activities.nodes.id                          | String     | A unique string that identifies the contact activity.                                                                                                                                                   | Yes                     | Yes                 | Yes/extFilter                              | No           |
