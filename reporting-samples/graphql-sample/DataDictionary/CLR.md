@@ -1,5 +1,8 @@
 CLR Data Dictionary
 ===================
+Call Leg Record (CLR) - It lists the standard fields and measures aggregated at Queue level. TThe following fields are available in a CLR record.
+
+Note - These fields are applicable only for the API and not for Analyzer UI.
 
 | Field Name                        | Data Type |                                                                                       Description                                                                                       | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|:-------------:|
