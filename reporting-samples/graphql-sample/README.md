@@ -740,7 +740,7 @@ To fetch more records within `activities.nodes` , the cursor can be retrieved fr
 
 The `activities` field supports the following two arguments to support inner pagination
 
-1. _first_ - Accepts an Int value which determines the number of records to be fetched. The default the value is set to **25** and the maximum supported value is **100**.
+1. _first_ - Accepts an Int value which determines the number of records to be fetched. By default, the value is set to **25** and the maximum supported value is **100**.
 
 2. _after_ - Accepts a String value which determines the next page to be fetched.
 
@@ -813,7 +813,7 @@ In case of aggregation queries involving group bys, pagination can be done to fe
 
 5. longGlobalVariables
 
-To get fetch the global variable data, pass name of the global in the argument
+To fetch the global variable data, pass the name of the global in the argument
 Eg: To get data of the Global Variable of String Type with name as GlobalVariable1
 
 ```graphql
@@ -955,7 +955,7 @@ For performing group by's using global variables, the fields required for group 
 }
 ```
 
-Using aliasing group by can be done on multtiple global variables of the same type.
+Using aliasing group by can be done on multiple global variables of the same type.
 
 ```graphql
 {
@@ -1005,9 +1005,9 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Restrictions
 
-1. For any type of query, the query span, i.e., the `from` and `to,` should not exceed a period of 12 months.
+1. For any type of query, the query span, i.e. the `from` and `to,` should not exceed a period of 12 months.
 
-2. When fetching AAR and CAR raw data, the query span, i.e., `from` and `to,` cannot exceed more than 30 days.
+2. When fetching AAR and CAR raw data, the query span, i.e. `from` and `to` cannot exceed more than 30 days.
 
 3. When fetching CSR and CLR documents using pagination, the API supports up to a maximum of 100K records.
 
@@ -1017,7 +1017,7 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Recommendations and best practices
 
-- While querying data or performing aggregations, it is recommended to use fields belonging to only a single data type.
+- While querying data or performing aggregations, it is recommended to use fields belonging to only a single data type. Ex: In a taskDetails query, it is recommended to use fields either from CSR or from CAR and not from both. Similarly, for AgentSession query, it is recommended to use fields either from ASR or from AAR.
 
 - It is recommended to use the _taskDetails_ query for any Task related data instead of the older _task_ query.
 
