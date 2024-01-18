@@ -8,7 +8,7 @@ For a quick overview of the `search` API and how to use our documentation, refer
 
 ## Introduction
 
-A GraphQL API enables clients to construct queries in order to retrieve data. The queries are defined by the API server in the form of a GraphQL schema, which acts as a contract between the server and the client.
+A GraphQL API enables clients to construct queries to retrieve data. The queries are defined by the API server in the form of a GraphQL schema, which acts as a contract between the server and the client.
 
 **Note:** For an introduction to GraphQL, refer : [GraphQL - 101](https://graphql.org/learn/)
 
@@ -102,7 +102,7 @@ taskDetails(
 
 2. _to_ - Mandatory argument: accepts a _Long_ value representing the epoch timestamp, which defines the end of the query span. By default, the `createdTime` field is used for comparison, but this can be overridden to use `endedTime` by using the `timeComparator` argument.
 
-3. _timeComparator_ - Optional argument: accepts a value of the `QueryTimeType` type. This defines which field should `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
+3. _timeComparator_ - Optional argument: accepts a value of the `QueryTimeType` type. This defines the field which `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
 
 4. _filter_ - Optional argument: accepts a _TaskDetailsFilters_ object. This is used to filter results based on a criteria defined on CSR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
@@ -171,7 +171,7 @@ agentSession(
 
 #### Arguments
 
-1. _from_ - Mandatory argument: accepts a _Long_ value representing epoch timestamp which defines the start of the query span, the `startTime` field is used for comparision.
+1. _from_ - Mandatory argument: accepts a _Long_ value representing epoch timestamp which defines the start of the query span, the `startTime` field is used for comparison.
 
 2. _to_ - Mandatory argument: accepts a _Long_ value representing the epoch timestamp, which defines the end of the query span; the `startTime` field is used for comparison.
 
@@ -237,11 +237,11 @@ taskLegDetails(
 
 #### Arguments
 
-1. _from_ - Mandatory argument: accepts a _Long_ value representing the epoch timestamp which defines the start of the query span, By default, the `createdTime` field is used for comparison, but this can be overriden to use `endedTime` by using the `timeComparator` argument.
+1. _from_ - Mandatory argument: accepts a _Long_ value representing the epoch timestamp which defines the start of the query span, By default, the `createdTime` field is used for comparison, but this can be overridden to use `endedTime` by using the `timeComparator` argument.
 
 2. _to_ - Mandatory argument: accepts a _Long_ value representing epoch timestamp which defines the end of the query span, By default, the `createdTime` field is used for comparison, but this can be overridden to use `endedTime` by using the `timeComparator` argument.
 
-3. _timeComparator_ - Optional argument: accepts a value of `QueryTimeType` type. This defines which field should `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
+3. _timeComparator_ - Optional argument: accepts a value of `QueryTimeType` type. This defines the field  which `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
 
 4. _filter_ - Optional argument: accepts an _TaskLegDetailsFilters_ object. This is used to filter results based on user-defined criteria. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
@@ -340,7 +340,7 @@ filter: {
 
 #### Compound operators for filtering
 
-Compound filter include 2 types of operators - `and` & `or` operators, these accept a multiple filter criteria in a form of a list.
+Compound filters include 2 operators - `and` & `or` operator, these accept multiple filter criterion in the form of a list.
 
 Fetch records where channelType is telephony and status is either created or ended
 
@@ -380,7 +380,7 @@ filter: {
 }
 ```
 
-Since all the CAR and AAR fields are present in the `activities` object, filtering using `extFilter` also follow the same pattern, one such sample is given below
+Since all the CAR and AAR fields are present in the `activities` object, filtering using `extFilter` also follows the same pattern, one such sample is given below
 
 ```graphql
 extFilter : {
@@ -417,11 +417,11 @@ Each object requires the following mandatory arguments :
 3. _type_ - Enum, defines the aggregation operation; depending on the data type of the field specified, the following aggregations are supported.
 
 | Type        | Description                                                     | Supported data types             |
-| ----------- | --------------------------------------------------------------- | -------------------------------- |
-| count       | Counts the occurence of the field across documents.             | Int, Long, Float, String boolean |
-| min         | Aggregates the value of the field across documents.             | Int, Long, Float                 |
+| ----------- |-----------------------------------------------------------------| -------------------------------- |
+| count       | Counts the occurrence of the field across documents.             | Int, Long, Float, String boolean |
+| min         | Returns the minimum value of the field across documents.        | Int, Long, Float                 |
 | max         | Returns the maximum value of the field across documents         | Int, Long, Float                 |
-| sum         | Returns the minimum value of the field across documents         | Int, Long, Float                 |
+| sum         | Aggregates the value of the field across documents.             | Int, Long, Float                 |
 | average     | Returns the average of the field across documents.              | Int, Long, Float                 |
 | cardinality | Returns the count of unique value of the field across documents | Int, Long, Float, String boolean |
 
@@ -503,7 +503,7 @@ Some sample queries to perform group by on various data types.
 
 Aggregations can be grouped based on time intervals such as `DAILY` , `WEEKLY` etc. by adding the `intervalStartTime` as a requested field and using the `aggregationInterval` argument, which accepts two parameters.
 
-- _interval_ - Mandatory argument: accepts an Enum, Based on the query span (i.e difference of the values passed in `from` and `to`) the following values are supported.
+- _interval_ - Mandatory argument: accepts an Enum, Based on the query span (i.e. difference of the values passed in `from` and `to`) the following values are supported.
 
 | Query Span        |                            Supported intervals                             |
 | :---------------- | :------------------------------------------------------------------------: |
@@ -536,7 +536,7 @@ Sample queries to perform interval based aggregations.
 
 #### Pagination support
 
-When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer to the [Pagination section](#pagination-support-1) on more details.
+When using group bys, the data can be paginated to get more results, using the `pagination` argument. Refer to the [Pagination section](#pagination-support-1) for more details.
 
 ### Support for filtering within Aggregation
 
@@ -564,15 +564,15 @@ aggregations: [
 ]
 ```
 
-Sample queries to perform aggegations with filter criteria on various data types are given below.
+Sample queries to perform aggregations with filter criteria on various data types are given below.
 
-| Usecase                                                                                                | Query Type/ Record     | Query                                                                                                                                                                                                             | Response                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Get the number of tasks handled and their average total duration of tasks handled by particular queue. | taskDetails / CSR      | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
-| Fetch average duration of parked events for _telephony_ contacts.                                      | taskDetails / CAR      | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
-| Fetch the count of agents and teams for active sessions.                                               | agentSession / ASR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
-| For a given agent, fetch the count of connected events across sessions.                                | agentSession / AAR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
-| Get the count of abandoned callLegs                                                                    | taskLegDetails  /  CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
+| Usecase                                                                                                    | Query Type/ Record     | Query                                                                                                                                                                                                             | Response                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------------| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Get the number of tasks handled and their average total duration of tasks handled by the particular queue. | taskDetails / CSR      | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters.graphql)            | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20query%20with%20filters-response.json)            |
+| Fetch the average duration of parked events for _telephony_ contacts.                                      | taskDetails / CAR      | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR.graphql)               | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithFiltersForCAR-response.json)               |
+| Fetch the count of agents and teams for active sessions.                                                   | agentSession / ASR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query.graphql)          | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20global%20filter%20query-response.json)          |
+| For a given agent, fetch the count of connected events across sessions.                                    | agentSession / AAR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR.graphql)         | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationQueryWithGlobalFilterForAAR-response.json)         |
+| Get the count of abandoned callLegs                                                                        | taskLegDetails  /  CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter.graphql) | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Aggregation%20query%20with%20Global%20Filter-response.json) |
 
 #### Aggregations with sub filters
 
@@ -589,7 +589,7 @@ aggregations: [
 ]
 ```
 
-Sample queries to perform aggegations with sub-filter criteria on various data types are given below.
+Sample queries to perform aggregations with sub-filter criteria on various data types are given below.
 
 | Usecase                                                                                                                        | Query Type/ Record    | Query                                                                                                                                                                                                        | Response                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -684,7 +684,7 @@ The `search` API supports pagination for both operations: performing aggregation
 }
 ```
 
-`hasNextPage` is a boolean field that determines if more data exists for the given query. If the `hasNextPage` value is `true,` clients can fetch the value of the `endCursor` field, which is a string and acts as an identifier for the next page. `endCursor` value is passed in the subsquent query to fetch the next set of records.
+`hasNextPage` is a boolean field that determines if more data exists for the given query. If the `hasNextPage` value is `true,` clients can fetch the value of the `endCursor` field, which is a string and acts as an identifier for the next page. `endCursor` value is passed in the subsequent query to fetch the next set of records.
 
 The `pagination` argument accepts the `cursor` input parameter, which accepts the `endCursor` value and fetches the next page. A sample is given below.
 
@@ -748,7 +748,7 @@ The `activities` field supports the following two arguments to support inner pag
 
 **Note:** Since inner pagination enables record level pagination, the cursor value retrieved from a record is not applicable for other records, hence it is highly recommended to use a `filter` to exclude the other records.
 
-A sample query to fetch next **5** CAR records for task Id **9bd2d70a-3438-4784-b9fd-83e263538393** after the cursor value of **1697205941011** is shown below
+A sample query to fetch next **5** CAR records for task id **9bd2d70a-3438-4784-b9fd-83e263538393** after the cursor value of **1697205941011** is shown below
 
 ```graphql
 {
@@ -787,16 +787,16 @@ Sample queries for inner pagination of CAR and AAR are given below.
 In case of aggregation queries involving group bys, pagination can be done to fetch more records. Sample queries are given below.
 
 | Usecase                                                                                                                                                                     | Query Type/ Record   | Query                                                                                                                                                                                                                 | Response                                                                                                                                                                                                                          |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Get the number of contacts handled on a daily basis per agent, team, site, queue & entrypoint for each channel.                                                             | taskDetails / CSR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query.graphql)                    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%20-response.json)                       |
 | Get the next page of records for the above query.                                                                                                                           | taskDetails / CSR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202.graphql)                | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/Aggregation%20pagination%20query%202-response.json)                      |
 | Get the count of "connected" or "ctq-accepted" activities on a daily basis per agent, team, site, queue & entrypoint                                                        | taskDetails / CAR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR.graphql)                | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR-response.json)                      |
 | Get the next page of records for the above query.                                                                                                                           | taskDetails / CAR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.graphql)               | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Performing%20Aggregations/AggregationQueryWithPaginationForCAR2.json)                              |
-| Fetch the total connectedcount, average connectedDuration,total idleCount, average idleDuration.                                                                            | agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                              |
+| Fetch the total connected count, average connectedDuration,total idleCount, average idleDuration.                                                                           | agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination.graphql)                           | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination%20-response.json)                              |
 | Get the next page of records for the above query.                                                                                                                           | agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination%202.graphql)                       | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/Aggregation%20Pagination%202-response.json)                             |
 | Find the max duration for each agent,team,site and state.                                                                                                                   | agentSession / AAR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR.graphql)                   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR-response.json)                         |
 | Get the next page of records for the above query.                                                                                                                           | agentSession / AAR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2.graphql)                  | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/agentSession/Performing%20Aggregations/AggregationPaginationQueryForAAR2-response.json)                        |
-| Get average of queue quration, ringing duration, connected duration and self-service duration  on a daily basis per agent, team, site, queue & entrypoint for each channel. | taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json)     |
+| Get average of queue duration, ringing duration, connected duration and self-service duration  on a daily basis per agent, team, site, queue & entrypoint for each channel. | taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination.graphql)     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%20-%20response.json)     |
 | Get the next page for the above query.                                                                                                                                      | taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202.graphql) | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/blob/main/reporting-samples/graphql-sample/taskLegDetails/Performing%20Aggregations/Group%20by%20Aggregation%20with%20Pagination%202%20-%20response.json) |
 
 ## Global Variables Support
@@ -825,7 +825,7 @@ stringGlobalVariables(name: "GlobalVariable1") {
 }
 ```
 
-Multple global variables of same type can be fetched using [aliasing](https://graphql.org/learn/queries/#aliases):
+Multiple global variables of the same type can be fetched using [aliasing](https://graphql.org/learn/queries/#aliases):
 
 ```graphql
 # To fetch multiple global variables use aliasing - https://graphql.org/learn/queries/#aliases
@@ -1031,7 +1031,7 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Sample Usecases and queries
 
-This repository is oragnized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
+This repository is organized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
 
 | #   | File Name                                                                                                                                                                                        | Comments                                                                                                                                                                 | Query Type              |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
@@ -1056,9 +1056,9 @@ This repository is oragnized into multiple files that you can paste directly int
 Refer data dictionaries for available fields and supported operations for each query type and record.
 
 | Query Type / Record  | Dictionary Link                                                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------------| ----------------------------------------------------------------------------------------------------------------------------------------- |
 | taskDetails / CSR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CSR.md) |
-| taskDetals / CAR     | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CAR.md) |
+| taskDetails / CAR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CAR.md) |
 | agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/ASR.md) |
 | agentSession / AAR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/AAR.md) |
 | taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CLR.md) |
