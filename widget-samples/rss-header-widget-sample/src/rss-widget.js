@@ -62,7 +62,7 @@ export class RSSWidget extends LitElement {
 
   static get properties() {
     return {
-      rssFeed: { attribute: "rss-feed", type: String},
+      rss: { attribute: "rss", type: String},
       currentItemIndex: { type: Number },
       items: { type: Array },
       dark: { attribute: "dark", type: Boolean }
@@ -71,17 +71,17 @@ export class RSSWidget extends LitElement {
 
   constructor() {
     super();
-    this.rssFeed = 'https://developer.webex.com/api/content/blog/feed';
+    this.dark = false;
+    this.rss = 'https://developer.webex.com/api/content/blog/feed';
     this.items = [];
     this.currentItemIndex = 0;
     this.feed = {};
-    this.dark = false;
   }
 
   // This method will be called whenever the rssFeed property changes.
   async updated(changedProperties) {
-    if (changedProperties.has('rssFeed')) {
-      const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(this.rssFeed)}`);
+    if (changedProperties.has('rss')) {
+      const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(this.rss)}`);
       const data = await response.json();
       this.items = data.items;
       this.feed = data.feed;
