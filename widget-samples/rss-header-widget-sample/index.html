@@ -25,7 +25,7 @@
     </style>
   </head>
   <body>
-    <input id="rss-input" type="text" placeholder="Enter RSS feed URL">
+    <input id="rss-input" type="text" placeholder="Enter RSS feed URL" value="https://developer.webex.com/api/content/blog/feed">
     <button id="load-feed">Load Feed</button>
     <label for="dark-mode-checkbox">Dark Mode</label>
     <input id="dark-mode-checkbox" type="checkbox">
@@ -40,14 +40,14 @@
       const darkModeCheckbox = document.querySelector('#dark-mode-checkbox');
 
       loadFeedButton.addEventListener('click', () => {
-        rssWidget.setAttribute('rss-feed', rssInput.value);
+        rssWidget.setAttribute('rss', rssInput.value);
       });
 
       darkModeCheckbox.addEventListener('change', () => {
         if (darkModeCheckbox.checked) {
-          rssWidget.setAttribute('is-dark-mode', '');
+          rssWidget.setAttribute('dark', '');
         } else {
-          rssWidget.removeAttribute('is-dark-mode');
+          rssWidget.removeAttribute('dark');
         }
       });
     </script>
