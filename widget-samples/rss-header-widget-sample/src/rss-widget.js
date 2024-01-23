@@ -3,7 +3,7 @@ import {html, css, LitElement} from 'lit';
 export class RSSWidget extends LitElement {
   static get styles() {
     return css`
-      :host {
+      .rss-widget {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
@@ -43,9 +43,9 @@ export class RSSWidget extends LitElement {
       }
 
       /* Dark mode styles */
-      :host([is-dark-mode]) {
-        background-color: var(--background-color, black);
-        color: var(--text-color, white);
+      .rss-widget.dark {
+        background-color: black;
+        color: white;
         --link-color: var(--link-color-dark);
       }
 
@@ -65,7 +65,7 @@ export class RSSWidget extends LitElement {
       rssFeed: { attribute: "rss-feed", type: String},
       currentItemIndex: { type: Number },
       items: { type: Array },
-      isDarkMode: { attribute: "is-dark-mode", type: Boolean }
+      dark: { attribute: "dark", type: Boolean }
     }
   };
 
@@ -75,7 +75,7 @@ export class RSSWidget extends LitElement {
     this.items = [];
     this.currentItemIndex = 0;
     this.feed = {};
-    this.isDarkMode = false;
+    this.dark = false;
   }
 
   // This method will be called whenever the rssFeed property changes.
@@ -99,7 +99,7 @@ export class RSSWidget extends LitElement {
   render() {
     const currentItem = this.items[this.currentItemIndex] || {};
     return html`
-      <div class="rss-widget" ?is-dark-mode="${this.isDarkMode}">
+      <div class="rss-widget ${this.dark && "dark"}">
         <div class="feed-title">${this.feed.title}: ${this.items.length} items</div>
         <div class="feed-items">
           <div>

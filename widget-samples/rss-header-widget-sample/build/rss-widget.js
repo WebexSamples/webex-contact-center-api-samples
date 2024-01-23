@@ -30,7 +30,7 @@ var RssWidget = (function (exports) {
   class RSSWidget extends s {
     static get styles() {
       return i$2`
-      :host {
+      .rss-widget {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
@@ -39,6 +39,10 @@ var RssWidget = (function (exports) {
         height: 60px;
         overflow: hidden;
         border: 1px solid #ccc;
+        background-color: var(--background-color, white);
+        color: var(--text-color, black);
+        --link-color: blue;
+        --link-color-dark: lightblue;
       }
       .title {
         flex: 1;
@@ -64,6 +68,22 @@ var RssWidget = (function (exports) {
         0% { transform: translateX(100%); }
         100% { transform: translateX(-100%); }
       }
+
+      /* Dark mode styles */
+      .rss-widget.dark {
+        background-color: black;
+        color: white;
+        --link-color: var(--link-color-dark);
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     `;
     }
 
@@ -72,17 +92,17 @@ var RssWidget = (function (exports) {
         rssFeed: { attribute: "rss-feed", type: String},
         currentItemIndex: { type: Number },
         items: { type: Array },
-        name: {type: String},
+        dark: { attribute: "dark", type: Boolean }
       }
     };
 
     constructor() {
       super();
-      this.name = 'Somebody else';
       this.rssFeed = 'https://developer.webex.com/api/content/blog/feed';
       this.items = [];
       this.currentItemIndex = 0;
       this.feed = {};
+      this.dark = false;
     }
 
     // This method will be called whenever the rssFeed property changes.
@@ -106,7 +126,7 @@ var RssWidget = (function (exports) {
     render() {
       const currentItem = this.items[this.currentItemIndex] || {};
       return x`
-      <div class="rss-widget">
+      <div class="rss-widget ${this.dark && "dark"}">
         <div class="feed-title">${this.feed.title}: ${this.items.length} items</div>
         <div class="feed-items">
           <div>
