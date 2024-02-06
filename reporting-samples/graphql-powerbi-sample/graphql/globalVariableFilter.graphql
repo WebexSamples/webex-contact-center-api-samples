@@ -4,6 +4,7 @@
   taskDetails(
     from: {from}
     to: {to}
+      pagination: {cursor:"0"}
     filter: {
       stringGlobalVariables: {
         #Modify the value of your Global Variable with the filter below

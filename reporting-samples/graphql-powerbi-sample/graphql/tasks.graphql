@@ -1,5 +1,9 @@
 {
-  task(from: {from}, to: {to}) {
+  task(
+      from: {from}, 
+      to: {to}
+      pagination: {cursor:"0"}
+) {
     tasks {
       id
     }

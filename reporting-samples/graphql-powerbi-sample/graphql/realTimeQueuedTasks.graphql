@@ -4,6 +4,7 @@
     # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
     from: {from} #This can be set to Date.now() - (60 * 60 * 1000) for lookback in hours
     to: {to} #This can be set to Date.now() in millis
+      pagination: {cursor:"0"}
     filter: {
       #The main filter for active tasks is isActive: true
       and: [

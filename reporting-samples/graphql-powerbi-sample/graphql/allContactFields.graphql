@@ -1,7 +1,12 @@
 {
   # The following sample aims to pull a complete data set of all Contact fields from the GraphQL API
 
-  taskDetails(from: 1650000000000, to: 1659570373205) {
+  taskDetails(
+       from: {from}, 
+       to: {to}
+       pagination: {cursor:"0"}
+
+  ) {
     tasks {
       id
       status
