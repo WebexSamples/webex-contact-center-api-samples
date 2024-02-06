@@ -20,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.webexcc.api.captures.util.SetEnv;
 import com.webexcc.api.model.AgentsActivities;
 import com.webexcc.api.model.Authentication;
 import com.webexcc.api.model.Captures;
@@ -37,6 +38,9 @@ public class ApiService {
 	@Value("${data_center_url}")
 	String dataCenterURL;
 
+	@Value("${urlExpiration}")
+	String urlExpiration;
+
 	Authentication authentication;
 
 	public ApiService() {
@@ -49,7 +53,7 @@ public class ApiService {
 			headers.add("Content-Type", "application/json");
 			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
 			HttpEntity<?> entity = new HttpEntity<String>(null, headers);
-			ResponseEntity<String> response1 = restTemplate.exchange(baseURL + "/" + authentication.getOrginzationId(), HttpMethod.GET, entity, String.class);
+			ResponseEntity<String> response1 = restTemplate.exchange(dataCenterURL + "/organization/" + authentication.getOrginzationId(), HttpMethod.GET, entity, String.class);
 
 			ObjectMapper om = new ObjectMapper();
 			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
@@ -70,7 +74,9 @@ public class ApiService {
 		this.authentication = authentication;
 	}
 
-	public AgentsActivities getAgentsActivitiesForAGivenDay(String channelTypes, Calendar c) throws Exception {
+	public AgentsActivities getAgentsActivitiesForAGivenDay(String channelTypes, Calendar c) throws Exception { 
+		logger.info("AgentsActivities getAgentsActivitiesForAGivenDay: channelTypes: {} : c.getTime(): {}" , channelTypes, c.getTime().toLocaleString());
+		this.avoidThe429Message();
 
 		AgentsActivities returnThis = new AgentsActivities();
 		try {
@@ -105,7 +111,9 @@ public class ApiService {
 	/**
 	 * https://developer.webex-cx.com/documentation/agents/v1/get-agent-activities
 	 */
-	private AgentsActivities getAgentsActivitiesByFromTo(String channelTypes, long from, long to) throws Exception {
+	private AgentsActivities getAgentsActivitiesByFromTo(String channelTypes, long from, long to) throws Exception { 
+		logger.info("AgentsActivities getAgentsActivitiesByFromTo: {} : {} : {}" , channelTypes, from, to);
+		this.avoidThe429Message();
 		String url = "";
 		try {
 
@@ -142,6 +150,8 @@ public class ApiService {
 	 * https://developer.webex-cx.com/documentation/captures
 	 */
 	public Captures captures(StringBuffer taskIds) throws Exception {
+		logger.info("Captures captures:taskIds: {}" , taskIds);
+		this.avoidThe429Message();
 		try {
 			StringBuffer payload = new StringBuffer();
 			HttpHeaders headers = new HttpHeaders();
@@ -150,7 +160,7 @@ public class ApiService {
 			payload.append("{");
 			payload.append("\"query\": {");
 			payload.append("	\"orgId\": \"" + authentication.getOrginzationId() + "\",");
-			payload.append("	\"urlExpiration\": 30,");
+			payload.append("	\"urlExpiration\": " + urlExpiration + ",");
 			payload.append("	\"taskIds\": [" + taskIds.toString() + "],");
 //	example:payload.append("	\"taskIds\": [\"425cc6cf-89f7-4149-9b38-d6305227f4bc\",\"4ccbf863-4177-4b92-be0b-d0ba7a38ab45\",\"595b85db-86f4-473c-acee-cbebb52cc7bc\"],");
 			payload.append("	\"includeSegments\": false");
@@ -178,9 +188,22 @@ public class ApiService {
 
 	}
 
-	@Bean
-	public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
+	int x = 0;
+	private void avoidThe429Message() {
+		try {
+//			try to avoid the nap... AKA 429 Too Many Requests <- message
+			//60000 <- 1 minute/55 <- number of request per minute
+			if(x++ > 60) {
+				x = 0;
+				SetEnv.printJvmMemoryInfo();
+			}
+			Thread.sleep(60000/55);
+		} catch (Exception e1) {
+		}
+	}
 
+    @Bean
+    RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
 		return restTemplateBuilder.setConnectTimeout(Duration.ofSeconds(10)).setReadTimeout(Duration.ofSeconds(10)).build();
 	}
 

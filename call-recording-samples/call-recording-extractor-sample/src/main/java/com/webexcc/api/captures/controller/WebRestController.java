@@ -15,13 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import com.webexcc.api.captures.interfaces.FileSystemInterfaceAWSs3Impl;
 import com.webexcc.api.captures.interfaces.FileSystemInterfaceGCPCloudStorageImpl;
 import com.webexcc.api.captures.interfaces.FileSystemInterfaceLocalhostImpl;
@@ -76,7 +70,7 @@ public class WebRestController {
 	 * @param request
 	 * @param response
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public Object root(HttpServletRequest request, HttpServletResponse response, @RequestParam final Map<String, String> inboundParameters) {
 		logger.info("inboundParameters:{}", inboundParameters);
 		try {
@@ -139,7 +133,7 @@ public class WebRestController {
 	/**
 	 * renders web page
 	 */
-	@RequestMapping(value = "/homePage", method = RequestMethod.GET)
+	@GetMapping("/homePage")
 	@ResponseBody
 	public Object homePage(HttpServletRequest request, HttpServletResponse response) {
 		return this.getCaptures(request, response);
@@ -149,7 +143,7 @@ public class WebRestController {
 	 * /captures end-point request.getParameter("date"); == Calendar
 	 * request.getParameter("days"); == number of days to export call recordings.
 	 */
-	@RequestMapping(value = "/captures", method = RequestMethod.GET)
+	@GetMapping("/captures")
 	public Object getCaptures(HttpServletRequest request, HttpServletResponse response) {
 		StringBuffer sb = new StringBuffer("<html>\n");
 		htmlRender.header(sb);
@@ -225,9 +219,10 @@ public class WebRestController {
 					htmlRender.printCaptureAttributes(record, sb);
 					writeFileToDisk(record);
 				}
-
 			}
 		}
+		logger.info("##########################THE END#######################################");
+		logger.info("##########################THE END#######################################");
 	}
 
 	/**

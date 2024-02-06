@@ -5,6 +5,7 @@
     # NOTE: from and to are mandatory arguments that take the Epoch timestamp in milliseconds
     from: {from} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
     to: {to} #This can be set to Date.now() in millis
+      pagination: {cursor:"0"}
   ) {
     tasks {
       #Return the ID of the task

@@ -20,14 +20,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import com.webexcc.api.demo.service.AuthService;
 import com.webexcc.api.demo.service.SearchGraphQLService;
 import com.webexcc.api.demo.util.ExportUtil;
@@ -63,7 +56,7 @@ public class WebRestController {
 	 * @param request
 	 * @param response
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public Object root(HttpServletRequest request, HttpServletResponse response, @RequestParam final Map<String, String> inboundParameters) {
 		logger.info("inboundParameters:{}", inboundParameters);
 		try {
@@ -127,7 +120,7 @@ public class WebRestController {
 	 * 
 	 * @return html
 	 */
-	@RequestMapping(value = "/homePage", method = RequestMethod.GET)
+	@GetMapping("/homePage")
 	@ResponseBody
 	public Object homePage(HttpServletRequest request, HttpServletResponse response) {
 		if (authService.getAuthentication() == null) {
@@ -162,7 +155,7 @@ public class WebRestController {
 	 * @param endpointName
 	 * @return
 	 */
-	@RequestMapping(value = "/{endpointName}", method = RequestMethod.GET)
+	@GetMapping("/{endpointName}")
 	@ResponseBody
 	public Object endpointName(HttpServletRequest request, HttpServletResponse response, @PathVariable String endpointName) {
 		try {
