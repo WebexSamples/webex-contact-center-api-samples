@@ -46,10 +46,12 @@ Watch the demo below to understand what this application does and how to set it 
 ## Getting Started
 
   
-
-The application can be hosted on any Java VM environment and covers how this is done by building and hosting the application on localhost.
-
+The application is compatible with any Java Virtual Machine (JVM) environment. Detailed instructions for building and deploying the application on a local server are provided.
   
+### Prerequisites
+
+- JDK 11+ - To verify that JDK 11 is installed on your system, you can run the command java -version in the command line.
+- Maven - To verify that maven is installed on your system, you can run the command mvn -v in the command line.
 
 ### Executing the sample
 
@@ -93,7 +95,7 @@ How to run the sample application:
 **Step 3:**
 
   
-
+- cd to webex-contact-center-api-samples\reporting-samples\graphql-powerbi-sample
 - Install the dependencies using: `mvn clean install`
 
   
@@ -102,7 +104,7 @@ How to run the sample application:
 
   
 
-- Run the application locally using: `java -jar graphql-sample-java-0.0.1-SNAPSHOT.jar`
+- Run the application locally using: `java -jar target\graphql-sample-java-0.0.1-SNAPSHOT.jar`
 
 - This should run the app on `http://localhost:8080`
 
@@ -113,6 +115,7 @@ How to run the sample application:
   
 
 - You can modify the application as required.
+- Note: If jQuery returns a JSON with nested objects (objects within the main object), you'll need to customize your JSON to CSV conversion process. This requirement isn't due to a limitation of the software, but rather a consideration of how to effectively convert the structured response. You can opt to represent nested objects with multiple lines for each parent object, or alternatively, flatten the nested objects into a single row for a more streamlined CSV format.
 
   
 
