@@ -2,7 +2,6 @@
 
 ## Voice to Video Escalation to enable Video Contact Centers
 
-
 **[Watch Now: Voice to Video Contact Center with Instant Connect](https://app.vidcast.io/share/168c7b94-6fd9-48d1-9457-69d6dc643cc3)**
 
 **Overview**
@@ -66,7 +65,7 @@ Organization License snapshot
 
 ![screenshot](./images/6.png)
 
-**Step 3: Import the Instant_Connect_Contact_Center\.json Flow into Webex Contact Center\.**
+**Step 3: Import the VoiceFlow_InstantConnect\.json Flow into Webex Contact Center\.**
 
 - After importing the flow, this is how it looks\.
 
@@ -76,7 +75,11 @@ Organization License snapshot
 
 **OrgId** - Org ID of the organization – required for sending an SMS
 
+> **Note:** `Please replace this with your Organization's Org ID`
+
 **Token** - Bot token you created – required for authorization
+
+> **Note:** `Please replace this with your Bot Token that you have created via the Developer Portal`
 
 **GuestKey** – Guest URL shorthand
 
@@ -90,7 +93,11 @@ Organization License snapshot
 
 **Generate Link Node – HTTP POST Node**
 
-This is used to create a meeting link that will be popped into the Agent Desktop as a live meeting
+This is used to create a meeting link that will be popped into the Agent Desktop as a live meeting.
+
+This is currently what the HTTP Activity does above.
+
+The below line, shows a corresponding Client Side API Request which can be imported into Postman to test independently:
 
 ```
 curl --location --request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v2/joseencrypt](https://mtg-broker-a.wbx2.com/api/v2/joseencrypt)' \\
@@ -165,20 +172,21 @@ curl --location --request POST '[https://mtg\-broker\-a\.wbx2\.com/api/v1/sms/me
 
 **Send SMS Node Settings**
 
+Ensure that the screenpop section contains the required HTTP Activity settings as shown below:
+
 ![screenshot](./images/13.png)
 
 ![screenshot](./images/14.png)![screenshot](./images/15.png)
 
 **Demo**
 
-**Workflow and Narrative**
+**Customer Scenario and Workflow**
 
 - Customer calls into the business\. Self\-service is minimal, an Agent is selected, and the call is connected\.
 - In parallel, the Customer receives a link via SMS and the Agent automatically joins the Instant Connect Webex meeting that gets delivered on the Agent Desktop when the call is answered\.
 - The customer is able to turn on the speaker phone and join the instant connect meeting\.
 - Audio flows through the existing Webex Contact Center Agent to Customer voice path\.
 - Video flows through the Instant Connect meeting to provide a live video feed\.
-- There is minimal lag between the audio and video feed/channels\.
 
 **Screenshots**
 
