@@ -189,7 +189,7 @@
 | agentToQueueTransferCount          | Int        | Number of times a call was transferred from an agent to a queue.                                                                                                                                                   | Yes                     | Yes                 | Yes                                                               | Yes          |
 | totalBnrDuration                   | Long       | noise reduction total duration.                                                                                                                                                                                    | No                      | No                  | Yes                                                               | Yes          |
 | lastActivityTime                   | Long       | The time when the realtime process updated the record.                                                                                                                                                             | Yes                     | Yes                 | Yes                                                               | Yes          |
- 
+ test
 
 
 
