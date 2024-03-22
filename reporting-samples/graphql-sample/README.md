@@ -196,7 +196,7 @@ Sample query to fetch ASR fields can be found [here](https://github.com/WebexSam
 
 An taskLegDetails query operates over CLR data.
 
-**Note:**: TaskLegDetails object is part of Queue Based Reporting Early Access, and it will only return data if you are part of Early Access Program.
+**Note:** TaskLegDetails object is part of Queue Based Reporting Early Access, and it will only return data if you are part of Early Access Program.
 #### Sample Query
 
 A sample query to fetch taskLegs for a particular task on 1st January 2023
