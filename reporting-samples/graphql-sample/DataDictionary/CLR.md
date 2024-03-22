@@ -2,7 +2,9 @@ CLR Data Dictionary
 ===================
 Call Leg Record (CLR) - It lists the standard fields and measures aggregated at Queue level. TThe following fields are available in a CLR record.
 
-Note - These fields are applicable only for the API and not for Analyzer UI.
+Note -
+1. TaskLegDetails/CLR object is part of Queue Based Reporting Early Access, and it will only return data if you are part of Early Access Program. 
+2.These fields are applicable only for the API and not for Analyzer UI.
 
 | Field Name                        | Data Type |                                                                                       Description                                                                                       | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|:-------------:|
