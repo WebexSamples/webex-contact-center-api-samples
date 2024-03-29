@@ -12,7 +12,7 @@
 
 ## [2. Watch the Video: Working with the Postman Collection & Token Refresh](https://app.vidcast.io/share/58109fbb-0339-4026-a87c-fefcdd8686d3)
 
-- To import the postman collection, download the file : `New WebexCC OAuth2 APIs.postman_collection.json` attached to the repository.
+- To import the postman collection, copy the raw contents of postman collectoin json file : `New WebexCC OAuth2 APIs - v3.postman_collection.json` attached to the repository. And save them in a .json file for import.
 - `Import` this file into postman to begin using the collection.
 - Setup all the variables like the Authorization URLs, Client ID, Client Secret, and Redirect URIs as needed.
 
@@ -69,7 +69,9 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 
 The following change log shows the version updates to the files and what enhacements were added:
 
-| #   | Date       | File name                                          | Version | Comment                      |
-| --- | ---------- | -------------------------------------------------- | ------- | ---------------------------- |
-| 1   | March 2022 | New WebexCC OAuth2 APIs.postman_collection.json    | 0.0.1   | Initial Collection with GETs |
-| 2   | May 2022   | New WebexCC OAuth2 APIs_v1.postman_collection.json | 1.0.0   | Updates to Collection        |
+| #   | Date       | File name                                            | Version | Comment                      |
+| --- | ---------- | -----------------------------------------------------| ------- | ---------------------------- |
+| 3   | August 2023| New WebexCC OAuth2 APIs - v3.postman_collection.json | 3.0.0   | Minor corrections            |
+| 2   | May 2022   | New WebexCC OAuth2 APIs_v1.postman_collection.json   | 1.0.0   | Updates to Collection        |
+| 1   | March 2022 | New WebexCC OAuth2 APIs.postman_collection.json      | 0.0.1   | Initial Collection with GETs |
+
