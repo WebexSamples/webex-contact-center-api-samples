@@ -1006,7 +1006,7 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Restrictions
 
-1. For any type of query, the query span, i.e. the `from` and `to,` should not exceed a period of 12 months.
+1. For any type of query, the query span, i.e. the `from` and `to,` should not exceed a period of 13 months.
 
 2. When fetching AAR and CAR raw data, the query span, i.e. `from` and `to` cannot exceed more than 30 days.
 
