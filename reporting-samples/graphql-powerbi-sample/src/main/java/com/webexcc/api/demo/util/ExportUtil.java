@@ -21,15 +21,18 @@
 package com.webexcc.api.demo.util;
 
 import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.webexcc.api.demo.model.CallbackData;
+import com.webexcc.api.demo.model.ChannelInfo;
 import com.webexcc.api.demo.model.Customer;
 import com.webexcc.api.demo.model.LastEntryPoint;
 import com.webexcc.api.demo.model.LastQueue;
@@ -44,11 +47,12 @@ import com.webexcc.api.demo.model.Owner;
  * @author jiwyatt
  *
  */
+@Service
 public class ExportUtil {
 	static Logger logger = LoggerFactory.getLogger(ExportUtil.class);
 
 	// Using Java Reflection to convert to CSV
-	public synchronized static String toCsv(List<?> list) throws Exception {
+	public  String taskToCsv(List<?> list) throws Exception {
 		if (list.size() < 1) {
 			logger.info("Nothing to export");
 			return "Nothing to export";
@@ -220,5 +224,132 @@ public class ExportUtil {
 	public ExportUtil() {
 
 	}
+
+	public  String agentSessionToCsv(List<Object> list) {
+		if (list.size() < 1) {
+			logger.info("Nothing to export");
+			return "Nothing to export";
+		}
+//		JAVA reflection
+		Method[] methods = list.get(0).getClass().getMethods();
+//		builder header
+//		String header = getClassAttributes(list.get(0));
+		StringBuffer header = new StringBuffer();
+		for (Method method : methods) {
+//			logger.info("method:{}", method);
+			if (method.getName().startsWith("get")) {
+				String columnName = method.getName().substring(3);
+//				logger.info("columnName:{}", columnName);
+				if("ChannelInfo".equals(columnName)) {
+//					do nothing... this has to more custom code because ChannelInfo is an arrayList
+//					header.append("ChannelType").append(",");
+				}
+				else if (!"Class".equalsIgnoreCase(columnName)) {
+					header.append(columnName).append(",");
+				}
+				else {
+//					logger.info("columnName:{}", columnName);
+				}
+			}
+		}
+		header.append("\n");
+//		records
+		StringBuffer rows = new StringBuffer();
+		list.forEach(o -> {
+			try {
+				for (Method method : methods) {
+					if (method.getName().startsWith("get")) {
+						Object check = method.invoke(o);
+						if(logger.isDebugEnabled()) {
+//							logger.info("method:{}", method);						
+							//print method
+							if (check == null) {
+								rows.append(method).append(",");
+							} else if (check instanceof String) {
+								rows.append(method).append(",");
+							} else if (check instanceof Boolean) {
+								rows.append(method).append(",");
+							} else if (check instanceof ArrayList) {
+							} else if (check instanceof Long) {
+								rows.append(method).append(",");
+							} else if (check instanceof Integer) {
+								rows.append(method).append(",");
+							} else if (check instanceof ChannelInfo) { /** do nothing this is an arrayList **/}
+//							  else if (check instanceof LastEntryPoint) { /** do nothing **/}
+//							  else if (check instanceof LastQueue) { /** do nothing **/} 
+//							  else if (check instanceof LastTeam) { /** do nothing **/}
+//							  else if (check instanceof Owner) { /** do nothing **/}
+//							  else if (check instanceof Customer) { /** do nothing **/}
+//							  else if (check instanceof LastSite) { /** do nothing **/}
+//							  else if (check instanceof CallbackData) { /** do nothing **/}
+							  else if (check instanceof Class) { /** do nothing **/} 
+							else {
+								rows.append(check.getClass().getSimpleName() + ".class").append(",");
+							}						
+						}
+						else {
+							//print value
+							if (check == null) {
+								rows.append("-").append(",");
+							} else if (check instanceof String) {
+								rows.append((String) check).append(",");
+							} else if (check instanceof Boolean) {
+								Boolean v = (Boolean) check;
+								rows.append("" + v.booleanValue()).append(",");
+							} else if (check instanceof ArrayList) {
+							} else if (check instanceof Long) {
+								Long v = (Long) check;
+								rows.append("" + v).append(",");
+							} else if (check instanceof Integer) {
+								Integer v = (Integer) check;
+								rows.append("" + v).append(",");
+							} else if (check instanceof ChannelInfo) { /** do nothing this is an arrayList **/} 
+//							  else if (check instanceof LastEntryPoint) { /** do nothing **/}
+//							  else if (check instanceof LastQueue) { /** do nothing **/} 
+//							  else if (check instanceof LastTeam) { /** do nothing **/}
+//							  else if (check instanceof Owner) { /** do nothing **/}
+//							  else if (check instanceof Customer) { /** do nothing **/}
+//							  else if (check instanceof LastSite) { /** do nothing **/}
+//							  else if (check instanceof CallbackData) { /** do nothing **/}
+							  else if (check instanceof Class) { /** do nothing **/} 
+							else {
+								rows.append(check.getClass().getSimpleName() + ".class").append(",");
+							}						
+						}
+
+					}
+				}
+				rows.append("\n");
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		});
+		if(logger.isDebugEnabled()) {
+			writeToFile(header.toString() + rows.toString(), "./test_"+System.currentTimeMillis()+".csv");
+		}
+		return header.toString() + rows.toString();
+	}
+	
+	
+	
+	/**
+	 * This only happens if you are if logger.isDebugEnabled
+	 * @param content
+	 * @param filePath
+	 */
+    private void writeToFile(String content, String filePath) {
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(content);
+            System.out.println("Successfully wrote to the file.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+	
+	
+ 	
 
 }

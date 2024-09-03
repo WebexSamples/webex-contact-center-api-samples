@@ -1,0 +1,37 @@
+#     from: 1719000000000 
+#     to: 1721000000000 
+{
+  agentSession(
+    from: {from}, 
+    to: {to},
+    pagination: {cursor:"0"}
+  ) {
+    agentSessions {
+      isActive
+      agentId
+      agentName
+      agentSessionId
+      agentSignOutReason
+      userLoginId
+      endTime
+      startTime
+      state
+      siteId
+      siteName
+      teamId
+      teamName
+      orgId
+      orgName
+      multiMediaProfileType
+      skillsProfile
+      agentSkills
+      parentOrgId
+      parentOrgName
+      intervalStartTime(sort: asc)
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
