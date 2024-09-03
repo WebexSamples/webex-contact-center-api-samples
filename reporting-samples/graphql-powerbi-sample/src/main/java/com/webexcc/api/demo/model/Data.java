@@ -14,6 +14,7 @@ public class Data implements Serializable {
 	private static final long serialVersionUID = 5861647038550890545L;
 	private Tasks task;
 	private TaskDetails taskDetails;
+	private AgentSession agentSession;	
 
 	public Tasks getTask() {
 		return task;
@@ -30,5 +31,14 @@ public class Data implements Serializable {
 	public void setTaskDetails(TaskDetails taskDetails) {
 		this.taskDetails = taskDetails;
 	}
+
+	public AgentSession getAgentSession() {
+		return agentSession;
+	}
+
+	public void setAgentSession(AgentSession agentSession) {
+		this.agentSession = agentSession;
+	}
+ 
 
 }

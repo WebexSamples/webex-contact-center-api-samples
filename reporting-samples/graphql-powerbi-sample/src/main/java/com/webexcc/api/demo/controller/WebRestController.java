@@ -46,6 +46,9 @@ public class WebRestController {
 	@Autowired
 	SearchGraphQLService searchGraphQL;
 
+	@Autowired
+	ExportUtil exportUtil;
+
 	public WebRestController() {
 		super();
 	}
@@ -57,7 +60,8 @@ public class WebRestController {
 	 * @param response
 	 */
 	@GetMapping("/")
-	public Object root(HttpServletRequest request, HttpServletResponse response, @RequestParam final Map<String, String> inboundParameters) {
+	public Object root(HttpServletRequest request, HttpServletResponse response,
+			@RequestParam final Map<String, String> inboundParameters) {
 		logger.info("inboundParameters:{}", inboundParameters);
 		try {
 			java.util.LinkedHashMap<?, ?> map = (java.util.LinkedHashMap<?, ?>) inboundParameters;
@@ -173,9 +177,18 @@ public class WebRestController {
 
 			List<Object> list = new ArrayList<>();
 			String graphqlString = loadQueryFromFile(endpointName);
+			//
+			String s = "This code currently supports ONLY <b>tasks & agentSessions</b> searches.";
+			if(graphqlString.contains("agentSessions")) {
+				searchGraphQL.doAgentSessionSearch(list, 0, graphqlString);
+				s = exportUtil.agentSessionToCsv(list);
+			}
+			else if(graphqlString.contains("tasks")) {
+				searchGraphQL.doTaskSearch(list, 0, graphqlString);
+				s = exportUtil.taskToCsv(list);
+			}
 
-			searchGraphQL.doSearch(list, 0, graphqlString);
-			String s = ExportUtil.toCsv(list);
+			
 			return s;
 		} 
 		catch (com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException e) {
@@ -230,7 +243,7 @@ public class WebRestController {
 		fileName = Path.of("./graphql/" + fileToLoad + ".graphql");
 		// read the file
 		String graphqlString = Files.readString(fileName);
-		
+
 		graphqlString = graphqlString.replaceAll("\n", "\\\\n");
 		graphqlString = graphqlString.replaceAll("\"", "\\\\\"");
 
@@ -240,12 +253,11 @@ public class WebRestController {
 		long from = cal.getTimeInMillis();
 		logger.info("from:{}", new Date(from));
 		logger.info("to  :{}", new Date(to));
-		
 
 		graphqlString = graphqlString.replaceAll("\\{from}", "" + from);
 		graphqlString = graphqlString.replaceAll("\\{to}", "" + to);
 //		logger.info("graphqlString:\n{}", graphqlString);
-		
+
 		return graphqlString;
 	}
 

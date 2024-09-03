@@ -37,7 +37,7 @@ public class SearchGraphQLService extends AuthService {
 	 * @param graphqlString
 	 * @throws Exception
 	 */
-	public void doSearch(List<Object> list, int pageNumber, String graphqlString) throws Exception {
+	public void doTaskSearch(List<Object> list, int pageNumber, String graphqlString) throws Exception {
 		logger.info("doSearch(list: {}, pageNumber: {}, graphqlString:{}", list.size(), pageNumber, graphqlString);
 		this.avoidThe429Message();
 		try {
@@ -74,7 +74,7 @@ public class SearchGraphQLService extends AuthService {
 					int currentPage = pageNumber;
 					pageNumber++;
 					graphqlString = graphqlString.replaceAll("pagination: \\{cursor:\\\\\"" + currentPage + "\\\\\"}", "pagination: {cursor:\\\\\"" + (pageNumber) + "\\\\\"}");
-					doSearch(list, pageNumber, graphqlString);
+					doTaskSearch(list, pageNumber, graphqlString);
 				} else {
 					logger.info("NO MORE DATA; done with pagination");
 				}
@@ -92,7 +92,69 @@ public class SearchGraphQLService extends AuthService {
 					Thread.sleep(60000);
 				} catch (InterruptedException e1) {
 				}
-				doSearch(list, pageNumber, graphqlString);
+				doTaskSearch(list, pageNumber, graphqlString);
+			}
+			throw e;
+		}
+	}
+	
+	public void doAgentSessionSearch(List<Object> list, int pageNumber, String graphqlString) throws Exception {
+		logger.info("doSearch(list: {}, pageNumber: {}, graphqlString:{}", list.size(), pageNumber, graphqlString);
+		this.avoidThe429Message();
+		try {
+			HttpHeaders headers = new HttpHeaders();
+			headers.add("Content-Type", "application/json");
+			headers.add("Authorization", "Bearer " + authentication.getAccess_token());
+			//fix eol on Windows. .graphql files edited on a Windows machine would not work 
+//			logger.info("\ngraphqlString:\n{}", graphqlString);
+			graphqlString = graphqlString.replaceAll("\\r|\\n", "");
+			StringBuffer payload = new StringBuffer();
+			payload.append("{\"query\":\"");
+			payload.append(graphqlString);
+			payload.append("\"}");
+//			payload.append("\",\"variables\":null}");
+			HttpEntity<?> entity = new HttpEntity<>(payload.toString(), headers);
+			String url = dataCenterURL + "/search?orgId=" + authentication.getOrginzationId();
+			
+			logger.debug("\npayload.toString():\n{}", payload.toString());
+//			logger.debug("url:{}", url);
+			ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+			JSONObject json = new JSONObject(response.getBody());
+			logger.debug("response:\n{}", json.toString(4));
+			om.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
+			com.webexcc.api.demo.model.Root o = om.readValue(response.getBody(), com.webexcc.api.demo.model.Root.class);
+			
+			try {
+				list.addAll(o.getData().getAgentSession().getAgentSessions());
+			} catch (Exception e1) {
+				list.addAll(o.getData().getAgentSession().getAgentSessions());
+			}
+			try {
+				
+				if (o.getData().getAgentSession().getPageInfo().getHasNextPage()) {
+					logger.info("Processing page: {} collected records: {}", pageNumber, list.size());
+					int currentPage = pageNumber;
+					pageNumber++;
+					graphqlString = graphqlString.replaceAll("pagination: \\{cursor:\\\\\"" + currentPage + "\\\\\"}", "pagination: {cursor:\\\\\"" + (pageNumber) + "\\\\\"}");
+					doTaskSearch(list, pageNumber, graphqlString);
+				} else {
+					logger.info("NO MORE DATA; done with pagination");
+				}
+			} catch (Exception e) {
+				logger.info("NO MORE DATA on this page");
+			}
+		} //
+		catch (java.lang.NullPointerException e) {
+			logger.warn("NullPointerException", e);
+		} catch (Exception e) {
+			if (e.getMessage().startsWith("429 Too Many Requests")) {
+				logger.info("MORE DATA on page: {} collected records: {}", pageNumber, list.size());
+				logger.warn("Too Many Requests so take a nap for 1 minute.");
+				try {
+					Thread.sleep(60000);
+				} catch (InterruptedException e1) {
+				}
+				doAgentSessionSearch(list, pageNumber, graphqlString);
 			}
 			throw e;
 		}
@@ -111,6 +173,8 @@ public class SearchGraphQLService extends AuthService {
 		} catch (Exception e1) {
 		}
 	}
+
+ 
 	
 
 }
