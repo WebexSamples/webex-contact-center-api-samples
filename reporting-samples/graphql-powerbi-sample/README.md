@@ -3,7 +3,11 @@
 
   
 
+  
+
 ### Executing GraphQL Search API calls using Spring Boot
+
+  
 
   
 
@@ -11,7 +15,11 @@ This is a sample web application to convert the WebexCC GraphQL search API strin
 
   
 
+  
+
 The application can be modified, enhanced or extended to fit the use cases required.
+
+  
 
   
 
@@ -19,7 +27,11 @@ Watch the demo below to understand what this application does and how to set it 
 
   
 
+  
+
 ## [Watch Now: Integrating Webex Contact Center with Power BI - Sample Spring Boot Application](https://app.vidcast.io/share/6fd7cd09-7930-488c-9f02-0baa13f1d0e3)
+
+  
 
   
 
@@ -27,11 +39,23 @@ Watch the demo below to understand what this application does and how to set it 
 
   
 
-> **Note:** This is a sample that assumes you know the basics of GraphQL Search String API as well as Java/Spring Boot.
-
   
 
+> **Note:** This is a sample that assumes you know the basics of GraphQL Search String API as well as Java/Spring Boot.
+  
 > This demo goes over the Java sample code that is used to connect Webex Contact Center with Microsoft Power BI. The code exports the Webex Contact Center reporting data available on the GraphQL "Search" API to a Web interface consumable by Microsoft Power BI. It leverages the power of Spring Boot to make this consumable by any external data lake.
+
+
+
+*Search Queries*
+located in the directory graphql-powerbi-sample/graphql/*
+* task is supported
+* taskDetails is supported
+* agentSession is supported
+* flowInteractions is NOT supported but can be upon request or code it yourself
+* flowTraceEvents is NOT supported but can be upon request or code it yourself
+* taskLegDetails is NOT supported but can be upon request or code it yourself
+
 
   
 
@@ -39,21 +63,33 @@ Watch the demo below to understand what this application does and how to set it 
 
   
 
+  
+
 **https://developer.webex-cx.com/documentation/search**
+
+  
 
   
 
 ## Getting Started
 
   
+
 The application is compatible with any Java Virtual Machine (JVM) environment. Detailed instructions for building and deploying the application on a local server are provided.
-  
+
 ### Prerequisites
 
+  
+
 - JDK 11+ - To verify that JDK 11 is installed on your system, you can run the command java -version in the command line.
+
 - Maven - To verify that maven is installed on your system, you can run the command mvn -v in the command line.
 
+  
+
 ### Executing the sample
+
+  
 
   
 
@@ -61,7 +97,11 @@ How to run the sample application:
 
   
 
+  
+
 **Step 1:**
+
+  
 
   
 
@@ -69,34 +109,57 @@ How to run the sample application:
 
   
 
+  
+
 **Step 2:**
+
+  
 
   
 
 - Modify the property file under
 
+  
+
 `/src/main/resources/application.properties`
+
 |NAME| VALUE |
+
 |--|--|
+
 | client_id | value from https://developer.webex-cx.com/my-apps |
+
 | client_secret | value from https://developer.webex-cx.com/my-apps |
+
 | redirect_uri | value from https://developer.webex-cx.com/my-apps |
+
 | data_center_url | . . . . . . . . . . .**pick one** . . . . . . . . . . . . . . . . . . . . . . . . . . . . |
-|   |https://api.wxcc-us1.cisco.com |
-|   |https://api.wxcc-anz1.cisco.com |
-|   |https://api.wxcc-ca1.cisco.com |
-|   |https://api.wxcc-eu1.cisco.com |
-|   |https://api.wxcc-eu2.cisco.com |
-|   |https://api.wxcc-jp1.cisco.com| 
+
+| |https://api.wxcc-us1.cisco.com |
+
+| |https://api.wxcc-anz1.cisco.com |
+
+| |https://api.wxcc-ca1.cisco.com |
+
+| |https://api.wxcc-eu1.cisco.com |
+
+| |https://api.wxcc-eu2.cisco.com |
+
+| |https://api.wxcc-jp1.cisco.com|
 
   
+
   
 
 **Step 3:**
 
   
+
 - cd to webex-contact-center-api-samples\reporting-samples\graphql-powerbi-sample
+
 - Install the dependencies using: `mvn clean install`
+
+  
 
   
 
@@ -104,9 +167,15 @@ How to run the sample application:
 
   
 
+  
+
 - Run the application locally using: `java -jar target\graphql-sample-java-0.0.1-SNAPSHOT.jar`
 
+  
+
 - This should run the app on `http://localhost:8080`
+
+  
 
   
 
@@ -114,8 +183,13 @@ How to run the sample application:
 
   
 
+  
+
 - You can modify the application as required.
+
 - Note: If jQuery returns a JSON with nested objects (objects within the main object), you'll need to customize your JSON to CSV conversion process. This requirement isn't due to a limitation of the software, but rather a consideration of how to effectively convert the structured response. You can opt to represent nested objects with multiple lines for each parent object, or alternatively, flatten the nested objects into a single row for a more streamlined CSV format.
+
+  
 
   
 
@@ -123,7 +197,11 @@ How to run the sample application:
 
   
 
+  
+
 - [Getting Started with GraphQL /search API](https://github.com/CiscoDevNet/webex-contact-center-api-samples/tree/main/graphql-sample)
+
+  
 
   
 
@@ -131,7 +209,11 @@ How to run the sample application:
 
   
 
+  
+
 - [My Apps](https://developer.webex-cx.com/my-apps)
+
+  
 
   
 
@@ -139,13 +221,23 @@ How to run the sample application:
 
   
 
+  
+
 > These samples are meant to be used, as "samples", for demos, and to understand how to interact with the WebexCC APIs.
+
+  
 
 > When building a production grade solution, please consider the overall architecture and design with a security first approach.
 
+  
+
 > Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
 
+  
+
 > These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
+
+  
 
   
 
@@ -153,7 +245,11 @@ How to run the sample application:
 
   
 
+  
+
 For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+
+  
 
   
 
@@ -161,7 +257,11 @@ For discussions on the samples, feel free to participate in our Developer Commun
 
   
 
+  
+
 **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
+
+  
 
   
 
@@ -169,11 +269,17 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
 
   
 
+  
+
 ## Version History
 
   
 
+  
+
 - 0.0.1
+
+  
 
   
 
