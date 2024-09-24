@@ -1,4 +1,4 @@
-# Webex Contact Center API Samples
+# Webex Contact Center API Samples 
 
 ![License](https://img.shields.io/github/license/WebexSamples/webex-contact-center-api-samples)
 ![Contributors](https://img.shields.io/github/contributors/WebexSamples/webex-contact-center-api-samples)
@@ -58,7 +58,7 @@ The API samples are divided into several folders. It would be great to follow th
 > Also, please consider how you would extend this app for multiple orgs, manage tokens for the orgs, etc.
 > These samples are only meant to provide working, starter code and many layers have been simplified and abstracted away to focus on the Webex Contact Center use cases.
 
-## Support
+## Support 
 
 For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
 
