@@ -1,4 +1,4 @@
-# Webex Contact Center API Samples 
+# Webex Contact Center API Samples
 
 ![License](https://img.shields.io/github/license/WebexSamples/webex-contact-center-api-samples)
 ![Contributors](https://img.shields.io/github/contributors/WebexSamples/webex-contact-center-api-samples)
