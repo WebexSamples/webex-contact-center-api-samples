@@ -1,3 +1,9 @@
+[Vidcast](https://app.vidcast.io/share/bc75e3b8-973b-4902-997a-dfa75cd42f23)
+[WebexCC Desktop SDK Documentation](https://developer.webex-cx.com/documentation/guides/desktop)
+[Sample Code](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/my-custom-component)
+[Webex Developer Community](https://developer.webex-cx.com/support)
+
+
 ##########################################################################################
 # documentation
 ##########################################################################################
