@@ -193,7 +193,4 @@ Note - These fields are applicable only for the API and not for Analyzer UI.
 | agentToQueueTransferCount          | Int        | Number of times a call was transferred from an agent to a queue.                                                                                                                                                   | Yes                     | Yes                 | Yes                                                               | Yes          |
 | totalBnrDuration                   | Long       | noise reduction total duration.                                                                                                                                                                                    | No                      | No                  | Yes                                                               | Yes          |
 | lastActivityTime                   | Long       | The time when the realtime process updated the record.                                                                                                                                                             | Yes                     | Yes                 | Yes                                                               | Yes          |
- 
-
-
-
+| skillsAssignedIn                   | String       | The entity on which the skills are assigned to the task, Possible values are - queue, flow or null.                                                                                                                                                             | Yes                     | Yes                 | Yes                                                               | Yes          |
