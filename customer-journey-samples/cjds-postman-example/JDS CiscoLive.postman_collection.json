@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "df1a82fd-c630-41ab-8853-092c6a9c4991",
+		"_postman_id": "37d15cc1-98f0-485d-8b7a-205c51d56b19",
 		"name": "JDS CiscoLive GITHUB",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "3566874"
+		"_exporter_id": "4713476"
 	},
 	"item": [
 		{
@@ -31,7 +31,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "\n** Now use: https://developer.webex-cx.com/documentation/journey/v1/creates-or-merges-aliases-to-an-individual-in-jds\n\n{\n\t\"First\": \"Barry2\",\n\t\"Last\": \"smith2\",\n\t\"Numbers\": \"phone:13333334453,phone:+13333334453,email:4bsmith4454@yahoo.com,email:myself@there.com,customerId:334689557617731186\"\n}"
+					"raw": "\n** Now use: https://developer.webex-cx.com/documentation/journey/v1/creates-or-merges-aliases-to-an-individual-in-jds\n\n{\n\t\"First\": \"Barry2\",\n\t\"Last\": \"McLellan2\",\n\t\"Numbers\": \"phone:13333334453,phone:+13333334453,email:4bmclellan4454@yahoo.com,email:myself@there.com,customerId:334689557617731186\"\n}"
 				},
 				"url": {
 					"raw": "https://hooks.us.webexconnect.io/events/2QF64C3V6M",
@@ -152,7 +152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"customerEmail@company.com\",\n  \"identitytype\": \"email\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"customerEmail@company.com\",\n    \"channelType\": \"email\"\n  }\n}"
+					"raw": "{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"bmclella@cisco.com\",\n  \"identitytype\": \"email\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"bmclella@cisco.com\",\n    \"channelType\": \"email\"\n  }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -187,7 +187,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"customerEmail@company.com\",\n  \"identitytype\": \"email\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"customerEmail@company.com\",\n    \"channelType\": \"chat\"\n  }\n}"
+					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"bmclella@cisco.com\",\n  \"identitytype\": \"email\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"bmclella@cisco.com\",\n    \"channelType\": \"chat\"\n  }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -222,7 +222,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"+12263331234\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"+12263331234\",\n    \"channelType\": \"telephony\"\n  }\n}"
+					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"+12263762555\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"+12263762555\",\n    \"channelType\": \"telephony\"\n  }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -257,7 +257,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"12263331234\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"12263331234\",\n    \"channelType\": \"social\"\n  }\n}"
+					"raw": " \n{\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"wxcc\",\n  \"id\": \"{{$guid}}\",\n  \"identity\": \"12263762555\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"taskId\": \"{{$guid}}\",\n    \"origin\": \"12263762555\",\n    \"channelType\": \"social\"\n  }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -430,7 +430,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263331234\"));",
+							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263762555\"));",
 							"console.log(pm.environment.get(\"identity\"));"
 						],
 						"type": "text/javascript"
@@ -683,7 +683,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"task:new\",\n    \"source\": \"test\",\n    \"identity\": \"customerEmail@company.com\",\n    \"identitytype\": \"email\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"uiData\": {\n            \"title\": \"Payment Due\",\n            \"iconType\": \"telephony\",\n            \"subTitle\": \"Payment Due 30 days\"\n            }\n    }\n  }"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"task:new\",\n    \"source\": \"test\",\n    \"identity\": \"bmclella@cisco.com\",\n    \"identitytype\": \"email\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"uiData\": {\n            \"title\": \"Payment Due\",\n            \"iconType\": \"telephony\",\n            \"subTitle\": \"Payment Due 30 days\"\n            }\n    }\n  }"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -718,7 +718,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "See https://github.com/CiscoDevNet/cjaas-widgets/blob/main/CustomerJourney/README_VERSION_10.0.0.md\n{\n  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"custom/{{$guid}}\",\n  \"identity\": \"12263331234\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"Website visited\": \"[google](https://www.google.com)\",\n    \"Visit Duration\": \"any fields you want goes in the data section\",\n    \"transcript\":\"Text here will go into a modal window! You can fetch your transcript using the Captures API and post it in here! You may want to parse the script first\",\n    \"uiData\": {\n      \"division\": \"Department 1\", <-- If you set the CAD Variable JDSDivision within flow control, the widget will only show events filtered by that value\n      \"hidden\": \"Test\",   <--  This will hide your entry from the agent desktop, but will still store it in JDS\n      \"title\": \"My main title screen\",\n      \"iconType\": \"Pick your custom ICON here!\",\n      \"subTitle\": \"Smaller case subtitle! You can use Java escape codes in any text for emoji's \\u2705\",\n      \"filterTags\": [\"mortage\"]  <-- If you set the CAD Variable JDSDefaultFilter within flow control, the widget will initially load with that particular filter set.\n    }\n  }\n} \n"
+					"raw": "See https://github.com/CiscoDevNet/cjaas-widgets/blob/main/CustomerJourney/README_VERSION_10.0.0.md\n{\n  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"task:new\",\n  \"source\": \"custom/{{$guid}}\",\n  \"identity\": \"18505598991\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"Website visited\": \"[google](https://www.google.com)\",\n    \"Visit Duration\": \"any fields you want goes in the data section\",\n    \"transcript\":\"Text here will go into a modal window! You can fetch your transcript using the Captures API and post it in here! You may want to parse the script first\",\n    \"uiData\": {\n      \"division\": \"Department 1\", <-- If you set the CAD Variable JDSDivision within flow control, the widget will only show events filtered by that value\n      \"hidden\": \"Test\",   <--  This will hide your entry from the agent desktop, but will still store it in JDS\n      \"title\": \"My main title screen\",\n      \"iconType\": \"Pick your custom ICON here!\",\n      \"subTitle\": \"Smaller case subtitle! You can use Java escape codes in any text for emoji's \\u2705\",\n      \"filterTags\": [\"mortage\"]  <-- If you set the CAD Variable JDSDefaultFilter within flow control, the widget will initially load with that particular filter set.\n    }\n  }\n} \n"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -753,7 +753,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"Payment\",\n  \"source\": \"SMS%20Notifcation\",\n  \"identity\": \"+12263331234\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"phone\": \"+12263331234\",\n    \"Reason\": \"Late Payment Notification Sent – Notification\",\n    \"MessageForUser\" : \"We have noticed your Waterbill payment is overdue. The payment of $544.73 was due Thursday, March 23rd.\",\n    \"LinkSent\": \"[Payment URL](https://buy.stripe.com/test_4gw8AnfIUbLBcbC8wB)\",    \n    \"Notification\": \"1\",\n    \"Past Due Amount\": \"$544.73\",\n    \"category\": \"Water\",\n    \"status\": \"overdue\",\n    \"channelBreakout\": \"sms\",\n    \"uiData\": {\n        \"title\": \"\\u26A0\\uFE0F Past Due - 1st Notification\",\n        \"iconType\": \"Payment Notify\",\n        \"subTitle\": \"Payment Due 30 days\"\n        }\n}}\n"
+					"raw": "{  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"Payment\",\n  \"source\": \"SMS%20Notifcation\",\n  \"identity\": \"+12263762555\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"phone\": \"+12263762555\",\n    \"Reason\": \"Late Payment Notification Sent – Notification\",\n    \"MessageForUser\" : \"We have noticed your Waterbill payment is overdue. The payment of $544.73 was due Thursday, March 23rd.\",\n    \"LinkSent\": \"[Payment URL](https://buy.stripe.com/test_4gw8AnfIUbLBcbC8wB)\",    \n    \"Notification\": \"1\",\n    \"Past Due Amount\": \"$544.73\",\n    \"category\": \"Water\",\n    \"status\": \"overdue\",\n    \"channelBreakout\": \"sms\",\n    \"uiData\": {\n        \"title\": \"\\u26A0\\uFE0F Past Due - 1st Notification\",\n        \"iconType\": \"Payment Notify\",\n        \"subTitle\": \"Payment Due 30 days\"\n        }\n}}\n"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -783,7 +783,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"encodedIdentity\", encodeURIComponent(\"+12263331234\"));",
+							"pm.environment.set(\"encodedIdentity\", encodeURIComponent(\"+12263762555\"));",
 							"console.log(pm.environment.get(\"encodedIdentity\"));"
 						],
 						"type": "text/javascript"
@@ -860,7 +860,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"Payment\",\n  \"source\": \"SMS%20Notifcation\",\n  \"identity\": \"+12263331234\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"phone\": \"+12263331234\",\n    \"Reason\": \"Late Payment Notification Sent – Notification\",\n    \"MessageForUser\" : \"We have noticed your Waterbill payment is overdue. The payment of $544.73 was due Thursday, March 23rd.\",\n    \"LinkSent\": \"[Payment URL](https://buy.stripe.com/test_4gw8AnfIUbLBcbC8wB)\",    \n    \"Notification\": \"2\",\n    \"Past Due Amount\": \"$544.73\",\n    \"category\": \"Water\",\n    \"status\": \"overdue\",\n    \"channelBreakout\": \"sms\",\n    \"uiData\": {\n        \"title\": \"\\u23F0 Past Due - 2nd Notification\",\n        \"iconType\": \"Payment Notify\",\n        \"subTitle\": \"Payment Due 30 days\"\n        }\n}}\n"
+					"raw": "{  \"id\": \"{{$guid}}\",\n  \"specversion\": \"1.0\",\n  \"type\": \"Payment\",\n  \"source\": \"SMS%20Notifcation\",\n  \"identity\": \"+12263762555\",\n  \"identitytype\": \"phone\",\n  \"datacontenttype\": \"application/json\",\n  \"data\": {\n    \"phone\": \"+12263762555\",\n    \"Reason\": \"Late Payment Notification Sent – Notification\",\n    \"MessageForUser\" : \"We have noticed your Waterbill payment is overdue. The payment of $544.73 was due Thursday, March 23rd.\",\n    \"LinkSent\": \"[Payment URL](https://buy.stripe.com/test_4gw8AnfIUbLBcbC8wB)\",    \n    \"Notification\": \"2\",\n    \"Past Due Amount\": \"$544.73\",\n    \"category\": \"Water\",\n    \"status\": \"overdue\",\n    \"channelBreakout\": \"sms\",\n    \"uiData\": {\n        \"title\": \"\\u23F0 Past Due - 2nd Notification\",\n        \"iconType\": \"Payment Notify\",\n        \"subTitle\": \"Payment Due 30 days\"\n        }\n}}\n"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -895,7 +895,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Payment\",\n    \"source\": \"SMS%20Notifcation\",\n    \"identity\": \"+12263331234\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263331234\",\n        \"Past Due Amount\": \"$544.73\",\n        \"category\": \"Water\",\n        \"status\": \"complete\",\n        \"channelBreakout\": \"sms\",\n        \"uiData\": {\n            \"title\": \"\\u2705 Payment Processed\",\n            \"iconType\": \"Payment Complete\",\n            \"subTitle\": \"Payment Complete\"\n        }\n    }\n}"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Payment\",\n    \"source\": \"SMS%20Notifcation\",\n    \"identity\": \"+12263762555\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263762555\",\n        \"Past Due Amount\": \"$544.73\",\n        \"category\": \"Water\",\n        \"status\": \"complete\",\n        \"channelBreakout\": \"sms\",\n        \"uiData\": {\n            \"title\": \"\\u2705 Payment Processed\",\n            \"iconType\": \"Payment Complete\",\n            \"subTitle\": \"Payment Complete\"\n        }\n    }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -1080,7 +1080,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Payment Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263331234\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263331234\",\n        \"CallsQueuedNow\": \"Use GetQueueInfoNode Values\",\n        \"OldestCallTime\": \"Use GetQueueInfoNode Values\",\n        \"LoggedOnAgents\": \"Use GetQueueInfoNode Values\",\n        \"PIQ\": \"Use GetQueueInfoNode Values\",\n        \"EWT\": \"Use GetQueueInfoNode Values\",\n        \"category\": \"Payment\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Payment Queue\",\n            \"iconType\": \"QueueCallNeutral\",\n            \"subTitle\": \"EWT: Use GetQueueInfoNode Values PIQ:Use GetQueueInfoNode Values\"\n        }\n    }\n}"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Payment Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263762555\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263762555\",\n        \"CallsQueuedNow\": \"Use GetQueueInfoNode Values\",\n        \"OldestCallTime\": \"Use GetQueueInfoNode Values\",\n        \"LoggedOnAgents\": \"Use GetQueueInfoNode Values\",\n        \"PIQ\": \"Use GetQueueInfoNode Values\",\n        \"EWT\": \"Use GetQueueInfoNode Values\",\n        \"category\": \"Payment\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Payment Queue\",\n            \"iconType\": \"QueueCallNeutral\",\n            \"subTitle\": \"EWT: Use GetQueueInfoNode Values PIQ:Use GetQueueInfoNode Values\"\n        }\n    }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -1398,7 +1398,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Closed Queue Action\",\r\n    \"isActive\": true,\r\n    \"cooldownPeriodInMinutes\": 1,\r\n    \"rules\": {\r\n        \"logic\": \"SINGLE\",\r\n        \"condition\": \"Closed Queue,category,string,Count EQ 2\"\r\n    },\r\n    \"actionTriggers\": [\r\n        {\r\n            \"type\": \"Webhook\",\r\n            \"webhookURL\": \"https://hooks.us.webexconnect.io/events/6M347NJ6HY\",\r\n            \"attributes\": {\r\n                \"httpverb\": \"post\",\r\n                \"requestbody\": \"{\\\"SMS\\\":\\\"12263331234\\\",\\\"callID\\\":\\\"\\\",\\\"MessageToSend\\\":\\\"Hello there!\\\"}\"\r\n            }\r\n        }\r\n    ]\r\n}"
+					"raw": "{\r\n    \"name\": \"Closed Queue Action\",\r\n    \"isActive\": true,\r\n    \"cooldownPeriodInMinutes\": 1,\r\n    \"rules\": {\r\n        \"logic\": \"SINGLE\",\r\n        \"condition\": \"Closed Queue,category,string,Count EQ 2\"\r\n    },\r\n    \"actionTriggers\": [\r\n        {\r\n            \"type\": \"Webhook\",\r\n            \"webhookURL\": \"https://hooks.us.webexconnect.io/events/6M347NJ6HY\",\r\n            \"attributes\": {\r\n                \"httpverb\": \"post\",\r\n                \"requestbody\": \"{\\\"SMS\\\":\\\"12263762555\\\",\\\"callID\\\":\\\"\\\",\\\"MessageToSend\\\":\\\"Hello there!\\\"}\"\r\n            }\r\n        }\r\n    ]\r\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/admin/v1/api/journey-actions/workspace-id/{{workspaceId}}/template-id/64677fcdf096dd1139f2b463",
@@ -1442,7 +1442,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Closed Queue Action\",\r\n    \"isActive\": true,\r\n    \"cooldownPeriodInMinutes\": 1,\r\n    \"rules\": {\r\n        \"logic\": \"SINGLE\",\r\n        \"condition\": \"Closed Queue,category,string,Count EQ 2\"\r\n    },\r\n    \"actionTriggers\": [\r\n        {\r\n            \"type\": \"Webhook\",\r\n            \"webhookURL\": \"https://hooks.us.webexconnect.io/events/6M347NJ6HY\",\r\n            \"attributes\": {\r\n                \"httpverb\": \"post\",\r\n                \"requestbody\": \"{\\\"SMS\\\":\\\"12263331234\\\",\\\"callID\\\":\\\"\\\",\\\"MessageToSend\\\":\\\"Hello there!\\\"}\"\r\n            }\r\n        }\r\n    ]\r\n}"
+					"raw": "{\r\n    \"name\": \"Closed Queue Action\",\r\n    \"isActive\": true,\r\n    \"cooldownPeriodInMinutes\": 1,\r\n    \"rules\": {\r\n        \"logic\": \"SINGLE\",\r\n        \"condition\": \"Closed Queue,category,string,Count EQ 2\"\r\n    },\r\n    \"actionTriggers\": [\r\n        {\r\n            \"type\": \"Webhook\",\r\n            \"webhookURL\": \"https://hooks.us.webexconnect.io/events/6M347NJ6HY\",\r\n            \"attributes\": {\r\n                \"httpverb\": \"post\",\r\n                \"requestbody\": \"{\\\"SMS\\\":\\\"12263762555\\\",\\\"callID\\\":\\\"\\\",\\\"MessageToSend\\\":\\\"Hello there!\\\"}\"\r\n            }\r\n        }\r\n    ]\r\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/admin/v1/api/journey-actions/workspace-id/{{workspaceId}}/template-id/64677fcdf096dd1139f2b463",
@@ -1522,7 +1522,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Closed Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263331234\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263331234\",\n        \"category\": \"Closed\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Unstaffed While in Queue\",\n            \"iconType\": \"QueueCallMad\",\n            \"subTitle\": \"\\uD83D\\uDD52 Queue Closed\"\n        }\n    }\n}"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Closed Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263762555\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263762555\",\n        \"category\": \"Closed\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Unstaffed While in Queue\",\n            \"iconType\": \"QueueCallMad\",\n            \"subTitle\": \"\\uD83D\\uDD52 Queue Closed\"\n        }\n    }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -1557,7 +1557,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Closed Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263331234\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263331234\",\n        \"category\": \"Closed\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Called After Hours\",\n            \"iconType\": \"QueueCallMad\",\n            \"subTitle\": \"\\uD83C\\uDF19 Queue Closed\"\n        }\n    }\n}"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Closed Queue\",\n    \"source\": \"Voice%20Contact\",\n    \"identity\": \"+12263762555\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263762555\",\n        \"category\": \"Closed\",\n        \"channelBreakout\": \"voice\",\n        \"uiData\": {\n            \"title\": \"Called After Hours\",\n            \"iconType\": \"QueueCallMad\",\n            \"subTitle\": \"\\uD83C\\uDF19 Queue Closed\"\n        }\n    }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -1640,7 +1640,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Icons\",\n    \"source\": \"Postman\",\n    \"identity\": \"+12263331234\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263331234\",\n        \"status\": \"overdue\",\n        \"channelBreakout\": \"sms\",\n        \"uiData\": {\n            \"title\": \"Test 5 - My title\",\n            \"iconType\": \"Test 5\",\n            \"subTitle\": \"Your subtitle here!\"\n        }\n    }\n}"
+					"raw": "{\n    \"id\": \"{{$guid}}\",\n    \"specversion\": \"1.0\",\n    \"type\": \"Icons\",\n    \"source\": \"Postman\",\n    \"identity\": \"+12263762555\",\n    \"identitytype\": \"phone\",\n    \"datacontenttype\": \"application/json\",\n    \"data\": {\n        \"phone\": \"+12263762555\",\n        \"status\": \"overdue\",\n        \"channelBreakout\": \"sms\",\n        \"uiData\": {\n            \"title\": \"Test 5 - My title\",\n            \"iconType\": \"Test 5\",\n            \"subTitle\": \"Your subtitle here!\"\n        }\n    }\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/publish/v1/api/event?workspaceId={{workspaceId}}",
@@ -1670,7 +1670,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263331234\"));\r",
+							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263762555\"));\r",
 							"console.log(pm.environment.get(\"identity\"));"
 						],
 						"type": "text/javascript"
@@ -1718,7 +1718,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263331234\"));\r",
+							"pm.environment.set(\"identity\", encodeURIComponent(\"+12263762555\"));\r",
 							"console.log(pm.environment.get(\"identity\"));"
 						],
 						"type": "text/javascript"
@@ -1741,7 +1741,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/aliases/+12263331234,13333334453,+113333334453,bsmith4454@yahoo.com",
+					"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/aliases/+12263762555,13333334453,+113333334453,bmclellan4454@yahoo.com",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -1753,7 +1753,7 @@
 						"workspace-id",
 						"{{workspaceId}}",
 						"aliases",
-						"+12263331234,13333334453,+113333334453,bsmith4454@yahoo.com"
+						"+12263762555,13333334453,+113333334453,bmclellan4454@yahoo.com"
 					]
 				}
 			},
@@ -1805,7 +1805,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"firstName\": \"Barry\",\r\n  \"lastName\": \"smith\",\r\n  \"phone\": [\r\n    \"+12263331234\",\r\n    \"12263331234\"\r\n  ],\r\n  \"email\": [\r\n    \"bmclella2@cisco.com\"\r\n  ],\r\n  \"customerId\": [\r\n    \"4689557617731186\"\r\n  ]\r\n}"
+					"raw": "{\r\n  \"firstName\": \"Barry\",\r\n  \"lastName\": \"McLellan\",\r\n  \"phone\": [\r\n    \"+12263762555\",\r\n    \"12263762555\"\r\n  ],\r\n  \"email\": [\r\n    \"bmclella2@cisco.com\"\r\n  ],\r\n  \"customerId\": [\r\n    \"4689557617731186\"\r\n  ]\r\n}"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}",
@@ -1903,7 +1903,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "[\"smith@gmail.com\",\"ed22059qw\"]\n"
+					"raw": "[\"mclellan@gmail.com\",\"ed22059qw\"]\n"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/admin/v1/api/person/remove-identities/workspace-id/{{workspaceId}}/person-id/6468d0924e00f35f0113b74b",
@@ -1937,7 +1937,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "[\n    {\n        \"op\": \"add\",\n        \"path\": \"/phone/1\",\n        \"value\": \"+12263762557\"\n    },\n    {\n        \"op\": \"replace\",\n        \"path\": \"/lastName\",\n        \"value\": \"smith\"\n    },\n    {\n        \"op\": \"add\",\n        \"path\": \"/email/0\",\n        \"value\": \"customerEmail@company.com\"\n    },\n    {\n        \"op\": \"add\",\n        \"path\": \"/customerId/0\",\n        \"value\": \"4165548863\"\n    }\n]"
+					"raw": "[\n    {\n        \"op\": \"add\",\n        \"path\": \"/phone/1\",\n        \"value\": \"+12263762557\"\n    },\n    {\n        \"op\": \"replace\",\n        \"path\": \"/lastName\",\n        \"value\": \"McLellan\"\n    },\n    {\n        \"op\": \"add\",\n        \"path\": \"/email/0\",\n        \"value\": \"bmclella@cisco.com\"\n    },\n    {\n        \"op\": \"add\",\n        \"path\": \"/customerId/0\",\n        \"value\": \"4165548863\"\n    }\n]"
 				},
 				"url": {
 					"raw": "{{baseUrl}}/admin/v1/api/person/workspace-id/{{workspaceId}}/person-id/64657b750c804f1b4167b428",
@@ -1953,6 +1953,88 @@
 						"{{workspaceId}}",
 						"person-id",
 						"64657b750c804f1b4167b428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Init Token",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token-passphrase",
+						"value": "YOUR_PASSWORD",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://<YOUR_TOKEN_SERVICE_URL>/token-service/init?name=TOKEN_NAME",
+					"protocol": "https",
+					"host": [
+						"<YOUR_TOKEN_SERVICE_URL>"
+					],
+					"path": [
+						"token-service",
+						"init"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TOKEN_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token-passphrase",
+						"value": "YOUR_PASSWORD",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://<YOUR_TOKEN_SERVICE_URL>/token-service?name=TOKEN_NAME",
+					"protocol": "https",
+					"host": [
+						"<YOUR_TOKEN_SERVICE_URL>"
+					],
+					"path": [
+						"token-service"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "TOKEN_NAME"
+						}
 					]
 				}
 			},
