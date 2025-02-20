@@ -1988,13 +1988,12 @@
 					}
 				],
 				"url": {
-					"raw": "https://<YOUR_TOKEN_SERVICE_URL>/token-service/init?name=TOKEN_NAME",
+					"raw": "https://<YOUR_TOKEN_SERVICE_URL>/init?name=TOKEN_NAME",
 					"protocol": "https",
 					"host": [
 						"<YOUR_TOKEN_SERVICE_URL>"
 					],
 					"path": [
-						"token-service",
 						"init"
 					],
 					"query": [
@@ -2022,13 +2021,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://<YOUR_TOKEN_SERVICE_URL>/token-service?name=TOKEN_NAME",
+					"raw": "https://<YOUR_TOKEN_SERVICE_URL>?name=TOKEN_NAME",
 					"protocol": "https",
 					"host": [
 						"<YOUR_TOKEN_SERVICE_URL>"
-					],
-					"path": [
-						"token-service"
 					],
 					"query": [
 						{
