@@ -2038,7 +2038,59 @@
 		}
 	],
 	"auth": {
-		"type": "bearer"
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "state",
+				"value": "new",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "cjp:config cjp:config_read cjp:config_write",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secretJDS}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_idJDS}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://webexapis.com/v1/access_token",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://webexapis.com/v1/authorize",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/callback",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "access_tokenJDS",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
 	},
 	"event": [
 		{
