@@ -1016,6 +1016,8 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 5. When using `extFilter` in a query to fetch raw data, if matching records for first page cannot be populated from the first 2500 Records (based on query span and `filter` criteria), then the API will respond back with 413 Status code.
 
+6. The total number of arguments allowed across filters, extFilter and predicates is capped at a default limit of 1000.
+
 ## Recommendations and best practices
 
 - While querying data or performing aggregations, it is recommended to use fields belonging to only a single data type. Ex: In a taskDetails query, it is recommended to use fields either from CSR or from CAR and not from both. Similarly, for AgentSession query, it is recommended to use fields either from ASR or from AAR.
