@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "1846bf13-51fb-4e0a-92e0-279da8428b1a",
+		"name": "airlines template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4016328",
+		"_collection_link": "https://imibot.postman.co/workspace/WX1~fa9dc435-0838-441c-8829-1f5d6160475e/collection/4016328-1846bf13-51fb-4e0a-92e0-279da8428b1a?action=share&source=collection_link&creator=4016328"
+	},
+	"item": [
+		{
+			"name": "get_booking_info",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/get_booking_info?booking_id=ZK8G2A&last_name=Johnson",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"get_booking_info"
+					],
+					"query": [
+						{
+							"key": "booking_id",
+							"value": "ZK8G2A"
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_booking_info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/get_booking_info?booking_id=ZK8G2A&last_name=Johnson",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"get_booking_info"
+							],
+							"query": [
+								{
+									"key": "booking_id",
+									"value": "ZK8G2A"
+								},
+								{
+									"key": "last_name",
+									"value": "Johnson"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 21:48:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "632"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"booking\": {\n        \"arrival_time\": \"2025-06-15T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Rescheduled\",\n        \"canceled\": false,\n        \"cancellation_reason\": \"\",\n        \"check_in_notes\": \"Check-in canceled: Need to update\",\n        \"check_in_status\": \"Not Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2025-06-15T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": \"2025-06-15T14:30:00Z\",\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "check_in",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"notes\": \"Extra baggage\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/check_in",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"check_in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "check_in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"notes\": \"Extra baggage\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/check_in",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"check_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 22:00:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "644"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"booking\": {\n        \"arrival_time\": \"2025-06-15T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Rescheduled\",\n        \"canceled\": false,\n        \"cancellation_reason\": \"\",\n        \"check_in_notes\": \"Extra baggage\",\n        \"check_in_status\": \"Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2025-06-15T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": \"2025-06-15T14:30:00Z\",\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    },\n    \"message\": \"Check-in successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cancel_flight",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"flight_id\": \"F3001\",\n    \"reason\": \"Personal reasons\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/cancel_flight",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"cancel_flight"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cancel_flight",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"flight_id\": \"F3001\",\n    \"reason\": \"Personal reasons\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/cancel_flight",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"cancel_flight"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 19:22:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "647"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"booking\": {\n        \"arrival_time\": \"2023-11-01T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Canceled\",\n        \"canceled\": true,\n        \"cancellation_reason\": \"Personal reasons\",\n        \"check_in_notes\": \"Extra baggage\",\n        \"check_in_status\": \"Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2023-11-01T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F3001\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": null,\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    },\n    \"message\": \"Flight canceled successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "lookup_flights",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/lookup_flights?booking_id=ZK8G2A&last_name=Johnson&new_date=2025-06-06",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"lookup_flights"
+					],
+					"query": [
+						{
+							"key": "booking_id",
+							"value": "ZK8G2A"
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson"
+						},
+						{
+							"key": "new_date",
+							"value": "2025-06-06"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "lookup_flights",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/lookup_flights?booking_id=ZK8G2A&last_name=Johnson&new_date=2025-06-06",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"lookup_flights"
+							],
+							"query": [
+								{
+									"key": "booking_id",
+									"value": "ZK8G2A"
+								},
+								{
+									"key": "last_name",
+									"value": "Johnson"
+								},
+								{
+									"key": "new_date",
+									"value": "2025-06-06"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 22:16:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1530"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"available_flights\": [\n        {\n            \"arrival_time\": \"2025-06-06T16:47:00Z\",\n            \"departure_time\": \"2025-06-06T02:57:00Z\",\n            \"destination\": \"London (LHR)\",\n            \"flight_id\": \"F6930\",\n            \"flight_number\": \"CZ664\",\n            \"origin\": \"New York (JFK)\",\n            \"status\": \"Delayed\"\n        },\n        {\n            \"arrival_time\": \"2025-06-06T06:49:00Z\",\n            \"departure_time\": \"2025-06-06T01:43:00Z\",\n            \"destination\": \"London (LHR)\",\n            \"flight_id\": \"F1260\",\n            \"flight_number\": \"QF649\",\n            \"origin\": \"New York (JFK)\",\n            \"status\": \"Delayed\"\n        },\n        {\n            \"arrival_time\": \"2025-06-06T22:31:00Z\",\n            \"departure_time\": \"2025-06-06T02:46:00Z\",\n            \"destination\": \"London (LHR)\",\n            \"flight_id\": \"F5315\",\n            \"flight_number\": \"EK334\",\n            \"origin\": \"New York (JFK)\",\n            \"status\": \"On Time\"\n        }\n    ],\n    \"current_booking\": {\n        \"arrival_time\": \"2025-06-15T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Rescheduled\",\n        \"canceled\": false,\n        \"cancellation_reason\": \"\",\n        \"check_in_notes\": \"Extra baggage\",\n        \"check_in_status\": \"Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2025-06-15T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": \"2025-06-15T14:30:00Z\",\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    },\n    \"message\": \"Here are 3 random flights available for the same route on the selected date:\"\n}"
+				}
+			]
+		},
+		{
+			"name": "cancel_check_in",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"reason\": \"Need to update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/cancel_check_in",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"cancel_check_in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cancel_check_in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"reason\": \"Need to update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/cancel_check_in",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"cancel_check_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 22:05:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "679"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"booking\": {\n        \"arrival_time\": \"2025-06-15T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Rescheduled\",\n        \"canceled\": false,\n        \"cancellation_reason\": \"\",\n        \"check_in_notes\": \"Check-in canceled: Need to update\",\n        \"check_in_status\": \"Not Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2025-06-15T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": \"2025-06-15T14:30:00Z\",\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    },\n    \"message\": \"Check-in canceled successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "reschedule_flight",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"new_flight_id\": \"F1807\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/reschedule_flight",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"reschedule_flight"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "reschedule_flight",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"booking_id\": \"ZK8G2A\",\n    \"last_name\": \"Johnson\",\n    \"new_flight_id\": \"F1807\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/reschedule_flight",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"reschedule_flight"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 19:53:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "956"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Flight rescheduled successfully\",\n    \"new_flight_details\": {\n        \"arrival_time\": \"2025-06-06T08:40:00Z\",\n        \"departure_time\": \"2025-06-06T11:29:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"CZ399\",\n        \"origin\": \"New York (JFK)\",\n        \"status\": \"On Time\"\n    },\n    \"updated_booking\": {\n        \"arrival_time\": \"2023-11-01T21:30:00Z\",\n        \"booking_id\": \"ZK8G2A\",\n        \"booking_status\": \"Rescheduled\",\n        \"canceled\": false,\n        \"cancellation_reason\": \"\",\n        \"check_in_notes\": \"Check-in canceled: Need to update\",\n        \"check_in_status\": \"Not Checked In\",\n        \"created_at\": \"2023-10-20T09:00:00Z\",\n        \"departure_time\": \"2023-11-01T14:30:00Z\",\n        \"destination\": \"London (LHR)\",\n        \"flight_id\": \"F1807\",\n        \"flight_number\": \"DL101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"New York (JFK)\",\n        \"rescheduled_to\": \"2025-06-06T11:29:00Z\",\n        \"user_id\": \"U1001\",\n        \"user_name\": \"Alice Johnson\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "add_booking",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"booking_id\": \"AB1234\",\n    \"user_id\": \"U1011\",\n    \"user_name\": \"John Doe\",\n    \"flight_id\": \"F4001\",\n    \"flight_number\": \"AA101\",\n    \"origin\": \"San Francisco (SFO)\",\n    \"destination\": \"Chicago (ORD)\",\n    \"departure_time\": \"2025-06-18T08:00:00Z\",\n    \"arrival_time\": \"2025-06-18T14:00:00Z\",\n    \"flight_status\": \"On Time\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/add_booking",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"add_booking"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_booking",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"booking_id\": \"AB1234\",\n    \"user_id\": \"U1011\",\n    \"user_name\": \"John Doe\",\n    \"flight_id\": \"F4001\",\n    \"flight_number\": \"AA101\",\n    \"origin\": \"San Francisco (SFO)\",\n    \"destination\": \"Chicago (ORD)\",\n    \"departure_time\": \"2025-06-18T08:00:00Z\",\n    \"arrival_time\": \"2025-06-18T14:00:00Z\",\n    \"flight_status\": \"On Time\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5000/add_booking",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5000",
+							"path": [
+								"add_booking"
+							]
+						}
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.12.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 19:59:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "628"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Booking added successfully\",\n    \"new_booking\": {\n        \"arrival_time\": \"2025-06-18T14:00:00Z\",\n        \"booking_id\": \"AB1234\",\n        \"booking_status\": \"Active\",\n        \"canceled\": false,\n        \"cancellation_reason\": null,\n        \"check_in_notes\": null,\n        \"check_in_status\": \"Not Checked In\",\n        \"created_at\": \"2025-06-04T19:59:57Z\",\n        \"departure_time\": \"2025-06-18T08:00:00Z\",\n        \"destination\": \"Chicago (ORD)\",\n        \"flight_id\": \"F4001\",\n        \"flight_number\": \"AA101\",\n        \"flight_status\": \"On Time\",\n        \"origin\": \"San Francisco (SFO)\",\n        \"rescheduled_to\": null,\n        \"user_id\": \"U1011\",\n        \"user_name\": \"John Doe\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
