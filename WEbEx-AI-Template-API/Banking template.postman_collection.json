@@ -1,0 +1,759 @@
+{
+	"info": {
+		"_postman_id": "8c3c0876-9988-4e79-8d46-0da3e14f56e1",
+		"name": "Banking template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4016328",
+		"_collection_link": "https://imibot.postman.co/workspace/WX1~fa9dc435-0838-441c-8829-1f5d6160475e/collection/4016328-8c3c0876-9988-4e79-8d46-0da3e14f56e1?action=share&source=collection_link&creator=4016328"
+	},
+	"item": [
+		{
+			"name": "verify_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"DOB\": \"15-04-1985\",\n    \"ZIP_code\": \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/verify_user",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5004",
+					"path": [
+						"verify_user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "verify_user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"DOB\": \"15-04-1985\",\n    \"ZIP_code\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/verify_user",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"verify_user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:12:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"DOB\": \"15-04-1985\",\n    \"ZIP_code\": \"12345\",\n    \"email\": \"john.doe@example.com\",\n    \"name\": \"John Doe\",\n    \"phone_number\": \"555-123-4567\",\n    \"user_id\": \"123456789\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_balance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/get_balance/123456789",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5004",
+					"path": [
+						"get_balance",
+						"123456789"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_balance",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/get_balance/123456789",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"get_balance",
+								"123456789"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:14:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_balance\": \"$ 25345.67\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get_transactions",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/get_transactions/123456789",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5004",
+					"path": [
+						"get_transactions",
+						"123456789"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/get_transactions/123456789",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"get_transactions",
+								"123456789"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:14:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "824"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"last_transactions\": [\n        {\n            \"dispute\": {\n                \"reason\": \"incorrect charges\",\n                \"status\": \"Pending\"\n            },\n            \"merchant_name\": \"Coffee Spot\",\n            \"transaction_amount\": \"$ 50.75\",\n            \"transaction_date\": \"29-08-2024\",\n            \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3349\",\n            \"transaction_time\": \"09:50:30\"\n        },\n        {\n            \"merchant_name\": \"Digital Den\",\n            \"transaction_amount\": \"$ 200.00\",\n            \"transaction_date\": \"28-08-2024\",\n            \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3350\",\n            \"transaction_time\": \"12:15:45\"\n        },\n        {\n            \"merchant_name\": \"Outdoor World\",\n            \"transaction_amount\": \"$ 150.50\",\n            \"transaction_date\": \"27-08-2024\",\n            \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3351\",\n            \"transaction_time\": \"15:30:10\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "raise_dispute",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"123456789\",\n    \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3349\",\n    \"reason\":\"incorrect charges\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://advanced-immortal-titmouse.ngrok-free.app/raise_dispute",
+					"protocol": "https",
+					"host": [
+						"advanced-immortal-titmouse",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"raise_dispute"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "raise_dispute",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": \"123456789\",\n    \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3349\",\n    \"reason\":\"incorrect charges\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/raise_dispute",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"raise_dispute"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:15:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Dispute raised\",\n    \"transaction_id\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3349\"\n}"
+				}
+			]
+		},
+		{
+			"name": "block_card",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"123456789\",\n    \"order_replacement\": \"Yes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://advanced-immortal-titmouse.ngrok-free.app/block_card",
+					"protocol": "https",
+					"host": [
+						"advanced-immortal-titmouse",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"block_card"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "block_card",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": \"123456789\",\n    \"order_replacement\": \"Yes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/block_card",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"block_card"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:16:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"replacement_card\": \"Yes\",\n    \"status\": \"Card blocked\"\n}"
+				}
+			]
+		},
+		{
+			"name": "request_priority_shipping",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/request_priority_shipping",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5004",
+					"path": [
+						"request_priority_shipping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "request_priority_shipping",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": \"123456789\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/request_priority_shipping",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"request_priority_shipping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:17:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Priority shipping requested\"\n}"
+				}
+			]
+		},
+		{
+			"name": "add_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Robert Williams\",\n    \"DOB\": \"12-03-1980\",\n    \"ZIP_code\": \"45678\",\n    \"user_id\": \"789123456\",\n    \"phone_number\": \"555-789-1234\",\n    \"email\": \"robert.williams@example.com\",\n    \"account_balance\": \"$ 18500.75\",\n    \"last_transactions\": [\n        {\n            \"transaction_id\": \"1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6\",\n            \"transaction_date\": \"28-08-2024\",\n            \"transaction_time\": \"10:15:30\",\n            \"transaction_amount\": \"$ 120.25\",\n            \"merchant_name\": \"Grocery Mart\"\n        },\n        {\n            \"transaction_id\": \"7g8h9i0j-k1l2m3n4o5p6-1a2b3c4d-5e6f\",\n            \"transaction_date\": \"27-08-2024\",\n            \"transaction_time\": \"14:30:15\",\n            \"transaction_amount\": \"$ 350.50\",\n            \"merchant_name\": \"Tech Store\"\n        },\n        {\n            \"transaction_id\": \"5e6f7g8h-9i0j-k1l2m3n4o5p6-1a2b3c4d\",\n            \"transaction_date\": \"26-08-2024\",\n            \"transaction_time\": \"18:45:00\",\n            \"transaction_amount\": \"$ 75.10\",\n            \"merchant_name\": \"Book Haven\"\n        }\n    ],\n    \"card_status\": \"Active\",\n    \"replacement_card\": \"No\",\n    \"priority_shipping\": \"No\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5004/add_user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5004",
+					"path": [
+						"add_user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add_user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Robert Williams\",\n    \"DOB\": \"12-03-1980\",\n    \"ZIP_code\": \"45678\",\n    \"user_id\": \"789123456\",\n    \"phone_number\": \"555-789-1234\",\n    \"email\": \"robert.williams@example.com\",\n    \"account_balance\": \"$ 18500.75\",\n    \"last_transactions\": [\n        {\n            \"transaction_id\": \"1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6\",\n            \"transaction_date\": \"28-08-2024\",\n            \"transaction_time\": \"10:15:30\",\n            \"transaction_amount\": \"$ 120.25\",\n            \"merchant_name\": \"Grocery Mart\"\n        },\n        {\n            \"transaction_id\": \"7g8h9i0j-k1l2m3n4o5p6-1a2b3c4d-5e6f\",\n            \"transaction_date\": \"27-08-2024\",\n            \"transaction_time\": \"14:30:15\",\n            \"transaction_amount\": \"$ 350.50\",\n            \"merchant_name\": \"Tech Store\"\n        },\n        {\n            \"transaction_id\": \"5e6f7g8h-9i0j-k1l2m3n4o5p6-1a2b3c4d\",\n            \"transaction_date\": \"26-08-2024\",\n            \"transaction_time\": \"18:45:00\",\n            \"transaction_amount\": \"$ 75.10\",\n            \"merchant_name\": \"Book Haven\"\n        }\n    ],\n    \"card_status\": \"Active\",\n    \"replacement_card\": \"No\",\n    \"priority_shipping\": \"No\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/add_user",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"add_user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:18:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"User added successfully\",\n    \"user_id\": \"330458402\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"last_transactions\": [\n        {\n            \"transaction_id\": \"1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6\",\n            \"transaction_date\": \"28-08-2024\",\n            \"transaction_time\": \"10:15:30\",\n            \"transaction_amount\": \"$ 120.25\",\n            \"merchant_name\": \"Grocery Mart\"\n        },\n        {\n            \"transaction_id\": \"7g8h9i0j-k1l2m3n4o5p6-1a2b3c4d-5e6f\",\n            \"transaction_date\": \"27-08-2024\",\n            \"transaction_time\": \"14:30:15\",\n            \"transaction_amount\": \"$ 350.50\",\n            \"merchant_name\": \"Tech Store\"\n        },\n        {\n            \"transaction_id\": \"5e6f7g8h-9i0j-k1l2m3n4o5p6-1a2b3c4d\",\n            \"transaction_date\": \"26-08-2024\",\n            \"transaction_time\": \"18:45:00\",\n            \"transaction_amount\": \"$ 75.10\",\n            \"merchant_name\": \"Book Haven\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/update_user/744019484",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5004",
+					"path": [
+						"update_user",
+						"744019484"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update_user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"last_transactions\": [\n        {\n            \"transaction_id\": \"1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6\",\n            \"transaction_date\": \"28-08-2024\",\n            \"transaction_time\": \"10:15:30\",\n            \"transaction_amount\": \"$ 120.25\",\n            \"merchant_name\": \"Grocery Mart\"\n        },\n        {\n            \"transaction_id\": \"7g8h9i0j-k1l2m3n4o5p6-1a2b3c4d-5e6f\",\n            \"transaction_date\": \"27-08-2024\",\n            \"transaction_time\": \"14:30:15\",\n            \"transaction_amount\": \"$ 350.50\",\n            \"merchant_name\": \"Tech Store\"\n        },\n        {\n            \"transaction_id\": \"5e6f7g8h-9i0j-k1l2m3n4o5p6-1a2b3c4d\",\n            \"transaction_date\": \"26-08-2024\",\n            \"transaction_time\": \"18:45:00\",\n            \"transaction_amount\": \"$ 75.10\",\n            \"merchant_name\": \"Book Haven\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5004/update_user/744019484",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5004",
+							"path": [
+								"update_user",
+								"744019484"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Jun 2025 23:18:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1145"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"User updated successfully\",\n    \"updated_user\": {\n        \"DOB\": \"22-06-1992\",\n        \"ZIP_code\": \"67890\",\n        \"account_balance\": \"$ 20000.00\",\n        \"card_status\": \"Blocked\",\n        \"email\": \"alice.green@example.com\",\n        \"last_transactions\": [\n            {\n                \"merchant_name\": \"Grocery Mart\",\n                \"transaction_amount\": \"$ 120.25\",\n                \"transaction_date\": \"28-08-2024\",\n                \"transaction_id\": \"1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6\",\n                \"transaction_time\": \"10:15:30\"\n            },\n            {\n                \"merchant_name\": \"Tech Store\",\n                \"transaction_amount\": \"$ 350.50\",\n                \"transaction_date\": \"27-08-2024\",\n                \"transaction_id\": \"7g8h9i0j-k1l2m3n4o5p6-1a2b3c4d-5e6f\",\n                \"transaction_time\": \"14:30:15\"\n            },\n            {\n                \"merchant_name\": \"Book Haven\",\n                \"transaction_amount\": \"$ 75.10\",\n                \"transaction_date\": \"26-08-2024\",\n                \"transaction_id\": \"5e6f7g8h-9i0j-k1l2m3n4o5p6-1a2b3c4d\",\n                \"transaction_time\": \"18:45:00\"\n            }\n        ],\n        \"name\": \"Alice Green\",\n        \"phone_number\": \"555-678-1234\",\n        \"priority_shipping\": \"No\",\n        \"replacement_card\": \"yes\",\n        \"user_id\": \"744019484\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
