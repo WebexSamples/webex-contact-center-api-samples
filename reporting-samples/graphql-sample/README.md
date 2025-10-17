@@ -1032,6 +1032,12 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 - It is recommended to pass a `TrackingId` header with a valid UUID in the request payload, For example - `007bfe3b-a257-4caa-9882-fbd710cc671e`;this allows for easier debugging by support teams in case of any issue.
 
+- When invoking the API from a flow, limit the time range to a few hours or, at most, a few days. Querying data across multiple months within an active call flow is not recommended
+
+- Avoid repeatedly querying the same time intervals in quick succession, as this can lead to redundant processing and inefficient use of resources.
+
+- The /search API is not designed for bulk data export use cases. 
+
 ## Sample Usecases and queries
 
 This repository is organized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
