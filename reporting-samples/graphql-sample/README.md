@@ -1020,15 +1020,15 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Recommendations and best practices
 
-- While querying data or performing aggregations, it is recommended to use fields belonging to only a single data type. Ex: In a taskDetails query, it is recommended to use fields either from CSR or from CAR and not from both. Similarly, for AgentSession query, it is recommended to use fields either from ASR or from AAR.
+- When querying data or performing aggregations, use fields from only one data type at a time. For example, in a taskDetails query, select fields exclusively from either CSR or CAR, but not both. Similarly, in an AgentSession query, use fields only from either ASR or AAR.
 
 - It is recommended to use the _taskDetails_ query for any Task related data instead of the older _task_ query.
 
-- For aggregations, use the _aggregations_ argument; the older argument _aggregation_ supports limited functionalities and is not recommended to be used.
+- For aggregations, use the _aggregations_ argument; the older argument _aggregation_ supports limited functionalities and is not recommended.
 
-- Performing group by's on global variables and skill-related fields is not recommended as the performance may be impacted based on the volume of data.
+- Grouping by global variables or skill-related fields is not recommended, as it may negatively impact performance depending on the data volume.
 
-- Performing group by's on Int, Double or numerical fields or String fields that have a high number of unique values is not recommended.
+- Group by operations on Int, Double or numerical fields or String fields that have a high number of unique values is not recommended.
 
 - It is recommended to pass a `TrackingId` header with a valid UUID in the request payload, For example - `007bfe3b-a257-4caa-9882-fbd710cc671e`;this allows for easier debugging by support teams in case of any issue.
 
