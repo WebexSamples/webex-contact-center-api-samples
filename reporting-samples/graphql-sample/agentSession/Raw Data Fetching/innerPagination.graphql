@@ -1,10 +1,10 @@
 {
     agentSession(
-        from: 1698235036000
-        to: 1699271836000
+        from: 1768459753000
+        to: 1770101367000
         filter: {
             channelInfo: {
-                channelId: { equals: "3d4750ab-e6e1-496f-a8a3-80c745bc3105" }
+                channelId: { equals: "47772ad8-a2bb-479a-b092-da4a511bcd8c" }
             }
         }
     ) {
@@ -15,7 +15,10 @@
                 channelId
                 channelType
                 totalDuration
-                activities(first: 3, after: "1698273611061") {
+                activities(
+                    first: 10
+                    after: "djF8OXxsOjEzOjE3Njg4OTY4OTc0Njd8czo3MTo0Nzc3MmFkOC1hMmJiLTQ3OWEtYjA5Mi1kYTRhNTExYmNkOGMtdGVsZXBob255LTE3Njg4OTY4OTc0NjctY29uc3VsdGluZw"
+                ) {
                     totalCount
                     nodes {
                         id

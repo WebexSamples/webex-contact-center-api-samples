@@ -3,38 +3,80 @@
     "agentSession": {
       "agentSessions": [
         {
-          "agentId": "fbd8a8c5-ed8e-4a39-9545-8822943ca22b",
-          "agentSessionId": "0f5a37f5-8426-4054-91a2-2815e9d90197",
+          "agentId": "2f7c5f7e-7c94-4ccd-9dfd-d1ec4f6b0a21",
+          "agentSessionId": "13b56ec2-515b-430e-bc74-1219c1830f3f",
           "channelInfo": [
             {
-              "channelId": "3d4750ab-e6e1-496f-a8a3-80c745bc3105",
+              "channelId": "47772ad8-a2bb-479a-b092-da4a511bcd8c",
               "channelType": "telephony",
-              "totalDuration": 40331305,
+              "totalDuration": 5370072,
               "activities": {
-                "totalCount": 7,
+                "totalCount": 48,
                 "nodes": [
                   {
-                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698273587051-available",
-                    "duration": 24010,
-                    "state": "available",
-                    "startTime": 1698273587051
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896897467-connected-consulting",
+                    "duration": 4375,
+                    "state": "connected-consulting",
+                    "startTime": 1768896897467
                   },
                   {
-                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698267285362-idle-rona",
-                    "duration": 6301689,
-                    "state": "idle",
-                    "startTime": 1698267285362
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896891635-consult",
+                    "duration": 5832,
+                    "state": "consult",
+                    "startTime": 1768896891635
                   },
                   {
-                    "id": "3d4750ab-e6e1-496f-a8a3-80c745bc3105-telephony-1698247438293-available",
-                    "duration": 19847069,
-                    "state": "available",
-                    "startTime": 1698247438293
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896891629-on-hold",
+                    "duration": 10220,
+                    "state": "on-hold",
+                    "startTime": 1768896891629
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896891218-connected-consult-reserved",
+                    "duration": 411,
+                    "state": "ConnectedConsultReserved",
+                    "startTime": 1768896891218
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896880911-hold-done",
+                    "duration": 0,
+                    "state": "hold-done",
+                    "startTime": 1768896880911
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896880903-consult-done",
+                    "duration": 0,
+                    "state": "consult-done",
+                    "startTime": 1768896880903
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896880903-conferencing",
+                    "duration": 128893,
+                    "state": "conferencing",
+                    "startTime": 1768896880903
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896880399-conference",
+                    "duration": 504,
+                    "state": "Conference",
+                    "startTime": 1768896880399
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896876949-consulting",
+                    "duration": 3954,
+                    "state": "consulting",
+                    "startTime": 1768896876949
+                  },
+                  {
+                    "id": "47772ad8-a2bb-479a-b092-da4a511bcd8c-telephony-1768896876949-connected-consulting",
+                    "duration": 3450,
+                    "state": "connected-consulting",
+                    "startTime": 1768896876949
                   }
                 ],
                 "pageInfo": {
                   "hasNextPage": true,
-                  "endCursor": "1698247438293"
+                  "endCursor": "djF8MTl8bDoxMzoxNzY4ODk2ODc2OTQ5fHM6ODE6NDc3NzJhZDgtYTJiYi00NzlhLWIwOTItZGE0YTUxMWJjZDhjLXRlbGVwaG9ueS0xNzY4ODk2ODc2OTQ5LWNvbm5lY3RlZC1jb25zdWx0aW5n"
                 }
               }
             }

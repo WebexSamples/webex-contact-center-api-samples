@@ -3,23 +3,35 @@
     "taskDetails": {
       "tasks": [
         {
-          "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981",
+          "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a",
           "channelType": "telephony",
           "activities": {
-            "totalCount": 16,
+            "totalCount": 33,
             "nodes": [
               {
-                "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981-1700719518064-capture-started",
-                "eventName": "recording-started"
+                "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a-1767604904491-segment-end",
+                "eventName": "segment-end"
               },
               {
-                "id": "f29a7338-2dd0-485f-a822-49fb9e6a1981-1700719516513-connected",
-                "eventName": "connected"
+                "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a-1767604904491-segment-begin",
+                "eventName": "segment-begin"
+              },
+              {
+                "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a-1767604904182-flow-activity",
+                "eventName": "flow-activity"
+              },
+              {
+                "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a-1767604903940-segment-end",
+                "eventName": "segment-end"
+              },
+              {
+                "id": "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a-1767604903940-segment-begin",
+                "eventName": "segment-begin"
               }
             ],
             "pageInfo": {
               "hasNextPage": true,
-              "endCursor": "1700719516513"
+              "endCursor": "djF8MjV8bDoxMzoxNzY3NjA0OTAzOTQwfHM6NjQ6NzMyNGZmYTQtYzdlMi00MzQzLTg5ZWItMWJjZWQ4YjhkYzBhLTE3Njc2MDQ5MDM5NDAtc2VnbWVudC1iZWdpbg"
             }
           }
         }
