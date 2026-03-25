@@ -1,13 +1,16 @@
 {
     taskDetails(
-        from: 1698823016000
-        to: 1701328616000
-        filter: { id: { equals: "f29a7338-2dd0-485f-a822-49fb9e6a1981" } }
+        from: 1767341735000
+        to: 1769760935000
+        filter: { id: { equals: "7324ffa4-c7e2-4343-89eb-1bced8b8dc0a" } }
     ) {
         tasks {
             id
             channelType
-            activities(first: 2, after: "1700719717799") {
+            activities(
+                first: 5
+                after: "djF8MjB8bDoxMzoxNzY3NjA0OTEyNjY2fHM6NTg6NzMyNGZmYTQtYzdlMi00MzQzLTg5ZWItMWJjZWQ4YjhkYzBhLTE3Njc2MDQ5MTI2NjYtY29ubmVjdA"
+            ) {
                 totalCount
                 nodes {
                     id
