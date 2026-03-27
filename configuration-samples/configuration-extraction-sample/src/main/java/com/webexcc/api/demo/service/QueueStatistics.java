@@ -37,7 +37,7 @@ import org.springframework.http.ResponseEntity;
  * 
  * @author jiwyatt
  * @since 2.0
- * @see https://developer.webex-cx.com/documentation/queues
+ * @see https://developer.webex.com/webex-contact-center/docs/api/v1/queues
  */
 
 public class QueueStatistics extends ApiService {

@@ -24,7 +24,7 @@ Webex OAuth2 Access Tokens are valid up to 12 hours and Refresh Tokens are valid
   - [Google Cloud Console](http://console.cloud.google.com)
   - [Firebase Console](https://console.firebase.google.com)
 - Webex user account with Contact Center Administrator license
-  - [Webex CX Developer Portal](https://developer.webex-cx.com)
+  - [Webex CX Developer Portal](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)
 - Postman and a good code editor
 
 
@@ -85,7 +85,7 @@ There is also a /init endpoint that creates a Firestore Collection named ***toke
 
 For Support and Assistance, use the Cisco Developer Community Page:
 
-Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://developer.webex-cx.com)**
+Need Help? Visit the **[Webex Contact Center APIs Developer Community](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)**
 
 Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisco.com/t5/contact-center/webex-contact-center-apis-developer-community-and-support/m-p/4558270)**
 

@@ -65,7 +65,7 @@ located in the directory graphql-powerbi-sample/graphql/*
 
   
 
-**https://developer.webex-cx.com/documentation/search**
+**https://developer.webex.com/webex-contact-center/docs/api/v1/search**
 
   
 
@@ -127,11 +127,11 @@ How to run the sample application:
 
 |--|--|
 
-| client_id | value from https://developer.webex-cx.com/my-apps |
+| client_id | value from https://developer.webex.com/my-apps |
 
-| client_secret | value from https://developer.webex-cx.com/my-apps |
+| client_secret | value from https://developer.webex.com/my-apps |
 
-| redirect_uri | value from https://developer.webex-cx.com/my-apps |
+| redirect_uri | value from https://developer.webex.com/my-apps |
 
 | data_center_url | . . . . . . . . . . .**pick one** . . . . . . . . . . . . . . . . . . . . . . . . . . . . |
 
@@ -205,13 +205,13 @@ How to run the sample application:
 
   
 
-- [GraphQL APIs Search Tasks](https://developer.webex-cx.com/documentation/search/v1/search-tasks)
+- [GraphQL APIs Search Tasks](https://developer.webex.com/webex-contact-center/docs/api/v1/search)
 
   
 
   
 
-- [My Apps](https://developer.webex-cx.com/my-apps)
+- [My Apps](https://developer.webex.com/my-apps)
 
   
 
@@ -247,7 +247,7 @@ How to run the sample application:
 
   
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
   
 

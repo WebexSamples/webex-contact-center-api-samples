@@ -1,7 +1,7 @@
 [Vidcast](https://app.vidcast.io/share/bc75e3b8-973b-4902-997a-dfa75cd42f23)
-[WebexCC Desktop SDK Documentation](https://developer.webex-cx.com/documentation/guides/desktop)
+[WebexCC Desktop SDK Documentation](https://developer.webex.com/webex-contact-center/docs/desktop)
 [Sample Code](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/widget-samples/my-custom-component)
-[Webex Developer Community](https://developer.webex-cx.com/support)
+[Webex Developer Community](https://developer.webex.com/explore/support)
 
 
 ##########################################################################################
@@ -9,7 +9,7 @@
 ##########################################################################################
 SDK
 #
-https://developer.webex-cx.com/documentation/guides/desktop
+https://developer.webex.com/webex-contact-center/docs/desktop
 
 layout
 https://help.webex.com/en-us/article/n5595zd/Webex-Contact-Center-Setup-and-Administration-Guide#topic_8230815F4023699032326F948C3F1495

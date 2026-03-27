@@ -9,7 +9,7 @@ The example uses a Javascript injector called Scripty to inject the Callback for
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/tasks/v1/create-task**
+**https://developer.webex.com/webex-contact-center/docs/api/v1/tasks-call-control/create-task**
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ How to run the app shown in the demo above:
 
 - Step 1:
 
-  - On the **server.js** file, line 89, please paste in your access token manually. You can do this by visiting the developer portal at developer.webex-cx.com and copying out your access token after Signing in.
+  - On the **server.js** file, line 89, please paste in your access token manually. You can do this by visiting the developer portal at developer.webex.com and copying out your access token after Signing in.
 
 - Step 2:
 
@@ -55,7 +55,7 @@ How to run the app shown in the demo above:
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

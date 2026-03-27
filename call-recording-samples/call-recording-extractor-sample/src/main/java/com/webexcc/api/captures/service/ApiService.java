@@ -109,7 +109,7 @@ public class ApiService {
 	}
 
 	/**
-	 * https://developer.webex-cx.com/documentation/agents/v1/get-agent-activities
+	 * https://developer.webex.com/webex-contact-center/docs/api/v1/agents
 	 */
 	private AgentsActivities getAgentsActivitiesByFromTo(String channelTypes, long from, long to) throws Exception { 
 		logger.info("AgentsActivities getAgentsActivitiesByFromTo: {} : {} : {}" , channelTypes, from, to);
@@ -147,7 +147,7 @@ public class ApiService {
 
 
 	/**
-	 * https://developer.webex-cx.com/documentation/captures
+	 * https://developer.webex.com/webex-contact-center/docs/api/v1/captures
 	 */
 	public Captures captures(StringBuffer taskIds) throws Exception {
 		logger.info("Captures captures:taskIds: {}" , taskIds);

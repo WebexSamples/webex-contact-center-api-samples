@@ -8,7 +8,7 @@ This video shows you how to generate some activity for the Estimated Wait Time (
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/estimated-wait-time**
+**https://developer.webex.com/webex-contact-center/docs/api/v1/estimated-wait-time**
 
 ## Getting Started
 
@@ -47,7 +47,7 @@ Keep in mind that you still need to have your Postman setup with your authorizat
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

@@ -1,7 +1,7 @@
 ## Configuration Extraction Sample - Sample Java code that uses the new WebexCC APIs
 
 This is a tutorial on how to use the new WebexCC APIs to extract configuration data and export to CSV or JSON.
-In this tutorial we are using API described at [Getting Started](https://developer.webex-cx.com/documentation/getting-started).
+In this tutorial we are using API described at [Getting Started](https://developer.webex.com/webex-contact-center/docs/webex-contact-center).
 
 Watch the demo below to understand what this project does, how to set it up and leverage it to build your own code.
 
@@ -15,7 +15,7 @@ The code can be executed on localhost and is intended to bootstrap your knowledg
 
 To understand how to execute the code, please watch the video.
 
-To understand additional features [Getting Started](https://developer.webex-cx.com/documentation/getting-started).
+To understand additional features [Getting Started](https://developer.webex.com/webex-contact-center/docs/webex-contact-center).
 
 ### Executing the sample
 
@@ -41,7 +41,7 @@ How to run the sample code:
 
 ## Useful Links
 
-**[WebexCC Developer Portal](https://developer.webex-cx.com/documentation/getting-started)**
+**[WebexCC Developer Portal](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)**
 
 ## Disclaimer
 
@@ -52,7 +52,7 @@ How to run the sample code:
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

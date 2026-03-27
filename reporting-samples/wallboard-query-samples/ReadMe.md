@@ -13,7 +13,7 @@ Follow the table below to understand whether these are Real-time or Historical.
 
 ### Documentation
 
-GraphQL Documentation & /search: **https://developer.webex-cx.com/documentation/search**
+GraphQL Documentation & /search: **https://developer.webex.com/webex-contact-center/docs/api/v1/search**
 
 ### Samples
 

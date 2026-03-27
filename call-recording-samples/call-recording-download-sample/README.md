@@ -16,9 +16,9 @@ For an overview on this Sample Application, watch this video.
 
 ## Developer Documentation
 
-REST API: https://developer.webex-cx.com/documentation/captures/v1/list-captures
+REST API: https://developer.webex.com/webex-contact-center/docs/api/v1/captures
 
-Webhook: https://developer.webex-cx.com/documentation/captures/v1/capture-available
+Webhook: https://developer.webex.com/webex-contact-center/docs/api/v1/captures
 
 ## Steps
 
@@ -59,7 +59,7 @@ This will redirect port 5000 to 80 and 443 using HTTP and HTTPS reverse proxies.
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

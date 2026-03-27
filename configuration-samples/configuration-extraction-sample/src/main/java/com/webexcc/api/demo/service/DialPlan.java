@@ -35,7 +35,7 @@ import org.springframework.http.ResponseEntity;
  * 
  * @author jiwyatt
  * @since 2.0
- * @see https://developer.webex-cx.com/documentation/dial-plan
+ * @see https://developer.webex.com/webex-contact-center/docs/api/v1/dial-plan
  */
 
 public class DialPlan extends ApiService {

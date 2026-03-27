@@ -4,8 +4,8 @@ spring:
       client:
         registration:
           webexcc:
-            client-id: https://developer.webex-cx.com/my-apps
-            client-secret: https://developer.webex-cx.com/my-apps
+            client-id: https://developer.webex.com/my-apps
+            client-secret: https://developer.webex.com/my-apps
             scope: cjp:user,spark:people_read,cjp:config_write,cjp:config,cjp:config_read
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8080/login/oauth2/code/webexcc

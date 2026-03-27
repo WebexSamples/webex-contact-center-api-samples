@@ -93,7 +93,7 @@ public class AuthService {
 	String dataCenterURL;
 
 	/**
-	 * @see https://developer.webex-cx.com/documentation/authentication
+	 * @see https://developer.webex.com/webex-contact-center/docs/authentication-cc
 	 *
 	 *      these valuse are stored in src/main/resources/application.properties
 	 */

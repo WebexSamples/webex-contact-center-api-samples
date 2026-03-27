@@ -15,7 +15,7 @@ To ensure the security of our project, we follow these procedures:
 
 If you have found a vulnerability, please:
 
-1. Open a support ticket using the Webex Contact Center Developer support channel at: https://developer.webex-cx.com/support
+1. Open a support ticket using the Webex Contact Center Developer support channel at: https://developer.webex.com/explore/support
 2. Allow us a reasonable amount of time to respond to your report. We will make our best efforts to acknowledge your report promptly and keep you informed of any progress.
 
 ## Reporting a Security Concern

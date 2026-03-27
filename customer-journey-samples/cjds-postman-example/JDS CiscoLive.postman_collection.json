@@ -31,7 +31,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "\n** Now use: https://developer.webex-cx.com/documentation/journey/v1/creates-or-merges-aliases-to-an-individual-in-jds\n\n{\n\t\"First\": \"Barry2\",\n\t\"Last\": \"McLellan2\",\n\t\"Numbers\": \"phone:13333334453,phone:+13333334453,email:4bmclellan4454@yahoo.com,email:myself@there.com,customerId:334689557617731186\"\n}"
+					"raw": "\n** Now use: https://developer.webex.com/webex-contact-center/docs/api/v1/customer-identification/creates-or-merges-aliases-to-an-individual-in-jds\n\n{\n\t\"First\": \"Barry2\",\n\t\"Last\": \"McLellan2\",\n\t\"Numbers\": \"phone:13333334453,phone:+13333334453,email:4bmclellan4454@yahoo.com,email:myself@there.com,customerId:334689557617731186\"\n}"
 				},
 				"url": {
 					"raw": "https://hooks.us.webexconnect.io/events/2QF64C3V6M",

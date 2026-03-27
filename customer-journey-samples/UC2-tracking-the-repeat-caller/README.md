@@ -8,9 +8,9 @@ This video shows you how to use various JDS API's to track the amount of times a
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/journey**
+**https://developer.webex.com/docs/api/v1/profile-creation-and-insights**
 
-**https://developer.webex-cx.com/documentation/guides/journey---getting-started**
+**https://developer.webex.com/webex-contact-center/docs/journey-getting-started**
 
 [How to Integrate the Widget in your agent desktop](https://app.vidcast.io/share/0ebc75d5-62a4-4771-819e-518991c23b23)
 
@@ -31,7 +31,7 @@ Remember to configure the following Local variables
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

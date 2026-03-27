@@ -1040,7 +1040,7 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 ## Sample Usecases and queries
 
-This repository is organized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex-cx.com/documentation/search/search-tasks)**
+This repository is organized into multiple files that you can paste directly into the section of the interactive editor on **[Webex Developer Portal - Search Tasks](https://developer.webex.com/webex-contact-center/docs/api/v1/search)**
 
 | #   | File Name                                                                                                                                                                                        | Comments                                                                                                                                                                 | Query Type              |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
@@ -1074,7 +1074,7 @@ Refer data dictionaries for available fields and supported operations for each q
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

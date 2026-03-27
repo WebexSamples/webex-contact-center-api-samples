@@ -13,7 +13,7 @@ The focus of sample is to show you how to use the attached Postman Collection fo
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/getting-started**
+**https://developer.webex.com/webex-contact-center/docs/webex-contact-center**
 
 ## Getting Started
 
@@ -55,7 +55,7 @@ Modify a few files (_description in files should help explain_):
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 
