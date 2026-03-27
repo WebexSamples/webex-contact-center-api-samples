@@ -140,7 +140,7 @@ public class WebRestController {
 		.append("<html>")
 		.append("<body>")
 		.append("<h1>graphql-sample-java</h1>")
-		.append("<p>https://developer.webex-cx.com/documentation/search/v1/search-tasks</p>")
+		.append("<p>https://developer.webex.com/webex-contact-center/docs/api/v1/search</p>")
 		.append("<a href=\"reset\">Load new search queries</a>").append("</p>");
 				
 		// sort and print ../graphql/*.graphql

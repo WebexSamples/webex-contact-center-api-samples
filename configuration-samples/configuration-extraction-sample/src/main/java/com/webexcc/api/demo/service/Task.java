@@ -38,7 +38,7 @@ import com.fasterxml.jackson.databind.MapperFeature;
  * 
  * @author jiwyatt
  * @since 2.0
- * @see https://developer.webex-cx.com/documentation/tasks
+ * @see https://developer.webex.com/webex-contact-center/docs/api/v1/tasks
  */
 
 public class Task extends ApiService {

@@ -8,7 +8,7 @@
 
 > [Please take a look at the Index of all the Samples Below](https://github.com/WebexSamples/webex-contact-center-api-samples#using-the-api-samples) 👇👇
 
-These basic samples will help you understand the Webex Contact Center APIs available today on the **[Webex Contact Center Developer Portal](https://developer.webex-cx.com/)**
+These basic samples will help you understand the Webex Contact Center APIs available today on the **[Webex Contact Center Developer Portal](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)**
 
 ## [Watch Now: Welcome to the Webex Contact Center API Samples](https://app.vidcast.io/share/861a3320-669c-4edb-b284-3c1300130583)
 
@@ -17,7 +17,7 @@ These basic samples will help you understand the Webex Contact Center APIs avail
 To get started, create an App Integration on the Developer Portal:
 ( This will help you obtain your `Client ID` and `Client Secret` ).
 
-- Sign into developer.webex-cx.com with a valid Webex Control Hub Account.
+- Sign into developer.webex.com with a valid Webex Control Hub Account.
 - Create an Application Integration by going to your Profile > Manage My Apps.
 - Creating an Application Integration will give you a set of Client ID and Client Secret that you will need for this sample.
 - Note: While entering the Redirect URI, ensure it has the right URL. For example, for postman, it is : `https://oauth.pstmn.io/v1/callback`
@@ -60,7 +60,7 @@ The API samples are divided into several folders. It would be great to follow th
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

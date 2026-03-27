@@ -297,7 +297,7 @@ public class HtmlRender {
 		sb.append("</head>\n");
 		sb.append("<br>\n");
 		sb.append("	<hr>\n");
-		sb.append("	<div style=\"display: inline-block; text-align: right; width: 100%\"><a href='https://devportal.wxcc-us1.cisco.com/documentation/captures' >documentation</a> </div>\n");
+		sb.append("	<div style=\"display: inline-block; text-align: right; width: 100%\"><a href='https://developer.webex.com/webex-contact-center/docs/api/v1/captures' >documentation</a> </div>\n");
 		sb.append("	 <br>\n");
 		sb.append("<table width='50%' border='0' style=\"border:0px solid black;margin-left:auto;margin-right:auto;\">");
 		sb.append("<tr style='text-align: center;vertical-align: middle;' >\n");

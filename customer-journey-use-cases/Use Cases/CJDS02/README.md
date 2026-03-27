@@ -65,7 +65,7 @@
 
 <h2>Links <a id="links"></a></h2>
 
-- [Configure JDS for your tenant](https://developer.webex-cx.com/documentation/guides/journey---getting-started)
+- [Configure JDS for your tenant](https://developer.webex.com/webex-contact-center/docs/journey-getting-started)
 - [Webex Connect Digital Channels](https://help.imiconnect.io/)
 - [Webex Flow Designer](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/wcc-flow-designer.html)
 - [Webex Contact Center Guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2.html)

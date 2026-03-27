@@ -3,7 +3,7 @@
 **Pre-requisites:**
 
 - Download Postman Here: [https://www.postman.com/](https://www.postman.com/)
-- Ensure you have access to the **[Developer Portal](https://developer.webex-cx.com/)**.
+- Ensure you have access to the **[Developer Portal](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)**.
 - Keep your Administrator UserID / Password handy for the developer portal login.
 
 `Note: The following videos are independent. To start using the postman collection, watch the Video 2. "Working with the Postman Collection"`
@@ -22,10 +22,10 @@ Please follow the matrix below to ensure you are using the right datacenter for 
 
 | #   | Datacenter Location (Country) | Developer Portal                                                   | API Root URL                                                       |
 | --- | ----------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| 1   | US                            | [https://developer.webex-cx.com](https://developer.webex-cx.com)   | [https://api.wxcc-us1.cisco.com](https://api.wxcc-us1.cisco.com)   |
-| 2   | UK                            | [https://devportal.wxcc-eu1.com](https://devportal.wxcc-eu1.com)   | [https://api.wxcc-eu1.cisco.com](https://api.wxcc-eu1.cisco.com)   |
-| 3   | Germany                       | [https://devportal.wxcc-eu2.com](https://devportal.wxcc-eu2.com)   | [https://api.wxcc-eu2.cisco.com](https://api.wxcc-eu2.cisco.com)   |
-| 4   | Australia                     | [https://devportal.wxcc-anz1.com](https://devportal.wxcc-anz1.com) | [https://api.wxcc-anz1.cisco.com](https://api.wxcc-anz1.cisco.com) |
+| 1   | US                            | [https://developer.webex.com/webex-contact-center/docs/webex-contact-center](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)   | [https://api.wxcc-us1.cisco.com](https://api.wxcc-us1.cisco.com)   |
+| 2   | UK                            | [https://developer.webex.com/webex-contact-center/docs/webex-contact-center](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)   | [https://api.wxcc-eu1.cisco.com](https://api.wxcc-eu1.cisco.com)   |
+| 3   | Germany                       | [https://developer.webex.com/webex-contact-center/docs/webex-contact-center](https://developer.webex.com/webex-contact-center/docs/webex-contact-center)   | [https://api.wxcc-eu2.cisco.com](https://api.wxcc-eu2.cisco.com)   |
+| 4   | Australia                     | [https://developer.webex.com/webex-contact-center/docs/webex-contact-center](https://developer.webex.com/webex-contact-center/docs/webex-contact-center) | [https://api.wxcc-anz1.cisco.com](https://api.wxcc-anz1.cisco.com) |
 
 ## Specifics - Environment Variables
 
@@ -57,7 +57,7 @@ In the collection, the following variables need to be setup correctly.
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

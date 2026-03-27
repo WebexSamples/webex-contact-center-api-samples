@@ -41,6 +41,9 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# Java / Maven (all modules)
+**/target/
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -123,7 +126,6 @@ call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/src/main/resources/application.properties.github
 call-recording-extractor-sample/src/main/resources/application.properties.github
-call-recording-extractor-sample/target
 .scannerwork/
 *.properties
 *.yaml

@@ -48,7 +48,7 @@ public class ApiService {
 	String baseURL2 = "https://api.wxcc-us1.cisco.com/v1/";
 
 	/**
-	 * @see https://developer.webex-cx.com/documentation/authentication
+	 * @see https://developer.webex.com/webex-contact-center/docs/authentication-cc
 	 */
 	String access_token = "";
 

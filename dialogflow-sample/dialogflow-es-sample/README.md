@@ -9,7 +9,7 @@ From this tutorial, learn how to pass data to and from Webex Contact Center.
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com**
+**https://developer.webex.com/webex-contact-center/docs/webex-contact-center**
 
 **https://cloud.google.com/dialogflow/es/docs/reference**
 
@@ -37,7 +37,7 @@ The nodeJS script can be run on the Inline Editor inside of the DialogFlow Agent
 
 For dedicated Developer Support on the APIs
 
-Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community: **[Webex Contact Center APIs Developer Community](https://community.cisco.com/t5/contact-center/bd-p/j-disc-dev-contact-center)**
 

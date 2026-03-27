@@ -17,11 +17,11 @@ Explore each of the folders below to understand more of each of the samples belo
 
 ### JDS API Docs
 
-**https://developer.webex-cx.com/documentation/journey**
+**https://developer.webex.com/docs/api/v1/profile-creation-and-insights**
 
 ### Getting Started with CJDS
 
-**https://developer.webex-cx.com/documentation/guides/journey---getting-started**
+**https://developer.webex.com/webex-contact-center/docs/journey-getting-started**
 
 ### Use case 1 - Personalized Customer Experience
 

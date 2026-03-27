@@ -8,7 +8,7 @@ Here is a sample of using the `Search` API (powered by GraphQL) to construct Gra
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/search**
+**https://developer.webex.com/webex-contact-center/docs/api/v1/search**
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ Follow the steps to run the application as shown in the demo above:
 
 - Step 3:
 
-  - Still in the `.env` file, add your `access_token` in the **DEV_TOKEN** field. To get an access token, login to [developer.webex-cx.com](https://developer.webex-cx.com) and Sign in with a WebexCC Admin user.
+  - Still in the `.env` file, add your `access_token` in the **DEV_TOKEN** field. To get an access token, login to [developer.webex.com](https://developer.webex.com/webex-contact-center/docs/webex-contact-center) and Sign in with a WebexCC Admin user.
 
 - Step 3:
 
@@ -62,7 +62,7 @@ Follow the steps to run the application as shown in the demo above:
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 

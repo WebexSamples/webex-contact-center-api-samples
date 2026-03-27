@@ -44,7 +44,7 @@ import com.webexcc.api.demo.util.ExportUtil;
  * 
  * @author jiwyatt
  * @since 2.0
- * @see https://developer.webex-cx.com/documentation/site
+ * @see https://developer.webex.com/webex-contact-center/docs/api/v1/site
  */
 
 public class Site extends ApiService {

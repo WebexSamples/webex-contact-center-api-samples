@@ -27,7 +27,7 @@ Please review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) throughout
 - Improve the existing WebexCC API samples by making them more clear, concise, or efficient.
 - Add more variants to the sample code available. We have a limited set of samples based on capacity and availability of our contributors.
 - Fix any issues or bugs found in the samples.
-- Update the samples to align with the latest version of the API found at : https://developer.webex-cx.com/.
+- Update the samples to align with the latest version of the API found at : https://developer.webex.com/webex-contact-center/docs/webex-contact-center.
 
 ## Coding Guidelines
 

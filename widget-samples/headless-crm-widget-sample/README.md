@@ -17,7 +17,7 @@ The principle is: Initialize the widget, Register the event listeners, and build
 
 ## Developer Documentation
 
-**https://developer.webex-cx.com/documentation/guides/desktop**
+**https://developer.webex.com/webex-contact-center/docs/desktop**
 
 ## Getting Started
 
@@ -70,7 +70,7 @@ In the data object, you need to configure below mandatory fields :
 
 ## Useful Links - Supplemental Resources
 
-[Desktop JS SDK Official Guide](https://developer.webex-cx.com/documentation/guides/desktop)
+[Desktop JS SDK Official Guide](https://developer.webex.com/webex-contact-center/docs/desktop)
 
 [Administration Guide for Desktop Layouts](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/webexcc/SetupandAdministrationGuide_2/b_mp-release-2/b_cc-release-2_chapter_011.html#topic_8230815F4023699032326F948C3F1495)
 
@@ -88,7 +88,7 @@ In the data object, you need to configure below mandatory fields :
 
 ## Support
 
-For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex-cx.com/support)**
+For dedicated Developer Support on the APIs - Please open a ticket with the team using this link: **[Webex Contact Center Developer Support](https://developer.webex.com/explore/support)**
 
 For discussions on the samples, feel free to participate in our Developer Community:
 
