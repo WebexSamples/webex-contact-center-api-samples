@@ -1064,13 +1064,14 @@ This repository is organized into multiple files that you can paste directly int
 
 Refer data dictionaries for available fields and supported operations for each query type and record.
 
-| Query Type / Record  | Dictionary Link                                                                                                                           |
-|----------------------| ----------------------------------------------------------------------------------------------------------------------------------------- |
-| taskDetails / CSR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CSR.md) |
-| taskDetails / CAR    | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CAR.md) |
-| agentSession / ASR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/ASR.md) |
-| agentSession / AAR   | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/AAR.md) |
-| taskLegDetails / CLR | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CLR.md) |
+| Query Type / Record                              | Dictionary Link                                                                                                                           |
+|--------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------- |
+| taskDetails / CSR                                | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CSR.md) |
+| taskDetails / CAR                                | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CAR.md) |
+| agentSession / ASR                               | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/ASR.md) |
+| agentSession / AAR                               | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/AAR.md) |
+| taskLegDetails / CLR                             | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/CLR.md) |
+| contactAIAgentSession / AI Agent Session Record | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/DataDictionary/ContactAIAgentSession.md) |
 
 ## Support
 
