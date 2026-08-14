@@ -88,6 +88,7 @@ taskDetails(
     from: Long!  # MANDATORY ARGUMENT
     to: Long!    # MANDATORY ARGUMENT
     timeComparator: QueryTimeType
+    startTimeLookBackDays: Int
     filter: TaskDetailsFilters
     extFilter: TaskDetailsSpecificFilters
     aggregations: [TaskV2Aggregation]
@@ -104,21 +105,24 @@ taskDetails(
 
 3. _timeComparator_ - Optional argument: accepts a value of the `QueryTimeType` type. This defines the field which `from` and `to` arguments use for retrieving documents. Accepted values are `createdTime` and `endedTime`.
 
-4. _filter_ - Optional argument: accepts a _TaskDetailsFilters_ object. This is used to filter results based on a criteria defined on CSR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+4. _startTimeLookBackDays_ - Optional argument: accepts an _Int_ value from `1` through `30`. Applies only to CSR-facing queries (`task` and `taskDetails`) when `timeComparator: endedTime` is set. When omitted, existing behavior is preserved. When provided, the API also searches for contacts whose `createdTime` is no earlier than `from - startTimeLookBackDays` days, while returned records remain filtered to the requested `endedTime` window (`from` through `to`). This prevents contacts that started on a previous day but ended inside the requested window from being missed (for example, cross-midnight UTC incremental sync). The parameter is rejected when `timeComparator` is not `endedTime`, and does not apply to `agentSession` or `taskLegDetails` queries. Use `1` for voice and chat workloads; for email, consider a larger value (up to `14` or `30`) because email contacts can remain queued for extended periods.
 
-5. _extFilter_ - Optional argument: accepts a _TaskDetailsSpecificFilters_ object. This is used to filter results based on a criteria defined on CAR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
+5. _filter_ - Optional argument: accepts a _TaskDetailsFilters_ object. This is used to filter results based on a criteria defined on CSR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-6. _aggregations_ - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
+6. _extFilter_ - Optional argument: accepts a _TaskDetailsSpecificFilters_ object. This is used to filter results based on a criteria defined on CAR fields. Refer to the [filtering section](#support-for-filtering-data) for more details.
 
-7. _aggregationInterval_- Optional argument: accepts an `IntervalData` object. This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
+7. _aggregations_ - Optional argument: accepts a List of `TaskV2Aggregation`. This is used to perform aggregations over data. Refer to the [aggregations section](#performing-aggregations) for more details.
 
-8. _pagination_ - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
+8. _aggregationInterval_- Optional argument: accepts an `IntervalData` object. This is used when time-based aggregation needs to be performed. Refer to the [aggregations section](#interval-based-group-bys) for more details.
+
+9. _pagination_ - Optional argument: accepts an object of `Pagination` object. This is used to perform pagination. Refer to the [pagination section](#pagination-support-1) for more details.
 
 Some sample queries can be found below
 
 | Usecase                                                                                                                                                 | Query / Record Type | Query                                                                                                                                                                                                 | Response                                                                                                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Fetch isActive, id, createdTime, endedTime, totalDuration, lastAgent.id, queueCount and queueDuration attributes for tasks with pagination information. | CSR                 | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query.graphql)          | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/Simple%20query-response.json)          |
+| Fetch ended contacts in a time window, including contacts that started before the window (cross-midnight UTC) using `timeComparator: endedTime` and `startTimeLookBackDays`. | CSR                 | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/endedTimeWithLookback.graphql) | |
 | Fetch id, channelType of task and the number of CARs, eventName, duration of CARs, along with pagination information                                    | CAR                 | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields.graphql) | [link](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/taskDetails/Samples%20for%20Raw%20Data%20Fetching/SimpleQueryForCARFields-response.json) |
 
 ### AgentSession Query
@@ -1024,6 +1028,8 @@ Some sample group by's on globalVariables with aggregations for taskDetails and 
 
 - It is recommended to use the _taskDetails_ query for any Task related data instead of the older _task_ query.
 
+- When querying with `timeComparator: endedTime` (for example, incremental sync jobs that poll by contact end time), set `startTimeLookBackDays` to include contacts that started before the `from` timestamp but ended within the requested window. Use `1` for voice and chat; use a larger value (up to `14` or `30`) when querying email contacts that may have been queued for extended periods. The legacy _task_ query supports the same parameter.
+
 - For aggregations, use the _aggregations_ argument; the older argument _aggregation_ supports limited functionalities and is not recommended.
 
 - Grouping by global variables or skill-related fields is not recommended, as it may negatively impact performance depending on the data volume.
@@ -1047,6 +1053,7 @@ This repository is organized into multiple files that you can paste directly int
 | 1   | [simple.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/simple.graphql)                                     | SIMPLE: Simply retrieve all task IDs.                                                                                                                                    | Fetching raw data       |
 | 2   | [basicFields.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/basicFields.graphql)                           | BASIC: Basic query to request for certain fields.                                                                                                                        | Fetching raw data       |
 | 3   | [advanced.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/advanced.graphql)                                 | AGGREGATES/FORMULAS: Usage of filters, aggregates, pagination and custom fields.                                                                                         | Performing Aggregations |
+| 3a  | [endedTimeWithLookback.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/endedTimeWithLookback.graphql)       | ENDED TIME LOOKBACK: Query contacts by `endedTime` with `startTimeLookBackDays` to include cross-midnight contacts.                                                       | Fetching raw data       |
 | 4   | [callback.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/callbackFilter.graphql)                           | FILTER: Get the Task details using CallBack filters and logical operators to match a condition.                                                                          | Fetching raw data       |
 | 5   | [realTimeQueuedTasks.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/realTimeQueuedTasks.graphql)           | FILTER: Fetch Real-time (Active) Queued Tasks on the System - using filters.                                                                                             | Fetching raw data       |
 | 6   | [lastAgentInteraction.graphql](https://github.com/WebexSamples/webex-contact-center-api-samples/tree/main/reporting-samples/graphql-sample/More%20Examples/lastAgentInteraction.graphql)         | LAST AGENT INTERACTIONS: Usage of filters, aggregates, pagination and custom fields to find when the customer called last in a 7 day window and who they reached.        | Performing Aggregations |
@@ -1093,3 +1100,6 @@ Refer: **[How to Ask a Question or Initiate a Discussion](https://community.cisc
   - Added several additional example calls
 - 3.0.0
   - Update documentation and add more samples.
+- 3.1.0
+  - Document `startTimeLookBackDays` for `task` and `taskDetails` queries with `timeComparator: endedTime`.
+  - Add `endedTimeWithLookback.graphql` sample and update existing `advanced.graphql` examples.
