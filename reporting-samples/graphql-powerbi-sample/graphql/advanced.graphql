@@ -5,6 +5,7 @@
     from: {from} #This can be set to Date.now() - (days * 24 * 60 * 60 * 1000) for lookback in days
     to: {to} #This can be set to Date.now() in millis
     timeComparator: endedTime #When filtering tasks, use the end time of the task
+    startTimeLookBackDays: 1 #Include contacts that started up to 1 day before `from` (required for cross-midnight UTC queries)
     pagination: {cursor:"0"} #Show first page. This goes from 0 to N-1 pages. Use pageInfo object to traverse
     filter: {
       #Filter the type of Task
