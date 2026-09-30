@@ -1,0 +1,37 @@
+{
+  # ENDED TIME WITH LOOKBACK: Fetch contacts that ended in a time window, including
+  # contacts that started before the window (e.g. cross-midnight UTC).
+  #
+  # Without startTimeLookBackDays, a contact that started on June 25 and ended on
+  # June 26 after midnight UTC can be missed when querying with timeComparator: endedTime
+  # because CSR records are indexed by createdTime.
+  #
+  # startTimeLookBackDays extends the start-time search boundary to
+  # (from - startTimeLookBackDays days) while results remain filtered to the
+  # requested endedTime window [from, to].
+  taskDetails(
+    from: 1779753611292 # Start of endedTime window (epoch ms)
+    to: 1779753642366 # End of endedTime window (epoch ms)
+    timeComparator: endedTime
+    startTimeLookBackDays: 1 # Required when using endedTime for incremental sync
+    filter: {
+      and: [
+        { status: { equals: "ended" } }
+        { channelType: { equals: telephony } }
+      ]
+    }
+    pagination: { cursor: "0" }
+  ) {
+    tasks {
+      id
+      createdTime
+      endedTime
+      channelType
+      status
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
