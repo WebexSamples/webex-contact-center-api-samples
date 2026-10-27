@@ -1,0 +1,584 @@
+{
+	"info": {
+		"_postman_id": "eb4a6c46-ad83-4ddb-ad5f-0752825b7f69",
+		"name": "Template APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4016328",
+		"_collection_link": "https://imibot.postman.co/workspace/WX1~fa9dc435-0838-441c-8829-1f5d6160475e/collection/4016328-eb4a6c46-ad83-4ddb-ad5f-0752825b7f69?action=share&source=collection_link&creator=4016328"
+	},
+	"item": [
+		{
+			"name": "cancel appointment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"appointment_number\": \"204217\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/cancel_appointment",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5003",
+					"path": [
+						"cancel_appointment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example cancel appointment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"appointment_number\": \"409823\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/cancel_appointment",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5003",
+							"path": [
+								"cancel_appointment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Apr 2025 08:56:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Appointment Cancelled\"\n}"
+				}
+			]
+		},
+		{
+			"name": "lookup_appointment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date_of_birth\": \"06-26-1993\",\n    \"patient_name\": \"anirudh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/lookup_appointment",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5003",
+					"path": [
+						"lookup_appointment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example lookup appointment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date_of_birth\": \"06-26-1993\",\n    \"patient_name\": \"Ani\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/lookup_appointment",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5003",
+							"path": [
+								"lookup_appointment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Apr 2025 08:55:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"appointments\": [\n        {\n            \"appointment_number\": \"409823\",\n            \"date\": \"04-28-2025\",\n            \"doctor_name\": \"Dr. James Doe\",\n            \"reason\": \"sick\",\n            \"status\": \"Scheduled\",\n            \"time\": \"08:00\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "create_appointment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n{\n    \"date_of_birth\": \"06-26-1993\",\n    \"patient_name\": \"Ani\",\n    \"reason\": \"sick\",\n    \"time_slot\": \"03-31-2025 08:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/create_appointment",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5003",
+					"path": [
+						"create_appointment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example create appointment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date_of_birth\": \"06-26-1993\",\n    \"patient_name\": \"Ani\",\n    \"reason\": \"sick\",\n    \"time_slot\": \"04-28-2025 08:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/create_appointment",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5003",
+							"path": [
+								"create_appointment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Apr 2025 08:55:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"appointment_number\": \"409823\",\n    \"status\": \"Appointment Scheduled\"\n}"
+				}
+			]
+		},
+		{
+			"name": "check_availability",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"preferred_date\":\"03-28-2025\",\"preferred_period\":\"morning\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/check_availability",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5003",
+					"path": [
+						"check_availability"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example check availability",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"preferred_date\":\"04-28-2025\",\"preferred_period\":\"morning\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:5003/check_availability",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "5003",
+							"path": [
+								"check_availability"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Apr 2025 08:55:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nearest_available_slots\": [\n        \"04-28-2025 08:00\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "track package",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "default-dev-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://logistics-xe85.onrender.com/track/ABC123456",
+					"protocol": "https",
+					"host": [
+						"logistics-xe85",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"track",
+						"ABC123456"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example track package",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "default-dev-key",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:8000/track/123456",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "8000",
+							"path": [
+								"track",
+								"123456"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 01 Apr 2025 09:01:28 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "397"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tracking_number\": \"123456\",\n    \"status\": \"PICKED_UP\",\n    \"estimated_delivery\": \"2025-04-03T09:01:29.108018\",\n    \"current_location\": {\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"country\": \"USA\",\n        \"timestamp\": \"2025-04-01T09:01:23.074772\"\n    },\n    \"tracking_history\": [\n        {\n            \"status\": \"PICKED_UP\",\n            \"location\": {\n                \"city\": \"Seattle\",\n                \"state\": \"WA\",\n                \"country\": \"USA\",\n                \"timestamp\": \"2025-04-01T09:01:23.074786\"\n            },\n            \"description\": \"Package picked up from sender\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "add package",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "default-dev-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:8000/packages/?tracking_number=123456&origin_city=Seattle&origin_state=WA",
+					"protocol": "http",
+					"host": [
+						"ec2-18-218-10-204",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"packages",
+						""
+					],
+					"query": [
+						{
+							"key": "tracking_number",
+							"value": "123456"
+						},
+						{
+							"key": "origin_city",
+							"value": "Seattle"
+						},
+						{
+							"key": "origin_state",
+							"value": "WA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example add package",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "default-dev-key",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://ec2-18-218-10-204.us-east-2.compute.amazonaws.com:8000/packages/?tracking_number=123456&origin_city=Seattle&origin_state=WA",
+							"protocol": "http",
+							"host": [
+								"ec2-18-218-10-204",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "8000",
+							"path": [
+								"packages",
+								""
+							],
+							"query": [
+								{
+									"key": "tracking_number",
+									"value": "123456"
+								},
+								{
+									"key": "origin_city",
+									"value": "Seattle"
+								},
+								{
+									"key": "origin_state",
+									"value": "WA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Tue, 01 Apr 2025 09:01:22 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "397"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tracking_number\": \"123456\",\n    \"status\": \"PICKED_UP\",\n    \"estimated_delivery\": \"2025-04-04T09:01:23.074764\",\n    \"current_location\": {\n        \"city\": \"Seattle\",\n        \"state\": \"WA\",\n        \"country\": \"USA\",\n        \"timestamp\": \"2025-04-01T09:01:23.074772\"\n    },\n    \"tracking_history\": [\n        {\n            \"status\": \"PICKED_UP\",\n            \"location\": {\n                \"city\": \"Seattle\",\n                \"state\": \"WA\",\n                \"country\": \"USA\",\n                \"timestamp\": \"2025-04-01T09:01:23.074786\"\n            },\n            \"description\": \"Package picked up from sender\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
