@@ -6,6 +6,8 @@ Note -
 1. TaskLegDetails/CLR object is part of Queue Based Reporting Early Access, and it will only return data if you are part of Early Access Program. 
 2.These fields are applicable only for the API and not for Analyzer UI.
 
+For Business Hours-aware queue duration fields and query examples, see [Queue Business Hours](QueueBusinessHours.md).
+
 | Field Name                        | Data Type |                                                                                       Description                                                                                       | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|:-------------:|
 | id                                |  String   |                                                                              Unique ID for each call-leg.                                                                               | Yes          | Yes                | Yes        |      Yes      |
@@ -26,6 +28,7 @@ Note -
 | queue.id                          |  String   |                                                                            A string that identifies a queue.                                                                            | Yes          | Yes                | Yes        |      Yes      |
 | queue.name                        |  String   |                                            The name of a queue, which is the holding place for calls while they await handling by an agent.                                             | Yes          | Yes                | Yes        |      Yes      |
 | queue.duration                    |   Long    |                                                         The amount of time(in epoch millis) the task was lined up in the queue.                                                         | Yes          | Yes                | Yes        |      Yes      |
+| queue.durationBusinessHours | Long | Time, in milliseconds, that the contact spent waiting in this call leg's queue during business hours. | Yes | Yes | Yes | Yes |
 | ringingDuration                   |   Long    |                                                                  The total ringing duration before a call is answered.                                                                  | Yes          | Yes                | Yes        |      Yes      |
 | owner.id                          |  String   |                                                                           A string that identifies an agent.                                                                            | Yes          | Yes                | Yes        |      Yes      |
 | owner.name                        |  String   |                                                          The name of the agent who answers customer calls, chats, and emails.                                                           | Yes          | Yes                | Yes        |      Yes      |
