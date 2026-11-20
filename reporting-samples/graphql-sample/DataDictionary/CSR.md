@@ -4,8 +4,6 @@ Customer Session Record (CSR) - It represents the customer workflow, consisting 
 
 Note - These fields are applicable only for the API and not for Analyzer UI.
 
-For Business Hours-aware queue duration fields and query examples, see [Queue Business Hours](QueueBusinessHours.md).
-
 | Field Name                         | Field Type | Description                                                                                                                                                                                                        | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?<br/>(use 'filter' argument for all the fields) | Is Sortable? | Is Case Insensitive |
 |------------------------------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|-------------------------------------------------------------------|--------------|--------------|
 | id                                 | String     | A unique string that identifies the contact session.                                                                                                                                                               | Yes                     | Yes                 | Yes                                                               | Yes          |  No  |

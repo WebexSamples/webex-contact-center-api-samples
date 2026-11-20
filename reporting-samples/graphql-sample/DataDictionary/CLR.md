@@ -6,8 +6,6 @@ Note -
 1. TaskLegDetails/CLR object is part of Queue Based Reporting Early Access, and it will only return data if you are part of Early Access Program. 
 2.These fields are applicable only for the API and not for Analyzer UI.
 
-For Business Hours-aware queue duration fields and query examples, see [Queue Business Hours](QueueBusinessHours.md).
-
 | Field Name                        | Data Type |                                                                                       Description                                                                                       | Is Aggregation allowed? | Is GroupBy allowed? | Is Filter allowed?(use 'filter' argument for all the fields) | Is Sortable ? |
 |:---------------------------------:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:----------:|:-------------:|
 | id                                |  String   |                                                                              Unique ID for each call-leg.                                                                               | Yes          | Yes                | Yes        |      Yes      |
