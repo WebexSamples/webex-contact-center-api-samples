@@ -240,7 +240,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "MGUxYmY5NDAtNGZiNS00ZTM3LWE4YTAtZTBlMmJmNTI4N2VhMTQ3ZjM0M2UtYTg1_PF84_1c71287f-2f41-458b-b101-c4e616123554",
+				"value": "{{bot-token}}",
 				"type": "string"
 			}
 		]
@@ -273,7 +273,7 @@
 		},
 		{
 			"key": "bot-token",
-			"value": "NTliOGFkY2QtZGU2OS00OGQ0LWEzNDctYmI4Yjc5ZWMwODBlODY3MDE0MDMtMGZh_PF84_3f4ac69f-e86a-4d6a-b016-f0b0b7445c1d",
+			"value": "",
 			"type": "string"
 		},
 		{
